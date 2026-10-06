@@ -1,0 +1,42 @@
+[
+  {
+    "issue_key": "PHX-1",
+    "issue_type": "Epic",
+    "summary": "OneERP Rollout",
+    "status": "In Progress",
+    "project_key": "PHX",
+    "labels": ["project:PHOENIX"]
+  },
+  {
+    "issue_key": "PHX-2",
+    "issue_type": "Story",
+    "summary": "Phase 1 Planning",
+    "status": "Done",
+    "project_key": "PHX",
+    "labels": ["project:PHOENIX"]
+  },
+  {
+    "issue_key": "PHX-3",
+    "issue_type": "Story",
+    "summary": "System Integration",
+    "status": "In Progress",
+    "project_key": "PHX",
+    "labels": ["project:PHOENIX"]
+  },
+  {
+    "issue_key": "PHX-4",
+    "issue_type": "Task",
+    "summary": "Data Cleansing",
+    "status": "Open",
+    "project_key": "PHX",
+    "labels": ["project:PHOENIX"]
+  },
+  {
+    "issue_key": "PHX-5",
+    "issue_type": "Bug",
+    "summary": "Migration Script Error",
+    "status": "Open",
+    "project_key": "PHX",
+    "labels": ["project:PHOENIX"]
+  }
+]

@@ -1,0 +1,54 @@
+project_id_consumer,depends_on_project_id_provider,dependency_type,criticality,description
+P-CYB-01,P-CYB-02,data,medium,SIEM enriches alerts with user identity context
+P-CYB-07,P-CYB-01,data,critical,SOAR playbooks are triggered by SIEM alerts
+P-CYB-05,P-CYB-01,data,high,Data lake ingests logs exported from the SIEM
+P-CYB-03,P-CYB-01,data,medium,Posture findings are forwarded into the SIEM
+P-CYB-04,P-CYB-03,data,medium,Patch management uses cloud asset inventory
+P-CYB-06,P-CYB-02,identity,critical,PAM relies on identity directory and approval workflows
+P-CYB-02,P-HR-01,data,critical,Joiner/mover/leaver events originate in HR core
+P-FIN-01,P-CYB-02,identity,critical,SAP role assignment and SoD are governed by IAM
+P-FIN-01,P-HR-01,data,medium,Cost-center and employee master sync
+P-PRO-01,P-CYB-02,identity,high,Supplier and employee SSO via identity platform
+P-SAL-01,P-CYB-02,identity,high,Dealer and employee SSO via identity platform
+P-DTFS-01,P-CYB-01,process,high,Security monitoring of the loan platform and fraud signals
+P-DTFS-02,P-CYB-06,process,medium,Service accounts and model secrets controlled via PAM
+P-SAL-04,P-CYB-03,process,medium,Cloud posture checks on telemetry accounts
+P-PRO-05,P-CYB-05,data,low,Supplier cyber-risk score uses threat intelligence
+P-FIN-02,P-FIN-01,data,critical,Reports read ledger data from S/4
+P-FIN-03,P-FIN-01,data,critical,Consolidation reads entity ledgers
+P-FIN-04,P-FIN-01,data,critical,Treasury uses bank accounts and payables from S/4
+P-FIN-05,P-FIN-01,data,high,Data mart extracts ledger and sub-ledger data
+P-FIN-06,P-FIN-01,data,high,Intercompany and tax data come from S/4 postings
+P-FIN-02,P-FIN-05,data,medium,Historical trends read from the data mart
+P-FIN-02,P-SAL-02,data,medium,Revenue by customer segment from Customer 360
+P-FIN-03,P-FIN-06,data,high,Eliminations use matched intercompany balances
+P-FIN-04,P-DTFS-03,data,medium,Lease cash flows feed liquidity forecast
+P-PRO-01,P-FIN-01,data,critical,Invoice and payment status come from S/4
+P-PRO-01,P-PRO-02,data,high,Supplier master and contracts from Ariba
+P-PRO-02,P-FIN-01,data,high,Vendor master synchronisation with S/4
+P-PRO-03,P-PRO-01,process,high,Suppliers submit invoices via the portal
+P-PRO-03,P-FIN-01,process,critical,Matched invoices are posted into S/4 AP
+P-PRO-04,P-FIN-05,data,high,Spend facts come from the finance data mart
+P-PRO-04,P-PRO-02,data,medium,Contract data for compliance tracking
+P-PRO-05,P-PRO-01,data,medium,Supplier master and delivery performance
+P-DTFS-01,P-FIN-01,process,critical,Ledger posting of contract fees and commissions
+P-DTFS-01,P-DTFS-02,process,critical,Real-time credit decision call
+P-DTFS-01,P-SAL-01,data,high,"Dealer, vehicle and price data for each deal"
+P-DTFS-02,P-SAL-02,data,medium,Customer 360 features for scoring
+P-DTFS-03,P-DTFS-01,process,critical,Contracts are created from approved applications
+P-DTFS-03,P-FIN-01,process,critical,Accounting entries for contract lifecycle events
+P-DTFS-04,P-DTFS-03,data,critical,Balances and schedules come from contract system
+P-DTFS-05,P-DTFS-03,data,critical,Exposure and contract data for reporting
+P-DTFS-05,P-DTFS-04,data,high,Delinquency data for impairment calculation
+P-DTFS-05,P-FIN-03,data,high,Reconciliation to group consolidation
+P-DTFS-06,P-SAL-01,data,high,Dealer vehicle stock data for financing limits
+P-DTFS-06,P-FIN-01,process,medium,Interest billing postings
+P-SAL-01,P-SAL-06,process,critical,Dealer orders flow into order management
+P-SAL-03,P-SAL-01,data,high,Dealer and workshop master data
+P-SAL-03,P-SAL-04,data,high,Fault codes trigger service recommendations
+P-SAL-02,P-SAL-01,data,high,Dealer transactions feed customer profiles
+P-SAL-02,P-SAL-03,data,medium,Service history enriches customer profiles
+P-SAL-05,P-SAL-02,data,high,Customer and demand signals
+P-SAL-05,P-SAL-06,data,medium,Order backlog and lead times
+P-SAL-06,P-FIN-01,process,critical,Billing and revenue recognition in S/4
+P-SAL-06,P-PRO-01,data,medium,Parts and supplier delivery status

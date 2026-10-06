@@ -1,0 +1,324 @@
+projects:
+  - project_id: ATLAS
+    name: Supplier Integration Modernization
+    department: Procurement
+    domain: Source-to-Pay
+    depth: Deep
+    business_theme: Replace legacy supplier interfaces with API Gateway, align with Source-to-Contract / P2P
+    aliases: ['Atlas', 'Supplier Integration', 'Supplier Modernization']
+    source_bindings:
+      jira_project_key: ATL
+      confluence_space: ATLAS
+      github_repository: project-atlas-integration
+      leanix_project_id: ATLAS
+      sharepoint_folder: atlas
+      teams_channel: atlas-general
+      servicenow_tag: project:ATLAS
+    expected_questions:
+      - 'Is Project Atlas ready for production?'
+      - 'What are the open blockers for Atlas?'
+      - 'Show me the architecture decisions for Project Atlas and which GitHub config implements them.'
+
+  - project_id: NOVA
+    name: Intercompany Reconciliation Automation
+    department: Finance
+    domain: OneERP Delivery
+    depth: Medium
+    business_theme: Automate intercompany reconciliation workflow
+    aliases: ['Nova', 'Intercompany Automation']
+    source_bindings:
+      jira_project_key: NOV
+      confluence_space: NOVA
+      github_repository: project-nova-reconciliation
+      leanix_project_id: NOVA
+      sharepoint_folder: nova
+      teams_channel: nova-finance
+      servicenow_tag: project:NOVA
+
+  - project_id: PHOENIX
+    name: OneERP Rollout — Country Wave
+    department: Finance
+    domain: OneERP Delivery
+    depth: Medium
+    business_theme: Country wave go-live for the Global ERP finance platform
+    aliases: ['Phoenix', 'OneERP Rollout', 'Country Wave']
+    source_bindings:
+      jira_project_key: PHX
+      confluence_space: PHOENIX
+      github_repository: project-phoenix-erp
+      leanix_project_id: PHOENIX
+      sharepoint_folder: phoenix
+      teams_channel: phoenix-rollout
+      servicenow_tag: project:PHOENIX
+
+  - project_id: ORION
+    name: Expense Payment Platform Upgrade
+    department: Finance
+    domain: Finance Templates
+    depth: Medium
+    business_theme: Modernise expense payment flows and controls
+    aliases: ['Orion', 'Expense Payment']
+    source_bindings:
+      jira_project_key: ORN
+      confluence_space: ORION
+      github_repository: project-orion-expense
+      leanix_project_id: ORION
+      sharepoint_folder: orion
+      teams_channel: orion-expense
+      servicenow_tag: project:ORION
+
+  - project_id: HELIOS
+    name: Service Contract Revenue Engine
+    department: Finance
+    domain: Finance Templates
+    depth: Light
+    business_theme: Service contract revenue calculation modernisation
+    aliases: ['Helios', 'Revenue Engine']
+    source_bindings:
+      jira_project_key: HEL
+      confluence_space: HELIOS
+      github_repository: project-helios-rev
+      leanix_project_id: HELIOS
+      sharepoint_folder: helios
+      teams_channel: helios-revenue
+      servicenow_tag: project:HELIOS
+
+  - project_id: TITAN
+    name: Cash & Liquidity Management Dashboard
+    department: Treasury
+    domain: Treasury IT
+    depth: Light
+    business_theme: Daily cash and liquidity visibility across entities
+    aliases: ['Titan', 'Cash Liquidity']
+    source_bindings:
+      jira_project_key: TTN
+      confluence_space: TITAN
+      github_repository: project-titan-treasury
+      leanix_project_id: TITAN
+      sharepoint_folder: titan
+      teams_channel: titan-treasury
+      servicenow_tag: project:TITAN
+
+  - project_id: HERMES
+    name: Market Risk Monitoring Platform
+    department: Treasury
+    domain: Risk Management
+    depth: Light
+    business_theme: FX / interest rate / commodity market risk views
+    aliases: ['Hermes', 'Market Risk']
+    source_bindings:
+      jira_project_key: HRM
+      confluence_space: HERMES
+      github_repository: project-hermes-risk
+      leanix_project_id: HERMES
+      sharepoint_folder: hermes
+      teams_channel: hermes-risk
+      servicenow_tag: project:HERMES
+
+  - project_id: APEX
+    name: Pensions & Investment Reporting
+    department: Treasury
+    domain: Capital Markets
+    depth: Light
+    business_theme: Pension & investment reporting workflow
+    aliases: ['Apex', 'Pensions Reporting']
+    source_bindings:
+      jira_project_key: APX
+      confluence_space: APEX
+      github_repository: project-apex-pensions
+      leanix_project_id: APEX
+      sharepoint_folder: apex
+      teams_channel: apex-capital
+      servicenow_tag: project:APEX
+
+  - project_id: AURORA
+    name: BW -> Datasphere Migration Wave 1
+    department: Analytics & BTP
+    domain: Data Platform
+    depth: Medium
+    business_theme: Migrate legacy BW models to Datasphere
+    aliases: ['Aurora', 'Datasphere Migration']
+    source_bindings:
+      jira_project_key: AUR
+      confluence_space: AURORA
+      github_repository: project-aurora-datasphere
+      leanix_project_id: AURORA
+      sharepoint_folder: aurora
+      teams_channel: aurora-analytics
+      servicenow_tag: project:AURORA
+
+  - project_id: POLARIS
+    name: SAC Reporting Modernization
+    department: Analytics & BTP
+    domain: Reporting
+    depth: Light
+    business_theme: SAC Optimized Experience migration
+    aliases: ['Polaris', 'SAC Modernization']
+    source_bindings:
+      jira_project_key: POL
+      confluence_space: POLARIS
+      github_repository: project-polaris-sac
+      leanix_project_id: POLARIS
+      sharepoint_folder: polaris
+      teams_channel: polaris-reporting
+      servicenow_tag: project:POLARIS
+
+  - project_id: SIRIUS
+    name: BTP Integration Suite Migration
+    department: Platform & Operations
+    domain: Integration
+    depth: Medium
+    business_theme: SAP PO -> Integration Suite migration
+    aliases: ['Sirius', 'BTP Integration']
+    source_bindings:
+      jira_project_key: SIR
+      confluence_space: SIRIUS
+      github_repository: project-sirius-btp
+      leanix_project_id: SIRIUS
+      sharepoint_folder: sirius
+      teams_channel: sirius-integration
+      servicenow_tag: project:SIRIUS
+
+  - project_id: ATLAS-OPS
+    name: SAP RISE Platform Migration
+    department: Platform & Operations
+    domain: SAP Platform
+    depth: Light
+    business_theme: RISE migration & landscape optimisation
+    aliases: ['Atlas Ops', 'SAP RISE']
+    source_bindings:
+      jira_project_key: ATO
+      confluence_space: ATLAS-OPS
+      github_repository: project-atlas-ops-rise
+      leanix_project_id: ATLAS-OPS
+      sharepoint_folder: atlas-ops
+      teams_channel: atlas-ops-rise
+      servicenow_tag: project:ATLAS-OPS
+
+  - project_id: LIBRA
+    name: FRUN / Cloud ALM Enablement
+    department: Platform & Operations
+    domain: Monitoring
+    depth: Light
+    business_theme: Cloud ALM + Focused Run onboarding
+    aliases: ['Libra', 'Cloud ALM', 'FRUN']
+    source_bindings:
+      jira_project_key: LIB
+      confluence_space: LIBRA
+      github_repository: project-libra-monitoring
+      leanix_project_id: LIBRA
+      sharepoint_folder: libra
+      teams_channel: libra-monitoring
+      servicenow_tag: project:LIBRA
+
+  - project_id: CETUS
+    name: NACOS Archive Rollout
+    department: Archiving
+    domain: Archive
+    depth: Light
+    business_theme: Read-only archive platform rollout
+    aliases: ['Cetus', 'NACOS Archive']
+    source_bindings:
+      jira_project_key: CET
+      confluence_space: CETUS
+      github_repository: project-cetus-archive
+      leanix_project_id: CETUS
+      sharepoint_folder: cetus
+      teams_channel: cetus-archive
+      servicenow_tag: project:CETUS
+
+  - project_id: NEMO
+    name: GRC Access Control Harmonization
+    department: GRC & Security
+    domain: Authorizations
+    depth: Medium
+    business_theme: Harmonised GRC Access Control + SoD
+    aliases: ['Nemo', 'GRC Harmonization', 'Access Control']
+    source_bindings:
+      jira_project_key: NEM
+      confluence_space: NEMO
+      github_repository: project-nemo-grc
+      leanix_project_id: NEMO
+      sharepoint_folder: nemo
+      teams_channel: nemo-security
+      servicenow_tag: project:NEMO
+
+  - project_id: CYRUS
+    name: AI Vendor Management Framework
+    department: CTO Topics
+    domain: AI Governance
+    depth: Light
+    business_theme: Framework for third-party AI vendor evaluation
+    aliases: ['Cyrus', 'AI Vendor Framework']
+    source_bindings:
+      jira_project_key: CYR
+      confluence_space: CYRUS
+      github_repository: project-cyrus-ai-gov
+      leanix_project_id: CYRUS
+      sharepoint_folder: cyrus
+      teams_channel: cyrus-ai
+      servicenow_tag: project:CYRUS
+
+  - project_id: LEO
+    name: Global Payroll Harmonization
+    department: HR
+    domain: HR Core
+    depth: Light
+    business_theme: Harmonised payroll + workforce data model, Oracle HCM aligned
+    aliases: ['Leo', 'Global Payroll']
+    source_bindings:
+      jira_project_key: LEO
+      confluence_space: LEO
+      github_repository: project-leo-payroll
+      leanix_project_id: LEO
+      sharepoint_folder: leo
+      teams_channel: leo-payroll
+      servicenow_tag: project:LEO
+
+  - project_id: LYRA
+    name: Talent & Learning Portal Modernization
+    department: HR
+    domain: Talent
+    depth: Light
+    business_theme: Learning + talent portal consolidation
+    aliases: ['Lyra', 'Talent Portal']
+    source_bindings:
+      jira_project_key: LYR
+      confluence_space: LYRA
+      github_repository: project-lyra-talent
+      leanix_project_id: LYRA
+      sharepoint_folder: lyra
+      teams_channel: lyra-talent
+      servicenow_tag: project:LYRA
+
+  - project_id: VEGA
+    name: Legal Contract Lifecycle Platform
+    department: Legal & Tax
+    domain: Contracts
+    depth: Light
+    business_theme: Contract lifecycle + e-signature modernisation
+    aliases: ['Vega', 'Contract Lifecycle']
+    source_bindings:
+      jira_project_key: VEG
+      confluence_space: VEGA
+      github_repository: project-vega-legal
+      leanix_project_id: VEGA
+      sharepoint_folder: vega
+      teams_channel: vega-legal
+      servicenow_tag: project:VEGA
+
+  - project_id: DRACO
+    name: Tax Reporting & e-Invoicing Enablement
+    department: Legal & Tax
+    domain: Tax
+    depth: Light
+    business_theme: Country-specific tax + e-invoicing rollout
+    aliases: ['Draco', 'Tax Reporting', 'e-Invoicing']
+    source_bindings:
+      jira_project_key: DRC
+      confluence_space: DRACO
+      github_repository: project-draco-tax
+      leanix_project_id: DRACO
+      sharepoint_folder: draco
+      teams_channel: draco-tax
+      servicenow_tag: project:DRACO

@@ -1,0 +1,44 @@
+[
+  {
+    "issue_key": "NOV-1",
+    "issue_type": "Epic",
+    "summary": "Intercompany Reconciliation Automation",
+    "description": "Automate intercompany recon.",
+    "status": "In Progress",
+    "priority": "High",
+    "project_key": "NOV",
+    "labels": ["project:NOVA"]
+  },
+  {
+    "issue_key": "NOV-2",
+    "issue_type": "Story",
+    "summary": "Data Extraction",
+    "status": "Done",
+    "project_key": "NOV",
+    "labels": ["project:NOVA"]
+  },
+  {
+    "issue_key": "NOV-3",
+    "issue_type": "Story",
+    "summary": "Rules Engine Setup",
+    "status": "In Progress",
+    "project_key": "NOV",
+    "labels": ["project:NOVA"]
+  },
+  {
+    "issue_key": "NOV-4",
+    "issue_type": "Bug",
+    "summary": "Mismatch in currency conversion",
+    "status": "Open",
+    "project_key": "NOV",
+    "labels": ["project:NOVA"]
+  },
+  {
+    "issue_key": "NOV-5",
+    "issue_type": "Task",
+    "summary": "User Training",
+    "status": "To Do",
+    "project_key": "NOV",
+    "labels": ["project:NOVA"]
+  }
+]

@@ -1,0 +1,6 @@
+platform_id,name,description,owner_team_id
+AZURE,Microsoft Azure,"Primary enterprise cloud for containers, security tooling, identity and integration.",T-AZ-PLAT
+AWS,Amazon Web Services,Cloud used mainly by Sales and connected-vehicle workloads.,T-AWS-PLAT
+SAP,SAP Business Technology,"SAP RISE (S/4HANA), Ariba, Analytics Cloud, BTP, Datasphere, GRC, SuccessFactors.",T-SAP-RISE
+SNOWFLAKE,Snowflake,Central cloud data warehouse for curated cross-domain data products.,T-SNF-PLAT
+DATABRICKS,Databricks,"Lakehouse for large-scale data engineering, streaming and machine learning.",T-DBX-PLAT

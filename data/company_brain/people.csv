@@ -1,0 +1,87 @@
+person_id,name,job_title,primary_team_id,team_type,domain_or_platform,location,email,is_team_lead
+E1001,Markus Bauer,Azure Platform Lead,T-AZ-PLAT,platform,AZURE,Stuttgart,markus.bauer@autonova.example,yes
+E1002,Priya Nair,Cloud Network Engineer,T-AZ-PLAT,platform,AZURE,Pune,priya.nair@autonova.example,no
+E1003,Tom Becker,Azure Landing Zone Architect,T-AZ-PLAT,platform,AZURE,Stuttgart,tom.becker@autonova.example,no
+E1004,Daniel Hoffmann,AKS Platform Lead,T-AZ-AKS,platform,AZURE,Stuttgart,daniel.hoffmann@autonova.example,yes
+E1005,Sneha Kulkarni,Kubernetes SRE,T-AZ-AKS,platform,AZURE,Pune,sneha.kulkarni@autonova.example,no
+E1006,Felix Wagner,DevOps Engineer,T-AZ-AKS,platform,AZURE,Stuttgart,felix.wagner@autonova.example,no
+E1007,Karthik Subramanian,Azure Data Engineer,T-AZ-DATA,platform,AZURE,Chennai,karthik.subramanian@autonova.example,yes
+E1008,Julia Neumann,Data Factory Lead,T-AZ-DATA,platform,AZURE,Stuttgart,julia.neumann@autonova.example,no
+E1009,Michael Carter,AWS Platform Lead,T-AWS-PLAT,platform,AWS,Portland,michael.carter@autonova.example,yes
+E1010,Aisha Khan,Cloud Engineer,T-AWS-PLAT,platform,AWS,Bangalore,aisha.khan@autonova.example,no
+E1011,Lukas Schmid,AWS Solutions Architect,T-AWS-PLAT,platform,AWS,Stuttgart,lukas.schmid@autonova.example,no
+E1012,Ravi Menon,SAP Basis Engineer,T-SAP-RISE,platform,SAP,Pune,ravi.menon@autonova.example,yes
+E1013,Stefan Kraus,SAP RISE Service Manager,T-SAP-RISE,platform,SAP,Woerth,stefan.kraus@autonova.example,no
+E1014,Anita Deshmukh,SAP HANA DBA,T-SAP-RISE,platform,SAP,Pune,anita.deshmukh@autonova.example,no
+E1015,Meera Iyer,SAP Analytics Cloud Lead,T-SAP-ANA,platform,SAP,Bangalore,meera.iyer@autonova.example,yes
+E1016,Jonas Keller,Datasphere Architect,T-SAP-ANA,platform,SAP,Stuttgart,jonas.keller@autonova.example,no
+E1017,Vikram Rao,BTP Integration Lead,T-SAP-INT,platform,SAP,Bangalore,vikram.rao@autonova.example,yes
+E1018,Katharina Roth,Integration Developer,T-SAP-INT,platform,SAP,Stuttgart,katharina.roth@autonova.example,no
+E1019,Sarah Mitchell,Snowflake Platform Lead,T-SNF-PLAT,platform,SNOWFLAKE,Portland,sarah.mitchell@autonova.example,yes
+E1020,Arjun Patel,Snowflake Engineer,T-SNF-PLAT,platform,SNOWFLAKE,Pune,arjun.patel@autonova.example,no
+E1021,Nils Fischer,Databricks Platform Lead,T-DBX-PLAT,platform,DATABRICKS,Stuttgart,nils.fischer@autonova.example,yes
+E1022,Divya Reddy,ML Platform Engineer,T-DBX-PLAT,platform,DATABRICKS,Bangalore,divya.reddy@autonova.example,no
+E1023,Oliver Grant,Data Platform Engineer,T-DBX-PLAT,platform,DATABRICKS,Portland,oliver.grant@autonova.example,no
+E1024,Claudia Lang,Head of CISO Office,T-CYB-GRC,business,CYB,Stuttgart,claudia.lang@autonova.example,yes
+E1025,Robert Kline,Security Compliance Manager,T-CYB-GRC,business,CYB,Portland,robert.kline@autonova.example,no
+E1026,Rahul Verma,SOC Lead,T-CYB-SOC,technical,CYB,Pune,rahul.verma@autonova.example,yes
+E1027,Anna Weber,Cyber Security Analyst,T-CYB-SOC,technical,CYB,Stuttgart,anna.weber@autonova.example,no
+E1028,Eva Lindner,Threat Detection Engineer,T-CYB-SOC,technical,CYB,Stuttgart,eva.lindner@autonova.example,no
+E1029,Mohammed Siddiqui,SOC Analyst,T-CYB-SOC,technical,CYB,Chennai,mohammed.siddiqui@autonova.example,no
+E1030,Christian Vogel,IAM Lead,T-CYB-IAM,technical,CYB,Stuttgart,christian.vogel@autonova.example,yes
+E1031,Neha Sharma,IAM Engineer,T-CYB-IAM,technical,CYB,Pune,neha.sharma@autonova.example,no
+E1032,Paul Richter,PAM Engineer,T-CYB-IAM,technical,CYB,Stuttgart,paul.richter@autonova.example,no
+E1033,Sabine Hartmann,Vulnerability Management Lead,T-CYB-VM,technical,CYB,Stuttgart,sabine.hartmann@autonova.example,yes
+E1034,Amit Joshi,Security Engineer,T-CYB-VM,technical,CYB,Pune,amit.joshi@autonova.example,no
+E1035,Tobias Engel,Cloud Security Architect,T-CYB-CLD,technical,CYB,Stuttgart,tobias.engel@autonova.example,yes
+E1036,Lakshmi Narayan,Cloud Security Engineer,T-CYB-CLD,technical,CYB,Bangalore,lakshmi.narayan@autonova.example,no
+E1037,Marco Brandt,Incident Response Lead,T-CYB-IR,technical,CYB,Stuttgart,marco.brandt@autonova.example,yes
+E1038,Ishita Banerjee,IR Analyst,T-CYB-IR,technical,CYB,Pune,ishita.banerjee@autonova.example,no
+E1039,Lena Fischer,Head of Group Accounting,T-FIN-BUS,business,FIN,Stuttgart,lena.fischer@autonova.example,yes
+E1040,Thomas Albrecht,Group Controller,T-FIN-BUS,business,FIN,Stuttgart,thomas.albrecht@autonova.example,no
+E1041,Elena Petrova,Finance Process Owner,T-FIN-BUS,business,FIN,Stuttgart,elena.petrova@autonova.example,no
+E1042,Sandra Koehler,S/4 Finance Solution Architect,T-FIN-ERP,technical,FIN,Stuttgart,sandra.koehler@autonova.example,yes
+E1043,Deepak Malhotra,SAP FICO Consultant,T-FIN-ERP,technical,FIN,Pune,deepak.malhotra@autonova.example,no
+E1044,Pooja Bhatt,SAP FI Developer,T-FIN-ERP,technical,FIN,Chennai,pooja.bhatt@autonova.example,no
+E1045,Martin Seidel,Head of Treasury,T-FIN-TRS,business,FIN,Stuttgart,martin.seidel@autonova.example,yes
+E1046,Nadine Wolf,Cash Manager,T-FIN-TRS,business,FIN,Stuttgart,nadine.wolf@autonova.example,no
+E1047,Karan Mehta,Treasury Systems Analyst,T-FIN-TRS,business,FIN,Pune,karan.mehta@autonova.example,no
+E1048,Leonie Haas,Finance BI Lead,T-FIN-BI,technical,FIN,Stuttgart,leonie.haas@autonova.example,yes
+E1049,Suresh Kumar,BI Developer,T-FIN-BI,technical,FIN,Bangalore,suresh.kumar@autonova.example,no
+E1050,Andreas Schneider,VP Strategic Sourcing,T-PRO-BUS,business,PRO,Stuttgart,andreas.schneider@autonova.example,yes
+E1051,Maria Gonzalez,Category Manager Powertrain,T-PRO-BUS,business,PRO,Mannheim,maria.gonzalez@autonova.example,no
+E1052,Kevin O'Brien,Category Manager Electronics,T-PRO-BUS,business,PRO,Portland,kevin.obrien@autonova.example,no
+E1053,Jan Dietrich,Supplier Portal Product Owner,T-PRO-SRM,technical,PRO,Stuttgart,jan.dietrich@autonova.example,yes
+E1054,Anjali Kapoor,Full-stack Developer,T-PRO-SRM,technical,PRO,Pune,anjali.kapoor@autonova.example,no
+E1055,Benedikt Maier,Ariba Solution Lead,T-PRO-SRM,technical,PRO,Stuttgart,benedikt.maier@autonova.example,no
+E1056,Sunil Gupta,Backend Developer,T-PRO-SRM,technical,PRO,Bangalore,sunil.gupta@autonova.example,no
+E1057,Clara Jung,Spend Analyst,T-PRO-ANA,technical,PRO,Stuttgart,clara.jung@autonova.example,yes
+E1058,Rohan Das,Data Scientist,T-PRO-ANA,technical,PRO,Bangalore,rohan.das@autonova.example,no
+E1059,Stephanie Krueger,Head of Retail Lending,T-DTF-BUS,business,DTFS,Stuttgart,stephanie.krueger@autonova.example,yes
+E1060,James Whitfield,Credit Policy Manager,T-DTF-BUS,business,DTFS,Fort Mill,james.whitfield@autonova.example,no
+E1061,Isabelle Moreau,Product Owner Lending,T-DTF-BUS,business,DTFS,Stuttgart,isabelle.moreau@autonova.example,no
+E1062,Alexander Beck,Loan Platform Tech Lead,T-DTF-LOS,technical,DTFS,Stuttgart,alexander.beck@autonova.example,yes
+E1063,Ananya Krishnan,Senior Backend Engineer,T-DTF-LOS,technical,DTFS,Chennai,ananya.krishnan@autonova.example,no
+E1064,Matthias Ernst,QA Lead,T-DTF-LOS,technical,DTFS,Stuttgart,matthias.ernst@autonova.example,no
+E1065,Rajesh Pillai,Java Developer,T-DTF-LOS,technical,DTFS,Chennai,rajesh.pillai@autonova.example,no
+E1066,Sophie Lenz,Head of Credit Risk Analytics,T-DTF-RSK,technical,DTFS,Stuttgart,sophie.lenz@autonova.example,yes
+E1067,Vivek Choudhary,ML Engineer,T-DTF-RSK,technical,DTFS,Pune,vivek.choudhary@autonova.example,no
+E1068,Emily Rhodes,Risk Data Scientist,T-DTF-RSK,technical,DTFS,Fort Mill,emily.rhodes@autonova.example,no
+E1069,Ulrike Baumann,Head of Collections & Servicing,T-DTF-SRV,business,DTFS,Stuttgart,ulrike.baumann@autonova.example,yes
+E1070,Carlos Mendes,Servicing Platform Engineer,T-DTF-SRV,business,DTFS,Stuttgart,carlos.mendes@autonova.example,no
+E1071,Frank Dietz,VP Sales Operations,T-SAL-BUS,business,SAL,Stuttgart,frank.dietz@autonova.example,yes
+E1072,Laura Bennett,Dealer Network Manager,T-SAL-BUS,business,SAL,Portland,laura.bennett@autonova.example,no
+E1073,Sandeep Bhatia,Regional Sales Manager India,T-SAL-BUS,business,SAL,Chennai,sandeep.bhatia@autonova.example,no
+E1074,Gerhard Lutz,Head of Aftersales,T-SAL-AFT,business,SAL,Woerth,gerhard.lutz@autonova.example,yes
+E1075,Monika Peters,Service Process Manager,T-SAL-AFT,business,SAL,Woerth,monika.peters@autonova.example,no
+E1076,Tanvir Ahmed,Service Portal Developer,T-SAL-AFT,business,SAL,Bangalore,tanvir.ahmed@autonova.example,no
+E1077,Patrick Sommer,Dealer Platform Architect,T-SAL-DLR,technical,SAL,Stuttgart,patrick.sommer@autonova.example,yes
+E1078,Ritu Agarwal,Frontend Lead,T-SAL-DLR,technical,SAL,Pune,ritu.agarwal@autonova.example,no
+E1079,Henrik Larsen,Cloud Developer,T-SAL-DLR,technical,SAL,Stuttgart,henrik.larsen@autonova.example,no
+E1080,Nicole Frank,Sales Analytics Lead,T-SAL-ANA,technical,SAL,Stuttgart,nicole.frank@autonova.example,yes
+E1081,Aditya Bansal,Data Engineer,T-SAL-ANA,technical,SAL,Bangalore,aditya.bansal@autonova.example,no
+E1082,Grace Thompson,Data Scientist,T-SAL-ANA,technical,SAL,Portland,grace.thompson@autonova.example,no
+E1083,Birgit Sauer,HR Business Partner IT & Security,T-HR-BP,business,HR,Stuttgart,birgit.sauer@autonova.example,yes
+E1084,Simone Arnold,HR Operations Manager,T-HR-BP,business,HR,Stuttgart,simone.arnold@autonova.example,no
+E1085,Christoph Reiter,HR Systems Lead,T-HR-IT,technical,HR,Stuttgart,christoph.reiter@autonova.example,yes
+E1086,Pallavi Shetty,SuccessFactors Consultant,T-HR-IT,technical,HR,Bangalore,pallavi.shetty@autonova.example,no

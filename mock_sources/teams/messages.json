@@ -1,0 +1,59 @@
+{
+  "messages": [
+    {
+      "message_id": "MSG-001",
+      "channel": "atlas-general",
+      "author_role": "Developer",
+      "text": "The API Gateway is taking too long to configure for the supplier endpoints, I'm connecting directly to the DB for now as a temporary workaround so we aren't blocked.",
+      "timestamp": "2026-10-04T11:30:00Z",
+      "project_id": "ATLAS",
+      "thread_id": "TH-001"
+    },
+    {
+      "message_id": "MSG-002",
+      "channel": "atlas-general",
+      "author_role": "PM",
+      "text": "Sprint review tomorrow, please update your stories in Jira.",
+      "timestamp": "2026-10-05T09:00:00Z",
+      "project_id": "ATLAS",
+      "thread_id": "TH-002"
+    },
+    {
+      "message_id": "MSG-003",
+      "channel": "atlas-general",
+      "author_role": "Architect",
+      "text": "Reminder: all integrations must go through API Gateway as per ADR-001. No exceptions.",
+      "timestamp": "2026-10-04T12:00:00Z",
+      "project_id": "ATLAS",
+      "thread_id": "TH-001"
+    }
+  ],
+  "meetings": [
+    {
+      "meeting_id": "MTG-001",
+      "title": "Atlas Sprint Review",
+      "project_id": "ATLAS",
+      "participants": ["pm_01", "developer_01", "architect_01"],
+      "datetime": "2026-10-06T10:00:00Z",
+      "decisions": ["Approved: API Gateway as only integration method"],
+      "action_items": [
+        {
+          "assignee": "developer_01",
+          "action": "Fix OAuth defect",
+          "due": "2026-10-15"
+        }
+      ],
+      "transcript_excerpt": "We discussed the integration challenges. It was confirmed that the API Gateway is the only approved method. Developer 01 will resolve the authentication bug."
+    },
+    {
+      "meeting_id": "MTG-002",
+      "title": "Atlas Architecture Review",
+      "project_id": "ATLAS",
+      "participants": ["architect_01", "manager_01", "pm_01"],
+      "datetime": "2026-09-20T14:00:00Z",
+      "decisions": ["Go-live date moved to Q4"],
+      "action_items": [],
+      "transcript_excerpt": "Reviewed current architecture state and agreed to postpone go-live to Q4."
+    }
+  ]
+}

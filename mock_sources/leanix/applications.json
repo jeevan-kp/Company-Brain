@@ -1,0 +1,61 @@
+[
+  {
+    "application_id": "APP-001",
+    "name": "Order Hub",
+    "lifecycle": "Active",
+    "project_links": ["ATLAS"],
+    "business_capabilities": ["Supplier Integration", "Order Management"],
+    "information_classification": "Internal",
+    "interfaces": [
+      {
+        "interface_id": "IF-001",
+        "target_application": "APP-003",
+        "technology": "REST API",
+        "direction": "outbound"
+      }
+    ]
+  },
+  {
+    "application_id": "APP-002",
+    "name": "Legacy IDOC Gateway",
+    "lifecycle": "Phase Out",
+    "project_links": ["ATLAS"],
+    "business_capabilities": ["Integration"],
+    "information_classification": "Internal",
+    "interfaces": [
+      {
+        "interface_id": "IF-002",
+        "target_application": "APP-001",
+        "technology": "IDOC/RFC",
+        "direction": "inbound"
+      }
+    ]
+  },
+  {
+    "application_id": "APP-003",
+    "name": "SAP SRM",
+    "lifecycle": "Active",
+    "project_links": ["ATLAS"],
+    "business_capabilities": ["Supplier Relationship Management"],
+    "information_classification": "Confidential",
+    "interfaces": []
+  },
+  {
+    "application_id": "APP-004",
+    "name": "Finance Core",
+    "lifecycle": "Active",
+    "project_links": ["NOVA", "PHOENIX"],
+    "business_capabilities": ["Financial Accounting"],
+    "information_classification": "Strictly Confidential",
+    "interfaces": []
+  },
+  {
+    "application_id": "APP-005",
+    "name": "HR Portal",
+    "lifecycle": "Active",
+    "project_links": ["LEO"],
+    "business_capabilities": ["Human Resources"],
+    "information_classification": "Confidential",
+    "interfaces": []
+  }
+]

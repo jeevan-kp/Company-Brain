@@ -1,0 +1,7 @@
+domain_id,name,description,has_function_and_technical_teams
+CYB,Cyber Security,"Protects group IT, OT and cloud estates; runs monitoring, identity, vulnerability and incident response.",business+technical
+DTFS,DTFS - Truck Financial Services,"Captive finance arm: retail loans, leasing, dealer floorplan financing and collections for trucks and buses.",business+technical
+FIN,Finance,"Group accounting, controlling, consolidation, treasury, tax and finance analytics. SAP S/4HANA is the system of record.",business+technical
+PRO,Procurement,"Strategic sourcing, supplier management, purchase-to-pay and spend analytics for production and indirect material.",business+technical
+SAL,Sales & Aftersales,"Dealer network, order-to-delivery, customer data, fleet service and connected-truck data.",business+technical
+HR,Human Resources (shared function),Employee master data and lifecycle; feeds identity and finance systems. Not a focus domain but a key upstream dependency.,business+technical

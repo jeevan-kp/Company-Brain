@@ -1,0 +1,42 @@
+{
+  "incidents": [
+    {
+      "incident_id": "INC-001",
+      "title": "Supplier API authentication fails during supplier integration",
+      "priority": "Critical",
+      "application": "ORDER-HUB",
+      "project_id": "ATLAS",
+      "state": "Open",
+      "created_at": "2026-10-05T14:20:00Z",
+      "resolved_at": null
+    },
+    {
+      "incident_id": "INC-002",
+      "title": "Intermittent timeout on legacy IDOC interface",
+      "priority": "High",
+      "application": "LEGACY-GATEWAY",
+      "project_id": "ATLAS",
+      "state": "Resolved",
+      "created_at": "2026-09-10T08:15:00Z",
+      "resolved_at": "2026-09-10T11:45:00Z"
+    }
+  ],
+  "changes": [
+    {
+      "change_id": "CHG-001",
+      "title": "Deploy Atlas API Gateway v1.2",
+      "type": "Normal",
+      "state": "Approved",
+      "project_id": "ATLAS",
+      "planned_start": "2026-10-10T22:00:00Z"
+    },
+    {
+      "change_id": "CHG-002",
+      "title": "Database schema migration for Order Hub",
+      "type": "Standard",
+      "state": "Implemented",
+      "project_id": "ATLAS",
+      "planned_start": "2026-09-25T20:00:00Z"
+    }
+  ]
+}

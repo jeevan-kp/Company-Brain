@@ -1,0 +1,23 @@
+[
+  {
+    "page_id": "PHX-P-1",
+    "title": "Phoenix Rollout Plan",
+    "space_key": "PHOENIX",
+    "content": "Rollout plan for Phoenix.",
+    "labels": ["project:PHOENIX"]
+  },
+  {
+    "page_id": "PHX-P-2",
+    "title": "Phoenix Governance",
+    "space_key": "PHOENIX",
+    "content": "Governance rules.",
+    "labels": ["project:PHOENIX"]
+  },
+  {
+    "page_id": "PHX-P-3",
+    "title": "Phoenix Arch",
+    "space_key": "PHOENIX",
+    "content": "Architecture for Phoenix.",
+    "labels": ["project:PHOENIX"]
+  }
+]

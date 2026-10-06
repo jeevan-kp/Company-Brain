@@ -1,0 +1,14 @@
+pydantic>=2.0
+psycopg2-binary
+asyncpg
+pyyaml
+httpx
+python-dotenv
+langgraph
+langchain-core
+google-genai>=2.25.0
+pgvector
+numpy
+schedule
+pytest
+pytest-asyncio

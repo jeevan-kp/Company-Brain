@@ -1,0 +1,24 @@
+@import "tailwindcss";
+
+@theme {
+  --color-company-navy: #1a2332;
+  --color-company-teal: #0d9488;
+  --color-company-light: #f8fafc;
+  --color-company-accent: #14b8a6;
+}
+
+body {
+  @apply bg-company-light text-slate-800 antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  @apply font-semibold tracking-tight;
+}
+
+.card {
+  @apply bg-white rounded-lg border border-slate-200 shadow-sm overflow-hidden;
+}
+
+.btn-primary {
+  @apply px-4 py-2 bg-company-teal text-white rounded-md hover:bg-company-accent transition-colors font-medium text-sm;
+}

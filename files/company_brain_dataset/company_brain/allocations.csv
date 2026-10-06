@@ -1,0 +1,210 @@
+person_id,person_name,project_id,role_on_project,allocation_pct
+E1027,Anna Weber,P-CYB-01,Engineer / Contributor,60
+E1027,Anna Weber,P-DTFS-01,Engineer / Contributor,40
+E1026,Rahul Verma,P-CYB-01,Tech Lead,50
+E1026,Rahul Verma,P-CYB-05,Engineer / Contributor,30
+E1026,Rahul Verma,P-CYB-07,Engineer / Contributor,20
+E1028,Eva Lindner,P-CYB-05,Tech Lead,60
+E1028,Eva Lindner,P-CYB-01,Engineer / Contributor,40
+E1029,Mohammed Siddiqui,P-CYB-01,Engineer / Contributor,80
+E1029,Mohammed Siddiqui,P-CYB-07,Engineer / Contributor,20
+E1030,Christian Vogel,P-CYB-02,Tech Lead,70
+E1030,Christian Vogel,P-CYB-06,Engineer / Contributor,30
+E1031,Neha Sharma,P-CYB-02,Engineer / Contributor,70
+E1031,Neha Sharma,P-FIN-01,Engineer / Contributor,30
+E1032,Paul Richter,P-CYB-06,Tech Lead,70
+E1032,Paul Richter,P-CYB-02,Engineer / Contributor,30
+E1033,Sabine Hartmann,P-CYB-04,Tech Lead,80
+E1033,Sabine Hartmann,P-CYB-03,Engineer / Contributor,20
+E1034,Amit Joshi,P-CYB-04,Engineer / Contributor,70
+E1034,Amit Joshi,P-CYB-03,Engineer / Contributor,30
+E1024,Claudia Lang,P-CYB-01,Business Owner,20
+E1024,Claudia Lang,P-CYB-02,Business Owner,20
+E1024,Claudia Lang,P-CYB-03,Business Owner,15
+E1024,Claudia Lang,P-CYB-05,Business Owner,15
+E1024,Claudia Lang,P-CYB-07,Business Owner,15
+E1025,Robert Kline,P-CYB-04,Business Owner,40
+E1025,Robert Kline,P-CYB-06,Business Owner,40
+E1025,Robert Kline,P-DTFS-05,Business Stakeholder,20
+E1035,Tobias Engel,P-CYB-03,Tech Lead,70
+E1035,Tobias Engel,P-SAL-04,Engineer / Contributor,30
+E1036,Lakshmi Narayan,P-CYB-03,Engineer / Contributor,60
+E1036,Lakshmi Narayan,P-CYB-04,Engineer / Contributor,40
+E1037,Marco Brandt,P-CYB-07,Tech Lead,70
+E1037,Marco Brandt,P-CYB-01,Engineer / Contributor,30
+E1038,Ishita Banerjee,P-CYB-07,Engineer / Contributor,60
+E1038,Ishita Banerjee,P-CYB-01,Engineer / Contributor,40
+E1001,Markus Bauer,P-CYB-01,Platform Support,20
+E1001,Markus Bauer,P-DTFS-01,Platform Support,20
+E1001,Markus Bauer,P-PRO-01,Platform Support,20
+E1002,Priya Nair,P-PRO-01,Platform Support,20
+E1002,Priya Nair,P-DTFS-01,Platform Support,20
+E1003,Tom Becker,P-CYB-01,Platform Support,30
+E1003,Tom Becker,P-CYB-03,Platform Support,20
+E1004,Daniel Hoffmann,P-PRO-01,Platform Support,25
+E1004,Daniel Hoffmann,P-DTFS-01,Platform Support,25
+E1004,Daniel Hoffmann,P-DTFS-03,Platform Support,20
+E1004,Daniel Hoffmann,P-DTFS-04,Platform Support,20
+E1004,Daniel Hoffmann,P-DTFS-06,Platform Support,10
+E1005,Sneha Kulkarni,P-PRO-01,Platform Support,40
+E1005,Sneha Kulkarni,P-DTFS-03,Platform Support,30
+E1005,Sneha Kulkarni,P-DTFS-04,Platform Support,30
+E1006,Felix Wagner,P-DTFS-01,Platform Support,50
+E1006,Felix Wagner,P-DTFS-06,Platform Support,50
+E1007,Karthik Subramanian,P-FIN-05,Platform Support,40
+E1007,Karthik Subramanian,P-CYB-05,Platform Support,40
+E1008,Julia Neumann,P-FIN-05,Platform Support,30
+E1008,Julia Neumann,P-CYB-05,Platform Support,30
+E1009,Michael Carter,P-SAL-01,Platform Support,30
+E1009,Michael Carter,P-SAL-03,Platform Support,20
+E1009,Michael Carter,P-SAL-04,Platform Support,20
+E1010,Aisha Khan,P-SAL-03,Platform Support,40
+E1010,Aisha Khan,P-SAL-04,Platform Support,40
+E1011,Lukas Schmid,P-SAL-01,Platform Support,50
+E1011,Lukas Schmid,P-CYB-03,Platform Support,20
+E1012,Ravi Menon,P-FIN-01,Platform Support,50
+E1012,Ravi Menon,P-PRO-03,Platform Support,30
+E1012,Ravi Menon,P-SAL-06,Platform Support,20
+E1013,Stefan Kraus,P-FIN-01,Platform Support,40
+E1013,Stefan Kraus,P-FIN-03,Platform Support,20
+E1013,Stefan Kraus,P-FIN-04,Platform Support,20
+E1013,Stefan Kraus,P-SAL-06,Platform Support,20
+E1014,Anita Deshmukh,P-FIN-01,Platform Support,60
+E1014,Anita Deshmukh,P-FIN-03,Platform Support,20
+E1014,Anita Deshmukh,P-FIN-06,Platform Support,20
+E1015,Meera Iyer,P-FIN-02,Platform Support,50
+E1015,Meera Iyer,P-PRO-04,Platform Support,30
+E1015,Meera Iyer,P-DTFS-05,Platform Support,20
+E1016,Jonas Keller,P-FIN-02,Platform Support,60
+E1016,Jonas Keller,P-DTFS-05,Platform Support,20
+E1016,Jonas Keller,P-PRO-04,Platform Support,20
+E1017,Vikram Rao,P-SAL-06,Tech Lead,40
+E1017,Vikram Rao,P-FIN-04,Platform Support,30
+E1017,Vikram Rao,P-PRO-02,Platform Support,30
+E1018,Katharina Roth,P-FIN-06,Platform Support,40
+E1018,Katharina Roth,P-PRO-02,Platform Support,30
+E1018,Katharina Roth,P-HR-01,Platform Support,30
+E1019,Sarah Mitchell,P-FIN-05,Platform Support,20
+E1019,Sarah Mitchell,P-SAL-02,Platform Support,30
+E1019,Sarah Mitchell,P-DTFS-05,Platform Support,30
+E1019,Sarah Mitchell,P-PRO-04,Platform Support,20
+E1020,Arjun Patel,P-FIN-05,Platform Support,40
+E1020,Arjun Patel,P-PRO-04,Platform Support,30
+E1020,Arjun Patel,P-SAL-05,Platform Support,30
+E1021,Nils Fischer,P-DTFS-02,Platform Support,30
+E1021,Nils Fischer,P-CYB-05,Platform Support,30
+E1021,Nils Fischer,P-SAL-04,Platform Support,20
+E1021,Nils Fischer,P-PRO-05,Platform Support,20
+E1022,Divya Reddy,P-DTFS-02,Platform Support,40
+E1022,Divya Reddy,P-SAL-05,Platform Support,30
+E1022,Divya Reddy,P-PRO-05,Platform Support,30
+E1023,Oliver Grant,P-SAL-04,Platform Support,40
+E1023,Oliver Grant,P-SAL-02,Platform Support,30
+E1023,Oliver Grant,P-CYB-05,Platform Support,30
+E1039,Lena Fischer,P-FIN-01,Business Owner,50
+E1039,Lena Fischer,P-FIN-02,Business Owner,30
+E1039,Lena Fischer,P-FIN-03,Business Stakeholder,20
+E1040,Thomas Albrecht,P-FIN-03,Business Owner,50
+E1040,Thomas Albrecht,P-FIN-05,Business Owner,30
+E1040,Thomas Albrecht,P-FIN-02,Business Stakeholder,20
+E1041,Elena Petrova,P-FIN-06,Business Owner,60
+E1041,Elena Petrova,P-FIN-01,Business Stakeholder,40
+E1042,Sandra Koehler,P-FIN-01,Tech Lead,60
+E1042,Sandra Koehler,P-FIN-03,Engineer / Contributor,20
+E1042,Sandra Koehler,P-DTFS-03,Engineer / Contributor,20
+E1043,Deepak Malhotra,P-FIN-03,Tech Lead,70
+E1043,Deepak Malhotra,P-FIN-01,Engineer / Contributor,30
+E1044,Pooja Bhatt,P-FIN-06,Tech Lead,60
+E1044,Pooja Bhatt,P-FIN-01,Engineer / Contributor,40
+E1045,Martin Seidel,P-FIN-04,Business Owner,70
+E1045,Martin Seidel,P-FIN-01,Business Stakeholder,30
+E1046,Nadine Wolf,P-FIN-04,Business Stakeholder,80
+E1046,Nadine Wolf,P-FIN-01,Business Stakeholder,20
+E1047,Karan Mehta,P-FIN-04,Tech Lead,70
+E1047,Karan Mehta,P-FIN-06,Business Stakeholder,30
+E1048,Leonie Haas,P-FIN-02,Tech Lead,70
+E1048,Leonie Haas,P-FIN-05,Engineer / Contributor,30
+E1049,Suresh Kumar,P-FIN-05,Tech Lead,60
+E1049,Suresh Kumar,P-FIN-02,Engineer / Contributor,40
+E1050,Andreas Schneider,P-PRO-01,Business Owner,40
+E1050,Andreas Schneider,P-PRO-03,Business Owner,40
+E1050,Andreas Schneider,P-PRO-02,Business Stakeholder,20
+E1051,Maria Gonzalez,P-PRO-02,Business Owner,60
+E1051,Maria Gonzalez,P-PRO-05,Business Owner,40
+E1052,Kevin O'Brien,P-PRO-04,Business Owner,60
+E1052,Kevin O'Brien,P-PRO-02,Business Stakeholder,40
+E1053,Jan Dietrich,P-PRO-01,Engineer / Contributor,60
+E1053,Jan Dietrich,P-PRO-03,Engineer / Contributor,40
+E1054,Anjali Kapoor,P-PRO-01,Tech Lead,70
+E1054,Anjali Kapoor,P-PRO-03,Engineer / Contributor,30
+E1055,Benedikt Maier,P-PRO-02,Tech Lead,70
+E1055,Benedikt Maier,P-PRO-01,Engineer / Contributor,30
+E1056,Sunil Gupta,P-PRO-03,Tech Lead,80
+E1056,Sunil Gupta,P-PRO-01,Engineer / Contributor,20
+E1057,Clara Jung,P-PRO-04,Tech Lead,80
+E1057,Clara Jung,P-PRO-05,Engineer / Contributor,20
+E1058,Rohan Das,P-PRO-05,Tech Lead,70
+E1058,Rohan Das,P-PRO-04,Engineer / Contributor,30
+E1059,Stephanie Krueger,P-DTFS-03,Business Owner,40
+E1059,Stephanie Krueger,P-DTFS-05,Business Owner,40
+E1059,Stephanie Krueger,P-DTFS-01,Business Stakeholder,20
+E1060,James Whitfield,P-DTFS-02,Business Owner,40
+E1060,James Whitfield,P-DTFS-06,Business Owner,40
+E1060,James Whitfield,P-DTFS-01,Business Stakeholder,20
+E1061,Isabelle Moreau,P-DTFS-01,Business Owner,70
+E1061,Isabelle Moreau,P-DTFS-06,Business Stakeholder,30
+E1062,Alexander Beck,P-DTFS-01,Tech Lead,60
+E1062,Alexander Beck,P-DTFS-06,Engineer / Contributor,20
+E1062,Alexander Beck,P-DTFS-03,Engineer / Contributor,20
+E1063,Ananya Krishnan,P-DTFS-03,Tech Lead,60
+E1063,Ananya Krishnan,P-DTFS-01,Engineer / Contributor,40
+E1064,Matthias Ernst,P-DTFS-01,Engineer / Contributor,50
+E1064,Matthias Ernst,P-DTFS-03,Engineer / Contributor,30
+E1064,Matthias Ernst,P-DTFS-04,Engineer / Contributor,20
+E1065,Rajesh Pillai,P-DTFS-06,Tech Lead,70
+E1065,Rajesh Pillai,P-DTFS-01,Engineer / Contributor,30
+E1066,Sophie Lenz,P-DTFS-02,Engineer / Contributor,50
+E1066,Sophie Lenz,P-DTFS-05,Engineer / Contributor,30
+E1066,Sophie Lenz,P-PRO-05,Engineer / Contributor,20
+E1067,Vivek Choudhary,P-DTFS-02,Tech Lead,70
+E1067,Vivek Choudhary,P-SAL-05,Engineer / Contributor,30
+E1068,Emily Rhodes,P-DTFS-05,Tech Lead,60
+E1068,Emily Rhodes,P-DTFS-02,Engineer / Contributor,40
+E1069,Ulrike Baumann,P-DTFS-04,Business Owner,70
+E1069,Ulrike Baumann,P-DTFS-03,Business Stakeholder,30
+E1070,Carlos Mendes,P-DTFS-04,Tech Lead,80
+E1070,Carlos Mendes,P-DTFS-03,Business Stakeholder,20
+E1071,Frank Dietz,P-SAL-02,Business Owner,30
+E1071,Frank Dietz,P-SAL-05,Business Owner,30
+E1071,Frank Dietz,P-SAL-06,Business Owner,40
+E1072,Laura Bennett,P-SAL-01,Business Owner,60
+E1072,Laura Bennett,P-SAL-03,Business Stakeholder,20
+E1072,Laura Bennett,P-DTFS-06,Business Stakeholder,20
+E1073,Sandeep Bhatia,P-SAL-01,Business Stakeholder,50
+E1073,Sandeep Bhatia,P-SAL-02,Business Stakeholder,30
+E1074,Gerhard Lutz,P-SAL-03,Business Owner,50
+E1074,Gerhard Lutz,P-SAL-04,Business Owner,50
+E1075,Monika Peters,P-SAL-03,Business Stakeholder,70
+E1075,Monika Peters,P-SAL-04,Business Stakeholder,30
+E1076,Tanvir Ahmed,P-SAL-03,Tech Lead,80
+E1076,Tanvir Ahmed,P-SAL-01,Business Stakeholder,20
+E1077,Patrick Sommer,P-SAL-01,Tech Lead,70
+E1077,Patrick Sommer,P-SAL-06,Engineer / Contributor,30
+E1078,Ritu Agarwal,P-SAL-01,Engineer / Contributor,60
+E1078,Ritu Agarwal,P-SAL-03,Engineer / Contributor,40
+E1079,Henrik Larsen,P-SAL-04,Tech Lead,70
+E1079,Henrik Larsen,P-SAL-01,Engineer / Contributor,30
+E1080,Nicole Frank,P-SAL-02,Tech Lead,50
+E1080,Nicole Frank,P-SAL-05,Engineer / Contributor,50
+E1081,Aditya Bansal,P-SAL-02,Engineer / Contributor,60
+E1081,Aditya Bansal,P-SAL-04,Engineer / Contributor,40
+E1082,Grace Thompson,P-SAL-05,Tech Lead,70
+E1082,Grace Thompson,P-SAL-02,Engineer / Contributor,30
+E1083,Birgit Sauer,P-HR-01,Business Owner,50
+E1083,Birgit Sauer,P-CYB-02,Business Stakeholder,20
+E1084,Simone Arnold,P-HR-01,Business Stakeholder,60
+E1084,Simone Arnold,P-CYB-02,Business Stakeholder,20
+E1085,Christoph Reiter,P-HR-01,Tech Lead,70
+E1085,Christoph Reiter,P-CYB-02,Engineer / Contributor,30
+E1086,Pallavi Shetty,P-HR-01,Engineer / Contributor,80
+E1086,Pallavi Shetty,P-FIN-01,Engineer / Contributor,20

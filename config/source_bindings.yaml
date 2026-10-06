@@ -1,0 +1,25 @@
+sources:
+  jira:
+    type: real
+    base_url: https://company-brain.atlassian.net
+    auth: api_token
+  confluence:
+    type: real
+    base_url: https://company-brain.atlassian.net/wiki
+    auth: api_token
+  github:
+    type: real
+    base_url: https://api.github.com
+    auth: token
+  leanix:
+    type: mock
+    data_dir: mock_sources/leanix
+  sharepoint:
+    type: mock
+    data_dir: mock_sources/sharepoint
+  teams:
+    type: mock
+    data_dir: mock_sources/teams
+  servicenow:
+    type: mock
+    data_dir: mock_sources/servicenow
