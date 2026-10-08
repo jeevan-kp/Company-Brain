@@ -1,0 +1,3683 @@
+[
+  {
+    "project_id": "P-CYB-01",
+    "cis": [
+      {
+        "id": "CI-APP-CYB-01",
+        "project_id": "P-CYB-01",
+        "name": "Security Log Monitoring (SIEM) Production Application Service",
+        "ci_class": "Business Application",
+        "environment": "Production",
+        "status": "Operational",
+        "support_tier": "Tier-1"
+      }
+    ],
+    "incidents": [
+      {
+        "id": "INC-CYB-01-0001",
+        "project_id": "P-CYB-01",
+        "ci_id": "CI-APP-CYB-01",
+        "priority": "P1",
+        "state": "Resolved",
+        "short_description": "P1 - Temporary database connection pool exhaustion during peak ingestion on Security Log Monitoring (SIEM)",
+        "root_cause": "PostgreSQL connection threshold reached due to burst of batch requests.",
+        "resolution_notes": "Increased max connection limit in PgBouncer pool and enabled query caching.",
+        "opened_at": "2026-07-14T03:22:00Z",
+        "resolved_at": "2026-07-14T05:10:00Z",
+        "assigned_to_person_id": "E1026"
+      },
+      {
+        "id": "INC-CYB-01-0002",
+        "project_id": "P-CYB-01",
+        "ci_id": "CI-APP-CYB-01",
+        "priority": "P2",
+        "state": "Resolved",
+        "short_description": "P2 - Temporary database connection pool exhaustion during peak ingestion on Security Log Monitoring (SIEM)",
+        "root_cause": "PostgreSQL connection threshold reached due to burst of batch requests.",
+        "resolution_notes": "Increased max connection limit in PgBouncer pool and enabled query caching.",
+        "opened_at": "2026-07-14T03:22:00Z",
+        "resolved_at": "2026-07-14T05:10:00Z",
+        "assigned_to_person_id": "E1026"
+      },
+      {
+        "id": "INC-CYB-01-0003",
+        "project_id": "P-CYB-01",
+        "ci_id": "CI-APP-CYB-01",
+        "priority": "P3",
+        "state": "Resolved",
+        "short_description": "P3 - Temporary database connection pool exhaustion during peak ingestion on Security Log Monitoring (SIEM)",
+        "root_cause": "PostgreSQL connection threshold reached due to burst of batch requests.",
+        "resolution_notes": "Increased max connection limit in PgBouncer pool and enabled query caching.",
+        "opened_at": "2026-07-14T03:22:00Z",
+        "resolved_at": "2026-07-14T05:10:00Z",
+        "assigned_to_person_id": "E1026"
+      },
+      {
+        "id": "INC-CYB-01-0004",
+        "project_id": "P-CYB-01",
+        "ci_id": "CI-APP-CYB-01",
+        "priority": "P3",
+        "state": "Resolved",
+        "short_description": "P3 - Temporary database connection pool exhaustion during peak ingestion on Security Log Monitoring (SIEM)",
+        "root_cause": "PostgreSQL connection threshold reached due to burst of batch requests.",
+        "resolution_notes": "Increased max connection limit in PgBouncer pool and enabled query caching.",
+        "opened_at": "2026-07-14T03:22:00Z",
+        "resolved_at": "2026-07-14T05:10:00Z",
+        "assigned_to_person_id": "E1026"
+      },
+      {
+        "id": "INC-CYB-01-0005",
+        "project_id": "P-CYB-01",
+        "ci_id": "CI-APP-CYB-01",
+        "priority": "P3",
+        "state": "Resolved",
+        "short_description": "P3 - Temporary database connection pool exhaustion during peak ingestion on Security Log Monitoring (SIEM)",
+        "root_cause": "PostgreSQL connection threshold reached due to burst of batch requests.",
+        "resolution_notes": "Increased max connection limit in PgBouncer pool and enabled query caching.",
+        "opened_at": "2026-07-14T03:22:00Z",
+        "resolved_at": "2026-07-14T05:10:00Z",
+        "assigned_to_person_id": "E1026"
+      },
+      {
+        "id": "INC-CYB-01-0006",
+        "project_id": "P-CYB-01",
+        "ci_id": "CI-APP-CYB-01",
+        "priority": "P3",
+        "state": "Resolved",
+        "short_description": "P3 - Temporary database connection pool exhaustion during peak ingestion on Security Log Monitoring (SIEM)",
+        "root_cause": "PostgreSQL connection threshold reached due to burst of batch requests.",
+        "resolution_notes": "Increased max connection limit in PgBouncer pool and enabled query caching.",
+        "opened_at": "2026-07-14T03:22:00Z",
+        "resolved_at": "2026-07-14T05:10:00Z",
+        "assigned_to_person_id": "E1026"
+      },
+      {
+        "id": "INC-CYB-01-0007",
+        "project_id": "P-CYB-01",
+        "ci_id": "CI-APP-CYB-01",
+        "priority": "P3",
+        "state": "Resolved",
+        "short_description": "P3 - Temporary database connection pool exhaustion during peak ingestion on Security Log Monitoring (SIEM)",
+        "root_cause": "PostgreSQL connection threshold reached due to burst of batch requests.",
+        "resolution_notes": "Increased max connection limit in PgBouncer pool and enabled query caching.",
+        "opened_at": "2026-07-14T03:22:00Z",
+        "resolved_at": "2026-07-14T05:10:00Z",
+        "assigned_to_person_id": "E1026"
+      },
+      {
+        "id": "INC-CYB-01-0008",
+        "project_id": "P-CYB-01",
+        "ci_id": "CI-APP-CYB-01",
+        "priority": "P3",
+        "state": "Resolved",
+        "short_description": "P3 - Temporary database connection pool exhaustion during peak ingestion on Security Log Monitoring (SIEM)",
+        "root_cause": "PostgreSQL connection threshold reached due to burst of batch requests.",
+        "resolution_notes": "Increased max connection limit in PgBouncer pool and enabled query caching.",
+        "opened_at": "2026-07-14T03:22:00Z",
+        "resolved_at": "2026-07-14T05:10:00Z",
+        "assigned_to_person_id": "E1026"
+      },
+      {
+        "id": "INC-CYB-01-0009",
+        "project_id": "P-CYB-01",
+        "ci_id": "CI-APP-CYB-01",
+        "priority": "P3",
+        "state": "Resolved",
+        "short_description": "P3 - Temporary database connection pool exhaustion during peak ingestion on Security Log Monitoring (SIEM)",
+        "root_cause": "PostgreSQL connection threshold reached due to burst of batch requests.",
+        "resolution_notes": "Increased max connection limit in PgBouncer pool and enabled query caching.",
+        "opened_at": "2026-07-14T03:22:00Z",
+        "resolved_at": "2026-07-14T05:10:00Z",
+        "assigned_to_person_id": "E1026"
+      },
+      {
+        "id": "INC-CYB-01-0010",
+        "project_id": "P-CYB-01",
+        "ci_id": "CI-APP-CYB-01",
+        "priority": "P3",
+        "state": "Resolved",
+        "short_description": "P3 - Temporary database connection pool exhaustion during peak ingestion on Security Log Monitoring (SIEM)",
+        "root_cause": "PostgreSQL connection threshold reached due to burst of batch requests.",
+        "resolution_notes": "Increased max connection limit in PgBouncer pool and enabled query caching.",
+        "opened_at": "2026-07-14T03:22:00Z",
+        "resolved_at": "2026-07-14T05:10:00Z",
+        "assigned_to_person_id": "E1026"
+      },
+      {
+        "id": "INC-CYB-01-0011",
+        "project_id": "P-CYB-01",
+        "ci_id": "CI-APP-CYB-01",
+        "priority": "P3",
+        "state": "Resolved",
+        "short_description": "P3 - Temporary database connection pool exhaustion during peak ingestion on Security Log Monitoring (SIEM)",
+        "root_cause": "PostgreSQL connection threshold reached due to burst of batch requests.",
+        "resolution_notes": "Increased max connection limit in PgBouncer pool and enabled query caching.",
+        "opened_at": "2026-07-14T03:22:00Z",
+        "resolved_at": "2026-07-14T05:10:00Z",
+        "assigned_to_person_id": "E1026"
+      },
+      {
+        "id": "INC-CYB-01-0012",
+        "project_id": "P-CYB-01",
+        "ci_id": "CI-APP-CYB-01",
+        "priority": "P3",
+        "state": "Resolved",
+        "short_description": "P3 - Temporary database connection pool exhaustion during peak ingestion on Security Log Monitoring (SIEM)",
+        "root_cause": "PostgreSQL connection threshold reached due to burst of batch requests.",
+        "resolution_notes": "Increased max connection limit in PgBouncer pool and enabled query caching.",
+        "opened_at": "2026-07-14T03:22:00Z",
+        "resolved_at": "2026-07-14T05:10:00Z",
+        "assigned_to_person_id": "E1026"
+      }
+    ],
+    "changes": [
+      {
+        "id": "CHG-CYB-01-0101",
+        "project_id": "P-CYB-01",
+        "ci_id": "CI-APP-CYB-01",
+        "type": "Normal",
+        "risk": "Moderate",
+        "state": "Closed",
+        "cab_approved": true,
+        "title": "Quarterly Kernel & PostgreSQL Minor Version Maintenance Upgrade",
+        "description": "Apply scheduled security updates and patch CVE vulnerabilities.",
+        "implementation_plan": "Execute rolling upgrade on Kubernetes nodes with automated health check validation.",
+        "backout_plan": "Revert AKS node pool image to prior baseline snapshot.",
+        "requested_by_person_id": "E1026"
+      }
+    ],
+    "kb_articles": [
+      {
+        "id": "KB-CYB-01-01",
+        "project_id": "P-CYB-01",
+        "ci_id": "CI-APP-CYB-01",
+        "title": "SOP: Triage & Resolution of Ingestion Desynchronization on Security Log Monitoring (SIEM)",
+        "category": "Troubleshooting",
+        "article_body": "When downstream systems report missing records for Security Log Monitoring (SIEM), verify Kafka offset status in Azure Event Hubs and trigger a replay from the high-watermark.",
+        "author_person_id": "E1026"
+      }
+    ],
+    "readiness": {
+      "project_id": "P-CYB-01",
+      "monitoring_enabled": true,
+      "alerting_configured": true,
+      "backup_configured": true,
+      "last_dr_test_date": "2026-04-12",
+      "on_call_rota_active": true,
+      "runbook_exists": true,
+      "runbook_url": "https://autonova.sharepoint.com/sites/P-CYB-01/Runbooks",
+      "health_score": 96
+    }
+  },
+  {
+    "project_id": "P-CYB-02",
+    "cis": [
+      {
+        "id": "CI-APP-CYB-02",
+        "project_id": "P-CYB-02",
+        "name": "Identity & Access Governance Production Application Service",
+        "ci_class": "Business Application",
+        "environment": "Production",
+        "status": "Operational",
+        "support_tier": "Tier-1"
+      }
+    ],
+    "incidents": [
+      {
+        "id": "INC-CYB-02-0001",
+        "project_id": "P-CYB-02",
+        "ci_id": "CI-APP-CYB-02",
+        "priority": "P1",
+        "state": "Resolved",
+        "short_description": "P1 - Temporary database connection pool exhaustion during peak ingestion on Identity & Access Governance",
+        "root_cause": "PostgreSQL connection threshold reached due to burst of batch requests.",
+        "resolution_notes": "Increased max connection limit in PgBouncer pool and enabled query caching.",
+        "opened_at": "2026-07-14T03:22:00Z",
+        "resolved_at": "2026-07-14T05:10:00Z",
+        "assigned_to_person_id": "E1030"
+      },
+      {
+        "id": "INC-CYB-02-0002",
+        "project_id": "P-CYB-02",
+        "ci_id": "CI-APP-CYB-02",
+        "priority": "P2",
+        "state": "Resolved",
+        "short_description": "P2 - Temporary database connection pool exhaustion during peak ingestion on Identity & Access Governance",
+        "root_cause": "PostgreSQL connection threshold reached due to burst of batch requests.",
+        "resolution_notes": "Increased max connection limit in PgBouncer pool and enabled query caching.",
+        "opened_at": "2026-07-14T03:22:00Z",
+        "resolved_at": "2026-07-14T05:10:00Z",
+        "assigned_to_person_id": "E1030"
+      },
+      {
+        "id": "INC-CYB-02-0003",
+        "project_id": "P-CYB-02",
+        "ci_id": "CI-APP-CYB-02",
+        "priority": "P3",
+        "state": "Resolved",
+        "short_description": "P3 - Temporary database connection pool exhaustion during peak ingestion on Identity & Access Governance",
+        "root_cause": "PostgreSQL connection threshold reached due to burst of batch requests.",
+        "resolution_notes": "Increased max connection limit in PgBouncer pool and enabled query caching.",
+        "opened_at": "2026-07-14T03:22:00Z",
+        "resolved_at": "2026-07-14T05:10:00Z",
+        "assigned_to_person_id": "E1030"
+      },
+      {
+        "id": "INC-CYB-02-0004",
+        "project_id": "P-CYB-02",
+        "ci_id": "CI-APP-CYB-02",
+        "priority": "P3",
+        "state": "Resolved",
+        "short_description": "P3 - Temporary database connection pool exhaustion during peak ingestion on Identity & Access Governance",
+        "root_cause": "PostgreSQL connection threshold reached due to burst of batch requests.",
+        "resolution_notes": "Increased max connection limit in PgBouncer pool and enabled query caching.",
+        "opened_at": "2026-07-14T03:22:00Z",
+        "resolved_at": "2026-07-14T05:10:00Z",
+        "assigned_to_person_id": "E1030"
+      },
+      {
+        "id": "INC-CYB-02-0005",
+        "project_id": "P-CYB-02",
+        "ci_id": "CI-APP-CYB-02",
+        "priority": "P3",
+        "state": "Resolved",
+        "short_description": "P3 - Temporary database connection pool exhaustion during peak ingestion on Identity & Access Governance",
+        "root_cause": "PostgreSQL connection threshold reached due to burst of batch requests.",
+        "resolution_notes": "Increased max connection limit in PgBouncer pool and enabled query caching.",
+        "opened_at": "2026-07-14T03:22:00Z",
+        "resolved_at": "2026-07-14T05:10:00Z",
+        "assigned_to_person_id": "E1030"
+      },
+      {
+        "id": "INC-CYB-02-0006",
+        "project_id": "P-CYB-02",
+        "ci_id": "CI-APP-CYB-02",
+        "priority": "P3",
+        "state": "Resolved",
+        "short_description": "P3 - Temporary database connection pool exhaustion during peak ingestion on Identity & Access Governance",
+        "root_cause": "PostgreSQL connection threshold reached due to burst of batch requests.",
+        "resolution_notes": "Increased max connection limit in PgBouncer pool and enabled query caching.",
+        "opened_at": "2026-07-14T03:22:00Z",
+        "resolved_at": "2026-07-14T05:10:00Z",
+        "assigned_to_person_id": "E1030"
+      },
+      {
+        "id": "INC-CYB-02-0007",
+        "project_id": "P-CYB-02",
+        "ci_id": "CI-APP-CYB-02",
+        "priority": "P3",
+        "state": "Resolved",
+        "short_description": "P3 - Temporary database connection pool exhaustion during peak ingestion on Identity & Access Governance",
+        "root_cause": "PostgreSQL connection threshold reached due to burst of batch requests.",
+        "resolution_notes": "Increased max connection limit in PgBouncer pool and enabled query caching.",
+        "opened_at": "2026-07-14T03:22:00Z",
+        "resolved_at": "2026-07-14T05:10:00Z",
+        "assigned_to_person_id": "E1030"
+      },
+      {
+        "id": "INC-CYB-02-0008",
+        "project_id": "P-CYB-02",
+        "ci_id": "CI-APP-CYB-02",
+        "priority": "P3",
+        "state": "Resolved",
+        "short_description": "P3 - Temporary database connection pool exhaustion during peak ingestion on Identity & Access Governance",
+        "root_cause": "PostgreSQL connection threshold reached due to burst of batch requests.",
+        "resolution_notes": "Increased max connection limit in PgBouncer pool and enabled query caching.",
+        "opened_at": "2026-07-14T03:22:00Z",
+        "resolved_at": "2026-07-14T05:10:00Z",
+        "assigned_to_person_id": "E1030"
+      },
+      {
+        "id": "INC-CYB-02-0009",
+        "project_id": "P-CYB-02",
+        "ci_id": "CI-APP-CYB-02",
+        "priority": "P3",
+        "state": "Resolved",
+        "short_description": "P3 - Temporary database connection pool exhaustion during peak ingestion on Identity & Access Governance",
+        "root_cause": "PostgreSQL connection threshold reached due to burst of batch requests.",
+        "resolution_notes": "Increased max connection limit in PgBouncer pool and enabled query caching.",
+        "opened_at": "2026-07-14T03:22:00Z",
+        "resolved_at": "2026-07-14T05:10:00Z",
+        "assigned_to_person_id": "E1030"
+      },
+      {
+        "id": "INC-CYB-02-0010",
+        "project_id": "P-CYB-02",
+        "ci_id": "CI-APP-CYB-02",
+        "priority": "P3",
+        "state": "Resolved",
+        "short_description": "P3 - Temporary database connection pool exhaustion during peak ingestion on Identity & Access Governance",
+        "root_cause": "PostgreSQL connection threshold reached due to burst of batch requests.",
+        "resolution_notes": "Increased max connection limit in PgBouncer pool and enabled query caching.",
+        "opened_at": "2026-07-14T03:22:00Z",
+        "resolved_at": "2026-07-14T05:10:00Z",
+        "assigned_to_person_id": "E1030"
+      },
+      {
+        "id": "INC-CYB-02-0011",
+        "project_id": "P-CYB-02",
+        "ci_id": "CI-APP-CYB-02",
+        "priority": "P3",
+        "state": "Resolved",
+        "short_description": "P3 - Temporary database connection pool exhaustion during peak ingestion on Identity & Access Governance",
+        "root_cause": "PostgreSQL connection threshold reached due to burst of batch requests.",
+        "resolution_notes": "Increased max connection limit in PgBouncer pool and enabled query caching.",
+        "opened_at": "2026-07-14T03:22:00Z",
+        "resolved_at": "2026-07-14T05:10:00Z",
+        "assigned_to_person_id": "E1030"
+      },
+      {
+        "id": "INC-CYB-02-0012",
+        "project_id": "P-CYB-02",
+        "ci_id": "CI-APP-CYB-02",
+        "priority": "P3",
+        "state": "Resolved",
+        "short_description": "P3 - Temporary database connection pool exhaustion during peak ingestion on Identity & Access Governance",
+        "root_cause": "PostgreSQL connection threshold reached due to burst of batch requests.",
+        "resolution_notes": "Increased max connection limit in PgBouncer pool and enabled query caching.",
+        "opened_at": "2026-07-14T03:22:00Z",
+        "resolved_at": "2026-07-14T05:10:00Z",
+        "assigned_to_person_id": "E1030"
+      }
+    ],
+    "changes": [
+      {
+        "id": "CHG-CYB-02-0101",
+        "project_id": "P-CYB-02",
+        "ci_id": "CI-APP-CYB-02",
+        "type": "Normal",
+        "risk": "Moderate",
+        "state": "Closed",
+        "cab_approved": true,
+        "title": "Quarterly Kernel & PostgreSQL Minor Version Maintenance Upgrade",
+        "description": "Apply scheduled security updates and patch CVE vulnerabilities.",
+        "implementation_plan": "Execute rolling upgrade on Kubernetes nodes with automated health check validation.",
+        "backout_plan": "Revert AKS node pool image to prior baseline snapshot.",
+        "requested_by_person_id": "E1030"
+      }
+    ],
+    "kb_articles": [
+      {
+        "id": "KB-CYB-02-01",
+        "project_id": "P-CYB-02",
+        "ci_id": "CI-APP-CYB-02",
+        "title": "SOP: Triage & Resolution of Ingestion Desynchronization on Identity & Access Governance",
+        "category": "Troubleshooting",
+        "article_body": "When downstream systems report missing records for Identity & Access Governance, verify Kafka offset status in Azure Event Hubs and trigger a replay from the high-watermark.",
+        "author_person_id": "E1030"
+      }
+    ],
+    "readiness": {
+      "project_id": "P-CYB-02",
+      "monitoring_enabled": true,
+      "alerting_configured": true,
+      "backup_configured": true,
+      "last_dr_test_date": "2024-03-10",
+      "on_call_rota_active": true,
+      "runbook_exists": true,
+      "runbook_url": "https://autonova.sharepoint.com/sites/P-CYB-02/Runbooks",
+      "health_score": 72
+    }
+  },
+  {
+    "project_id": "P-CYB-03",
+    "cis": [
+      {
+        "id": "CI-APP-CYB-03",
+        "project_id": "P-CYB-03",
+        "name": "Cloud Security Posture Management Production Application Service",
+        "ci_class": "Business Application",
+        "environment": "Production",
+        "status": "Operational",
+        "support_tier": "Tier-2"
+      }
+    ],
+    "incidents": [
+      {
+        "id": "INC-CYB-03-0001",
+        "project_id": "P-CYB-03",
+        "ci_id": "CI-APP-CYB-03",
+        "priority": "P1",
+        "state": "Resolved",
+        "short_description": "P1 - Temporary database connection pool exhaustion during peak ingestion on Cloud Security Posture Management",
+        "root_cause": "PostgreSQL connection threshold reached due to burst of batch requests.",
+        "resolution_notes": "Increased max connection limit in PgBouncer pool and enabled query caching.",
+        "opened_at": "2026-07-14T03:22:00Z",
+        "resolved_at": "2026-07-14T05:10:00Z",
+        "assigned_to_person_id": "E1035"
+      },
+      {
+        "id": "INC-CYB-03-0002",
+        "project_id": "P-CYB-03",
+        "ci_id": "CI-APP-CYB-03",
+        "priority": "P2",
+        "state": "Resolved",
+        "short_description": "P2 - Temporary database connection pool exhaustion during peak ingestion on Cloud Security Posture Management",
+        "root_cause": "PostgreSQL connection threshold reached due to burst of batch requests.",
+        "resolution_notes": "Increased max connection limit in PgBouncer pool and enabled query caching.",
+        "opened_at": "2026-07-14T03:22:00Z",
+        "resolved_at": "2026-07-14T05:10:00Z",
+        "assigned_to_person_id": "E1035"
+      },
+      {
+        "id": "INC-CYB-03-0003",
+        "project_id": "P-CYB-03",
+        "ci_id": "CI-APP-CYB-03",
+        "priority": "P3",
+        "state": "Resolved",
+        "short_description": "P3 - Temporary database connection pool exhaustion during peak ingestion on Cloud Security Posture Management",
+        "root_cause": "PostgreSQL connection threshold reached due to burst of batch requests.",
+        "resolution_notes": "Increased max connection limit in PgBouncer pool and enabled query caching.",
+        "opened_at": "2026-07-14T03:22:00Z",
+        "resolved_at": "2026-07-14T05:10:00Z",
+        "assigned_to_person_id": "E1035"
+      },
+      {
+        "id": "INC-CYB-03-0004",
+        "project_id": "P-CYB-03",
+        "ci_id": "CI-APP-CYB-03",
+        "priority": "P3",
+        "state": "Resolved",
+        "short_description": "P3 - Temporary database connection pool exhaustion during peak ingestion on Cloud Security Posture Management",
+        "root_cause": "PostgreSQL connection threshold reached due to burst of batch requests.",
+        "resolution_notes": "Increased max connection limit in PgBouncer pool and enabled query caching.",
+        "opened_at": "2026-07-14T03:22:00Z",
+        "resolved_at": "2026-07-14T05:10:00Z",
+        "assigned_to_person_id": "E1035"
+      },
+      {
+        "id": "INC-CYB-03-0005",
+        "project_id": "P-CYB-03",
+        "ci_id": "CI-APP-CYB-03",
+        "priority": "P3",
+        "state": "Resolved",
+        "short_description": "P3 - Temporary database connection pool exhaustion during peak ingestion on Cloud Security Posture Management",
+        "root_cause": "PostgreSQL connection threshold reached due to burst of batch requests.",
+        "resolution_notes": "Increased max connection limit in PgBouncer pool and enabled query caching.",
+        "opened_at": "2026-07-14T03:22:00Z",
+        "resolved_at": "2026-07-14T05:10:00Z",
+        "assigned_to_person_id": "E1035"
+      }
+    ],
+    "changes": [
+      {
+        "id": "CHG-CYB-03-0101",
+        "project_id": "P-CYB-03",
+        "ci_id": "CI-APP-CYB-03",
+        "type": "Normal",
+        "risk": "Moderate",
+        "state": "Closed",
+        "cab_approved": true,
+        "title": "Quarterly Kernel & PostgreSQL Minor Version Maintenance Upgrade",
+        "description": "Apply scheduled security updates and patch CVE vulnerabilities.",
+        "implementation_plan": "Execute rolling upgrade on Kubernetes nodes with automated health check validation.",
+        "backout_plan": "Revert AKS node pool image to prior baseline snapshot.",
+        "requested_by_person_id": "E1035"
+      }
+    ],
+    "kb_articles": [
+      {
+        "id": "KB-CYB-03-01",
+        "project_id": "P-CYB-03",
+        "ci_id": "CI-APP-CYB-03",
+        "title": "SOP: Triage & Resolution of Ingestion Desynchronization on Cloud Security Posture Management",
+        "category": "Troubleshooting",
+        "article_body": "When downstream systems report missing records for Cloud Security Posture Management, verify Kafka offset status in Azure Event Hubs and trigger a replay from the high-watermark.",
+        "author_person_id": "E1035"
+      }
+    ],
+    "readiness": {
+      "project_id": "P-CYB-03",
+      "monitoring_enabled": true,
+      "alerting_configured": true,
+      "backup_configured": true,
+      "last_dr_test_date": "2026-04-12",
+      "on_call_rota_active": true,
+      "runbook_exists": true,
+      "runbook_url": "https://autonova.sharepoint.com/sites/P-CYB-03/Runbooks",
+      "health_score": 96
+    }
+  },
+  {
+    "project_id": "P-CYB-04",
+    "cis": [
+      {
+        "id": "CI-APP-CYB-04",
+        "project_id": "P-CYB-04",
+        "name": "Vulnerability & Patch Management Production Application Service",
+        "ci_class": "Business Application",
+        "environment": "Production",
+        "status": "Operational",
+        "support_tier": "Tier-2"
+      }
+    ],
+    "incidents": [
+      {
+        "id": "INC-CYB-04-0001",
+        "project_id": "P-CYB-04",
+        "ci_id": "CI-APP-CYB-04",
+        "priority": "P1",
+        "state": "Resolved",
+        "short_description": "P1 - Temporary database connection pool exhaustion during peak ingestion on Vulnerability & Patch Management",
+        "root_cause": "PostgreSQL connection threshold reached due to burst of batch requests.",
+        "resolution_notes": "Increased max connection limit in PgBouncer pool and enabled query caching.",
+        "opened_at": "2026-07-14T03:22:00Z",
+        "resolved_at": "2026-07-14T05:10:00Z",
+        "assigned_to_person_id": "E1033"
+      },
+      {
+        "id": "INC-CYB-04-0002",
+        "project_id": "P-CYB-04",
+        "ci_id": "CI-APP-CYB-04",
+        "priority": "P2",
+        "state": "Resolved",
+        "short_description": "P2 - Temporary database connection pool exhaustion during peak ingestion on Vulnerability & Patch Management",
+        "root_cause": "PostgreSQL connection threshold reached due to burst of batch requests.",
+        "resolution_notes": "Increased max connection limit in PgBouncer pool and enabled query caching.",
+        "opened_at": "2026-07-14T03:22:00Z",
+        "resolved_at": "2026-07-14T05:10:00Z",
+        "assigned_to_person_id": "E1033"
+      },
+      {
+        "id": "INC-CYB-04-0003",
+        "project_id": "P-CYB-04",
+        "ci_id": "CI-APP-CYB-04",
+        "priority": "P3",
+        "state": "Resolved",
+        "short_description": "P3 - Temporary database connection pool exhaustion during peak ingestion on Vulnerability & Patch Management",
+        "root_cause": "PostgreSQL connection threshold reached due to burst of batch requests.",
+        "resolution_notes": "Increased max connection limit in PgBouncer pool and enabled query caching.",
+        "opened_at": "2026-07-14T03:22:00Z",
+        "resolved_at": "2026-07-14T05:10:00Z",
+        "assigned_to_person_id": "E1033"
+      },
+      {
+        "id": "INC-CYB-04-0004",
+        "project_id": "P-CYB-04",
+        "ci_id": "CI-APP-CYB-04",
+        "priority": "P3",
+        "state": "Resolved",
+        "short_description": "P3 - Temporary database connection pool exhaustion during peak ingestion on Vulnerability & Patch Management",
+        "root_cause": "PostgreSQL connection threshold reached due to burst of batch requests.",
+        "resolution_notes": "Increased max connection limit in PgBouncer pool and enabled query caching.",
+        "opened_at": "2026-07-14T03:22:00Z",
+        "resolved_at": "2026-07-14T05:10:00Z",
+        "assigned_to_person_id": "E1033"
+      },
+      {
+        "id": "INC-CYB-04-0005",
+        "project_id": "P-CYB-04",
+        "ci_id": "CI-APP-CYB-04",
+        "priority": "P3",
+        "state": "Resolved",
+        "short_description": "P3 - Temporary database connection pool exhaustion during peak ingestion on Vulnerability & Patch Management",
+        "root_cause": "PostgreSQL connection threshold reached due to burst of batch requests.",
+        "resolution_notes": "Increased max connection limit in PgBouncer pool and enabled query caching.",
+        "opened_at": "2026-07-14T03:22:00Z",
+        "resolved_at": "2026-07-14T05:10:00Z",
+        "assigned_to_person_id": "E1033"
+      }
+    ],
+    "changes": [
+      {
+        "id": "CHG-CYB-04-0101",
+        "project_id": "P-CYB-04",
+        "ci_id": "CI-APP-CYB-04",
+        "type": "Normal",
+        "risk": "Moderate",
+        "state": "Closed",
+        "cab_approved": true,
+        "title": "Quarterly Kernel & PostgreSQL Minor Version Maintenance Upgrade",
+        "description": "Apply scheduled security updates and patch CVE vulnerabilities.",
+        "implementation_plan": "Execute rolling upgrade on Kubernetes nodes with automated health check validation.",
+        "backout_plan": "Revert AKS node pool image to prior baseline snapshot.",
+        "requested_by_person_id": "E1033"
+      }
+    ],
+    "kb_articles": [
+      {
+        "id": "KB-CYB-04-01",
+        "project_id": "P-CYB-04",
+        "ci_id": "CI-APP-CYB-04",
+        "title": "SOP: Triage & Resolution of Ingestion Desynchronization on Vulnerability & Patch Management",
+        "category": "Troubleshooting",
+        "article_body": "When downstream systems report missing records for Vulnerability & Patch Management, verify Kafka offset status in Azure Event Hubs and trigger a replay from the high-watermark.",
+        "author_person_id": "E1033"
+      }
+    ],
+    "readiness": {
+      "project_id": "P-CYB-04",
+      "monitoring_enabled": true,
+      "alerting_configured": true,
+      "backup_configured": true,
+      "last_dr_test_date": "2026-04-12",
+      "on_call_rota_active": true,
+      "runbook_exists": true,
+      "runbook_url": "https://autonova.sharepoint.com/sites/P-CYB-04/Runbooks",
+      "health_score": 96
+    }
+  },
+  {
+    "project_id": "P-CYB-05",
+    "cis": [
+      {
+        "id": "CI-APP-CYB-05",
+        "project_id": "P-CYB-05",
+        "name": "Security Data Lake Production Application Service",
+        "ci_class": "Business Application",
+        "environment": "Production",
+        "status": "Operational",
+        "support_tier": "Tier-2"
+      }
+    ],
+    "incidents": [],
+    "changes": [
+      {
+        "id": "CHG-CYB-05-0101",
+        "project_id": "P-CYB-05",
+        "ci_id": "CI-APP-CYB-05",
+        "type": "Normal",
+        "risk": "Moderate",
+        "state": "Closed",
+        "cab_approved": true,
+        "title": "Quarterly Kernel & PostgreSQL Minor Version Maintenance Upgrade",
+        "description": "Apply scheduled security updates and patch CVE vulnerabilities.",
+        "implementation_plan": "Execute rolling upgrade on Kubernetes nodes with automated health check validation.",
+        "backout_plan": "Revert AKS node pool image to prior baseline snapshot.",
+        "requested_by_person_id": "E1028"
+      }
+    ],
+    "kb_articles": [
+      {
+        "id": "KB-CYB-05-01",
+        "project_id": "P-CYB-05",
+        "ci_id": "CI-APP-CYB-05",
+        "title": "SOP: Triage & Resolution of Ingestion Desynchronization on Security Data Lake",
+        "category": "Troubleshooting",
+        "article_body": "When downstream systems report missing records for Security Data Lake, verify Kafka offset status in Azure Event Hubs and trigger a replay from the high-watermark.",
+        "author_person_id": "E1028"
+      }
+    ],
+    "readiness": {
+      "project_id": "P-CYB-05",
+      "monitoring_enabled": true,
+      "alerting_configured": true,
+      "backup_configured": true,
+      "last_dr_test_date": "2026-04-12",
+      "on_call_rota_active": true,
+      "runbook_exists": true,
+      "runbook_url": "https://autonova.sharepoint.com/sites/P-CYB-05/Runbooks",
+      "health_score": 96
+    }
+  },
+  {
+    "project_id": "P-CYB-06",
+    "cis": [
+      {
+        "id": "CI-APP-CYB-06",
+        "project_id": "P-CYB-06",
+        "name": "Privileged Access Management Production Application Service",
+        "ci_class": "Business Application",
+        "environment": "Production",
+        "status": "Operational",
+        "support_tier": "Tier-2"
+      }
+    ],
+    "incidents": [
+      {
+        "id": "INC-CYB-06-0001",
+        "project_id": "P-CYB-06",
+        "ci_id": "CI-APP-CYB-06",
+        "priority": "P1",
+        "state": "Resolved",
+        "short_description": "P1 - Temporary database connection pool exhaustion during peak ingestion on Privileged Access Management",
+        "root_cause": "PostgreSQL connection threshold reached due to burst of batch requests.",
+        "resolution_notes": "Increased max connection limit in PgBouncer pool and enabled query caching.",
+        "opened_at": "2026-07-14T03:22:00Z",
+        "resolved_at": "2026-07-14T05:10:00Z",
+        "assigned_to_person_id": "E1032"
+      },
+      {
+        "id": "INC-CYB-06-0002",
+        "project_id": "P-CYB-06",
+        "ci_id": "CI-APP-CYB-06",
+        "priority": "P2",
+        "state": "Resolved",
+        "short_description": "P2 - Temporary database connection pool exhaustion during peak ingestion on Privileged Access Management",
+        "root_cause": "PostgreSQL connection threshold reached due to burst of batch requests.",
+        "resolution_notes": "Increased max connection limit in PgBouncer pool and enabled query caching.",
+        "opened_at": "2026-07-14T03:22:00Z",
+        "resolved_at": "2026-07-14T05:10:00Z",
+        "assigned_to_person_id": "E1032"
+      },
+      {
+        "id": "INC-CYB-06-0003",
+        "project_id": "P-CYB-06",
+        "ci_id": "CI-APP-CYB-06",
+        "priority": "P3",
+        "state": "Resolved",
+        "short_description": "P3 - Temporary database connection pool exhaustion during peak ingestion on Privileged Access Management",
+        "root_cause": "PostgreSQL connection threshold reached due to burst of batch requests.",
+        "resolution_notes": "Increased max connection limit in PgBouncer pool and enabled query caching.",
+        "opened_at": "2026-07-14T03:22:00Z",
+        "resolved_at": "2026-07-14T05:10:00Z",
+        "assigned_to_person_id": "E1032"
+      },
+      {
+        "id": "INC-CYB-06-0004",
+        "project_id": "P-CYB-06",
+        "ci_id": "CI-APP-CYB-06",
+        "priority": "P3",
+        "state": "Resolved",
+        "short_description": "P3 - Temporary database connection pool exhaustion during peak ingestion on Privileged Access Management",
+        "root_cause": "PostgreSQL connection threshold reached due to burst of batch requests.",
+        "resolution_notes": "Increased max connection limit in PgBouncer pool and enabled query caching.",
+        "opened_at": "2026-07-14T03:22:00Z",
+        "resolved_at": "2026-07-14T05:10:00Z",
+        "assigned_to_person_id": "E1032"
+      },
+      {
+        "id": "INC-CYB-06-0005",
+        "project_id": "P-CYB-06",
+        "ci_id": "CI-APP-CYB-06",
+        "priority": "P3",
+        "state": "Resolved",
+        "short_description": "P3 - Temporary database connection pool exhaustion during peak ingestion on Privileged Access Management",
+        "root_cause": "PostgreSQL connection threshold reached due to burst of batch requests.",
+        "resolution_notes": "Increased max connection limit in PgBouncer pool and enabled query caching.",
+        "opened_at": "2026-07-14T03:22:00Z",
+        "resolved_at": "2026-07-14T05:10:00Z",
+        "assigned_to_person_id": "E1032"
+      }
+    ],
+    "changes": [
+      {
+        "id": "CHG-CYB-06-0101",
+        "project_id": "P-CYB-06",
+        "ci_id": "CI-APP-CYB-06",
+        "type": "Normal",
+        "risk": "Moderate",
+        "state": "Closed",
+        "cab_approved": true,
+        "title": "Quarterly Kernel & PostgreSQL Minor Version Maintenance Upgrade",
+        "description": "Apply scheduled security updates and patch CVE vulnerabilities.",
+        "implementation_plan": "Execute rolling upgrade on Kubernetes nodes with automated health check validation.",
+        "backout_plan": "Revert AKS node pool image to prior baseline snapshot.",
+        "requested_by_person_id": "E1032"
+      }
+    ],
+    "kb_articles": [
+      {
+        "id": "KB-CYB-06-01",
+        "project_id": "P-CYB-06",
+        "ci_id": "CI-APP-CYB-06",
+        "title": "SOP: Triage & Resolution of Ingestion Desynchronization on Privileged Access Management",
+        "category": "Troubleshooting",
+        "article_body": "When downstream systems report missing records for Privileged Access Management, verify Kafka offset status in Azure Event Hubs and trigger a replay from the high-watermark.",
+        "author_person_id": "E1032"
+      }
+    ],
+    "readiness": {
+      "project_id": "P-CYB-06",
+      "monitoring_enabled": true,
+      "alerting_configured": true,
+      "backup_configured": true,
+      "last_dr_test_date": "2026-04-12",
+      "on_call_rota_active": true,
+      "runbook_exists": true,
+      "runbook_url": "https://autonova.sharepoint.com/sites/P-CYB-06/Runbooks",
+      "health_score": 96
+    }
+  },
+  {
+    "project_id": "P-CYB-07",
+    "cis": [
+      {
+        "id": "CI-APP-CYB-07",
+        "project_id": "P-CYB-07",
+        "name": "Incident Response Automation (SOAR) Production Application Service",
+        "ci_class": "Business Application",
+        "environment": "Production",
+        "status": "Operational",
+        "support_tier": "Tier-2"
+      }
+    ],
+    "incidents": [],
+    "changes": [
+      {
+        "id": "CHG-CYB-07-0101",
+        "project_id": "P-CYB-07",
+        "ci_id": "CI-APP-CYB-07",
+        "type": "Normal",
+        "risk": "Moderate",
+        "state": "Closed",
+        "cab_approved": true,
+        "title": "Quarterly Kernel & PostgreSQL Minor Version Maintenance Upgrade",
+        "description": "Apply scheduled security updates and patch CVE vulnerabilities.",
+        "implementation_plan": "Execute rolling upgrade on Kubernetes nodes with automated health check validation.",
+        "backout_plan": "Revert AKS node pool image to prior baseline snapshot.",
+        "requested_by_person_id": "E1037"
+      }
+    ],
+    "kb_articles": [
+      {
+        "id": "KB-CYB-07-01",
+        "project_id": "P-CYB-07",
+        "ci_id": "CI-APP-CYB-07",
+        "title": "SOP: Triage & Resolution of Ingestion Desynchronization on Incident Response Automation (SOAR)",
+        "category": "Troubleshooting",
+        "article_body": "When downstream systems report missing records for Incident Response Automation (SOAR), verify Kafka offset status in Azure Event Hubs and trigger a replay from the high-watermark.",
+        "author_person_id": "E1037"
+      }
+    ],
+    "readiness": {
+      "project_id": "P-CYB-07",
+      "monitoring_enabled": true,
+      "alerting_configured": true,
+      "backup_configured": true,
+      "last_dr_test_date": "2026-04-12",
+      "on_call_rota_active": true,
+      "runbook_exists": true,
+      "runbook_url": "https://autonova.sharepoint.com/sites/P-CYB-07/Runbooks",
+      "health_score": 96
+    }
+  },
+  {
+    "project_id": "P-FIN-01",
+    "cis": [
+      {
+        "id": "CI-APP-FIN-01",
+        "project_id": "P-FIN-01",
+        "name": "SAP S/4HANA Finance Core Production Application Service",
+        "ci_class": "Business Application",
+        "environment": "Production",
+        "status": "Operational",
+        "support_tier": "Tier-1"
+      }
+    ],
+    "incidents": [
+      {
+        "id": "INC-FIN-01-0001",
+        "project_id": "P-FIN-01",
+        "ci_id": "CI-APP-FIN-01",
+        "priority": "P1",
+        "state": "Resolved",
+        "short_description": "P1 - Temporary database connection pool exhaustion during peak ingestion on SAP S/4HANA Finance Core",
+        "root_cause": "PostgreSQL connection threshold reached due to burst of batch requests.",
+        "resolution_notes": "Increased max connection limit in PgBouncer pool and enabled query caching.",
+        "opened_at": "2026-07-14T03:22:00Z",
+        "resolved_at": "2026-07-14T05:10:00Z",
+        "assigned_to_person_id": "E1042"
+      },
+      {
+        "id": "INC-FIN-01-0002",
+        "project_id": "P-FIN-01",
+        "ci_id": "CI-APP-FIN-01",
+        "priority": "P2",
+        "state": "Resolved",
+        "short_description": "P2 - Temporary database connection pool exhaustion during peak ingestion on SAP S/4HANA Finance Core",
+        "root_cause": "PostgreSQL connection threshold reached due to burst of batch requests.",
+        "resolution_notes": "Increased max connection limit in PgBouncer pool and enabled query caching.",
+        "opened_at": "2026-07-14T03:22:00Z",
+        "resolved_at": "2026-07-14T05:10:00Z",
+        "assigned_to_person_id": "E1042"
+      },
+      {
+        "id": "INC-FIN-01-0003",
+        "project_id": "P-FIN-01",
+        "ci_id": "CI-APP-FIN-01",
+        "priority": "P3",
+        "state": "Resolved",
+        "short_description": "P3 - Temporary database connection pool exhaustion during peak ingestion on SAP S/4HANA Finance Core",
+        "root_cause": "PostgreSQL connection threshold reached due to burst of batch requests.",
+        "resolution_notes": "Increased max connection limit in PgBouncer pool and enabled query caching.",
+        "opened_at": "2026-07-14T03:22:00Z",
+        "resolved_at": "2026-07-14T05:10:00Z",
+        "assigned_to_person_id": "E1042"
+      },
+      {
+        "id": "INC-FIN-01-0004",
+        "project_id": "P-FIN-01",
+        "ci_id": "CI-APP-FIN-01",
+        "priority": "P3",
+        "state": "Resolved",
+        "short_description": "P3 - Temporary database connection pool exhaustion during peak ingestion on SAP S/4HANA Finance Core",
+        "root_cause": "PostgreSQL connection threshold reached due to burst of batch requests.",
+        "resolution_notes": "Increased max connection limit in PgBouncer pool and enabled query caching.",
+        "opened_at": "2026-07-14T03:22:00Z",
+        "resolved_at": "2026-07-14T05:10:00Z",
+        "assigned_to_person_id": "E1042"
+      },
+      {
+        "id": "INC-FIN-01-0005",
+        "project_id": "P-FIN-01",
+        "ci_id": "CI-APP-FIN-01",
+        "priority": "P3",
+        "state": "Resolved",
+        "short_description": "P3 - Temporary database connection pool exhaustion during peak ingestion on SAP S/4HANA Finance Core",
+        "root_cause": "PostgreSQL connection threshold reached due to burst of batch requests.",
+        "resolution_notes": "Increased max connection limit in PgBouncer pool and enabled query caching.",
+        "opened_at": "2026-07-14T03:22:00Z",
+        "resolved_at": "2026-07-14T05:10:00Z",
+        "assigned_to_person_id": "E1042"
+      },
+      {
+        "id": "INC-FIN-01-0006",
+        "project_id": "P-FIN-01",
+        "ci_id": "CI-APP-FIN-01",
+        "priority": "P3",
+        "state": "Resolved",
+        "short_description": "P3 - Temporary database connection pool exhaustion during peak ingestion on SAP S/4HANA Finance Core",
+        "root_cause": "PostgreSQL connection threshold reached due to burst of batch requests.",
+        "resolution_notes": "Increased max connection limit in PgBouncer pool and enabled query caching.",
+        "opened_at": "2026-07-14T03:22:00Z",
+        "resolved_at": "2026-07-14T05:10:00Z",
+        "assigned_to_person_id": "E1042"
+      },
+      {
+        "id": "INC-FIN-01-0007",
+        "project_id": "P-FIN-01",
+        "ci_id": "CI-APP-FIN-01",
+        "priority": "P3",
+        "state": "Resolved",
+        "short_description": "P3 - Temporary database connection pool exhaustion during peak ingestion on SAP S/4HANA Finance Core",
+        "root_cause": "PostgreSQL connection threshold reached due to burst of batch requests.",
+        "resolution_notes": "Increased max connection limit in PgBouncer pool and enabled query caching.",
+        "opened_at": "2026-07-14T03:22:00Z",
+        "resolved_at": "2026-07-14T05:10:00Z",
+        "assigned_to_person_id": "E1042"
+      },
+      {
+        "id": "INC-FIN-01-0008",
+        "project_id": "P-FIN-01",
+        "ci_id": "CI-APP-FIN-01",
+        "priority": "P3",
+        "state": "Resolved",
+        "short_description": "P3 - Temporary database connection pool exhaustion during peak ingestion on SAP S/4HANA Finance Core",
+        "root_cause": "PostgreSQL connection threshold reached due to burst of batch requests.",
+        "resolution_notes": "Increased max connection limit in PgBouncer pool and enabled query caching.",
+        "opened_at": "2026-07-14T03:22:00Z",
+        "resolved_at": "2026-07-14T05:10:00Z",
+        "assigned_to_person_id": "E1042"
+      },
+      {
+        "id": "INC-FIN-01-0009",
+        "project_id": "P-FIN-01",
+        "ci_id": "CI-APP-FIN-01",
+        "priority": "P3",
+        "state": "Resolved",
+        "short_description": "P3 - Temporary database connection pool exhaustion during peak ingestion on SAP S/4HANA Finance Core",
+        "root_cause": "PostgreSQL connection threshold reached due to burst of batch requests.",
+        "resolution_notes": "Increased max connection limit in PgBouncer pool and enabled query caching.",
+        "opened_at": "2026-07-14T03:22:00Z",
+        "resolved_at": "2026-07-14T05:10:00Z",
+        "assigned_to_person_id": "E1042"
+      },
+      {
+        "id": "INC-FIN-01-0010",
+        "project_id": "P-FIN-01",
+        "ci_id": "CI-APP-FIN-01",
+        "priority": "P3",
+        "state": "Resolved",
+        "short_description": "P3 - Temporary database connection pool exhaustion during peak ingestion on SAP S/4HANA Finance Core",
+        "root_cause": "PostgreSQL connection threshold reached due to burst of batch requests.",
+        "resolution_notes": "Increased max connection limit in PgBouncer pool and enabled query caching.",
+        "opened_at": "2026-07-14T03:22:00Z",
+        "resolved_at": "2026-07-14T05:10:00Z",
+        "assigned_to_person_id": "E1042"
+      },
+      {
+        "id": "INC-FIN-01-0011",
+        "project_id": "P-FIN-01",
+        "ci_id": "CI-APP-FIN-01",
+        "priority": "P3",
+        "state": "Resolved",
+        "short_description": "P3 - Temporary database connection pool exhaustion during peak ingestion on SAP S/4HANA Finance Core",
+        "root_cause": "PostgreSQL connection threshold reached due to burst of batch requests.",
+        "resolution_notes": "Increased max connection limit in PgBouncer pool and enabled query caching.",
+        "opened_at": "2026-07-14T03:22:00Z",
+        "resolved_at": "2026-07-14T05:10:00Z",
+        "assigned_to_person_id": "E1042"
+      },
+      {
+        "id": "INC-FIN-01-0012",
+        "project_id": "P-FIN-01",
+        "ci_id": "CI-APP-FIN-01",
+        "priority": "P3",
+        "state": "Resolved",
+        "short_description": "P3 - Temporary database connection pool exhaustion during peak ingestion on SAP S/4HANA Finance Core",
+        "root_cause": "PostgreSQL connection threshold reached due to burst of batch requests.",
+        "resolution_notes": "Increased max connection limit in PgBouncer pool and enabled query caching.",
+        "opened_at": "2026-07-14T03:22:00Z",
+        "resolved_at": "2026-07-14T05:10:00Z",
+        "assigned_to_person_id": "E1042"
+      }
+    ],
+    "changes": [
+      {
+        "id": "CHG-FIN-01-0101",
+        "project_id": "P-FIN-01",
+        "ci_id": "CI-APP-FIN-01",
+        "type": "Normal",
+        "risk": "Moderate",
+        "state": "Closed",
+        "cab_approved": true,
+        "title": "Quarterly Kernel & PostgreSQL Minor Version Maintenance Upgrade",
+        "description": "Apply scheduled security updates and patch CVE vulnerabilities.",
+        "implementation_plan": "Execute rolling upgrade on Kubernetes nodes with automated health check validation.",
+        "backout_plan": "Revert AKS node pool image to prior baseline snapshot.",
+        "requested_by_person_id": "E1042"
+      },
+      {
+        "id": "CHG-9021",
+        "project_id": "P-FIN-01",
+        "ci_id": "CI-APP-FIN-01",
+        "type": "Emergency",
+        "risk": "Very High",
+        "state": "Closed",
+        "cab_approved": false,
+        "title": "EMERGENCY - Hotfix direct database table lock on SAP S/4HANA core ledger",
+        "description": "Direct schema index rebuild executed directly in production without scheduled CAB review.",
+        "implementation_plan": "Direct SQL execution on master node.",
+        "backout_plan": "None.",
+        "requested_by_person_id": "E1042"
+      }
+    ],
+    "kb_articles": [
+      {
+        "id": "KB-FIN-01-01",
+        "project_id": "P-FIN-01",
+        "ci_id": "CI-APP-FIN-01",
+        "title": "SOP: Triage & Resolution of Ingestion Desynchronization on SAP S/4HANA Finance Core",
+        "category": "Troubleshooting",
+        "article_body": "When downstream systems report missing records for SAP S/4HANA Finance Core, verify Kafka offset status in Azure Event Hubs and trigger a replay from the high-watermark.",
+        "author_person_id": "E1042"
+      }
+    ],
+    "readiness": {
+      "project_id": "P-FIN-01",
+      "monitoring_enabled": true,
+      "alerting_configured": true,
+      "backup_configured": true,
+      "last_dr_test_date": "2026-04-12",
+      "on_call_rota_active": true,
+      "runbook_exists": true,
+      "runbook_url": "https://autonova.sharepoint.com/sites/P-FIN-01/Runbooks",
+      "health_score": 96
+    }
+  },
+  {
+    "project_id": "P-FIN-02",
+    "cis": [
+      {
+        "id": "CI-APP-FIN-02",
+        "project_id": "P-FIN-02",
+        "name": "Finance Analytics & Reporting Production Application Service",
+        "ci_class": "Business Application",
+        "environment": "Production",
+        "status": "Operational",
+        "support_tier": "Tier-2"
+      }
+    ],
+    "incidents": [
+      {
+        "id": "INC-FIN-02-0001",
+        "project_id": "P-FIN-02",
+        "ci_id": "CI-APP-FIN-02",
+        "priority": "P1",
+        "state": "Resolved",
+        "short_description": "P1 - Temporary database connection pool exhaustion during peak ingestion on Finance Analytics & Reporting",
+        "root_cause": "PostgreSQL connection threshold reached due to burst of batch requests.",
+        "resolution_notes": "Increased max connection limit in PgBouncer pool and enabled query caching.",
+        "opened_at": "2026-07-14T03:22:00Z",
+        "resolved_at": "2026-07-14T05:10:00Z",
+        "assigned_to_person_id": "E1048"
+      },
+      {
+        "id": "INC-FIN-02-0002",
+        "project_id": "P-FIN-02",
+        "ci_id": "CI-APP-FIN-02",
+        "priority": "P2",
+        "state": "Resolved",
+        "short_description": "P2 - Temporary database connection pool exhaustion during peak ingestion on Finance Analytics & Reporting",
+        "root_cause": "PostgreSQL connection threshold reached due to burst of batch requests.",
+        "resolution_notes": "Increased max connection limit in PgBouncer pool and enabled query caching.",
+        "opened_at": "2026-07-14T03:22:00Z",
+        "resolved_at": "2026-07-14T05:10:00Z",
+        "assigned_to_person_id": "E1048"
+      },
+      {
+        "id": "INC-FIN-02-0003",
+        "project_id": "P-FIN-02",
+        "ci_id": "CI-APP-FIN-02",
+        "priority": "P3",
+        "state": "Resolved",
+        "short_description": "P3 - Temporary database connection pool exhaustion during peak ingestion on Finance Analytics & Reporting",
+        "root_cause": "PostgreSQL connection threshold reached due to burst of batch requests.",
+        "resolution_notes": "Increased max connection limit in PgBouncer pool and enabled query caching.",
+        "opened_at": "2026-07-14T03:22:00Z",
+        "resolved_at": "2026-07-14T05:10:00Z",
+        "assigned_to_person_id": "E1048"
+      },
+      {
+        "id": "INC-FIN-02-0004",
+        "project_id": "P-FIN-02",
+        "ci_id": "CI-APP-FIN-02",
+        "priority": "P3",
+        "state": "Resolved",
+        "short_description": "P3 - Temporary database connection pool exhaustion during peak ingestion on Finance Analytics & Reporting",
+        "root_cause": "PostgreSQL connection threshold reached due to burst of batch requests.",
+        "resolution_notes": "Increased max connection limit in PgBouncer pool and enabled query caching.",
+        "opened_at": "2026-07-14T03:22:00Z",
+        "resolved_at": "2026-07-14T05:10:00Z",
+        "assigned_to_person_id": "E1048"
+      },
+      {
+        "id": "INC-FIN-02-0005",
+        "project_id": "P-FIN-02",
+        "ci_id": "CI-APP-FIN-02",
+        "priority": "P3",
+        "state": "Resolved",
+        "short_description": "P3 - Temporary database connection pool exhaustion during peak ingestion on Finance Analytics & Reporting",
+        "root_cause": "PostgreSQL connection threshold reached due to burst of batch requests.",
+        "resolution_notes": "Increased max connection limit in PgBouncer pool and enabled query caching.",
+        "opened_at": "2026-07-14T03:22:00Z",
+        "resolved_at": "2026-07-14T05:10:00Z",
+        "assigned_to_person_id": "E1048"
+      }
+    ],
+    "changes": [
+      {
+        "id": "CHG-FIN-02-0101",
+        "project_id": "P-FIN-02",
+        "ci_id": "CI-APP-FIN-02",
+        "type": "Normal",
+        "risk": "Moderate",
+        "state": "Closed",
+        "cab_approved": true,
+        "title": "Quarterly Kernel & PostgreSQL Minor Version Maintenance Upgrade",
+        "description": "Apply scheduled security updates and patch CVE vulnerabilities.",
+        "implementation_plan": "Execute rolling upgrade on Kubernetes nodes with automated health check validation.",
+        "backout_plan": "Revert AKS node pool image to prior baseline snapshot.",
+        "requested_by_person_id": "E1048"
+      }
+    ],
+    "kb_articles": [
+      {
+        "id": "KB-FIN-02-01",
+        "project_id": "P-FIN-02",
+        "ci_id": "CI-APP-FIN-02",
+        "title": "SOP: Triage & Resolution of Ingestion Desynchronization on Finance Analytics & Reporting",
+        "category": "Troubleshooting",
+        "article_body": "When downstream systems report missing records for Finance Analytics & Reporting, verify Kafka offset status in Azure Event Hubs and trigger a replay from the high-watermark.",
+        "author_person_id": "E1048"
+      }
+    ],
+    "readiness": {
+      "project_id": "P-FIN-02",
+      "monitoring_enabled": true,
+      "alerting_configured": true,
+      "backup_configured": true,
+      "last_dr_test_date": "2026-04-12",
+      "on_call_rota_active": true,
+      "runbook_exists": true,
+      "runbook_url": "https://autonova.sharepoint.com/sites/P-FIN-02/Runbooks",
+      "health_score": 96
+    }
+  },
+  {
+    "project_id": "P-FIN-03",
+    "cis": [
+      {
+        "id": "CI-APP-FIN-03",
+        "project_id": "P-FIN-03",
+        "name": "Group Consolidation & Close Production Application Service",
+        "ci_class": "Business Application",
+        "environment": "Production",
+        "status": "Operational",
+        "support_tier": "Tier-1"
+      }
+    ],
+    "incidents": [
+      {
+        "id": "INC-FIN-03-0001",
+        "project_id": "P-FIN-03",
+        "ci_id": "CI-APP-FIN-03",
+        "priority": "P1",
+        "state": "Resolved",
+        "short_description": "P1 - Temporary database connection pool exhaustion during peak ingestion on Group Consolidation & Close",
+        "root_cause": "PostgreSQL connection threshold reached due to burst of batch requests.",
+        "resolution_notes": "Increased max connection limit in PgBouncer pool and enabled query caching.",
+        "opened_at": "2026-07-14T03:22:00Z",
+        "resolved_at": "2026-07-14T05:10:00Z",
+        "assigned_to_person_id": "E1043"
+      },
+      {
+        "id": "INC-FIN-03-0002",
+        "project_id": "P-FIN-03",
+        "ci_id": "CI-APP-FIN-03",
+        "priority": "P2",
+        "state": "Resolved",
+        "short_description": "P2 - Temporary database connection pool exhaustion during peak ingestion on Group Consolidation & Close",
+        "root_cause": "PostgreSQL connection threshold reached due to burst of batch requests.",
+        "resolution_notes": "Increased max connection limit in PgBouncer pool and enabled query caching.",
+        "opened_at": "2026-07-14T03:22:00Z",
+        "resolved_at": "2026-07-14T05:10:00Z",
+        "assigned_to_person_id": "E1043"
+      },
+      {
+        "id": "INC-FIN-03-0003",
+        "project_id": "P-FIN-03",
+        "ci_id": "CI-APP-FIN-03",
+        "priority": "P3",
+        "state": "Resolved",
+        "short_description": "P3 - Temporary database connection pool exhaustion during peak ingestion on Group Consolidation & Close",
+        "root_cause": "PostgreSQL connection threshold reached due to burst of batch requests.",
+        "resolution_notes": "Increased max connection limit in PgBouncer pool and enabled query caching.",
+        "opened_at": "2026-07-14T03:22:00Z",
+        "resolved_at": "2026-07-14T05:10:00Z",
+        "assigned_to_person_id": "E1043"
+      },
+      {
+        "id": "INC-FIN-03-0004",
+        "project_id": "P-FIN-03",
+        "ci_id": "CI-APP-FIN-03",
+        "priority": "P3",
+        "state": "Resolved",
+        "short_description": "P3 - Temporary database connection pool exhaustion during peak ingestion on Group Consolidation & Close",
+        "root_cause": "PostgreSQL connection threshold reached due to burst of batch requests.",
+        "resolution_notes": "Increased max connection limit in PgBouncer pool and enabled query caching.",
+        "opened_at": "2026-07-14T03:22:00Z",
+        "resolved_at": "2026-07-14T05:10:00Z",
+        "assigned_to_person_id": "E1043"
+      },
+      {
+        "id": "INC-FIN-03-0005",
+        "project_id": "P-FIN-03",
+        "ci_id": "CI-APP-FIN-03",
+        "priority": "P3",
+        "state": "Resolved",
+        "short_description": "P3 - Temporary database connection pool exhaustion during peak ingestion on Group Consolidation & Close",
+        "root_cause": "PostgreSQL connection threshold reached due to burst of batch requests.",
+        "resolution_notes": "Increased max connection limit in PgBouncer pool and enabled query caching.",
+        "opened_at": "2026-07-14T03:22:00Z",
+        "resolved_at": "2026-07-14T05:10:00Z",
+        "assigned_to_person_id": "E1043"
+      }
+    ],
+    "changes": [
+      {
+        "id": "CHG-FIN-03-0101",
+        "project_id": "P-FIN-03",
+        "ci_id": "CI-APP-FIN-03",
+        "type": "Normal",
+        "risk": "Moderate",
+        "state": "Closed",
+        "cab_approved": true,
+        "title": "Quarterly Kernel & PostgreSQL Minor Version Maintenance Upgrade",
+        "description": "Apply scheduled security updates and patch CVE vulnerabilities.",
+        "implementation_plan": "Execute rolling upgrade on Kubernetes nodes with automated health check validation.",
+        "backout_plan": "Revert AKS node pool image to prior baseline snapshot.",
+        "requested_by_person_id": "E1043"
+      }
+    ],
+    "kb_articles": [
+      {
+        "id": "KB-FIN-03-01",
+        "project_id": "P-FIN-03",
+        "ci_id": "CI-APP-FIN-03",
+        "title": "SOP: Triage & Resolution of Ingestion Desynchronization on Group Consolidation & Close",
+        "category": "Troubleshooting",
+        "article_body": "When downstream systems report missing records for Group Consolidation & Close, verify Kafka offset status in Azure Event Hubs and trigger a replay from the high-watermark.",
+        "author_person_id": "E1043"
+      }
+    ],
+    "readiness": {
+      "project_id": "P-FIN-03",
+      "monitoring_enabled": true,
+      "alerting_configured": true,
+      "backup_configured": true,
+      "last_dr_test_date": "2026-04-12",
+      "on_call_rota_active": true,
+      "runbook_exists": true,
+      "runbook_url": "https://autonova.sharepoint.com/sites/P-FIN-03/Runbooks",
+      "health_score": 96
+    }
+  },
+  {
+    "project_id": "P-FIN-04",
+    "cis": [
+      {
+        "id": "CI-APP-FIN-04",
+        "project_id": "P-FIN-04",
+        "name": "Treasury & Cash Management Production Application Service",
+        "ci_class": "Business Application",
+        "environment": "Production",
+        "status": "Operational",
+        "support_tier": "Tier-2"
+      }
+    ],
+    "incidents": [],
+    "changes": [
+      {
+        "id": "CHG-FIN-04-0101",
+        "project_id": "P-FIN-04",
+        "ci_id": "CI-APP-FIN-04",
+        "type": "Normal",
+        "risk": "Moderate",
+        "state": "Closed",
+        "cab_approved": true,
+        "title": "Quarterly Kernel & PostgreSQL Minor Version Maintenance Upgrade",
+        "description": "Apply scheduled security updates and patch CVE vulnerabilities.",
+        "implementation_plan": "Execute rolling upgrade on Kubernetes nodes with automated health check validation.",
+        "backout_plan": "Revert AKS node pool image to prior baseline snapshot.",
+        "requested_by_person_id": "E1047"
+      }
+    ],
+    "kb_articles": [
+      {
+        "id": "KB-FIN-04-01",
+        "project_id": "P-FIN-04",
+        "ci_id": "CI-APP-FIN-04",
+        "title": "SOP: Triage & Resolution of Ingestion Desynchronization on Treasury & Cash Management",
+        "category": "Troubleshooting",
+        "article_body": "When downstream systems report missing records for Treasury & Cash Management, verify Kafka offset status in Azure Event Hubs and trigger a replay from the high-watermark.",
+        "author_person_id": "E1047"
+      }
+    ],
+    "readiness": {
+      "project_id": "P-FIN-04",
+      "monitoring_enabled": true,
+      "alerting_configured": true,
+      "backup_configured": true,
+      "last_dr_test_date": "2026-04-12",
+      "on_call_rota_active": true,
+      "runbook_exists": true,
+      "runbook_url": "https://autonova.sharepoint.com/sites/P-FIN-04/Runbooks",
+      "health_score": 96
+    }
+  },
+  {
+    "project_id": "P-FIN-05",
+    "cis": [
+      {
+        "id": "CI-APP-FIN-05",
+        "project_id": "P-FIN-05",
+        "name": "Financial Data Mart Production Application Service",
+        "ci_class": "Business Application",
+        "environment": "Production",
+        "status": "Operational",
+        "support_tier": "Tier-2"
+      }
+    ],
+    "incidents": [
+      {
+        "id": "INC-FIN-05-0001",
+        "project_id": "P-FIN-05",
+        "ci_id": "CI-APP-FIN-05",
+        "priority": "P1",
+        "state": "Resolved",
+        "short_description": "P1 - Temporary database connection pool exhaustion during peak ingestion on Financial Data Mart",
+        "root_cause": "PostgreSQL connection threshold reached due to burst of batch requests.",
+        "resolution_notes": "Increased max connection limit in PgBouncer pool and enabled query caching.",
+        "opened_at": "2026-07-14T03:22:00Z",
+        "resolved_at": "2026-07-14T05:10:00Z",
+        "assigned_to_person_id": "E1049"
+      },
+      {
+        "id": "INC-FIN-05-0002",
+        "project_id": "P-FIN-05",
+        "ci_id": "CI-APP-FIN-05",
+        "priority": "P2",
+        "state": "Resolved",
+        "short_description": "P2 - Temporary database connection pool exhaustion during peak ingestion on Financial Data Mart",
+        "root_cause": "PostgreSQL connection threshold reached due to burst of batch requests.",
+        "resolution_notes": "Increased max connection limit in PgBouncer pool and enabled query caching.",
+        "opened_at": "2026-07-14T03:22:00Z",
+        "resolved_at": "2026-07-14T05:10:00Z",
+        "assigned_to_person_id": "E1049"
+      },
+      {
+        "id": "INC-FIN-05-0003",
+        "project_id": "P-FIN-05",
+        "ci_id": "CI-APP-FIN-05",
+        "priority": "P3",
+        "state": "Resolved",
+        "short_description": "P3 - Temporary database connection pool exhaustion during peak ingestion on Financial Data Mart",
+        "root_cause": "PostgreSQL connection threshold reached due to burst of batch requests.",
+        "resolution_notes": "Increased max connection limit in PgBouncer pool and enabled query caching.",
+        "opened_at": "2026-07-14T03:22:00Z",
+        "resolved_at": "2026-07-14T05:10:00Z",
+        "assigned_to_person_id": "E1049"
+      },
+      {
+        "id": "INC-FIN-05-0004",
+        "project_id": "P-FIN-05",
+        "ci_id": "CI-APP-FIN-05",
+        "priority": "P3",
+        "state": "Resolved",
+        "short_description": "P3 - Temporary database connection pool exhaustion during peak ingestion on Financial Data Mart",
+        "root_cause": "PostgreSQL connection threshold reached due to burst of batch requests.",
+        "resolution_notes": "Increased max connection limit in PgBouncer pool and enabled query caching.",
+        "opened_at": "2026-07-14T03:22:00Z",
+        "resolved_at": "2026-07-14T05:10:00Z",
+        "assigned_to_person_id": "E1049"
+      },
+      {
+        "id": "INC-FIN-05-0005",
+        "project_id": "P-FIN-05",
+        "ci_id": "CI-APP-FIN-05",
+        "priority": "P3",
+        "state": "Resolved",
+        "short_description": "P3 - Temporary database connection pool exhaustion during peak ingestion on Financial Data Mart",
+        "root_cause": "PostgreSQL connection threshold reached due to burst of batch requests.",
+        "resolution_notes": "Increased max connection limit in PgBouncer pool and enabled query caching.",
+        "opened_at": "2026-07-14T03:22:00Z",
+        "resolved_at": "2026-07-14T05:10:00Z",
+        "assigned_to_person_id": "E1049"
+      }
+    ],
+    "changes": [
+      {
+        "id": "CHG-FIN-05-0101",
+        "project_id": "P-FIN-05",
+        "ci_id": "CI-APP-FIN-05",
+        "type": "Normal",
+        "risk": "Moderate",
+        "state": "Closed",
+        "cab_approved": true,
+        "title": "Quarterly Kernel & PostgreSQL Minor Version Maintenance Upgrade",
+        "description": "Apply scheduled security updates and patch CVE vulnerabilities.",
+        "implementation_plan": "Execute rolling upgrade on Kubernetes nodes with automated health check validation.",
+        "backout_plan": "Revert AKS node pool image to prior baseline snapshot.",
+        "requested_by_person_id": "E1049"
+      }
+    ],
+    "kb_articles": [
+      {
+        "id": "KB-FIN-05-01",
+        "project_id": "P-FIN-05",
+        "ci_id": "CI-APP-FIN-05",
+        "title": "SOP: Triage & Resolution of Ingestion Desynchronization on Financial Data Mart",
+        "category": "Troubleshooting",
+        "article_body": "When downstream systems report missing records for Financial Data Mart, verify Kafka offset status in Azure Event Hubs and trigger a replay from the high-watermark.",
+        "author_person_id": "E1049"
+      }
+    ],
+    "readiness": {
+      "project_id": "P-FIN-05",
+      "monitoring_enabled": true,
+      "alerting_configured": true,
+      "backup_configured": true,
+      "last_dr_test_date": "2026-04-12",
+      "on_call_rota_active": true,
+      "runbook_exists": true,
+      "runbook_url": "https://autonova.sharepoint.com/sites/P-FIN-05/Runbooks",
+      "health_score": 96
+    }
+  },
+  {
+    "project_id": "P-FIN-06",
+    "cis": [
+      {
+        "id": "CI-APP-FIN-06",
+        "project_id": "P-FIN-06",
+        "name": "Intercompany & Tax Reporting Production Application Service",
+        "ci_class": "Business Application",
+        "environment": "Production",
+        "status": "Operational",
+        "support_tier": "Tier-2"
+      }
+    ],
+    "incidents": [],
+    "changes": [
+      {
+        "id": "CHG-FIN-06-0101",
+        "project_id": "P-FIN-06",
+        "ci_id": "CI-APP-FIN-06",
+        "type": "Normal",
+        "risk": "Moderate",
+        "state": "Closed",
+        "cab_approved": true,
+        "title": "Quarterly Kernel & PostgreSQL Minor Version Maintenance Upgrade",
+        "description": "Apply scheduled security updates and patch CVE vulnerabilities.",
+        "implementation_plan": "Execute rolling upgrade on Kubernetes nodes with automated health check validation.",
+        "backout_plan": "Revert AKS node pool image to prior baseline snapshot.",
+        "requested_by_person_id": "E1044"
+      }
+    ],
+    "kb_articles": [
+      {
+        "id": "KB-FIN-06-01",
+        "project_id": "P-FIN-06",
+        "ci_id": "CI-APP-FIN-06",
+        "title": "SOP: Triage & Resolution of Ingestion Desynchronization on Intercompany & Tax Reporting",
+        "category": "Troubleshooting",
+        "article_body": "When downstream systems report missing records for Intercompany & Tax Reporting, verify Kafka offset status in Azure Event Hubs and trigger a replay from the high-watermark.",
+        "author_person_id": "E1044"
+      }
+    ],
+    "readiness": {
+      "project_id": "P-FIN-06",
+      "monitoring_enabled": true,
+      "alerting_configured": true,
+      "backup_configured": true,
+      "last_dr_test_date": "2026-04-12",
+      "on_call_rota_active": true,
+      "runbook_exists": true,
+      "runbook_url": "https://autonova.sharepoint.com/sites/P-FIN-06/Runbooks",
+      "health_score": 96
+    }
+  },
+  {
+    "project_id": "P-PRO-01",
+    "cis": [
+      {
+        "id": "CI-APP-PRO-01",
+        "project_id": "P-PRO-01",
+        "name": "Supplier Portal Production Application Service",
+        "ci_class": "Business Application",
+        "environment": "Production",
+        "status": "Operational",
+        "support_tier": "Tier-1"
+      }
+    ],
+    "incidents": [
+      {
+        "id": "INC-PRO-01-0001",
+        "project_id": "P-PRO-01",
+        "ci_id": "CI-APP-PRO-01",
+        "priority": "P1",
+        "state": "Resolved",
+        "short_description": "P1 - Temporary database connection pool exhaustion during peak ingestion on Supplier Portal",
+        "root_cause": "PostgreSQL connection threshold reached due to burst of batch requests.",
+        "resolution_notes": "Increased max connection limit in PgBouncer pool and enabled query caching.",
+        "opened_at": "2026-07-14T03:22:00Z",
+        "resolved_at": "2026-07-14T05:10:00Z",
+        "assigned_to_person_id": "E1054"
+      },
+      {
+        "id": "INC-PRO-01-0002",
+        "project_id": "P-PRO-01",
+        "ci_id": "CI-APP-PRO-01",
+        "priority": "P2",
+        "state": "Resolved",
+        "short_description": "P2 - Temporary database connection pool exhaustion during peak ingestion on Supplier Portal",
+        "root_cause": "PostgreSQL connection threshold reached due to burst of batch requests.",
+        "resolution_notes": "Increased max connection limit in PgBouncer pool and enabled query caching.",
+        "opened_at": "2026-07-14T03:22:00Z",
+        "resolved_at": "2026-07-14T05:10:00Z",
+        "assigned_to_person_id": "E1054"
+      },
+      {
+        "id": "INC-PRO-01-0003",
+        "project_id": "P-PRO-01",
+        "ci_id": "CI-APP-PRO-01",
+        "priority": "P3",
+        "state": "Resolved",
+        "short_description": "P3 - Temporary database connection pool exhaustion during peak ingestion on Supplier Portal",
+        "root_cause": "PostgreSQL connection threshold reached due to burst of batch requests.",
+        "resolution_notes": "Increased max connection limit in PgBouncer pool and enabled query caching.",
+        "opened_at": "2026-07-14T03:22:00Z",
+        "resolved_at": "2026-07-14T05:10:00Z",
+        "assigned_to_person_id": "E1054"
+      },
+      {
+        "id": "INC-PRO-01-0004",
+        "project_id": "P-PRO-01",
+        "ci_id": "CI-APP-PRO-01",
+        "priority": "P3",
+        "state": "Resolved",
+        "short_description": "P3 - Temporary database connection pool exhaustion during peak ingestion on Supplier Portal",
+        "root_cause": "PostgreSQL connection threshold reached due to burst of batch requests.",
+        "resolution_notes": "Increased max connection limit in PgBouncer pool and enabled query caching.",
+        "opened_at": "2026-07-14T03:22:00Z",
+        "resolved_at": "2026-07-14T05:10:00Z",
+        "assigned_to_person_id": "E1054"
+      },
+      {
+        "id": "INC-PRO-01-0005",
+        "project_id": "P-PRO-01",
+        "ci_id": "CI-APP-PRO-01",
+        "priority": "P3",
+        "state": "Resolved",
+        "short_description": "P3 - Temporary database connection pool exhaustion during peak ingestion on Supplier Portal",
+        "root_cause": "PostgreSQL connection threshold reached due to burst of batch requests.",
+        "resolution_notes": "Increased max connection limit in PgBouncer pool and enabled query caching.",
+        "opened_at": "2026-07-14T03:22:00Z",
+        "resolved_at": "2026-07-14T05:10:00Z",
+        "assigned_to_person_id": "E1054"
+      },
+      {
+        "id": "INC-PRO-01-0006",
+        "project_id": "P-PRO-01",
+        "ci_id": "CI-APP-PRO-01",
+        "priority": "P3",
+        "state": "Resolved",
+        "short_description": "P3 - Temporary database connection pool exhaustion during peak ingestion on Supplier Portal",
+        "root_cause": "PostgreSQL connection threshold reached due to burst of batch requests.",
+        "resolution_notes": "Increased max connection limit in PgBouncer pool and enabled query caching.",
+        "opened_at": "2026-07-14T03:22:00Z",
+        "resolved_at": "2026-07-14T05:10:00Z",
+        "assigned_to_person_id": "E1054"
+      },
+      {
+        "id": "INC-PRO-01-0007",
+        "project_id": "P-PRO-01",
+        "ci_id": "CI-APP-PRO-01",
+        "priority": "P3",
+        "state": "Resolved",
+        "short_description": "P3 - Temporary database connection pool exhaustion during peak ingestion on Supplier Portal",
+        "root_cause": "PostgreSQL connection threshold reached due to burst of batch requests.",
+        "resolution_notes": "Increased max connection limit in PgBouncer pool and enabled query caching.",
+        "opened_at": "2026-07-14T03:22:00Z",
+        "resolved_at": "2026-07-14T05:10:00Z",
+        "assigned_to_person_id": "E1054"
+      },
+      {
+        "id": "INC-PRO-01-0008",
+        "project_id": "P-PRO-01",
+        "ci_id": "CI-APP-PRO-01",
+        "priority": "P3",
+        "state": "Resolved",
+        "short_description": "P3 - Temporary database connection pool exhaustion during peak ingestion on Supplier Portal",
+        "root_cause": "PostgreSQL connection threshold reached due to burst of batch requests.",
+        "resolution_notes": "Increased max connection limit in PgBouncer pool and enabled query caching.",
+        "opened_at": "2026-07-14T03:22:00Z",
+        "resolved_at": "2026-07-14T05:10:00Z",
+        "assigned_to_person_id": "E1054"
+      },
+      {
+        "id": "INC-PRO-01-0009",
+        "project_id": "P-PRO-01",
+        "ci_id": "CI-APP-PRO-01",
+        "priority": "P3",
+        "state": "Resolved",
+        "short_description": "P3 - Temporary database connection pool exhaustion during peak ingestion on Supplier Portal",
+        "root_cause": "PostgreSQL connection threshold reached due to burst of batch requests.",
+        "resolution_notes": "Increased max connection limit in PgBouncer pool and enabled query caching.",
+        "opened_at": "2026-07-14T03:22:00Z",
+        "resolved_at": "2026-07-14T05:10:00Z",
+        "assigned_to_person_id": "E1054"
+      },
+      {
+        "id": "INC-PRO-01-0010",
+        "project_id": "P-PRO-01",
+        "ci_id": "CI-APP-PRO-01",
+        "priority": "P3",
+        "state": "Resolved",
+        "short_description": "P3 - Temporary database connection pool exhaustion during peak ingestion on Supplier Portal",
+        "root_cause": "PostgreSQL connection threshold reached due to burst of batch requests.",
+        "resolution_notes": "Increased max connection limit in PgBouncer pool and enabled query caching.",
+        "opened_at": "2026-07-14T03:22:00Z",
+        "resolved_at": "2026-07-14T05:10:00Z",
+        "assigned_to_person_id": "E1054"
+      },
+      {
+        "id": "INC-PRO-01-0011",
+        "project_id": "P-PRO-01",
+        "ci_id": "CI-APP-PRO-01",
+        "priority": "P3",
+        "state": "Resolved",
+        "short_description": "P3 - Temporary database connection pool exhaustion during peak ingestion on Supplier Portal",
+        "root_cause": "PostgreSQL connection threshold reached due to burst of batch requests.",
+        "resolution_notes": "Increased max connection limit in PgBouncer pool and enabled query caching.",
+        "opened_at": "2026-07-14T03:22:00Z",
+        "resolved_at": "2026-07-14T05:10:00Z",
+        "assigned_to_person_id": "E1054"
+      },
+      {
+        "id": "INC-PRO-01-0012",
+        "project_id": "P-PRO-01",
+        "ci_id": "CI-APP-PRO-01",
+        "priority": "P3",
+        "state": "Resolved",
+        "short_description": "P3 - Temporary database connection pool exhaustion during peak ingestion on Supplier Portal",
+        "root_cause": "PostgreSQL connection threshold reached due to burst of batch requests.",
+        "resolution_notes": "Increased max connection limit in PgBouncer pool and enabled query caching.",
+        "opened_at": "2026-07-14T03:22:00Z",
+        "resolved_at": "2026-07-14T05:10:00Z",
+        "assigned_to_person_id": "E1054"
+      }
+    ],
+    "changes": [
+      {
+        "id": "CHG-PRO-01-0101",
+        "project_id": "P-PRO-01",
+        "ci_id": "CI-APP-PRO-01",
+        "type": "Normal",
+        "risk": "Moderate",
+        "state": "Closed",
+        "cab_approved": true,
+        "title": "Quarterly Kernel & PostgreSQL Minor Version Maintenance Upgrade",
+        "description": "Apply scheduled security updates and patch CVE vulnerabilities.",
+        "implementation_plan": "Execute rolling upgrade on Kubernetes nodes with automated health check validation.",
+        "backout_plan": "Revert AKS node pool image to prior baseline snapshot.",
+        "requested_by_person_id": "E1054"
+      }
+    ],
+    "kb_articles": [
+      {
+        "id": "KB-PRO-01-01",
+        "project_id": "P-PRO-01",
+        "ci_id": "CI-APP-PRO-01",
+        "title": "SOP: Triage & Resolution of Ingestion Desynchronization on Supplier Portal",
+        "category": "Troubleshooting",
+        "article_body": "When downstream systems report missing records for Supplier Portal, verify Kafka offset status in Azure Event Hubs and trigger a replay from the high-watermark.",
+        "author_person_id": "E1054"
+      }
+    ],
+    "readiness": {
+      "project_id": "P-PRO-01",
+      "monitoring_enabled": true,
+      "alerting_configured": true,
+      "backup_configured": true,
+      "last_dr_test_date": "2026-04-12",
+      "on_call_rota_active": true,
+      "runbook_exists": true,
+      "runbook_url": "https://autonova.sharepoint.com/sites/P-PRO-01/Runbooks",
+      "health_score": 96
+    }
+  },
+  {
+    "project_id": "P-PRO-02",
+    "cis": [
+      {
+        "id": "CI-APP-PRO-02",
+        "project_id": "P-PRO-02",
+        "name": "Ariba Sourcing & Contracts Production Application Service",
+        "ci_class": "Business Application",
+        "environment": "Production",
+        "status": "Operational",
+        "support_tier": "Tier-2"
+      }
+    ],
+    "incidents": [
+      {
+        "id": "INC-PRO-02-0001",
+        "project_id": "P-PRO-02",
+        "ci_id": "CI-APP-PRO-02",
+        "priority": "P1",
+        "state": "Resolved",
+        "short_description": "P1 - Temporary database connection pool exhaustion during peak ingestion on Ariba Sourcing & Contracts",
+        "root_cause": "PostgreSQL connection threshold reached due to burst of batch requests.",
+        "resolution_notes": "Increased max connection limit in PgBouncer pool and enabled query caching.",
+        "opened_at": "2026-07-14T03:22:00Z",
+        "resolved_at": "2026-07-14T05:10:00Z",
+        "assigned_to_person_id": "E1055"
+      },
+      {
+        "id": "INC-PRO-02-0002",
+        "project_id": "P-PRO-02",
+        "ci_id": "CI-APP-PRO-02",
+        "priority": "P2",
+        "state": "Resolved",
+        "short_description": "P2 - Temporary database connection pool exhaustion during peak ingestion on Ariba Sourcing & Contracts",
+        "root_cause": "PostgreSQL connection threshold reached due to burst of batch requests.",
+        "resolution_notes": "Increased max connection limit in PgBouncer pool and enabled query caching.",
+        "opened_at": "2026-07-14T03:22:00Z",
+        "resolved_at": "2026-07-14T05:10:00Z",
+        "assigned_to_person_id": "E1055"
+      },
+      {
+        "id": "INC-PRO-02-0003",
+        "project_id": "P-PRO-02",
+        "ci_id": "CI-APP-PRO-02",
+        "priority": "P3",
+        "state": "Resolved",
+        "short_description": "P3 - Temporary database connection pool exhaustion during peak ingestion on Ariba Sourcing & Contracts",
+        "root_cause": "PostgreSQL connection threshold reached due to burst of batch requests.",
+        "resolution_notes": "Increased max connection limit in PgBouncer pool and enabled query caching.",
+        "opened_at": "2026-07-14T03:22:00Z",
+        "resolved_at": "2026-07-14T05:10:00Z",
+        "assigned_to_person_id": "E1055"
+      },
+      {
+        "id": "INC-PRO-02-0004",
+        "project_id": "P-PRO-02",
+        "ci_id": "CI-APP-PRO-02",
+        "priority": "P3",
+        "state": "Resolved",
+        "short_description": "P3 - Temporary database connection pool exhaustion during peak ingestion on Ariba Sourcing & Contracts",
+        "root_cause": "PostgreSQL connection threshold reached due to burst of batch requests.",
+        "resolution_notes": "Increased max connection limit in PgBouncer pool and enabled query caching.",
+        "opened_at": "2026-07-14T03:22:00Z",
+        "resolved_at": "2026-07-14T05:10:00Z",
+        "assigned_to_person_id": "E1055"
+      },
+      {
+        "id": "INC-PRO-02-0005",
+        "project_id": "P-PRO-02",
+        "ci_id": "CI-APP-PRO-02",
+        "priority": "P3",
+        "state": "Resolved",
+        "short_description": "P3 - Temporary database connection pool exhaustion during peak ingestion on Ariba Sourcing & Contracts",
+        "root_cause": "PostgreSQL connection threshold reached due to burst of batch requests.",
+        "resolution_notes": "Increased max connection limit in PgBouncer pool and enabled query caching.",
+        "opened_at": "2026-07-14T03:22:00Z",
+        "resolved_at": "2026-07-14T05:10:00Z",
+        "assigned_to_person_id": "E1055"
+      }
+    ],
+    "changes": [
+      {
+        "id": "CHG-PRO-02-0101",
+        "project_id": "P-PRO-02",
+        "ci_id": "CI-APP-PRO-02",
+        "type": "Normal",
+        "risk": "Moderate",
+        "state": "Closed",
+        "cab_approved": true,
+        "title": "Quarterly Kernel & PostgreSQL Minor Version Maintenance Upgrade",
+        "description": "Apply scheduled security updates and patch CVE vulnerabilities.",
+        "implementation_plan": "Execute rolling upgrade on Kubernetes nodes with automated health check validation.",
+        "backout_plan": "Revert AKS node pool image to prior baseline snapshot.",
+        "requested_by_person_id": "E1055"
+      }
+    ],
+    "kb_articles": [
+      {
+        "id": "KB-PRO-02-01",
+        "project_id": "P-PRO-02",
+        "ci_id": "CI-APP-PRO-02",
+        "title": "SOP: Triage & Resolution of Ingestion Desynchronization on Ariba Sourcing & Contracts",
+        "category": "Troubleshooting",
+        "article_body": "When downstream systems report missing records for Ariba Sourcing & Contracts, verify Kafka offset status in Azure Event Hubs and trigger a replay from the high-watermark.",
+        "author_person_id": "E1055"
+      }
+    ],
+    "readiness": {
+      "project_id": "P-PRO-02",
+      "monitoring_enabled": true,
+      "alerting_configured": true,
+      "backup_configured": true,
+      "last_dr_test_date": "2026-04-12",
+      "on_call_rota_active": true,
+      "runbook_exists": true,
+      "runbook_url": "https://autonova.sharepoint.com/sites/P-PRO-02/Runbooks",
+      "health_score": 96
+    }
+  },
+  {
+    "project_id": "P-PRO-03",
+    "cis": [
+      {
+        "id": "CI-APP-PRO-03",
+        "project_id": "P-PRO-03",
+        "name": "Procure-to-Pay Invoice Automation Production Application Service",
+        "ci_class": "Business Application",
+        "environment": "Production",
+        "status": "Operational",
+        "support_tier": "Tier-2"
+      }
+    ],
+    "incidents": [],
+    "changes": [
+      {
+        "id": "CHG-PRO-03-0101",
+        "project_id": "P-PRO-03",
+        "ci_id": "CI-APP-PRO-03",
+        "type": "Normal",
+        "risk": "Moderate",
+        "state": "Closed",
+        "cab_approved": true,
+        "title": "Quarterly Kernel & PostgreSQL Minor Version Maintenance Upgrade",
+        "description": "Apply scheduled security updates and patch CVE vulnerabilities.",
+        "implementation_plan": "Execute rolling upgrade on Kubernetes nodes with automated health check validation.",
+        "backout_plan": "Revert AKS node pool image to prior baseline snapshot.",
+        "requested_by_person_id": "E1056"
+      }
+    ],
+    "kb_articles": [
+      {
+        "id": "KB-PRO-03-01",
+        "project_id": "P-PRO-03",
+        "ci_id": "CI-APP-PRO-03",
+        "title": "SOP: Triage & Resolution of Ingestion Desynchronization on Procure-to-Pay Invoice Automation",
+        "category": "Troubleshooting",
+        "article_body": "When downstream systems report missing records for Procure-to-Pay Invoice Automation, verify Kafka offset status in Azure Event Hubs and trigger a replay from the high-watermark.",
+        "author_person_id": "E1056"
+      }
+    ],
+    "readiness": {
+      "project_id": "P-PRO-03",
+      "monitoring_enabled": true,
+      "alerting_configured": true,
+      "backup_configured": true,
+      "last_dr_test_date": "2026-04-12",
+      "on_call_rota_active": true,
+      "runbook_exists": true,
+      "runbook_url": "https://autonova.sharepoint.com/sites/P-PRO-03/Runbooks",
+      "health_score": 96
+    }
+  },
+  {
+    "project_id": "P-PRO-04",
+    "cis": [
+      {
+        "id": "CI-APP-PRO-04",
+        "project_id": "P-PRO-04",
+        "name": "Spend Analytics Production Application Service",
+        "ci_class": "Business Application",
+        "environment": "Production",
+        "status": "Operational",
+        "support_tier": "Tier-2"
+      }
+    ],
+    "incidents": [
+      {
+        "id": "INC-PRO-04-0001",
+        "project_id": "P-PRO-04",
+        "ci_id": "CI-APP-PRO-04",
+        "priority": "P1",
+        "state": "Resolved",
+        "short_description": "P1 - Temporary database connection pool exhaustion during peak ingestion on Spend Analytics",
+        "root_cause": "PostgreSQL connection threshold reached due to burst of batch requests.",
+        "resolution_notes": "Increased max connection limit in PgBouncer pool and enabled query caching.",
+        "opened_at": "2026-07-14T03:22:00Z",
+        "resolved_at": "2026-07-14T05:10:00Z",
+        "assigned_to_person_id": "E1057"
+      },
+      {
+        "id": "INC-PRO-04-0002",
+        "project_id": "P-PRO-04",
+        "ci_id": "CI-APP-PRO-04",
+        "priority": "P2",
+        "state": "Resolved",
+        "short_description": "P2 - Temporary database connection pool exhaustion during peak ingestion on Spend Analytics",
+        "root_cause": "PostgreSQL connection threshold reached due to burst of batch requests.",
+        "resolution_notes": "Increased max connection limit in PgBouncer pool and enabled query caching.",
+        "opened_at": "2026-07-14T03:22:00Z",
+        "resolved_at": "2026-07-14T05:10:00Z",
+        "assigned_to_person_id": "E1057"
+      },
+      {
+        "id": "INC-PRO-04-0003",
+        "project_id": "P-PRO-04",
+        "ci_id": "CI-APP-PRO-04",
+        "priority": "P3",
+        "state": "Resolved",
+        "short_description": "P3 - Temporary database connection pool exhaustion during peak ingestion on Spend Analytics",
+        "root_cause": "PostgreSQL connection threshold reached due to burst of batch requests.",
+        "resolution_notes": "Increased max connection limit in PgBouncer pool and enabled query caching.",
+        "opened_at": "2026-07-14T03:22:00Z",
+        "resolved_at": "2026-07-14T05:10:00Z",
+        "assigned_to_person_id": "E1057"
+      },
+      {
+        "id": "INC-PRO-04-0004",
+        "project_id": "P-PRO-04",
+        "ci_id": "CI-APP-PRO-04",
+        "priority": "P3",
+        "state": "Resolved",
+        "short_description": "P3 - Temporary database connection pool exhaustion during peak ingestion on Spend Analytics",
+        "root_cause": "PostgreSQL connection threshold reached due to burst of batch requests.",
+        "resolution_notes": "Increased max connection limit in PgBouncer pool and enabled query caching.",
+        "opened_at": "2026-07-14T03:22:00Z",
+        "resolved_at": "2026-07-14T05:10:00Z",
+        "assigned_to_person_id": "E1057"
+      },
+      {
+        "id": "INC-PRO-04-0005",
+        "project_id": "P-PRO-04",
+        "ci_id": "CI-APP-PRO-04",
+        "priority": "P3",
+        "state": "Resolved",
+        "short_description": "P3 - Temporary database connection pool exhaustion during peak ingestion on Spend Analytics",
+        "root_cause": "PostgreSQL connection threshold reached due to burst of batch requests.",
+        "resolution_notes": "Increased max connection limit in PgBouncer pool and enabled query caching.",
+        "opened_at": "2026-07-14T03:22:00Z",
+        "resolved_at": "2026-07-14T05:10:00Z",
+        "assigned_to_person_id": "E1057"
+      }
+    ],
+    "changes": [
+      {
+        "id": "CHG-PRO-04-0101",
+        "project_id": "P-PRO-04",
+        "ci_id": "CI-APP-PRO-04",
+        "type": "Normal",
+        "risk": "Moderate",
+        "state": "Closed",
+        "cab_approved": true,
+        "title": "Quarterly Kernel & PostgreSQL Minor Version Maintenance Upgrade",
+        "description": "Apply scheduled security updates and patch CVE vulnerabilities.",
+        "implementation_plan": "Execute rolling upgrade on Kubernetes nodes with automated health check validation.",
+        "backout_plan": "Revert AKS node pool image to prior baseline snapshot.",
+        "requested_by_person_id": "E1057"
+      }
+    ],
+    "kb_articles": [
+      {
+        "id": "KB-PRO-04-01",
+        "project_id": "P-PRO-04",
+        "ci_id": "CI-APP-PRO-04",
+        "title": "SOP: Triage & Resolution of Ingestion Desynchronization on Spend Analytics",
+        "category": "Troubleshooting",
+        "article_body": "When downstream systems report missing records for Spend Analytics, verify Kafka offset status in Azure Event Hubs and trigger a replay from the high-watermark.",
+        "author_person_id": "E1057"
+      }
+    ],
+    "readiness": {
+      "project_id": "P-PRO-04",
+      "monitoring_enabled": true,
+      "alerting_configured": true,
+      "backup_configured": true,
+      "last_dr_test_date": "2026-04-12",
+      "on_call_rota_active": true,
+      "runbook_exists": true,
+      "runbook_url": "https://autonova.sharepoint.com/sites/P-PRO-04/Runbooks",
+      "health_score": 96
+    }
+  },
+  {
+    "project_id": "P-PRO-05",
+    "cis": [
+      {
+        "id": "CI-APP-PRO-05",
+        "project_id": "P-PRO-05",
+        "name": "Supplier Risk Scoring Production Application Service",
+        "ci_class": "Business Application",
+        "environment": "Production",
+        "status": "Operational",
+        "support_tier": "Tier-2"
+      }
+    ],
+    "incidents": [],
+    "changes": [
+      {
+        "id": "CHG-PRO-05-0101",
+        "project_id": "P-PRO-05",
+        "ci_id": "CI-APP-PRO-05",
+        "type": "Normal",
+        "risk": "Moderate",
+        "state": "Closed",
+        "cab_approved": true,
+        "title": "Quarterly Kernel & PostgreSQL Minor Version Maintenance Upgrade",
+        "description": "Apply scheduled security updates and patch CVE vulnerabilities.",
+        "implementation_plan": "Execute rolling upgrade on Kubernetes nodes with automated health check validation.",
+        "backout_plan": "Revert AKS node pool image to prior baseline snapshot.",
+        "requested_by_person_id": "E1058"
+      }
+    ],
+    "kb_articles": [
+      {
+        "id": "KB-PRO-05-01",
+        "project_id": "P-PRO-05",
+        "ci_id": "CI-APP-PRO-05",
+        "title": "SOP: Triage & Resolution of Ingestion Desynchronization on Supplier Risk Scoring",
+        "category": "Troubleshooting",
+        "article_body": "When downstream systems report missing records for Supplier Risk Scoring, verify Kafka offset status in Azure Event Hubs and trigger a replay from the high-watermark.",
+        "author_person_id": "E1058"
+      }
+    ],
+    "readiness": {
+      "project_id": "P-PRO-05",
+      "monitoring_enabled": true,
+      "alerting_configured": true,
+      "backup_configured": true,
+      "last_dr_test_date": "2026-04-12",
+      "on_call_rota_active": true,
+      "runbook_exists": true,
+      "runbook_url": "https://autonova.sharepoint.com/sites/P-PRO-05/Runbooks",
+      "health_score": 96
+    }
+  },
+  {
+    "project_id": "P-DTFS-01",
+    "cis": [
+      {
+        "id": "CI-APP-DTFS-01",
+        "project_id": "P-DTFS-01",
+        "name": "Loan Origination Platform Production Application Service",
+        "ci_class": "Business Application",
+        "environment": "Production",
+        "status": "Operational",
+        "support_tier": "Tier-1"
+      }
+    ],
+    "incidents": [
+      {
+        "id": "INC-DTFS-01-0001",
+        "project_id": "P-DTFS-01",
+        "ci_id": "CI-APP-DTFS-01",
+        "priority": "P1",
+        "state": "Resolved",
+        "short_description": "P1 - Temporary database connection pool exhaustion during peak ingestion on Loan Origination Platform",
+        "root_cause": "PostgreSQL connection threshold reached due to burst of batch requests.",
+        "resolution_notes": "Increased max connection limit in PgBouncer pool and enabled query caching.",
+        "opened_at": "2026-07-14T03:22:00Z",
+        "resolved_at": "2026-07-14T05:10:00Z",
+        "assigned_to_person_id": "E1062"
+      },
+      {
+        "id": "INC-DTFS-01-0002",
+        "project_id": "P-DTFS-01",
+        "ci_id": "CI-APP-DTFS-01",
+        "priority": "P2",
+        "state": "Resolved",
+        "short_description": "P2 - Temporary database connection pool exhaustion during peak ingestion on Loan Origination Platform",
+        "root_cause": "PostgreSQL connection threshold reached due to burst of batch requests.",
+        "resolution_notes": "Increased max connection limit in PgBouncer pool and enabled query caching.",
+        "opened_at": "2026-07-14T03:22:00Z",
+        "resolved_at": "2026-07-14T05:10:00Z",
+        "assigned_to_person_id": "E1062"
+      },
+      {
+        "id": "INC-DTFS-01-0003",
+        "project_id": "P-DTFS-01",
+        "ci_id": "CI-APP-DTFS-01",
+        "priority": "P3",
+        "state": "Resolved",
+        "short_description": "P3 - Temporary database connection pool exhaustion during peak ingestion on Loan Origination Platform",
+        "root_cause": "PostgreSQL connection threshold reached due to burst of batch requests.",
+        "resolution_notes": "Increased max connection limit in PgBouncer pool and enabled query caching.",
+        "opened_at": "2026-07-14T03:22:00Z",
+        "resolved_at": "2026-07-14T05:10:00Z",
+        "assigned_to_person_id": "E1062"
+      },
+      {
+        "id": "INC-DTFS-01-0004",
+        "project_id": "P-DTFS-01",
+        "ci_id": "CI-APP-DTFS-01",
+        "priority": "P3",
+        "state": "Resolved",
+        "short_description": "P3 - Temporary database connection pool exhaustion during peak ingestion on Loan Origination Platform",
+        "root_cause": "PostgreSQL connection threshold reached due to burst of batch requests.",
+        "resolution_notes": "Increased max connection limit in PgBouncer pool and enabled query caching.",
+        "opened_at": "2026-07-14T03:22:00Z",
+        "resolved_at": "2026-07-14T05:10:00Z",
+        "assigned_to_person_id": "E1062"
+      },
+      {
+        "id": "INC-DTFS-01-0005",
+        "project_id": "P-DTFS-01",
+        "ci_id": "CI-APP-DTFS-01",
+        "priority": "P3",
+        "state": "Resolved",
+        "short_description": "P3 - Temporary database connection pool exhaustion during peak ingestion on Loan Origination Platform",
+        "root_cause": "PostgreSQL connection threshold reached due to burst of batch requests.",
+        "resolution_notes": "Increased max connection limit in PgBouncer pool and enabled query caching.",
+        "opened_at": "2026-07-14T03:22:00Z",
+        "resolved_at": "2026-07-14T05:10:00Z",
+        "assigned_to_person_id": "E1062"
+      },
+      {
+        "id": "INC-DTFS-01-0006",
+        "project_id": "P-DTFS-01",
+        "ci_id": "CI-APP-DTFS-01",
+        "priority": "P3",
+        "state": "Resolved",
+        "short_description": "P3 - Temporary database connection pool exhaustion during peak ingestion on Loan Origination Platform",
+        "root_cause": "PostgreSQL connection threshold reached due to burst of batch requests.",
+        "resolution_notes": "Increased max connection limit in PgBouncer pool and enabled query caching.",
+        "opened_at": "2026-07-14T03:22:00Z",
+        "resolved_at": "2026-07-14T05:10:00Z",
+        "assigned_to_person_id": "E1062"
+      },
+      {
+        "id": "INC-DTFS-01-0007",
+        "project_id": "P-DTFS-01",
+        "ci_id": "CI-APP-DTFS-01",
+        "priority": "P3",
+        "state": "Resolved",
+        "short_description": "P3 - Temporary database connection pool exhaustion during peak ingestion on Loan Origination Platform",
+        "root_cause": "PostgreSQL connection threshold reached due to burst of batch requests.",
+        "resolution_notes": "Increased max connection limit in PgBouncer pool and enabled query caching.",
+        "opened_at": "2026-07-14T03:22:00Z",
+        "resolved_at": "2026-07-14T05:10:00Z",
+        "assigned_to_person_id": "E1062"
+      },
+      {
+        "id": "INC-DTFS-01-0008",
+        "project_id": "P-DTFS-01",
+        "ci_id": "CI-APP-DTFS-01",
+        "priority": "P3",
+        "state": "Resolved",
+        "short_description": "P3 - Temporary database connection pool exhaustion during peak ingestion on Loan Origination Platform",
+        "root_cause": "PostgreSQL connection threshold reached due to burst of batch requests.",
+        "resolution_notes": "Increased max connection limit in PgBouncer pool and enabled query caching.",
+        "opened_at": "2026-07-14T03:22:00Z",
+        "resolved_at": "2026-07-14T05:10:00Z",
+        "assigned_to_person_id": "E1062"
+      },
+      {
+        "id": "INC-DTFS-01-0009",
+        "project_id": "P-DTFS-01",
+        "ci_id": "CI-APP-DTFS-01",
+        "priority": "P3",
+        "state": "Resolved",
+        "short_description": "P3 - Temporary database connection pool exhaustion during peak ingestion on Loan Origination Platform",
+        "root_cause": "PostgreSQL connection threshold reached due to burst of batch requests.",
+        "resolution_notes": "Increased max connection limit in PgBouncer pool and enabled query caching.",
+        "opened_at": "2026-07-14T03:22:00Z",
+        "resolved_at": "2026-07-14T05:10:00Z",
+        "assigned_to_person_id": "E1062"
+      },
+      {
+        "id": "INC-DTFS-01-0010",
+        "project_id": "P-DTFS-01",
+        "ci_id": "CI-APP-DTFS-01",
+        "priority": "P3",
+        "state": "Resolved",
+        "short_description": "P3 - Temporary database connection pool exhaustion during peak ingestion on Loan Origination Platform",
+        "root_cause": "PostgreSQL connection threshold reached due to burst of batch requests.",
+        "resolution_notes": "Increased max connection limit in PgBouncer pool and enabled query caching.",
+        "opened_at": "2026-07-14T03:22:00Z",
+        "resolved_at": "2026-07-14T05:10:00Z",
+        "assigned_to_person_id": "E1062"
+      },
+      {
+        "id": "INC-DTFS-01-0011",
+        "project_id": "P-DTFS-01",
+        "ci_id": "CI-APP-DTFS-01",
+        "priority": "P3",
+        "state": "Resolved",
+        "short_description": "P3 - Temporary database connection pool exhaustion during peak ingestion on Loan Origination Platform",
+        "root_cause": "PostgreSQL connection threshold reached due to burst of batch requests.",
+        "resolution_notes": "Increased max connection limit in PgBouncer pool and enabled query caching.",
+        "opened_at": "2026-07-14T03:22:00Z",
+        "resolved_at": "2026-07-14T05:10:00Z",
+        "assigned_to_person_id": "E1062"
+      },
+      {
+        "id": "INC-DTFS-01-0012",
+        "project_id": "P-DTFS-01",
+        "ci_id": "CI-APP-DTFS-01",
+        "priority": "P3",
+        "state": "Resolved",
+        "short_description": "P3 - Temporary database connection pool exhaustion during peak ingestion on Loan Origination Platform",
+        "root_cause": "PostgreSQL connection threshold reached due to burst of batch requests.",
+        "resolution_notes": "Increased max connection limit in PgBouncer pool and enabled query caching.",
+        "opened_at": "2026-07-14T03:22:00Z",
+        "resolved_at": "2026-07-14T05:10:00Z",
+        "assigned_to_person_id": "E1062"
+      },
+      {
+        "id": "INC-DTFS-01-BREACH-01",
+        "project_id": "P-DTFS-01",
+        "ci_id": "CI-APP-DTFS-01",
+        "priority": "P1",
+        "state": "Open",
+        "short_description": "P1 - Critical loan calculation engine deadlock on active dealer applications",
+        "root_cause": "Distributed lock acquisition timeout across microservice instances.",
+        "resolution_notes": null,
+        "opened_at": "2026-10-04T08:15:00Z",
+        "resolved_at": null,
+        "assigned_to_person_id": "E1062"
+      },
+      {
+        "id": "INC-DTFS-01-BREACH-02",
+        "project_id": "P-DTFS-01",
+        "ci_id": "CI-APP-DTFS-01",
+        "priority": "P1",
+        "state": "In Progress",
+        "short_description": "P1 - Kafka consumer lag exceeding 1.2M unacknowledged credit evaluation events",
+        "root_cause": "Downstream scoring engine unresponsive.",
+        "resolution_notes": null,
+        "opened_at": "2026-10-04T11:30:00Z",
+        "resolved_at": null,
+        "assigned_to_person_id": "E1062"
+      }
+    ],
+    "changes": [
+      {
+        "id": "CHG-DTFS-01-0101",
+        "project_id": "P-DTFS-01",
+        "ci_id": "CI-APP-DTFS-01",
+        "type": "Normal",
+        "risk": "Moderate",
+        "state": "Closed",
+        "cab_approved": true,
+        "title": "Quarterly Kernel & PostgreSQL Minor Version Maintenance Upgrade",
+        "description": "Apply scheduled security updates and patch CVE vulnerabilities.",
+        "implementation_plan": "Execute rolling upgrade on Kubernetes nodes with automated health check validation.",
+        "backout_plan": "Revert AKS node pool image to prior baseline snapshot.",
+        "requested_by_person_id": "E1062"
+      }
+    ],
+    "kb_articles": [
+      {
+        "id": "KB-DTFS-01-01",
+        "project_id": "P-DTFS-01",
+        "ci_id": "CI-APP-DTFS-01",
+        "title": "SOP: Triage & Resolution of Ingestion Desynchronization on Loan Origination Platform",
+        "category": "Troubleshooting",
+        "article_body": "When downstream systems report missing records for Loan Origination Platform, verify Kafka offset status in Azure Event Hubs and trigger a replay from the high-watermark.",
+        "author_person_id": "E1062"
+      }
+    ],
+    "readiness": {
+      "project_id": "P-DTFS-01",
+      "monitoring_enabled": true,
+      "alerting_configured": true,
+      "backup_configured": true,
+      "last_dr_test_date": "2026-04-12",
+      "on_call_rota_active": true,
+      "runbook_exists": true,
+      "runbook_url": "https://autonova.sharepoint.com/sites/P-DTFS-01/Runbooks",
+      "health_score": 72
+    }
+  },
+  {
+    "project_id": "P-DTFS-02",
+    "cis": [
+      {
+        "id": "CI-APP-DTFS-02",
+        "project_id": "P-DTFS-02",
+        "name": "Credit Scoring Engine Production Application Service",
+        "ci_class": "Business Application",
+        "environment": "Production",
+        "status": "Operational",
+        "support_tier": "Tier-1"
+      }
+    ],
+    "incidents": [
+      {
+        "id": "INC-DTFS-02-0001",
+        "project_id": "P-DTFS-02",
+        "ci_id": "CI-APP-DTFS-02",
+        "priority": "P1",
+        "state": "Resolved",
+        "short_description": "P1 - Temporary database connection pool exhaustion during peak ingestion on Credit Scoring Engine",
+        "root_cause": "PostgreSQL connection threshold reached due to burst of batch requests.",
+        "resolution_notes": "Increased max connection limit in PgBouncer pool and enabled query caching.",
+        "opened_at": "2026-07-14T03:22:00Z",
+        "resolved_at": "2026-07-14T05:10:00Z",
+        "assigned_to_person_id": "E1067"
+      },
+      {
+        "id": "INC-DTFS-02-0002",
+        "project_id": "P-DTFS-02",
+        "ci_id": "CI-APP-DTFS-02",
+        "priority": "P2",
+        "state": "Resolved",
+        "short_description": "P2 - Temporary database connection pool exhaustion during peak ingestion on Credit Scoring Engine",
+        "root_cause": "PostgreSQL connection threshold reached due to burst of batch requests.",
+        "resolution_notes": "Increased max connection limit in PgBouncer pool and enabled query caching.",
+        "opened_at": "2026-07-14T03:22:00Z",
+        "resolved_at": "2026-07-14T05:10:00Z",
+        "assigned_to_person_id": "E1067"
+      },
+      {
+        "id": "INC-DTFS-02-0003",
+        "project_id": "P-DTFS-02",
+        "ci_id": "CI-APP-DTFS-02",
+        "priority": "P3",
+        "state": "Resolved",
+        "short_description": "P3 - Temporary database connection pool exhaustion during peak ingestion on Credit Scoring Engine",
+        "root_cause": "PostgreSQL connection threshold reached due to burst of batch requests.",
+        "resolution_notes": "Increased max connection limit in PgBouncer pool and enabled query caching.",
+        "opened_at": "2026-07-14T03:22:00Z",
+        "resolved_at": "2026-07-14T05:10:00Z",
+        "assigned_to_person_id": "E1067"
+      },
+      {
+        "id": "INC-DTFS-02-0004",
+        "project_id": "P-DTFS-02",
+        "ci_id": "CI-APP-DTFS-02",
+        "priority": "P3",
+        "state": "Resolved",
+        "short_description": "P3 - Temporary database connection pool exhaustion during peak ingestion on Credit Scoring Engine",
+        "root_cause": "PostgreSQL connection threshold reached due to burst of batch requests.",
+        "resolution_notes": "Increased max connection limit in PgBouncer pool and enabled query caching.",
+        "opened_at": "2026-07-14T03:22:00Z",
+        "resolved_at": "2026-07-14T05:10:00Z",
+        "assigned_to_person_id": "E1067"
+      },
+      {
+        "id": "INC-DTFS-02-0005",
+        "project_id": "P-DTFS-02",
+        "ci_id": "CI-APP-DTFS-02",
+        "priority": "P3",
+        "state": "Resolved",
+        "short_description": "P3 - Temporary database connection pool exhaustion during peak ingestion on Credit Scoring Engine",
+        "root_cause": "PostgreSQL connection threshold reached due to burst of batch requests.",
+        "resolution_notes": "Increased max connection limit in PgBouncer pool and enabled query caching.",
+        "opened_at": "2026-07-14T03:22:00Z",
+        "resolved_at": "2026-07-14T05:10:00Z",
+        "assigned_to_person_id": "E1067"
+      }
+    ],
+    "changes": [
+      {
+        "id": "CHG-DTFS-02-0101",
+        "project_id": "P-DTFS-02",
+        "ci_id": "CI-APP-DTFS-02",
+        "type": "Normal",
+        "risk": "Moderate",
+        "state": "Closed",
+        "cab_approved": true,
+        "title": "Quarterly Kernel & PostgreSQL Minor Version Maintenance Upgrade",
+        "description": "Apply scheduled security updates and patch CVE vulnerabilities.",
+        "implementation_plan": "Execute rolling upgrade on Kubernetes nodes with automated health check validation.",
+        "backout_plan": "Revert AKS node pool image to prior baseline snapshot.",
+        "requested_by_person_id": "E1067"
+      }
+    ],
+    "kb_articles": [
+      {
+        "id": "KB-DTFS-02-01",
+        "project_id": "P-DTFS-02",
+        "ci_id": "CI-APP-DTFS-02",
+        "title": "SOP: Triage & Resolution of Ingestion Desynchronization on Credit Scoring Engine",
+        "category": "Troubleshooting",
+        "article_body": "When downstream systems report missing records for Credit Scoring Engine, verify Kafka offset status in Azure Event Hubs and trigger a replay from the high-watermark.",
+        "author_person_id": "E1067"
+      }
+    ],
+    "readiness": {
+      "project_id": "P-DTFS-02",
+      "monitoring_enabled": true,
+      "alerting_configured": true,
+      "backup_configured": true,
+      "last_dr_test_date": "2026-04-12",
+      "on_call_rota_active": true,
+      "runbook_exists": true,
+      "runbook_url": "https://autonova.sharepoint.com/sites/P-DTFS-02/Runbooks",
+      "health_score": 96
+    }
+  },
+  {
+    "project_id": "P-DTFS-03",
+    "cis": [
+      {
+        "id": "CI-APP-DTFS-03",
+        "project_id": "P-DTFS-03",
+        "name": "Lease & Contract Management Production Application Service",
+        "ci_class": "Business Application",
+        "environment": "Production",
+        "status": "Operational",
+        "support_tier": "Tier-1"
+      }
+    ],
+    "incidents": [
+      {
+        "id": "INC-DTFS-03-0001",
+        "project_id": "P-DTFS-03",
+        "ci_id": "CI-APP-DTFS-03",
+        "priority": "P1",
+        "state": "Resolved",
+        "short_description": "P1 - Temporary database connection pool exhaustion during peak ingestion on Lease & Contract Management",
+        "root_cause": "PostgreSQL connection threshold reached due to burst of batch requests.",
+        "resolution_notes": "Increased max connection limit in PgBouncer pool and enabled query caching.",
+        "opened_at": "2026-07-14T03:22:00Z",
+        "resolved_at": "2026-07-14T05:10:00Z",
+        "assigned_to_person_id": "E1063"
+      },
+      {
+        "id": "INC-DTFS-03-0002",
+        "project_id": "P-DTFS-03",
+        "ci_id": "CI-APP-DTFS-03",
+        "priority": "P2",
+        "state": "Resolved",
+        "short_description": "P2 - Temporary database connection pool exhaustion during peak ingestion on Lease & Contract Management",
+        "root_cause": "PostgreSQL connection threshold reached due to burst of batch requests.",
+        "resolution_notes": "Increased max connection limit in PgBouncer pool and enabled query caching.",
+        "opened_at": "2026-07-14T03:22:00Z",
+        "resolved_at": "2026-07-14T05:10:00Z",
+        "assigned_to_person_id": "E1063"
+      },
+      {
+        "id": "INC-DTFS-03-0003",
+        "project_id": "P-DTFS-03",
+        "ci_id": "CI-APP-DTFS-03",
+        "priority": "P3",
+        "state": "Resolved",
+        "short_description": "P3 - Temporary database connection pool exhaustion during peak ingestion on Lease & Contract Management",
+        "root_cause": "PostgreSQL connection threshold reached due to burst of batch requests.",
+        "resolution_notes": "Increased max connection limit in PgBouncer pool and enabled query caching.",
+        "opened_at": "2026-07-14T03:22:00Z",
+        "resolved_at": "2026-07-14T05:10:00Z",
+        "assigned_to_person_id": "E1063"
+      },
+      {
+        "id": "INC-DTFS-03-0004",
+        "project_id": "P-DTFS-03",
+        "ci_id": "CI-APP-DTFS-03",
+        "priority": "P3",
+        "state": "Resolved",
+        "short_description": "P3 - Temporary database connection pool exhaustion during peak ingestion on Lease & Contract Management",
+        "root_cause": "PostgreSQL connection threshold reached due to burst of batch requests.",
+        "resolution_notes": "Increased max connection limit in PgBouncer pool and enabled query caching.",
+        "opened_at": "2026-07-14T03:22:00Z",
+        "resolved_at": "2026-07-14T05:10:00Z",
+        "assigned_to_person_id": "E1063"
+      },
+      {
+        "id": "INC-DTFS-03-0005",
+        "project_id": "P-DTFS-03",
+        "ci_id": "CI-APP-DTFS-03",
+        "priority": "P3",
+        "state": "Resolved",
+        "short_description": "P3 - Temporary database connection pool exhaustion during peak ingestion on Lease & Contract Management",
+        "root_cause": "PostgreSQL connection threshold reached due to burst of batch requests.",
+        "resolution_notes": "Increased max connection limit in PgBouncer pool and enabled query caching.",
+        "opened_at": "2026-07-14T03:22:00Z",
+        "resolved_at": "2026-07-14T05:10:00Z",
+        "assigned_to_person_id": "E1063"
+      }
+    ],
+    "changes": [
+      {
+        "id": "CHG-DTFS-03-0101",
+        "project_id": "P-DTFS-03",
+        "ci_id": "CI-APP-DTFS-03",
+        "type": "Normal",
+        "risk": "Moderate",
+        "state": "Closed",
+        "cab_approved": true,
+        "title": "Quarterly Kernel & PostgreSQL Minor Version Maintenance Upgrade",
+        "description": "Apply scheduled security updates and patch CVE vulnerabilities.",
+        "implementation_plan": "Execute rolling upgrade on Kubernetes nodes with automated health check validation.",
+        "backout_plan": "Revert AKS node pool image to prior baseline snapshot.",
+        "requested_by_person_id": "E1063"
+      }
+    ],
+    "kb_articles": [
+      {
+        "id": "KB-DTFS-03-01",
+        "project_id": "P-DTFS-03",
+        "ci_id": "CI-APP-DTFS-03",
+        "title": "SOP: Triage & Resolution of Ingestion Desynchronization on Lease & Contract Management",
+        "category": "Troubleshooting",
+        "article_body": "When downstream systems report missing records for Lease & Contract Management, verify Kafka offset status in Azure Event Hubs and trigger a replay from the high-watermark.",
+        "author_person_id": "E1063"
+      }
+    ],
+    "readiness": {
+      "project_id": "P-DTFS-03",
+      "monitoring_enabled": true,
+      "alerting_configured": true,
+      "backup_configured": true,
+      "last_dr_test_date": "2026-04-12",
+      "on_call_rota_active": true,
+      "runbook_exists": true,
+      "runbook_url": "https://autonova.sharepoint.com/sites/P-DTFS-03/Runbooks",
+      "health_score": 96
+    }
+  },
+  {
+    "project_id": "P-DTFS-04",
+    "cis": [
+      {
+        "id": "CI-APP-DTFS-04",
+        "project_id": "P-DTFS-04",
+        "name": "Collections & Servicing Platform Production Application Service",
+        "ci_class": "Business Application",
+        "environment": "Production",
+        "status": "Operational",
+        "support_tier": "Tier-2"
+      }
+    ],
+    "incidents": [
+      {
+        "id": "INC-DTFS-04-0001",
+        "project_id": "P-DTFS-04",
+        "ci_id": "CI-APP-DTFS-04",
+        "priority": "P1",
+        "state": "Resolved",
+        "short_description": "P1 - Temporary database connection pool exhaustion during peak ingestion on Collections & Servicing Platform",
+        "root_cause": "PostgreSQL connection threshold reached due to burst of batch requests.",
+        "resolution_notes": "Increased max connection limit in PgBouncer pool and enabled query caching.",
+        "opened_at": "2026-07-14T03:22:00Z",
+        "resolved_at": "2026-07-14T05:10:00Z",
+        "assigned_to_person_id": "E1070"
+      },
+      {
+        "id": "INC-DTFS-04-0002",
+        "project_id": "P-DTFS-04",
+        "ci_id": "CI-APP-DTFS-04",
+        "priority": "P2",
+        "state": "Resolved",
+        "short_description": "P2 - Temporary database connection pool exhaustion during peak ingestion on Collections & Servicing Platform",
+        "root_cause": "PostgreSQL connection threshold reached due to burst of batch requests.",
+        "resolution_notes": "Increased max connection limit in PgBouncer pool and enabled query caching.",
+        "opened_at": "2026-07-14T03:22:00Z",
+        "resolved_at": "2026-07-14T05:10:00Z",
+        "assigned_to_person_id": "E1070"
+      },
+      {
+        "id": "INC-DTFS-04-0003",
+        "project_id": "P-DTFS-04",
+        "ci_id": "CI-APP-DTFS-04",
+        "priority": "P3",
+        "state": "Resolved",
+        "short_description": "P3 - Temporary database connection pool exhaustion during peak ingestion on Collections & Servicing Platform",
+        "root_cause": "PostgreSQL connection threshold reached due to burst of batch requests.",
+        "resolution_notes": "Increased max connection limit in PgBouncer pool and enabled query caching.",
+        "opened_at": "2026-07-14T03:22:00Z",
+        "resolved_at": "2026-07-14T05:10:00Z",
+        "assigned_to_person_id": "E1070"
+      },
+      {
+        "id": "INC-DTFS-04-0004",
+        "project_id": "P-DTFS-04",
+        "ci_id": "CI-APP-DTFS-04",
+        "priority": "P3",
+        "state": "Resolved",
+        "short_description": "P3 - Temporary database connection pool exhaustion during peak ingestion on Collections & Servicing Platform",
+        "root_cause": "PostgreSQL connection threshold reached due to burst of batch requests.",
+        "resolution_notes": "Increased max connection limit in PgBouncer pool and enabled query caching.",
+        "opened_at": "2026-07-14T03:22:00Z",
+        "resolved_at": "2026-07-14T05:10:00Z",
+        "assigned_to_person_id": "E1070"
+      },
+      {
+        "id": "INC-DTFS-04-0005",
+        "project_id": "P-DTFS-04",
+        "ci_id": "CI-APP-DTFS-04",
+        "priority": "P3",
+        "state": "Resolved",
+        "short_description": "P3 - Temporary database connection pool exhaustion during peak ingestion on Collections & Servicing Platform",
+        "root_cause": "PostgreSQL connection threshold reached due to burst of batch requests.",
+        "resolution_notes": "Increased max connection limit in PgBouncer pool and enabled query caching.",
+        "opened_at": "2026-07-14T03:22:00Z",
+        "resolved_at": "2026-07-14T05:10:00Z",
+        "assigned_to_person_id": "E1070"
+      }
+    ],
+    "changes": [
+      {
+        "id": "CHG-DTFS-04-0101",
+        "project_id": "P-DTFS-04",
+        "ci_id": "CI-APP-DTFS-04",
+        "type": "Normal",
+        "risk": "Moderate",
+        "state": "Closed",
+        "cab_approved": true,
+        "title": "Quarterly Kernel & PostgreSQL Minor Version Maintenance Upgrade",
+        "description": "Apply scheduled security updates and patch CVE vulnerabilities.",
+        "implementation_plan": "Execute rolling upgrade on Kubernetes nodes with automated health check validation.",
+        "backout_plan": "Revert AKS node pool image to prior baseline snapshot.",
+        "requested_by_person_id": "E1070"
+      }
+    ],
+    "kb_articles": [
+      {
+        "id": "KB-DTFS-04-01",
+        "project_id": "P-DTFS-04",
+        "ci_id": "CI-APP-DTFS-04",
+        "title": "SOP: Triage & Resolution of Ingestion Desynchronization on Collections & Servicing Platform",
+        "category": "Troubleshooting",
+        "article_body": "When downstream systems report missing records for Collections & Servicing Platform, verify Kafka offset status in Azure Event Hubs and trigger a replay from the high-watermark.",
+        "author_person_id": "E1070"
+      }
+    ],
+    "readiness": {
+      "project_id": "P-DTFS-04",
+      "monitoring_enabled": true,
+      "alerting_configured": true,
+      "backup_configured": true,
+      "last_dr_test_date": "2026-04-12",
+      "on_call_rota_active": true,
+      "runbook_exists": true,
+      "runbook_url": "https://autonova.sharepoint.com/sites/P-DTFS-04/Runbooks",
+      "health_score": 96
+    }
+  },
+  {
+    "project_id": "P-DTFS-05",
+    "cis": [
+      {
+        "id": "CI-APP-DTFS-05",
+        "project_id": "P-DTFS-05",
+        "name": "Regulatory Reporting (IFRS 9 / Basel) Production Application Service",
+        "ci_class": "Business Application",
+        "environment": "Production",
+        "status": "Operational",
+        "support_tier": "Tier-2"
+      }
+    ],
+    "incidents": [],
+    "changes": [
+      {
+        "id": "CHG-DTFS-05-0101",
+        "project_id": "P-DTFS-05",
+        "ci_id": "CI-APP-DTFS-05",
+        "type": "Normal",
+        "risk": "Moderate",
+        "state": "Closed",
+        "cab_approved": true,
+        "title": "Quarterly Kernel & PostgreSQL Minor Version Maintenance Upgrade",
+        "description": "Apply scheduled security updates and patch CVE vulnerabilities.",
+        "implementation_plan": "Execute rolling upgrade on Kubernetes nodes with automated health check validation.",
+        "backout_plan": "Revert AKS node pool image to prior baseline snapshot.",
+        "requested_by_person_id": "E1068"
+      }
+    ],
+    "kb_articles": [
+      {
+        "id": "KB-DTFS-05-01",
+        "project_id": "P-DTFS-05",
+        "ci_id": "CI-APP-DTFS-05",
+        "title": "SOP: Triage & Resolution of Ingestion Desynchronization on Regulatory Reporting (IFRS 9 / Basel)",
+        "category": "Troubleshooting",
+        "article_body": "When downstream systems report missing records for Regulatory Reporting (IFRS 9 / Basel), verify Kafka offset status in Azure Event Hubs and trigger a replay from the high-watermark.",
+        "author_person_id": "E1068"
+      }
+    ],
+    "readiness": {
+      "project_id": "P-DTFS-05",
+      "monitoring_enabled": true,
+      "alerting_configured": true,
+      "backup_configured": true,
+      "last_dr_test_date": "2026-04-12",
+      "on_call_rota_active": true,
+      "runbook_exists": true,
+      "runbook_url": "https://autonova.sharepoint.com/sites/P-DTFS-05/Runbooks",
+      "health_score": 96
+    }
+  },
+  {
+    "project_id": "P-DTFS-06",
+    "cis": [
+      {
+        "id": "CI-APP-DTFS-06",
+        "project_id": "P-DTFS-06",
+        "name": "Dealer Floorplan Financing Production Application Service",
+        "ci_class": "Business Application",
+        "environment": "Production",
+        "status": "Operational",
+        "support_tier": "Tier-2"
+      }
+    ],
+    "incidents": [],
+    "changes": [
+      {
+        "id": "CHG-DTFS-06-0101",
+        "project_id": "P-DTFS-06",
+        "ci_id": "CI-APP-DTFS-06",
+        "type": "Normal",
+        "risk": "Moderate",
+        "state": "Closed",
+        "cab_approved": true,
+        "title": "Quarterly Kernel & PostgreSQL Minor Version Maintenance Upgrade",
+        "description": "Apply scheduled security updates and patch CVE vulnerabilities.",
+        "implementation_plan": "Execute rolling upgrade on Kubernetes nodes with automated health check validation.",
+        "backout_plan": "Revert AKS node pool image to prior baseline snapshot.",
+        "requested_by_person_id": "E1065"
+      }
+    ],
+    "kb_articles": [
+      {
+        "id": "KB-DTFS-06-01",
+        "project_id": "P-DTFS-06",
+        "ci_id": "CI-APP-DTFS-06",
+        "title": "SOP: Triage & Resolution of Ingestion Desynchronization on Dealer Floorplan Financing",
+        "category": "Troubleshooting",
+        "article_body": "When downstream systems report missing records for Dealer Floorplan Financing, verify Kafka offset status in Azure Event Hubs and trigger a replay from the high-watermark.",
+        "author_person_id": "E1065"
+      }
+    ],
+    "readiness": {
+      "project_id": "P-DTFS-06",
+      "monitoring_enabled": true,
+      "alerting_configured": true,
+      "backup_configured": true,
+      "last_dr_test_date": "2026-04-12",
+      "on_call_rota_active": true,
+      "runbook_exists": true,
+      "runbook_url": "https://autonova.sharepoint.com/sites/P-DTFS-06/Runbooks",
+      "health_score": 96
+    }
+  },
+  {
+    "project_id": "P-SAL-01",
+    "cis": [
+      {
+        "id": "CI-APP-SAL-01",
+        "project_id": "P-SAL-01",
+        "name": "Dealer Management Platform Production Application Service",
+        "ci_class": "Business Application",
+        "environment": "Production",
+        "status": "Operational",
+        "support_tier": "Tier-1"
+      }
+    ],
+    "incidents": [
+      {
+        "id": "INC-SAL-01-0001",
+        "project_id": "P-SAL-01",
+        "ci_id": "CI-APP-SAL-01",
+        "priority": "P1",
+        "state": "Resolved",
+        "short_description": "P1 - Temporary database connection pool exhaustion during peak ingestion on Dealer Management Platform",
+        "root_cause": "PostgreSQL connection threshold reached due to burst of batch requests.",
+        "resolution_notes": "Increased max connection limit in PgBouncer pool and enabled query caching.",
+        "opened_at": "2026-07-14T03:22:00Z",
+        "resolved_at": "2026-07-14T05:10:00Z",
+        "assigned_to_person_id": "E1077"
+      },
+      {
+        "id": "INC-SAL-01-0002",
+        "project_id": "P-SAL-01",
+        "ci_id": "CI-APP-SAL-01",
+        "priority": "P2",
+        "state": "Resolved",
+        "short_description": "P2 - Temporary database connection pool exhaustion during peak ingestion on Dealer Management Platform",
+        "root_cause": "PostgreSQL connection threshold reached due to burst of batch requests.",
+        "resolution_notes": "Increased max connection limit in PgBouncer pool and enabled query caching.",
+        "opened_at": "2026-07-14T03:22:00Z",
+        "resolved_at": "2026-07-14T05:10:00Z",
+        "assigned_to_person_id": "E1077"
+      },
+      {
+        "id": "INC-SAL-01-0003",
+        "project_id": "P-SAL-01",
+        "ci_id": "CI-APP-SAL-01",
+        "priority": "P3",
+        "state": "Resolved",
+        "short_description": "P3 - Temporary database connection pool exhaustion during peak ingestion on Dealer Management Platform",
+        "root_cause": "PostgreSQL connection threshold reached due to burst of batch requests.",
+        "resolution_notes": "Increased max connection limit in PgBouncer pool and enabled query caching.",
+        "opened_at": "2026-07-14T03:22:00Z",
+        "resolved_at": "2026-07-14T05:10:00Z",
+        "assigned_to_person_id": "E1077"
+      },
+      {
+        "id": "INC-SAL-01-0004",
+        "project_id": "P-SAL-01",
+        "ci_id": "CI-APP-SAL-01",
+        "priority": "P3",
+        "state": "Resolved",
+        "short_description": "P3 - Temporary database connection pool exhaustion during peak ingestion on Dealer Management Platform",
+        "root_cause": "PostgreSQL connection threshold reached due to burst of batch requests.",
+        "resolution_notes": "Increased max connection limit in PgBouncer pool and enabled query caching.",
+        "opened_at": "2026-07-14T03:22:00Z",
+        "resolved_at": "2026-07-14T05:10:00Z",
+        "assigned_to_person_id": "E1077"
+      },
+      {
+        "id": "INC-SAL-01-0005",
+        "project_id": "P-SAL-01",
+        "ci_id": "CI-APP-SAL-01",
+        "priority": "P3",
+        "state": "Resolved",
+        "short_description": "P3 - Temporary database connection pool exhaustion during peak ingestion on Dealer Management Platform",
+        "root_cause": "PostgreSQL connection threshold reached due to burst of batch requests.",
+        "resolution_notes": "Increased max connection limit in PgBouncer pool and enabled query caching.",
+        "opened_at": "2026-07-14T03:22:00Z",
+        "resolved_at": "2026-07-14T05:10:00Z",
+        "assigned_to_person_id": "E1077"
+      },
+      {
+        "id": "INC-SAL-01-0006",
+        "project_id": "P-SAL-01",
+        "ci_id": "CI-APP-SAL-01",
+        "priority": "P3",
+        "state": "Resolved",
+        "short_description": "P3 - Temporary database connection pool exhaustion during peak ingestion on Dealer Management Platform",
+        "root_cause": "PostgreSQL connection threshold reached due to burst of batch requests.",
+        "resolution_notes": "Increased max connection limit in PgBouncer pool and enabled query caching.",
+        "opened_at": "2026-07-14T03:22:00Z",
+        "resolved_at": "2026-07-14T05:10:00Z",
+        "assigned_to_person_id": "E1077"
+      },
+      {
+        "id": "INC-SAL-01-0007",
+        "project_id": "P-SAL-01",
+        "ci_id": "CI-APP-SAL-01",
+        "priority": "P3",
+        "state": "Resolved",
+        "short_description": "P3 - Temporary database connection pool exhaustion during peak ingestion on Dealer Management Platform",
+        "root_cause": "PostgreSQL connection threshold reached due to burst of batch requests.",
+        "resolution_notes": "Increased max connection limit in PgBouncer pool and enabled query caching.",
+        "opened_at": "2026-07-14T03:22:00Z",
+        "resolved_at": "2026-07-14T05:10:00Z",
+        "assigned_to_person_id": "E1077"
+      },
+      {
+        "id": "INC-SAL-01-0008",
+        "project_id": "P-SAL-01",
+        "ci_id": "CI-APP-SAL-01",
+        "priority": "P3",
+        "state": "Resolved",
+        "short_description": "P3 - Temporary database connection pool exhaustion during peak ingestion on Dealer Management Platform",
+        "root_cause": "PostgreSQL connection threshold reached due to burst of batch requests.",
+        "resolution_notes": "Increased max connection limit in PgBouncer pool and enabled query caching.",
+        "opened_at": "2026-07-14T03:22:00Z",
+        "resolved_at": "2026-07-14T05:10:00Z",
+        "assigned_to_person_id": "E1077"
+      },
+      {
+        "id": "INC-SAL-01-0009",
+        "project_id": "P-SAL-01",
+        "ci_id": "CI-APP-SAL-01",
+        "priority": "P3",
+        "state": "Resolved",
+        "short_description": "P3 - Temporary database connection pool exhaustion during peak ingestion on Dealer Management Platform",
+        "root_cause": "PostgreSQL connection threshold reached due to burst of batch requests.",
+        "resolution_notes": "Increased max connection limit in PgBouncer pool and enabled query caching.",
+        "opened_at": "2026-07-14T03:22:00Z",
+        "resolved_at": "2026-07-14T05:10:00Z",
+        "assigned_to_person_id": "E1077"
+      },
+      {
+        "id": "INC-SAL-01-0010",
+        "project_id": "P-SAL-01",
+        "ci_id": "CI-APP-SAL-01",
+        "priority": "P3",
+        "state": "Resolved",
+        "short_description": "P3 - Temporary database connection pool exhaustion during peak ingestion on Dealer Management Platform",
+        "root_cause": "PostgreSQL connection threshold reached due to burst of batch requests.",
+        "resolution_notes": "Increased max connection limit in PgBouncer pool and enabled query caching.",
+        "opened_at": "2026-07-14T03:22:00Z",
+        "resolved_at": "2026-07-14T05:10:00Z",
+        "assigned_to_person_id": "E1077"
+      },
+      {
+        "id": "INC-SAL-01-0011",
+        "project_id": "P-SAL-01",
+        "ci_id": "CI-APP-SAL-01",
+        "priority": "P3",
+        "state": "Resolved",
+        "short_description": "P3 - Temporary database connection pool exhaustion during peak ingestion on Dealer Management Platform",
+        "root_cause": "PostgreSQL connection threshold reached due to burst of batch requests.",
+        "resolution_notes": "Increased max connection limit in PgBouncer pool and enabled query caching.",
+        "opened_at": "2026-07-14T03:22:00Z",
+        "resolved_at": "2026-07-14T05:10:00Z",
+        "assigned_to_person_id": "E1077"
+      },
+      {
+        "id": "INC-SAL-01-0012",
+        "project_id": "P-SAL-01",
+        "ci_id": "CI-APP-SAL-01",
+        "priority": "P3",
+        "state": "Resolved",
+        "short_description": "P3 - Temporary database connection pool exhaustion during peak ingestion on Dealer Management Platform",
+        "root_cause": "PostgreSQL connection threshold reached due to burst of batch requests.",
+        "resolution_notes": "Increased max connection limit in PgBouncer pool and enabled query caching.",
+        "opened_at": "2026-07-14T03:22:00Z",
+        "resolved_at": "2026-07-14T05:10:00Z",
+        "assigned_to_person_id": "E1077"
+      }
+    ],
+    "changes": [
+      {
+        "id": "CHG-SAL-01-0101",
+        "project_id": "P-SAL-01",
+        "ci_id": "CI-APP-SAL-01",
+        "type": "Normal",
+        "risk": "Moderate",
+        "state": "Closed",
+        "cab_approved": true,
+        "title": "Quarterly Kernel & PostgreSQL Minor Version Maintenance Upgrade",
+        "description": "Apply scheduled security updates and patch CVE vulnerabilities.",
+        "implementation_plan": "Execute rolling upgrade on Kubernetes nodes with automated health check validation.",
+        "backout_plan": "Revert AKS node pool image to prior baseline snapshot.",
+        "requested_by_person_id": "E1077"
+      }
+    ],
+    "kb_articles": [
+      {
+        "id": "KB-SAL-01-01",
+        "project_id": "P-SAL-01",
+        "ci_id": "CI-APP-SAL-01",
+        "title": "SOP: Triage & Resolution of Ingestion Desynchronization on Dealer Management Platform",
+        "category": "Troubleshooting",
+        "article_body": "When downstream systems report missing records for Dealer Management Platform, verify Kafka offset status in Azure Event Hubs and trigger a replay from the high-watermark.",
+        "author_person_id": "E1077"
+      }
+    ],
+    "readiness": {
+      "project_id": "P-SAL-01",
+      "monitoring_enabled": true,
+      "alerting_configured": true,
+      "backup_configured": true,
+      "last_dr_test_date": "2026-04-12",
+      "on_call_rota_active": true,
+      "runbook_exists": true,
+      "runbook_url": "https://autonova.sharepoint.com/sites/P-SAL-01/Runbooks",
+      "health_score": 96
+    }
+  },
+  {
+    "project_id": "P-SAL-02",
+    "cis": [
+      {
+        "id": "CI-APP-SAL-02",
+        "project_id": "P-SAL-02",
+        "name": "Customer 360 & CRM Data Platform Production Application Service",
+        "ci_class": "Business Application",
+        "environment": "Production",
+        "status": "Operational",
+        "support_tier": "Tier-2"
+      }
+    ],
+    "incidents": [
+      {
+        "id": "INC-SAL-02-0001",
+        "project_id": "P-SAL-02",
+        "ci_id": "CI-APP-SAL-02",
+        "priority": "P1",
+        "state": "Resolved",
+        "short_description": "P1 - Temporary database connection pool exhaustion during peak ingestion on Customer 360 & CRM Data Platform",
+        "root_cause": "PostgreSQL connection threshold reached due to burst of batch requests.",
+        "resolution_notes": "Increased max connection limit in PgBouncer pool and enabled query caching.",
+        "opened_at": "2026-07-14T03:22:00Z",
+        "resolved_at": "2026-07-14T05:10:00Z",
+        "assigned_to_person_id": "E1080"
+      },
+      {
+        "id": "INC-SAL-02-0002",
+        "project_id": "P-SAL-02",
+        "ci_id": "CI-APP-SAL-02",
+        "priority": "P2",
+        "state": "Resolved",
+        "short_description": "P2 - Temporary database connection pool exhaustion during peak ingestion on Customer 360 & CRM Data Platform",
+        "root_cause": "PostgreSQL connection threshold reached due to burst of batch requests.",
+        "resolution_notes": "Increased max connection limit in PgBouncer pool and enabled query caching.",
+        "opened_at": "2026-07-14T03:22:00Z",
+        "resolved_at": "2026-07-14T05:10:00Z",
+        "assigned_to_person_id": "E1080"
+      },
+      {
+        "id": "INC-SAL-02-0003",
+        "project_id": "P-SAL-02",
+        "ci_id": "CI-APP-SAL-02",
+        "priority": "P3",
+        "state": "Resolved",
+        "short_description": "P3 - Temporary database connection pool exhaustion during peak ingestion on Customer 360 & CRM Data Platform",
+        "root_cause": "PostgreSQL connection threshold reached due to burst of batch requests.",
+        "resolution_notes": "Increased max connection limit in PgBouncer pool and enabled query caching.",
+        "opened_at": "2026-07-14T03:22:00Z",
+        "resolved_at": "2026-07-14T05:10:00Z",
+        "assigned_to_person_id": "E1080"
+      },
+      {
+        "id": "INC-SAL-02-0004",
+        "project_id": "P-SAL-02",
+        "ci_id": "CI-APP-SAL-02",
+        "priority": "P3",
+        "state": "Resolved",
+        "short_description": "P3 - Temporary database connection pool exhaustion during peak ingestion on Customer 360 & CRM Data Platform",
+        "root_cause": "PostgreSQL connection threshold reached due to burst of batch requests.",
+        "resolution_notes": "Increased max connection limit in PgBouncer pool and enabled query caching.",
+        "opened_at": "2026-07-14T03:22:00Z",
+        "resolved_at": "2026-07-14T05:10:00Z",
+        "assigned_to_person_id": "E1080"
+      },
+      {
+        "id": "INC-SAL-02-0005",
+        "project_id": "P-SAL-02",
+        "ci_id": "CI-APP-SAL-02",
+        "priority": "P3",
+        "state": "Resolved",
+        "short_description": "P3 - Temporary database connection pool exhaustion during peak ingestion on Customer 360 & CRM Data Platform",
+        "root_cause": "PostgreSQL connection threshold reached due to burst of batch requests.",
+        "resolution_notes": "Increased max connection limit in PgBouncer pool and enabled query caching.",
+        "opened_at": "2026-07-14T03:22:00Z",
+        "resolved_at": "2026-07-14T05:10:00Z",
+        "assigned_to_person_id": "E1080"
+      }
+    ],
+    "changes": [
+      {
+        "id": "CHG-SAL-02-0101",
+        "project_id": "P-SAL-02",
+        "ci_id": "CI-APP-SAL-02",
+        "type": "Normal",
+        "risk": "Moderate",
+        "state": "Closed",
+        "cab_approved": true,
+        "title": "Quarterly Kernel & PostgreSQL Minor Version Maintenance Upgrade",
+        "description": "Apply scheduled security updates and patch CVE vulnerabilities.",
+        "implementation_plan": "Execute rolling upgrade on Kubernetes nodes with automated health check validation.",
+        "backout_plan": "Revert AKS node pool image to prior baseline snapshot.",
+        "requested_by_person_id": "E1080"
+      }
+    ],
+    "kb_articles": [
+      {
+        "id": "KB-SAL-02-01",
+        "project_id": "P-SAL-02",
+        "ci_id": "CI-APP-SAL-02",
+        "title": "SOP: Triage & Resolution of Ingestion Desynchronization on Customer 360 & CRM Data Platform",
+        "category": "Troubleshooting",
+        "article_body": "When downstream systems report missing records for Customer 360 & CRM Data Platform, verify Kafka offset status in Azure Event Hubs and trigger a replay from the high-watermark.",
+        "author_person_id": "E1080"
+      }
+    ],
+    "readiness": {
+      "project_id": "P-SAL-02",
+      "monitoring_enabled": true,
+      "alerting_configured": true,
+      "backup_configured": true,
+      "last_dr_test_date": "2026-04-12",
+      "on_call_rota_active": true,
+      "runbook_exists": true,
+      "runbook_url": "https://autonova.sharepoint.com/sites/P-SAL-02/Runbooks",
+      "health_score": 96
+    }
+  },
+  {
+    "project_id": "P-SAL-03",
+    "cis": [
+      {
+        "id": "CI-APP-SAL-03",
+        "project_id": "P-SAL-03",
+        "name": "Aftersales Service Portal Production Application Service",
+        "ci_class": "Business Application",
+        "environment": "Production",
+        "status": "Operational",
+        "support_tier": "Tier-2"
+      }
+    ],
+    "incidents": [
+      {
+        "id": "INC-SAL-03-0001",
+        "project_id": "P-SAL-03",
+        "ci_id": "CI-APP-SAL-03",
+        "priority": "P1",
+        "state": "Resolved",
+        "short_description": "P1 - Temporary database connection pool exhaustion during peak ingestion on Aftersales Service Portal",
+        "root_cause": "PostgreSQL connection threshold reached due to burst of batch requests.",
+        "resolution_notes": "Increased max connection limit in PgBouncer pool and enabled query caching.",
+        "opened_at": "2026-07-14T03:22:00Z",
+        "resolved_at": "2026-07-14T05:10:00Z",
+        "assigned_to_person_id": "E1076"
+      },
+      {
+        "id": "INC-SAL-03-0002",
+        "project_id": "P-SAL-03",
+        "ci_id": "CI-APP-SAL-03",
+        "priority": "P2",
+        "state": "Resolved",
+        "short_description": "P2 - Temporary database connection pool exhaustion during peak ingestion on Aftersales Service Portal",
+        "root_cause": "PostgreSQL connection threshold reached due to burst of batch requests.",
+        "resolution_notes": "Increased max connection limit in PgBouncer pool and enabled query caching.",
+        "opened_at": "2026-07-14T03:22:00Z",
+        "resolved_at": "2026-07-14T05:10:00Z",
+        "assigned_to_person_id": "E1076"
+      },
+      {
+        "id": "INC-SAL-03-0003",
+        "project_id": "P-SAL-03",
+        "ci_id": "CI-APP-SAL-03",
+        "priority": "P3",
+        "state": "Resolved",
+        "short_description": "P3 - Temporary database connection pool exhaustion during peak ingestion on Aftersales Service Portal",
+        "root_cause": "PostgreSQL connection threshold reached due to burst of batch requests.",
+        "resolution_notes": "Increased max connection limit in PgBouncer pool and enabled query caching.",
+        "opened_at": "2026-07-14T03:22:00Z",
+        "resolved_at": "2026-07-14T05:10:00Z",
+        "assigned_to_person_id": "E1076"
+      },
+      {
+        "id": "INC-SAL-03-0004",
+        "project_id": "P-SAL-03",
+        "ci_id": "CI-APP-SAL-03",
+        "priority": "P3",
+        "state": "Resolved",
+        "short_description": "P3 - Temporary database connection pool exhaustion during peak ingestion on Aftersales Service Portal",
+        "root_cause": "PostgreSQL connection threshold reached due to burst of batch requests.",
+        "resolution_notes": "Increased max connection limit in PgBouncer pool and enabled query caching.",
+        "opened_at": "2026-07-14T03:22:00Z",
+        "resolved_at": "2026-07-14T05:10:00Z",
+        "assigned_to_person_id": "E1076"
+      },
+      {
+        "id": "INC-SAL-03-0005",
+        "project_id": "P-SAL-03",
+        "ci_id": "CI-APP-SAL-03",
+        "priority": "P3",
+        "state": "Resolved",
+        "short_description": "P3 - Temporary database connection pool exhaustion during peak ingestion on Aftersales Service Portal",
+        "root_cause": "PostgreSQL connection threshold reached due to burst of batch requests.",
+        "resolution_notes": "Increased max connection limit in PgBouncer pool and enabled query caching.",
+        "opened_at": "2026-07-14T03:22:00Z",
+        "resolved_at": "2026-07-14T05:10:00Z",
+        "assigned_to_person_id": "E1076"
+      }
+    ],
+    "changes": [
+      {
+        "id": "CHG-SAL-03-0101",
+        "project_id": "P-SAL-03",
+        "ci_id": "CI-APP-SAL-03",
+        "type": "Normal",
+        "risk": "Moderate",
+        "state": "Closed",
+        "cab_approved": true,
+        "title": "Quarterly Kernel & PostgreSQL Minor Version Maintenance Upgrade",
+        "description": "Apply scheduled security updates and patch CVE vulnerabilities.",
+        "implementation_plan": "Execute rolling upgrade on Kubernetes nodes with automated health check validation.",
+        "backout_plan": "Revert AKS node pool image to prior baseline snapshot.",
+        "requested_by_person_id": "E1076"
+      }
+    ],
+    "kb_articles": [
+      {
+        "id": "KB-SAL-03-01",
+        "project_id": "P-SAL-03",
+        "ci_id": "CI-APP-SAL-03",
+        "title": "SOP: Triage & Resolution of Ingestion Desynchronization on Aftersales Service Portal",
+        "category": "Troubleshooting",
+        "article_body": "When downstream systems report missing records for Aftersales Service Portal, verify Kafka offset status in Azure Event Hubs and trigger a replay from the high-watermark.",
+        "author_person_id": "E1076"
+      }
+    ],
+    "readiness": {
+      "project_id": "P-SAL-03",
+      "monitoring_enabled": true,
+      "alerting_configured": true,
+      "backup_configured": true,
+      "last_dr_test_date": "2026-04-12",
+      "on_call_rota_active": true,
+      "runbook_exists": true,
+      "runbook_url": "https://autonova.sharepoint.com/sites/P-SAL-03/Runbooks",
+      "health_score": 96
+    }
+  },
+  {
+    "project_id": "P-SAL-04",
+    "cis": [
+      {
+        "id": "CI-APP-SAL-04",
+        "project_id": "P-SAL-04",
+        "name": "Telematics Data Ingestion Production Application Service",
+        "ci_class": "Business Application",
+        "environment": "Production",
+        "status": "Operational",
+        "support_tier": "Tier-2"
+      }
+    ],
+    "incidents": [
+      {
+        "id": "INC-SAL-04-0001",
+        "project_id": "P-SAL-04",
+        "ci_id": "CI-APP-SAL-04",
+        "priority": "P1",
+        "state": "Resolved",
+        "short_description": "P1 - Temporary database connection pool exhaustion during peak ingestion on Telematics Data Ingestion",
+        "root_cause": "PostgreSQL connection threshold reached due to burst of batch requests.",
+        "resolution_notes": "Increased max connection limit in PgBouncer pool and enabled query caching.",
+        "opened_at": "2026-07-14T03:22:00Z",
+        "resolved_at": "2026-07-14T05:10:00Z",
+        "assigned_to_person_id": "E1079"
+      },
+      {
+        "id": "INC-SAL-04-0002",
+        "project_id": "P-SAL-04",
+        "ci_id": "CI-APP-SAL-04",
+        "priority": "P2",
+        "state": "Resolved",
+        "short_description": "P2 - Temporary database connection pool exhaustion during peak ingestion on Telematics Data Ingestion",
+        "root_cause": "PostgreSQL connection threshold reached due to burst of batch requests.",
+        "resolution_notes": "Increased max connection limit in PgBouncer pool and enabled query caching.",
+        "opened_at": "2026-07-14T03:22:00Z",
+        "resolved_at": "2026-07-14T05:10:00Z",
+        "assigned_to_person_id": "E1079"
+      },
+      {
+        "id": "INC-SAL-04-0003",
+        "project_id": "P-SAL-04",
+        "ci_id": "CI-APP-SAL-04",
+        "priority": "P3",
+        "state": "Resolved",
+        "short_description": "P3 - Temporary database connection pool exhaustion during peak ingestion on Telematics Data Ingestion",
+        "root_cause": "PostgreSQL connection threshold reached due to burst of batch requests.",
+        "resolution_notes": "Increased max connection limit in PgBouncer pool and enabled query caching.",
+        "opened_at": "2026-07-14T03:22:00Z",
+        "resolved_at": "2026-07-14T05:10:00Z",
+        "assigned_to_person_id": "E1079"
+      },
+      {
+        "id": "INC-SAL-04-0004",
+        "project_id": "P-SAL-04",
+        "ci_id": "CI-APP-SAL-04",
+        "priority": "P3",
+        "state": "Resolved",
+        "short_description": "P3 - Temporary database connection pool exhaustion during peak ingestion on Telematics Data Ingestion",
+        "root_cause": "PostgreSQL connection threshold reached due to burst of batch requests.",
+        "resolution_notes": "Increased max connection limit in PgBouncer pool and enabled query caching.",
+        "opened_at": "2026-07-14T03:22:00Z",
+        "resolved_at": "2026-07-14T05:10:00Z",
+        "assigned_to_person_id": "E1079"
+      },
+      {
+        "id": "INC-SAL-04-0005",
+        "project_id": "P-SAL-04",
+        "ci_id": "CI-APP-SAL-04",
+        "priority": "P3",
+        "state": "Resolved",
+        "short_description": "P3 - Temporary database connection pool exhaustion during peak ingestion on Telematics Data Ingestion",
+        "root_cause": "PostgreSQL connection threshold reached due to burst of batch requests.",
+        "resolution_notes": "Increased max connection limit in PgBouncer pool and enabled query caching.",
+        "opened_at": "2026-07-14T03:22:00Z",
+        "resolved_at": "2026-07-14T05:10:00Z",
+        "assigned_to_person_id": "E1079"
+      }
+    ],
+    "changes": [
+      {
+        "id": "CHG-SAL-04-0101",
+        "project_id": "P-SAL-04",
+        "ci_id": "CI-APP-SAL-04",
+        "type": "Normal",
+        "risk": "Moderate",
+        "state": "Closed",
+        "cab_approved": true,
+        "title": "Quarterly Kernel & PostgreSQL Minor Version Maintenance Upgrade",
+        "description": "Apply scheduled security updates and patch CVE vulnerabilities.",
+        "implementation_plan": "Execute rolling upgrade on Kubernetes nodes with automated health check validation.",
+        "backout_plan": "Revert AKS node pool image to prior baseline snapshot.",
+        "requested_by_person_id": "E1079"
+      }
+    ],
+    "kb_articles": [
+      {
+        "id": "KB-SAL-04-01",
+        "project_id": "P-SAL-04",
+        "ci_id": "CI-APP-SAL-04",
+        "title": "SOP: Triage & Resolution of Ingestion Desynchronization on Telematics Data Ingestion",
+        "category": "Troubleshooting",
+        "article_body": "When downstream systems report missing records for Telematics Data Ingestion, verify Kafka offset status in Azure Event Hubs and trigger a replay from the high-watermark.",
+        "author_person_id": "E1079"
+      }
+    ],
+    "readiness": {
+      "project_id": "P-SAL-04",
+      "monitoring_enabled": true,
+      "alerting_configured": true,
+      "backup_configured": true,
+      "last_dr_test_date": "2026-04-12",
+      "on_call_rota_active": true,
+      "runbook_exists": true,
+      "runbook_url": "https://autonova.sharepoint.com/sites/P-SAL-04/Runbooks",
+      "health_score": 96
+    }
+  },
+  {
+    "project_id": "P-SAL-05",
+    "cis": [
+      {
+        "id": "CI-APP-SAL-05",
+        "project_id": "P-SAL-05",
+        "name": "Sales Forecasting & Pricing Production Application Service",
+        "ci_class": "Business Application",
+        "environment": "Production",
+        "status": "Operational",
+        "support_tier": "Tier-2"
+      }
+    ],
+    "incidents": [],
+    "changes": [
+      {
+        "id": "CHG-SAL-05-0101",
+        "project_id": "P-SAL-05",
+        "ci_id": "CI-APP-SAL-05",
+        "type": "Normal",
+        "risk": "Moderate",
+        "state": "Closed",
+        "cab_approved": true,
+        "title": "Quarterly Kernel & PostgreSQL Minor Version Maintenance Upgrade",
+        "description": "Apply scheduled security updates and patch CVE vulnerabilities.",
+        "implementation_plan": "Execute rolling upgrade on Kubernetes nodes with automated health check validation.",
+        "backout_plan": "Revert AKS node pool image to prior baseline snapshot.",
+        "requested_by_person_id": "E1082"
+      }
+    ],
+    "kb_articles": [
+      {
+        "id": "KB-SAL-05-01",
+        "project_id": "P-SAL-05",
+        "ci_id": "CI-APP-SAL-05",
+        "title": "SOP: Triage & Resolution of Ingestion Desynchronization on Sales Forecasting & Pricing",
+        "category": "Troubleshooting",
+        "article_body": "When downstream systems report missing records for Sales Forecasting & Pricing, verify Kafka offset status in Azure Event Hubs and trigger a replay from the high-watermark.",
+        "author_person_id": "E1082"
+      }
+    ],
+    "readiness": {
+      "project_id": "P-SAL-05",
+      "monitoring_enabled": true,
+      "alerting_configured": true,
+      "backup_configured": true,
+      "last_dr_test_date": "2026-04-12",
+      "on_call_rota_active": true,
+      "runbook_exists": true,
+      "runbook_url": "https://autonova.sharepoint.com/sites/P-SAL-05/Runbooks",
+      "health_score": 96
+    }
+  },
+  {
+    "project_id": "P-SAL-06",
+    "cis": [
+      {
+        "id": "CI-APP-SAL-06",
+        "project_id": "P-SAL-06",
+        "name": "Order-to-Delivery Production Application Service",
+        "ci_class": "Business Application",
+        "environment": "Production",
+        "status": "Operational",
+        "support_tier": "Tier-1"
+      }
+    ],
+    "incidents": [
+      {
+        "id": "INC-SAL-06-0001",
+        "project_id": "P-SAL-06",
+        "ci_id": "CI-APP-SAL-06",
+        "priority": "P1",
+        "state": "Resolved",
+        "short_description": "P1 - Temporary database connection pool exhaustion during peak ingestion on Order-to-Delivery",
+        "root_cause": "PostgreSQL connection threshold reached due to burst of batch requests.",
+        "resolution_notes": "Increased max connection limit in PgBouncer pool and enabled query caching.",
+        "opened_at": "2026-07-14T03:22:00Z",
+        "resolved_at": "2026-07-14T05:10:00Z",
+        "assigned_to_person_id": "E1017"
+      },
+      {
+        "id": "INC-SAL-06-0002",
+        "project_id": "P-SAL-06",
+        "ci_id": "CI-APP-SAL-06",
+        "priority": "P2",
+        "state": "Resolved",
+        "short_description": "P2 - Temporary database connection pool exhaustion during peak ingestion on Order-to-Delivery",
+        "root_cause": "PostgreSQL connection threshold reached due to burst of batch requests.",
+        "resolution_notes": "Increased max connection limit in PgBouncer pool and enabled query caching.",
+        "opened_at": "2026-07-14T03:22:00Z",
+        "resolved_at": "2026-07-14T05:10:00Z",
+        "assigned_to_person_id": "E1017"
+      },
+      {
+        "id": "INC-SAL-06-0003",
+        "project_id": "P-SAL-06",
+        "ci_id": "CI-APP-SAL-06",
+        "priority": "P3",
+        "state": "Resolved",
+        "short_description": "P3 - Temporary database connection pool exhaustion during peak ingestion on Order-to-Delivery",
+        "root_cause": "PostgreSQL connection threshold reached due to burst of batch requests.",
+        "resolution_notes": "Increased max connection limit in PgBouncer pool and enabled query caching.",
+        "opened_at": "2026-07-14T03:22:00Z",
+        "resolved_at": "2026-07-14T05:10:00Z",
+        "assigned_to_person_id": "E1017"
+      },
+      {
+        "id": "INC-SAL-06-0004",
+        "project_id": "P-SAL-06",
+        "ci_id": "CI-APP-SAL-06",
+        "priority": "P3",
+        "state": "Resolved",
+        "short_description": "P3 - Temporary database connection pool exhaustion during peak ingestion on Order-to-Delivery",
+        "root_cause": "PostgreSQL connection threshold reached due to burst of batch requests.",
+        "resolution_notes": "Increased max connection limit in PgBouncer pool and enabled query caching.",
+        "opened_at": "2026-07-14T03:22:00Z",
+        "resolved_at": "2026-07-14T05:10:00Z",
+        "assigned_to_person_id": "E1017"
+      },
+      {
+        "id": "INC-SAL-06-0005",
+        "project_id": "P-SAL-06",
+        "ci_id": "CI-APP-SAL-06",
+        "priority": "P3",
+        "state": "Resolved",
+        "short_description": "P3 - Temporary database connection pool exhaustion during peak ingestion on Order-to-Delivery",
+        "root_cause": "PostgreSQL connection threshold reached due to burst of batch requests.",
+        "resolution_notes": "Increased max connection limit in PgBouncer pool and enabled query caching.",
+        "opened_at": "2026-07-14T03:22:00Z",
+        "resolved_at": "2026-07-14T05:10:00Z",
+        "assigned_to_person_id": "E1017"
+      }
+    ],
+    "changes": [
+      {
+        "id": "CHG-SAL-06-0101",
+        "project_id": "P-SAL-06",
+        "ci_id": "CI-APP-SAL-06",
+        "type": "Normal",
+        "risk": "Moderate",
+        "state": "Closed",
+        "cab_approved": true,
+        "title": "Quarterly Kernel & PostgreSQL Minor Version Maintenance Upgrade",
+        "description": "Apply scheduled security updates and patch CVE vulnerabilities.",
+        "implementation_plan": "Execute rolling upgrade on Kubernetes nodes with automated health check validation.",
+        "backout_plan": "Revert AKS node pool image to prior baseline snapshot.",
+        "requested_by_person_id": "E1017"
+      }
+    ],
+    "kb_articles": [
+      {
+        "id": "KB-SAL-06-01",
+        "project_id": "P-SAL-06",
+        "ci_id": "CI-APP-SAL-06",
+        "title": "SOP: Triage & Resolution of Ingestion Desynchronization on Order-to-Delivery",
+        "category": "Troubleshooting",
+        "article_body": "When downstream systems report missing records for Order-to-Delivery, verify Kafka offset status in Azure Event Hubs and trigger a replay from the high-watermark.",
+        "author_person_id": "E1017"
+      }
+    ],
+    "readiness": {
+      "project_id": "P-SAL-06",
+      "monitoring_enabled": true,
+      "alerting_configured": true,
+      "backup_configured": true,
+      "last_dr_test_date": "2026-04-12",
+      "on_call_rota_active": true,
+      "runbook_exists": true,
+      "runbook_url": "https://autonova.sharepoint.com/sites/P-SAL-06/Runbooks",
+      "health_score": 96
+    }
+  },
+  {
+    "project_id": "P-HR-01",
+    "cis": [
+      {
+        "id": "CI-APP-HR-01",
+        "project_id": "P-HR-01",
+        "name": "SuccessFactors HR Core Production Application Service",
+        "ci_class": "Business Application",
+        "environment": "Production",
+        "status": "Operational",
+        "support_tier": "Tier-1"
+      }
+    ],
+    "incidents": [
+      {
+        "id": "INC-HR-01-0001",
+        "project_id": "P-HR-01",
+        "ci_id": "CI-APP-HR-01",
+        "priority": "P1",
+        "state": "Resolved",
+        "short_description": "P1 - Temporary database connection pool exhaustion during peak ingestion on SuccessFactors HR Core",
+        "root_cause": "PostgreSQL connection threshold reached due to burst of batch requests.",
+        "resolution_notes": "Increased max connection limit in PgBouncer pool and enabled query caching.",
+        "opened_at": "2026-07-14T03:22:00Z",
+        "resolved_at": "2026-07-14T05:10:00Z",
+        "assigned_to_person_id": "E1085"
+      },
+      {
+        "id": "INC-HR-01-0002",
+        "project_id": "P-HR-01",
+        "ci_id": "CI-APP-HR-01",
+        "priority": "P2",
+        "state": "Resolved",
+        "short_description": "P2 - Temporary database connection pool exhaustion during peak ingestion on SuccessFactors HR Core",
+        "root_cause": "PostgreSQL connection threshold reached due to burst of batch requests.",
+        "resolution_notes": "Increased max connection limit in PgBouncer pool and enabled query caching.",
+        "opened_at": "2026-07-14T03:22:00Z",
+        "resolved_at": "2026-07-14T05:10:00Z",
+        "assigned_to_person_id": "E1085"
+      },
+      {
+        "id": "INC-HR-01-0003",
+        "project_id": "P-HR-01",
+        "ci_id": "CI-APP-HR-01",
+        "priority": "P3",
+        "state": "Resolved",
+        "short_description": "P3 - Temporary database connection pool exhaustion during peak ingestion on SuccessFactors HR Core",
+        "root_cause": "PostgreSQL connection threshold reached due to burst of batch requests.",
+        "resolution_notes": "Increased max connection limit in PgBouncer pool and enabled query caching.",
+        "opened_at": "2026-07-14T03:22:00Z",
+        "resolved_at": "2026-07-14T05:10:00Z",
+        "assigned_to_person_id": "E1085"
+      },
+      {
+        "id": "INC-HR-01-0004",
+        "project_id": "P-HR-01",
+        "ci_id": "CI-APP-HR-01",
+        "priority": "P3",
+        "state": "Resolved",
+        "short_description": "P3 - Temporary database connection pool exhaustion during peak ingestion on SuccessFactors HR Core",
+        "root_cause": "PostgreSQL connection threshold reached due to burst of batch requests.",
+        "resolution_notes": "Increased max connection limit in PgBouncer pool and enabled query caching.",
+        "opened_at": "2026-07-14T03:22:00Z",
+        "resolved_at": "2026-07-14T05:10:00Z",
+        "assigned_to_person_id": "E1085"
+      },
+      {
+        "id": "INC-HR-01-0005",
+        "project_id": "P-HR-01",
+        "ci_id": "CI-APP-HR-01",
+        "priority": "P3",
+        "state": "Resolved",
+        "short_description": "P3 - Temporary database connection pool exhaustion during peak ingestion on SuccessFactors HR Core",
+        "root_cause": "PostgreSQL connection threshold reached due to burst of batch requests.",
+        "resolution_notes": "Increased max connection limit in PgBouncer pool and enabled query caching.",
+        "opened_at": "2026-07-14T03:22:00Z",
+        "resolved_at": "2026-07-14T05:10:00Z",
+        "assigned_to_person_id": "E1085"
+      }
+    ],
+    "changes": [
+      {
+        "id": "CHG-HR-01-0101",
+        "project_id": "P-HR-01",
+        "ci_id": "CI-APP-HR-01",
+        "type": "Normal",
+        "risk": "Moderate",
+        "state": "Closed",
+        "cab_approved": true,
+        "title": "Quarterly Kernel & PostgreSQL Minor Version Maintenance Upgrade",
+        "description": "Apply scheduled security updates and patch CVE vulnerabilities.",
+        "implementation_plan": "Execute rolling upgrade on Kubernetes nodes with automated health check validation.",
+        "backout_plan": "Revert AKS node pool image to prior baseline snapshot.",
+        "requested_by_person_id": "E1085"
+      }
+    ],
+    "kb_articles": [
+      {
+        "id": "KB-HR-01-01",
+        "project_id": "P-HR-01",
+        "ci_id": "CI-APP-HR-01",
+        "title": "SOP: Triage & Resolution of Ingestion Desynchronization on SuccessFactors HR Core",
+        "category": "Troubleshooting",
+        "article_body": "When downstream systems report missing records for SuccessFactors HR Core, verify Kafka offset status in Azure Event Hubs and trigger a replay from the high-watermark.",
+        "author_person_id": "E1085"
+      }
+    ],
+    "readiness": {
+      "project_id": "P-HR-01",
+      "monitoring_enabled": true,
+      "alerting_configured": true,
+      "backup_configured": true,
+      "last_dr_test_date": "2026-04-12",
+      "on_call_rota_active": true,
+      "runbook_exists": true,
+      "runbook_url": "https://autonova.sharepoint.com/sites/P-HR-01/Runbooks",
+      "health_score": 96
+    }
+  }
+]

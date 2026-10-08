@@ -3,7 +3,7 @@ const router = express.Router();
 const db = require('../services/db');
 const graphService = require('../services/graphService');
 const readinessService = require('../services/readinessService');
-const { PROJECTS, getProjectById, getProjectsByDepartment } = require('../services/projectsData');
+const { PROJECTS, getProjectById, getProjectsByDepartment, getProjectGraph } = require('../services/projectsData');
 
 /**
  * GET /api/projects
@@ -47,6 +47,72 @@ router.get('/:projectId', async (req, res, next) => {
     }
     
     res.json(project);
+  } catch (err) {
+    next(err);
+  }
+});
+
+/**
+ * GET /api/projects/:projectId/context
+ * Returns unified project context profile via SQL stored procedure
+ */
+router.get('/:projectId/context', async (req, res, next) => {
+  try {
+    const { projectId } = req.params;
+    const role = req.headers['x-user-role'] || req.query.role || req.user?.persona || 'Developer';
+    const personId = req.headers['x-person-id'] || req.query.person_id || req.user?.id || null;
+
+    try {
+      const { pool } = require('../../../scripts/loaders/db_pool');
+      const client = await pool.connect();
+      try {
+        const result = await client.query('SELECT project_context($1, $2, $3) AS context', [projectId, role, personId]);
+        if (!result.rows[0]?.context?.project) {
+          return res.status(404).json({ error: `Project ${projectId} not found` });
+        }
+        return res.json(result.rows[0].context);
+      } finally {
+        client.release();
+      }
+    } catch (dbErr) {
+      // In-Memory Fallback
+      const { projectMap, peopleMap, allocations, projectDependencies, projectServiceUsage } = require('../../../scripts/generators/utils');
+      const p = projectMap.get(projectId);
+      if (!p) {
+        return res.status(404).json({ error: `Project ${projectId} not found` });
+      }
+      const bo = peopleMap.get(p.business_owner_id) || { name: p.business_owner_id };
+      const tl = peopleMap.get(p.tech_lead_id) || { name: p.tech_lead_id };
+      const allocs = allocations.filter(a => a.project_id === projectId);
+      const deps = projectDependencies.filter(d => d.project_id_consumer === projectId);
+      const svcs = projectServiceUsage.filter(s => s.project_id === projectId);
+
+      return res.json({
+        project: {
+          id: p.project_id,
+          name: p.name,
+          domain_id: p.domain_id,
+          status: p.status,
+          business_criticality: p.business_criticality,
+          summary: p.description,
+          business_owner: { id: p.business_owner_id, name: bo.name },
+          tech_lead: { id: p.tech_lead_id, name: tl.name }
+        },
+        team_raci: allocs.map(a => ({
+          person_id: a.person_id,
+          name: a.person_name,
+          role: a.role_on_project,
+          allocation_pct: a.allocation_pct
+        })),
+        budget: ['Management', 'PM', 'Architect'].includes(role) 
+          ? { cost_center: `CC-${p.domain_id}-01`, capex_planned: 3500000, opex_planned: 1225000, variance: 0 }
+          : { status: 'RESTRICTED_BY_ROLE' },
+        services_used: svcs.map(s => ({ service_id: s.service_id, purpose: s.purpose })),
+        dependencies: deps.map(d => ({ provider_id: d.depends_on_project_id_provider, type: d.dependency_type, criticality: d.criticality })),
+        open_incidents: [],
+        repositories: [{ id: `autonova-group/${p.project_id.toLowerCase()}-core`, name: `${p.project_id.toLowerCase()}-core` }]
+      });
+    }
   } catch (err) {
     next(err);
   }
@@ -97,7 +163,8 @@ router.get('/:projectId/graph', async (req, res, next) => {
     if (!project) {
       return res.status(404).json({ error: 'Project not found' });
     }
-    res.json(project.graph || { nodes: [], links: [] });
+    const graph = getProjectGraph(projectId);
+    res.json(graph || { nodes: [], links: [] });
   } catch (err) {
     next(err);
   }

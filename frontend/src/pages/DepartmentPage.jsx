@@ -43,7 +43,14 @@ const DepartmentPage = () => {
             </div>
             <div>
               <span className="text-xs font-bold uppercase tracking-wider text-slate-400">Group Function Department</span>
-              <h1 className="text-2xl font-bold text-slate-900">{departmentId}</h1>
+              <h1 className="text-2xl font-bold text-slate-900">
+                {projects[0]?.domain || projects[0]?.department || departmentId}
+                {departmentId && departmentId !== (projects[0]?.domain || projects[0]?.department) && (
+                  <span className="ml-2 text-sm font-mono text-slate-500 font-bold bg-slate-100 px-2 py-0.5 rounded border border-slate-200">
+                    {departmentId}
+                  </span>
+                )}
+              </h1>
             </div>
           </div>
           <span className="self-start sm:self-auto bg-slate-100 text-slate-700 text-xs font-bold px-3 py-1 rounded-md font-mono">

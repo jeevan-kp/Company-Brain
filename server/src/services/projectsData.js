@@ -8,7 +8,9 @@
  * - 86 People & 209 Allocations
  * - 31 Projects & 53 Dependencies
  * - 658 Graph Edges
- * - 145 Golden Q&As across 9 reasoning categories
+ * - 230 Golden Q&As across 9 reasoning categories
+ * - 15 Planted Enterprise Anomalies
+ * - 7 Multi-Source Mock Systems (LeanIX, Confluence, SharePoint, GitHub, Jira, Teams, ServiceNow)
  */
 
 const dataset = require('./datasetLoader');
@@ -26,6 +28,8 @@ module.exports = {
   ALLOCATIONS: dataset.ALLOCATIONS,
   GRAPH_EDGES: dataset.GRAPH_EDGES,
   GOLDEN_QA: dataset.GOLDEN_QA,
+  ANOMALIES: dataset.ANOMALIES,
+  MOCKS: dataset.MOCKS,
   getGlobalGraph: dataset.getGlobalGraph,
   getProjectGraph: dataset.getProjectGraph,
   searchDataset: dataset.searchDataset,

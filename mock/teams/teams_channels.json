@@ -1,0 +1,4618 @@
+[
+  {
+    "id": "TM-CHAN-P-CYB-01-GEN",
+    "project_id": "P-CYB-01",
+    "name": "Security Log Monitoring (SIEM) — General Engineering Channel",
+    "description": "Core collaboration channel for Security Log Monitoring (SIEM) project team",
+    "meetings": [
+      {
+        "id": "MTG-P-CYB-01-01",
+        "title": "Security Log Monitoring (SIEM) — Weekly Steering Committee #1",
+        "meeting_type": "Steering Committee",
+        "organizer_person_id": "E1026",
+        "meeting_date": "2026-09-08T10:00:00.000Z",
+        "duration_minutes": 45,
+        "summary": "Reviewed progress on Security Log Monitoring (SIEM), evaluated risk mitigations and aligned on milestone sign-offs.",
+        "decisions": [
+          {
+            "id": "DEC-MTG-P-CYB-01-01-01",
+            "decision_text": "Approved standard zero-downtime rolling update strategy for Security Log Monitoring (SIEM).",
+            "rationale": "Minimizes impact on plant operations during shift changes.",
+            "impact_level": "High",
+            "decided_by_person_id": "E1024"
+          }
+        ],
+        "action_items": [
+          {
+            "id": "ACT-MTG-P-CYB-01-01-01",
+            "description": "Conduct load test simulation at 1.5x peak dealer transaction volume.",
+            "assignee_person_id": "E1026",
+            "due_date": "2026-10-15",
+            "status": "In Progress"
+          }
+        ]
+      },
+      {
+        "id": "MTG-P-CYB-01-02",
+        "title": "Security Log Monitoring (SIEM) — Weekly Architecture Review #2",
+        "meeting_type": "Architecture Review",
+        "organizer_person_id": "E1026",
+        "meeting_date": "2026-09-15T10:00:00.000Z",
+        "duration_minutes": 45,
+        "summary": "Reviewed progress on Security Log Monitoring (SIEM), evaluated risk mitigations and aligned on milestone sign-offs.",
+        "decisions": [
+          {
+            "id": "DEC-MTG-P-CYB-01-02-01",
+            "decision_text": "Approved standard zero-downtime rolling update strategy for Security Log Monitoring (SIEM).",
+            "rationale": "Minimizes impact on plant operations during shift changes.",
+            "impact_level": "High",
+            "decided_by_person_id": "E1024"
+          }
+        ],
+        "action_items": [
+          {
+            "id": "ACT-MTG-P-CYB-01-02-01",
+            "description": "Conduct load test simulation at 1.5x peak dealer transaction volume.",
+            "assignee_person_id": "E1026",
+            "due_date": "2026-10-15",
+            "status": "In Progress"
+          }
+        ]
+      },
+      {
+        "id": "MTG-P-CYB-01-03",
+        "title": "Security Log Monitoring (SIEM) — Weekly Sprint Planning #3",
+        "meeting_type": "Sprint Planning",
+        "organizer_person_id": "E1026",
+        "meeting_date": "2026-09-22T10:00:00.000Z",
+        "duration_minutes": 45,
+        "summary": "Reviewed progress on Security Log Monitoring (SIEM), evaluated risk mitigations and aligned on milestone sign-offs.",
+        "decisions": [
+          {
+            "id": "DEC-MTG-P-CYB-01-03-01",
+            "decision_text": "Approved standard zero-downtime rolling update strategy for Security Log Monitoring (SIEM).",
+            "rationale": "Minimizes impact on plant operations during shift changes.",
+            "impact_level": "High",
+            "decided_by_person_id": "E1024"
+          }
+        ],
+        "action_items": [
+          {
+            "id": "ACT-MTG-P-CYB-01-03-01",
+            "description": "Conduct load test simulation at 1.5x peak dealer transaction volume.",
+            "assignee_person_id": "E1026",
+            "due_date": "2026-10-15",
+            "status": "In Progress"
+          }
+        ]
+      },
+      {
+        "id": "MTG-P-CYB-01-04",
+        "title": "Security Log Monitoring (SIEM) — Weekly Sprint Planning #4",
+        "meeting_type": "Sprint Planning",
+        "organizer_person_id": "E1026",
+        "meeting_date": "2026-09-29T10:00:00.000Z",
+        "duration_minutes": 45,
+        "summary": "Reviewed progress on Security Log Monitoring (SIEM), evaluated risk mitigations and aligned on milestone sign-offs.",
+        "decisions": [
+          {
+            "id": "DEC-MTG-P-CYB-01-04-01",
+            "decision_text": "Approved standard zero-downtime rolling update strategy for Security Log Monitoring (SIEM).",
+            "rationale": "Minimizes impact on plant operations during shift changes.",
+            "impact_level": "High",
+            "decided_by_person_id": "E1024"
+          }
+        ],
+        "action_items": [
+          {
+            "id": "ACT-MTG-P-CYB-01-04-01",
+            "description": "Conduct load test simulation at 1.5x peak dealer transaction volume.",
+            "assignee_person_id": "E1026",
+            "due_date": "2026-10-15",
+            "status": "In Progress"
+          }
+        ]
+      },
+      {
+        "id": "MTG-P-CYB-01-05",
+        "title": "Security Log Monitoring (SIEM) — Weekly Sprint Planning #5",
+        "meeting_type": "Sprint Planning",
+        "organizer_person_id": "E1026",
+        "meeting_date": "2026-10-06T10:00:00.000Z",
+        "duration_minutes": 45,
+        "summary": "Reviewed progress on Security Log Monitoring (SIEM), evaluated risk mitigations and aligned on milestone sign-offs.",
+        "decisions": [
+          {
+            "id": "DEC-MTG-P-CYB-01-05-01",
+            "decision_text": "Approved standard zero-downtime rolling update strategy for Security Log Monitoring (SIEM).",
+            "rationale": "Minimizes impact on plant operations during shift changes.",
+            "impact_level": "High",
+            "decided_by_person_id": "E1024"
+          }
+        ],
+        "action_items": [
+          {
+            "id": "ACT-MTG-P-CYB-01-05-01",
+            "description": "Conduct load test simulation at 1.5x peak dealer transaction volume.",
+            "assignee_person_id": "E1026",
+            "due_date": "2026-10-15",
+            "status": "In Progress"
+          }
+        ]
+      },
+      {
+        "id": "MTG-P-CYB-01-06",
+        "title": "Security Log Monitoring (SIEM) — Weekly Sprint Planning #6",
+        "meeting_type": "Sprint Planning",
+        "organizer_person_id": "E1026",
+        "meeting_date": "2026-10-13T10:00:00.000Z",
+        "duration_minutes": 45,
+        "summary": "Reviewed progress on Security Log Monitoring (SIEM), evaluated risk mitigations and aligned on milestone sign-offs.",
+        "decisions": [
+          {
+            "id": "DEC-MTG-P-CYB-01-06-01",
+            "decision_text": "Approved standard zero-downtime rolling update strategy for Security Log Monitoring (SIEM).",
+            "rationale": "Minimizes impact on plant operations during shift changes.",
+            "impact_level": "High",
+            "decided_by_person_id": "E1024"
+          }
+        ],
+        "action_items": [
+          {
+            "id": "ACT-MTG-P-CYB-01-06-01",
+            "description": "Conduct load test simulation at 1.5x peak dealer transaction volume.",
+            "assignee_person_id": "E1026",
+            "due_date": "2026-10-15",
+            "status": "In Progress"
+          }
+        ]
+      },
+      {
+        "id": "MTG-P-CYB-01-07",
+        "title": "Security Log Monitoring (SIEM) — Weekly Sprint Planning #7",
+        "meeting_type": "Sprint Planning",
+        "organizer_person_id": "E1026",
+        "meeting_date": "2026-10-20T10:00:00.000Z",
+        "duration_minutes": 45,
+        "summary": "Reviewed progress on Security Log Monitoring (SIEM), evaluated risk mitigations and aligned on milestone sign-offs.",
+        "decisions": [
+          {
+            "id": "DEC-MTG-P-CYB-01-07-01",
+            "decision_text": "Approved standard zero-downtime rolling update strategy for Security Log Monitoring (SIEM).",
+            "rationale": "Minimizes impact on plant operations during shift changes.",
+            "impact_level": "High",
+            "decided_by_person_id": "E1024"
+          }
+        ],
+        "action_items": [
+          {
+            "id": "ACT-MTG-P-CYB-01-07-01",
+            "description": "Conduct load test simulation at 1.5x peak dealer transaction volume.",
+            "assignee_person_id": "E1026",
+            "due_date": "2026-10-15",
+            "status": "In Progress"
+          }
+        ]
+      },
+      {
+        "id": "MTG-P-CYB-01-08",
+        "title": "Security Log Monitoring (SIEM) — Weekly Sprint Planning #8",
+        "meeting_type": "Sprint Planning",
+        "organizer_person_id": "E1026",
+        "meeting_date": "2026-10-27T10:00:00.000Z",
+        "duration_minutes": 45,
+        "summary": "Reviewed progress on Security Log Monitoring (SIEM), evaluated risk mitigations and aligned on milestone sign-offs.",
+        "decisions": [
+          {
+            "id": "DEC-MTG-P-CYB-01-08-01",
+            "decision_text": "Approved standard zero-downtime rolling update strategy for Security Log Monitoring (SIEM).",
+            "rationale": "Minimizes impact on plant operations during shift changes.",
+            "impact_level": "High",
+            "decided_by_person_id": "E1024"
+          }
+        ],
+        "action_items": [
+          {
+            "id": "ACT-MTG-P-CYB-01-08-01",
+            "description": "Conduct load test simulation at 1.5x peak dealer transaction volume.",
+            "assignee_person_id": "E1026",
+            "due_date": "2026-10-15",
+            "status": "In Progress"
+          }
+        ]
+      }
+    ],
+    "messages": [
+      {
+        "id": "MSG-P-CYB-01-001",
+        "author_person_id": "E1026",
+        "content": "Team, the latest sprint release has passed security vulnerability scanning with zero critical findings."
+      },
+      {
+        "id": "MSG-P-CYB-01-002",
+        "author_person_id": "E1024",
+        "content": "Great work. Let's ensure the operational runbook and escalation paths are updated before the steering review."
+      }
+    ]
+  },
+  {
+    "id": "TM-CHAN-P-CYB-02-GEN",
+    "project_id": "P-CYB-02",
+    "name": "Identity & Access Governance — General Engineering Channel",
+    "description": "Core collaboration channel for Identity & Access Governance project team",
+    "meetings": [
+      {
+        "id": "MTG-P-CYB-02-01",
+        "title": "Identity & Access Governance — Weekly Steering Committee #1",
+        "meeting_type": "Steering Committee",
+        "organizer_person_id": "E1030",
+        "meeting_date": "2026-09-08T10:00:00.000Z",
+        "duration_minutes": 45,
+        "summary": "Reviewed progress on Identity & Access Governance, evaluated risk mitigations and aligned on milestone sign-offs.",
+        "decisions": [
+          {
+            "id": "DEC-MTG-P-CYB-02-01-01",
+            "decision_text": "Approved standard zero-downtime rolling update strategy for Identity & Access Governance.",
+            "rationale": "Minimizes impact on plant operations during shift changes.",
+            "impact_level": "High",
+            "decided_by_person_id": "E1024"
+          }
+        ],
+        "action_items": [
+          {
+            "id": "ACT-MTG-P-CYB-02-01-01",
+            "description": "Conduct load test simulation at 1.5x peak dealer transaction volume.",
+            "assignee_person_id": "E1030",
+            "due_date": "2026-10-15",
+            "status": "In Progress"
+          }
+        ]
+      },
+      {
+        "id": "MTG-P-CYB-02-02",
+        "title": "Identity & Access Governance — Weekly Architecture Review #2",
+        "meeting_type": "Architecture Review",
+        "organizer_person_id": "E1030",
+        "meeting_date": "2026-09-15T10:00:00.000Z",
+        "duration_minutes": 45,
+        "summary": "Reviewed progress on Identity & Access Governance, evaluated risk mitigations and aligned on milestone sign-offs.",
+        "decisions": [
+          {
+            "id": "DEC-MTG-P-CYB-02-02-01",
+            "decision_text": "Approved standard zero-downtime rolling update strategy for Identity & Access Governance.",
+            "rationale": "Minimizes impact on plant operations during shift changes.",
+            "impact_level": "High",
+            "decided_by_person_id": "E1024"
+          }
+        ],
+        "action_items": [
+          {
+            "id": "ACT-MTG-P-CYB-02-02-01",
+            "description": "Conduct load test simulation at 1.5x peak dealer transaction volume.",
+            "assignee_person_id": "E1030",
+            "due_date": "2026-10-15",
+            "status": "In Progress"
+          }
+        ]
+      },
+      {
+        "id": "MTG-P-CYB-02-03",
+        "title": "Identity & Access Governance — Weekly Sprint Planning #3",
+        "meeting_type": "Sprint Planning",
+        "organizer_person_id": "E1030",
+        "meeting_date": "2026-09-22T10:00:00.000Z",
+        "duration_minutes": 45,
+        "summary": "Reviewed progress on Identity & Access Governance, evaluated risk mitigations and aligned on milestone sign-offs.",
+        "decisions": [
+          {
+            "id": "DEC-MTG-P-CYB-02-03-01",
+            "decision_text": "Approved standard zero-downtime rolling update strategy for Identity & Access Governance.",
+            "rationale": "Minimizes impact on plant operations during shift changes.",
+            "impact_level": "High",
+            "decided_by_person_id": "E1024"
+          }
+        ],
+        "action_items": [
+          {
+            "id": "ACT-MTG-P-CYB-02-03-01",
+            "description": "Conduct load test simulation at 1.5x peak dealer transaction volume.",
+            "assignee_person_id": "E1030",
+            "due_date": "2026-10-15",
+            "status": "In Progress"
+          }
+        ]
+      },
+      {
+        "id": "MTG-P-CYB-02-04",
+        "title": "Identity & Access Governance — Weekly Sprint Planning #4",
+        "meeting_type": "Sprint Planning",
+        "organizer_person_id": "E1030",
+        "meeting_date": "2026-09-29T10:00:00.000Z",
+        "duration_minutes": 45,
+        "summary": "Reviewed progress on Identity & Access Governance, evaluated risk mitigations and aligned on milestone sign-offs.",
+        "decisions": [
+          {
+            "id": "DEC-MTG-P-CYB-02-04-01",
+            "decision_text": "Approved standard zero-downtime rolling update strategy for Identity & Access Governance.",
+            "rationale": "Minimizes impact on plant operations during shift changes.",
+            "impact_level": "High",
+            "decided_by_person_id": "E1024"
+          }
+        ],
+        "action_items": [
+          {
+            "id": "ACT-MTG-P-CYB-02-04-01",
+            "description": "Conduct load test simulation at 1.5x peak dealer transaction volume.",
+            "assignee_person_id": "E1030",
+            "due_date": "2026-10-15",
+            "status": "In Progress"
+          }
+        ]
+      },
+      {
+        "id": "MTG-P-CYB-02-05",
+        "title": "Identity & Access Governance — Weekly Sprint Planning #5",
+        "meeting_type": "Sprint Planning",
+        "organizer_person_id": "E1030",
+        "meeting_date": "2026-10-06T10:00:00.000Z",
+        "duration_minutes": 45,
+        "summary": "Reviewed progress on Identity & Access Governance, evaluated risk mitigations and aligned on milestone sign-offs.",
+        "decisions": [
+          {
+            "id": "DEC-MTG-P-CYB-02-05-01",
+            "decision_text": "Approved standard zero-downtime rolling update strategy for Identity & Access Governance.",
+            "rationale": "Minimizes impact on plant operations during shift changes.",
+            "impact_level": "High",
+            "decided_by_person_id": "E1024"
+          }
+        ],
+        "action_items": [
+          {
+            "id": "ACT-MTG-P-CYB-02-05-01",
+            "description": "Conduct load test simulation at 1.5x peak dealer transaction volume.",
+            "assignee_person_id": "E1030",
+            "due_date": "2026-10-15",
+            "status": "In Progress"
+          }
+        ]
+      },
+      {
+        "id": "MTG-P-CYB-02-06",
+        "title": "Identity & Access Governance — Weekly Sprint Planning #6",
+        "meeting_type": "Sprint Planning",
+        "organizer_person_id": "E1030",
+        "meeting_date": "2026-10-13T10:00:00.000Z",
+        "duration_minutes": 45,
+        "summary": "Reviewed progress on Identity & Access Governance, evaluated risk mitigations and aligned on milestone sign-offs.",
+        "decisions": [
+          {
+            "id": "DEC-MTG-P-CYB-02-06-01",
+            "decision_text": "Approved standard zero-downtime rolling update strategy for Identity & Access Governance.",
+            "rationale": "Minimizes impact on plant operations during shift changes.",
+            "impact_level": "High",
+            "decided_by_person_id": "E1024"
+          }
+        ],
+        "action_items": [
+          {
+            "id": "ACT-MTG-P-CYB-02-06-01",
+            "description": "Conduct load test simulation at 1.5x peak dealer transaction volume.",
+            "assignee_person_id": "E1030",
+            "due_date": "2026-10-15",
+            "status": "In Progress"
+          }
+        ]
+      },
+      {
+        "id": "MTG-P-CYB-02-07",
+        "title": "Identity & Access Governance — Weekly Sprint Planning #7",
+        "meeting_type": "Sprint Planning",
+        "organizer_person_id": "E1030",
+        "meeting_date": "2026-10-20T10:00:00.000Z",
+        "duration_minutes": 45,
+        "summary": "Reviewed progress on Identity & Access Governance, evaluated risk mitigations and aligned on milestone sign-offs.",
+        "decisions": [
+          {
+            "id": "DEC-MTG-P-CYB-02-07-01",
+            "decision_text": "Approved standard zero-downtime rolling update strategy for Identity & Access Governance.",
+            "rationale": "Minimizes impact on plant operations during shift changes.",
+            "impact_level": "High",
+            "decided_by_person_id": "E1024"
+          }
+        ],
+        "action_items": [
+          {
+            "id": "ACT-MTG-P-CYB-02-07-01",
+            "description": "Conduct load test simulation at 1.5x peak dealer transaction volume.",
+            "assignee_person_id": "E1030",
+            "due_date": "2026-10-15",
+            "status": "In Progress"
+          }
+        ]
+      },
+      {
+        "id": "MTG-P-CYB-02-08",
+        "title": "Identity & Access Governance — Weekly Sprint Planning #8",
+        "meeting_type": "Sprint Planning",
+        "organizer_person_id": "E1030",
+        "meeting_date": "2026-10-27T10:00:00.000Z",
+        "duration_minutes": 45,
+        "summary": "Reviewed progress on Identity & Access Governance, evaluated risk mitigations and aligned on milestone sign-offs.",
+        "decisions": [
+          {
+            "id": "DEC-MTG-P-CYB-02-08-01",
+            "decision_text": "Approved standard zero-downtime rolling update strategy for Identity & Access Governance.",
+            "rationale": "Minimizes impact on plant operations during shift changes.",
+            "impact_level": "High",
+            "decided_by_person_id": "E1024"
+          }
+        ],
+        "action_items": [
+          {
+            "id": "ACT-MTG-P-CYB-02-08-01",
+            "description": "Conduct load test simulation at 1.5x peak dealer transaction volume.",
+            "assignee_person_id": "E1030",
+            "due_date": "2026-10-15",
+            "status": "In Progress"
+          }
+        ]
+      }
+    ],
+    "messages": [
+      {
+        "id": "MSG-P-CYB-02-001",
+        "author_person_id": "E1030",
+        "content": "Team, the latest sprint release has passed security vulnerability scanning with zero critical findings."
+      },
+      {
+        "id": "MSG-P-CYB-02-002",
+        "author_person_id": "E1024",
+        "content": "Great work. Let's ensure the operational runbook and escalation paths are updated before the steering review."
+      }
+    ]
+  },
+  {
+    "id": "TM-CHAN-P-CYB-03-GEN",
+    "project_id": "P-CYB-03",
+    "name": "Cloud Security Posture Management — General Engineering Channel",
+    "description": "Core collaboration channel for Cloud Security Posture Management project team",
+    "meetings": [
+      {
+        "id": "MTG-P-CYB-03-01",
+        "title": "Cloud Security Posture Management — Weekly Steering Committee #1",
+        "meeting_type": "Steering Committee",
+        "organizer_person_id": "E1035",
+        "meeting_date": "2026-09-08T10:00:00.000Z",
+        "duration_minutes": 45,
+        "summary": "Reviewed progress on Cloud Security Posture Management, evaluated risk mitigations and aligned on milestone sign-offs.",
+        "decisions": [
+          {
+            "id": "DEC-MTG-P-CYB-03-01-01",
+            "decision_text": "Approved standard zero-downtime rolling update strategy for Cloud Security Posture Management.",
+            "rationale": "Minimizes impact on plant operations during shift changes.",
+            "impact_level": "High",
+            "decided_by_person_id": "E1024"
+          }
+        ],
+        "action_items": [
+          {
+            "id": "ACT-MTG-P-CYB-03-01-01",
+            "description": "Conduct load test simulation at 1.5x peak dealer transaction volume.",
+            "assignee_person_id": "E1035",
+            "due_date": "2026-10-15",
+            "status": "In Progress"
+          }
+        ]
+      },
+      {
+        "id": "MTG-P-CYB-03-02",
+        "title": "Cloud Security Posture Management — Weekly Architecture Review #2",
+        "meeting_type": "Architecture Review",
+        "organizer_person_id": "E1035",
+        "meeting_date": "2026-09-15T10:00:00.000Z",
+        "duration_minutes": 45,
+        "summary": "Reviewed progress on Cloud Security Posture Management, evaluated risk mitigations and aligned on milestone sign-offs.",
+        "decisions": [
+          {
+            "id": "DEC-MTG-P-CYB-03-02-01",
+            "decision_text": "Approved standard zero-downtime rolling update strategy for Cloud Security Posture Management.",
+            "rationale": "Minimizes impact on plant operations during shift changes.",
+            "impact_level": "High",
+            "decided_by_person_id": "E1024"
+          }
+        ],
+        "action_items": [
+          {
+            "id": "ACT-MTG-P-CYB-03-02-01",
+            "description": "Conduct load test simulation at 1.5x peak dealer transaction volume.",
+            "assignee_person_id": "E1035",
+            "due_date": "2026-10-15",
+            "status": "In Progress"
+          }
+        ]
+      },
+      {
+        "id": "MTG-P-CYB-03-03",
+        "title": "Cloud Security Posture Management — Weekly Sprint Planning #3",
+        "meeting_type": "Sprint Planning",
+        "organizer_person_id": "E1035",
+        "meeting_date": "2026-09-22T10:00:00.000Z",
+        "duration_minutes": 45,
+        "summary": "Reviewed progress on Cloud Security Posture Management, evaluated risk mitigations and aligned on milestone sign-offs.",
+        "decisions": [
+          {
+            "id": "DEC-MTG-P-CYB-03-03-01",
+            "decision_text": "Approved standard zero-downtime rolling update strategy for Cloud Security Posture Management.",
+            "rationale": "Minimizes impact on plant operations during shift changes.",
+            "impact_level": "High",
+            "decided_by_person_id": "E1024"
+          }
+        ],
+        "action_items": [
+          {
+            "id": "ACT-MTG-P-CYB-03-03-01",
+            "description": "Conduct load test simulation at 1.5x peak dealer transaction volume.",
+            "assignee_person_id": "E1035",
+            "due_date": "2026-10-15",
+            "status": "In Progress"
+          }
+        ]
+      },
+      {
+        "id": "MTG-P-CYB-03-04",
+        "title": "Cloud Security Posture Management — Weekly Sprint Planning #4",
+        "meeting_type": "Sprint Planning",
+        "organizer_person_id": "E1035",
+        "meeting_date": "2026-09-29T10:00:00.000Z",
+        "duration_minutes": 45,
+        "summary": "Reviewed progress on Cloud Security Posture Management, evaluated risk mitigations and aligned on milestone sign-offs.",
+        "decisions": [
+          {
+            "id": "DEC-MTG-P-CYB-03-04-01",
+            "decision_text": "Approved standard zero-downtime rolling update strategy for Cloud Security Posture Management.",
+            "rationale": "Minimizes impact on plant operations during shift changes.",
+            "impact_level": "High",
+            "decided_by_person_id": "E1024"
+          }
+        ],
+        "action_items": [
+          {
+            "id": "ACT-MTG-P-CYB-03-04-01",
+            "description": "Conduct load test simulation at 1.5x peak dealer transaction volume.",
+            "assignee_person_id": "E1035",
+            "due_date": "2026-10-15",
+            "status": "In Progress"
+          }
+        ]
+      }
+    ],
+    "messages": [
+      {
+        "id": "MSG-P-CYB-03-001",
+        "author_person_id": "E1035",
+        "content": "Team, the latest sprint release has passed security vulnerability scanning with zero critical findings."
+      },
+      {
+        "id": "MSG-P-CYB-03-002",
+        "author_person_id": "E1024",
+        "content": "Great work. Let's ensure the operational runbook and escalation paths are updated before the steering review."
+      }
+    ]
+  },
+  {
+    "id": "TM-CHAN-P-CYB-04-GEN",
+    "project_id": "P-CYB-04",
+    "name": "Vulnerability & Patch Management — General Engineering Channel",
+    "description": "Core collaboration channel for Vulnerability & Patch Management project team",
+    "meetings": [
+      {
+        "id": "MTG-P-CYB-04-01",
+        "title": "Vulnerability & Patch Management — Weekly Steering Committee #1",
+        "meeting_type": "Steering Committee",
+        "organizer_person_id": "E1033",
+        "meeting_date": "2026-09-08T10:00:00.000Z",
+        "duration_minutes": 45,
+        "summary": "Reviewed progress on Vulnerability & Patch Management, evaluated risk mitigations and aligned on milestone sign-offs.",
+        "decisions": [
+          {
+            "id": "DEC-MTG-P-CYB-04-01-01",
+            "decision_text": "Approved standard zero-downtime rolling update strategy for Vulnerability & Patch Management.",
+            "rationale": "Minimizes impact on plant operations during shift changes.",
+            "impact_level": "High",
+            "decided_by_person_id": "E1025"
+          }
+        ],
+        "action_items": [
+          {
+            "id": "ACT-MTG-P-CYB-04-01-01",
+            "description": "Conduct load test simulation at 1.5x peak dealer transaction volume.",
+            "assignee_person_id": "E1033",
+            "due_date": "2026-10-15",
+            "status": "In Progress"
+          }
+        ]
+      },
+      {
+        "id": "MTG-P-CYB-04-02",
+        "title": "Vulnerability & Patch Management — Weekly Architecture Review #2",
+        "meeting_type": "Architecture Review",
+        "organizer_person_id": "E1033",
+        "meeting_date": "2026-09-15T10:00:00.000Z",
+        "duration_minutes": 45,
+        "summary": "Reviewed progress on Vulnerability & Patch Management, evaluated risk mitigations and aligned on milestone sign-offs.",
+        "decisions": [
+          {
+            "id": "DEC-MTG-P-CYB-04-02-01",
+            "decision_text": "Approved standard zero-downtime rolling update strategy for Vulnerability & Patch Management.",
+            "rationale": "Minimizes impact on plant operations during shift changes.",
+            "impact_level": "High",
+            "decided_by_person_id": "E1025"
+          }
+        ],
+        "action_items": [
+          {
+            "id": "ACT-MTG-P-CYB-04-02-01",
+            "description": "Conduct load test simulation at 1.5x peak dealer transaction volume.",
+            "assignee_person_id": "E1033",
+            "due_date": "2026-10-15",
+            "status": "In Progress"
+          }
+        ]
+      },
+      {
+        "id": "MTG-P-CYB-04-03",
+        "title": "Vulnerability & Patch Management — Weekly Sprint Planning #3",
+        "meeting_type": "Sprint Planning",
+        "organizer_person_id": "E1033",
+        "meeting_date": "2026-09-22T10:00:00.000Z",
+        "duration_minutes": 45,
+        "summary": "Reviewed progress on Vulnerability & Patch Management, evaluated risk mitigations and aligned on milestone sign-offs.",
+        "decisions": [
+          {
+            "id": "DEC-MTG-P-CYB-04-03-01",
+            "decision_text": "Approved standard zero-downtime rolling update strategy for Vulnerability & Patch Management.",
+            "rationale": "Minimizes impact on plant operations during shift changes.",
+            "impact_level": "High",
+            "decided_by_person_id": "E1025"
+          }
+        ],
+        "action_items": [
+          {
+            "id": "ACT-MTG-P-CYB-04-03-01",
+            "description": "Conduct load test simulation at 1.5x peak dealer transaction volume.",
+            "assignee_person_id": "E1033",
+            "due_date": "2026-10-15",
+            "status": "In Progress"
+          }
+        ]
+      },
+      {
+        "id": "MTG-P-CYB-04-04",
+        "title": "Vulnerability & Patch Management — Weekly Sprint Planning #4",
+        "meeting_type": "Sprint Planning",
+        "organizer_person_id": "E1033",
+        "meeting_date": "2026-09-29T10:00:00.000Z",
+        "duration_minutes": 45,
+        "summary": "Reviewed progress on Vulnerability & Patch Management, evaluated risk mitigations and aligned on milestone sign-offs.",
+        "decisions": [
+          {
+            "id": "DEC-MTG-P-CYB-04-04-01",
+            "decision_text": "Approved standard zero-downtime rolling update strategy for Vulnerability & Patch Management.",
+            "rationale": "Minimizes impact on plant operations during shift changes.",
+            "impact_level": "High",
+            "decided_by_person_id": "E1025"
+          }
+        ],
+        "action_items": [
+          {
+            "id": "ACT-MTG-P-CYB-04-04-01",
+            "description": "Conduct load test simulation at 1.5x peak dealer transaction volume.",
+            "assignee_person_id": "E1033",
+            "due_date": "2026-10-15",
+            "status": "In Progress"
+          }
+        ]
+      }
+    ],
+    "messages": [
+      {
+        "id": "MSG-P-CYB-04-001",
+        "author_person_id": "E1033",
+        "content": "Team, the latest sprint release has passed security vulnerability scanning with zero critical findings."
+      },
+      {
+        "id": "MSG-P-CYB-04-002",
+        "author_person_id": "E1025",
+        "content": "Great work. Let's ensure the operational runbook and escalation paths are updated before the steering review."
+      }
+    ]
+  },
+  {
+    "id": "TM-CHAN-P-CYB-05-GEN",
+    "project_id": "P-CYB-05",
+    "name": "Security Data Lake — General Engineering Channel",
+    "description": "Core collaboration channel for Security Data Lake project team",
+    "meetings": [
+      {
+        "id": "MTG-P-CYB-05-01",
+        "title": "Security Data Lake — Weekly Steering Committee #1",
+        "meeting_type": "Steering Committee",
+        "organizer_person_id": "E1028",
+        "meeting_date": "2026-09-08T10:00:00.000Z",
+        "duration_minutes": 45,
+        "summary": "Reviewed progress on Security Data Lake, evaluated risk mitigations and aligned on milestone sign-offs.",
+        "decisions": [
+          {
+            "id": "DEC-MTG-P-CYB-05-01-01",
+            "decision_text": "Approved standard zero-downtime rolling update strategy for Security Data Lake.",
+            "rationale": "Minimizes impact on plant operations during shift changes.",
+            "impact_level": "High",
+            "decided_by_person_id": "E1024"
+          }
+        ],
+        "action_items": [
+          {
+            "id": "ACT-MTG-P-CYB-05-01-01",
+            "description": "Conduct load test simulation at 1.5x peak dealer transaction volume.",
+            "assignee_person_id": "E1028",
+            "due_date": "2026-10-15",
+            "status": "In Progress"
+          }
+        ]
+      },
+      {
+        "id": "MTG-P-CYB-05-02",
+        "title": "Security Data Lake — Weekly Architecture Review #2",
+        "meeting_type": "Architecture Review",
+        "organizer_person_id": "E1028",
+        "meeting_date": "2026-09-15T10:00:00.000Z",
+        "duration_minutes": 45,
+        "summary": "Reviewed progress on Security Data Lake, evaluated risk mitigations and aligned on milestone sign-offs.",
+        "decisions": [
+          {
+            "id": "DEC-MTG-P-CYB-05-02-01",
+            "decision_text": "Approved standard zero-downtime rolling update strategy for Security Data Lake.",
+            "rationale": "Minimizes impact on plant operations during shift changes.",
+            "impact_level": "High",
+            "decided_by_person_id": "E1024"
+          }
+        ],
+        "action_items": [
+          {
+            "id": "ACT-MTG-P-CYB-05-02-01",
+            "description": "Conduct load test simulation at 1.5x peak dealer transaction volume.",
+            "assignee_person_id": "E1028",
+            "due_date": "2026-10-15",
+            "status": "In Progress"
+          }
+        ]
+      },
+      {
+        "id": "MTG-P-CYB-05-03",
+        "title": "Security Data Lake — Weekly Sprint Planning #3",
+        "meeting_type": "Sprint Planning",
+        "organizer_person_id": "E1028",
+        "meeting_date": "2026-09-22T10:00:00.000Z",
+        "duration_minutes": 45,
+        "summary": "Reviewed progress on Security Data Lake, evaluated risk mitigations and aligned on milestone sign-offs.",
+        "decisions": [
+          {
+            "id": "DEC-MTG-P-CYB-05-03-01",
+            "decision_text": "Approved standard zero-downtime rolling update strategy for Security Data Lake.",
+            "rationale": "Minimizes impact on plant operations during shift changes.",
+            "impact_level": "High",
+            "decided_by_person_id": "E1024"
+          }
+        ],
+        "action_items": [
+          {
+            "id": "ACT-MTG-P-CYB-05-03-01",
+            "description": "Conduct load test simulation at 1.5x peak dealer transaction volume.",
+            "assignee_person_id": "E1028",
+            "due_date": "2026-10-15",
+            "status": "In Progress"
+          }
+        ]
+      },
+      {
+        "id": "MTG-P-CYB-05-04",
+        "title": "Security Data Lake — Weekly Sprint Planning #4",
+        "meeting_type": "Sprint Planning",
+        "organizer_person_id": "E1028",
+        "meeting_date": "2026-09-29T10:00:00.000Z",
+        "duration_minutes": 45,
+        "summary": "Reviewed progress on Security Data Lake, evaluated risk mitigations and aligned on milestone sign-offs.",
+        "decisions": [
+          {
+            "id": "DEC-MTG-P-CYB-05-04-01",
+            "decision_text": "Approved standard zero-downtime rolling update strategy for Security Data Lake.",
+            "rationale": "Minimizes impact on plant operations during shift changes.",
+            "impact_level": "High",
+            "decided_by_person_id": "E1024"
+          }
+        ],
+        "action_items": [
+          {
+            "id": "ACT-MTG-P-CYB-05-04-01",
+            "description": "Conduct load test simulation at 1.5x peak dealer transaction volume.",
+            "assignee_person_id": "E1028",
+            "due_date": "2026-10-15",
+            "status": "In Progress"
+          }
+        ]
+      }
+    ],
+    "messages": [
+      {
+        "id": "MSG-P-CYB-05-001",
+        "author_person_id": "E1028",
+        "content": "Team, the latest sprint release has passed security vulnerability scanning with zero critical findings."
+      },
+      {
+        "id": "MSG-P-CYB-05-002",
+        "author_person_id": "E1024",
+        "content": "Great work. Let's ensure the operational runbook and escalation paths are updated before the steering review."
+      }
+    ]
+  },
+  {
+    "id": "TM-CHAN-P-CYB-06-GEN",
+    "project_id": "P-CYB-06",
+    "name": "Privileged Access Management — General Engineering Channel",
+    "description": "Core collaboration channel for Privileged Access Management project team",
+    "meetings": [
+      {
+        "id": "MTG-P-CYB-06-01",
+        "title": "Privileged Access Management — Weekly Steering Committee #1",
+        "meeting_type": "Steering Committee",
+        "organizer_person_id": "E1032",
+        "meeting_date": "2026-09-08T10:00:00.000Z",
+        "duration_minutes": 45,
+        "summary": "Reviewed progress on Privileged Access Management, evaluated risk mitigations and aligned on milestone sign-offs.",
+        "decisions": [
+          {
+            "id": "DEC-MTG-P-CYB-06-01-01",
+            "decision_text": "Approved standard zero-downtime rolling update strategy for Privileged Access Management.",
+            "rationale": "Minimizes impact on plant operations during shift changes.",
+            "impact_level": "High",
+            "decided_by_person_id": "E1025"
+          }
+        ],
+        "action_items": [
+          {
+            "id": "ACT-MTG-P-CYB-06-01-01",
+            "description": "Conduct load test simulation at 1.5x peak dealer transaction volume.",
+            "assignee_person_id": "E1032",
+            "due_date": "2026-10-15",
+            "status": "In Progress"
+          }
+        ]
+      },
+      {
+        "id": "MTG-P-CYB-06-02",
+        "title": "Privileged Access Management — Weekly Architecture Review #2",
+        "meeting_type": "Architecture Review",
+        "organizer_person_id": "E1032",
+        "meeting_date": "2026-09-15T10:00:00.000Z",
+        "duration_minutes": 45,
+        "summary": "Reviewed progress on Privileged Access Management, evaluated risk mitigations and aligned on milestone sign-offs.",
+        "decisions": [
+          {
+            "id": "DEC-MTG-P-CYB-06-02-01",
+            "decision_text": "Approved standard zero-downtime rolling update strategy for Privileged Access Management.",
+            "rationale": "Minimizes impact on plant operations during shift changes.",
+            "impact_level": "High",
+            "decided_by_person_id": "E1025"
+          }
+        ],
+        "action_items": [
+          {
+            "id": "ACT-MTG-P-CYB-06-02-01",
+            "description": "Conduct load test simulation at 1.5x peak dealer transaction volume.",
+            "assignee_person_id": "E1032",
+            "due_date": "2026-10-15",
+            "status": "In Progress"
+          }
+        ]
+      },
+      {
+        "id": "MTG-P-CYB-06-03",
+        "title": "Privileged Access Management — Weekly Sprint Planning #3",
+        "meeting_type": "Sprint Planning",
+        "organizer_person_id": "E1032",
+        "meeting_date": "2026-09-22T10:00:00.000Z",
+        "duration_minutes": 45,
+        "summary": "Reviewed progress on Privileged Access Management, evaluated risk mitigations and aligned on milestone sign-offs.",
+        "decisions": [
+          {
+            "id": "DEC-MTG-P-CYB-06-03-01",
+            "decision_text": "Approved standard zero-downtime rolling update strategy for Privileged Access Management.",
+            "rationale": "Minimizes impact on plant operations during shift changes.",
+            "impact_level": "High",
+            "decided_by_person_id": "E1025"
+          }
+        ],
+        "action_items": [
+          {
+            "id": "ACT-MTG-P-CYB-06-03-01",
+            "description": "Conduct load test simulation at 1.5x peak dealer transaction volume.",
+            "assignee_person_id": "E1032",
+            "due_date": "2026-10-15",
+            "status": "In Progress"
+          }
+        ]
+      },
+      {
+        "id": "MTG-P-CYB-06-04",
+        "title": "Privileged Access Management — Weekly Sprint Planning #4",
+        "meeting_type": "Sprint Planning",
+        "organizer_person_id": "E1032",
+        "meeting_date": "2026-09-29T10:00:00.000Z",
+        "duration_minutes": 45,
+        "summary": "Reviewed progress on Privileged Access Management, evaluated risk mitigations and aligned on milestone sign-offs.",
+        "decisions": [
+          {
+            "id": "DEC-MTG-P-CYB-06-04-01",
+            "decision_text": "Approved standard zero-downtime rolling update strategy for Privileged Access Management.",
+            "rationale": "Minimizes impact on plant operations during shift changes.",
+            "impact_level": "High",
+            "decided_by_person_id": "E1025"
+          }
+        ],
+        "action_items": [
+          {
+            "id": "ACT-MTG-P-CYB-06-04-01",
+            "description": "Conduct load test simulation at 1.5x peak dealer transaction volume.",
+            "assignee_person_id": "E1032",
+            "due_date": "2026-10-15",
+            "status": "In Progress"
+          }
+        ]
+      }
+    ],
+    "messages": [
+      {
+        "id": "MSG-P-CYB-06-001",
+        "author_person_id": "E1032",
+        "content": "Team, the latest sprint release has passed security vulnerability scanning with zero critical findings."
+      },
+      {
+        "id": "MSG-P-CYB-06-002",
+        "author_person_id": "E1025",
+        "content": "Great work. Let's ensure the operational runbook and escalation paths are updated before the steering review."
+      }
+    ]
+  },
+  {
+    "id": "TM-CHAN-P-CYB-07-GEN",
+    "project_id": "P-CYB-07",
+    "name": "Incident Response Automation (SOAR) — General Engineering Channel",
+    "description": "Core collaboration channel for Incident Response Automation (SOAR) project team",
+    "meetings": [
+      {
+        "id": "MTG-P-CYB-07-01",
+        "title": "Incident Response Automation (SOAR) — Weekly Steering Committee #1",
+        "meeting_type": "Steering Committee",
+        "organizer_person_id": "E1037",
+        "meeting_date": "2026-09-08T10:00:00.000Z",
+        "duration_minutes": 45,
+        "summary": "Reviewed progress on Incident Response Automation (SOAR), evaluated risk mitigations and aligned on milestone sign-offs.",
+        "decisions": [
+          {
+            "id": "DEC-MTG-P-CYB-07-01-01",
+            "decision_text": "Approved standard zero-downtime rolling update strategy for Incident Response Automation (SOAR).",
+            "rationale": "Minimizes impact on plant operations during shift changes.",
+            "impact_level": "High",
+            "decided_by_person_id": "E1024"
+          }
+        ],
+        "action_items": [
+          {
+            "id": "ACT-MTG-P-CYB-07-01-01",
+            "description": "Conduct load test simulation at 1.5x peak dealer transaction volume.",
+            "assignee_person_id": "E1037",
+            "due_date": "2026-10-15",
+            "status": "In Progress"
+          }
+        ]
+      },
+      {
+        "id": "MTG-P-CYB-07-02",
+        "title": "Incident Response Automation (SOAR) — Weekly Architecture Review #2",
+        "meeting_type": "Architecture Review",
+        "organizer_person_id": "E1037",
+        "meeting_date": "2026-09-15T10:00:00.000Z",
+        "duration_minutes": 45,
+        "summary": "Reviewed progress on Incident Response Automation (SOAR), evaluated risk mitigations and aligned on milestone sign-offs.",
+        "decisions": [
+          {
+            "id": "DEC-MTG-P-CYB-07-02-01",
+            "decision_text": "Approved standard zero-downtime rolling update strategy for Incident Response Automation (SOAR).",
+            "rationale": "Minimizes impact on plant operations during shift changes.",
+            "impact_level": "High",
+            "decided_by_person_id": "E1024"
+          }
+        ],
+        "action_items": [
+          {
+            "id": "ACT-MTG-P-CYB-07-02-01",
+            "description": "Conduct load test simulation at 1.5x peak dealer transaction volume.",
+            "assignee_person_id": "E1037",
+            "due_date": "2026-10-15",
+            "status": "In Progress"
+          }
+        ]
+      },
+      {
+        "id": "MTG-P-CYB-07-03",
+        "title": "Incident Response Automation (SOAR) — Weekly Sprint Planning #3",
+        "meeting_type": "Sprint Planning",
+        "organizer_person_id": "E1037",
+        "meeting_date": "2026-09-22T10:00:00.000Z",
+        "duration_minutes": 45,
+        "summary": "Reviewed progress on Incident Response Automation (SOAR), evaluated risk mitigations and aligned on milestone sign-offs.",
+        "decisions": [
+          {
+            "id": "DEC-MTG-P-CYB-07-03-01",
+            "decision_text": "Approved standard zero-downtime rolling update strategy for Incident Response Automation (SOAR).",
+            "rationale": "Minimizes impact on plant operations during shift changes.",
+            "impact_level": "High",
+            "decided_by_person_id": "E1024"
+          }
+        ],
+        "action_items": [
+          {
+            "id": "ACT-MTG-P-CYB-07-03-01",
+            "description": "Conduct load test simulation at 1.5x peak dealer transaction volume.",
+            "assignee_person_id": "E1037",
+            "due_date": "2026-10-15",
+            "status": "In Progress"
+          }
+        ]
+      },
+      {
+        "id": "MTG-P-CYB-07-04",
+        "title": "Incident Response Automation (SOAR) — Weekly Sprint Planning #4",
+        "meeting_type": "Sprint Planning",
+        "organizer_person_id": "E1037",
+        "meeting_date": "2026-09-29T10:00:00.000Z",
+        "duration_minutes": 45,
+        "summary": "Reviewed progress on Incident Response Automation (SOAR), evaluated risk mitigations and aligned on milestone sign-offs.",
+        "decisions": [
+          {
+            "id": "DEC-MTG-P-CYB-07-04-01",
+            "decision_text": "Approved standard zero-downtime rolling update strategy for Incident Response Automation (SOAR).",
+            "rationale": "Minimizes impact on plant operations during shift changes.",
+            "impact_level": "High",
+            "decided_by_person_id": "E1024"
+          }
+        ],
+        "action_items": [
+          {
+            "id": "ACT-MTG-P-CYB-07-04-01",
+            "description": "Conduct load test simulation at 1.5x peak dealer transaction volume.",
+            "assignee_person_id": "E1037",
+            "due_date": "2026-10-15",
+            "status": "In Progress"
+          }
+        ]
+      }
+    ],
+    "messages": [
+      {
+        "id": "MSG-P-CYB-07-001",
+        "author_person_id": "E1037",
+        "content": "Team, the latest sprint release has passed security vulnerability scanning with zero critical findings."
+      },
+      {
+        "id": "MSG-P-CYB-07-002",
+        "author_person_id": "E1024",
+        "content": "Great work. Let's ensure the operational runbook and escalation paths are updated before the steering review."
+      }
+    ]
+  },
+  {
+    "id": "TM-CHAN-P-FIN-01-GEN",
+    "project_id": "P-FIN-01",
+    "name": "SAP S/4HANA Finance Core — General Engineering Channel",
+    "description": "Core collaboration channel for SAP S/4HANA Finance Core project team",
+    "meetings": [
+      {
+        "id": "MTG-P-FIN-01-01",
+        "title": "SAP S/4HANA Finance Core — Weekly Steering Committee #1",
+        "meeting_type": "Steering Committee",
+        "organizer_person_id": "E1042",
+        "meeting_date": "2026-09-08T10:00:00.000Z",
+        "duration_minutes": 45,
+        "summary": "Reviewed progress on SAP S/4HANA Finance Core, evaluated risk mitigations and aligned on milestone sign-offs.",
+        "decisions": [
+          {
+            "id": "DEC-MTG-P-FIN-01-01-01",
+            "decision_text": "Approved standard zero-downtime rolling update strategy for SAP S/4HANA Finance Core.",
+            "rationale": "Minimizes impact on plant operations during shift changes.",
+            "impact_level": "High",
+            "decided_by_person_id": "E1039"
+          }
+        ],
+        "action_items": [
+          {
+            "id": "ACT-MTG-P-FIN-01-01-01",
+            "description": "Conduct load test simulation at 1.5x peak dealer transaction volume.",
+            "assignee_person_id": "E1042",
+            "due_date": "2026-10-15",
+            "status": "In Progress"
+          }
+        ]
+      },
+      {
+        "id": "MTG-P-FIN-01-02",
+        "title": "SAP S/4HANA Finance Core — Weekly Architecture Review #2",
+        "meeting_type": "Architecture Review",
+        "organizer_person_id": "E1042",
+        "meeting_date": "2026-09-15T10:00:00.000Z",
+        "duration_minutes": 45,
+        "summary": "Reviewed progress on SAP S/4HANA Finance Core, evaluated risk mitigations and aligned on milestone sign-offs.",
+        "decisions": [
+          {
+            "id": "DEC-MTG-P-FIN-01-02-01",
+            "decision_text": "Approved standard zero-downtime rolling update strategy for SAP S/4HANA Finance Core.",
+            "rationale": "Minimizes impact on plant operations during shift changes.",
+            "impact_level": "High",
+            "decided_by_person_id": "E1039"
+          }
+        ],
+        "action_items": [
+          {
+            "id": "ACT-MTG-P-FIN-01-02-01",
+            "description": "Conduct load test simulation at 1.5x peak dealer transaction volume.",
+            "assignee_person_id": "E1042",
+            "due_date": "2026-10-15",
+            "status": "In Progress"
+          }
+        ]
+      },
+      {
+        "id": "MTG-P-FIN-01-03",
+        "title": "SAP S/4HANA Finance Core — Weekly Sprint Planning #3",
+        "meeting_type": "Sprint Planning",
+        "organizer_person_id": "E1042",
+        "meeting_date": "2026-09-22T10:00:00.000Z",
+        "duration_minutes": 45,
+        "summary": "Reviewed progress on SAP S/4HANA Finance Core, evaluated risk mitigations and aligned on milestone sign-offs.",
+        "decisions": [
+          {
+            "id": "DEC-MTG-P-FIN-01-03-01",
+            "decision_text": "Approved standard zero-downtime rolling update strategy for SAP S/4HANA Finance Core.",
+            "rationale": "Minimizes impact on plant operations during shift changes.",
+            "impact_level": "High",
+            "decided_by_person_id": "E1039"
+          }
+        ],
+        "action_items": [
+          {
+            "id": "ACT-MTG-P-FIN-01-03-01",
+            "description": "Conduct load test simulation at 1.5x peak dealer transaction volume.",
+            "assignee_person_id": "E1042",
+            "due_date": "2026-10-15",
+            "status": "In Progress"
+          }
+        ]
+      },
+      {
+        "id": "MTG-P-FIN-01-04",
+        "title": "SAP S/4HANA Finance Core — Weekly Sprint Planning #4",
+        "meeting_type": "Sprint Planning",
+        "organizer_person_id": "E1042",
+        "meeting_date": "2026-09-29T10:00:00.000Z",
+        "duration_minutes": 45,
+        "summary": "Reviewed progress on SAP S/4HANA Finance Core, evaluated risk mitigations and aligned on milestone sign-offs.",
+        "decisions": [
+          {
+            "id": "DEC-MTG-P-FIN-01-04-01",
+            "decision_text": "Approved standard zero-downtime rolling update strategy for SAP S/4HANA Finance Core.",
+            "rationale": "Minimizes impact on plant operations during shift changes.",
+            "impact_level": "High",
+            "decided_by_person_id": "E1039"
+          }
+        ],
+        "action_items": [
+          {
+            "id": "ACT-MTG-P-FIN-01-04-01",
+            "description": "Conduct load test simulation at 1.5x peak dealer transaction volume.",
+            "assignee_person_id": "E1042",
+            "due_date": "2026-10-15",
+            "status": "In Progress"
+          }
+        ]
+      },
+      {
+        "id": "MTG-P-FIN-01-05",
+        "title": "SAP S/4HANA Finance Core — Weekly Sprint Planning #5",
+        "meeting_type": "Sprint Planning",
+        "organizer_person_id": "E1042",
+        "meeting_date": "2026-10-06T10:00:00.000Z",
+        "duration_minutes": 45,
+        "summary": "Reviewed progress on SAP S/4HANA Finance Core, evaluated risk mitigations and aligned on milestone sign-offs.",
+        "decisions": [
+          {
+            "id": "DEC-MTG-P-FIN-01-05-01",
+            "decision_text": "Approved standard zero-downtime rolling update strategy for SAP S/4HANA Finance Core.",
+            "rationale": "Minimizes impact on plant operations during shift changes.",
+            "impact_level": "High",
+            "decided_by_person_id": "E1039"
+          }
+        ],
+        "action_items": [
+          {
+            "id": "ACT-MTG-P-FIN-01-05-01",
+            "description": "Conduct load test simulation at 1.5x peak dealer transaction volume.",
+            "assignee_person_id": "E1042",
+            "due_date": "2026-10-15",
+            "status": "In Progress"
+          }
+        ]
+      },
+      {
+        "id": "MTG-P-FIN-01-06",
+        "title": "SAP S/4HANA Finance Core — Weekly Sprint Planning #6",
+        "meeting_type": "Sprint Planning",
+        "organizer_person_id": "E1042",
+        "meeting_date": "2026-10-13T10:00:00.000Z",
+        "duration_minutes": 45,
+        "summary": "Reviewed progress on SAP S/4HANA Finance Core, evaluated risk mitigations and aligned on milestone sign-offs.",
+        "decisions": [
+          {
+            "id": "DEC-MTG-P-FIN-01-06-01",
+            "decision_text": "Approved standard zero-downtime rolling update strategy for SAP S/4HANA Finance Core.",
+            "rationale": "Minimizes impact on plant operations during shift changes.",
+            "impact_level": "High",
+            "decided_by_person_id": "E1039"
+          }
+        ],
+        "action_items": [
+          {
+            "id": "ACT-MTG-P-FIN-01-06-01",
+            "description": "Conduct load test simulation at 1.5x peak dealer transaction volume.",
+            "assignee_person_id": "E1042",
+            "due_date": "2026-10-15",
+            "status": "In Progress"
+          }
+        ]
+      },
+      {
+        "id": "MTG-P-FIN-01-07",
+        "title": "SAP S/4HANA Finance Core — Weekly Sprint Planning #7",
+        "meeting_type": "Sprint Planning",
+        "organizer_person_id": "E1042",
+        "meeting_date": "2026-10-20T10:00:00.000Z",
+        "duration_minutes": 45,
+        "summary": "Reviewed progress on SAP S/4HANA Finance Core, evaluated risk mitigations and aligned on milestone sign-offs.",
+        "decisions": [
+          {
+            "id": "DEC-MTG-P-FIN-01-07-01",
+            "decision_text": "Approved standard zero-downtime rolling update strategy for SAP S/4HANA Finance Core.",
+            "rationale": "Minimizes impact on plant operations during shift changes.",
+            "impact_level": "High",
+            "decided_by_person_id": "E1039"
+          }
+        ],
+        "action_items": [
+          {
+            "id": "ACT-MTG-P-FIN-01-07-01",
+            "description": "Conduct load test simulation at 1.5x peak dealer transaction volume.",
+            "assignee_person_id": "E1042",
+            "due_date": "2026-10-15",
+            "status": "In Progress"
+          }
+        ]
+      },
+      {
+        "id": "MTG-P-FIN-01-08",
+        "title": "SAP S/4HANA Finance Core — Weekly Sprint Planning #8",
+        "meeting_type": "Sprint Planning",
+        "organizer_person_id": "E1042",
+        "meeting_date": "2026-10-27T10:00:00.000Z",
+        "duration_minutes": 45,
+        "summary": "Reviewed progress on SAP S/4HANA Finance Core, evaluated risk mitigations and aligned on milestone sign-offs.",
+        "decisions": [
+          {
+            "id": "DEC-MTG-P-FIN-01-08-01",
+            "decision_text": "Approved standard zero-downtime rolling update strategy for SAP S/4HANA Finance Core.",
+            "rationale": "Minimizes impact on plant operations during shift changes.",
+            "impact_level": "High",
+            "decided_by_person_id": "E1039"
+          }
+        ],
+        "action_items": [
+          {
+            "id": "ACT-MTG-P-FIN-01-08-01",
+            "description": "Conduct load test simulation at 1.5x peak dealer transaction volume.",
+            "assignee_person_id": "E1042",
+            "due_date": "2026-10-15",
+            "status": "In Progress"
+          }
+        ]
+      }
+    ],
+    "messages": [
+      {
+        "id": "MSG-P-FIN-01-001",
+        "author_person_id": "E1042",
+        "content": "Team, the latest sprint release has passed security vulnerability scanning with zero critical findings."
+      },
+      {
+        "id": "MSG-P-FIN-01-002",
+        "author_person_id": "E1039",
+        "content": "Great work. Let's ensure the operational runbook and escalation paths are updated before the steering review."
+      }
+    ]
+  },
+  {
+    "id": "TM-CHAN-P-FIN-02-GEN",
+    "project_id": "P-FIN-02",
+    "name": "Finance Analytics & Reporting — General Engineering Channel",
+    "description": "Core collaboration channel for Finance Analytics & Reporting project team",
+    "meetings": [
+      {
+        "id": "MTG-P-FIN-02-01",
+        "title": "Finance Analytics & Reporting — Weekly Steering Committee #1",
+        "meeting_type": "Steering Committee",
+        "organizer_person_id": "E1048",
+        "meeting_date": "2026-09-08T10:00:00.000Z",
+        "duration_minutes": 45,
+        "summary": "Reviewed progress on Finance Analytics & Reporting, evaluated risk mitigations and aligned on milestone sign-offs.",
+        "decisions": [
+          {
+            "id": "DEC-MTG-P-FIN-02-01-01",
+            "decision_text": "Approved standard zero-downtime rolling update strategy for Finance Analytics & Reporting.",
+            "rationale": "Minimizes impact on plant operations during shift changes.",
+            "impact_level": "High",
+            "decided_by_person_id": "E1039"
+          }
+        ],
+        "action_items": [
+          {
+            "id": "ACT-MTG-P-FIN-02-01-01",
+            "description": "Conduct load test simulation at 1.5x peak dealer transaction volume.",
+            "assignee_person_id": "E1048",
+            "due_date": "2026-10-15",
+            "status": "In Progress"
+          }
+        ]
+      },
+      {
+        "id": "MTG-P-FIN-02-02",
+        "title": "Finance Analytics & Reporting — Weekly Architecture Review #2",
+        "meeting_type": "Architecture Review",
+        "organizer_person_id": "E1048",
+        "meeting_date": "2026-09-15T10:00:00.000Z",
+        "duration_minutes": 45,
+        "summary": "Reviewed progress on Finance Analytics & Reporting, evaluated risk mitigations and aligned on milestone sign-offs.",
+        "decisions": [
+          {
+            "id": "DEC-MTG-P-FIN-02-02-01",
+            "decision_text": "Approved standard zero-downtime rolling update strategy for Finance Analytics & Reporting.",
+            "rationale": "Minimizes impact on plant operations during shift changes.",
+            "impact_level": "High",
+            "decided_by_person_id": "E1039"
+          }
+        ],
+        "action_items": [
+          {
+            "id": "ACT-MTG-P-FIN-02-02-01",
+            "description": "Conduct load test simulation at 1.5x peak dealer transaction volume.",
+            "assignee_person_id": "E1048",
+            "due_date": "2026-10-15",
+            "status": "In Progress"
+          }
+        ]
+      },
+      {
+        "id": "MTG-P-FIN-02-03",
+        "title": "Finance Analytics & Reporting — Weekly Sprint Planning #3",
+        "meeting_type": "Sprint Planning",
+        "organizer_person_id": "E1048",
+        "meeting_date": "2026-09-22T10:00:00.000Z",
+        "duration_minutes": 45,
+        "summary": "Reviewed progress on Finance Analytics & Reporting, evaluated risk mitigations and aligned on milestone sign-offs.",
+        "decisions": [
+          {
+            "id": "DEC-MTG-P-FIN-02-03-01",
+            "decision_text": "Approved standard zero-downtime rolling update strategy for Finance Analytics & Reporting.",
+            "rationale": "Minimizes impact on plant operations during shift changes.",
+            "impact_level": "High",
+            "decided_by_person_id": "E1039"
+          }
+        ],
+        "action_items": [
+          {
+            "id": "ACT-MTG-P-FIN-02-03-01",
+            "description": "Conduct load test simulation at 1.5x peak dealer transaction volume.",
+            "assignee_person_id": "E1048",
+            "due_date": "2026-10-15",
+            "status": "In Progress"
+          }
+        ]
+      },
+      {
+        "id": "MTG-P-FIN-02-04",
+        "title": "Finance Analytics & Reporting — Weekly Sprint Planning #4",
+        "meeting_type": "Sprint Planning",
+        "organizer_person_id": "E1048",
+        "meeting_date": "2026-09-29T10:00:00.000Z",
+        "duration_minutes": 45,
+        "summary": "Reviewed progress on Finance Analytics & Reporting, evaluated risk mitigations and aligned on milestone sign-offs.",
+        "decisions": [
+          {
+            "id": "DEC-MTG-P-FIN-02-04-01",
+            "decision_text": "Approved standard zero-downtime rolling update strategy for Finance Analytics & Reporting.",
+            "rationale": "Minimizes impact on plant operations during shift changes.",
+            "impact_level": "High",
+            "decided_by_person_id": "E1039"
+          }
+        ],
+        "action_items": [
+          {
+            "id": "ACT-MTG-P-FIN-02-04-01",
+            "description": "Conduct load test simulation at 1.5x peak dealer transaction volume.",
+            "assignee_person_id": "E1048",
+            "due_date": "2026-10-15",
+            "status": "In Progress"
+          }
+        ]
+      }
+    ],
+    "messages": [
+      {
+        "id": "MSG-P-FIN-02-001",
+        "author_person_id": "E1048",
+        "content": "Team, the latest sprint release has passed security vulnerability scanning with zero critical findings."
+      },
+      {
+        "id": "MSG-P-FIN-02-002",
+        "author_person_id": "E1039",
+        "content": "Great work. Let's ensure the operational runbook and escalation paths are updated before the steering review."
+      }
+    ]
+  },
+  {
+    "id": "TM-CHAN-P-FIN-03-GEN",
+    "project_id": "P-FIN-03",
+    "name": "Group Consolidation & Close — General Engineering Channel",
+    "description": "Core collaboration channel for Group Consolidation & Close project team",
+    "meetings": [
+      {
+        "id": "MTG-P-FIN-03-01",
+        "title": "Group Consolidation & Close — Weekly Steering Committee #1",
+        "meeting_type": "Steering Committee",
+        "organizer_person_id": "E1043",
+        "meeting_date": "2026-09-08T10:00:00.000Z",
+        "duration_minutes": 45,
+        "summary": "Reviewed progress on Group Consolidation & Close, evaluated risk mitigations and aligned on milestone sign-offs.",
+        "decisions": [
+          {
+            "id": "DEC-MTG-P-FIN-03-01-01",
+            "decision_text": "Approved standard zero-downtime rolling update strategy for Group Consolidation & Close.",
+            "rationale": "Minimizes impact on plant operations during shift changes.",
+            "impact_level": "High",
+            "decided_by_person_id": "E1040"
+          }
+        ],
+        "action_items": [
+          {
+            "id": "ACT-MTG-P-FIN-03-01-01",
+            "description": "Conduct load test simulation at 1.5x peak dealer transaction volume.",
+            "assignee_person_id": "E1043",
+            "due_date": "2026-10-15",
+            "status": "In Progress"
+          }
+        ]
+      },
+      {
+        "id": "MTG-P-FIN-03-02",
+        "title": "Group Consolidation & Close — Weekly Architecture Review #2",
+        "meeting_type": "Architecture Review",
+        "organizer_person_id": "E1043",
+        "meeting_date": "2026-09-15T10:00:00.000Z",
+        "duration_minutes": 45,
+        "summary": "Reviewed progress on Group Consolidation & Close, evaluated risk mitigations and aligned on milestone sign-offs.",
+        "decisions": [
+          {
+            "id": "DEC-MTG-P-FIN-03-02-01",
+            "decision_text": "Approved standard zero-downtime rolling update strategy for Group Consolidation & Close.",
+            "rationale": "Minimizes impact on plant operations during shift changes.",
+            "impact_level": "High",
+            "decided_by_person_id": "E1040"
+          }
+        ],
+        "action_items": [
+          {
+            "id": "ACT-MTG-P-FIN-03-02-01",
+            "description": "Conduct load test simulation at 1.5x peak dealer transaction volume.",
+            "assignee_person_id": "E1043",
+            "due_date": "2026-10-15",
+            "status": "In Progress"
+          }
+        ]
+      },
+      {
+        "id": "MTG-P-FIN-03-03",
+        "title": "Group Consolidation & Close — Weekly Sprint Planning #3",
+        "meeting_type": "Sprint Planning",
+        "organizer_person_id": "E1043",
+        "meeting_date": "2026-09-22T10:00:00.000Z",
+        "duration_minutes": 45,
+        "summary": "Reviewed progress on Group Consolidation & Close, evaluated risk mitigations and aligned on milestone sign-offs.",
+        "decisions": [
+          {
+            "id": "DEC-MTG-P-FIN-03-03-01",
+            "decision_text": "Approved standard zero-downtime rolling update strategy for Group Consolidation & Close.",
+            "rationale": "Minimizes impact on plant operations during shift changes.",
+            "impact_level": "High",
+            "decided_by_person_id": "E1040"
+          }
+        ],
+        "action_items": [
+          {
+            "id": "ACT-MTG-P-FIN-03-03-01",
+            "description": "Conduct load test simulation at 1.5x peak dealer transaction volume.",
+            "assignee_person_id": "E1043",
+            "due_date": "2026-10-15",
+            "status": "In Progress"
+          }
+        ]
+      },
+      {
+        "id": "MTG-P-FIN-03-04",
+        "title": "Group Consolidation & Close — Weekly Sprint Planning #4",
+        "meeting_type": "Sprint Planning",
+        "organizer_person_id": "E1043",
+        "meeting_date": "2026-09-29T10:00:00.000Z",
+        "duration_minutes": 45,
+        "summary": "Reviewed progress on Group Consolidation & Close, evaluated risk mitigations and aligned on milestone sign-offs.",
+        "decisions": [
+          {
+            "id": "DEC-MTG-P-FIN-03-04-01",
+            "decision_text": "Approved standard zero-downtime rolling update strategy for Group Consolidation & Close.",
+            "rationale": "Minimizes impact on plant operations during shift changes.",
+            "impact_level": "High",
+            "decided_by_person_id": "E1040"
+          }
+        ],
+        "action_items": [
+          {
+            "id": "ACT-MTG-P-FIN-03-04-01",
+            "description": "Conduct load test simulation at 1.5x peak dealer transaction volume.",
+            "assignee_person_id": "E1043",
+            "due_date": "2026-10-15",
+            "status": "In Progress"
+          }
+        ]
+      }
+    ],
+    "messages": [
+      {
+        "id": "MSG-P-FIN-03-001",
+        "author_person_id": "E1043",
+        "content": "Team, the latest sprint release has passed security vulnerability scanning with zero critical findings."
+      },
+      {
+        "id": "MSG-P-FIN-03-002",
+        "author_person_id": "E1040",
+        "content": "Great work. Let's ensure the operational runbook and escalation paths are updated before the steering review."
+      }
+    ]
+  },
+  {
+    "id": "TM-CHAN-P-FIN-04-GEN",
+    "project_id": "P-FIN-04",
+    "name": "Treasury & Cash Management — General Engineering Channel",
+    "description": "Core collaboration channel for Treasury & Cash Management project team",
+    "meetings": [
+      {
+        "id": "MTG-P-FIN-04-01",
+        "title": "Treasury & Cash Management — Weekly Steering Committee #1",
+        "meeting_type": "Steering Committee",
+        "organizer_person_id": "E1047",
+        "meeting_date": "2026-09-08T10:00:00.000Z",
+        "duration_minutes": 45,
+        "summary": "Reviewed progress on Treasury & Cash Management, evaluated risk mitigations and aligned on milestone sign-offs.",
+        "decisions": [
+          {
+            "id": "DEC-MTG-P-FIN-04-01-01",
+            "decision_text": "Approved standard zero-downtime rolling update strategy for Treasury & Cash Management.",
+            "rationale": "Minimizes impact on plant operations during shift changes.",
+            "impact_level": "High",
+            "decided_by_person_id": "E1045"
+          }
+        ],
+        "action_items": [
+          {
+            "id": "ACT-MTG-P-FIN-04-01-01",
+            "description": "Conduct load test simulation at 1.5x peak dealer transaction volume.",
+            "assignee_person_id": "E1047",
+            "due_date": "2026-10-15",
+            "status": "In Progress"
+          }
+        ]
+      },
+      {
+        "id": "MTG-P-FIN-04-02",
+        "title": "Treasury & Cash Management — Weekly Architecture Review #2",
+        "meeting_type": "Architecture Review",
+        "organizer_person_id": "E1047",
+        "meeting_date": "2026-09-15T10:00:00.000Z",
+        "duration_minutes": 45,
+        "summary": "Reviewed progress on Treasury & Cash Management, evaluated risk mitigations and aligned on milestone sign-offs.",
+        "decisions": [
+          {
+            "id": "DEC-MTG-P-FIN-04-02-01",
+            "decision_text": "Approved standard zero-downtime rolling update strategy for Treasury & Cash Management.",
+            "rationale": "Minimizes impact on plant operations during shift changes.",
+            "impact_level": "High",
+            "decided_by_person_id": "E1045"
+          }
+        ],
+        "action_items": [
+          {
+            "id": "ACT-MTG-P-FIN-04-02-01",
+            "description": "Conduct load test simulation at 1.5x peak dealer transaction volume.",
+            "assignee_person_id": "E1047",
+            "due_date": "2026-10-15",
+            "status": "In Progress"
+          }
+        ]
+      },
+      {
+        "id": "MTG-P-FIN-04-03",
+        "title": "Treasury & Cash Management — Weekly Sprint Planning #3",
+        "meeting_type": "Sprint Planning",
+        "organizer_person_id": "E1047",
+        "meeting_date": "2026-09-22T10:00:00.000Z",
+        "duration_minutes": 45,
+        "summary": "Reviewed progress on Treasury & Cash Management, evaluated risk mitigations and aligned on milestone sign-offs.",
+        "decisions": [
+          {
+            "id": "DEC-MTG-P-FIN-04-03-01",
+            "decision_text": "Approved standard zero-downtime rolling update strategy for Treasury & Cash Management.",
+            "rationale": "Minimizes impact on plant operations during shift changes.",
+            "impact_level": "High",
+            "decided_by_person_id": "E1045"
+          }
+        ],
+        "action_items": [
+          {
+            "id": "ACT-MTG-P-FIN-04-03-01",
+            "description": "Conduct load test simulation at 1.5x peak dealer transaction volume.",
+            "assignee_person_id": "E1047",
+            "due_date": "2026-10-15",
+            "status": "In Progress"
+          }
+        ]
+      },
+      {
+        "id": "MTG-P-FIN-04-04",
+        "title": "Treasury & Cash Management — Weekly Sprint Planning #4",
+        "meeting_type": "Sprint Planning",
+        "organizer_person_id": "E1047",
+        "meeting_date": "2026-09-29T10:00:00.000Z",
+        "duration_minutes": 45,
+        "summary": "Reviewed progress on Treasury & Cash Management, evaluated risk mitigations and aligned on milestone sign-offs.",
+        "decisions": [
+          {
+            "id": "DEC-MTG-P-FIN-04-04-01",
+            "decision_text": "Approved standard zero-downtime rolling update strategy for Treasury & Cash Management.",
+            "rationale": "Minimizes impact on plant operations during shift changes.",
+            "impact_level": "High",
+            "decided_by_person_id": "E1045"
+          }
+        ],
+        "action_items": [
+          {
+            "id": "ACT-MTG-P-FIN-04-04-01",
+            "description": "Conduct load test simulation at 1.5x peak dealer transaction volume.",
+            "assignee_person_id": "E1047",
+            "due_date": "2026-10-15",
+            "status": "In Progress"
+          }
+        ]
+      }
+    ],
+    "messages": [
+      {
+        "id": "MSG-P-FIN-04-001",
+        "author_person_id": "E1047",
+        "content": "Team, the latest sprint release has passed security vulnerability scanning with zero critical findings."
+      },
+      {
+        "id": "MSG-P-FIN-04-002",
+        "author_person_id": "E1045",
+        "content": "Great work. Let's ensure the operational runbook and escalation paths are updated before the steering review."
+      }
+    ]
+  },
+  {
+    "id": "TM-CHAN-P-FIN-05-GEN",
+    "project_id": "P-FIN-05",
+    "name": "Financial Data Mart — General Engineering Channel",
+    "description": "Core collaboration channel for Financial Data Mart project team",
+    "meetings": [
+      {
+        "id": "MTG-P-FIN-05-01",
+        "title": "Financial Data Mart — Weekly Steering Committee #1",
+        "meeting_type": "Steering Committee",
+        "organizer_person_id": "E1049",
+        "meeting_date": "2026-09-08T10:00:00.000Z",
+        "duration_minutes": 45,
+        "summary": "Reviewed progress on Financial Data Mart, evaluated risk mitigations and aligned on milestone sign-offs.",
+        "decisions": [
+          {
+            "id": "DEC-MTG-P-FIN-05-01-01",
+            "decision_text": "Approved standard zero-downtime rolling update strategy for Financial Data Mart.",
+            "rationale": "Minimizes impact on plant operations during shift changes.",
+            "impact_level": "High",
+            "decided_by_person_id": "E1040"
+          }
+        ],
+        "action_items": [
+          {
+            "id": "ACT-MTG-P-FIN-05-01-01",
+            "description": "Conduct load test simulation at 1.5x peak dealer transaction volume.",
+            "assignee_person_id": "E1049",
+            "due_date": "2026-10-15",
+            "status": "In Progress"
+          }
+        ]
+      },
+      {
+        "id": "MTG-P-FIN-05-02",
+        "title": "Financial Data Mart — Weekly Architecture Review #2",
+        "meeting_type": "Architecture Review",
+        "organizer_person_id": "E1049",
+        "meeting_date": "2026-09-15T10:00:00.000Z",
+        "duration_minutes": 45,
+        "summary": "Reviewed progress on Financial Data Mart, evaluated risk mitigations and aligned on milestone sign-offs.",
+        "decisions": [
+          {
+            "id": "DEC-MTG-P-FIN-05-02-01",
+            "decision_text": "Approved standard zero-downtime rolling update strategy for Financial Data Mart.",
+            "rationale": "Minimizes impact on plant operations during shift changes.",
+            "impact_level": "High",
+            "decided_by_person_id": "E1040"
+          }
+        ],
+        "action_items": [
+          {
+            "id": "ACT-MTG-P-FIN-05-02-01",
+            "description": "Conduct load test simulation at 1.5x peak dealer transaction volume.",
+            "assignee_person_id": "E1049",
+            "due_date": "2026-10-15",
+            "status": "In Progress"
+          }
+        ]
+      },
+      {
+        "id": "MTG-P-FIN-05-03",
+        "title": "Financial Data Mart — Weekly Sprint Planning #3",
+        "meeting_type": "Sprint Planning",
+        "organizer_person_id": "E1049",
+        "meeting_date": "2026-09-22T10:00:00.000Z",
+        "duration_minutes": 45,
+        "summary": "Reviewed progress on Financial Data Mart, evaluated risk mitigations and aligned on milestone sign-offs.",
+        "decisions": [
+          {
+            "id": "DEC-MTG-P-FIN-05-03-01",
+            "decision_text": "Approved standard zero-downtime rolling update strategy for Financial Data Mart.",
+            "rationale": "Minimizes impact on plant operations during shift changes.",
+            "impact_level": "High",
+            "decided_by_person_id": "E1040"
+          }
+        ],
+        "action_items": [
+          {
+            "id": "ACT-MTG-P-FIN-05-03-01",
+            "description": "Conduct load test simulation at 1.5x peak dealer transaction volume.",
+            "assignee_person_id": "E1049",
+            "due_date": "2026-10-15",
+            "status": "In Progress"
+          }
+        ]
+      },
+      {
+        "id": "MTG-P-FIN-05-04",
+        "title": "Financial Data Mart — Weekly Sprint Planning #4",
+        "meeting_type": "Sprint Planning",
+        "organizer_person_id": "E1049",
+        "meeting_date": "2026-09-29T10:00:00.000Z",
+        "duration_minutes": 45,
+        "summary": "Reviewed progress on Financial Data Mart, evaluated risk mitigations and aligned on milestone sign-offs.",
+        "decisions": [
+          {
+            "id": "DEC-MTG-P-FIN-05-04-01",
+            "decision_text": "Approved standard zero-downtime rolling update strategy for Financial Data Mart.",
+            "rationale": "Minimizes impact on plant operations during shift changes.",
+            "impact_level": "High",
+            "decided_by_person_id": "E1040"
+          }
+        ],
+        "action_items": [
+          {
+            "id": "ACT-MTG-P-FIN-05-04-01",
+            "description": "Conduct load test simulation at 1.5x peak dealer transaction volume.",
+            "assignee_person_id": "E1049",
+            "due_date": "2026-10-15",
+            "status": "In Progress"
+          }
+        ]
+      }
+    ],
+    "messages": [
+      {
+        "id": "MSG-P-FIN-05-001",
+        "author_person_id": "E1049",
+        "content": "Team, the latest sprint release has passed security vulnerability scanning with zero critical findings."
+      },
+      {
+        "id": "MSG-P-FIN-05-002",
+        "author_person_id": "E1040",
+        "content": "Great work. Let's ensure the operational runbook and escalation paths are updated before the steering review."
+      }
+    ]
+  },
+  {
+    "id": "TM-CHAN-P-FIN-06-GEN",
+    "project_id": "P-FIN-06",
+    "name": "Intercompany & Tax Reporting — General Engineering Channel",
+    "description": "Core collaboration channel for Intercompany & Tax Reporting project team",
+    "meetings": [
+      {
+        "id": "MTG-P-FIN-06-01",
+        "title": "Intercompany & Tax Reporting — Weekly Steering Committee #1",
+        "meeting_type": "Steering Committee",
+        "organizer_person_id": "E1044",
+        "meeting_date": "2026-09-08T10:00:00.000Z",
+        "duration_minutes": 45,
+        "summary": "Reviewed progress on Intercompany & Tax Reporting, evaluated risk mitigations and aligned on milestone sign-offs.",
+        "decisions": [
+          {
+            "id": "DEC-MTG-P-FIN-06-01-01",
+            "decision_text": "Approved standard zero-downtime rolling update strategy for Intercompany & Tax Reporting.",
+            "rationale": "Minimizes impact on plant operations during shift changes.",
+            "impact_level": "High",
+            "decided_by_person_id": "E1041"
+          }
+        ],
+        "action_items": [
+          {
+            "id": "ACT-MTG-P-FIN-06-01-01",
+            "description": "Conduct load test simulation at 1.5x peak dealer transaction volume.",
+            "assignee_person_id": "E1044",
+            "due_date": "2026-10-15",
+            "status": "In Progress"
+          }
+        ]
+      },
+      {
+        "id": "MTG-P-FIN-06-02",
+        "title": "Intercompany & Tax Reporting — Weekly Architecture Review #2",
+        "meeting_type": "Architecture Review",
+        "organizer_person_id": "E1044",
+        "meeting_date": "2026-09-15T10:00:00.000Z",
+        "duration_minutes": 45,
+        "summary": "Reviewed progress on Intercompany & Tax Reporting, evaluated risk mitigations and aligned on milestone sign-offs.",
+        "decisions": [
+          {
+            "id": "DEC-MTG-P-FIN-06-02-01",
+            "decision_text": "Approved standard zero-downtime rolling update strategy for Intercompany & Tax Reporting.",
+            "rationale": "Minimizes impact on plant operations during shift changes.",
+            "impact_level": "High",
+            "decided_by_person_id": "E1041"
+          }
+        ],
+        "action_items": [
+          {
+            "id": "ACT-MTG-P-FIN-06-02-01",
+            "description": "Conduct load test simulation at 1.5x peak dealer transaction volume.",
+            "assignee_person_id": "E1044",
+            "due_date": "2026-10-15",
+            "status": "In Progress"
+          }
+        ]
+      },
+      {
+        "id": "MTG-P-FIN-06-03",
+        "title": "Intercompany & Tax Reporting — Weekly Sprint Planning #3",
+        "meeting_type": "Sprint Planning",
+        "organizer_person_id": "E1044",
+        "meeting_date": "2026-09-22T10:00:00.000Z",
+        "duration_minutes": 45,
+        "summary": "Reviewed progress on Intercompany & Tax Reporting, evaluated risk mitigations and aligned on milestone sign-offs.",
+        "decisions": [
+          {
+            "id": "DEC-MTG-P-FIN-06-03-01",
+            "decision_text": "Approved standard zero-downtime rolling update strategy for Intercompany & Tax Reporting.",
+            "rationale": "Minimizes impact on plant operations during shift changes.",
+            "impact_level": "High",
+            "decided_by_person_id": "E1041"
+          }
+        ],
+        "action_items": [
+          {
+            "id": "ACT-MTG-P-FIN-06-03-01",
+            "description": "Conduct load test simulation at 1.5x peak dealer transaction volume.",
+            "assignee_person_id": "E1044",
+            "due_date": "2026-10-15",
+            "status": "In Progress"
+          }
+        ]
+      },
+      {
+        "id": "MTG-P-FIN-06-04",
+        "title": "Intercompany & Tax Reporting — Weekly Sprint Planning #4",
+        "meeting_type": "Sprint Planning",
+        "organizer_person_id": "E1044",
+        "meeting_date": "2026-09-29T10:00:00.000Z",
+        "duration_minutes": 45,
+        "summary": "Reviewed progress on Intercompany & Tax Reporting, evaluated risk mitigations and aligned on milestone sign-offs.",
+        "decisions": [
+          {
+            "id": "DEC-MTG-P-FIN-06-04-01",
+            "decision_text": "Approved standard zero-downtime rolling update strategy for Intercompany & Tax Reporting.",
+            "rationale": "Minimizes impact on plant operations during shift changes.",
+            "impact_level": "High",
+            "decided_by_person_id": "E1041"
+          }
+        ],
+        "action_items": [
+          {
+            "id": "ACT-MTG-P-FIN-06-04-01",
+            "description": "Conduct load test simulation at 1.5x peak dealer transaction volume.",
+            "assignee_person_id": "E1044",
+            "due_date": "2026-10-15",
+            "status": "In Progress"
+          }
+        ]
+      }
+    ],
+    "messages": [
+      {
+        "id": "MSG-P-FIN-06-001",
+        "author_person_id": "E1044",
+        "content": "Team, the latest sprint release has passed security vulnerability scanning with zero critical findings."
+      },
+      {
+        "id": "MSG-P-FIN-06-002",
+        "author_person_id": "E1041",
+        "content": "Great work. Let's ensure the operational runbook and escalation paths are updated before the steering review."
+      }
+    ]
+  },
+  {
+    "id": "TM-CHAN-P-PRO-01-GEN",
+    "project_id": "P-PRO-01",
+    "name": "Supplier Portal — General Engineering Channel",
+    "description": "Core collaboration channel for Supplier Portal project team",
+    "meetings": [
+      {
+        "id": "MTG-P-PRO-01-01",
+        "title": "Supplier Portal — Weekly Steering Committee #1",
+        "meeting_type": "Steering Committee",
+        "organizer_person_id": "E1054",
+        "meeting_date": "2026-09-08T10:00:00.000Z",
+        "duration_minutes": 45,
+        "summary": "Reviewed progress on Supplier Portal, evaluated risk mitigations and aligned on milestone sign-offs.",
+        "decisions": [
+          {
+            "id": "DEC-MTG-P-PRO-01-01-01",
+            "decision_text": "Approved standard zero-downtime rolling update strategy for Supplier Portal.",
+            "rationale": "Minimizes impact on plant operations during shift changes.",
+            "impact_level": "High",
+            "decided_by_person_id": "E1050"
+          }
+        ],
+        "action_items": [
+          {
+            "id": "ACT-MTG-P-PRO-01-01-01",
+            "description": "Conduct load test simulation at 1.5x peak dealer transaction volume.",
+            "assignee_person_id": "E1054",
+            "due_date": "2026-10-15",
+            "status": "In Progress"
+          }
+        ]
+      },
+      {
+        "id": "MTG-P-PRO-01-02",
+        "title": "Supplier Portal — Weekly Architecture Review #2",
+        "meeting_type": "Architecture Review",
+        "organizer_person_id": "E1054",
+        "meeting_date": "2026-09-15T10:00:00.000Z",
+        "duration_minutes": 45,
+        "summary": "Reviewed progress on Supplier Portal, evaluated risk mitigations and aligned on milestone sign-offs.",
+        "decisions": [
+          {
+            "id": "DEC-MTG-P-PRO-01-02-01",
+            "decision_text": "Approved standard zero-downtime rolling update strategy for Supplier Portal.",
+            "rationale": "Minimizes impact on plant operations during shift changes.",
+            "impact_level": "High",
+            "decided_by_person_id": "E1050"
+          }
+        ],
+        "action_items": [
+          {
+            "id": "ACT-MTG-P-PRO-01-02-01",
+            "description": "Conduct load test simulation at 1.5x peak dealer transaction volume.",
+            "assignee_person_id": "E1054",
+            "due_date": "2026-10-15",
+            "status": "In Progress"
+          }
+        ]
+      },
+      {
+        "id": "MTG-P-PRO-01-03",
+        "title": "Supplier Portal — Weekly Sprint Planning #3",
+        "meeting_type": "Sprint Planning",
+        "organizer_person_id": "E1054",
+        "meeting_date": "2026-09-22T10:00:00.000Z",
+        "duration_minutes": 45,
+        "summary": "Reviewed progress on Supplier Portal, evaluated risk mitigations and aligned on milestone sign-offs.",
+        "decisions": [
+          {
+            "id": "DEC-MTG-P-PRO-01-03-01",
+            "decision_text": "Approved standard zero-downtime rolling update strategy for Supplier Portal.",
+            "rationale": "Minimizes impact on plant operations during shift changes.",
+            "impact_level": "High",
+            "decided_by_person_id": "E1050"
+          }
+        ],
+        "action_items": [
+          {
+            "id": "ACT-MTG-P-PRO-01-03-01",
+            "description": "Conduct load test simulation at 1.5x peak dealer transaction volume.",
+            "assignee_person_id": "E1054",
+            "due_date": "2026-10-15",
+            "status": "In Progress"
+          }
+        ]
+      },
+      {
+        "id": "MTG-P-PRO-01-04",
+        "title": "Supplier Portal — Weekly Sprint Planning #4",
+        "meeting_type": "Sprint Planning",
+        "organizer_person_id": "E1054",
+        "meeting_date": "2026-09-29T10:00:00.000Z",
+        "duration_minutes": 45,
+        "summary": "Reviewed progress on Supplier Portal, evaluated risk mitigations and aligned on milestone sign-offs.",
+        "decisions": [
+          {
+            "id": "DEC-MTG-P-PRO-01-04-01",
+            "decision_text": "Approved standard zero-downtime rolling update strategy for Supplier Portal.",
+            "rationale": "Minimizes impact on plant operations during shift changes.",
+            "impact_level": "High",
+            "decided_by_person_id": "E1050"
+          }
+        ],
+        "action_items": [
+          {
+            "id": "ACT-MTG-P-PRO-01-04-01",
+            "description": "Conduct load test simulation at 1.5x peak dealer transaction volume.",
+            "assignee_person_id": "E1054",
+            "due_date": "2026-10-15",
+            "status": "In Progress"
+          }
+        ]
+      },
+      {
+        "id": "MTG-P-PRO-01-05",
+        "title": "Supplier Portal — Weekly Sprint Planning #5",
+        "meeting_type": "Sprint Planning",
+        "organizer_person_id": "E1054",
+        "meeting_date": "2026-10-06T10:00:00.000Z",
+        "duration_minutes": 45,
+        "summary": "Reviewed progress on Supplier Portal, evaluated risk mitigations and aligned on milestone sign-offs.",
+        "decisions": [
+          {
+            "id": "DEC-MTG-P-PRO-01-05-01",
+            "decision_text": "Approved standard zero-downtime rolling update strategy for Supplier Portal.",
+            "rationale": "Minimizes impact on plant operations during shift changes.",
+            "impact_level": "High",
+            "decided_by_person_id": "E1050"
+          }
+        ],
+        "action_items": [
+          {
+            "id": "ACT-MTG-P-PRO-01-05-01",
+            "description": "Conduct load test simulation at 1.5x peak dealer transaction volume.",
+            "assignee_person_id": "E1054",
+            "due_date": "2026-10-15",
+            "status": "In Progress"
+          }
+        ]
+      },
+      {
+        "id": "MTG-P-PRO-01-06",
+        "title": "Supplier Portal — Weekly Sprint Planning #6",
+        "meeting_type": "Sprint Planning",
+        "organizer_person_id": "E1054",
+        "meeting_date": "2026-10-13T10:00:00.000Z",
+        "duration_minutes": 45,
+        "summary": "Reviewed progress on Supplier Portal, evaluated risk mitigations and aligned on milestone sign-offs.",
+        "decisions": [
+          {
+            "id": "DEC-MTG-P-PRO-01-06-01",
+            "decision_text": "Approved standard zero-downtime rolling update strategy for Supplier Portal.",
+            "rationale": "Minimizes impact on plant operations during shift changes.",
+            "impact_level": "High",
+            "decided_by_person_id": "E1050"
+          }
+        ],
+        "action_items": [
+          {
+            "id": "ACT-MTG-P-PRO-01-06-01",
+            "description": "Conduct load test simulation at 1.5x peak dealer transaction volume.",
+            "assignee_person_id": "E1054",
+            "due_date": "2026-10-15",
+            "status": "In Progress"
+          }
+        ]
+      },
+      {
+        "id": "MTG-P-PRO-01-07",
+        "title": "Supplier Portal — Weekly Sprint Planning #7",
+        "meeting_type": "Sprint Planning",
+        "organizer_person_id": "E1054",
+        "meeting_date": "2026-10-20T10:00:00.000Z",
+        "duration_minutes": 45,
+        "summary": "Reviewed progress on Supplier Portal, evaluated risk mitigations and aligned on milestone sign-offs.",
+        "decisions": [
+          {
+            "id": "DEC-MTG-P-PRO-01-07-01",
+            "decision_text": "Approved standard zero-downtime rolling update strategy for Supplier Portal.",
+            "rationale": "Minimizes impact on plant operations during shift changes.",
+            "impact_level": "High",
+            "decided_by_person_id": "E1050"
+          }
+        ],
+        "action_items": [
+          {
+            "id": "ACT-MTG-P-PRO-01-07-01",
+            "description": "Conduct load test simulation at 1.5x peak dealer transaction volume.",
+            "assignee_person_id": "E1054",
+            "due_date": "2026-10-15",
+            "status": "In Progress"
+          }
+        ]
+      },
+      {
+        "id": "MTG-P-PRO-01-08",
+        "title": "Supplier Portal — Weekly Sprint Planning #8",
+        "meeting_type": "Sprint Planning",
+        "organizer_person_id": "E1054",
+        "meeting_date": "2026-10-27T10:00:00.000Z",
+        "duration_minutes": 45,
+        "summary": "Reviewed progress on Supplier Portal, evaluated risk mitigations and aligned on milestone sign-offs.",
+        "decisions": [
+          {
+            "id": "DEC-MTG-P-PRO-01-08-01",
+            "decision_text": "Approved standard zero-downtime rolling update strategy for Supplier Portal.",
+            "rationale": "Minimizes impact on plant operations during shift changes.",
+            "impact_level": "High",
+            "decided_by_person_id": "E1050"
+          }
+        ],
+        "action_items": [
+          {
+            "id": "ACT-MTG-P-PRO-01-08-01",
+            "description": "Conduct load test simulation at 1.5x peak dealer transaction volume.",
+            "assignee_person_id": "E1054",
+            "due_date": "2026-10-15",
+            "status": "In Progress"
+          }
+        ]
+      }
+    ],
+    "messages": [
+      {
+        "id": "MSG-P-PRO-01-001",
+        "author_person_id": "E1054",
+        "content": "Team, the latest sprint release has passed security vulnerability scanning with zero critical findings."
+      },
+      {
+        "id": "MSG-P-PRO-01-002",
+        "author_person_id": "E1050",
+        "content": "Great work. Let's ensure the operational runbook and escalation paths are updated before the steering review."
+      }
+    ]
+  },
+  {
+    "id": "TM-CHAN-P-PRO-02-GEN",
+    "project_id": "P-PRO-02",
+    "name": "Ariba Sourcing & Contracts — General Engineering Channel",
+    "description": "Core collaboration channel for Ariba Sourcing & Contracts project team",
+    "meetings": [
+      {
+        "id": "MTG-P-PRO-02-01",
+        "title": "Ariba Sourcing & Contracts — Weekly Steering Committee #1",
+        "meeting_type": "Steering Committee",
+        "organizer_person_id": "E1055",
+        "meeting_date": "2026-09-08T10:00:00.000Z",
+        "duration_minutes": 45,
+        "summary": "Reviewed progress on Ariba Sourcing & Contracts, evaluated risk mitigations and aligned on milestone sign-offs.",
+        "decisions": [
+          {
+            "id": "DEC-MTG-P-PRO-02-01-01",
+            "decision_text": "Approved standard zero-downtime rolling update strategy for Ariba Sourcing & Contracts.",
+            "rationale": "Minimizes impact on plant operations during shift changes.",
+            "impact_level": "High",
+            "decided_by_person_id": "E1051"
+          }
+        ],
+        "action_items": [
+          {
+            "id": "ACT-MTG-P-PRO-02-01-01",
+            "description": "Conduct load test simulation at 1.5x peak dealer transaction volume.",
+            "assignee_person_id": "E1055",
+            "due_date": "2026-10-15",
+            "status": "In Progress"
+          }
+        ]
+      },
+      {
+        "id": "MTG-P-PRO-02-02",
+        "title": "Ariba Sourcing & Contracts — Weekly Architecture Review #2",
+        "meeting_type": "Architecture Review",
+        "organizer_person_id": "E1055",
+        "meeting_date": "2026-09-15T10:00:00.000Z",
+        "duration_minutes": 45,
+        "summary": "Reviewed progress on Ariba Sourcing & Contracts, evaluated risk mitigations and aligned on milestone sign-offs.",
+        "decisions": [
+          {
+            "id": "DEC-MTG-P-PRO-02-02-01",
+            "decision_text": "Approved standard zero-downtime rolling update strategy for Ariba Sourcing & Contracts.",
+            "rationale": "Minimizes impact on plant operations during shift changes.",
+            "impact_level": "High",
+            "decided_by_person_id": "E1051"
+          }
+        ],
+        "action_items": [
+          {
+            "id": "ACT-MTG-P-PRO-02-02-01",
+            "description": "Conduct load test simulation at 1.5x peak dealer transaction volume.",
+            "assignee_person_id": "E1055",
+            "due_date": "2026-10-15",
+            "status": "In Progress"
+          }
+        ]
+      },
+      {
+        "id": "MTG-P-PRO-02-03",
+        "title": "Ariba Sourcing & Contracts — Weekly Sprint Planning #3",
+        "meeting_type": "Sprint Planning",
+        "organizer_person_id": "E1055",
+        "meeting_date": "2026-09-22T10:00:00.000Z",
+        "duration_minutes": 45,
+        "summary": "Reviewed progress on Ariba Sourcing & Contracts, evaluated risk mitigations and aligned on milestone sign-offs.",
+        "decisions": [
+          {
+            "id": "DEC-MTG-P-PRO-02-03-01",
+            "decision_text": "Approved standard zero-downtime rolling update strategy for Ariba Sourcing & Contracts.",
+            "rationale": "Minimizes impact on plant operations during shift changes.",
+            "impact_level": "High",
+            "decided_by_person_id": "E1051"
+          }
+        ],
+        "action_items": [
+          {
+            "id": "ACT-MTG-P-PRO-02-03-01",
+            "description": "Conduct load test simulation at 1.5x peak dealer transaction volume.",
+            "assignee_person_id": "E1055",
+            "due_date": "2026-10-15",
+            "status": "In Progress"
+          }
+        ]
+      },
+      {
+        "id": "MTG-P-PRO-02-04",
+        "title": "Ariba Sourcing & Contracts — Weekly Sprint Planning #4",
+        "meeting_type": "Sprint Planning",
+        "organizer_person_id": "E1055",
+        "meeting_date": "2026-09-29T10:00:00.000Z",
+        "duration_minutes": 45,
+        "summary": "Reviewed progress on Ariba Sourcing & Contracts, evaluated risk mitigations and aligned on milestone sign-offs.",
+        "decisions": [
+          {
+            "id": "DEC-MTG-P-PRO-02-04-01",
+            "decision_text": "Approved standard zero-downtime rolling update strategy for Ariba Sourcing & Contracts.",
+            "rationale": "Minimizes impact on plant operations during shift changes.",
+            "impact_level": "High",
+            "decided_by_person_id": "E1051"
+          }
+        ],
+        "action_items": [
+          {
+            "id": "ACT-MTG-P-PRO-02-04-01",
+            "description": "Conduct load test simulation at 1.5x peak dealer transaction volume.",
+            "assignee_person_id": "E1055",
+            "due_date": "2026-10-15",
+            "status": "In Progress"
+          }
+        ]
+      }
+    ],
+    "messages": [
+      {
+        "id": "MSG-P-PRO-02-001",
+        "author_person_id": "E1055",
+        "content": "Team, the latest sprint release has passed security vulnerability scanning with zero critical findings."
+      },
+      {
+        "id": "MSG-P-PRO-02-002",
+        "author_person_id": "E1051",
+        "content": "Great work. Let's ensure the operational runbook and escalation paths are updated before the steering review."
+      }
+    ]
+  },
+  {
+    "id": "TM-CHAN-P-PRO-03-GEN",
+    "project_id": "P-PRO-03",
+    "name": "Procure-to-Pay Invoice Automation — General Engineering Channel",
+    "description": "Core collaboration channel for Procure-to-Pay Invoice Automation project team",
+    "meetings": [
+      {
+        "id": "MTG-P-PRO-03-01",
+        "title": "Procure-to-Pay Invoice Automation — Weekly Steering Committee #1",
+        "meeting_type": "Steering Committee",
+        "organizer_person_id": "E1056",
+        "meeting_date": "2026-09-08T10:00:00.000Z",
+        "duration_minutes": 45,
+        "summary": "Reviewed progress on Procure-to-Pay Invoice Automation, evaluated risk mitigations and aligned on milestone sign-offs.",
+        "decisions": [
+          {
+            "id": "DEC-MTG-P-PRO-03-01-01",
+            "decision_text": "Approved standard zero-downtime rolling update strategy for Procure-to-Pay Invoice Automation.",
+            "rationale": "Minimizes impact on plant operations during shift changes.",
+            "impact_level": "High",
+            "decided_by_person_id": "E1050"
+          }
+        ],
+        "action_items": [
+          {
+            "id": "ACT-MTG-P-PRO-03-01-01",
+            "description": "Conduct load test simulation at 1.5x peak dealer transaction volume.",
+            "assignee_person_id": "E1056",
+            "due_date": "2026-10-15",
+            "status": "In Progress"
+          }
+        ]
+      },
+      {
+        "id": "MTG-P-PRO-03-02",
+        "title": "Procure-to-Pay Invoice Automation — Weekly Architecture Review #2",
+        "meeting_type": "Architecture Review",
+        "organizer_person_id": "E1056",
+        "meeting_date": "2026-09-15T10:00:00.000Z",
+        "duration_minutes": 45,
+        "summary": "Reviewed progress on Procure-to-Pay Invoice Automation, evaluated risk mitigations and aligned on milestone sign-offs.",
+        "decisions": [
+          {
+            "id": "DEC-MTG-P-PRO-03-02-01",
+            "decision_text": "Approved standard zero-downtime rolling update strategy for Procure-to-Pay Invoice Automation.",
+            "rationale": "Minimizes impact on plant operations during shift changes.",
+            "impact_level": "High",
+            "decided_by_person_id": "E1050"
+          }
+        ],
+        "action_items": [
+          {
+            "id": "ACT-MTG-P-PRO-03-02-01",
+            "description": "Conduct load test simulation at 1.5x peak dealer transaction volume.",
+            "assignee_person_id": "E1056",
+            "due_date": "2026-10-15",
+            "status": "In Progress"
+          }
+        ]
+      },
+      {
+        "id": "MTG-P-PRO-03-03",
+        "title": "Procure-to-Pay Invoice Automation — Weekly Sprint Planning #3",
+        "meeting_type": "Sprint Planning",
+        "organizer_person_id": "E1056",
+        "meeting_date": "2026-09-22T10:00:00.000Z",
+        "duration_minutes": 45,
+        "summary": "Reviewed progress on Procure-to-Pay Invoice Automation, evaluated risk mitigations and aligned on milestone sign-offs.",
+        "decisions": [
+          {
+            "id": "DEC-MTG-P-PRO-03-03-01",
+            "decision_text": "Approved standard zero-downtime rolling update strategy for Procure-to-Pay Invoice Automation.",
+            "rationale": "Minimizes impact on plant operations during shift changes.",
+            "impact_level": "High",
+            "decided_by_person_id": "E1050"
+          }
+        ],
+        "action_items": [
+          {
+            "id": "ACT-MTG-P-PRO-03-03-01",
+            "description": "Conduct load test simulation at 1.5x peak dealer transaction volume.",
+            "assignee_person_id": "E1056",
+            "due_date": "2026-10-15",
+            "status": "In Progress"
+          }
+        ]
+      },
+      {
+        "id": "MTG-P-PRO-03-04",
+        "title": "Procure-to-Pay Invoice Automation — Weekly Sprint Planning #4",
+        "meeting_type": "Sprint Planning",
+        "organizer_person_id": "E1056",
+        "meeting_date": "2026-09-29T10:00:00.000Z",
+        "duration_minutes": 45,
+        "summary": "Reviewed progress on Procure-to-Pay Invoice Automation, evaluated risk mitigations and aligned on milestone sign-offs.",
+        "decisions": [
+          {
+            "id": "DEC-MTG-P-PRO-03-04-01",
+            "decision_text": "Approved standard zero-downtime rolling update strategy for Procure-to-Pay Invoice Automation.",
+            "rationale": "Minimizes impact on plant operations during shift changes.",
+            "impact_level": "High",
+            "decided_by_person_id": "E1050"
+          }
+        ],
+        "action_items": [
+          {
+            "id": "ACT-MTG-P-PRO-03-04-01",
+            "description": "Conduct load test simulation at 1.5x peak dealer transaction volume.",
+            "assignee_person_id": "E1056",
+            "due_date": "2026-10-15",
+            "status": "In Progress"
+          }
+        ]
+      }
+    ],
+    "messages": [
+      {
+        "id": "MSG-P-PRO-03-001",
+        "author_person_id": "E1056",
+        "content": "Team, the latest sprint release has passed security vulnerability scanning with zero critical findings."
+      },
+      {
+        "id": "MSG-P-PRO-03-002",
+        "author_person_id": "E1050",
+        "content": "Great work. Let's ensure the operational runbook and escalation paths are updated before the steering review."
+      }
+    ]
+  },
+  {
+    "id": "TM-CHAN-P-PRO-04-GEN",
+    "project_id": "P-PRO-04",
+    "name": "Spend Analytics — General Engineering Channel",
+    "description": "Core collaboration channel for Spend Analytics project team",
+    "meetings": [
+      {
+        "id": "MTG-P-PRO-04-01",
+        "title": "Spend Analytics — Weekly Steering Committee #1",
+        "meeting_type": "Steering Committee",
+        "organizer_person_id": "E1057",
+        "meeting_date": "2026-09-08T10:00:00.000Z",
+        "duration_minutes": 45,
+        "summary": "Reviewed progress on Spend Analytics, evaluated risk mitigations and aligned on milestone sign-offs.",
+        "decisions": [
+          {
+            "id": "DEC-MTG-P-PRO-04-01-01",
+            "decision_text": "Approved standard zero-downtime rolling update strategy for Spend Analytics.",
+            "rationale": "Minimizes impact on plant operations during shift changes.",
+            "impact_level": "High",
+            "decided_by_person_id": "E1052"
+          }
+        ],
+        "action_items": [
+          {
+            "id": "ACT-MTG-P-PRO-04-01-01",
+            "description": "Conduct load test simulation at 1.5x peak dealer transaction volume.",
+            "assignee_person_id": "E1057",
+            "due_date": "2026-10-15",
+            "status": "In Progress"
+          }
+        ]
+      },
+      {
+        "id": "MTG-P-PRO-04-02",
+        "title": "Spend Analytics — Weekly Architecture Review #2",
+        "meeting_type": "Architecture Review",
+        "organizer_person_id": "E1057",
+        "meeting_date": "2026-09-15T10:00:00.000Z",
+        "duration_minutes": 45,
+        "summary": "Reviewed progress on Spend Analytics, evaluated risk mitigations and aligned on milestone sign-offs.",
+        "decisions": [
+          {
+            "id": "DEC-MTG-P-PRO-04-02-01",
+            "decision_text": "Approved standard zero-downtime rolling update strategy for Spend Analytics.",
+            "rationale": "Minimizes impact on plant operations during shift changes.",
+            "impact_level": "High",
+            "decided_by_person_id": "E1052"
+          }
+        ],
+        "action_items": [
+          {
+            "id": "ACT-MTG-P-PRO-04-02-01",
+            "description": "Conduct load test simulation at 1.5x peak dealer transaction volume.",
+            "assignee_person_id": "E1057",
+            "due_date": "2026-10-15",
+            "status": "In Progress"
+          }
+        ]
+      },
+      {
+        "id": "MTG-P-PRO-04-03",
+        "title": "Spend Analytics — Weekly Sprint Planning #3",
+        "meeting_type": "Sprint Planning",
+        "organizer_person_id": "E1057",
+        "meeting_date": "2026-09-22T10:00:00.000Z",
+        "duration_minutes": 45,
+        "summary": "Reviewed progress on Spend Analytics, evaluated risk mitigations and aligned on milestone sign-offs.",
+        "decisions": [
+          {
+            "id": "DEC-MTG-P-PRO-04-03-01",
+            "decision_text": "Approved standard zero-downtime rolling update strategy for Spend Analytics.",
+            "rationale": "Minimizes impact on plant operations during shift changes.",
+            "impact_level": "High",
+            "decided_by_person_id": "E1052"
+          }
+        ],
+        "action_items": [
+          {
+            "id": "ACT-MTG-P-PRO-04-03-01",
+            "description": "Conduct load test simulation at 1.5x peak dealer transaction volume.",
+            "assignee_person_id": "E1057",
+            "due_date": "2026-10-15",
+            "status": "In Progress"
+          }
+        ]
+      },
+      {
+        "id": "MTG-P-PRO-04-04",
+        "title": "Spend Analytics — Weekly Sprint Planning #4",
+        "meeting_type": "Sprint Planning",
+        "organizer_person_id": "E1057",
+        "meeting_date": "2026-09-29T10:00:00.000Z",
+        "duration_minutes": 45,
+        "summary": "Reviewed progress on Spend Analytics, evaluated risk mitigations and aligned on milestone sign-offs.",
+        "decisions": [
+          {
+            "id": "DEC-MTG-P-PRO-04-04-01",
+            "decision_text": "Approved standard zero-downtime rolling update strategy for Spend Analytics.",
+            "rationale": "Minimizes impact on plant operations during shift changes.",
+            "impact_level": "High",
+            "decided_by_person_id": "E1052"
+          }
+        ],
+        "action_items": [
+          {
+            "id": "ACT-MTG-P-PRO-04-04-01",
+            "description": "Conduct load test simulation at 1.5x peak dealer transaction volume.",
+            "assignee_person_id": "E1057",
+            "due_date": "2026-10-15",
+            "status": "In Progress"
+          }
+        ]
+      }
+    ],
+    "messages": [
+      {
+        "id": "MSG-P-PRO-04-001",
+        "author_person_id": "E1057",
+        "content": "Team, the latest sprint release has passed security vulnerability scanning with zero critical findings."
+      },
+      {
+        "id": "MSG-P-PRO-04-002",
+        "author_person_id": "E1052",
+        "content": "Great work. Let's ensure the operational runbook and escalation paths are updated before the steering review."
+      }
+    ]
+  },
+  {
+    "id": "TM-CHAN-P-PRO-05-GEN",
+    "project_id": "P-PRO-05",
+    "name": "Supplier Risk Scoring — General Engineering Channel",
+    "description": "Core collaboration channel for Supplier Risk Scoring project team",
+    "meetings": [
+      {
+        "id": "MTG-P-PRO-05-01",
+        "title": "Supplier Risk Scoring — Weekly Steering Committee #1",
+        "meeting_type": "Steering Committee",
+        "organizer_person_id": "E1058",
+        "meeting_date": "2026-09-08T10:00:00.000Z",
+        "duration_minutes": 45,
+        "summary": "Reviewed progress on Supplier Risk Scoring, evaluated risk mitigations and aligned on milestone sign-offs.",
+        "decisions": [
+          {
+            "id": "DEC-MTG-P-PRO-05-01-01",
+            "decision_text": "Approved standard zero-downtime rolling update strategy for Supplier Risk Scoring.",
+            "rationale": "Minimizes impact on plant operations during shift changes.",
+            "impact_level": "High",
+            "decided_by_person_id": "E1051"
+          }
+        ],
+        "action_items": [
+          {
+            "id": "ACT-MTG-P-PRO-05-01-01",
+            "description": "Conduct load test simulation at 1.5x peak dealer transaction volume.",
+            "assignee_person_id": "E1058",
+            "due_date": "2026-10-15",
+            "status": "In Progress"
+          }
+        ]
+      },
+      {
+        "id": "MTG-P-PRO-05-02",
+        "title": "Supplier Risk Scoring — Weekly Architecture Review #2",
+        "meeting_type": "Architecture Review",
+        "organizer_person_id": "E1058",
+        "meeting_date": "2026-09-15T10:00:00.000Z",
+        "duration_minutes": 45,
+        "summary": "Reviewed progress on Supplier Risk Scoring, evaluated risk mitigations and aligned on milestone sign-offs.",
+        "decisions": [
+          {
+            "id": "DEC-MTG-P-PRO-05-02-01",
+            "decision_text": "Approved standard zero-downtime rolling update strategy for Supplier Risk Scoring.",
+            "rationale": "Minimizes impact on plant operations during shift changes.",
+            "impact_level": "High",
+            "decided_by_person_id": "E1051"
+          }
+        ],
+        "action_items": [
+          {
+            "id": "ACT-MTG-P-PRO-05-02-01",
+            "description": "Conduct load test simulation at 1.5x peak dealer transaction volume.",
+            "assignee_person_id": "E1058",
+            "due_date": "2026-10-15",
+            "status": "In Progress"
+          }
+        ]
+      },
+      {
+        "id": "MTG-P-PRO-05-03",
+        "title": "Supplier Risk Scoring — Weekly Sprint Planning #3",
+        "meeting_type": "Sprint Planning",
+        "organizer_person_id": "E1058",
+        "meeting_date": "2026-09-22T10:00:00.000Z",
+        "duration_minutes": 45,
+        "summary": "Reviewed progress on Supplier Risk Scoring, evaluated risk mitigations and aligned on milestone sign-offs.",
+        "decisions": [
+          {
+            "id": "DEC-MTG-P-PRO-05-03-01",
+            "decision_text": "Approved standard zero-downtime rolling update strategy for Supplier Risk Scoring.",
+            "rationale": "Minimizes impact on plant operations during shift changes.",
+            "impact_level": "High",
+            "decided_by_person_id": "E1051"
+          }
+        ],
+        "action_items": [
+          {
+            "id": "ACT-MTG-P-PRO-05-03-01",
+            "description": "Conduct load test simulation at 1.5x peak dealer transaction volume.",
+            "assignee_person_id": "E1058",
+            "due_date": "2026-10-15",
+            "status": "In Progress"
+          }
+        ]
+      },
+      {
+        "id": "MTG-P-PRO-05-04",
+        "title": "Supplier Risk Scoring — Weekly Sprint Planning #4",
+        "meeting_type": "Sprint Planning",
+        "organizer_person_id": "E1058",
+        "meeting_date": "2026-09-29T10:00:00.000Z",
+        "duration_minutes": 45,
+        "summary": "Reviewed progress on Supplier Risk Scoring, evaluated risk mitigations and aligned on milestone sign-offs.",
+        "decisions": [
+          {
+            "id": "DEC-MTG-P-PRO-05-04-01",
+            "decision_text": "Approved standard zero-downtime rolling update strategy for Supplier Risk Scoring.",
+            "rationale": "Minimizes impact on plant operations during shift changes.",
+            "impact_level": "High",
+            "decided_by_person_id": "E1051"
+          }
+        ],
+        "action_items": [
+          {
+            "id": "ACT-MTG-P-PRO-05-04-01",
+            "description": "Conduct load test simulation at 1.5x peak dealer transaction volume.",
+            "assignee_person_id": "E1058",
+            "due_date": "2026-10-15",
+            "status": "In Progress"
+          }
+        ]
+      }
+    ],
+    "messages": [
+      {
+        "id": "MSG-P-PRO-05-001",
+        "author_person_id": "E1058",
+        "content": "Team, the latest sprint release has passed security vulnerability scanning with zero critical findings."
+      },
+      {
+        "id": "MSG-P-PRO-05-002",
+        "author_person_id": "E1051",
+        "content": "Great work. Let's ensure the operational runbook and escalation paths are updated before the steering review."
+      }
+    ]
+  },
+  {
+    "id": "TM-CHAN-P-DTFS-01-GEN",
+    "project_id": "P-DTFS-01",
+    "name": "Loan Origination Platform — General Engineering Channel",
+    "description": "Core collaboration channel for Loan Origination Platform project team",
+    "meetings": [
+      {
+        "id": "MTG-P-DTFS-01-01",
+        "title": "Loan Origination Platform — Weekly Steering Committee #1",
+        "meeting_type": "Steering Committee",
+        "organizer_person_id": "E1062",
+        "meeting_date": "2026-09-08T10:00:00.000Z",
+        "duration_minutes": 45,
+        "summary": "Reviewed progress on Loan Origination Platform, evaluated risk mitigations and aligned on milestone sign-offs.",
+        "decisions": [
+          {
+            "id": "DEC-MTG-P-DTFS-01-01-01",
+            "decision_text": "Approved standard zero-downtime rolling update strategy for Loan Origination Platform.",
+            "rationale": "Minimizes impact on plant operations during shift changes.",
+            "impact_level": "High",
+            "decided_by_person_id": "E1061"
+          }
+        ],
+        "action_items": [
+          {
+            "id": "ACT-MTG-P-DTFS-01-01-01",
+            "description": "Conduct load test simulation at 1.5x peak dealer transaction volume.",
+            "assignee_person_id": "E1062",
+            "due_date": "2026-10-15",
+            "status": "In Progress"
+          }
+        ]
+      },
+      {
+        "id": "MTG-P-DTFS-01-02",
+        "title": "Loan Origination Platform — Weekly Architecture Review #2",
+        "meeting_type": "Architecture Review",
+        "organizer_person_id": "E1062",
+        "meeting_date": "2026-09-15T10:00:00.000Z",
+        "duration_minutes": 45,
+        "summary": "Reviewed progress on Loan Origination Platform, evaluated risk mitigations and aligned on milestone sign-offs.",
+        "decisions": [
+          {
+            "id": "DEC-MTG-P-DTFS-01-02-01",
+            "decision_text": "Approved standard zero-downtime rolling update strategy for Loan Origination Platform.",
+            "rationale": "Minimizes impact on plant operations during shift changes.",
+            "impact_level": "High",
+            "decided_by_person_id": "E1061"
+          }
+        ],
+        "action_items": [
+          {
+            "id": "ACT-MTG-P-DTFS-01-02-01",
+            "description": "Conduct load test simulation at 1.5x peak dealer transaction volume.",
+            "assignee_person_id": "E1062",
+            "due_date": "2026-10-15",
+            "status": "In Progress"
+          }
+        ]
+      },
+      {
+        "id": "MTG-P-DTFS-01-03",
+        "title": "Loan Origination Platform — Weekly Sprint Planning #3",
+        "meeting_type": "Sprint Planning",
+        "organizer_person_id": "E1062",
+        "meeting_date": "2026-09-22T10:00:00.000Z",
+        "duration_minutes": 45,
+        "summary": "Reviewed progress on Loan Origination Platform, evaluated risk mitigations and aligned on milestone sign-offs.",
+        "decisions": [
+          {
+            "id": "DEC-MTG-P-DTFS-01-03-01",
+            "decision_text": "Approved standard zero-downtime rolling update strategy for Loan Origination Platform.",
+            "rationale": "Minimizes impact on plant operations during shift changes.",
+            "impact_level": "High",
+            "decided_by_person_id": "E1061"
+          }
+        ],
+        "action_items": [
+          {
+            "id": "ACT-MTG-P-DTFS-01-03-01",
+            "description": "Conduct load test simulation at 1.5x peak dealer transaction volume.",
+            "assignee_person_id": "E1062",
+            "due_date": "2026-10-15",
+            "status": "In Progress"
+          }
+        ]
+      },
+      {
+        "id": "MTG-P-DTFS-01-04",
+        "title": "Loan Origination Platform — Weekly Sprint Planning #4",
+        "meeting_type": "Sprint Planning",
+        "organizer_person_id": "E1062",
+        "meeting_date": "2026-09-29T10:00:00.000Z",
+        "duration_minutes": 45,
+        "summary": "Reviewed progress on Loan Origination Platform, evaluated risk mitigations and aligned on milestone sign-offs.",
+        "decisions": [
+          {
+            "id": "DEC-MTG-P-DTFS-01-04-01",
+            "decision_text": "Approved standard zero-downtime rolling update strategy for Loan Origination Platform.",
+            "rationale": "Minimizes impact on plant operations during shift changes.",
+            "impact_level": "High",
+            "decided_by_person_id": "E1061"
+          }
+        ],
+        "action_items": [
+          {
+            "id": "ACT-MTG-P-DTFS-01-04-01",
+            "description": "Conduct load test simulation at 1.5x peak dealer transaction volume.",
+            "assignee_person_id": "E1062",
+            "due_date": "2026-10-15",
+            "status": "In Progress"
+          }
+        ]
+      },
+      {
+        "id": "MTG-P-DTFS-01-05",
+        "title": "Loan Origination Platform — Weekly Sprint Planning #5",
+        "meeting_type": "Sprint Planning",
+        "organizer_person_id": "E1062",
+        "meeting_date": "2026-10-06T10:00:00.000Z",
+        "duration_minutes": 45,
+        "summary": "Reviewed progress on Loan Origination Platform, evaluated risk mitigations and aligned on milestone sign-offs.",
+        "decisions": [
+          {
+            "id": "DEC-MTG-P-DTFS-01-05-01",
+            "decision_text": "Approved standard zero-downtime rolling update strategy for Loan Origination Platform.",
+            "rationale": "Minimizes impact on plant operations during shift changes.",
+            "impact_level": "High",
+            "decided_by_person_id": "E1061"
+          }
+        ],
+        "action_items": [
+          {
+            "id": "ACT-MTG-P-DTFS-01-05-01",
+            "description": "Conduct load test simulation at 1.5x peak dealer transaction volume.",
+            "assignee_person_id": "E1062",
+            "due_date": "2026-10-15",
+            "status": "In Progress"
+          }
+        ]
+      },
+      {
+        "id": "MTG-P-DTFS-01-06",
+        "title": "Loan Origination Platform — Weekly Sprint Planning #6",
+        "meeting_type": "Sprint Planning",
+        "organizer_person_id": "E1062",
+        "meeting_date": "2026-10-13T10:00:00.000Z",
+        "duration_minutes": 45,
+        "summary": "Reviewed progress on Loan Origination Platform, evaluated risk mitigations and aligned on milestone sign-offs.",
+        "decisions": [
+          {
+            "id": "DEC-MTG-P-DTFS-01-06-01",
+            "decision_text": "Approved standard zero-downtime rolling update strategy for Loan Origination Platform.",
+            "rationale": "Minimizes impact on plant operations during shift changes.",
+            "impact_level": "High",
+            "decided_by_person_id": "E1061"
+          }
+        ],
+        "action_items": [
+          {
+            "id": "ACT-MTG-P-DTFS-01-06-01",
+            "description": "Conduct load test simulation at 1.5x peak dealer transaction volume.",
+            "assignee_person_id": "E1062",
+            "due_date": "2026-10-15",
+            "status": "In Progress"
+          }
+        ]
+      },
+      {
+        "id": "MTG-P-DTFS-01-07",
+        "title": "Loan Origination Platform — Weekly Sprint Planning #7",
+        "meeting_type": "Sprint Planning",
+        "organizer_person_id": "E1062",
+        "meeting_date": "2026-10-20T10:00:00.000Z",
+        "duration_minutes": 45,
+        "summary": "Reviewed progress on Loan Origination Platform, evaluated risk mitigations and aligned on milestone sign-offs.",
+        "decisions": [
+          {
+            "id": "DEC-MTG-P-DTFS-01-07-01",
+            "decision_text": "Approved standard zero-downtime rolling update strategy for Loan Origination Platform.",
+            "rationale": "Minimizes impact on plant operations during shift changes.",
+            "impact_level": "High",
+            "decided_by_person_id": "E1061"
+          }
+        ],
+        "action_items": [
+          {
+            "id": "ACT-MTG-P-DTFS-01-07-01",
+            "description": "Conduct load test simulation at 1.5x peak dealer transaction volume.",
+            "assignee_person_id": "E1062",
+            "due_date": "2026-10-15",
+            "status": "In Progress"
+          }
+        ]
+      },
+      {
+        "id": "MTG-P-DTFS-01-08",
+        "title": "Loan Origination Platform — Weekly Sprint Planning #8",
+        "meeting_type": "Sprint Planning",
+        "organizer_person_id": "E1062",
+        "meeting_date": "2026-10-27T10:00:00.000Z",
+        "duration_minutes": 45,
+        "summary": "Reviewed progress on Loan Origination Platform, evaluated risk mitigations and aligned on milestone sign-offs.",
+        "decisions": [
+          {
+            "id": "DEC-MTG-P-DTFS-01-08-01",
+            "decision_text": "Approved standard zero-downtime rolling update strategy for Loan Origination Platform.",
+            "rationale": "Minimizes impact on plant operations during shift changes.",
+            "impact_level": "High",
+            "decided_by_person_id": "E1061"
+          }
+        ],
+        "action_items": [
+          {
+            "id": "ACT-MTG-P-DTFS-01-08-01",
+            "description": "Conduct load test simulation at 1.5x peak dealer transaction volume.",
+            "assignee_person_id": "E1062",
+            "due_date": "2026-10-15",
+            "status": "In Progress"
+          }
+        ]
+      }
+    ],
+    "messages": [
+      {
+        "id": "MSG-P-DTFS-01-001",
+        "author_person_id": "E1062",
+        "content": "Team, the latest sprint release has passed security vulnerability scanning with zero critical findings."
+      },
+      {
+        "id": "MSG-P-DTFS-01-002",
+        "author_person_id": "E1061",
+        "content": "Great work. Let's ensure the operational runbook and escalation paths are updated before the steering review."
+      }
+    ]
+  },
+  {
+    "id": "TM-CHAN-P-DTFS-02-GEN",
+    "project_id": "P-DTFS-02",
+    "name": "Credit Scoring Engine — General Engineering Channel",
+    "description": "Core collaboration channel for Credit Scoring Engine project team",
+    "meetings": [
+      {
+        "id": "MTG-P-DTFS-02-01",
+        "title": "Credit Scoring Engine — Weekly Steering Committee #1",
+        "meeting_type": "Steering Committee",
+        "organizer_person_id": "E1067",
+        "meeting_date": "2026-09-08T10:00:00.000Z",
+        "duration_minutes": 45,
+        "summary": "Reviewed progress on Credit Scoring Engine, evaluated risk mitigations and aligned on milestone sign-offs.",
+        "decisions": [
+          {
+            "id": "DEC-MTG-P-DTFS-02-01-01",
+            "decision_text": "Approved standard zero-downtime rolling update strategy for Credit Scoring Engine.",
+            "rationale": "Minimizes impact on plant operations during shift changes.",
+            "impact_level": "High",
+            "decided_by_person_id": "E1060"
+          }
+        ],
+        "action_items": [
+          {
+            "id": "ACT-MTG-P-DTFS-02-01-01",
+            "description": "Conduct load test simulation at 1.5x peak dealer transaction volume.",
+            "assignee_person_id": "E1067",
+            "due_date": "2026-10-15",
+            "status": "In Progress"
+          }
+        ]
+      },
+      {
+        "id": "MTG-P-DTFS-02-02",
+        "title": "Credit Scoring Engine — Weekly Architecture Review #2",
+        "meeting_type": "Architecture Review",
+        "organizer_person_id": "E1067",
+        "meeting_date": "2026-09-15T10:00:00.000Z",
+        "duration_minutes": 45,
+        "summary": "Reviewed progress on Credit Scoring Engine, evaluated risk mitigations and aligned on milestone sign-offs.",
+        "decisions": [
+          {
+            "id": "DEC-MTG-P-DTFS-02-02-01",
+            "decision_text": "Approved standard zero-downtime rolling update strategy for Credit Scoring Engine.",
+            "rationale": "Minimizes impact on plant operations during shift changes.",
+            "impact_level": "High",
+            "decided_by_person_id": "E1060"
+          }
+        ],
+        "action_items": [
+          {
+            "id": "ACT-MTG-P-DTFS-02-02-01",
+            "description": "Conduct load test simulation at 1.5x peak dealer transaction volume.",
+            "assignee_person_id": "E1067",
+            "due_date": "2026-10-15",
+            "status": "In Progress"
+          }
+        ]
+      },
+      {
+        "id": "MTG-P-DTFS-02-03",
+        "title": "Credit Scoring Engine — Weekly Sprint Planning #3",
+        "meeting_type": "Sprint Planning",
+        "organizer_person_id": "E1067",
+        "meeting_date": "2026-09-22T10:00:00.000Z",
+        "duration_minutes": 45,
+        "summary": "Reviewed progress on Credit Scoring Engine, evaluated risk mitigations and aligned on milestone sign-offs.",
+        "decisions": [
+          {
+            "id": "DEC-MTG-P-DTFS-02-03-01",
+            "decision_text": "Approved standard zero-downtime rolling update strategy for Credit Scoring Engine.",
+            "rationale": "Minimizes impact on plant operations during shift changes.",
+            "impact_level": "High",
+            "decided_by_person_id": "E1060"
+          }
+        ],
+        "action_items": [
+          {
+            "id": "ACT-MTG-P-DTFS-02-03-01",
+            "description": "Conduct load test simulation at 1.5x peak dealer transaction volume.",
+            "assignee_person_id": "E1067",
+            "due_date": "2026-10-15",
+            "status": "In Progress"
+          }
+        ]
+      },
+      {
+        "id": "MTG-P-DTFS-02-04",
+        "title": "Credit Scoring Engine — Weekly Sprint Planning #4",
+        "meeting_type": "Sprint Planning",
+        "organizer_person_id": "E1067",
+        "meeting_date": "2026-09-29T10:00:00.000Z",
+        "duration_minutes": 45,
+        "summary": "Reviewed progress on Credit Scoring Engine, evaluated risk mitigations and aligned on milestone sign-offs.",
+        "decisions": [
+          {
+            "id": "DEC-MTG-P-DTFS-02-04-01",
+            "decision_text": "Approved standard zero-downtime rolling update strategy for Credit Scoring Engine.",
+            "rationale": "Minimizes impact on plant operations during shift changes.",
+            "impact_level": "High",
+            "decided_by_person_id": "E1060"
+          }
+        ],
+        "action_items": [
+          {
+            "id": "ACT-MTG-P-DTFS-02-04-01",
+            "description": "Conduct load test simulation at 1.5x peak dealer transaction volume.",
+            "assignee_person_id": "E1067",
+            "due_date": "2026-10-15",
+            "status": "In Progress"
+          }
+        ]
+      }
+    ],
+    "messages": [
+      {
+        "id": "MSG-P-DTFS-02-001",
+        "author_person_id": "E1067",
+        "content": "Team, the latest sprint release has passed security vulnerability scanning with zero critical findings."
+      },
+      {
+        "id": "MSG-P-DTFS-02-002",
+        "author_person_id": "E1060",
+        "content": "Great work. Let's ensure the operational runbook and escalation paths are updated before the steering review."
+      }
+    ]
+  },
+  {
+    "id": "TM-CHAN-P-DTFS-03-GEN",
+    "project_id": "P-DTFS-03",
+    "name": "Lease & Contract Management — General Engineering Channel",
+    "description": "Core collaboration channel for Lease & Contract Management project team",
+    "meetings": [
+      {
+        "id": "MTG-P-DTFS-03-01",
+        "title": "Lease & Contract Management — Weekly Steering Committee #1",
+        "meeting_type": "Steering Committee",
+        "organizer_person_id": "E1063",
+        "meeting_date": "2026-09-08T10:00:00.000Z",
+        "duration_minutes": 45,
+        "summary": "Reviewed progress on Lease & Contract Management, evaluated risk mitigations and aligned on milestone sign-offs.",
+        "decisions": [
+          {
+            "id": "DEC-MTG-P-DTFS-03-01-01",
+            "decision_text": "Approved standard zero-downtime rolling update strategy for Lease & Contract Management.",
+            "rationale": "Minimizes impact on plant operations during shift changes.",
+            "impact_level": "High",
+            "decided_by_person_id": "E1059"
+          }
+        ],
+        "action_items": [
+          {
+            "id": "ACT-MTG-P-DTFS-03-01-01",
+            "description": "Conduct load test simulation at 1.5x peak dealer transaction volume.",
+            "assignee_person_id": "E1063",
+            "due_date": "2026-10-15",
+            "status": "In Progress"
+          }
+        ]
+      },
+      {
+        "id": "MTG-P-DTFS-03-02",
+        "title": "Lease & Contract Management — Weekly Architecture Review #2",
+        "meeting_type": "Architecture Review",
+        "organizer_person_id": "E1063",
+        "meeting_date": "2026-09-15T10:00:00.000Z",
+        "duration_minutes": 45,
+        "summary": "Reviewed progress on Lease & Contract Management, evaluated risk mitigations and aligned on milestone sign-offs.",
+        "decisions": [
+          {
+            "id": "DEC-MTG-P-DTFS-03-02-01",
+            "decision_text": "Approved standard zero-downtime rolling update strategy for Lease & Contract Management.",
+            "rationale": "Minimizes impact on plant operations during shift changes.",
+            "impact_level": "High",
+            "decided_by_person_id": "E1059"
+          }
+        ],
+        "action_items": [
+          {
+            "id": "ACT-MTG-P-DTFS-03-02-01",
+            "description": "Conduct load test simulation at 1.5x peak dealer transaction volume.",
+            "assignee_person_id": "E1063",
+            "due_date": "2026-10-15",
+            "status": "In Progress"
+          }
+        ]
+      },
+      {
+        "id": "MTG-P-DTFS-03-03",
+        "title": "Lease & Contract Management — Weekly Sprint Planning #3",
+        "meeting_type": "Sprint Planning",
+        "organizer_person_id": "E1063",
+        "meeting_date": "2026-09-22T10:00:00.000Z",
+        "duration_minutes": 45,
+        "summary": "Reviewed progress on Lease & Contract Management, evaluated risk mitigations and aligned on milestone sign-offs.",
+        "decisions": [
+          {
+            "id": "DEC-MTG-P-DTFS-03-03-01",
+            "decision_text": "Approved standard zero-downtime rolling update strategy for Lease & Contract Management.",
+            "rationale": "Minimizes impact on plant operations during shift changes.",
+            "impact_level": "High",
+            "decided_by_person_id": "E1059"
+          }
+        ],
+        "action_items": [
+          {
+            "id": "ACT-MTG-P-DTFS-03-03-01",
+            "description": "Conduct load test simulation at 1.5x peak dealer transaction volume.",
+            "assignee_person_id": "E1063",
+            "due_date": "2026-10-15",
+            "status": "In Progress"
+          }
+        ]
+      },
+      {
+        "id": "MTG-P-DTFS-03-04",
+        "title": "Lease & Contract Management — Weekly Sprint Planning #4",
+        "meeting_type": "Sprint Planning",
+        "organizer_person_id": "E1063",
+        "meeting_date": "2026-09-29T10:00:00.000Z",
+        "duration_minutes": 45,
+        "summary": "Reviewed progress on Lease & Contract Management, evaluated risk mitigations and aligned on milestone sign-offs.",
+        "decisions": [
+          {
+            "id": "DEC-MTG-P-DTFS-03-04-01",
+            "decision_text": "Approved standard zero-downtime rolling update strategy for Lease & Contract Management.",
+            "rationale": "Minimizes impact on plant operations during shift changes.",
+            "impact_level": "High",
+            "decided_by_person_id": "E1059"
+          }
+        ],
+        "action_items": [
+          {
+            "id": "ACT-MTG-P-DTFS-03-04-01",
+            "description": "Conduct load test simulation at 1.5x peak dealer transaction volume.",
+            "assignee_person_id": "E1063",
+            "due_date": "2026-10-15",
+            "status": "In Progress"
+          }
+        ]
+      }
+    ],
+    "messages": [
+      {
+        "id": "MSG-P-DTFS-03-001",
+        "author_person_id": "E1063",
+        "content": "Team, the latest sprint release has passed security vulnerability scanning with zero critical findings."
+      },
+      {
+        "id": "MSG-P-DTFS-03-002",
+        "author_person_id": "E1059",
+        "content": "Great work. Let's ensure the operational runbook and escalation paths are updated before the steering review."
+      }
+    ]
+  },
+  {
+    "id": "TM-CHAN-P-DTFS-04-GEN",
+    "project_id": "P-DTFS-04",
+    "name": "Collections & Servicing Platform — General Engineering Channel",
+    "description": "Core collaboration channel for Collections & Servicing Platform project team",
+    "meetings": [
+      {
+        "id": "MTG-P-DTFS-04-01",
+        "title": "Collections & Servicing Platform — Weekly Steering Committee #1",
+        "meeting_type": "Steering Committee",
+        "organizer_person_id": "E1070",
+        "meeting_date": "2026-09-08T10:00:00.000Z",
+        "duration_minutes": 45,
+        "summary": "Reviewed progress on Collections & Servicing Platform, evaluated risk mitigations and aligned on milestone sign-offs.",
+        "decisions": [
+          {
+            "id": "DEC-MTG-P-DTFS-04-01-01",
+            "decision_text": "Approved standard zero-downtime rolling update strategy for Collections & Servicing Platform.",
+            "rationale": "Minimizes impact on plant operations during shift changes.",
+            "impact_level": "High",
+            "decided_by_person_id": "E1069"
+          }
+        ],
+        "action_items": [
+          {
+            "id": "ACT-MTG-P-DTFS-04-01-01",
+            "description": "Conduct load test simulation at 1.5x peak dealer transaction volume.",
+            "assignee_person_id": "E1070",
+            "due_date": "2026-10-15",
+            "status": "In Progress"
+          }
+        ]
+      },
+      {
+        "id": "MTG-P-DTFS-04-02",
+        "title": "Collections & Servicing Platform — Weekly Architecture Review #2",
+        "meeting_type": "Architecture Review",
+        "organizer_person_id": "E1070",
+        "meeting_date": "2026-09-15T10:00:00.000Z",
+        "duration_minutes": 45,
+        "summary": "Reviewed progress on Collections & Servicing Platform, evaluated risk mitigations and aligned on milestone sign-offs.",
+        "decisions": [
+          {
+            "id": "DEC-MTG-P-DTFS-04-02-01",
+            "decision_text": "Approved standard zero-downtime rolling update strategy for Collections & Servicing Platform.",
+            "rationale": "Minimizes impact on plant operations during shift changes.",
+            "impact_level": "High",
+            "decided_by_person_id": "E1069"
+          }
+        ],
+        "action_items": [
+          {
+            "id": "ACT-MTG-P-DTFS-04-02-01",
+            "description": "Conduct load test simulation at 1.5x peak dealer transaction volume.",
+            "assignee_person_id": "E1070",
+            "due_date": "2026-10-15",
+            "status": "In Progress"
+          }
+        ]
+      },
+      {
+        "id": "MTG-P-DTFS-04-03",
+        "title": "Collections & Servicing Platform — Weekly Sprint Planning #3",
+        "meeting_type": "Sprint Planning",
+        "organizer_person_id": "E1070",
+        "meeting_date": "2026-09-22T10:00:00.000Z",
+        "duration_minutes": 45,
+        "summary": "Reviewed progress on Collections & Servicing Platform, evaluated risk mitigations and aligned on milestone sign-offs.",
+        "decisions": [
+          {
+            "id": "DEC-MTG-P-DTFS-04-03-01",
+            "decision_text": "Approved standard zero-downtime rolling update strategy for Collections & Servicing Platform.",
+            "rationale": "Minimizes impact on plant operations during shift changes.",
+            "impact_level": "High",
+            "decided_by_person_id": "E1069"
+          }
+        ],
+        "action_items": [
+          {
+            "id": "ACT-MTG-P-DTFS-04-03-01",
+            "description": "Conduct load test simulation at 1.5x peak dealer transaction volume.",
+            "assignee_person_id": "E1070",
+            "due_date": "2026-10-15",
+            "status": "In Progress"
+          }
+        ]
+      },
+      {
+        "id": "MTG-P-DTFS-04-04",
+        "title": "Collections & Servicing Platform — Weekly Sprint Planning #4",
+        "meeting_type": "Sprint Planning",
+        "organizer_person_id": "E1070",
+        "meeting_date": "2026-09-29T10:00:00.000Z",
+        "duration_minutes": 45,
+        "summary": "Reviewed progress on Collections & Servicing Platform, evaluated risk mitigations and aligned on milestone sign-offs.",
+        "decisions": [
+          {
+            "id": "DEC-MTG-P-DTFS-04-04-01",
+            "decision_text": "Approved standard zero-downtime rolling update strategy for Collections & Servicing Platform.",
+            "rationale": "Minimizes impact on plant operations during shift changes.",
+            "impact_level": "High",
+            "decided_by_person_id": "E1069"
+          }
+        ],
+        "action_items": [
+          {
+            "id": "ACT-MTG-P-DTFS-04-04-01",
+            "description": "Conduct load test simulation at 1.5x peak dealer transaction volume.",
+            "assignee_person_id": "E1070",
+            "due_date": "2026-10-15",
+            "status": "In Progress"
+          }
+        ]
+      }
+    ],
+    "messages": [
+      {
+        "id": "MSG-P-DTFS-04-001",
+        "author_person_id": "E1070",
+        "content": "Team, the latest sprint release has passed security vulnerability scanning with zero critical findings."
+      },
+      {
+        "id": "MSG-P-DTFS-04-002",
+        "author_person_id": "E1069",
+        "content": "Great work. Let's ensure the operational runbook and escalation paths are updated before the steering review."
+      }
+    ]
+  },
+  {
+    "id": "TM-CHAN-P-DTFS-05-GEN",
+    "project_id": "P-DTFS-05",
+    "name": "Regulatory Reporting (IFRS 9 / Basel) — General Engineering Channel",
+    "description": "Core collaboration channel for Regulatory Reporting (IFRS 9 / Basel) project team",
+    "meetings": [
+      {
+        "id": "MTG-P-DTFS-05-01",
+        "title": "Regulatory Reporting (IFRS 9 / Basel) — Weekly Steering Committee #1",
+        "meeting_type": "Steering Committee",
+        "organizer_person_id": "E1068",
+        "meeting_date": "2026-09-08T10:00:00.000Z",
+        "duration_minutes": 45,
+        "summary": "Reviewed progress on Regulatory Reporting (IFRS 9 / Basel), evaluated risk mitigations and aligned on milestone sign-offs.",
+        "decisions": [
+          {
+            "id": "DEC-MTG-P-DTFS-05-01-01",
+            "decision_text": "Approved standard zero-downtime rolling update strategy for Regulatory Reporting (IFRS 9 / Basel).",
+            "rationale": "Minimizes impact on plant operations during shift changes.",
+            "impact_level": "High",
+            "decided_by_person_id": "E1059"
+          }
+        ],
+        "action_items": [
+          {
+            "id": "ACT-MTG-P-DTFS-05-01-01",
+            "description": "Conduct load test simulation at 1.5x peak dealer transaction volume.",
+            "assignee_person_id": "E1068",
+            "due_date": "2026-10-15",
+            "status": "In Progress"
+          }
+        ]
+      },
+      {
+        "id": "MTG-P-DTFS-05-02",
+        "title": "Regulatory Reporting (IFRS 9 / Basel) — Weekly Architecture Review #2",
+        "meeting_type": "Architecture Review",
+        "organizer_person_id": "E1068",
+        "meeting_date": "2026-09-15T10:00:00.000Z",
+        "duration_minutes": 45,
+        "summary": "Reviewed progress on Regulatory Reporting (IFRS 9 / Basel), evaluated risk mitigations and aligned on milestone sign-offs.",
+        "decisions": [
+          {
+            "id": "DEC-MTG-P-DTFS-05-02-01",
+            "decision_text": "Approved standard zero-downtime rolling update strategy for Regulatory Reporting (IFRS 9 / Basel).",
+            "rationale": "Minimizes impact on plant operations during shift changes.",
+            "impact_level": "High",
+            "decided_by_person_id": "E1059"
+          }
+        ],
+        "action_items": [
+          {
+            "id": "ACT-MTG-P-DTFS-05-02-01",
+            "description": "Conduct load test simulation at 1.5x peak dealer transaction volume.",
+            "assignee_person_id": "E1068",
+            "due_date": "2026-10-15",
+            "status": "In Progress"
+          }
+        ]
+      },
+      {
+        "id": "MTG-P-DTFS-05-03",
+        "title": "Regulatory Reporting (IFRS 9 / Basel) — Weekly Sprint Planning #3",
+        "meeting_type": "Sprint Planning",
+        "organizer_person_id": "E1068",
+        "meeting_date": "2026-09-22T10:00:00.000Z",
+        "duration_minutes": 45,
+        "summary": "Reviewed progress on Regulatory Reporting (IFRS 9 / Basel), evaluated risk mitigations and aligned on milestone sign-offs.",
+        "decisions": [
+          {
+            "id": "DEC-MTG-P-DTFS-05-03-01",
+            "decision_text": "Approved standard zero-downtime rolling update strategy for Regulatory Reporting (IFRS 9 / Basel).",
+            "rationale": "Minimizes impact on plant operations during shift changes.",
+            "impact_level": "High",
+            "decided_by_person_id": "E1059"
+          }
+        ],
+        "action_items": [
+          {
+            "id": "ACT-MTG-P-DTFS-05-03-01",
+            "description": "Conduct load test simulation at 1.5x peak dealer transaction volume.",
+            "assignee_person_id": "E1068",
+            "due_date": "2026-10-15",
+            "status": "In Progress"
+          }
+        ]
+      },
+      {
+        "id": "MTG-P-DTFS-05-04",
+        "title": "Regulatory Reporting (IFRS 9 / Basel) — Weekly Sprint Planning #4",
+        "meeting_type": "Sprint Planning",
+        "organizer_person_id": "E1068",
+        "meeting_date": "2026-09-29T10:00:00.000Z",
+        "duration_minutes": 45,
+        "summary": "Reviewed progress on Regulatory Reporting (IFRS 9 / Basel), evaluated risk mitigations and aligned on milestone sign-offs.",
+        "decisions": [
+          {
+            "id": "DEC-MTG-P-DTFS-05-04-01",
+            "decision_text": "Approved standard zero-downtime rolling update strategy for Regulatory Reporting (IFRS 9 / Basel).",
+            "rationale": "Minimizes impact on plant operations during shift changes.",
+            "impact_level": "High",
+            "decided_by_person_id": "E1059"
+          }
+        ],
+        "action_items": [
+          {
+            "id": "ACT-MTG-P-DTFS-05-04-01",
+            "description": "Conduct load test simulation at 1.5x peak dealer transaction volume.",
+            "assignee_person_id": "E1068",
+            "due_date": "2026-10-15",
+            "status": "In Progress"
+          }
+        ]
+      }
+    ],
+    "messages": [
+      {
+        "id": "MSG-P-DTFS-05-001",
+        "author_person_id": "E1068",
+        "content": "Team, the latest sprint release has passed security vulnerability scanning with zero critical findings."
+      },
+      {
+        "id": "MSG-P-DTFS-05-002",
+        "author_person_id": "E1059",
+        "content": "Great work. Let's ensure the operational runbook and escalation paths are updated before the steering review."
+      }
+    ]
+  },
+  {
+    "id": "TM-CHAN-P-DTFS-06-GEN",
+    "project_id": "P-DTFS-06",
+    "name": "Dealer Floorplan Financing — General Engineering Channel",
+    "description": "Core collaboration channel for Dealer Floorplan Financing project team",
+    "meetings": [
+      {
+        "id": "MTG-P-DTFS-06-01",
+        "title": "Dealer Floorplan Financing — Weekly Steering Committee #1",
+        "meeting_type": "Steering Committee",
+        "organizer_person_id": "E1065",
+        "meeting_date": "2026-09-08T10:00:00.000Z",
+        "duration_minutes": 45,
+        "summary": "Reviewed progress on Dealer Floorplan Financing, evaluated risk mitigations and aligned on milestone sign-offs.",
+        "decisions": [
+          {
+            "id": "DEC-MTG-P-DTFS-06-01-01",
+            "decision_text": "Approved standard zero-downtime rolling update strategy for Dealer Floorplan Financing.",
+            "rationale": "Minimizes impact on plant operations during shift changes.",
+            "impact_level": "High",
+            "decided_by_person_id": "E1060"
+          }
+        ],
+        "action_items": [
+          {
+            "id": "ACT-MTG-P-DTFS-06-01-01",
+            "description": "Conduct load test simulation at 1.5x peak dealer transaction volume.",
+            "assignee_person_id": "E1065",
+            "due_date": "2026-10-15",
+            "status": "In Progress"
+          }
+        ]
+      },
+      {
+        "id": "MTG-P-DTFS-06-02",
+        "title": "Dealer Floorplan Financing — Weekly Architecture Review #2",
+        "meeting_type": "Architecture Review",
+        "organizer_person_id": "E1065",
+        "meeting_date": "2026-09-15T10:00:00.000Z",
+        "duration_minutes": 45,
+        "summary": "Reviewed progress on Dealer Floorplan Financing, evaluated risk mitigations and aligned on milestone sign-offs.",
+        "decisions": [
+          {
+            "id": "DEC-MTG-P-DTFS-06-02-01",
+            "decision_text": "Approved standard zero-downtime rolling update strategy for Dealer Floorplan Financing.",
+            "rationale": "Minimizes impact on plant operations during shift changes.",
+            "impact_level": "High",
+            "decided_by_person_id": "E1060"
+          }
+        ],
+        "action_items": [
+          {
+            "id": "ACT-MTG-P-DTFS-06-02-01",
+            "description": "Conduct load test simulation at 1.5x peak dealer transaction volume.",
+            "assignee_person_id": "E1065",
+            "due_date": "2026-10-15",
+            "status": "In Progress"
+          }
+        ]
+      },
+      {
+        "id": "MTG-P-DTFS-06-03",
+        "title": "Dealer Floorplan Financing — Weekly Sprint Planning #3",
+        "meeting_type": "Sprint Planning",
+        "organizer_person_id": "E1065",
+        "meeting_date": "2026-09-22T10:00:00.000Z",
+        "duration_minutes": 45,
+        "summary": "Reviewed progress on Dealer Floorplan Financing, evaluated risk mitigations and aligned on milestone sign-offs.",
+        "decisions": [
+          {
+            "id": "DEC-MTG-P-DTFS-06-03-01",
+            "decision_text": "Approved standard zero-downtime rolling update strategy for Dealer Floorplan Financing.",
+            "rationale": "Minimizes impact on plant operations during shift changes.",
+            "impact_level": "High",
+            "decided_by_person_id": "E1060"
+          }
+        ],
+        "action_items": [
+          {
+            "id": "ACT-MTG-P-DTFS-06-03-01",
+            "description": "Conduct load test simulation at 1.5x peak dealer transaction volume.",
+            "assignee_person_id": "E1065",
+            "due_date": "2026-10-15",
+            "status": "In Progress"
+          }
+        ]
+      },
+      {
+        "id": "MTG-P-DTFS-06-04",
+        "title": "Dealer Floorplan Financing — Weekly Sprint Planning #4",
+        "meeting_type": "Sprint Planning",
+        "organizer_person_id": "E1065",
+        "meeting_date": "2026-09-29T10:00:00.000Z",
+        "duration_minutes": 45,
+        "summary": "Reviewed progress on Dealer Floorplan Financing, evaluated risk mitigations and aligned on milestone sign-offs.",
+        "decisions": [
+          {
+            "id": "DEC-MTG-P-DTFS-06-04-01",
+            "decision_text": "Approved standard zero-downtime rolling update strategy for Dealer Floorplan Financing.",
+            "rationale": "Minimizes impact on plant operations during shift changes.",
+            "impact_level": "High",
+            "decided_by_person_id": "E1060"
+          }
+        ],
+        "action_items": [
+          {
+            "id": "ACT-MTG-P-DTFS-06-04-01",
+            "description": "Conduct load test simulation at 1.5x peak dealer transaction volume.",
+            "assignee_person_id": "E1065",
+            "due_date": "2026-10-15",
+            "status": "In Progress"
+          }
+        ]
+      }
+    ],
+    "messages": [
+      {
+        "id": "MSG-P-DTFS-06-001",
+        "author_person_id": "E1065",
+        "content": "Team, the latest sprint release has passed security vulnerability scanning with zero critical findings."
+      },
+      {
+        "id": "MSG-P-DTFS-06-002",
+        "author_person_id": "E1060",
+        "content": "Great work. Let's ensure the operational runbook and escalation paths are updated before the steering review."
+      }
+    ]
+  },
+  {
+    "id": "TM-CHAN-P-SAL-01-GEN",
+    "project_id": "P-SAL-01",
+    "name": "Dealer Management Platform — General Engineering Channel",
+    "description": "Core collaboration channel for Dealer Management Platform project team",
+    "meetings": [
+      {
+        "id": "MTG-P-SAL-01-01",
+        "title": "Dealer Management Platform — Weekly Steering Committee #1",
+        "meeting_type": "Steering Committee",
+        "organizer_person_id": "E1077",
+        "meeting_date": "2026-09-08T10:00:00.000Z",
+        "duration_minutes": 45,
+        "summary": "Reviewed progress on Dealer Management Platform, evaluated risk mitigations and aligned on milestone sign-offs.",
+        "decisions": [
+          {
+            "id": "DEC-MTG-P-SAL-01-01-01",
+            "decision_text": "Approved standard zero-downtime rolling update strategy for Dealer Management Platform.",
+            "rationale": "Minimizes impact on plant operations during shift changes.",
+            "impact_level": "High",
+            "decided_by_person_id": "E1072"
+          }
+        ],
+        "action_items": [
+          {
+            "id": "ACT-MTG-P-SAL-01-01-01",
+            "description": "Conduct load test simulation at 1.5x peak dealer transaction volume.",
+            "assignee_person_id": "E1077",
+            "due_date": "2026-10-15",
+            "status": "In Progress"
+          }
+        ]
+      },
+      {
+        "id": "MTG-P-SAL-01-02",
+        "title": "Dealer Management Platform — Weekly Architecture Review #2",
+        "meeting_type": "Architecture Review",
+        "organizer_person_id": "E1077",
+        "meeting_date": "2026-09-15T10:00:00.000Z",
+        "duration_minutes": 45,
+        "summary": "Reviewed progress on Dealer Management Platform, evaluated risk mitigations and aligned on milestone sign-offs.",
+        "decisions": [
+          {
+            "id": "DEC-MTG-P-SAL-01-02-01",
+            "decision_text": "Approved standard zero-downtime rolling update strategy for Dealer Management Platform.",
+            "rationale": "Minimizes impact on plant operations during shift changes.",
+            "impact_level": "High",
+            "decided_by_person_id": "E1072"
+          }
+        ],
+        "action_items": [
+          {
+            "id": "ACT-MTG-P-SAL-01-02-01",
+            "description": "Conduct load test simulation at 1.5x peak dealer transaction volume.",
+            "assignee_person_id": "E1077",
+            "due_date": "2026-10-15",
+            "status": "In Progress"
+          }
+        ]
+      },
+      {
+        "id": "MTG-P-SAL-01-03",
+        "title": "Dealer Management Platform — Weekly Sprint Planning #3",
+        "meeting_type": "Sprint Planning",
+        "organizer_person_id": "E1077",
+        "meeting_date": "2026-09-22T10:00:00.000Z",
+        "duration_minutes": 45,
+        "summary": "Reviewed progress on Dealer Management Platform, evaluated risk mitigations and aligned on milestone sign-offs.",
+        "decisions": [
+          {
+            "id": "DEC-MTG-P-SAL-01-03-01",
+            "decision_text": "Approved standard zero-downtime rolling update strategy for Dealer Management Platform.",
+            "rationale": "Minimizes impact on plant operations during shift changes.",
+            "impact_level": "High",
+            "decided_by_person_id": "E1072"
+          }
+        ],
+        "action_items": [
+          {
+            "id": "ACT-MTG-P-SAL-01-03-01",
+            "description": "Conduct load test simulation at 1.5x peak dealer transaction volume.",
+            "assignee_person_id": "E1077",
+            "due_date": "2026-10-15",
+            "status": "In Progress"
+          }
+        ]
+      },
+      {
+        "id": "MTG-P-SAL-01-04",
+        "title": "Dealer Management Platform — Weekly Sprint Planning #4",
+        "meeting_type": "Sprint Planning",
+        "organizer_person_id": "E1077",
+        "meeting_date": "2026-09-29T10:00:00.000Z",
+        "duration_minutes": 45,
+        "summary": "Reviewed progress on Dealer Management Platform, evaluated risk mitigations and aligned on milestone sign-offs.",
+        "decisions": [
+          {
+            "id": "DEC-MTG-P-SAL-01-04-01",
+            "decision_text": "Approved standard zero-downtime rolling update strategy for Dealer Management Platform.",
+            "rationale": "Minimizes impact on plant operations during shift changes.",
+            "impact_level": "High",
+            "decided_by_person_id": "E1072"
+          }
+        ],
+        "action_items": [
+          {
+            "id": "ACT-MTG-P-SAL-01-04-01",
+            "description": "Conduct load test simulation at 1.5x peak dealer transaction volume.",
+            "assignee_person_id": "E1077",
+            "due_date": "2026-10-15",
+            "status": "In Progress"
+          }
+        ]
+      },
+      {
+        "id": "MTG-P-SAL-01-05",
+        "title": "Dealer Management Platform — Weekly Sprint Planning #5",
+        "meeting_type": "Sprint Planning",
+        "organizer_person_id": "E1077",
+        "meeting_date": "2026-10-06T10:00:00.000Z",
+        "duration_minutes": 45,
+        "summary": "Reviewed progress on Dealer Management Platform, evaluated risk mitigations and aligned on milestone sign-offs.",
+        "decisions": [
+          {
+            "id": "DEC-MTG-P-SAL-01-05-01",
+            "decision_text": "Approved standard zero-downtime rolling update strategy for Dealer Management Platform.",
+            "rationale": "Minimizes impact on plant operations during shift changes.",
+            "impact_level": "High",
+            "decided_by_person_id": "E1072"
+          }
+        ],
+        "action_items": [
+          {
+            "id": "ACT-MTG-P-SAL-01-05-01",
+            "description": "Conduct load test simulation at 1.5x peak dealer transaction volume.",
+            "assignee_person_id": "E1077",
+            "due_date": "2026-10-15",
+            "status": "In Progress"
+          }
+        ]
+      },
+      {
+        "id": "MTG-P-SAL-01-06",
+        "title": "Dealer Management Platform — Weekly Sprint Planning #6",
+        "meeting_type": "Sprint Planning",
+        "organizer_person_id": "E1077",
+        "meeting_date": "2026-10-13T10:00:00.000Z",
+        "duration_minutes": 45,
+        "summary": "Reviewed progress on Dealer Management Platform, evaluated risk mitigations and aligned on milestone sign-offs.",
+        "decisions": [
+          {
+            "id": "DEC-MTG-P-SAL-01-06-01",
+            "decision_text": "Approved standard zero-downtime rolling update strategy for Dealer Management Platform.",
+            "rationale": "Minimizes impact on plant operations during shift changes.",
+            "impact_level": "High",
+            "decided_by_person_id": "E1072"
+          }
+        ],
+        "action_items": [
+          {
+            "id": "ACT-MTG-P-SAL-01-06-01",
+            "description": "Conduct load test simulation at 1.5x peak dealer transaction volume.",
+            "assignee_person_id": "E1077",
+            "due_date": "2026-10-15",
+            "status": "In Progress"
+          }
+        ]
+      },
+      {
+        "id": "MTG-P-SAL-01-07",
+        "title": "Dealer Management Platform — Weekly Sprint Planning #7",
+        "meeting_type": "Sprint Planning",
+        "organizer_person_id": "E1077",
+        "meeting_date": "2026-10-20T10:00:00.000Z",
+        "duration_minutes": 45,
+        "summary": "Reviewed progress on Dealer Management Platform, evaluated risk mitigations and aligned on milestone sign-offs.",
+        "decisions": [
+          {
+            "id": "DEC-MTG-P-SAL-01-07-01",
+            "decision_text": "Approved standard zero-downtime rolling update strategy for Dealer Management Platform.",
+            "rationale": "Minimizes impact on plant operations during shift changes.",
+            "impact_level": "High",
+            "decided_by_person_id": "E1072"
+          }
+        ],
+        "action_items": [
+          {
+            "id": "ACT-MTG-P-SAL-01-07-01",
+            "description": "Conduct load test simulation at 1.5x peak dealer transaction volume.",
+            "assignee_person_id": "E1077",
+            "due_date": "2026-10-15",
+            "status": "In Progress"
+          }
+        ]
+      },
+      {
+        "id": "MTG-P-SAL-01-08",
+        "title": "Dealer Management Platform — Weekly Sprint Planning #8",
+        "meeting_type": "Sprint Planning",
+        "organizer_person_id": "E1077",
+        "meeting_date": "2026-10-27T10:00:00.000Z",
+        "duration_minutes": 45,
+        "summary": "Reviewed progress on Dealer Management Platform, evaluated risk mitigations and aligned on milestone sign-offs.",
+        "decisions": [
+          {
+            "id": "DEC-MTG-P-SAL-01-08-01",
+            "decision_text": "Approved standard zero-downtime rolling update strategy for Dealer Management Platform.",
+            "rationale": "Minimizes impact on plant operations during shift changes.",
+            "impact_level": "High",
+            "decided_by_person_id": "E1072"
+          }
+        ],
+        "action_items": [
+          {
+            "id": "ACT-MTG-P-SAL-01-08-01",
+            "description": "Conduct load test simulation at 1.5x peak dealer transaction volume.",
+            "assignee_person_id": "E1077",
+            "due_date": "2026-10-15",
+            "status": "In Progress"
+          }
+        ]
+      }
+    ],
+    "messages": [
+      {
+        "id": "MSG-P-SAL-01-001",
+        "author_person_id": "E1077",
+        "content": "Team, the latest sprint release has passed security vulnerability scanning with zero critical findings."
+      },
+      {
+        "id": "MSG-P-SAL-01-002",
+        "author_person_id": "E1072",
+        "content": "Great work. Let's ensure the operational runbook and escalation paths are updated before the steering review."
+      }
+    ]
+  },
+  {
+    "id": "TM-CHAN-P-SAL-02-GEN",
+    "project_id": "P-SAL-02",
+    "name": "Customer 360 & CRM Data Platform — General Engineering Channel",
+    "description": "Core collaboration channel for Customer 360 & CRM Data Platform project team",
+    "meetings": [
+      {
+        "id": "MTG-P-SAL-02-01",
+        "title": "Customer 360 & CRM Data Platform — Weekly Steering Committee #1",
+        "meeting_type": "Steering Committee",
+        "organizer_person_id": "E1080",
+        "meeting_date": "2026-09-08T10:00:00.000Z",
+        "duration_minutes": 45,
+        "summary": "Reviewed progress on Customer 360 & CRM Data Platform, evaluated risk mitigations and aligned on milestone sign-offs.",
+        "decisions": [
+          {
+            "id": "DEC-MTG-P-SAL-02-01-01",
+            "decision_text": "Approved standard zero-downtime rolling update strategy for Customer 360 & CRM Data Platform.",
+            "rationale": "Minimizes impact on plant operations during shift changes.",
+            "impact_level": "High",
+            "decided_by_person_id": "E1071"
+          }
+        ],
+        "action_items": [
+          {
+            "id": "ACT-MTG-P-SAL-02-01-01",
+            "description": "Conduct load test simulation at 1.5x peak dealer transaction volume.",
+            "assignee_person_id": "E1080",
+            "due_date": "2026-10-15",
+            "status": "In Progress"
+          }
+        ]
+      },
+      {
+        "id": "MTG-P-SAL-02-02",
+        "title": "Customer 360 & CRM Data Platform — Weekly Architecture Review #2",
+        "meeting_type": "Architecture Review",
+        "organizer_person_id": "E1080",
+        "meeting_date": "2026-09-15T10:00:00.000Z",
+        "duration_minutes": 45,
+        "summary": "Reviewed progress on Customer 360 & CRM Data Platform, evaluated risk mitigations and aligned on milestone sign-offs.",
+        "decisions": [
+          {
+            "id": "DEC-MTG-P-SAL-02-02-01",
+            "decision_text": "Approved standard zero-downtime rolling update strategy for Customer 360 & CRM Data Platform.",
+            "rationale": "Minimizes impact on plant operations during shift changes.",
+            "impact_level": "High",
+            "decided_by_person_id": "E1071"
+          }
+        ],
+        "action_items": [
+          {
+            "id": "ACT-MTG-P-SAL-02-02-01",
+            "description": "Conduct load test simulation at 1.5x peak dealer transaction volume.",
+            "assignee_person_id": "E1080",
+            "due_date": "2026-10-15",
+            "status": "In Progress"
+          }
+        ]
+      },
+      {
+        "id": "MTG-P-SAL-02-03",
+        "title": "Customer 360 & CRM Data Platform — Weekly Sprint Planning #3",
+        "meeting_type": "Sprint Planning",
+        "organizer_person_id": "E1080",
+        "meeting_date": "2026-09-22T10:00:00.000Z",
+        "duration_minutes": 45,
+        "summary": "Reviewed progress on Customer 360 & CRM Data Platform, evaluated risk mitigations and aligned on milestone sign-offs.",
+        "decisions": [
+          {
+            "id": "DEC-MTG-P-SAL-02-03-01",
+            "decision_text": "Approved standard zero-downtime rolling update strategy for Customer 360 & CRM Data Platform.",
+            "rationale": "Minimizes impact on plant operations during shift changes.",
+            "impact_level": "High",
+            "decided_by_person_id": "E1071"
+          }
+        ],
+        "action_items": [
+          {
+            "id": "ACT-MTG-P-SAL-02-03-01",
+            "description": "Conduct load test simulation at 1.5x peak dealer transaction volume.",
+            "assignee_person_id": "E1080",
+            "due_date": "2026-10-15",
+            "status": "In Progress"
+          }
+        ]
+      },
+      {
+        "id": "MTG-P-SAL-02-04",
+        "title": "Customer 360 & CRM Data Platform — Weekly Sprint Planning #4",
+        "meeting_type": "Sprint Planning",
+        "organizer_person_id": "E1080",
+        "meeting_date": "2026-09-29T10:00:00.000Z",
+        "duration_minutes": 45,
+        "summary": "Reviewed progress on Customer 360 & CRM Data Platform, evaluated risk mitigations and aligned on milestone sign-offs.",
+        "decisions": [
+          {
+            "id": "DEC-MTG-P-SAL-02-04-01",
+            "decision_text": "Approved standard zero-downtime rolling update strategy for Customer 360 & CRM Data Platform.",
+            "rationale": "Minimizes impact on plant operations during shift changes.",
+            "impact_level": "High",
+            "decided_by_person_id": "E1071"
+          }
+        ],
+        "action_items": [
+          {
+            "id": "ACT-MTG-P-SAL-02-04-01",
+            "description": "Conduct load test simulation at 1.5x peak dealer transaction volume.",
+            "assignee_person_id": "E1080",
+            "due_date": "2026-10-15",
+            "status": "In Progress"
+          }
+        ]
+      }
+    ],
+    "messages": [
+      {
+        "id": "MSG-P-SAL-02-001",
+        "author_person_id": "E1080",
+        "content": "Team, the latest sprint release has passed security vulnerability scanning with zero critical findings."
+      },
+      {
+        "id": "MSG-P-SAL-02-002",
+        "author_person_id": "E1071",
+        "content": "Great work. Let's ensure the operational runbook and escalation paths are updated before the steering review."
+      }
+    ]
+  },
+  {
+    "id": "TM-CHAN-P-SAL-03-GEN",
+    "project_id": "P-SAL-03",
+    "name": "Aftersales Service Portal — General Engineering Channel",
+    "description": "Core collaboration channel for Aftersales Service Portal project team",
+    "meetings": [
+      {
+        "id": "MTG-P-SAL-03-01",
+        "title": "Aftersales Service Portal — Weekly Steering Committee #1",
+        "meeting_type": "Steering Committee",
+        "organizer_person_id": "E1076",
+        "meeting_date": "2026-09-08T10:00:00.000Z",
+        "duration_minutes": 45,
+        "summary": "Reviewed progress on Aftersales Service Portal, evaluated risk mitigations and aligned on milestone sign-offs.",
+        "decisions": [
+          {
+            "id": "DEC-MTG-P-SAL-03-01-01",
+            "decision_text": "Approved standard zero-downtime rolling update strategy for Aftersales Service Portal.",
+            "rationale": "Minimizes impact on plant operations during shift changes.",
+            "impact_level": "High",
+            "decided_by_person_id": "E1074"
+          }
+        ],
+        "action_items": [
+          {
+            "id": "ACT-MTG-P-SAL-03-01-01",
+            "description": "Conduct load test simulation at 1.5x peak dealer transaction volume.",
+            "assignee_person_id": "E1076",
+            "due_date": "2026-10-15",
+            "status": "In Progress"
+          }
+        ]
+      },
+      {
+        "id": "MTG-P-SAL-03-02",
+        "title": "Aftersales Service Portal — Weekly Architecture Review #2",
+        "meeting_type": "Architecture Review",
+        "organizer_person_id": "E1076",
+        "meeting_date": "2026-09-15T10:00:00.000Z",
+        "duration_minutes": 45,
+        "summary": "Reviewed progress on Aftersales Service Portal, evaluated risk mitigations and aligned on milestone sign-offs.",
+        "decisions": [
+          {
+            "id": "DEC-MTG-P-SAL-03-02-01",
+            "decision_text": "Approved standard zero-downtime rolling update strategy for Aftersales Service Portal.",
+            "rationale": "Minimizes impact on plant operations during shift changes.",
+            "impact_level": "High",
+            "decided_by_person_id": "E1074"
+          }
+        ],
+        "action_items": [
+          {
+            "id": "ACT-MTG-P-SAL-03-02-01",
+            "description": "Conduct load test simulation at 1.5x peak dealer transaction volume.",
+            "assignee_person_id": "E1076",
+            "due_date": "2026-10-15",
+            "status": "In Progress"
+          }
+        ]
+      },
+      {
+        "id": "MTG-P-SAL-03-03",
+        "title": "Aftersales Service Portal — Weekly Sprint Planning #3",
+        "meeting_type": "Sprint Planning",
+        "organizer_person_id": "E1076",
+        "meeting_date": "2026-09-22T10:00:00.000Z",
+        "duration_minutes": 45,
+        "summary": "Reviewed progress on Aftersales Service Portal, evaluated risk mitigations and aligned on milestone sign-offs.",
+        "decisions": [
+          {
+            "id": "DEC-MTG-P-SAL-03-03-01",
+            "decision_text": "Approved standard zero-downtime rolling update strategy for Aftersales Service Portal.",
+            "rationale": "Minimizes impact on plant operations during shift changes.",
+            "impact_level": "High",
+            "decided_by_person_id": "E1074"
+          }
+        ],
+        "action_items": [
+          {
+            "id": "ACT-MTG-P-SAL-03-03-01",
+            "description": "Conduct load test simulation at 1.5x peak dealer transaction volume.",
+            "assignee_person_id": "E1076",
+            "due_date": "2026-10-15",
+            "status": "In Progress"
+          }
+        ]
+      },
+      {
+        "id": "MTG-P-SAL-03-04",
+        "title": "Aftersales Service Portal — Weekly Sprint Planning #4",
+        "meeting_type": "Sprint Planning",
+        "organizer_person_id": "E1076",
+        "meeting_date": "2026-09-29T10:00:00.000Z",
+        "duration_minutes": 45,
+        "summary": "Reviewed progress on Aftersales Service Portal, evaluated risk mitigations and aligned on milestone sign-offs.",
+        "decisions": [
+          {
+            "id": "DEC-MTG-P-SAL-03-04-01",
+            "decision_text": "Approved standard zero-downtime rolling update strategy for Aftersales Service Portal.",
+            "rationale": "Minimizes impact on plant operations during shift changes.",
+            "impact_level": "High",
+            "decided_by_person_id": "E1074"
+          }
+        ],
+        "action_items": [
+          {
+            "id": "ACT-MTG-P-SAL-03-04-01",
+            "description": "Conduct load test simulation at 1.5x peak dealer transaction volume.",
+            "assignee_person_id": "E1076",
+            "due_date": "2026-10-15",
+            "status": "In Progress"
+          }
+        ]
+      }
+    ],
+    "messages": [
+      {
+        "id": "MSG-P-SAL-03-001",
+        "author_person_id": "E1076",
+        "content": "Team, the latest sprint release has passed security vulnerability scanning with zero critical findings."
+      },
+      {
+        "id": "MSG-P-SAL-03-002",
+        "author_person_id": "E1074",
+        "content": "Great work. Let's ensure the operational runbook and escalation paths are updated before the steering review."
+      }
+    ]
+  },
+  {
+    "id": "TM-CHAN-P-SAL-04-GEN",
+    "project_id": "P-SAL-04",
+    "name": "Telematics Data Ingestion — General Engineering Channel",
+    "description": "Core collaboration channel for Telematics Data Ingestion project team",
+    "meetings": [
+      {
+        "id": "MTG-P-SAL-04-01",
+        "title": "Telematics Data Ingestion — Weekly Steering Committee #1",
+        "meeting_type": "Steering Committee",
+        "organizer_person_id": "E1079",
+        "meeting_date": "2026-09-08T10:00:00.000Z",
+        "duration_minutes": 45,
+        "summary": "Reviewed progress on Telematics Data Ingestion, evaluated risk mitigations and aligned on milestone sign-offs.",
+        "decisions": [
+          {
+            "id": "DEC-MTG-P-SAL-04-01-01",
+            "decision_text": "Approved standard zero-downtime rolling update strategy for Telematics Data Ingestion.",
+            "rationale": "Minimizes impact on plant operations during shift changes.",
+            "impact_level": "High",
+            "decided_by_person_id": "E1074"
+          }
+        ],
+        "action_items": [
+          {
+            "id": "ACT-MTG-P-SAL-04-01-01",
+            "description": "Conduct load test simulation at 1.5x peak dealer transaction volume.",
+            "assignee_person_id": "E1079",
+            "due_date": "2026-10-15",
+            "status": "In Progress"
+          }
+        ]
+      },
+      {
+        "id": "MTG-P-SAL-04-02",
+        "title": "Telematics Data Ingestion — Weekly Architecture Review #2",
+        "meeting_type": "Architecture Review",
+        "organizer_person_id": "E1079",
+        "meeting_date": "2026-09-15T10:00:00.000Z",
+        "duration_minutes": 45,
+        "summary": "Reviewed progress on Telematics Data Ingestion, evaluated risk mitigations and aligned on milestone sign-offs.",
+        "decisions": [
+          {
+            "id": "DEC-MTG-P-SAL-04-02-01",
+            "decision_text": "Approved standard zero-downtime rolling update strategy for Telematics Data Ingestion.",
+            "rationale": "Minimizes impact on plant operations during shift changes.",
+            "impact_level": "High",
+            "decided_by_person_id": "E1074"
+          }
+        ],
+        "action_items": [
+          {
+            "id": "ACT-MTG-P-SAL-04-02-01",
+            "description": "Conduct load test simulation at 1.5x peak dealer transaction volume.",
+            "assignee_person_id": "E1079",
+            "due_date": "2026-10-15",
+            "status": "In Progress"
+          }
+        ]
+      },
+      {
+        "id": "MTG-P-SAL-04-03",
+        "title": "Telematics Data Ingestion — Weekly Sprint Planning #3",
+        "meeting_type": "Sprint Planning",
+        "organizer_person_id": "E1079",
+        "meeting_date": "2026-09-22T10:00:00.000Z",
+        "duration_minutes": 45,
+        "summary": "Reviewed progress on Telematics Data Ingestion, evaluated risk mitigations and aligned on milestone sign-offs.",
+        "decisions": [
+          {
+            "id": "DEC-MTG-P-SAL-04-03-01",
+            "decision_text": "Approved standard zero-downtime rolling update strategy for Telematics Data Ingestion.",
+            "rationale": "Minimizes impact on plant operations during shift changes.",
+            "impact_level": "High",
+            "decided_by_person_id": "E1074"
+          }
+        ],
+        "action_items": [
+          {
+            "id": "ACT-MTG-P-SAL-04-03-01",
+            "description": "Conduct load test simulation at 1.5x peak dealer transaction volume.",
+            "assignee_person_id": "E1079",
+            "due_date": "2026-10-15",
+            "status": "In Progress"
+          }
+        ]
+      },
+      {
+        "id": "MTG-P-SAL-04-04",
+        "title": "Telematics Data Ingestion — Weekly Sprint Planning #4",
+        "meeting_type": "Sprint Planning",
+        "organizer_person_id": "E1079",
+        "meeting_date": "2026-09-29T10:00:00.000Z",
+        "duration_minutes": 45,
+        "summary": "Reviewed progress on Telematics Data Ingestion, evaluated risk mitigations and aligned on milestone sign-offs.",
+        "decisions": [
+          {
+            "id": "DEC-MTG-P-SAL-04-04-01",
+            "decision_text": "Approved standard zero-downtime rolling update strategy for Telematics Data Ingestion.",
+            "rationale": "Minimizes impact on plant operations during shift changes.",
+            "impact_level": "High",
+            "decided_by_person_id": "E1074"
+          }
+        ],
+        "action_items": [
+          {
+            "id": "ACT-MTG-P-SAL-04-04-01",
+            "description": "Conduct load test simulation at 1.5x peak dealer transaction volume.",
+            "assignee_person_id": "E1079",
+            "due_date": "2026-10-15",
+            "status": "In Progress"
+          }
+        ]
+      }
+    ],
+    "messages": [
+      {
+        "id": "MSG-P-SAL-04-001",
+        "author_person_id": "E1079",
+        "content": "Team, the latest sprint release has passed security vulnerability scanning with zero critical findings."
+      },
+      {
+        "id": "MSG-P-SAL-04-002",
+        "author_person_id": "E1074",
+        "content": "Great work. Let's ensure the operational runbook and escalation paths are updated before the steering review."
+      }
+    ]
+  },
+  {
+    "id": "TM-CHAN-P-SAL-05-GEN",
+    "project_id": "P-SAL-05",
+    "name": "Sales Forecasting & Pricing — General Engineering Channel",
+    "description": "Core collaboration channel for Sales Forecasting & Pricing project team",
+    "meetings": [
+      {
+        "id": "MTG-P-SAL-05-01",
+        "title": "Sales Forecasting & Pricing — Weekly Steering Committee #1",
+        "meeting_type": "Steering Committee",
+        "organizer_person_id": "E1082",
+        "meeting_date": "2026-09-08T10:00:00.000Z",
+        "duration_minutes": 45,
+        "summary": "Reviewed progress on Sales Forecasting & Pricing, evaluated risk mitigations and aligned on milestone sign-offs.",
+        "decisions": [
+          {
+            "id": "DEC-MTG-P-SAL-05-01-01",
+            "decision_text": "Approved standard zero-downtime rolling update strategy for Sales Forecasting & Pricing.",
+            "rationale": "Minimizes impact on plant operations during shift changes.",
+            "impact_level": "High",
+            "decided_by_person_id": "E1071"
+          }
+        ],
+        "action_items": [
+          {
+            "id": "ACT-MTG-P-SAL-05-01-01",
+            "description": "Conduct load test simulation at 1.5x peak dealer transaction volume.",
+            "assignee_person_id": "E1082",
+            "due_date": "2026-10-15",
+            "status": "In Progress"
+          }
+        ]
+      },
+      {
+        "id": "MTG-P-SAL-05-02",
+        "title": "Sales Forecasting & Pricing — Weekly Architecture Review #2",
+        "meeting_type": "Architecture Review",
+        "organizer_person_id": "E1082",
+        "meeting_date": "2026-09-15T10:00:00.000Z",
+        "duration_minutes": 45,
+        "summary": "Reviewed progress on Sales Forecasting & Pricing, evaluated risk mitigations and aligned on milestone sign-offs.",
+        "decisions": [
+          {
+            "id": "DEC-MTG-P-SAL-05-02-01",
+            "decision_text": "Approved standard zero-downtime rolling update strategy for Sales Forecasting & Pricing.",
+            "rationale": "Minimizes impact on plant operations during shift changes.",
+            "impact_level": "High",
+            "decided_by_person_id": "E1071"
+          }
+        ],
+        "action_items": [
+          {
+            "id": "ACT-MTG-P-SAL-05-02-01",
+            "description": "Conduct load test simulation at 1.5x peak dealer transaction volume.",
+            "assignee_person_id": "E1082",
+            "due_date": "2026-10-15",
+            "status": "In Progress"
+          }
+        ]
+      },
+      {
+        "id": "MTG-P-SAL-05-03",
+        "title": "Sales Forecasting & Pricing — Weekly Sprint Planning #3",
+        "meeting_type": "Sprint Planning",
+        "organizer_person_id": "E1082",
+        "meeting_date": "2026-09-22T10:00:00.000Z",
+        "duration_minutes": 45,
+        "summary": "Reviewed progress on Sales Forecasting & Pricing, evaluated risk mitigations and aligned on milestone sign-offs.",
+        "decisions": [
+          {
+            "id": "DEC-MTG-P-SAL-05-03-01",
+            "decision_text": "Approved standard zero-downtime rolling update strategy for Sales Forecasting & Pricing.",
+            "rationale": "Minimizes impact on plant operations during shift changes.",
+            "impact_level": "High",
+            "decided_by_person_id": "E1071"
+          }
+        ],
+        "action_items": [
+          {
+            "id": "ACT-MTG-P-SAL-05-03-01",
+            "description": "Conduct load test simulation at 1.5x peak dealer transaction volume.",
+            "assignee_person_id": "E1082",
+            "due_date": "2026-10-15",
+            "status": "In Progress"
+          }
+        ]
+      },
+      {
+        "id": "MTG-P-SAL-05-04",
+        "title": "Sales Forecasting & Pricing — Weekly Sprint Planning #4",
+        "meeting_type": "Sprint Planning",
+        "organizer_person_id": "E1082",
+        "meeting_date": "2026-09-29T10:00:00.000Z",
+        "duration_minutes": 45,
+        "summary": "Reviewed progress on Sales Forecasting & Pricing, evaluated risk mitigations and aligned on milestone sign-offs.",
+        "decisions": [
+          {
+            "id": "DEC-MTG-P-SAL-05-04-01",
+            "decision_text": "Approved standard zero-downtime rolling update strategy for Sales Forecasting & Pricing.",
+            "rationale": "Minimizes impact on plant operations during shift changes.",
+            "impact_level": "High",
+            "decided_by_person_id": "E1071"
+          }
+        ],
+        "action_items": [
+          {
+            "id": "ACT-MTG-P-SAL-05-04-01",
+            "description": "Conduct load test simulation at 1.5x peak dealer transaction volume.",
+            "assignee_person_id": "E1082",
+            "due_date": "2026-10-15",
+            "status": "In Progress"
+          }
+        ]
+      }
+    ],
+    "messages": [
+      {
+        "id": "MSG-P-SAL-05-001",
+        "author_person_id": "E1082",
+        "content": "Team, the latest sprint release has passed security vulnerability scanning with zero critical findings."
+      },
+      {
+        "id": "MSG-P-SAL-05-002",
+        "author_person_id": "E1071",
+        "content": "Great work. Let's ensure the operational runbook and escalation paths are updated before the steering review."
+      }
+    ]
+  },
+  {
+    "id": "TM-CHAN-P-SAL-06-GEN",
+    "project_id": "P-SAL-06",
+    "name": "Order-to-Delivery — General Engineering Channel",
+    "description": "Core collaboration channel for Order-to-Delivery project team",
+    "meetings": [
+      {
+        "id": "MTG-P-SAL-06-01",
+        "title": "Order-to-Delivery — Weekly Steering Committee #1",
+        "meeting_type": "Steering Committee",
+        "organizer_person_id": "E1017",
+        "meeting_date": "2026-09-08T10:00:00.000Z",
+        "duration_minutes": 45,
+        "summary": "Reviewed progress on Order-to-Delivery, evaluated risk mitigations and aligned on milestone sign-offs.",
+        "decisions": [
+          {
+            "id": "DEC-MTG-P-SAL-06-01-01",
+            "decision_text": "Approved standard zero-downtime rolling update strategy for Order-to-Delivery.",
+            "rationale": "Minimizes impact on plant operations during shift changes.",
+            "impact_level": "High",
+            "decided_by_person_id": "E1071"
+          }
+        ],
+        "action_items": [
+          {
+            "id": "ACT-MTG-P-SAL-06-01-01",
+            "description": "Conduct load test simulation at 1.5x peak dealer transaction volume.",
+            "assignee_person_id": "E1017",
+            "due_date": "2026-10-15",
+            "status": "In Progress"
+          }
+        ]
+      },
+      {
+        "id": "MTG-P-SAL-06-02",
+        "title": "Order-to-Delivery — Weekly Architecture Review #2",
+        "meeting_type": "Architecture Review",
+        "organizer_person_id": "E1017",
+        "meeting_date": "2026-09-15T10:00:00.000Z",
+        "duration_minutes": 45,
+        "summary": "Reviewed progress on Order-to-Delivery, evaluated risk mitigations and aligned on milestone sign-offs.",
+        "decisions": [
+          {
+            "id": "DEC-MTG-P-SAL-06-02-01",
+            "decision_text": "Approved standard zero-downtime rolling update strategy for Order-to-Delivery.",
+            "rationale": "Minimizes impact on plant operations during shift changes.",
+            "impact_level": "High",
+            "decided_by_person_id": "E1071"
+          }
+        ],
+        "action_items": [
+          {
+            "id": "ACT-MTG-P-SAL-06-02-01",
+            "description": "Conduct load test simulation at 1.5x peak dealer transaction volume.",
+            "assignee_person_id": "E1017",
+            "due_date": "2026-10-15",
+            "status": "In Progress"
+          }
+        ]
+      },
+      {
+        "id": "MTG-P-SAL-06-03",
+        "title": "Order-to-Delivery — Weekly Sprint Planning #3",
+        "meeting_type": "Sprint Planning",
+        "organizer_person_id": "E1017",
+        "meeting_date": "2026-09-22T10:00:00.000Z",
+        "duration_minutes": 45,
+        "summary": "Reviewed progress on Order-to-Delivery, evaluated risk mitigations and aligned on milestone sign-offs.",
+        "decisions": [
+          {
+            "id": "DEC-MTG-P-SAL-06-03-01",
+            "decision_text": "Approved standard zero-downtime rolling update strategy for Order-to-Delivery.",
+            "rationale": "Minimizes impact on plant operations during shift changes.",
+            "impact_level": "High",
+            "decided_by_person_id": "E1071"
+          }
+        ],
+        "action_items": [
+          {
+            "id": "ACT-MTG-P-SAL-06-03-01",
+            "description": "Conduct load test simulation at 1.5x peak dealer transaction volume.",
+            "assignee_person_id": "E1017",
+            "due_date": "2026-10-15",
+            "status": "In Progress"
+          }
+        ]
+      },
+      {
+        "id": "MTG-P-SAL-06-04",
+        "title": "Order-to-Delivery — Weekly Sprint Planning #4",
+        "meeting_type": "Sprint Planning",
+        "organizer_person_id": "E1017",
+        "meeting_date": "2026-09-29T10:00:00.000Z",
+        "duration_minutes": 45,
+        "summary": "Reviewed progress on Order-to-Delivery, evaluated risk mitigations and aligned on milestone sign-offs.",
+        "decisions": [
+          {
+            "id": "DEC-MTG-P-SAL-06-04-01",
+            "decision_text": "Approved standard zero-downtime rolling update strategy for Order-to-Delivery.",
+            "rationale": "Minimizes impact on plant operations during shift changes.",
+            "impact_level": "High",
+            "decided_by_person_id": "E1071"
+          }
+        ],
+        "action_items": [
+          {
+            "id": "ACT-MTG-P-SAL-06-04-01",
+            "description": "Conduct load test simulation at 1.5x peak dealer transaction volume.",
+            "assignee_person_id": "E1017",
+            "due_date": "2026-10-15",
+            "status": "In Progress"
+          }
+        ]
+      }
+    ],
+    "messages": [
+      {
+        "id": "MSG-P-SAL-06-001",
+        "author_person_id": "E1017",
+        "content": "Team, the latest sprint release has passed security vulnerability scanning with zero critical findings."
+      },
+      {
+        "id": "MSG-P-SAL-06-002",
+        "author_person_id": "E1071",
+        "content": "Great work. Let's ensure the operational runbook and escalation paths are updated before the steering review."
+      }
+    ]
+  },
+  {
+    "id": "TM-CHAN-P-HR-01-GEN",
+    "project_id": "P-HR-01",
+    "name": "SuccessFactors HR Core — General Engineering Channel",
+    "description": "Core collaboration channel for SuccessFactors HR Core project team",
+    "meetings": [
+      {
+        "id": "MTG-P-HR-01-01",
+        "title": "SuccessFactors HR Core — Weekly Steering Committee #1",
+        "meeting_type": "Steering Committee",
+        "organizer_person_id": "E1085",
+        "meeting_date": "2026-09-08T10:00:00.000Z",
+        "duration_minutes": 45,
+        "summary": "Reviewed progress on SuccessFactors HR Core, evaluated risk mitigations and aligned on milestone sign-offs.",
+        "decisions": [
+          {
+            "id": "DEC-MTG-P-HR-01-01-01",
+            "decision_text": "Approved standard zero-downtime rolling update strategy for SuccessFactors HR Core.",
+            "rationale": "Minimizes impact on plant operations during shift changes.",
+            "impact_level": "High",
+            "decided_by_person_id": "E1083"
+          }
+        ],
+        "action_items": [
+          {
+            "id": "ACT-MTG-P-HR-01-01-01",
+            "description": "Conduct load test simulation at 1.5x peak dealer transaction volume.",
+            "assignee_person_id": "E1085",
+            "due_date": "2026-10-15",
+            "status": "In Progress"
+          }
+        ]
+      },
+      {
+        "id": "MTG-P-HR-01-02",
+        "title": "SuccessFactors HR Core — Weekly Architecture Review #2",
+        "meeting_type": "Architecture Review",
+        "organizer_person_id": "E1085",
+        "meeting_date": "2026-09-15T10:00:00.000Z",
+        "duration_minutes": 45,
+        "summary": "Reviewed progress on SuccessFactors HR Core, evaluated risk mitigations and aligned on milestone sign-offs.",
+        "decisions": [
+          {
+            "id": "DEC-MTG-P-HR-01-02-01",
+            "decision_text": "Approved standard zero-downtime rolling update strategy for SuccessFactors HR Core.",
+            "rationale": "Minimizes impact on plant operations during shift changes.",
+            "impact_level": "High",
+            "decided_by_person_id": "E1083"
+          }
+        ],
+        "action_items": [
+          {
+            "id": "ACT-MTG-P-HR-01-02-01",
+            "description": "Conduct load test simulation at 1.5x peak dealer transaction volume.",
+            "assignee_person_id": "E1085",
+            "due_date": "2026-10-15",
+            "status": "In Progress"
+          }
+        ]
+      },
+      {
+        "id": "MTG-P-HR-01-03",
+        "title": "SuccessFactors HR Core — Weekly Sprint Planning #3",
+        "meeting_type": "Sprint Planning",
+        "organizer_person_id": "E1085",
+        "meeting_date": "2026-09-22T10:00:00.000Z",
+        "duration_minutes": 45,
+        "summary": "Reviewed progress on SuccessFactors HR Core, evaluated risk mitigations and aligned on milestone sign-offs.",
+        "decisions": [
+          {
+            "id": "DEC-MTG-P-HR-01-03-01",
+            "decision_text": "Approved standard zero-downtime rolling update strategy for SuccessFactors HR Core.",
+            "rationale": "Minimizes impact on plant operations during shift changes.",
+            "impact_level": "High",
+            "decided_by_person_id": "E1083"
+          }
+        ],
+        "action_items": [
+          {
+            "id": "ACT-MTG-P-HR-01-03-01",
+            "description": "Conduct load test simulation at 1.5x peak dealer transaction volume.",
+            "assignee_person_id": "E1085",
+            "due_date": "2026-10-15",
+            "status": "In Progress"
+          }
+        ]
+      },
+      {
+        "id": "MTG-P-HR-01-04",
+        "title": "SuccessFactors HR Core — Weekly Sprint Planning #4",
+        "meeting_type": "Sprint Planning",
+        "organizer_person_id": "E1085",
+        "meeting_date": "2026-09-29T10:00:00.000Z",
+        "duration_minutes": 45,
+        "summary": "Reviewed progress on SuccessFactors HR Core, evaluated risk mitigations and aligned on milestone sign-offs.",
+        "decisions": [
+          {
+            "id": "DEC-MTG-P-HR-01-04-01",
+            "decision_text": "Approved standard zero-downtime rolling update strategy for SuccessFactors HR Core.",
+            "rationale": "Minimizes impact on plant operations during shift changes.",
+            "impact_level": "High",
+            "decided_by_person_id": "E1083"
+          }
+        ],
+        "action_items": [
+          {
+            "id": "ACT-MTG-P-HR-01-04-01",
+            "description": "Conduct load test simulation at 1.5x peak dealer transaction volume.",
+            "assignee_person_id": "E1085",
+            "due_date": "2026-10-15",
+            "status": "In Progress"
+          }
+        ]
+      }
+    ],
+    "messages": [
+      {
+        "id": "MSG-P-HR-01-001",
+        "author_person_id": "E1085",
+        "content": "Team, the latest sprint release has passed security vulnerability scanning with zero critical findings."
+      },
+      {
+        "id": "MSG-P-HR-01-002",
+        "author_person_id": "E1083",
+        "content": "Great work. Let's ensure the operational runbook and escalation paths are updated before the steering review."
+      }
+    ]
+  }
+]

@@ -1,0 +1,32 @@
+project_id,name,domain_id,description,status,business_criticality,business_team_id,technical_team_id,business_owner_id,tech_lead_id,go_live_year,team_size
+P-CYB-01,Security Log Monitoring (SIEM),CYB,"Central SIEM collecting security logs from Azure, AWS, SAP and plants; correlates events and raises alerts for the SOC.",Live,critical,T-CYB-GRC,T-CYB-SOC,E1024,E1026,2021,9
+P-CYB-02,Identity & Access Governance,CYB,"Group-wide identity lifecycle: joiner/mover/leaver automation, access reviews, SAP role governance and SSO.",Live,critical,T-CYB-GRC,T-CYB-IAM,E1024,E1030,2020,7
+P-CYB-03,Cloud Security Posture Management,CYB,Continuous posture checks across Azure and AWS accounts; flags misconfigurations and compliance drift.,Live,high,T-CYB-GRC,T-CYB-CLD,E1024,E1035,2022,7
+P-CYB-04,Vulnerability & Patch Management,CYB,"Scans servers, containers and endpoints for vulnerabilities and drives patch SLAs with system owners.",Live,high,T-CYB-GRC,T-CYB-VM,E1025,E1033,2019,4
+P-CYB-05,Security Data Lake,CYB,Lakehouse for long-term security telemetry used for threat hunting and ML anomaly detection.,In Delivery,medium,T-CYB-GRC,T-CYB-SOC,E1024,E1028,2026,7
+P-CYB-06,Privileged Access Management,CYB,"Just-in-time admin access, credential vaulting and session recording for admins and service accounts.",Live,high,T-CYB-GRC,T-CYB-IAM,E1025,E1032,2023,3
+P-CYB-07,Incident Response Automation (SOAR),CYB,"SOAR playbooks that triage, enrich and contain high-volume alert types automatically.",In Delivery,medium,T-CYB-GRC,T-CYB-IR,E1024,E1037,2026,5
+P-FIN-01,SAP S/4HANA Finance Core,FIN,"Central general ledger, AP/AR and asset accounting on SAP RISE; the finance system of record for all group entities.",Live,critical,T-FIN-BUS,T-FIN-ERP,E1039,E1042,2022,12
+P-FIN-02,Finance Analytics & Reporting,FIN,"Management and board dashboards on SAP Analytics Cloud, fed from S/4 via Datasphere.",Live,high,T-FIN-BUS,T-FIN-BI,E1039,E1048,2023,6
+P-FIN-03,Group Consolidation & Close,FIN,"Monthly and quarterly consolidation, eliminations and group reporting on SAP Group Reporting.",Live,critical,T-FIN-BUS,T-FIN-ERP,E1040,E1043,2023,6
+P-FIN-04,Treasury & Cash Management,FIN,"Cash positioning, bank connectivity, liquidity forecasting and FX hedging.",In Delivery,high,T-FIN-TRS,T-FIN-ERP,E1045,E1047,2026,5
+P-FIN-05,Financial Data Mart,FIN,"Snowflake-based curated finance data for history, cross-domain analysis and external reporting.",Live,medium,T-FIN-BUS,T-FIN-BI,E1040,E1049,2024,7
+P-FIN-06,Intercompany & Tax Reporting,FIN,"Automated intercompany matching/netting and country tax reporting (VAT, e-invoicing).",In Delivery,high,T-FIN-BUS,T-FIN-ERP,E1041,E1044,2026,5
+P-PRO-01,Supplier Portal,PRO,"Web portal where suppliers manage orders, delivery schedules, invoices and payment status; microservices on AKS.",Live,critical,T-PRO-BUS,T-PRO-SRM,E1050,E1054,2022,9
+P-PRO-02,Ariba Sourcing & Contracts,PRO,"Sourcing events, RFQs and contract lifecycle management on SAP Ariba.",Live,high,T-PRO-BUS,T-PRO-SRM,E1051,E1055,2021,6
+P-PRO-03,Procure-to-Pay Invoice Automation,PRO,"Automated invoice capture, three-way match and posting to S/4 to cut manual AP effort.",In Delivery,high,T-PRO-BUS,T-PRO-SRM,E1050,E1056,2026,5
+P-PRO-04,Spend Analytics,PRO,"Spend cube by category, supplier and plant; tracks savings and maverick buying.",Live,medium,T-PRO-BUS,T-PRO-ANA,E1052,E1057,2024,7
+P-PRO-05,Supplier Risk Scoring,PRO,"ML models scoring suppliers on financial, delivery and cyber risk to flag supply disruptions early.",Planned,medium,T-PRO-BUS,T-PRO-ANA,E1051,E1058,2027,6
+P-DTFS-01,Loan Origination Platform,DTFS,"Digital loan/lease application for dealers and customers; orchestrates KYC, credit decision and contract creation.",Live,critical,T-DTF-BUS,T-DTF-LOS,E1061,E1062,2022,12
+P-DTFS-02,Credit Scoring Engine,DTFS,ML credit scoring and decision service called in real time by origination.,Live,critical,T-DTF-BUS,T-DTF-RSK,E1060,E1067,2023,6
+P-DTFS-03,Lease & Contract Management,DTFS,"Book of record for lease and loan contracts, payment schedules and accounting postings.",Live,critical,T-DTF-BUS,T-DTF-LOS,E1059,E1063,2021,9
+P-DTFS-04,Collections & Servicing Platform,DTFS,"Customer servicing, dunning and collections workflows for delinquent contracts.",Live,high,T-DTF-SRV,T-DTF-LOS,E1069,E1070,2022,5
+P-DTFS-05,Regulatory Reporting (IFRS 9 / Basel),DTFS,Regulatory and impairment reporting for financial services entities in multiple countries.,In Delivery,high,T-DTF-BUS,T-DTF-RSK,E1059,E1068,2026,7
+P-DTFS-06,Dealer Floorplan Financing,DTFS,"Wholesale financing of dealer vehicle stock with limit management, audits and interest billing.",In Delivery,medium,T-DTF-BUS,T-DTF-LOS,E1060,E1065,2026,7
+P-SAL-01,Dealer Management Platform,SAL,"Central dealer platform for vehicle stock, quotes, orders and dealer performance.",Live,critical,T-SAL-BUS,T-SAL-DLR,E1072,E1077,2021,8
+P-SAL-02,Customer 360 & CRM Data Platform,SAL,"Unified customer profile across sales, service and finance touchpoints for CRM and analytics.",Live,high,T-SAL-BUS,T-SAL-ANA,E1071,E1080,2023,7
+P-SAL-03,Aftersales Service Portal,SAL,"Portal for fleet customers and workshops to book service, track repairs and order parts.",Live,high,T-SAL-AFT,T-SAL-DLR,E1074,E1076,2022,7
+P-SAL-04,Telematics Data Ingestion,SAL,"Ingests telemetry from connected trucks (location, fault codes, fuel) at scale.",Live,high,T-SAL-AFT,T-SAL-DLR,E1074,E1079,2022,9
+P-SAL-05,Sales Forecasting & Pricing,SAL,Demand forecasts and price-optimisation recommendations per market and model.,In Delivery,medium,T-SAL-BUS,T-SAL-ANA,E1071,E1082,2026,6
+P-SAL-06,Order-to-Delivery,SAL,"End-to-end vehicle order management from configuration to delivery, integrated with SAP S/4.",Live,critical,T-SAL-BUS,T-SAP-INT,E1071,E1017,2021,5
+P-HR-01,SuccessFactors HR Core,HR,"Cloud HR core for employee master data, org structure and lifecycle events; feeds identity and finance.",Live,critical,T-HR-BP,T-HR-IT,E1083,E1085,2020,5

@@ -1,0 +1,3888 @@
+{
+  "catalog": {
+    "capabilities": [
+      {
+        "id": "CAP-L1-FIN",
+        "name": "Financial Management",
+        "level": "L1",
+        "parent_id": null
+      },
+      {
+        "id": "CAP-L2-ACC",
+        "name": "General Ledger & Financial Accounting",
+        "level": "L2",
+        "parent_id": "CAP-L1-FIN"
+      },
+      {
+        "id": "CAP-L2-TRE",
+        "name": "Treasury & Liquidity Management",
+        "level": "L2",
+        "parent_id": "CAP-L1-FIN"
+      },
+      {
+        "id": "CAP-L1-CYB",
+        "name": "Cyber Security & Resilience",
+        "level": "L1",
+        "parent_id": null
+      },
+      {
+        "id": "CAP-L2-SOC",
+        "name": "Threat Detection & Incident Response",
+        "level": "L2",
+        "parent_id": "CAP-L1-CYB"
+      },
+      {
+        "id": "CAP-L2-IAM",
+        "name": "Identity Governance & Access Assurance",
+        "level": "L2",
+        "parent_id": "CAP-L1-CYB"
+      },
+      {
+        "id": "CAP-L1-SAL",
+        "name": "Commercial Sales & Distribution",
+        "level": "L1",
+        "parent_id": null
+      },
+      {
+        "id": "CAP-L2-DMS",
+        "name": "Dealer Network & Order Fulfillment",
+        "level": "L2",
+        "parent_id": "CAP-L1-SAL"
+      },
+      {
+        "id": "CAP-L1-PRO",
+        "name": "Strategic Sourcing & Procurement",
+        "level": "L1",
+        "parent_id": null
+      },
+      {
+        "id": "CAP-L2-SUP",
+        "name": "Supplier Relationship & Ariba Integration",
+        "level": "L2",
+        "parent_id": "CAP-L1-PRO"
+      },
+      {
+        "id": "CAP-L1-DTFS",
+        "name": "Captive Financial Services",
+        "level": "L1",
+        "parent_id": null
+      },
+      {
+        "id": "CAP-L2-LOAN",
+        "name": "Commercial Lending & Risk Scoring",
+        "level": "L2",
+        "parent_id": "CAP-L1-DTFS"
+      }
+    ],
+    "it_components": [
+      {
+        "id": "ITC-K8S-128",
+        "name": "Azure Kubernetes Service (AKS)",
+        "category": "runtime",
+        "vendor": "Microsoft",
+        "version": "1.28.5",
+        "eol": "2025-11-01",
+        "cost": 12000
+      },
+      {
+        "id": "ITC-K8S-122",
+        "name": "Kubernetes Cluster Engine",
+        "category": "runtime",
+        "vendor": "Cloud Native",
+        "version": "1.22.15",
+        "eol": "2022-10-28",
+        "cost": 8000
+      },
+      {
+        "id": "ITC-PG-16",
+        "name": "Azure Database for PostgreSQL Flexible",
+        "category": "database",
+        "vendor": "Microsoft / PostgreSQL",
+        "version": "16.2",
+        "eol": "2028-11-09",
+        "cost": 18500
+      },
+      {
+        "id": "ITC-SAP-S4",
+        "name": "SAP S/4HANA Cloud Private Edition",
+        "category": "runtime",
+        "vendor": "SAP SE",
+        "version": "2023 FPS02",
+        "eol": "2030-12-31",
+        "cost": 240000
+      },
+      {
+        "id": "ITC-SAP-BTP",
+        "name": "SAP Business Technology Platform",
+        "category": "middleware",
+        "vendor": "SAP SE",
+        "version": "Cloud 2024.1",
+        "eol": "2029-01-01",
+        "cost": 45000
+      },
+      {
+        "id": "ITC-KAFKA-AZ",
+        "name": "Azure Event Hubs Kafka Surface",
+        "category": "middleware",
+        "vendor": "Microsoft",
+        "version": "3.4.0",
+        "eol": "2027-06-30",
+        "cost": 15000
+      },
+      {
+        "id": "ITC-NODE-20",
+        "name": "Node.js LTS Runtime",
+        "category": "runtime",
+        "vendor": "OpenJS Foundation",
+        "version": "20.11.1",
+        "eol": "2026-04-30",
+        "cost": 0
+      },
+      {
+        "id": "ITC-JAVA-21",
+        "name": "Eclipse Temurin OpenJDK",
+        "category": "runtime",
+        "vendor": "Adoptium",
+        "version": "21.0.2",
+        "eol": "2029-09-30",
+        "cost": 0
+      },
+      {
+        "id": "ITC-SPRING-3",
+        "name": "Spring Boot Framework",
+        "category": "framework",
+        "vendor": "VMware",
+        "version": "3.2.3",
+        "eol": "2026-11-24",
+        "cost": 0
+      },
+      {
+        "id": "ITC-SNOW-EDW",
+        "name": "Snowflake Enterprise Data Warehouse",
+        "category": "database",
+        "vendor": "Snowflake Inc.",
+        "version": "8.12",
+        "eol": "2029-12-31",
+        "cost": 85000
+      },
+      {
+        "id": "ITC-DBX-LAKE",
+        "name": "Databricks Runtime with Unity Catalog",
+        "category": "middleware",
+        "vendor": "Databricks",
+        "version": "14.3 LTS",
+        "eol": "2027-02-28",
+        "cost": 65000
+      },
+      {
+        "id": "ITC-REDIS-7",
+        "name": "Azure Cache for Redis",
+        "category": "database",
+        "vendor": "Microsoft",
+        "version": "7.0",
+        "eol": "2026-10-31",
+        "cost": 7200
+      }
+    ]
+  },
+  "applications": [
+    {
+      "id": "LX-APP-P-CYB-01",
+      "project_id": "P-CYB-01",
+      "name": "Security Log Monitoring (SIEM)",
+      "alias": "APP-P-CYB-01",
+      "description": "Central SIEM collecting security logs from Azure, AWS, SAP and plants; correlates events and raises alerts for the SOC.",
+      "application_type": "Business Application",
+      "hosting_type": "Cloud Private",
+      "business_criticality": "Mission Critical",
+      "functional_fit": "Appropriate",
+      "technical_fit": "Appropriate",
+      "time_classification": "Invest",
+      "sla_percentage": 99.95,
+      "rto_hours": 4,
+      "rpo_hours": 1,
+      "user_count": 4500,
+      "annual_run_cost": 450000,
+      "data_quality_pct": 96.5,
+      "compliance": {
+        "gdpr": true,
+        "sox": false,
+        "iso27001": true,
+        "tisax": true
+      },
+      "lifecycle": {
+        "app_id": "LX-APP-P-CYB-01",
+        "plan_date": "2020-01-15",
+        "phase_in_date": "2020-08-01",
+        "active_date": "2021-03-01",
+        "phase_out_date": "2026-12-31",
+        "end_of_life_date": "2028-12-31",
+        "current_phase": "active"
+      },
+      "subscriptions": [
+        {
+          "person_id": "E1024",
+          "role_type": "Application Owner"
+        },
+        {
+          "person_id": "E1026",
+          "role_type": "Technical Lead"
+        }
+      ],
+      "capabilities": [
+        "CAP-L2-SOC"
+      ],
+      "components": [
+        {
+          "id": "ITC-K8S-128",
+          "environment": "Production"
+        },
+        {
+          "id": "ITC-PG-16",
+          "environment": "Production"
+        },
+        {
+          "id": "ITC-NODE-20",
+          "environment": "Production"
+        },
+        {
+          "id": "ITC-KAFKA-AZ",
+          "environment": "Production"
+        },
+        {
+          "id": "ITC-JAVA-21",
+          "environment": "Production"
+        },
+        {
+          "id": "ITC-SPRING-3",
+          "environment": "Production"
+        },
+        {
+          "id": "ITC-REDIS-7",
+          "environment": "Production"
+        }
+      ],
+      "data_objects": [
+        {
+          "id": "DO-P-CYB-01-CORE",
+          "name": "Security Log Monitoring (SIEM) Master Business Entity",
+          "sensitivity": "Internal",
+          "contains_pii": false,
+          "retention_period_months": 84,
+          "last_security_review": "2025-08-15"
+        },
+        {
+          "id": "DO-P-CYB-01-AUDIT",
+          "name": "Security Log Monitoring (SIEM) Transaction Log",
+          "sensitivity": "Confidential",
+          "contains_pii": true,
+          "retention_period_months": 120,
+          "last_security_review": "2025-11-20"
+        }
+      ],
+      "interfaces": [
+        {
+          "id": "IF-P-CYB-01-P-CYB-02",
+          "provider_app_id": "LX-APP-P-CYB-02",
+          "consumer_app_id": "LX-APP-P-CYB-01",
+          "name": "P-CYB-01 consumes P-CYB-02",
+          "protocol": "REST",
+          "direction": "Inbound",
+          "frequency": "Real-time",
+          "data_objects": "P-CYB-02 Master Feed",
+          "description": "SIEM enriches alerts with user identity context"
+        },
+        {
+          "id": "IF-P-CYB-01-P-SAL-01-UNREGISTERED",
+          "provider_app_id": "LX-APP-P-CYB-01",
+          "consumer_app_id": "LX-APP-P-SAL-01",
+          "name": "Direct Kafka SIEM Event Sync to Dealer Management",
+          "protocol": "Kafka",
+          "direction": "Outbound",
+          "frequency": "Real-time",
+          "data_objects": "Dealer Security Telemetry",
+          "description": "Unregistered real-time event pipeline for dealer security audits"
+        }
+      ],
+      "tags": [
+        {
+          "tag_group": "Domain",
+          "tag_value": "CYB"
+        },
+        {
+          "tag_group": "CloudTier",
+          "tag_value": "Tier-1-Enterprise"
+        },
+        {
+          "tag_group": "CostCenter",
+          "tag_value": "CC-CYB-01"
+        }
+      ]
+    },
+    {
+      "id": "LX-APP-P-CYB-02",
+      "project_id": "P-CYB-02",
+      "name": "Identity & Access Governance",
+      "alias": "APP-P-CYB-02",
+      "description": "Group-wide identity lifecycle: joiner/mover/leaver automation, access reviews, SAP role governance and SSO.",
+      "application_type": "Business Application",
+      "hosting_type": "Cloud Private",
+      "business_criticality": "Mission Critical",
+      "functional_fit": "Appropriate",
+      "technical_fit": "Appropriate",
+      "time_classification": "Invest",
+      "sla_percentage": 99.95,
+      "rto_hours": 4,
+      "rpo_hours": 1,
+      "user_count": 4500,
+      "annual_run_cost": 450000,
+      "data_quality_pct": 96.5,
+      "compliance": {
+        "gdpr": true,
+        "sox": false,
+        "iso27001": true,
+        "tisax": true
+      },
+      "lifecycle": {
+        "app_id": "LX-APP-P-CYB-02",
+        "plan_date": "2019-01-15",
+        "phase_in_date": "2019-08-01",
+        "active_date": "2020-03-01",
+        "phase_out_date": "2025-12-31",
+        "end_of_life_date": "2027-12-31",
+        "current_phase": "active"
+      },
+      "subscriptions": [
+        {
+          "person_id": "E1024",
+          "role_type": "Application Owner"
+        },
+        {
+          "person_id": "E1030",
+          "role_type": "Technical Lead"
+        }
+      ],
+      "capabilities": [
+        "CAP-L2-IAM"
+      ],
+      "components": [
+        {
+          "id": "ITC-K8S-128",
+          "environment": "Production"
+        },
+        {
+          "id": "ITC-PG-16",
+          "environment": "Production"
+        },
+        {
+          "id": "ITC-NODE-20",
+          "environment": "Production"
+        },
+        {
+          "id": "ITC-KAFKA-AZ",
+          "environment": "Production"
+        },
+        {
+          "id": "ITC-JAVA-21",
+          "environment": "Production"
+        },
+        {
+          "id": "ITC-SPRING-3",
+          "environment": "Production"
+        },
+        {
+          "id": "ITC-REDIS-7",
+          "environment": "Production"
+        }
+      ],
+      "data_objects": [
+        {
+          "id": "DO-P-CYB-02-CORE",
+          "name": "Identity & Access Governance Master Business Entity",
+          "sensitivity": "Internal",
+          "contains_pii": false,
+          "retention_period_months": 84,
+          "last_security_review": "2025-08-15"
+        },
+        {
+          "id": "DO-P-CYB-02-AUDIT",
+          "name": "Identity & Access Governance Transaction Log",
+          "sensitivity": "Confidential",
+          "contains_pii": true,
+          "retention_period_months": 120,
+          "last_security_review": "2025-11-20"
+        }
+      ],
+      "interfaces": [
+        {
+          "id": "IF-P-CYB-02-P-HR-01",
+          "provider_app_id": "LX-APP-P-HR-01",
+          "consumer_app_id": "LX-APP-P-CYB-02",
+          "name": "P-CYB-02 consumes P-HR-01",
+          "protocol": "REST",
+          "direction": "Inbound",
+          "frequency": "Real-time",
+          "data_objects": "P-HR-01 Master Feed",
+          "description": "Joiner/mover/leaver events originate in HR core"
+        }
+      ],
+      "tags": [
+        {
+          "tag_group": "Domain",
+          "tag_value": "CYB"
+        },
+        {
+          "tag_group": "CloudTier",
+          "tag_value": "Tier-1-Enterprise"
+        },
+        {
+          "tag_group": "CostCenter",
+          "tag_value": "CC-CYB-01"
+        }
+      ]
+    },
+    {
+      "id": "LX-APP-P-CYB-03",
+      "project_id": "P-CYB-03",
+      "name": "Cloud Security Posture Management",
+      "alias": "APP-P-CYB-03",
+      "description": "Continuous posture checks across Azure and AWS accounts; flags misconfigurations and compliance drift.",
+      "application_type": "Business Application",
+      "hosting_type": "Cloud Private",
+      "business_criticality": "Business Critical",
+      "functional_fit": "Appropriate",
+      "technical_fit": "Appropriate",
+      "time_classification": "Invest",
+      "sla_percentage": 99.95,
+      "rto_hours": 4,
+      "rpo_hours": 1,
+      "user_count": 850,
+      "annual_run_cost": 120000,
+      "data_quality_pct": 96.5,
+      "compliance": {
+        "gdpr": true,
+        "sox": false,
+        "iso27001": true,
+        "tisax": true
+      },
+      "lifecycle": {
+        "app_id": "LX-APP-P-CYB-03",
+        "plan_date": "2021-01-15",
+        "phase_in_date": "2021-08-01",
+        "active_date": "2022-03-01",
+        "phase_out_date": "2027-12-31",
+        "end_of_life_date": "2029-12-31",
+        "current_phase": "active"
+      },
+      "subscriptions": [
+        {
+          "person_id": "E1024",
+          "role_type": "Application Owner"
+        },
+        {
+          "person_id": "E1035",
+          "role_type": "Technical Lead"
+        }
+      ],
+      "capabilities": [
+        "CAP-L2-SOC"
+      ],
+      "components": [
+        {
+          "id": "ITC-K8S-128",
+          "environment": "Production"
+        },
+        {
+          "id": "ITC-PG-16",
+          "environment": "Production"
+        },
+        {
+          "id": "ITC-NODE-20",
+          "environment": "Production"
+        },
+        {
+          "id": "ITC-KAFKA-AZ",
+          "environment": "Production"
+        }
+      ],
+      "data_objects": [
+        {
+          "id": "DO-P-CYB-03-CORE",
+          "name": "Cloud Security Posture Management Master Business Entity",
+          "sensitivity": "Internal",
+          "contains_pii": false,
+          "retention_period_months": 84,
+          "last_security_review": "2025-08-15"
+        },
+        {
+          "id": "DO-P-CYB-03-AUDIT",
+          "name": "Cloud Security Posture Management Transaction Log",
+          "sensitivity": "Confidential",
+          "contains_pii": true,
+          "retention_period_months": 120,
+          "last_security_review": "2025-11-20"
+        }
+      ],
+      "interfaces": [
+        {
+          "id": "IF-P-CYB-03-P-CYB-01",
+          "provider_app_id": "LX-APP-P-CYB-01",
+          "consumer_app_id": "LX-APP-P-CYB-03",
+          "name": "P-CYB-03 consumes P-CYB-01",
+          "protocol": "REST",
+          "direction": "Inbound",
+          "frequency": "Real-time",
+          "data_objects": "P-CYB-01 Master Feed",
+          "description": "Posture findings are forwarded into the SIEM"
+        }
+      ],
+      "tags": [
+        {
+          "tag_group": "Domain",
+          "tag_value": "CYB"
+        },
+        {
+          "tag_group": "CloudTier",
+          "tag_value": "Tier-1-Enterprise"
+        },
+        {
+          "tag_group": "CostCenter",
+          "tag_value": "CC-CYB-01"
+        }
+      ]
+    },
+    {
+      "id": "LX-APP-P-CYB-04",
+      "project_id": "P-CYB-04",
+      "name": "Vulnerability & Patch Management",
+      "alias": "APP-P-CYB-04",
+      "description": "Scans servers, containers and endpoints for vulnerabilities and drives patch SLAs with system owners.",
+      "application_type": "Business Application",
+      "hosting_type": "Cloud Private",
+      "business_criticality": "Business Critical",
+      "functional_fit": "Appropriate",
+      "technical_fit": "Appropriate",
+      "time_classification": "Invest",
+      "sla_percentage": 99.95,
+      "rto_hours": 4,
+      "rpo_hours": 1,
+      "user_count": 850,
+      "annual_run_cost": 120000,
+      "data_quality_pct": 96.5,
+      "compliance": {
+        "gdpr": true,
+        "sox": false,
+        "iso27001": true,
+        "tisax": true
+      },
+      "lifecycle": {
+        "app_id": "LX-APP-P-CYB-04",
+        "plan_date": "2018-01-15",
+        "phase_in_date": "2018-08-01",
+        "active_date": "2019-03-01",
+        "phase_out_date": "2024-12-31",
+        "end_of_life_date": "2026-12-31",
+        "current_phase": "active"
+      },
+      "subscriptions": [
+        {
+          "person_id": "E1025",
+          "role_type": "Application Owner"
+        },
+        {
+          "person_id": "E1033",
+          "role_type": "Technical Lead"
+        }
+      ],
+      "capabilities": [
+        "CAP-L2-SOC"
+      ],
+      "components": [
+        {
+          "id": "ITC-K8S-128",
+          "environment": "Production"
+        },
+        {
+          "id": "ITC-PG-16",
+          "environment": "Production"
+        },
+        {
+          "id": "ITC-NODE-20",
+          "environment": "Production"
+        },
+        {
+          "id": "ITC-KAFKA-AZ",
+          "environment": "Production"
+        }
+      ],
+      "data_objects": [
+        {
+          "id": "DO-P-CYB-04-CORE",
+          "name": "Vulnerability & Patch Management Master Business Entity",
+          "sensitivity": "Internal",
+          "contains_pii": false,
+          "retention_period_months": 84,
+          "last_security_review": "2025-08-15"
+        },
+        {
+          "id": "DO-P-CYB-04-AUDIT",
+          "name": "Vulnerability & Patch Management Transaction Log",
+          "sensitivity": "Confidential",
+          "contains_pii": true,
+          "retention_period_months": 120,
+          "last_security_review": "2025-11-20"
+        }
+      ],
+      "interfaces": [
+        {
+          "id": "IF-P-CYB-04-P-CYB-03",
+          "provider_app_id": "LX-APP-P-CYB-03",
+          "consumer_app_id": "LX-APP-P-CYB-04",
+          "name": "P-CYB-04 consumes P-CYB-03",
+          "protocol": "REST",
+          "direction": "Inbound",
+          "frequency": "Real-time",
+          "data_objects": "P-CYB-03 Master Feed",
+          "description": "Patch management uses cloud asset inventory"
+        }
+      ],
+      "tags": [
+        {
+          "tag_group": "Domain",
+          "tag_value": "CYB"
+        },
+        {
+          "tag_group": "CloudTier",
+          "tag_value": "Tier-1-Enterprise"
+        },
+        {
+          "tag_group": "CostCenter",
+          "tag_value": "CC-CYB-01"
+        }
+      ]
+    },
+    {
+      "id": "LX-APP-P-CYB-05",
+      "project_id": "P-CYB-05",
+      "name": "Security Data Lake",
+      "alias": "APP-P-CYB-05",
+      "description": "Lakehouse for long-term security telemetry used for threat hunting and ML anomaly detection.",
+      "application_type": "Business Application",
+      "hosting_type": "Cloud Private",
+      "business_criticality": "Business Critical",
+      "functional_fit": "Appropriate",
+      "technical_fit": "Appropriate",
+      "time_classification": "Invest",
+      "sla_percentage": 99.95,
+      "rto_hours": 4,
+      "rpo_hours": 1,
+      "user_count": 850,
+      "annual_run_cost": 120000,
+      "data_quality_pct": 96.5,
+      "compliance": {
+        "gdpr": true,
+        "sox": false,
+        "iso27001": true,
+        "tisax": true
+      },
+      "lifecycle": {
+        "app_id": "LX-APP-P-CYB-05",
+        "plan_date": "2025-01-15",
+        "phase_in_date": "2025-08-01",
+        "active_date": "2026-03-01",
+        "phase_out_date": "2031-12-31",
+        "end_of_life_date": "2033-12-31",
+        "current_phase": "active"
+      },
+      "subscriptions": [
+        {
+          "person_id": "E1024",
+          "role_type": "Application Owner"
+        },
+        {
+          "person_id": "E1028",
+          "role_type": "Technical Lead"
+        }
+      ],
+      "capabilities": [
+        "CAP-L2-SOC"
+      ],
+      "components": [
+        {
+          "id": "ITC-K8S-128",
+          "environment": "Production"
+        },
+        {
+          "id": "ITC-PG-16",
+          "environment": "Production"
+        },
+        {
+          "id": "ITC-NODE-20",
+          "environment": "Production"
+        },
+        {
+          "id": "ITC-KAFKA-AZ",
+          "environment": "Production"
+        }
+      ],
+      "data_objects": [
+        {
+          "id": "DO-P-CYB-05-CORE",
+          "name": "Security Data Lake Master Business Entity",
+          "sensitivity": "Internal",
+          "contains_pii": false,
+          "retention_period_months": 84,
+          "last_security_review": "2025-08-15"
+        },
+        {
+          "id": "DO-P-CYB-05-AUDIT",
+          "name": "Security Data Lake Transaction Log",
+          "sensitivity": "Confidential",
+          "contains_pii": true,
+          "retention_period_months": 120,
+          "last_security_review": "2025-11-20"
+        }
+      ],
+      "interfaces": [
+        {
+          "id": "IF-P-CYB-05-P-CYB-01",
+          "provider_app_id": "LX-APP-P-CYB-01",
+          "consumer_app_id": "LX-APP-P-CYB-05",
+          "name": "P-CYB-05 consumes P-CYB-01",
+          "protocol": "REST",
+          "direction": "Inbound",
+          "frequency": "Real-time",
+          "data_objects": "P-CYB-01 Master Feed",
+          "description": "Data lake ingests logs exported from the SIEM"
+        }
+      ],
+      "tags": [
+        {
+          "tag_group": "Domain",
+          "tag_value": "CYB"
+        },
+        {
+          "tag_group": "CloudTier",
+          "tag_value": "Tier-1-Enterprise"
+        },
+        {
+          "tag_group": "CostCenter",
+          "tag_value": "CC-CYB-01"
+        }
+      ]
+    },
+    {
+      "id": "LX-APP-P-CYB-06",
+      "project_id": "P-CYB-06",
+      "name": "Privileged Access Management",
+      "alias": "APP-P-CYB-06",
+      "description": "Just-in-time admin access, credential vaulting and session recording for admins and service accounts.",
+      "application_type": "Business Application",
+      "hosting_type": "Cloud Private",
+      "business_criticality": "Business Critical",
+      "functional_fit": "Appropriate",
+      "technical_fit": "Appropriate",
+      "time_classification": "Invest",
+      "sla_percentage": 99.95,
+      "rto_hours": 4,
+      "rpo_hours": 1,
+      "user_count": 850,
+      "annual_run_cost": 120000,
+      "data_quality_pct": 96.5,
+      "compliance": {
+        "gdpr": true,
+        "sox": false,
+        "iso27001": true,
+        "tisax": true
+      },
+      "lifecycle": {
+        "app_id": "LX-APP-P-CYB-06",
+        "plan_date": "2022-01-15",
+        "phase_in_date": "2022-08-01",
+        "active_date": "2023-03-01",
+        "phase_out_date": "2028-12-31",
+        "end_of_life_date": "2030-12-31",
+        "current_phase": "active"
+      },
+      "subscriptions": [
+        {
+          "person_id": "E1025",
+          "role_type": "Application Owner"
+        },
+        {
+          "person_id": "E1032",
+          "role_type": "Technical Lead"
+        }
+      ],
+      "capabilities": [
+        "CAP-L2-SOC"
+      ],
+      "components": [
+        {
+          "id": "ITC-K8S-128",
+          "environment": "Production"
+        },
+        {
+          "id": "ITC-PG-16",
+          "environment": "Production"
+        },
+        {
+          "id": "ITC-NODE-20",
+          "environment": "Production"
+        },
+        {
+          "id": "ITC-KAFKA-AZ",
+          "environment": "Production"
+        }
+      ],
+      "data_objects": [
+        {
+          "id": "DO-P-CYB-06-CORE",
+          "name": "Privileged Access Management Master Business Entity",
+          "sensitivity": "Internal",
+          "contains_pii": false,
+          "retention_period_months": 84,
+          "last_security_review": "2025-08-15"
+        },
+        {
+          "id": "DO-P-CYB-06-AUDIT",
+          "name": "Privileged Access Management Transaction Log",
+          "sensitivity": "Confidential",
+          "contains_pii": true,
+          "retention_period_months": 120,
+          "last_security_review": "2025-11-20"
+        }
+      ],
+      "interfaces": [
+        {
+          "id": "IF-P-CYB-06-P-CYB-02",
+          "provider_app_id": "LX-APP-P-CYB-02",
+          "consumer_app_id": "LX-APP-P-CYB-06",
+          "name": "P-CYB-06 consumes P-CYB-02",
+          "protocol": "Kafka",
+          "direction": "Inbound",
+          "frequency": "Real-time",
+          "data_objects": "P-CYB-02 Master Feed",
+          "description": "PAM relies on identity directory and approval workflows"
+        }
+      ],
+      "tags": [
+        {
+          "tag_group": "Domain",
+          "tag_value": "CYB"
+        },
+        {
+          "tag_group": "CloudTier",
+          "tag_value": "Tier-1-Enterprise"
+        },
+        {
+          "tag_group": "CostCenter",
+          "tag_value": "CC-CYB-01"
+        }
+      ]
+    },
+    {
+      "id": "LX-APP-P-CYB-07",
+      "project_id": "P-CYB-07",
+      "name": "Incident Response Automation (SOAR)",
+      "alias": "APP-P-CYB-07",
+      "description": "SOAR playbooks that triage, enrich and contain high-volume alert types automatically.",
+      "application_type": "Business Application",
+      "hosting_type": "Cloud Private",
+      "business_criticality": "Business Critical",
+      "functional_fit": "Appropriate",
+      "technical_fit": "Appropriate",
+      "time_classification": "Invest",
+      "sla_percentage": 99.95,
+      "rto_hours": 4,
+      "rpo_hours": 1,
+      "user_count": 850,
+      "annual_run_cost": 120000,
+      "data_quality_pct": 96.5,
+      "compliance": {
+        "gdpr": true,
+        "sox": false,
+        "iso27001": true,
+        "tisax": true
+      },
+      "lifecycle": {
+        "app_id": "LX-APP-P-CYB-07",
+        "plan_date": "2025-01-15",
+        "phase_in_date": "2025-08-01",
+        "active_date": "2026-03-01",
+        "phase_out_date": "2031-12-31",
+        "end_of_life_date": "2033-12-31",
+        "current_phase": "active"
+      },
+      "subscriptions": [
+        {
+          "person_id": "E1024",
+          "role_type": "Application Owner"
+        },
+        {
+          "person_id": "E1037",
+          "role_type": "Technical Lead"
+        }
+      ],
+      "capabilities": [
+        "CAP-L2-SOC"
+      ],
+      "components": [
+        {
+          "id": "ITC-K8S-128",
+          "environment": "Production"
+        },
+        {
+          "id": "ITC-PG-16",
+          "environment": "Production"
+        },
+        {
+          "id": "ITC-NODE-20",
+          "environment": "Production"
+        },
+        {
+          "id": "ITC-KAFKA-AZ",
+          "environment": "Production"
+        }
+      ],
+      "data_objects": [
+        {
+          "id": "DO-P-CYB-07-CORE",
+          "name": "Incident Response Automation (SOAR) Master Business Entity",
+          "sensitivity": "Internal",
+          "contains_pii": false,
+          "retention_period_months": 84,
+          "last_security_review": "2025-08-15"
+        },
+        {
+          "id": "DO-P-CYB-07-AUDIT",
+          "name": "Incident Response Automation (SOAR) Transaction Log",
+          "sensitivity": "Confidential",
+          "contains_pii": true,
+          "retention_period_months": 120,
+          "last_security_review": "2025-11-20"
+        }
+      ],
+      "interfaces": [
+        {
+          "id": "IF-P-CYB-07-P-CYB-01",
+          "provider_app_id": "LX-APP-P-CYB-01",
+          "consumer_app_id": "LX-APP-P-CYB-07",
+          "name": "P-CYB-07 consumes P-CYB-01",
+          "protocol": "REST",
+          "direction": "Inbound",
+          "frequency": "Real-time",
+          "data_objects": "P-CYB-01 Master Feed",
+          "description": "SOAR playbooks are triggered by SIEM alerts"
+        }
+      ],
+      "tags": [
+        {
+          "tag_group": "Domain",
+          "tag_value": "CYB"
+        },
+        {
+          "tag_group": "CloudTier",
+          "tag_value": "Tier-1-Enterprise"
+        },
+        {
+          "tag_group": "CostCenter",
+          "tag_value": "CC-CYB-01"
+        }
+      ]
+    },
+    {
+      "id": "LX-APP-P-FIN-01",
+      "project_id": "P-FIN-01",
+      "name": "SAP S/4HANA Finance Core",
+      "alias": "APP-P-FIN-01",
+      "description": "Central general ledger, AP/AR and asset accounting on SAP RISE; the finance system of record for all group entities.",
+      "application_type": "Business Application",
+      "hosting_type": "Hybrid",
+      "business_criticality": "Mission Critical",
+      "functional_fit": "Appropriate",
+      "technical_fit": "Appropriate",
+      "time_classification": "Invest",
+      "sla_percentage": 99.95,
+      "rto_hours": 4,
+      "rpo_hours": 1,
+      "user_count": 4500,
+      "annual_run_cost": 450000,
+      "data_quality_pct": 96.5,
+      "compliance": {
+        "gdpr": true,
+        "sox": true,
+        "iso27001": true,
+        "tisax": true
+      },
+      "lifecycle": {
+        "app_id": "LX-APP-P-FIN-01",
+        "plan_date": "2021-01-15",
+        "phase_in_date": "2021-08-01",
+        "active_date": "2022-03-01",
+        "phase_out_date": "2027-12-31",
+        "end_of_life_date": "2029-12-31",
+        "current_phase": "active"
+      },
+      "subscriptions": [
+        {
+          "person_id": "E1039",
+          "role_type": "Application Owner"
+        },
+        {
+          "person_id": "E1042",
+          "role_type": "Technical Lead"
+        }
+      ],
+      "capabilities": [
+        "CAP-L2-ACC"
+      ],
+      "components": [
+        {
+          "id": "ITC-K8S-128",
+          "environment": "Production"
+        },
+        {
+          "id": "ITC-PG-16",
+          "environment": "Production"
+        },
+        {
+          "id": "ITC-NODE-20",
+          "environment": "Production"
+        },
+        {
+          "id": "ITC-SAP-S4",
+          "environment": "Production"
+        },
+        {
+          "id": "ITC-SAP-BTP",
+          "environment": "Production"
+        },
+        {
+          "id": "ITC-JAVA-21",
+          "environment": "Production"
+        },
+        {
+          "id": "ITC-SPRING-3",
+          "environment": "Production"
+        },
+        {
+          "id": "ITC-REDIS-7",
+          "environment": "Production"
+        }
+      ],
+      "data_objects": [
+        {
+          "id": "DO-P-FIN-01-CORE",
+          "name": "SAP S/4HANA Finance Core Master Business Entity",
+          "sensitivity": "Internal",
+          "contains_pii": false,
+          "retention_period_months": 84,
+          "last_security_review": "2025-08-15"
+        },
+        {
+          "id": "DO-P-FIN-01-AUDIT",
+          "name": "SAP S/4HANA Finance Core Transaction Log",
+          "sensitivity": "Confidential",
+          "contains_pii": true,
+          "retention_period_months": 120,
+          "last_security_review": "2025-11-20"
+        }
+      ],
+      "interfaces": [
+        {
+          "id": "IF-P-FIN-01-P-CYB-02",
+          "provider_app_id": "LX-APP-P-CYB-02",
+          "consumer_app_id": "LX-APP-P-FIN-01",
+          "name": "P-FIN-01 consumes P-CYB-02",
+          "protocol": "Kafka",
+          "direction": "Inbound",
+          "frequency": "Real-time",
+          "data_objects": "P-CYB-02 Master Feed",
+          "description": "SAP role assignment and SoD are governed by IAM"
+        },
+        {
+          "id": "IF-P-FIN-01-P-HR-01",
+          "provider_app_id": "LX-APP-P-HR-01",
+          "consumer_app_id": "LX-APP-P-FIN-01",
+          "name": "P-FIN-01 consumes P-HR-01",
+          "protocol": "REST",
+          "direction": "Inbound",
+          "frequency": "Real-time",
+          "data_objects": "P-HR-01 Master Feed",
+          "description": "Cost-center and employee master sync"
+        }
+      ],
+      "tags": [
+        {
+          "tag_group": "Domain",
+          "tag_value": "FIN"
+        },
+        {
+          "tag_group": "CloudTier",
+          "tag_value": "Tier-1-Enterprise"
+        },
+        {
+          "tag_group": "CostCenter",
+          "tag_value": "CC-FIN-01"
+        }
+      ]
+    },
+    {
+      "id": "LX-APP-P-FIN-02",
+      "project_id": "P-FIN-02",
+      "name": "Finance Analytics & Reporting",
+      "alias": "APP-P-FIN-02",
+      "description": "Management and board dashboards on SAP Analytics Cloud, fed from S/4 via Datasphere.",
+      "application_type": "Business Application",
+      "hosting_type": "Hybrid",
+      "business_criticality": "Business Critical",
+      "functional_fit": "Appropriate",
+      "technical_fit": "Appropriate",
+      "time_classification": "Invest",
+      "sla_percentage": 99.95,
+      "rto_hours": 4,
+      "rpo_hours": 1,
+      "user_count": 850,
+      "annual_run_cost": 120000,
+      "data_quality_pct": 96.5,
+      "compliance": {
+        "gdpr": true,
+        "sox": true,
+        "iso27001": true,
+        "tisax": true
+      },
+      "lifecycle": {
+        "app_id": "LX-APP-P-FIN-02",
+        "plan_date": "2022-01-15",
+        "phase_in_date": "2022-08-01",
+        "active_date": "2023-03-01",
+        "phase_out_date": "2028-12-31",
+        "end_of_life_date": "2030-12-31",
+        "current_phase": "active"
+      },
+      "subscriptions": [
+        {
+          "person_id": "E1039",
+          "role_type": "Application Owner"
+        },
+        {
+          "person_id": "E1048",
+          "role_type": "Technical Lead"
+        }
+      ],
+      "capabilities": [
+        "CAP-L2-ACC"
+      ],
+      "components": [
+        {
+          "id": "ITC-K8S-128",
+          "environment": "Production"
+        },
+        {
+          "id": "ITC-PG-16",
+          "environment": "Production"
+        },
+        {
+          "id": "ITC-NODE-20",
+          "environment": "Production"
+        },
+        {
+          "id": "ITC-SAP-S4",
+          "environment": "Production"
+        },
+        {
+          "id": "ITC-SAP-BTP",
+          "environment": "Production"
+        }
+      ],
+      "data_objects": [
+        {
+          "id": "DO-P-FIN-02-CORE",
+          "name": "Finance Analytics & Reporting Master Business Entity",
+          "sensitivity": "Internal",
+          "contains_pii": false,
+          "retention_period_months": 84,
+          "last_security_review": "2025-08-15"
+        },
+        {
+          "id": "DO-P-FIN-02-AUDIT",
+          "name": "Finance Analytics & Reporting Transaction Log",
+          "sensitivity": "Confidential",
+          "contains_pii": true,
+          "retention_period_months": 120,
+          "last_security_review": "2025-11-20"
+        }
+      ],
+      "interfaces": [
+        {
+          "id": "IF-P-FIN-02-P-FIN-01",
+          "provider_app_id": "LX-APP-P-FIN-01",
+          "consumer_app_id": "LX-APP-P-FIN-02",
+          "name": "P-FIN-02 consumes P-FIN-01",
+          "protocol": "REST",
+          "direction": "Inbound",
+          "frequency": "Real-time",
+          "data_objects": "P-FIN-01 Master Feed",
+          "description": "Reports read ledger data from S/4"
+        },
+        {
+          "id": "IF-P-FIN-02-P-FIN-05",
+          "provider_app_id": "LX-APP-P-FIN-05",
+          "consumer_app_id": "LX-APP-P-FIN-02",
+          "name": "P-FIN-02 consumes P-FIN-05",
+          "protocol": "REST",
+          "direction": "Inbound",
+          "frequency": "Real-time",
+          "data_objects": "P-FIN-05 Master Feed",
+          "description": "Historical trends read from the data mart"
+        },
+        {
+          "id": "IF-P-FIN-02-P-SAL-02",
+          "provider_app_id": "LX-APP-P-SAL-02",
+          "consumer_app_id": "LX-APP-P-FIN-02",
+          "name": "P-FIN-02 consumes P-SAL-02",
+          "protocol": "REST",
+          "direction": "Inbound",
+          "frequency": "Real-time",
+          "data_objects": "P-SAL-02 Master Feed",
+          "description": "Revenue by customer segment from Customer 360"
+        }
+      ],
+      "tags": [
+        {
+          "tag_group": "Domain",
+          "tag_value": "FIN"
+        },
+        {
+          "tag_group": "CloudTier",
+          "tag_value": "Tier-1-Enterprise"
+        },
+        {
+          "tag_group": "CostCenter",
+          "tag_value": "CC-FIN-01"
+        }
+      ]
+    },
+    {
+      "id": "LX-APP-P-FIN-03",
+      "project_id": "P-FIN-03",
+      "name": "Group Consolidation & Close",
+      "alias": "APP-P-FIN-03",
+      "description": "Monthly and quarterly consolidation, eliminations and group reporting on SAP Group Reporting.",
+      "application_type": "Business Application",
+      "hosting_type": "Hybrid",
+      "business_criticality": "Mission Critical",
+      "functional_fit": "Appropriate",
+      "technical_fit": "Appropriate",
+      "time_classification": "Invest",
+      "sla_percentage": 99.95,
+      "rto_hours": 4,
+      "rpo_hours": 1,
+      "user_count": 850,
+      "annual_run_cost": 120000,
+      "data_quality_pct": 96.5,
+      "compliance": {
+        "gdpr": true,
+        "sox": true,
+        "iso27001": true,
+        "tisax": true
+      },
+      "lifecycle": {
+        "app_id": "LX-APP-P-FIN-03",
+        "plan_date": "2022-01-15",
+        "phase_in_date": "2022-08-01",
+        "active_date": "2023-03-01",
+        "phase_out_date": "2028-12-31",
+        "end_of_life_date": "2030-12-31",
+        "current_phase": "active"
+      },
+      "subscriptions": [
+        {
+          "person_id": "E1040",
+          "role_type": "Application Owner"
+        },
+        {
+          "person_id": "E1043",
+          "role_type": "Technical Lead"
+        }
+      ],
+      "capabilities": [
+        "CAP-L2-ACC"
+      ],
+      "components": [
+        {
+          "id": "ITC-K8S-128",
+          "environment": "Production"
+        },
+        {
+          "id": "ITC-PG-16",
+          "environment": "Production"
+        },
+        {
+          "id": "ITC-NODE-20",
+          "environment": "Production"
+        },
+        {
+          "id": "ITC-SAP-S4",
+          "environment": "Production"
+        },
+        {
+          "id": "ITC-SAP-BTP",
+          "environment": "Production"
+        }
+      ],
+      "data_objects": [
+        {
+          "id": "DO-P-FIN-03-CORE",
+          "name": "Group Consolidation & Close Master Business Entity",
+          "sensitivity": "Internal",
+          "contains_pii": false,
+          "retention_period_months": 84,
+          "last_security_review": "2025-08-15"
+        },
+        {
+          "id": "DO-P-FIN-03-AUDIT",
+          "name": "Group Consolidation & Close Transaction Log",
+          "sensitivity": "Confidential",
+          "contains_pii": true,
+          "retention_period_months": 120,
+          "last_security_review": "2025-11-20"
+        }
+      ],
+      "interfaces": [
+        {
+          "id": "IF-P-FIN-03-P-FIN-01",
+          "provider_app_id": "LX-APP-P-FIN-01",
+          "consumer_app_id": "LX-APP-P-FIN-03",
+          "name": "P-FIN-03 consumes P-FIN-01",
+          "protocol": "REST",
+          "direction": "Inbound",
+          "frequency": "Real-time",
+          "data_objects": "P-FIN-01 Master Feed",
+          "description": "Consolidation reads entity ledgers"
+        },
+        {
+          "id": "IF-P-FIN-03-P-FIN-06",
+          "provider_app_id": "LX-APP-P-FIN-06",
+          "consumer_app_id": "LX-APP-P-FIN-03",
+          "name": "P-FIN-03 consumes P-FIN-06",
+          "protocol": "REST",
+          "direction": "Inbound",
+          "frequency": "Real-time",
+          "data_objects": "P-FIN-06 Master Feed",
+          "description": "Eliminations use matched intercompany balances"
+        }
+      ],
+      "tags": [
+        {
+          "tag_group": "Domain",
+          "tag_value": "FIN"
+        },
+        {
+          "tag_group": "CloudTier",
+          "tag_value": "Tier-1-Enterprise"
+        },
+        {
+          "tag_group": "CostCenter",
+          "tag_value": "CC-FIN-01"
+        }
+      ]
+    },
+    {
+      "id": "LX-APP-P-FIN-04",
+      "project_id": "P-FIN-04",
+      "name": "Treasury & Cash Management",
+      "alias": "APP-P-FIN-04",
+      "description": "Cash positioning, bank connectivity, liquidity forecasting and FX hedging.",
+      "application_type": "Business Application",
+      "hosting_type": "Hybrid",
+      "business_criticality": "Business Critical",
+      "functional_fit": "Appropriate",
+      "technical_fit": "Appropriate",
+      "time_classification": "Invest",
+      "sla_percentage": 99.95,
+      "rto_hours": 4,
+      "rpo_hours": 1,
+      "user_count": 850,
+      "annual_run_cost": 120000,
+      "data_quality_pct": 96.5,
+      "compliance": {
+        "gdpr": true,
+        "sox": true,
+        "iso27001": true,
+        "tisax": true
+      },
+      "lifecycle": {
+        "app_id": "LX-APP-P-FIN-04",
+        "plan_date": "2025-01-15",
+        "phase_in_date": "2025-08-01",
+        "active_date": "2026-03-01",
+        "phase_out_date": "2031-12-31",
+        "end_of_life_date": "2033-12-31",
+        "current_phase": "active"
+      },
+      "subscriptions": [
+        {
+          "person_id": "E1045",
+          "role_type": "Application Owner"
+        },
+        {
+          "person_id": "E1047",
+          "role_type": "Technical Lead"
+        }
+      ],
+      "capabilities": [
+        "CAP-L2-ACC"
+      ],
+      "components": [
+        {
+          "id": "ITC-K8S-128",
+          "environment": "Production"
+        },
+        {
+          "id": "ITC-PG-16",
+          "environment": "Production"
+        },
+        {
+          "id": "ITC-NODE-20",
+          "environment": "Production"
+        },
+        {
+          "id": "ITC-SAP-S4",
+          "environment": "Production"
+        },
+        {
+          "id": "ITC-SAP-BTP",
+          "environment": "Production"
+        }
+      ],
+      "data_objects": [
+        {
+          "id": "DO-P-FIN-04-CORE",
+          "name": "Treasury & Cash Management Master Business Entity",
+          "sensitivity": "Internal",
+          "contains_pii": false,
+          "retention_period_months": 84,
+          "last_security_review": "2025-08-15"
+        },
+        {
+          "id": "DO-P-FIN-04-AUDIT",
+          "name": "Treasury & Cash Management Transaction Log",
+          "sensitivity": "Confidential",
+          "contains_pii": true,
+          "retention_period_months": 120,
+          "last_security_review": "2025-11-20"
+        }
+      ],
+      "interfaces": [
+        {
+          "id": "IF-P-FIN-04-P-FIN-01",
+          "provider_app_id": "LX-APP-P-FIN-01",
+          "consumer_app_id": "LX-APP-P-FIN-04",
+          "name": "P-FIN-04 consumes P-FIN-01",
+          "protocol": "REST",
+          "direction": "Inbound",
+          "frequency": "Real-time",
+          "data_objects": "P-FIN-01 Master Feed",
+          "description": "Treasury uses bank accounts and payables from S/4"
+        },
+        {
+          "id": "IF-P-FIN-04-P-DTFS-03",
+          "provider_app_id": "LX-APP-P-DTFS-03",
+          "consumer_app_id": "LX-APP-P-FIN-04",
+          "name": "P-FIN-04 consumes P-DTFS-03",
+          "protocol": "REST",
+          "direction": "Inbound",
+          "frequency": "Real-time",
+          "data_objects": "P-DTFS-03 Master Feed",
+          "description": "Lease cash flows feed liquidity forecast"
+        }
+      ],
+      "tags": [
+        {
+          "tag_group": "Domain",
+          "tag_value": "FIN"
+        },
+        {
+          "tag_group": "CloudTier",
+          "tag_value": "Tier-1-Enterprise"
+        },
+        {
+          "tag_group": "CostCenter",
+          "tag_value": "CC-FIN-01"
+        }
+      ]
+    },
+    {
+      "id": "LX-APP-P-FIN-05",
+      "project_id": "P-FIN-05",
+      "name": "Financial Data Mart",
+      "alias": "APP-P-FIN-05",
+      "description": "Snowflake-based curated finance data for history, cross-domain analysis and external reporting.",
+      "application_type": "Business Application",
+      "hosting_type": "Hybrid",
+      "business_criticality": "Business Critical",
+      "functional_fit": "Appropriate",
+      "technical_fit": "Appropriate",
+      "time_classification": "Invest",
+      "sla_percentage": 99.95,
+      "rto_hours": 4,
+      "rpo_hours": 1,
+      "user_count": 850,
+      "annual_run_cost": 120000,
+      "data_quality_pct": 96.5,
+      "compliance": {
+        "gdpr": true,
+        "sox": true,
+        "iso27001": true,
+        "tisax": true
+      },
+      "lifecycle": {
+        "app_id": "LX-APP-P-FIN-05",
+        "plan_date": "2023-01-15",
+        "phase_in_date": "2023-08-01",
+        "active_date": "2024-03-01",
+        "phase_out_date": "2029-12-31",
+        "end_of_life_date": "2031-12-31",
+        "current_phase": "active"
+      },
+      "subscriptions": [
+        {
+          "person_id": "E1040",
+          "role_type": "Application Owner"
+        },
+        {
+          "person_id": "E1049",
+          "role_type": "Technical Lead"
+        }
+      ],
+      "capabilities": [
+        "CAP-L2-ACC"
+      ],
+      "components": [
+        {
+          "id": "ITC-K8S-128",
+          "environment": "Production"
+        },
+        {
+          "id": "ITC-PG-16",
+          "environment": "Production"
+        },
+        {
+          "id": "ITC-NODE-20",
+          "environment": "Production"
+        },
+        {
+          "id": "ITC-SAP-S4",
+          "environment": "Production"
+        },
+        {
+          "id": "ITC-SAP-BTP",
+          "environment": "Production"
+        }
+      ],
+      "data_objects": [
+        {
+          "id": "DO-P-FIN-05-CORE",
+          "name": "Financial Data Mart Master Business Entity",
+          "sensitivity": "Internal",
+          "contains_pii": false,
+          "retention_period_months": 84,
+          "last_security_review": "2025-08-15"
+        },
+        {
+          "id": "DO-P-FIN-05-AUDIT",
+          "name": "Financial Data Mart Transaction Log",
+          "sensitivity": "Confidential",
+          "contains_pii": true,
+          "retention_period_months": 120,
+          "last_security_review": "2025-11-20"
+        }
+      ],
+      "interfaces": [
+        {
+          "id": "IF-P-FIN-05-P-FIN-01",
+          "provider_app_id": "LX-APP-P-FIN-01",
+          "consumer_app_id": "LX-APP-P-FIN-05",
+          "name": "P-FIN-05 consumes P-FIN-01",
+          "protocol": "REST",
+          "direction": "Inbound",
+          "frequency": "Real-time",
+          "data_objects": "P-FIN-01 Master Feed",
+          "description": "Data mart extracts ledger and sub-ledger data"
+        }
+      ],
+      "tags": [
+        {
+          "tag_group": "Domain",
+          "tag_value": "FIN"
+        },
+        {
+          "tag_group": "CloudTier",
+          "tag_value": "Tier-1-Enterprise"
+        },
+        {
+          "tag_group": "CostCenter",
+          "tag_value": "CC-FIN-01"
+        }
+      ]
+    },
+    {
+      "id": "LX-APP-P-FIN-06",
+      "project_id": "P-FIN-06",
+      "name": "Intercompany & Tax Reporting",
+      "alias": "APP-P-FIN-06",
+      "description": "Automated intercompany matching/netting and country tax reporting (VAT, e-invoicing).",
+      "application_type": "Business Application",
+      "hosting_type": "Hybrid",
+      "business_criticality": "Business Critical",
+      "functional_fit": "Appropriate",
+      "technical_fit": "Appropriate",
+      "time_classification": "Invest",
+      "sla_percentage": 99.95,
+      "rto_hours": 4,
+      "rpo_hours": 1,
+      "user_count": 850,
+      "annual_run_cost": 120000,
+      "data_quality_pct": 96.5,
+      "compliance": {
+        "gdpr": true,
+        "sox": true,
+        "iso27001": true,
+        "tisax": true
+      },
+      "lifecycle": {
+        "app_id": "LX-APP-P-FIN-06",
+        "plan_date": "2025-01-15",
+        "phase_in_date": "2025-08-01",
+        "active_date": "2026-03-01",
+        "phase_out_date": "2031-12-31",
+        "end_of_life_date": "2033-12-31",
+        "current_phase": "active"
+      },
+      "subscriptions": [
+        {
+          "person_id": "E1041",
+          "role_type": "Application Owner"
+        },
+        {
+          "person_id": "E1044",
+          "role_type": "Technical Lead"
+        }
+      ],
+      "capabilities": [
+        "CAP-L2-ACC"
+      ],
+      "components": [
+        {
+          "id": "ITC-K8S-128",
+          "environment": "Production"
+        },
+        {
+          "id": "ITC-PG-16",
+          "environment": "Production"
+        },
+        {
+          "id": "ITC-NODE-20",
+          "environment": "Production"
+        },
+        {
+          "id": "ITC-SAP-S4",
+          "environment": "Production"
+        },
+        {
+          "id": "ITC-SAP-BTP",
+          "environment": "Production"
+        }
+      ],
+      "data_objects": [
+        {
+          "id": "DO-P-FIN-06-CORE",
+          "name": "Intercompany & Tax Reporting Master Business Entity",
+          "sensitivity": "Internal",
+          "contains_pii": false,
+          "retention_period_months": 84,
+          "last_security_review": "2025-08-15"
+        },
+        {
+          "id": "DO-P-FIN-06-AUDIT",
+          "name": "Intercompany & Tax Reporting Transaction Log",
+          "sensitivity": "Confidential",
+          "contains_pii": true,
+          "retention_period_months": 120,
+          "last_security_review": "2025-11-20"
+        }
+      ],
+      "interfaces": [
+        {
+          "id": "IF-P-FIN-06-P-FIN-01",
+          "provider_app_id": "LX-APP-P-FIN-01",
+          "consumer_app_id": "LX-APP-P-FIN-06",
+          "name": "P-FIN-06 consumes P-FIN-01",
+          "protocol": "REST",
+          "direction": "Inbound",
+          "frequency": "Real-time",
+          "data_objects": "P-FIN-01 Master Feed",
+          "description": "Intercompany and tax data come from S/4 postings"
+        }
+      ],
+      "tags": [
+        {
+          "tag_group": "Domain",
+          "tag_value": "FIN"
+        },
+        {
+          "tag_group": "CloudTier",
+          "tag_value": "Tier-1-Enterprise"
+        },
+        {
+          "tag_group": "CostCenter",
+          "tag_value": "CC-FIN-01"
+        }
+      ]
+    },
+    {
+      "id": "LX-APP-P-PRO-01",
+      "project_id": "P-PRO-01",
+      "name": "Supplier Portal",
+      "alias": "APP-P-PRO-01",
+      "description": "Web portal where suppliers manage orders, delivery schedules, invoices and payment status; microservices on AKS.",
+      "application_type": "Business Application",
+      "hosting_type": "Cloud Private",
+      "business_criticality": "Mission Critical",
+      "functional_fit": "Appropriate",
+      "technical_fit": "Appropriate",
+      "time_classification": "Invest",
+      "sla_percentage": 99.95,
+      "rto_hours": 4,
+      "rpo_hours": 1,
+      "user_count": 4500,
+      "annual_run_cost": 450000,
+      "data_quality_pct": 96.5,
+      "compliance": {
+        "gdpr": true,
+        "sox": false,
+        "iso27001": true,
+        "tisax": true
+      },
+      "lifecycle": {
+        "app_id": "LX-APP-P-PRO-01",
+        "plan_date": "2021-01-15",
+        "phase_in_date": "2021-08-01",
+        "active_date": "2022-03-01",
+        "phase_out_date": "2027-12-31",
+        "end_of_life_date": "2029-12-31",
+        "current_phase": "active"
+      },
+      "subscriptions": [
+        {
+          "person_id": "E1014",
+          "role_type": "Application Owner"
+        },
+        {
+          "person_id": "E1054",
+          "role_type": "Technical Lead"
+        }
+      ],
+      "capabilities": [
+        "CAP-L2-SUP"
+      ],
+      "components": [
+        {
+          "id": "ITC-K8S-128",
+          "environment": "Production"
+        },
+        {
+          "id": "ITC-PG-16",
+          "environment": "Production"
+        },
+        {
+          "id": "ITC-NODE-20",
+          "environment": "Production"
+        },
+        {
+          "id": "ITC-JAVA-21",
+          "environment": "Production"
+        },
+        {
+          "id": "ITC-SPRING-3",
+          "environment": "Production"
+        },
+        {
+          "id": "ITC-REDIS-7",
+          "environment": "Production"
+        },
+        {
+          "id": "ITC-K8S-122",
+          "environment": "Production"
+        }
+      ],
+      "data_objects": [
+        {
+          "id": "DO-P-PRO-01-CORE",
+          "name": "Supplier Portal Master Business Entity",
+          "sensitivity": "Internal",
+          "contains_pii": false,
+          "retention_period_months": 84,
+          "last_security_review": "2025-08-15"
+        },
+        {
+          "id": "DO-P-PRO-01-AUDIT",
+          "name": "Supplier Portal Transaction Log",
+          "sensitivity": "Confidential",
+          "contains_pii": true,
+          "retention_period_months": 120,
+          "last_security_review": "2025-11-20"
+        }
+      ],
+      "interfaces": [
+        {
+          "id": "IF-P-PRO-01-P-CYB-02",
+          "provider_app_id": "LX-APP-P-CYB-02",
+          "consumer_app_id": "LX-APP-P-PRO-01",
+          "name": "P-PRO-01 consumes P-CYB-02",
+          "protocol": "Kafka",
+          "direction": "Inbound",
+          "frequency": "Real-time",
+          "data_objects": "P-CYB-02 Master Feed",
+          "description": "Supplier and employee SSO via identity platform"
+        },
+        {
+          "id": "IF-P-PRO-01-P-FIN-01",
+          "provider_app_id": "LX-APP-P-FIN-01",
+          "consumer_app_id": "LX-APP-P-PRO-01",
+          "name": "P-PRO-01 consumes P-FIN-01",
+          "protocol": "REST",
+          "direction": "Inbound",
+          "frequency": "Real-time",
+          "data_objects": "P-FIN-01 Master Feed",
+          "description": "Invoice and payment status come from S/4"
+        },
+        {
+          "id": "IF-P-PRO-01-P-PRO-02",
+          "provider_app_id": "LX-APP-P-PRO-02",
+          "consumer_app_id": "LX-APP-P-PRO-01",
+          "name": "P-PRO-01 consumes P-PRO-02",
+          "protocol": "REST",
+          "direction": "Inbound",
+          "frequency": "Real-time",
+          "data_objects": "P-PRO-02 Master Feed",
+          "description": "Supplier master and contracts from Ariba"
+        }
+      ],
+      "tags": [
+        {
+          "tag_group": "Domain",
+          "tag_value": "PRO"
+        },
+        {
+          "tag_group": "CloudTier",
+          "tag_value": "Tier-1-Enterprise"
+        },
+        {
+          "tag_group": "CostCenter",
+          "tag_value": "CC-PRO-01"
+        }
+      ]
+    },
+    {
+      "id": "LX-APP-P-PRO-02",
+      "project_id": "P-PRO-02",
+      "name": "Ariba Sourcing & Contracts",
+      "alias": "APP-P-PRO-02",
+      "description": "Sourcing events, RFQs and contract lifecycle management on SAP Ariba.",
+      "application_type": "Business Application",
+      "hosting_type": "Cloud Private",
+      "business_criticality": "Business Critical",
+      "functional_fit": "Appropriate",
+      "technical_fit": "Appropriate",
+      "time_classification": "Invest",
+      "sla_percentage": 99.95,
+      "rto_hours": 4,
+      "rpo_hours": 1,
+      "user_count": 850,
+      "annual_run_cost": 120000,
+      "data_quality_pct": 96.5,
+      "compliance": {
+        "gdpr": true,
+        "sox": false,
+        "iso27001": true,
+        "tisax": true
+      },
+      "lifecycle": {
+        "app_id": "LX-APP-P-PRO-02",
+        "plan_date": "2020-01-15",
+        "phase_in_date": "2020-08-01",
+        "active_date": "2021-03-01",
+        "phase_out_date": "2026-12-31",
+        "end_of_life_date": "2028-12-31",
+        "current_phase": "active"
+      },
+      "subscriptions": [
+        {
+          "person_id": "E1051",
+          "role_type": "Application Owner"
+        },
+        {
+          "person_id": "E1055",
+          "role_type": "Technical Lead"
+        }
+      ],
+      "capabilities": [
+        "CAP-L2-SUP"
+      ],
+      "components": [
+        {
+          "id": "ITC-K8S-128",
+          "environment": "Production"
+        },
+        {
+          "id": "ITC-PG-16",
+          "environment": "Production"
+        },
+        {
+          "id": "ITC-NODE-20",
+          "environment": "Production"
+        }
+      ],
+      "data_objects": [
+        {
+          "id": "DO-P-PRO-02-CORE",
+          "name": "Ariba Sourcing & Contracts Master Business Entity",
+          "sensitivity": "Internal",
+          "contains_pii": false,
+          "retention_period_months": 84,
+          "last_security_review": "2025-08-15"
+        },
+        {
+          "id": "DO-P-PRO-02-AUDIT",
+          "name": "Ariba Sourcing & Contracts Transaction Log",
+          "sensitivity": "Confidential",
+          "contains_pii": true,
+          "retention_period_months": 120,
+          "last_security_review": "2025-11-20"
+        }
+      ],
+      "interfaces": [
+        {
+          "id": "IF-P-PRO-02-P-FIN-01",
+          "provider_app_id": "LX-APP-P-FIN-01",
+          "consumer_app_id": "LX-APP-P-PRO-02",
+          "name": "P-PRO-02 consumes P-FIN-01",
+          "protocol": "REST",
+          "direction": "Inbound",
+          "frequency": "Real-time",
+          "data_objects": "P-FIN-01 Master Feed",
+          "description": "Vendor master synchronisation with S/4"
+        }
+      ],
+      "tags": [
+        {
+          "tag_group": "Domain",
+          "tag_value": "PRO"
+        },
+        {
+          "tag_group": "CloudTier",
+          "tag_value": "Tier-1-Enterprise"
+        },
+        {
+          "tag_group": "CostCenter",
+          "tag_value": "CC-PRO-01"
+        }
+      ]
+    },
+    {
+      "id": "LX-APP-P-PRO-03",
+      "project_id": "P-PRO-03",
+      "name": "Procure-to-Pay Invoice Automation",
+      "alias": "APP-P-PRO-03",
+      "description": "Automated invoice capture, three-way match and posting to S/4 to cut manual AP effort.",
+      "application_type": "Business Application",
+      "hosting_type": "Cloud Private",
+      "business_criticality": "Business Critical",
+      "functional_fit": "Appropriate",
+      "technical_fit": "Appropriate",
+      "time_classification": "Invest",
+      "sla_percentage": 99.95,
+      "rto_hours": 4,
+      "rpo_hours": 1,
+      "user_count": 850,
+      "annual_run_cost": 120000,
+      "data_quality_pct": 96.5,
+      "compliance": {
+        "gdpr": true,
+        "sox": false,
+        "iso27001": true,
+        "tisax": true
+      },
+      "lifecycle": {
+        "app_id": "LX-APP-P-PRO-03",
+        "plan_date": "2025-01-15",
+        "phase_in_date": "2025-08-01",
+        "active_date": "2026-03-01",
+        "phase_out_date": "2031-12-31",
+        "end_of_life_date": "2033-12-31",
+        "current_phase": "active"
+      },
+      "subscriptions": [
+        {
+          "person_id": "E1050",
+          "role_type": "Application Owner"
+        },
+        {
+          "person_id": "E1056",
+          "role_type": "Technical Lead"
+        }
+      ],
+      "capabilities": [
+        "CAP-L2-SUP"
+      ],
+      "components": [
+        {
+          "id": "ITC-K8S-128",
+          "environment": "Production"
+        },
+        {
+          "id": "ITC-PG-16",
+          "environment": "Production"
+        },
+        {
+          "id": "ITC-NODE-20",
+          "environment": "Production"
+        }
+      ],
+      "data_objects": [
+        {
+          "id": "DO-P-PRO-03-CORE",
+          "name": "Procure-to-Pay Invoice Automation Master Business Entity",
+          "sensitivity": "Internal",
+          "contains_pii": false,
+          "retention_period_months": 84,
+          "last_security_review": "2025-08-15"
+        },
+        {
+          "id": "DO-P-PRO-03-AUDIT",
+          "name": "Procure-to-Pay Invoice Automation Transaction Log",
+          "sensitivity": "Confidential",
+          "contains_pii": true,
+          "retention_period_months": 120,
+          "last_security_review": "2025-11-20"
+        }
+      ],
+      "interfaces": [
+        {
+          "id": "IF-P-PRO-03-P-PRO-01",
+          "provider_app_id": "LX-APP-P-PRO-01",
+          "consumer_app_id": "LX-APP-P-PRO-03",
+          "name": "P-PRO-03 consumes P-PRO-01",
+          "protocol": "Kafka",
+          "direction": "Inbound",
+          "frequency": "Real-time",
+          "data_objects": "P-PRO-01 Master Feed",
+          "description": "Suppliers submit invoices via the portal"
+        },
+        {
+          "id": "IF-P-PRO-03-P-FIN-01",
+          "provider_app_id": "LX-APP-P-FIN-01",
+          "consumer_app_id": "LX-APP-P-PRO-03",
+          "name": "P-PRO-03 consumes P-FIN-01",
+          "protocol": "Kafka",
+          "direction": "Inbound",
+          "frequency": "Real-time",
+          "data_objects": "P-FIN-01 Master Feed",
+          "description": "Matched invoices are posted into S/4 AP"
+        }
+      ],
+      "tags": [
+        {
+          "tag_group": "Domain",
+          "tag_value": "PRO"
+        },
+        {
+          "tag_group": "CloudTier",
+          "tag_value": "Tier-1-Enterprise"
+        },
+        {
+          "tag_group": "CostCenter",
+          "tag_value": "CC-PRO-01"
+        }
+      ]
+    },
+    {
+      "id": "LX-APP-P-PRO-04",
+      "project_id": "P-PRO-04",
+      "name": "Spend Analytics",
+      "alias": "APP-P-PRO-04",
+      "description": "Spend cube by category, supplier and plant; tracks savings and maverick buying.",
+      "application_type": "Business Application",
+      "hosting_type": "Cloud Private",
+      "business_criticality": "Business Critical",
+      "functional_fit": "Appropriate",
+      "technical_fit": "Appropriate",
+      "time_classification": "Invest",
+      "sla_percentage": 99.95,
+      "rto_hours": 4,
+      "rpo_hours": 1,
+      "user_count": 850,
+      "annual_run_cost": 120000,
+      "data_quality_pct": 96.5,
+      "compliance": {
+        "gdpr": true,
+        "sox": false,
+        "iso27001": true,
+        "tisax": true
+      },
+      "lifecycle": {
+        "app_id": "LX-APP-P-PRO-04",
+        "plan_date": "2023-01-15",
+        "phase_in_date": "2023-08-01",
+        "active_date": "2024-03-01",
+        "phase_out_date": "2029-12-31",
+        "end_of_life_date": "2031-12-31",
+        "current_phase": "active"
+      },
+      "subscriptions": [
+        {
+          "person_id": "E1052",
+          "role_type": "Application Owner"
+        },
+        {
+          "person_id": "E1057",
+          "role_type": "Technical Lead"
+        }
+      ],
+      "capabilities": [
+        "CAP-L2-SUP"
+      ],
+      "components": [
+        {
+          "id": "ITC-K8S-128",
+          "environment": "Production"
+        },
+        {
+          "id": "ITC-PG-16",
+          "environment": "Production"
+        },
+        {
+          "id": "ITC-NODE-20",
+          "environment": "Production"
+        }
+      ],
+      "data_objects": [
+        {
+          "id": "DO-P-PRO-04-CORE",
+          "name": "Spend Analytics Master Business Entity",
+          "sensitivity": "Internal",
+          "contains_pii": false,
+          "retention_period_months": 84,
+          "last_security_review": "2025-08-15"
+        },
+        {
+          "id": "DO-P-PRO-04-AUDIT",
+          "name": "Spend Analytics Transaction Log",
+          "sensitivity": "Confidential",
+          "contains_pii": true,
+          "retention_period_months": 120,
+          "last_security_review": "2025-11-20"
+        }
+      ],
+      "interfaces": [
+        {
+          "id": "IF-P-PRO-04-P-FIN-05",
+          "provider_app_id": "LX-APP-P-FIN-05",
+          "consumer_app_id": "LX-APP-P-PRO-04",
+          "name": "P-PRO-04 consumes P-FIN-05",
+          "protocol": "REST",
+          "direction": "Inbound",
+          "frequency": "Real-time",
+          "data_objects": "P-FIN-05 Master Feed",
+          "description": "Spend facts come from the finance data mart"
+        },
+        {
+          "id": "IF-P-PRO-04-P-PRO-02",
+          "provider_app_id": "LX-APP-P-PRO-02",
+          "consumer_app_id": "LX-APP-P-PRO-04",
+          "name": "P-PRO-04 consumes P-PRO-02",
+          "protocol": "REST",
+          "direction": "Inbound",
+          "frequency": "Real-time",
+          "data_objects": "P-PRO-02 Master Feed",
+          "description": "Contract data for compliance tracking"
+        }
+      ],
+      "tags": [
+        {
+          "tag_group": "Domain",
+          "tag_value": "PRO"
+        },
+        {
+          "tag_group": "CloudTier",
+          "tag_value": "Tier-1-Enterprise"
+        },
+        {
+          "tag_group": "CostCenter",
+          "tag_value": "CC-PRO-01"
+        }
+      ]
+    },
+    {
+      "id": "LX-APP-P-PRO-05",
+      "project_id": "P-PRO-05",
+      "name": "Supplier Risk Scoring",
+      "alias": "APP-P-PRO-05",
+      "description": "ML models scoring suppliers on financial, delivery and cyber risk to flag supply disruptions early.",
+      "application_type": "Business Application",
+      "hosting_type": "Cloud Private",
+      "business_criticality": "Business Critical",
+      "functional_fit": "Appropriate",
+      "technical_fit": "Appropriate",
+      "time_classification": "Invest",
+      "sla_percentage": 99.95,
+      "rto_hours": 4,
+      "rpo_hours": 1,
+      "user_count": 850,
+      "annual_run_cost": 120000,
+      "data_quality_pct": 96.5,
+      "compliance": {
+        "gdpr": true,
+        "sox": false,
+        "iso27001": true,
+        "tisax": true
+      },
+      "lifecycle": {
+        "app_id": "LX-APP-P-PRO-05",
+        "plan_date": "2026-01-15",
+        "phase_in_date": "2026-08-01",
+        "active_date": "2027-03-01",
+        "phase_out_date": "2032-12-31",
+        "end_of_life_date": "2034-12-31",
+        "current_phase": "plan"
+      },
+      "subscriptions": [
+        {
+          "person_id": "E1051",
+          "role_type": "Application Owner"
+        },
+        {
+          "person_id": "E1058",
+          "role_type": "Technical Lead"
+        }
+      ],
+      "capabilities": [
+        "CAP-L2-SUP"
+      ],
+      "components": [
+        {
+          "id": "ITC-K8S-128",
+          "environment": "Production"
+        },
+        {
+          "id": "ITC-PG-16",
+          "environment": "Production"
+        },
+        {
+          "id": "ITC-NODE-20",
+          "environment": "Production"
+        }
+      ],
+      "data_objects": [
+        {
+          "id": "DO-P-PRO-05-CORE",
+          "name": "Supplier Risk Scoring Master Business Entity",
+          "sensitivity": "Internal",
+          "contains_pii": false,
+          "retention_period_months": 84,
+          "last_security_review": "2025-08-15"
+        },
+        {
+          "id": "DO-P-PRO-05-AUDIT",
+          "name": "Supplier Risk Scoring Transaction Log",
+          "sensitivity": "Confidential",
+          "contains_pii": true,
+          "retention_period_months": 120,
+          "last_security_review": "2025-11-20"
+        }
+      ],
+      "interfaces": [
+        {
+          "id": "IF-P-PRO-05-P-CYB-05",
+          "provider_app_id": "LX-APP-P-CYB-05",
+          "consumer_app_id": "LX-APP-P-PRO-05",
+          "name": "P-PRO-05 consumes P-CYB-05",
+          "protocol": "REST",
+          "direction": "Inbound",
+          "frequency": "Real-time",
+          "data_objects": "P-CYB-05 Master Feed",
+          "description": "Supplier cyber-risk score uses threat intelligence"
+        },
+        {
+          "id": "IF-P-PRO-05-P-PRO-01",
+          "provider_app_id": "LX-APP-P-PRO-01",
+          "consumer_app_id": "LX-APP-P-PRO-05",
+          "name": "P-PRO-05 consumes P-PRO-01",
+          "protocol": "REST",
+          "direction": "Inbound",
+          "frequency": "Real-time",
+          "data_objects": "P-PRO-01 Master Feed",
+          "description": "Supplier master and delivery performance"
+        }
+      ],
+      "tags": [
+        {
+          "tag_group": "Domain",
+          "tag_value": "PRO"
+        },
+        {
+          "tag_group": "CloudTier",
+          "tag_value": "Tier-1-Enterprise"
+        },
+        {
+          "tag_group": "CostCenter",
+          "tag_value": "CC-PRO-01"
+        }
+      ]
+    },
+    {
+      "id": "LX-APP-P-DTFS-01",
+      "project_id": "P-DTFS-01",
+      "name": "Loan Origination Platform",
+      "alias": "APP-P-DTFS-01",
+      "description": "Digital loan/lease application for dealers and customers; orchestrates KYC, credit decision and contract creation.",
+      "application_type": "Business Application",
+      "hosting_type": "Cloud Private",
+      "business_criticality": "Mission Critical",
+      "functional_fit": "Appropriate",
+      "technical_fit": "Appropriate",
+      "time_classification": "Invest",
+      "sla_percentage": 99.95,
+      "rto_hours": 4,
+      "rpo_hours": 1,
+      "user_count": 4500,
+      "annual_run_cost": 450000,
+      "data_quality_pct": 96.5,
+      "compliance": {
+        "gdpr": true,
+        "sox": false,
+        "iso27001": true,
+        "tisax": true
+      },
+      "lifecycle": {
+        "app_id": "LX-APP-P-DTFS-01",
+        "plan_date": "2021-01-15",
+        "phase_in_date": "2021-08-01",
+        "active_date": "2022-03-01",
+        "phase_out_date": "2027-12-31",
+        "end_of_life_date": "2029-12-31",
+        "current_phase": "active"
+      },
+      "subscriptions": [
+        {
+          "person_id": "E1061",
+          "role_type": "Application Owner"
+        },
+        {
+          "person_id": "E1062",
+          "role_type": "Technical Lead"
+        }
+      ],
+      "capabilities": [
+        "CAP-L2-LOAN"
+      ],
+      "components": [
+        {
+          "id": "ITC-K8S-128",
+          "environment": "Production"
+        },
+        {
+          "id": "ITC-PG-16",
+          "environment": "Production"
+        },
+        {
+          "id": "ITC-NODE-20",
+          "environment": "Production"
+        },
+        {
+          "id": "ITC-JAVA-21",
+          "environment": "Production"
+        },
+        {
+          "id": "ITC-SPRING-3",
+          "environment": "Production"
+        },
+        {
+          "id": "ITC-REDIS-7",
+          "environment": "Production"
+        }
+      ],
+      "data_objects": [
+        {
+          "id": "DO-P-DTFS-01-CORE",
+          "name": "Loan Origination Platform Master Business Entity",
+          "sensitivity": "Internal",
+          "contains_pii": false,
+          "retention_period_months": 84,
+          "last_security_review": "2025-08-15"
+        },
+        {
+          "id": "DO-P-DTFS-01-AUDIT",
+          "name": "Loan Origination Platform Transaction Log",
+          "sensitivity": "Confidential",
+          "contains_pii": true,
+          "retention_period_months": 120,
+          "last_security_review": "2025-11-20"
+        }
+      ],
+      "interfaces": [
+        {
+          "id": "IF-P-DTFS-01-P-CYB-01",
+          "provider_app_id": "LX-APP-P-CYB-01",
+          "consumer_app_id": "LX-APP-P-DTFS-01",
+          "name": "P-DTFS-01 consumes P-CYB-01",
+          "protocol": "Kafka",
+          "direction": "Inbound",
+          "frequency": "Real-time",
+          "data_objects": "P-CYB-01 Master Feed",
+          "description": "Security monitoring of the loan platform and fraud signals"
+        },
+        {
+          "id": "IF-P-DTFS-01-P-FIN-01",
+          "provider_app_id": "LX-APP-P-FIN-01",
+          "consumer_app_id": "LX-APP-P-DTFS-01",
+          "name": "P-DTFS-01 consumes P-FIN-01",
+          "protocol": "Kafka",
+          "direction": "Inbound",
+          "frequency": "Real-time",
+          "data_objects": "P-FIN-01 Master Feed",
+          "description": "Ledger posting of contract fees and commissions"
+        },
+        {
+          "id": "IF-P-DTFS-01-P-DTFS-02",
+          "provider_app_id": "LX-APP-P-DTFS-02",
+          "consumer_app_id": "LX-APP-P-DTFS-01",
+          "name": "P-DTFS-01 consumes P-DTFS-02",
+          "protocol": "Kafka",
+          "direction": "Inbound",
+          "frequency": "Real-time",
+          "data_objects": "P-DTFS-02 Master Feed",
+          "description": "Real-time credit decision call"
+        },
+        {
+          "id": "IF-P-DTFS-01-P-SAL-01",
+          "provider_app_id": "LX-APP-P-SAL-01",
+          "consumer_app_id": "LX-APP-P-DTFS-01",
+          "name": "P-DTFS-01 consumes P-SAL-01",
+          "protocol": "REST",
+          "direction": "Inbound",
+          "frequency": "Real-time",
+          "data_objects": "P-SAL-01 Master Feed",
+          "description": "Dealer, vehicle and price data for each deal"
+        }
+      ],
+      "tags": [
+        {
+          "tag_group": "Domain",
+          "tag_value": "DTFS"
+        },
+        {
+          "tag_group": "CloudTier",
+          "tag_value": "Tier-1-Enterprise"
+        },
+        {
+          "tag_group": "CostCenter",
+          "tag_value": "CC-DTFS-01"
+        }
+      ]
+    },
+    {
+      "id": "LX-APP-P-DTFS-02",
+      "project_id": "P-DTFS-02",
+      "name": "Credit Scoring Engine",
+      "alias": "APP-P-DTFS-02",
+      "description": "ML credit scoring and decision service called in real time by origination.",
+      "application_type": "Business Application",
+      "hosting_type": "Cloud Private",
+      "business_criticality": "Mission Critical",
+      "functional_fit": "Appropriate",
+      "technical_fit": "Appropriate",
+      "time_classification": "Invest",
+      "sla_percentage": 99.95,
+      "rto_hours": 4,
+      "rpo_hours": 1,
+      "user_count": 850,
+      "annual_run_cost": 120000,
+      "data_quality_pct": 96.5,
+      "compliance": {
+        "gdpr": true,
+        "sox": false,
+        "iso27001": true,
+        "tisax": true
+      },
+      "lifecycle": {
+        "app_id": "LX-APP-P-DTFS-02",
+        "plan_date": "2022-01-15",
+        "phase_in_date": "2022-08-01",
+        "active_date": "2023-03-01",
+        "phase_out_date": "2028-12-31",
+        "end_of_life_date": "2030-12-31",
+        "current_phase": "active"
+      },
+      "subscriptions": [
+        {
+          "person_id": "E1060",
+          "role_type": "Application Owner"
+        },
+        {
+          "person_id": "E1067",
+          "role_type": "Technical Lead"
+        }
+      ],
+      "capabilities": [
+        "CAP-L2-LOAN"
+      ],
+      "components": [
+        {
+          "id": "ITC-K8S-128",
+          "environment": "Production"
+        },
+        {
+          "id": "ITC-PG-16",
+          "environment": "Production"
+        },
+        {
+          "id": "ITC-NODE-20",
+          "environment": "Production"
+        }
+      ],
+      "data_objects": [
+        {
+          "id": "DO-P-DTFS-02-CORE",
+          "name": "Credit Scoring Engine Master Business Entity",
+          "sensitivity": "Internal",
+          "contains_pii": false,
+          "retention_period_months": 84,
+          "last_security_review": "2025-08-15"
+        },
+        {
+          "id": "DO-P-DTFS-02-AUDIT",
+          "name": "Credit Scoring Engine Transaction Log",
+          "sensitivity": "Confidential",
+          "contains_pii": true,
+          "retention_period_months": 120,
+          "last_security_review": "2025-11-20"
+        },
+        {
+          "id": "DO-P-DTFS-02-CREDIT-SCORE",
+          "name": "Customer Credit Risk & Scoring Profile",
+          "sensitivity": "Restricted",
+          "contains_pii": true,
+          "retention_period_months": 60,
+          "last_security_review": null
+        }
+      ],
+      "interfaces": [
+        {
+          "id": "IF-P-DTFS-02-P-CYB-06",
+          "provider_app_id": "LX-APP-P-CYB-06",
+          "consumer_app_id": "LX-APP-P-DTFS-02",
+          "name": "P-DTFS-02 consumes P-CYB-06",
+          "protocol": "Kafka",
+          "direction": "Inbound",
+          "frequency": "Real-time",
+          "data_objects": "P-CYB-06 Master Feed",
+          "description": "Service accounts and model secrets controlled via PAM"
+        },
+        {
+          "id": "IF-P-DTFS-02-P-SAL-02",
+          "provider_app_id": "LX-APP-P-SAL-02",
+          "consumer_app_id": "LX-APP-P-DTFS-02",
+          "name": "P-DTFS-02 consumes P-SAL-02",
+          "protocol": "REST",
+          "direction": "Inbound",
+          "frequency": "Real-time",
+          "data_objects": "P-SAL-02 Master Feed",
+          "description": "Customer 360 features for scoring"
+        }
+      ],
+      "tags": [
+        {
+          "tag_group": "Domain",
+          "tag_value": "DTFS"
+        },
+        {
+          "tag_group": "CloudTier",
+          "tag_value": "Tier-1-Enterprise"
+        },
+        {
+          "tag_group": "CostCenter",
+          "tag_value": "CC-DTFS-01"
+        }
+      ]
+    },
+    {
+      "id": "LX-APP-P-DTFS-03",
+      "project_id": "P-DTFS-03",
+      "name": "Lease & Contract Management",
+      "alias": "APP-P-DTFS-03",
+      "description": "Book of record for lease and loan contracts, payment schedules and accounting postings.",
+      "application_type": "Business Application",
+      "hosting_type": "Cloud Private",
+      "business_criticality": "Mission Critical",
+      "functional_fit": "Appropriate",
+      "technical_fit": "Appropriate",
+      "time_classification": "Invest",
+      "sla_percentage": 99.95,
+      "rto_hours": 4,
+      "rpo_hours": 1,
+      "user_count": 850,
+      "annual_run_cost": 120000,
+      "data_quality_pct": 96.5,
+      "compliance": {
+        "gdpr": true,
+        "sox": false,
+        "iso27001": true,
+        "tisax": true
+      },
+      "lifecycle": {
+        "app_id": "LX-APP-P-DTFS-03",
+        "plan_date": "2020-01-15",
+        "phase_in_date": "2020-08-01",
+        "active_date": "2021-03-01",
+        "phase_out_date": "2026-12-31",
+        "end_of_life_date": "2028-12-31",
+        "current_phase": "active"
+      },
+      "subscriptions": [
+        {
+          "person_id": "E1059",
+          "role_type": "Application Owner"
+        },
+        {
+          "person_id": "E1063",
+          "role_type": "Technical Lead"
+        }
+      ],
+      "capabilities": [
+        "CAP-L2-LOAN"
+      ],
+      "components": [
+        {
+          "id": "ITC-K8S-128",
+          "environment": "Production"
+        },
+        {
+          "id": "ITC-PG-16",
+          "environment": "Production"
+        },
+        {
+          "id": "ITC-NODE-20",
+          "environment": "Production"
+        }
+      ],
+      "data_objects": [
+        {
+          "id": "DO-P-DTFS-03-CORE",
+          "name": "Lease & Contract Management Master Business Entity",
+          "sensitivity": "Internal",
+          "contains_pii": false,
+          "retention_period_months": 84,
+          "last_security_review": "2025-08-15"
+        },
+        {
+          "id": "DO-P-DTFS-03-AUDIT",
+          "name": "Lease & Contract Management Transaction Log",
+          "sensitivity": "Confidential",
+          "contains_pii": true,
+          "retention_period_months": 120,
+          "last_security_review": "2025-11-20"
+        }
+      ],
+      "interfaces": [
+        {
+          "id": "IF-P-DTFS-03-P-DTFS-01",
+          "provider_app_id": "LX-APP-P-DTFS-01",
+          "consumer_app_id": "LX-APP-P-DTFS-03",
+          "name": "P-DTFS-03 consumes P-DTFS-01",
+          "protocol": "Kafka",
+          "direction": "Inbound",
+          "frequency": "Real-time",
+          "data_objects": "P-DTFS-01 Master Feed",
+          "description": "Contracts are created from approved applications"
+        },
+        {
+          "id": "IF-P-DTFS-03-P-FIN-01",
+          "provider_app_id": "LX-APP-P-FIN-01",
+          "consumer_app_id": "LX-APP-P-DTFS-03",
+          "name": "P-DTFS-03 consumes P-FIN-01",
+          "protocol": "Kafka",
+          "direction": "Inbound",
+          "frequency": "Real-time",
+          "data_objects": "P-FIN-01 Master Feed",
+          "description": "Accounting entries for contract lifecycle events"
+        }
+      ],
+      "tags": [
+        {
+          "tag_group": "Domain",
+          "tag_value": "DTFS"
+        },
+        {
+          "tag_group": "CloudTier",
+          "tag_value": "Tier-1-Enterprise"
+        },
+        {
+          "tag_group": "CostCenter",
+          "tag_value": "CC-DTFS-01"
+        }
+      ]
+    },
+    {
+      "id": "LX-APP-P-DTFS-04",
+      "project_id": "P-DTFS-04",
+      "name": "Collections & Servicing Platform",
+      "alias": "APP-P-DTFS-04",
+      "description": "Customer servicing, dunning and collections workflows for delinquent contracts.",
+      "application_type": "Business Application",
+      "hosting_type": "Cloud Private",
+      "business_criticality": "Business Critical",
+      "functional_fit": "Appropriate",
+      "technical_fit": "Appropriate",
+      "time_classification": "Invest",
+      "sla_percentage": 99.95,
+      "rto_hours": 4,
+      "rpo_hours": 1,
+      "user_count": 850,
+      "annual_run_cost": 120000,
+      "data_quality_pct": 96.5,
+      "compliance": {
+        "gdpr": true,
+        "sox": false,
+        "iso27001": true,
+        "tisax": true
+      },
+      "lifecycle": {
+        "app_id": "LX-APP-P-DTFS-04",
+        "plan_date": "2021-01-15",
+        "phase_in_date": "2021-08-01",
+        "active_date": "2022-03-01",
+        "phase_out_date": "2027-12-31",
+        "end_of_life_date": "2029-12-31",
+        "current_phase": "active"
+      },
+      "subscriptions": [
+        {
+          "person_id": "E1069",
+          "role_type": "Application Owner"
+        },
+        {
+          "person_id": "E1070",
+          "role_type": "Technical Lead"
+        }
+      ],
+      "capabilities": [
+        "CAP-L2-LOAN"
+      ],
+      "components": [
+        {
+          "id": "ITC-K8S-128",
+          "environment": "Production"
+        },
+        {
+          "id": "ITC-PG-16",
+          "environment": "Production"
+        },
+        {
+          "id": "ITC-NODE-20",
+          "environment": "Production"
+        }
+      ],
+      "data_objects": [
+        {
+          "id": "DO-P-DTFS-04-CORE",
+          "name": "Collections & Servicing Platform Master Business Entity",
+          "sensitivity": "Internal",
+          "contains_pii": false,
+          "retention_period_months": 84,
+          "last_security_review": "2025-08-15"
+        },
+        {
+          "id": "DO-P-DTFS-04-AUDIT",
+          "name": "Collections & Servicing Platform Transaction Log",
+          "sensitivity": "Confidential",
+          "contains_pii": true,
+          "retention_period_months": 120,
+          "last_security_review": "2025-11-20"
+        }
+      ],
+      "interfaces": [
+        {
+          "id": "IF-P-DTFS-04-P-DTFS-03",
+          "provider_app_id": "LX-APP-P-DTFS-03",
+          "consumer_app_id": "LX-APP-P-DTFS-04",
+          "name": "P-DTFS-04 consumes P-DTFS-03",
+          "protocol": "REST",
+          "direction": "Inbound",
+          "frequency": "Real-time",
+          "data_objects": "P-DTFS-03 Master Feed",
+          "description": "Balances and schedules come from contract system"
+        }
+      ],
+      "tags": [
+        {
+          "tag_group": "Domain",
+          "tag_value": "DTFS"
+        },
+        {
+          "tag_group": "CloudTier",
+          "tag_value": "Tier-1-Enterprise"
+        },
+        {
+          "tag_group": "CostCenter",
+          "tag_value": "CC-DTFS-01"
+        }
+      ]
+    },
+    {
+      "id": "LX-APP-P-DTFS-05",
+      "project_id": "P-DTFS-05",
+      "name": "Regulatory Reporting (IFRS 9 / Basel)",
+      "alias": "APP-P-DTFS-05",
+      "description": "Regulatory and impairment reporting for financial services entities in multiple countries.",
+      "application_type": "Business Application",
+      "hosting_type": "Cloud Private",
+      "business_criticality": "Business Critical",
+      "functional_fit": "Appropriate",
+      "technical_fit": "Appropriate",
+      "time_classification": "Invest",
+      "sla_percentage": 99.95,
+      "rto_hours": 4,
+      "rpo_hours": 1,
+      "user_count": 850,
+      "annual_run_cost": 120000,
+      "data_quality_pct": 96.5,
+      "compliance": {
+        "gdpr": true,
+        "sox": false,
+        "iso27001": true,
+        "tisax": true
+      },
+      "lifecycle": {
+        "app_id": "LX-APP-P-DTFS-05",
+        "plan_date": "2025-01-15",
+        "phase_in_date": "2025-08-01",
+        "active_date": "2026-03-01",
+        "phase_out_date": "2031-12-31",
+        "end_of_life_date": "2033-12-31",
+        "current_phase": "active"
+      },
+      "subscriptions": [
+        {
+          "person_id": "E1059",
+          "role_type": "Application Owner"
+        },
+        {
+          "person_id": "E1068",
+          "role_type": "Technical Lead"
+        }
+      ],
+      "capabilities": [
+        "CAP-L2-LOAN"
+      ],
+      "components": [
+        {
+          "id": "ITC-K8S-128",
+          "environment": "Production"
+        },
+        {
+          "id": "ITC-PG-16",
+          "environment": "Production"
+        },
+        {
+          "id": "ITC-NODE-20",
+          "environment": "Production"
+        }
+      ],
+      "data_objects": [
+        {
+          "id": "DO-P-DTFS-05-CORE",
+          "name": "Regulatory Reporting (IFRS 9 / Basel) Master Business Entity",
+          "sensitivity": "Internal",
+          "contains_pii": false,
+          "retention_period_months": 84,
+          "last_security_review": "2025-08-15"
+        },
+        {
+          "id": "DO-P-DTFS-05-AUDIT",
+          "name": "Regulatory Reporting (IFRS 9 / Basel) Transaction Log",
+          "sensitivity": "Confidential",
+          "contains_pii": true,
+          "retention_period_months": 120,
+          "last_security_review": "2025-11-20"
+        }
+      ],
+      "interfaces": [
+        {
+          "id": "IF-P-DTFS-05-P-DTFS-03",
+          "provider_app_id": "LX-APP-P-DTFS-03",
+          "consumer_app_id": "LX-APP-P-DTFS-05",
+          "name": "P-DTFS-05 consumes P-DTFS-03",
+          "protocol": "REST",
+          "direction": "Inbound",
+          "frequency": "Real-time",
+          "data_objects": "P-DTFS-03 Master Feed",
+          "description": "Exposure and contract data for reporting"
+        },
+        {
+          "id": "IF-P-DTFS-05-P-DTFS-04",
+          "provider_app_id": "LX-APP-P-DTFS-04",
+          "consumer_app_id": "LX-APP-P-DTFS-05",
+          "name": "P-DTFS-05 consumes P-DTFS-04",
+          "protocol": "REST",
+          "direction": "Inbound",
+          "frequency": "Real-time",
+          "data_objects": "P-DTFS-04 Master Feed",
+          "description": "Delinquency data for impairment calculation"
+        },
+        {
+          "id": "IF-P-DTFS-05-P-FIN-03",
+          "provider_app_id": "LX-APP-P-FIN-03",
+          "consumer_app_id": "LX-APP-P-DTFS-05",
+          "name": "P-DTFS-05 consumes P-FIN-03",
+          "protocol": "REST",
+          "direction": "Inbound",
+          "frequency": "Real-time",
+          "data_objects": "P-FIN-03 Master Feed",
+          "description": "Reconciliation to group consolidation"
+        }
+      ],
+      "tags": [
+        {
+          "tag_group": "Domain",
+          "tag_value": "DTFS"
+        },
+        {
+          "tag_group": "CloudTier",
+          "tag_value": "Tier-1-Enterprise"
+        },
+        {
+          "tag_group": "CostCenter",
+          "tag_value": "CC-DTFS-01"
+        }
+      ]
+    },
+    {
+      "id": "LX-APP-P-DTFS-06",
+      "project_id": "P-DTFS-06",
+      "name": "Dealer Floorplan Financing",
+      "alias": "APP-P-DTFS-06",
+      "description": "Wholesale financing of dealer vehicle stock with limit management, audits and interest billing.",
+      "application_type": "Business Application",
+      "hosting_type": "Cloud Private",
+      "business_criticality": "Business Critical",
+      "functional_fit": "Appropriate",
+      "technical_fit": "Appropriate",
+      "time_classification": "Invest",
+      "sla_percentage": 99.95,
+      "rto_hours": 4,
+      "rpo_hours": 1,
+      "user_count": 850,
+      "annual_run_cost": 120000,
+      "data_quality_pct": 96.5,
+      "compliance": {
+        "gdpr": true,
+        "sox": false,
+        "iso27001": true,
+        "tisax": true
+      },
+      "lifecycle": {
+        "app_id": "LX-APP-P-DTFS-06",
+        "plan_date": "2025-01-15",
+        "phase_in_date": "2025-08-01",
+        "active_date": "2026-03-01",
+        "phase_out_date": "2031-12-31",
+        "end_of_life_date": "2033-12-31",
+        "current_phase": "active"
+      },
+      "subscriptions": [
+        {
+          "person_id": "E1060",
+          "role_type": "Application Owner"
+        },
+        {
+          "person_id": "E1065",
+          "role_type": "Technical Lead"
+        }
+      ],
+      "capabilities": [
+        "CAP-L2-LOAN"
+      ],
+      "components": [
+        {
+          "id": "ITC-K8S-128",
+          "environment": "Production"
+        },
+        {
+          "id": "ITC-PG-16",
+          "environment": "Production"
+        },
+        {
+          "id": "ITC-NODE-20",
+          "environment": "Production"
+        }
+      ],
+      "data_objects": [
+        {
+          "id": "DO-P-DTFS-06-CORE",
+          "name": "Dealer Floorplan Financing Master Business Entity",
+          "sensitivity": "Internal",
+          "contains_pii": false,
+          "retention_period_months": 84,
+          "last_security_review": "2025-08-15"
+        },
+        {
+          "id": "DO-P-DTFS-06-AUDIT",
+          "name": "Dealer Floorplan Financing Transaction Log",
+          "sensitivity": "Confidential",
+          "contains_pii": true,
+          "retention_period_months": 120,
+          "last_security_review": "2025-11-20"
+        }
+      ],
+      "interfaces": [
+        {
+          "id": "IF-P-DTFS-06-P-SAL-01",
+          "provider_app_id": "LX-APP-P-SAL-01",
+          "consumer_app_id": "LX-APP-P-DTFS-06",
+          "name": "P-DTFS-06 consumes P-SAL-01",
+          "protocol": "REST",
+          "direction": "Inbound",
+          "frequency": "Real-time",
+          "data_objects": "P-SAL-01 Master Feed",
+          "description": "Dealer vehicle stock data for financing limits"
+        },
+        {
+          "id": "IF-P-DTFS-06-P-FIN-01",
+          "provider_app_id": "LX-APP-P-FIN-01",
+          "consumer_app_id": "LX-APP-P-DTFS-06",
+          "name": "P-DTFS-06 consumes P-FIN-01",
+          "protocol": "Kafka",
+          "direction": "Inbound",
+          "frequency": "Real-time",
+          "data_objects": "P-FIN-01 Master Feed",
+          "description": "Interest billing postings"
+        }
+      ],
+      "tags": [
+        {
+          "tag_group": "Domain",
+          "tag_value": "DTFS"
+        },
+        {
+          "tag_group": "CloudTier",
+          "tag_value": "Tier-1-Enterprise"
+        },
+        {
+          "tag_group": "CostCenter",
+          "tag_value": "CC-DTFS-01"
+        }
+      ]
+    },
+    {
+      "id": "LX-APP-P-SAL-01",
+      "project_id": "P-SAL-01",
+      "name": "Dealer Management Platform",
+      "alias": "APP-P-SAL-01",
+      "description": "Central dealer platform for vehicle stock, quotes, orders and dealer performance.",
+      "application_type": "Business Application",
+      "hosting_type": "Cloud Private",
+      "business_criticality": "Mission Critical",
+      "functional_fit": "Appropriate",
+      "technical_fit": "Appropriate",
+      "time_classification": "Invest",
+      "sla_percentage": 99.95,
+      "rto_hours": 4,
+      "rpo_hours": 1,
+      "user_count": 4500,
+      "annual_run_cost": 450000,
+      "data_quality_pct": 96.5,
+      "compliance": {
+        "gdpr": true,
+        "sox": false,
+        "iso27001": true,
+        "tisax": true
+      },
+      "lifecycle": {
+        "app_id": "LX-APP-P-SAL-01",
+        "plan_date": "2020-01-15",
+        "phase_in_date": "2020-08-01",
+        "active_date": "2021-03-01",
+        "phase_out_date": "2026-12-31",
+        "end_of_life_date": "2028-12-31",
+        "current_phase": "active"
+      },
+      "subscriptions": [
+        {
+          "person_id": "E1072",
+          "role_type": "Application Owner"
+        },
+        {
+          "person_id": "E1077",
+          "role_type": "Technical Lead"
+        }
+      ],
+      "capabilities": [
+        "CAP-L2-DMS"
+      ],
+      "components": [
+        {
+          "id": "ITC-K8S-128",
+          "environment": "Production"
+        },
+        {
+          "id": "ITC-PG-16",
+          "environment": "Production"
+        },
+        {
+          "id": "ITC-NODE-20",
+          "environment": "Production"
+        },
+        {
+          "id": "ITC-JAVA-21",
+          "environment": "Production"
+        },
+        {
+          "id": "ITC-SPRING-3",
+          "environment": "Production"
+        },
+        {
+          "id": "ITC-REDIS-7",
+          "environment": "Production"
+        }
+      ],
+      "data_objects": [
+        {
+          "id": "DO-P-SAL-01-CORE",
+          "name": "Dealer Management Platform Master Business Entity",
+          "sensitivity": "Internal",
+          "contains_pii": false,
+          "retention_period_months": 84,
+          "last_security_review": "2025-08-15"
+        },
+        {
+          "id": "DO-P-SAL-01-AUDIT",
+          "name": "Dealer Management Platform Transaction Log",
+          "sensitivity": "Confidential",
+          "contains_pii": true,
+          "retention_period_months": 120,
+          "last_security_review": "2025-11-20"
+        }
+      ],
+      "interfaces": [
+        {
+          "id": "IF-P-SAL-01-P-CYB-02",
+          "provider_app_id": "LX-APP-P-CYB-02",
+          "consumer_app_id": "LX-APP-P-SAL-01",
+          "name": "P-SAL-01 consumes P-CYB-02",
+          "protocol": "Kafka",
+          "direction": "Inbound",
+          "frequency": "Real-time",
+          "data_objects": "P-CYB-02 Master Feed",
+          "description": "Dealer and employee SSO via identity platform"
+        },
+        {
+          "id": "IF-P-SAL-01-P-SAL-06",
+          "provider_app_id": "LX-APP-P-SAL-06",
+          "consumer_app_id": "LX-APP-P-SAL-01",
+          "name": "P-SAL-01 consumes P-SAL-06",
+          "protocol": "Kafka",
+          "direction": "Inbound",
+          "frequency": "Real-time",
+          "data_objects": "P-SAL-06 Master Feed",
+          "description": "Dealer orders flow into order management"
+        }
+      ],
+      "tags": [
+        {
+          "tag_group": "Domain",
+          "tag_value": "SAL"
+        },
+        {
+          "tag_group": "CloudTier",
+          "tag_value": "Tier-1-Enterprise"
+        },
+        {
+          "tag_group": "CostCenter",
+          "tag_value": "CC-SAL-01"
+        }
+      ]
+    },
+    {
+      "id": "LX-APP-P-SAL-02",
+      "project_id": "P-SAL-02",
+      "name": "Customer 360 & CRM Data Platform",
+      "alias": "APP-P-SAL-02",
+      "description": "Unified customer profile across sales, service and finance touchpoints for CRM and analytics.",
+      "application_type": "Business Application",
+      "hosting_type": "Cloud Private",
+      "business_criticality": "Business Critical",
+      "functional_fit": "Appropriate",
+      "technical_fit": "Appropriate",
+      "time_classification": "Invest",
+      "sla_percentage": 99.95,
+      "rto_hours": 4,
+      "rpo_hours": 1,
+      "user_count": 850,
+      "annual_run_cost": 120000,
+      "data_quality_pct": 96.5,
+      "compliance": {
+        "gdpr": true,
+        "sox": false,
+        "iso27001": true,
+        "tisax": true
+      },
+      "lifecycle": {
+        "app_id": "LX-APP-P-SAL-02",
+        "plan_date": "2022-01-15",
+        "phase_in_date": "2022-08-01",
+        "active_date": "2023-03-01",
+        "phase_out_date": "2028-12-31",
+        "end_of_life_date": "2030-12-31",
+        "current_phase": "active"
+      },
+      "subscriptions": [
+        {
+          "person_id": "E1071",
+          "role_type": "Application Owner"
+        },
+        {
+          "person_id": "E1080",
+          "role_type": "Technical Lead"
+        }
+      ],
+      "capabilities": [
+        "CAP-L2-DMS"
+      ],
+      "components": [
+        {
+          "id": "ITC-K8S-128",
+          "environment": "Production"
+        },
+        {
+          "id": "ITC-PG-16",
+          "environment": "Production"
+        },
+        {
+          "id": "ITC-NODE-20",
+          "environment": "Production"
+        }
+      ],
+      "data_objects": [
+        {
+          "id": "DO-P-SAL-02-CORE",
+          "name": "Customer 360 & CRM Data Platform Master Business Entity",
+          "sensitivity": "Internal",
+          "contains_pii": false,
+          "retention_period_months": 84,
+          "last_security_review": "2025-08-15"
+        },
+        {
+          "id": "DO-P-SAL-02-AUDIT",
+          "name": "Customer 360 & CRM Data Platform Transaction Log",
+          "sensitivity": "Confidential",
+          "contains_pii": true,
+          "retention_period_months": 120,
+          "last_security_review": "2025-11-20"
+        }
+      ],
+      "interfaces": [
+        {
+          "id": "IF-P-SAL-02-P-SAL-01",
+          "provider_app_id": "LX-APP-P-SAL-01",
+          "consumer_app_id": "LX-APP-P-SAL-02",
+          "name": "P-SAL-02 consumes P-SAL-01",
+          "protocol": "REST",
+          "direction": "Inbound",
+          "frequency": "Real-time",
+          "data_objects": "P-SAL-01 Master Feed",
+          "description": "Dealer transactions feed customer profiles"
+        },
+        {
+          "id": "IF-P-SAL-02-P-SAL-03",
+          "provider_app_id": "LX-APP-P-SAL-03",
+          "consumer_app_id": "LX-APP-P-SAL-02",
+          "name": "P-SAL-02 consumes P-SAL-03",
+          "protocol": "REST",
+          "direction": "Inbound",
+          "frequency": "Real-time",
+          "data_objects": "P-SAL-03 Master Feed",
+          "description": "Service history enriches customer profiles"
+        }
+      ],
+      "tags": [
+        {
+          "tag_group": "Domain",
+          "tag_value": "SAL"
+        },
+        {
+          "tag_group": "CloudTier",
+          "tag_value": "Tier-1-Enterprise"
+        },
+        {
+          "tag_group": "CostCenter",
+          "tag_value": "CC-SAL-01"
+        }
+      ]
+    },
+    {
+      "id": "LX-APP-P-SAL-03",
+      "project_id": "P-SAL-03",
+      "name": "Aftersales Service Portal",
+      "alias": "APP-P-SAL-03",
+      "description": "Portal for fleet customers and workshops to book service, track repairs and order parts.",
+      "application_type": "Business Application",
+      "hosting_type": "Cloud Private",
+      "business_criticality": "Business Critical",
+      "functional_fit": "Appropriate",
+      "technical_fit": "Appropriate",
+      "time_classification": "Invest",
+      "sla_percentage": 99.95,
+      "rto_hours": 4,
+      "rpo_hours": 1,
+      "user_count": 850,
+      "annual_run_cost": 120000,
+      "data_quality_pct": 96.5,
+      "compliance": {
+        "gdpr": true,
+        "sox": false,
+        "iso27001": true,
+        "tisax": true
+      },
+      "lifecycle": {
+        "app_id": "LX-APP-P-SAL-03",
+        "plan_date": "2021-01-15",
+        "phase_in_date": "2021-08-01",
+        "active_date": "2022-03-01",
+        "phase_out_date": "2027-12-31",
+        "end_of_life_date": "2029-12-31",
+        "current_phase": "active"
+      },
+      "subscriptions": [
+        {
+          "person_id": "E1074",
+          "role_type": "Application Owner"
+        },
+        {
+          "person_id": "E1076",
+          "role_type": "Technical Lead"
+        }
+      ],
+      "capabilities": [
+        "CAP-L2-DMS"
+      ],
+      "components": [
+        {
+          "id": "ITC-K8S-128",
+          "environment": "Production"
+        },
+        {
+          "id": "ITC-PG-16",
+          "environment": "Production"
+        },
+        {
+          "id": "ITC-NODE-20",
+          "environment": "Production"
+        }
+      ],
+      "data_objects": [
+        {
+          "id": "DO-P-SAL-03-CORE",
+          "name": "Aftersales Service Portal Master Business Entity",
+          "sensitivity": "Internal",
+          "contains_pii": false,
+          "retention_period_months": 84,
+          "last_security_review": "2025-08-15"
+        },
+        {
+          "id": "DO-P-SAL-03-AUDIT",
+          "name": "Aftersales Service Portal Transaction Log",
+          "sensitivity": "Confidential",
+          "contains_pii": true,
+          "retention_period_months": 120,
+          "last_security_review": "2025-11-20"
+        }
+      ],
+      "interfaces": [
+        {
+          "id": "IF-P-SAL-03-P-SAL-01",
+          "provider_app_id": "LX-APP-P-SAL-01",
+          "consumer_app_id": "LX-APP-P-SAL-03",
+          "name": "P-SAL-03 consumes P-SAL-01",
+          "protocol": "REST",
+          "direction": "Inbound",
+          "frequency": "Real-time",
+          "data_objects": "P-SAL-01 Master Feed",
+          "description": "Dealer and workshop master data"
+        },
+        {
+          "id": "IF-P-SAL-03-P-SAL-04",
+          "provider_app_id": "LX-APP-P-SAL-04",
+          "consumer_app_id": "LX-APP-P-SAL-03",
+          "name": "P-SAL-03 consumes P-SAL-04",
+          "protocol": "REST",
+          "direction": "Inbound",
+          "frequency": "Real-time",
+          "data_objects": "P-SAL-04 Master Feed",
+          "description": "Fault codes trigger service recommendations"
+        }
+      ],
+      "tags": [
+        {
+          "tag_group": "Domain",
+          "tag_value": "SAL"
+        },
+        {
+          "tag_group": "CloudTier",
+          "tag_value": "Tier-1-Enterprise"
+        },
+        {
+          "tag_group": "CostCenter",
+          "tag_value": "CC-SAL-01"
+        }
+      ]
+    },
+    {
+      "id": "LX-APP-P-SAL-04",
+      "project_id": "P-SAL-04",
+      "name": "Telematics Data Ingestion",
+      "alias": "APP-P-SAL-04",
+      "description": "Ingests telemetry from connected trucks (location, fault codes, fuel) at scale.",
+      "application_type": "Business Application",
+      "hosting_type": "Cloud Private",
+      "business_criticality": "Business Critical",
+      "functional_fit": "Appropriate",
+      "technical_fit": "Appropriate",
+      "time_classification": "Invest",
+      "sla_percentage": 99.95,
+      "rto_hours": 4,
+      "rpo_hours": 1,
+      "user_count": 850,
+      "annual_run_cost": 120000,
+      "data_quality_pct": 96.5,
+      "compliance": {
+        "gdpr": true,
+        "sox": false,
+        "iso27001": true,
+        "tisax": true
+      },
+      "lifecycle": {
+        "app_id": "LX-APP-P-SAL-04",
+        "plan_date": "2021-01-15",
+        "phase_in_date": "2021-08-01",
+        "active_date": "2022-03-01",
+        "phase_out_date": "2027-12-31",
+        "end_of_life_date": "2029-12-31",
+        "current_phase": "active"
+      },
+      "subscriptions": [
+        {
+          "person_id": "E1074",
+          "role_type": "Application Owner"
+        },
+        {
+          "person_id": "E1079",
+          "role_type": "Technical Lead"
+        }
+      ],
+      "capabilities": [
+        "CAP-L2-DMS"
+      ],
+      "components": [
+        {
+          "id": "ITC-K8S-128",
+          "environment": "Production"
+        },
+        {
+          "id": "ITC-PG-16",
+          "environment": "Production"
+        },
+        {
+          "id": "ITC-NODE-20",
+          "environment": "Production"
+        }
+      ],
+      "data_objects": [
+        {
+          "id": "DO-P-SAL-04-CORE",
+          "name": "Telematics Data Ingestion Master Business Entity",
+          "sensitivity": "Internal",
+          "contains_pii": false,
+          "retention_period_months": 84,
+          "last_security_review": "2025-08-15"
+        },
+        {
+          "id": "DO-P-SAL-04-AUDIT",
+          "name": "Telematics Data Ingestion Transaction Log",
+          "sensitivity": "Confidential",
+          "contains_pii": true,
+          "retention_period_months": 120,
+          "last_security_review": "2025-11-20"
+        }
+      ],
+      "interfaces": [
+        {
+          "id": "IF-P-SAL-04-P-CYB-03",
+          "provider_app_id": "LX-APP-P-CYB-03",
+          "consumer_app_id": "LX-APP-P-SAL-04",
+          "name": "P-SAL-04 consumes P-CYB-03",
+          "protocol": "Kafka",
+          "direction": "Inbound",
+          "frequency": "Real-time",
+          "data_objects": "P-CYB-03 Master Feed",
+          "description": "Cloud posture checks on telemetry accounts"
+        }
+      ],
+      "tags": [
+        {
+          "tag_group": "Domain",
+          "tag_value": "SAL"
+        },
+        {
+          "tag_group": "CloudTier",
+          "tag_value": "Tier-1-Enterprise"
+        },
+        {
+          "tag_group": "CostCenter",
+          "tag_value": "CC-SAL-01"
+        }
+      ]
+    },
+    {
+      "id": "LX-APP-P-SAL-05",
+      "project_id": "P-SAL-05",
+      "name": "Sales Forecasting & Pricing",
+      "alias": "APP-P-SAL-05",
+      "description": "Demand forecasts and price-optimisation recommendations per market and model.",
+      "application_type": "Business Application",
+      "hosting_type": "Cloud Private",
+      "business_criticality": "Business Critical",
+      "functional_fit": "Appropriate",
+      "technical_fit": "Appropriate",
+      "time_classification": "Invest",
+      "sla_percentage": 99.95,
+      "rto_hours": 4,
+      "rpo_hours": 1,
+      "user_count": 850,
+      "annual_run_cost": 120000,
+      "data_quality_pct": 96.5,
+      "compliance": {
+        "gdpr": true,
+        "sox": false,
+        "iso27001": true,
+        "tisax": true
+      },
+      "lifecycle": {
+        "app_id": "LX-APP-P-SAL-05",
+        "plan_date": "2025-01-15",
+        "phase_in_date": "2025-08-01",
+        "active_date": "2026-03-01",
+        "phase_out_date": "2031-12-31",
+        "end_of_life_date": "2033-12-31",
+        "current_phase": "active"
+      },
+      "subscriptions": [
+        {
+          "person_id": "E1071",
+          "role_type": "Application Owner"
+        },
+        {
+          "person_id": "E1082",
+          "role_type": "Technical Lead"
+        }
+      ],
+      "capabilities": [
+        "CAP-L2-DMS"
+      ],
+      "components": [
+        {
+          "id": "ITC-K8S-128",
+          "environment": "Production"
+        },
+        {
+          "id": "ITC-PG-16",
+          "environment": "Production"
+        },
+        {
+          "id": "ITC-NODE-20",
+          "environment": "Production"
+        }
+      ],
+      "data_objects": [
+        {
+          "id": "DO-P-SAL-05-CORE",
+          "name": "Sales Forecasting & Pricing Master Business Entity",
+          "sensitivity": "Internal",
+          "contains_pii": false,
+          "retention_period_months": 84,
+          "last_security_review": "2025-08-15"
+        },
+        {
+          "id": "DO-P-SAL-05-AUDIT",
+          "name": "Sales Forecasting & Pricing Transaction Log",
+          "sensitivity": "Confidential",
+          "contains_pii": true,
+          "retention_period_months": 120,
+          "last_security_review": "2025-11-20"
+        }
+      ],
+      "interfaces": [
+        {
+          "id": "IF-P-SAL-05-P-SAL-02",
+          "provider_app_id": "LX-APP-P-SAL-02",
+          "consumer_app_id": "LX-APP-P-SAL-05",
+          "name": "P-SAL-05 consumes P-SAL-02",
+          "protocol": "REST",
+          "direction": "Inbound",
+          "frequency": "Real-time",
+          "data_objects": "P-SAL-02 Master Feed",
+          "description": "Customer and demand signals"
+        },
+        {
+          "id": "IF-P-SAL-05-P-SAL-06",
+          "provider_app_id": "LX-APP-P-SAL-06",
+          "consumer_app_id": "LX-APP-P-SAL-05",
+          "name": "P-SAL-05 consumes P-SAL-06",
+          "protocol": "REST",
+          "direction": "Inbound",
+          "frequency": "Real-time",
+          "data_objects": "P-SAL-06 Master Feed",
+          "description": "Order backlog and lead times"
+        }
+      ],
+      "tags": [
+        {
+          "tag_group": "Domain",
+          "tag_value": "SAL"
+        },
+        {
+          "tag_group": "CloudTier",
+          "tag_value": "Tier-1-Enterprise"
+        },
+        {
+          "tag_group": "CostCenter",
+          "tag_value": "CC-SAL-01"
+        }
+      ]
+    },
+    {
+      "id": "LX-APP-P-SAL-06",
+      "project_id": "P-SAL-06",
+      "name": "Order-to-Delivery",
+      "alias": "APP-P-SAL-06",
+      "description": "End-to-end vehicle order management from configuration to delivery, integrated with SAP S/4.",
+      "application_type": "Business Application",
+      "hosting_type": "Cloud Private",
+      "business_criticality": "Mission Critical",
+      "functional_fit": "Appropriate",
+      "technical_fit": "Appropriate",
+      "time_classification": "Invest",
+      "sla_percentage": 99.95,
+      "rto_hours": 4,
+      "rpo_hours": 1,
+      "user_count": 850,
+      "annual_run_cost": 120000,
+      "data_quality_pct": 96.5,
+      "compliance": {
+        "gdpr": true,
+        "sox": false,
+        "iso27001": true,
+        "tisax": true
+      },
+      "lifecycle": {
+        "app_id": "LX-APP-P-SAL-06",
+        "plan_date": "2020-01-15",
+        "phase_in_date": "2020-08-01",
+        "active_date": "2021-03-01",
+        "phase_out_date": "2026-12-31",
+        "end_of_life_date": "2028-12-31",
+        "current_phase": "active"
+      },
+      "subscriptions": [
+        {
+          "person_id": "E1071",
+          "role_type": "Application Owner"
+        },
+        {
+          "person_id": "E1017",
+          "role_type": "Technical Lead"
+        }
+      ],
+      "capabilities": [
+        "CAP-L2-DMS"
+      ],
+      "components": [
+        {
+          "id": "ITC-K8S-128",
+          "environment": "Production"
+        },
+        {
+          "id": "ITC-PG-16",
+          "environment": "Production"
+        },
+        {
+          "id": "ITC-NODE-20",
+          "environment": "Production"
+        }
+      ],
+      "data_objects": [
+        {
+          "id": "DO-P-SAL-06-CORE",
+          "name": "Order-to-Delivery Master Business Entity",
+          "sensitivity": "Internal",
+          "contains_pii": false,
+          "retention_period_months": 84,
+          "last_security_review": "2025-08-15"
+        },
+        {
+          "id": "DO-P-SAL-06-AUDIT",
+          "name": "Order-to-Delivery Transaction Log",
+          "sensitivity": "Confidential",
+          "contains_pii": true,
+          "retention_period_months": 120,
+          "last_security_review": "2025-11-20"
+        }
+      ],
+      "interfaces": [
+        {
+          "id": "IF-P-SAL-06-P-FIN-01",
+          "provider_app_id": "LX-APP-P-FIN-01",
+          "consumer_app_id": "LX-APP-P-SAL-06",
+          "name": "P-SAL-06 consumes P-FIN-01",
+          "protocol": "Kafka",
+          "direction": "Inbound",
+          "frequency": "Real-time",
+          "data_objects": "P-FIN-01 Master Feed",
+          "description": "Billing and revenue recognition in S/4"
+        },
+        {
+          "id": "IF-P-SAL-06-P-PRO-01",
+          "provider_app_id": "LX-APP-P-PRO-01",
+          "consumer_app_id": "LX-APP-P-SAL-06",
+          "name": "P-SAL-06 consumes P-PRO-01",
+          "protocol": "REST",
+          "direction": "Inbound",
+          "frequency": "Real-time",
+          "data_objects": "P-PRO-01 Master Feed",
+          "description": "Parts and supplier delivery status"
+        }
+      ],
+      "tags": [
+        {
+          "tag_group": "Domain",
+          "tag_value": "SAL"
+        },
+        {
+          "tag_group": "CloudTier",
+          "tag_value": "Tier-1-Enterprise"
+        },
+        {
+          "tag_group": "CostCenter",
+          "tag_value": "CC-SAL-01"
+        }
+      ]
+    },
+    {
+      "id": "LX-APP-P-HR-01",
+      "project_id": "P-HR-01",
+      "name": "SuccessFactors HR Core",
+      "alias": "APP-P-HR-01",
+      "description": "Cloud HR core for employee master data, org structure and lifecycle events; feeds identity and finance.",
+      "application_type": "Business Application",
+      "hosting_type": "Cloud Private",
+      "business_criticality": "Mission Critical",
+      "functional_fit": "Appropriate",
+      "technical_fit": "Appropriate",
+      "time_classification": "Invest",
+      "sla_percentage": 99.95,
+      "rto_hours": 4,
+      "rpo_hours": 1,
+      "user_count": 850,
+      "annual_run_cost": 120000,
+      "data_quality_pct": 96.5,
+      "compliance": {
+        "gdpr": true,
+        "sox": false,
+        "iso27001": true,
+        "tisax": true
+      },
+      "lifecycle": {
+        "app_id": "LX-APP-P-HR-01",
+        "plan_date": "2019-01-15",
+        "phase_in_date": "2019-08-01",
+        "active_date": "2020-03-01",
+        "phase_out_date": "2025-12-31",
+        "end_of_life_date": "2027-12-31",
+        "current_phase": "active"
+      },
+      "subscriptions": [
+        {
+          "person_id": "E1083",
+          "role_type": "Application Owner"
+        },
+        {
+          "person_id": "E1085",
+          "role_type": "Technical Lead"
+        }
+      ],
+      "capabilities": [
+        "CAP-L2-SOC"
+      ],
+      "components": [
+        {
+          "id": "ITC-K8S-128",
+          "environment": "Production"
+        },
+        {
+          "id": "ITC-PG-16",
+          "environment": "Production"
+        },
+        {
+          "id": "ITC-NODE-20",
+          "environment": "Production"
+        }
+      ],
+      "data_objects": [
+        {
+          "id": "DO-P-HR-01-CORE",
+          "name": "SuccessFactors HR Core Master Business Entity",
+          "sensitivity": "Internal",
+          "contains_pii": false,
+          "retention_period_months": 84,
+          "last_security_review": "2025-08-15"
+        },
+        {
+          "id": "DO-P-HR-01-AUDIT",
+          "name": "SuccessFactors HR Core Transaction Log",
+          "sensitivity": "Confidential",
+          "contains_pii": true,
+          "retention_period_months": 120,
+          "last_security_review": "2025-11-20"
+        }
+      ],
+      "interfaces": [],
+      "tags": [
+        {
+          "tag_group": "Domain",
+          "tag_value": "HR"
+        },
+        {
+          "tag_group": "CloudTier",
+          "tag_value": "Tier-1-Enterprise"
+        },
+        {
+          "tag_group": "CostCenter",
+          "tag_value": "CC-HR-01"
+        }
+      ]
+    }
+  ]
+}

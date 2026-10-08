@@ -1,0 +1,2988 @@
+[
+  {
+    "space_key": "SPACE_P_CYB_01",
+    "project_id": "P-CYB-01",
+    "name": "Security Log Monitoring (SIEM) Documentation Space",
+    "description": "Official Confluence engineering and architecture space for Security Log Monitoring (SIEM)",
+    "pages": [
+      {
+        "id": "CF-PAGE-P-CYB-01-ARCH",
+        "title": "Security Log Monitoring (SIEM) — Architecture Overview & Topology",
+        "page_type": "architecture-overview",
+        "author": "E1026",
+        "version": 4,
+        "labels": [
+          "architecture",
+          "topology",
+          "solution-design",
+          "cyb"
+        ],
+        "body_md": "# Architecture Overview: Security Log Monitoring (SIEM) (P-CYB-01)\n\n## 1. System Context\nCentral SIEM collecting security logs from Azure, AWS, SAP and plants; correlates events and raises alerts for the SOC.\n\n## 2. Infrastructure Topology\n- Primary Cloud Platform: Microsoft Azure & AWS\n- Container Orchestration: Azure Kubernetes Service (AKS)\n- Data Persistence: PostgreSQL Flexible Server & Enterprise Lakehouse\n\n## 3. High Availability & Security\nMulti-zone redundancy active across West Europe and Central India regions. Ingestion TLS 1.3 enforced."
+      },
+      {
+        "id": "CF-PAGE-P-CYB-01-DES",
+        "title": "Security Log Monitoring (SIEM) — Solution Design & API Specifications",
+        "page_type": "solution-design",
+        "author": "E1026",
+        "version": 3,
+        "labels": [
+          "api",
+          "spec",
+          "design"
+        ],
+        "body_md": "# Solution Design Document\n\n## API Protocols\nRESTful HTTPS JSON API compliant with OpenAPI 3.1 specifications. OAuth 2.0 Bearer tokens issued via Microsoft Entra ID."
+      },
+      {
+        "id": "CF-PAGE-P-CYB-01-RUN",
+        "title": "Security Log Monitoring (SIEM) — Technical Runbook & Triage Procedures",
+        "page_type": "runbook",
+        "author": "E1026",
+        "version": 2,
+        "labels": [
+          "runbook",
+          "operations",
+          "incident-response"
+        ],
+        "body_md": "# Operational Runbook\n\n## Escalation Matrix\n1. Level 1: Central Service Desk\n2. Level 2: Platform Reliability Team\n3. Level 3: Tech Lead (E1026)"
+      },
+      {
+        "id": "CF-PAGE-P-CYB-01-BUDGET",
+        "title": "Security Log Monitoring (SIEM) — Cost Center & Budget Planning FY2026",
+        "page_type": "budget",
+        "author": "E1024",
+        "version": 2,
+        "labels": [
+          "finance",
+          "budget",
+          "cost-center"
+        ],
+        "body_md": "# Budget & Cost Allocation FY2026\n\n- Cost Center: CC-CYB-01\n- Business Owner: E1024\n- Capex Allocation: €3,500,000\n- Approved by Executive Board."
+      },
+      {
+        "id": "CF-PAGE-P-CYB-01-PERF",
+        "title": "Security Log Monitoring (SIEM) — Performance Benchmarking & Load Testing",
+        "page_type": "solution-design",
+        "author": "E1026",
+        "version": 1,
+        "labels": [
+          "performance",
+          "benchmarks",
+          "load-testing"
+        ],
+        "body_md": "# Performance Benchmark Results\n\nTested at 15,000 requests/sec with p99 response time under 45ms."
+      }
+    ],
+    "adrs": [
+      {
+        "id": "ADR-P-CYB-01-001",
+        "title": "ADR-001: Adoption of PostgreSQL Flexible Server for Relational Storage",
+        "status": "Accepted",
+        "context": "The project requires ACID-compliant relational transactions with automatic point-in-time recovery.",
+        "decision": "Adopt PostgreSQL 16+ on Azure Flexible Server.",
+        "consequences": "Ensures standard SQL schema migrations and automated backups.",
+        "chosen_technology": "PostgreSQL Flexible Server",
+        "decided_by": "E1026"
+      },
+      {
+        "id": "ADR-P-CYB-01-002",
+        "title": "ADR-002: Service-to-Service Communication Protocol",
+        "status": "Accepted",
+        "context": "High-frequency inter-service data exchanges require standard contract definitions.",
+        "decision": "Use asynchronous event publishing via Kafka/Event Hubs for loose coupling.",
+        "consequences": "Consumers must implement idempotent message processing.",
+        "chosen_technology": "Apache Kafka / Event Hubs",
+        "decided_by": "E1026"
+      },
+      {
+        "id": "ADR-P-CYB-01-003",
+        "title": "ADR-003: Core Stream Processing Engine Language Selection",
+        "status": "Accepted",
+        "context": "Log ingestion throughput requires sub-millisecond latency and zero garbage collection pauses.",
+        "decision": "Mandate Rust as the exclusive implementation language for all log collector agents.",
+        "consequences": "Highest memory efficiency and safety; all team members must complete Rust training.",
+        "chosen_technology": "Rust (tokio / actix)",
+        "decided_by": "E1026"
+      }
+    ],
+    "pocs": [
+      {
+        "id": "POC-P-CYB-01-01",
+        "title": "POC: Vector Search Retrieval on Enterprise Catalogs",
+        "hypothesis": "Hybrid semantic search combines keyword and vector embeddings with >90% precision.",
+        "tech_stack": "pgvector + pg_trgm + OpenAI text-embedding-3-small",
+        "results": "Retrieval accuracy improved by 34% over purely lexical search.",
+        "recommendation": "Adopt",
+        "conducted_by": "E1026"
+      }
+    ],
+    "processes": [
+      {
+        "id": "PROC-P-CYB-01-01",
+        "name": "Security Log Monitoring (SIEM) Release & Deployment Workflow",
+        "process_type": "CI/CD Deployment Gate",
+        "steps": "1. PR Review -> 2. SonarQube Quality Gate -> 3. Automated Integration Tests -> 4. Blue-Green Production Deployment"
+      }
+    ]
+  },
+  {
+    "space_key": "SPACE_P_CYB_02",
+    "project_id": "P-CYB-02",
+    "name": "Identity & Access Governance Documentation Space",
+    "description": "Official Confluence engineering and architecture space for Identity & Access Governance",
+    "pages": [
+      {
+        "id": "CF-PAGE-P-CYB-02-ARCH",
+        "title": "Identity & Access Governance — Architecture Overview & Topology",
+        "page_type": "architecture-overview",
+        "author": "E1030",
+        "version": 4,
+        "labels": [
+          "architecture",
+          "topology",
+          "solution-design",
+          "cyb"
+        ],
+        "body_md": "# Architecture Overview: Identity & Access Governance (P-CYB-02)\n\n## 1. System Context\nGroup-wide identity lifecycle: joiner/mover/leaver automation, access reviews, SAP role governance and SSO.\n\n## 2. Infrastructure Topology\n- Primary Cloud Platform: Microsoft Azure & AWS\n- Container Orchestration: Azure Kubernetes Service (AKS)\n- Data Persistence: PostgreSQL Flexible Server & Enterprise Lakehouse\n\n## 3. High Availability & Security\nMulti-zone redundancy active across West Europe and Central India regions. Ingestion TLS 1.3 enforced."
+      },
+      {
+        "id": "CF-PAGE-P-CYB-02-DES",
+        "title": "Identity & Access Governance — Solution Design & API Specifications",
+        "page_type": "solution-design",
+        "author": "E1030",
+        "version": 3,
+        "labels": [
+          "api",
+          "spec",
+          "design"
+        ],
+        "body_md": "# Solution Design Document\n\n## API Protocols\nRESTful HTTPS JSON API compliant with OpenAPI 3.1 specifications. OAuth 2.0 Bearer tokens issued via Microsoft Entra ID."
+      },
+      {
+        "id": "CF-PAGE-P-CYB-02-RUN",
+        "title": "Identity & Access Governance — Technical Runbook & Triage Procedures",
+        "page_type": "runbook",
+        "author": "E1030",
+        "version": 2,
+        "labels": [
+          "runbook",
+          "operations",
+          "incident-response"
+        ],
+        "body_md": "# Operational Runbook\n\n## Escalation Matrix\n1. Level 1: Central Service Desk\n2. Level 2: Platform Reliability Team\n3. Level 3: Tech Lead (E1030)"
+      },
+      {
+        "id": "CF-PAGE-P-CYB-02-BUDGET",
+        "title": "Identity & Access Governance — Cost Center & Budget Planning FY2026",
+        "page_type": "budget",
+        "author": "E1024",
+        "version": 2,
+        "labels": [
+          "finance",
+          "budget",
+          "cost-center"
+        ],
+        "body_md": "# Budget & Cost Allocation FY2026\n\n- Cost Center: CC-CYB-01\n- Business Owner: E1024\n- Capex Allocation: €3,500,000\n- Approved by Executive Board."
+      },
+      {
+        "id": "CF-PAGE-P-CYB-02-PERF",
+        "title": "Identity & Access Governance — Performance Benchmarking & Load Testing",
+        "page_type": "solution-design",
+        "author": "E1030",
+        "version": 1,
+        "labels": [
+          "performance",
+          "benchmarks",
+          "load-testing"
+        ],
+        "body_md": "# Performance Benchmark Results\n\nTested at 15,000 requests/sec with p99 response time under 45ms."
+      }
+    ],
+    "adrs": [
+      {
+        "id": "ADR-P-CYB-02-001",
+        "title": "ADR-001: Adoption of PostgreSQL Flexible Server for Relational Storage",
+        "status": "Accepted",
+        "context": "The project requires ACID-compliant relational transactions with automatic point-in-time recovery.",
+        "decision": "Adopt PostgreSQL 16+ on Azure Flexible Server.",
+        "consequences": "Ensures standard SQL schema migrations and automated backups.",
+        "chosen_technology": "PostgreSQL Flexible Server",
+        "decided_by": "E1030"
+      },
+      {
+        "id": "ADR-P-CYB-02-002",
+        "title": "ADR-002: Service-to-Service Communication Protocol",
+        "status": "Accepted",
+        "context": "High-frequency inter-service data exchanges require standard contract definitions.",
+        "decision": "Use asynchronous event publishing via Kafka/Event Hubs for loose coupling.",
+        "consequences": "Consumers must implement idempotent message processing.",
+        "chosen_technology": "Apache Kafka / Event Hubs",
+        "decided_by": "E1030"
+      }
+    ],
+    "pocs": [
+      {
+        "id": "POC-P-CYB-02-01",
+        "title": "POC: Vector Search Retrieval on Enterprise Catalogs",
+        "hypothesis": "Hybrid semantic search combines keyword and vector embeddings with >90% precision.",
+        "tech_stack": "pgvector + pg_trgm + OpenAI text-embedding-3-small",
+        "results": "Retrieval accuracy improved by 34% over purely lexical search.",
+        "recommendation": "Adopt",
+        "conducted_by": "E1030"
+      }
+    ],
+    "processes": [
+      {
+        "id": "PROC-P-CYB-02-01",
+        "name": "Identity & Access Governance Release & Deployment Workflow",
+        "process_type": "CI/CD Deployment Gate",
+        "steps": "1. PR Review -> 2. SonarQube Quality Gate -> 3. Automated Integration Tests -> 4. Blue-Green Production Deployment"
+      }
+    ]
+  },
+  {
+    "space_key": "SPACE_P_CYB_03",
+    "project_id": "P-CYB-03",
+    "name": "Cloud Security Posture Management Documentation Space",
+    "description": "Official Confluence engineering and architecture space for Cloud Security Posture Management",
+    "pages": [
+      {
+        "id": "CF-PAGE-P-CYB-03-ARCH",
+        "title": "Cloud Security Posture Management — Architecture Overview & Topology",
+        "page_type": "architecture-overview",
+        "author": "E1035",
+        "version": 4,
+        "labels": [
+          "architecture",
+          "topology",
+          "solution-design",
+          "cyb"
+        ],
+        "body_md": "# Architecture Overview: Cloud Security Posture Management (P-CYB-03)\n\n## 1. System Context\nContinuous posture checks across Azure and AWS accounts; flags misconfigurations and compliance drift.\n\n## 2. Infrastructure Topology\n- Primary Cloud Platform: Microsoft Azure & AWS\n- Container Orchestration: Azure Kubernetes Service (AKS)\n- Data Persistence: PostgreSQL Flexible Server & Enterprise Lakehouse\n\n## 3. High Availability & Security\nMulti-zone redundancy active across West Europe and Central India regions. Ingestion TLS 1.3 enforced."
+      },
+      {
+        "id": "CF-PAGE-P-CYB-03-DES",
+        "title": "Cloud Security Posture Management — Solution Design & API Specifications",
+        "page_type": "solution-design",
+        "author": "E1035",
+        "version": 3,
+        "labels": [
+          "api",
+          "spec",
+          "design"
+        ],
+        "body_md": "# Solution Design Document\n\n## API Protocols\nRESTful HTTPS JSON API compliant with OpenAPI 3.1 specifications. OAuth 2.0 Bearer tokens issued via Microsoft Entra ID."
+      },
+      {
+        "id": "CF-PAGE-P-CYB-03-RUN",
+        "title": "Cloud Security Posture Management — Technical Runbook & Triage Procedures",
+        "page_type": "runbook",
+        "author": "E1035",
+        "version": 2,
+        "labels": [
+          "runbook",
+          "operations",
+          "incident-response"
+        ],
+        "body_md": "# Operational Runbook\n\n## Escalation Matrix\n1. Level 1: Central Service Desk\n2. Level 2: Platform Reliability Team\n3. Level 3: Tech Lead (E1035)"
+      },
+      {
+        "id": "CF-PAGE-P-CYB-03-BUDGET",
+        "title": "Cloud Security Posture Management — Cost Center & Budget Planning FY2026",
+        "page_type": "budget",
+        "author": "E1024",
+        "version": 2,
+        "labels": [
+          "finance",
+          "budget",
+          "cost-center"
+        ],
+        "body_md": "# Budget & Cost Allocation FY2026\n\n- Cost Center: CC-CYB-01\n- Business Owner: E1024\n- Capex Allocation: €1,800,000\n- Approved by Executive Board."
+      }
+    ],
+    "adrs": [
+      {
+        "id": "ADR-P-CYB-03-001",
+        "title": "ADR-001: Adoption of PostgreSQL Flexible Server for Relational Storage",
+        "status": "Accepted",
+        "context": "The project requires ACID-compliant relational transactions with automatic point-in-time recovery.",
+        "decision": "Adopt PostgreSQL 16+ on Azure Flexible Server.",
+        "consequences": "Ensures standard SQL schema migrations and automated backups.",
+        "chosen_technology": "PostgreSQL Flexible Server",
+        "decided_by": "E1035"
+      },
+      {
+        "id": "ADR-P-CYB-03-002",
+        "title": "ADR-002: Service-to-Service Communication Protocol",
+        "status": "Accepted",
+        "context": "High-frequency inter-service data exchanges require standard contract definitions.",
+        "decision": "Use asynchronous event publishing via Kafka/Event Hubs for loose coupling.",
+        "consequences": "Consumers must implement idempotent message processing.",
+        "chosen_technology": "Apache Kafka / Event Hubs",
+        "decided_by": "E1035"
+      }
+    ],
+    "pocs": [],
+    "processes": [
+      {
+        "id": "PROC-P-CYB-03-01",
+        "name": "Cloud Security Posture Management Release & Deployment Workflow",
+        "process_type": "CI/CD Deployment Gate",
+        "steps": "1. PR Review -> 2. SonarQube Quality Gate -> 3. Automated Integration Tests -> 4. Blue-Green Production Deployment"
+      }
+    ]
+  },
+  {
+    "space_key": "SPACE_P_CYB_04",
+    "project_id": "P-CYB-04",
+    "name": "Vulnerability & Patch Management Documentation Space",
+    "description": "Official Confluence engineering and architecture space for Vulnerability & Patch Management",
+    "pages": [
+      {
+        "id": "CF-PAGE-P-CYB-04-ARCH",
+        "title": "Vulnerability & Patch Management — Architecture Overview & Topology",
+        "page_type": "architecture-overview",
+        "author": "E1033",
+        "version": 4,
+        "labels": [
+          "architecture",
+          "topology",
+          "solution-design",
+          "cyb"
+        ],
+        "body_md": "# Architecture Overview: Vulnerability & Patch Management (P-CYB-04)\n\n## 1. System Context\nScans servers, containers and endpoints for vulnerabilities and drives patch SLAs with system owners.\n\n## 2. Infrastructure Topology\n- Primary Cloud Platform: Microsoft Azure & AWS\n- Container Orchestration: Azure Kubernetes Service (AKS)\n- Data Persistence: PostgreSQL Flexible Server & Enterprise Lakehouse\n\n## 3. High Availability & Security\nMulti-zone redundancy active across West Europe and Central India regions. Ingestion TLS 1.3 enforced."
+      },
+      {
+        "id": "CF-PAGE-P-CYB-04-DES",
+        "title": "Vulnerability & Patch Management — Solution Design & API Specifications",
+        "page_type": "solution-design",
+        "author": "E1033",
+        "version": 3,
+        "labels": [
+          "api",
+          "spec",
+          "design"
+        ],
+        "body_md": "# Solution Design Document\n\n## API Protocols\nRESTful HTTPS JSON API compliant with OpenAPI 3.1 specifications. OAuth 2.0 Bearer tokens issued via Microsoft Entra ID."
+      },
+      {
+        "id": "CF-PAGE-P-CYB-04-RUN",
+        "title": "Vulnerability & Patch Management — Technical Runbook & Triage Procedures",
+        "page_type": "runbook",
+        "author": "E1033",
+        "version": 2,
+        "labels": [
+          "runbook",
+          "operations",
+          "incident-response"
+        ],
+        "body_md": "# Operational Runbook\n\n## Escalation Matrix\n1. Level 1: Central Service Desk\n2. Level 2: Platform Reliability Team\n3. Level 3: Tech Lead (E1033)"
+      },
+      {
+        "id": "CF-PAGE-P-CYB-04-BUDGET",
+        "title": "Vulnerability & Patch Management — Cost Center & Budget Planning FY2026",
+        "page_type": "budget",
+        "author": "E1025",
+        "version": 2,
+        "labels": [
+          "finance",
+          "budget",
+          "cost-center"
+        ],
+        "body_md": "# Budget & Cost Allocation FY2026\n\n- Cost Center: CC-CYB-01\n- Business Owner: E1025\n- Capex Allocation: €1,800,000\n- Approved by Executive Board."
+      }
+    ],
+    "adrs": [
+      {
+        "id": "ADR-P-CYB-04-001",
+        "title": "ADR-001: Adoption of PostgreSQL Flexible Server for Relational Storage",
+        "status": "Accepted",
+        "context": "The project requires ACID-compliant relational transactions with automatic point-in-time recovery.",
+        "decision": "Adopt PostgreSQL 16+ on Azure Flexible Server.",
+        "consequences": "Ensures standard SQL schema migrations and automated backups.",
+        "chosen_technology": "PostgreSQL Flexible Server",
+        "decided_by": "E1033"
+      },
+      {
+        "id": "ADR-P-CYB-04-002",
+        "title": "ADR-002: Service-to-Service Communication Protocol",
+        "status": "Accepted",
+        "context": "High-frequency inter-service data exchanges require standard contract definitions.",
+        "decision": "Use asynchronous event publishing via Kafka/Event Hubs for loose coupling.",
+        "consequences": "Consumers must implement idempotent message processing.",
+        "chosen_technology": "Apache Kafka / Event Hubs",
+        "decided_by": "E1033"
+      }
+    ],
+    "pocs": [],
+    "processes": [
+      {
+        "id": "PROC-P-CYB-04-01",
+        "name": "Vulnerability & Patch Management Release & Deployment Workflow",
+        "process_type": "CI/CD Deployment Gate",
+        "steps": "1. PR Review -> 2. SonarQube Quality Gate -> 3. Automated Integration Tests -> 4. Blue-Green Production Deployment"
+      }
+    ]
+  },
+  {
+    "space_key": "SPACE_P_CYB_05",
+    "project_id": "P-CYB-05",
+    "name": "Security Data Lake Documentation Space",
+    "description": "Official Confluence engineering and architecture space for Security Data Lake",
+    "pages": [
+      {
+        "id": "CF-PAGE-P-CYB-05-ARCH",
+        "title": "Security Data Lake — Architecture Overview & Topology",
+        "page_type": "architecture-overview",
+        "author": "E1028",
+        "version": 4,
+        "labels": [
+          "architecture",
+          "topology",
+          "solution-design",
+          "cyb"
+        ],
+        "body_md": "# Architecture Overview: Security Data Lake (P-CYB-05)\n\n## 1. System Context\nLakehouse for long-term security telemetry used for threat hunting and ML anomaly detection.\n\n## 2. Infrastructure Topology\n- Primary Cloud Platform: Microsoft Azure & AWS\n- Container Orchestration: Azure Kubernetes Service (AKS)\n- Data Persistence: PostgreSQL Flexible Server & Enterprise Lakehouse\n\n## 3. High Availability & Security\nMulti-zone redundancy active across West Europe and Central India regions. Ingestion TLS 1.3 enforced."
+      },
+      {
+        "id": "CF-PAGE-P-CYB-05-DES",
+        "title": "Security Data Lake — Solution Design & API Specifications",
+        "page_type": "solution-design",
+        "author": "E1028",
+        "version": 3,
+        "labels": [
+          "api",
+          "spec",
+          "design"
+        ],
+        "body_md": "# Solution Design Document\n\n## API Protocols\nRESTful HTTPS JSON API compliant with OpenAPI 3.1 specifications. OAuth 2.0 Bearer tokens issued via Microsoft Entra ID."
+      },
+      {
+        "id": "CF-PAGE-P-CYB-05-RUN",
+        "title": "Security Data Lake — Technical Runbook & Triage Procedures",
+        "page_type": "runbook",
+        "author": "E1028",
+        "version": 2,
+        "labels": [
+          "runbook",
+          "operations",
+          "incident-response"
+        ],
+        "body_md": "# Operational Runbook\n\n## Escalation Matrix\n1. Level 1: Central Service Desk\n2. Level 2: Platform Reliability Team\n3. Level 3: Tech Lead (E1028)"
+      },
+      {
+        "id": "CF-PAGE-P-CYB-05-BUDGET",
+        "title": "Security Data Lake — Cost Center & Budget Planning FY2026",
+        "page_type": "budget",
+        "author": "E1024",
+        "version": 2,
+        "labels": [
+          "finance",
+          "budget",
+          "cost-center"
+        ],
+        "body_md": "# Budget & Cost Allocation FY2026\n\n- Cost Center: CC-CYB-01\n- Business Owner: E1024\n- Capex Allocation: €1,800,000\n- Approved by Executive Board."
+      }
+    ],
+    "adrs": [
+      {
+        "id": "ADR-P-CYB-05-001",
+        "title": "ADR-001: Adoption of PostgreSQL Flexible Server for Relational Storage",
+        "status": "Accepted",
+        "context": "The project requires ACID-compliant relational transactions with automatic point-in-time recovery.",
+        "decision": "Adopt PostgreSQL 16+ on Azure Flexible Server.",
+        "consequences": "Ensures standard SQL schema migrations and automated backups.",
+        "chosen_technology": "PostgreSQL Flexible Server",
+        "decided_by": "E1028"
+      },
+      {
+        "id": "ADR-P-CYB-05-002",
+        "title": "ADR-002: Service-to-Service Communication Protocol",
+        "status": "Accepted",
+        "context": "High-frequency inter-service data exchanges require standard contract definitions.",
+        "decision": "Use asynchronous event publishing via Kafka/Event Hubs for loose coupling.",
+        "consequences": "Consumers must implement idempotent message processing.",
+        "chosen_technology": "Apache Kafka / Event Hubs",
+        "decided_by": "E1028"
+      }
+    ],
+    "pocs": [],
+    "processes": [
+      {
+        "id": "PROC-P-CYB-05-01",
+        "name": "Security Data Lake Release & Deployment Workflow",
+        "process_type": "CI/CD Deployment Gate",
+        "steps": "1. PR Review -> 2. SonarQube Quality Gate -> 3. Automated Integration Tests -> 4. Blue-Green Production Deployment"
+      }
+    ]
+  },
+  {
+    "space_key": "SPACE_P_CYB_06",
+    "project_id": "P-CYB-06",
+    "name": "Privileged Access Management Documentation Space",
+    "description": "Official Confluence engineering and architecture space for Privileged Access Management",
+    "pages": [
+      {
+        "id": "CF-PAGE-P-CYB-06-ARCH",
+        "title": "Privileged Access Management — Architecture Overview & Topology",
+        "page_type": "architecture-overview",
+        "author": "E1032",
+        "version": 4,
+        "labels": [
+          "architecture",
+          "topology",
+          "solution-design",
+          "cyb"
+        ],
+        "body_md": "# Architecture Overview: Privileged Access Management (P-CYB-06)\n\n## 1. System Context\nJust-in-time admin access, credential vaulting and session recording for admins and service accounts.\n\n## 2. Infrastructure Topology\n- Primary Cloud Platform: Microsoft Azure & AWS\n- Container Orchestration: Azure Kubernetes Service (AKS)\n- Data Persistence: PostgreSQL Flexible Server & Enterprise Lakehouse\n\n## 3. High Availability & Security\nMulti-zone redundancy active across West Europe and Central India regions. Ingestion TLS 1.3 enforced."
+      },
+      {
+        "id": "CF-PAGE-P-CYB-06-DES",
+        "title": "Privileged Access Management — Solution Design & API Specifications",
+        "page_type": "solution-design",
+        "author": "E1032",
+        "version": 3,
+        "labels": [
+          "api",
+          "spec",
+          "design"
+        ],
+        "body_md": "# Solution Design Document\n\n## API Protocols\nRESTful HTTPS JSON API compliant with OpenAPI 3.1 specifications. OAuth 2.0 Bearer tokens issued via Microsoft Entra ID."
+      },
+      {
+        "id": "CF-PAGE-P-CYB-06-RUN",
+        "title": "Privileged Access Management — Technical Runbook & Triage Procedures",
+        "page_type": "runbook",
+        "author": "E1032",
+        "version": 2,
+        "labels": [
+          "runbook",
+          "operations",
+          "incident-response"
+        ],
+        "body_md": "# Operational Runbook\n\n## Escalation Matrix\n1. Level 1: Central Service Desk\n2. Level 2: Platform Reliability Team\n3. Level 3: Tech Lead (E1032)"
+      },
+      {
+        "id": "CF-PAGE-P-CYB-06-BUDGET",
+        "title": "Privileged Access Management — Cost Center & Budget Planning FY2026",
+        "page_type": "budget",
+        "author": "E1025",
+        "version": 2,
+        "labels": [
+          "finance",
+          "budget",
+          "cost-center"
+        ],
+        "body_md": "# Budget & Cost Allocation FY2026\n\n- Cost Center: CC-CYB-01\n- Business Owner: E1025\n- Capex Allocation: €1,800,000\n- Approved by Executive Board."
+      }
+    ],
+    "adrs": [
+      {
+        "id": "ADR-P-CYB-06-001",
+        "title": "ADR-001: Adoption of PostgreSQL Flexible Server for Relational Storage",
+        "status": "Accepted",
+        "context": "The project requires ACID-compliant relational transactions with automatic point-in-time recovery.",
+        "decision": "Adopt PostgreSQL 16+ on Azure Flexible Server.",
+        "consequences": "Ensures standard SQL schema migrations and automated backups.",
+        "chosen_technology": "PostgreSQL Flexible Server",
+        "decided_by": "E1032"
+      },
+      {
+        "id": "ADR-P-CYB-06-002",
+        "title": "ADR-002: Service-to-Service Communication Protocol",
+        "status": "Accepted",
+        "context": "High-frequency inter-service data exchanges require standard contract definitions.",
+        "decision": "Use asynchronous event publishing via Kafka/Event Hubs for loose coupling.",
+        "consequences": "Consumers must implement idempotent message processing.",
+        "chosen_technology": "Apache Kafka / Event Hubs",
+        "decided_by": "E1032"
+      }
+    ],
+    "pocs": [],
+    "processes": [
+      {
+        "id": "PROC-P-CYB-06-01",
+        "name": "Privileged Access Management Release & Deployment Workflow",
+        "process_type": "CI/CD Deployment Gate",
+        "steps": "1. PR Review -> 2. SonarQube Quality Gate -> 3. Automated Integration Tests -> 4. Blue-Green Production Deployment"
+      }
+    ]
+  },
+  {
+    "space_key": "SPACE_P_CYB_07",
+    "project_id": "P-CYB-07",
+    "name": "Incident Response Automation (SOAR) Documentation Space",
+    "description": "Official Confluence engineering and architecture space for Incident Response Automation (SOAR)",
+    "pages": [
+      {
+        "id": "CF-PAGE-P-CYB-07-ARCH",
+        "title": "Incident Response Automation (SOAR) — Architecture Overview & Topology",
+        "page_type": "architecture-overview",
+        "author": "E1037",
+        "version": 4,
+        "labels": [
+          "architecture",
+          "topology",
+          "solution-design",
+          "cyb"
+        ],
+        "body_md": "# Architecture Overview: Incident Response Automation (SOAR) (P-CYB-07)\n\n## 1. System Context\nSOAR playbooks that triage, enrich and contain high-volume alert types automatically.\n\n## 2. Infrastructure Topology\n- Primary Cloud Platform: Microsoft Azure & AWS\n- Container Orchestration: Azure Kubernetes Service (AKS)\n- Data Persistence: PostgreSQL Flexible Server & Enterprise Lakehouse\n\n## 3. High Availability & Security\nMulti-zone redundancy active across West Europe and Central India regions. Ingestion TLS 1.3 enforced."
+      },
+      {
+        "id": "CF-PAGE-P-CYB-07-DES",
+        "title": "Incident Response Automation (SOAR) — Solution Design & API Specifications",
+        "page_type": "solution-design",
+        "author": "E1037",
+        "version": 3,
+        "labels": [
+          "api",
+          "spec",
+          "design"
+        ],
+        "body_md": "# Solution Design Document\n\n## API Protocols\nRESTful HTTPS JSON API compliant with OpenAPI 3.1 specifications. OAuth 2.0 Bearer tokens issued via Microsoft Entra ID."
+      },
+      {
+        "id": "CF-PAGE-P-CYB-07-RUN",
+        "title": "Incident Response Automation (SOAR) — Technical Runbook & Triage Procedures",
+        "page_type": "runbook",
+        "author": "E1037",
+        "version": 2,
+        "labels": [
+          "runbook",
+          "operations",
+          "incident-response"
+        ],
+        "body_md": "# Operational Runbook\n\n## Escalation Matrix\n1. Level 1: Central Service Desk\n2. Level 2: Platform Reliability Team\n3. Level 3: Tech Lead (E1037)"
+      },
+      {
+        "id": "CF-PAGE-P-CYB-07-BUDGET",
+        "title": "Incident Response Automation (SOAR) — Cost Center & Budget Planning FY2026",
+        "page_type": "budget",
+        "author": "E1024",
+        "version": 2,
+        "labels": [
+          "finance",
+          "budget",
+          "cost-center"
+        ],
+        "body_md": "# Budget & Cost Allocation FY2026\n\n- Cost Center: CC-CYB-01\n- Business Owner: E1024\n- Capex Allocation: €1,800,000\n- Approved by Executive Board."
+      }
+    ],
+    "adrs": [
+      {
+        "id": "ADR-P-CYB-07-001",
+        "title": "ADR-001: Adoption of PostgreSQL Flexible Server for Relational Storage",
+        "status": "Accepted",
+        "context": "The project requires ACID-compliant relational transactions with automatic point-in-time recovery.",
+        "decision": "Adopt PostgreSQL 16+ on Azure Flexible Server.",
+        "consequences": "Ensures standard SQL schema migrations and automated backups.",
+        "chosen_technology": "PostgreSQL Flexible Server",
+        "decided_by": "E1037"
+      },
+      {
+        "id": "ADR-P-CYB-07-002",
+        "title": "ADR-002: Service-to-Service Communication Protocol",
+        "status": "Accepted",
+        "context": "High-frequency inter-service data exchanges require standard contract definitions.",
+        "decision": "Use asynchronous event publishing via Kafka/Event Hubs for loose coupling.",
+        "consequences": "Consumers must implement idempotent message processing.",
+        "chosen_technology": "Apache Kafka / Event Hubs",
+        "decided_by": "E1037"
+      }
+    ],
+    "pocs": [],
+    "processes": [
+      {
+        "id": "PROC-P-CYB-07-01",
+        "name": "Incident Response Automation (SOAR) Release & Deployment Workflow",
+        "process_type": "CI/CD Deployment Gate",
+        "steps": "1. PR Review -> 2. SonarQube Quality Gate -> 3. Automated Integration Tests -> 4. Blue-Green Production Deployment"
+      }
+    ]
+  },
+  {
+    "space_key": "SPACE_P_FIN_01",
+    "project_id": "P-FIN-01",
+    "name": "SAP S/4HANA Finance Core Documentation Space",
+    "description": "Official Confluence engineering and architecture space for SAP S/4HANA Finance Core",
+    "pages": [
+      {
+        "id": "CF-PAGE-P-FIN-01-ARCH",
+        "title": "SAP S/4HANA Finance Core — Architecture Overview & Topology",
+        "page_type": "architecture-overview",
+        "author": "E1042",
+        "version": 4,
+        "labels": [
+          "architecture",
+          "topology",
+          "solution-design",
+          "fin"
+        ],
+        "body_md": "# Architecture Overview: SAP S/4HANA Finance Core (P-FIN-01)\n\n## 1. System Context\nCentral general ledger, AP/AR and asset accounting on SAP RISE; the finance system of record for all group entities.\n\n## 2. Infrastructure Topology\n- Primary Cloud Platform: Microsoft Azure & AWS\n- Container Orchestration: Azure Kubernetes Service (AKS)\n- Data Persistence: PostgreSQL Flexible Server & Enterprise Lakehouse\n\n## 3. High Availability & Security\nMulti-zone redundancy active across West Europe and Central India regions. Ingestion TLS 1.3 enforced."
+      },
+      {
+        "id": "CF-PAGE-P-FIN-01-DES",
+        "title": "SAP S/4HANA Finance Core — Solution Design & API Specifications",
+        "page_type": "solution-design",
+        "author": "E1042",
+        "version": 3,
+        "labels": [
+          "api",
+          "spec",
+          "design"
+        ],
+        "body_md": "# Solution Design Document\n\n## API Protocols\nRESTful HTTPS JSON API compliant with OpenAPI 3.1 specifications. OAuth 2.0 Bearer tokens issued via Microsoft Entra ID."
+      },
+      {
+        "id": "CF-PAGE-P-FIN-01-RUN",
+        "title": "SAP S/4HANA Finance Core — Technical Runbook & Triage Procedures",
+        "page_type": "runbook",
+        "author": "E1042",
+        "version": 2,
+        "labels": [
+          "runbook",
+          "operations",
+          "incident-response"
+        ],
+        "body_md": "# Operational Runbook\n\n## Escalation Matrix\n1. Level 1: Central Service Desk\n2. Level 2: Platform Reliability Team\n3. Level 3: Tech Lead (E1042)"
+      },
+      {
+        "id": "CF-PAGE-P-FIN-01-BUDGET",
+        "title": "SAP S/4HANA Finance Core — Cost Center & Budget Planning FY2026",
+        "page_type": "budget",
+        "author": "E1039",
+        "version": 2,
+        "labels": [
+          "finance",
+          "budget",
+          "cost-center"
+        ],
+        "body_md": "# Budget & Cost Allocation FY2026\n\n- Cost Center: CC-FIN-01\n- Business Owner: E1039\n- Capex Allocation: €3,500,000\n- Approved by Executive Board."
+      },
+      {
+        "id": "CF-PAGE-P-FIN-01-PERF",
+        "title": "SAP S/4HANA Finance Core — Performance Benchmarking & Load Testing",
+        "page_type": "solution-design",
+        "author": "E1042",
+        "version": 1,
+        "labels": [
+          "performance",
+          "benchmarks",
+          "load-testing"
+        ],
+        "body_md": "# Performance Benchmark Results\n\nTested at 15,000 requests/sec with p99 response time under 45ms."
+      }
+    ],
+    "adrs": [
+      {
+        "id": "ADR-P-FIN-01-001",
+        "title": "ADR-001: Adoption of PostgreSQL Flexible Server for Relational Storage",
+        "status": "Accepted",
+        "context": "The project requires ACID-compliant relational transactions with automatic point-in-time recovery.",
+        "decision": "Adopt PostgreSQL 16+ on Azure Flexible Server.",
+        "consequences": "Ensures standard SQL schema migrations and automated backups.",
+        "chosen_technology": "PostgreSQL Flexible Server",
+        "decided_by": "E1042"
+      },
+      {
+        "id": "ADR-P-FIN-01-002",
+        "title": "ADR-002: Service-to-Service Communication Protocol",
+        "status": "Accepted",
+        "context": "High-frequency inter-service data exchanges require standard contract definitions.",
+        "decision": "Use asynchronous event publishing via Kafka/Event Hubs for loose coupling.",
+        "consequences": "Consumers must implement idempotent message processing.",
+        "chosen_technology": "Apache Kafka / Event Hubs",
+        "decided_by": "E1042"
+      }
+    ],
+    "pocs": [
+      {
+        "id": "POC-P-FIN-01-01",
+        "title": "POC: Vector Search Retrieval on Enterprise Catalogs",
+        "hypothesis": "Hybrid semantic search combines keyword and vector embeddings with >90% precision.",
+        "tech_stack": "pgvector + pg_trgm + OpenAI text-embedding-3-small",
+        "results": "Retrieval accuracy improved by 34% over purely lexical search.",
+        "recommendation": "Adopt",
+        "conducted_by": "E1042"
+      }
+    ],
+    "processes": [
+      {
+        "id": "PROC-P-FIN-01-01",
+        "name": "SAP S/4HANA Finance Core Release & Deployment Workflow",
+        "process_type": "CI/CD Deployment Gate",
+        "steps": "1. PR Review -> 2. SonarQube Quality Gate -> 3. Automated Integration Tests -> 4. Blue-Green Production Deployment"
+      }
+    ]
+  },
+  {
+    "space_key": "SPACE_P_FIN_02",
+    "project_id": "P-FIN-02",
+    "name": "Finance Analytics & Reporting Documentation Space",
+    "description": "Official Confluence engineering and architecture space for Finance Analytics & Reporting",
+    "pages": [
+      {
+        "id": "CF-PAGE-P-FIN-02-DES",
+        "title": "Finance Analytics & Reporting — Solution Design & API Specifications",
+        "page_type": "solution-design",
+        "author": "E1048",
+        "version": 3,
+        "labels": [
+          "api",
+          "spec",
+          "design"
+        ],
+        "body_md": "# Solution Design Document\n\n## API Protocols\nRESTful HTTPS JSON API compliant with OpenAPI 3.1 specifications. OAuth 2.0 Bearer tokens issued via Microsoft Entra ID."
+      },
+      {
+        "id": "CF-PAGE-P-FIN-02-RUN",
+        "title": "Finance Analytics & Reporting — Technical Runbook & Triage Procedures",
+        "page_type": "runbook",
+        "author": "E1048",
+        "version": 2,
+        "labels": [
+          "runbook",
+          "operations",
+          "incident-response"
+        ],
+        "body_md": "# Operational Runbook\n\n## Escalation Matrix\n1. Level 1: Central Service Desk\n2. Level 2: Platform Reliability Team\n3. Level 3: Tech Lead (E1048)"
+      },
+      {
+        "id": "CF-PAGE-P-FIN-02-BUDGET",
+        "title": "Finance Analytics & Reporting — Cost Center & Budget Planning FY2026",
+        "page_type": "budget",
+        "author": "E1039",
+        "version": 2,
+        "labels": [
+          "finance",
+          "budget",
+          "cost-center"
+        ],
+        "body_md": "# Budget & Cost Allocation FY2026\n\n- Cost Center: CC-FIN-01\n- Business Owner: E1039\n- Capex Allocation: €1,800,000\n- Approved by Executive Board."
+      }
+    ],
+    "adrs": [
+      {
+        "id": "ADR-P-FIN-02-001",
+        "title": "ADR-001: Adoption of PostgreSQL Flexible Server for Relational Storage",
+        "status": "Accepted",
+        "context": "The project requires ACID-compliant relational transactions with automatic point-in-time recovery.",
+        "decision": "Adopt PostgreSQL 16+ on Azure Flexible Server.",
+        "consequences": "Ensures standard SQL schema migrations and automated backups.",
+        "chosen_technology": "PostgreSQL Flexible Server",
+        "decided_by": "E1048"
+      },
+      {
+        "id": "ADR-P-FIN-02-002",
+        "title": "ADR-002: Service-to-Service Communication Protocol",
+        "status": "Accepted",
+        "context": "High-frequency inter-service data exchanges require standard contract definitions.",
+        "decision": "Use asynchronous event publishing via Kafka/Event Hubs for loose coupling.",
+        "consequences": "Consumers must implement idempotent message processing.",
+        "chosen_technology": "Apache Kafka / Event Hubs",
+        "decided_by": "E1048"
+      }
+    ],
+    "pocs": [],
+    "processes": [
+      {
+        "id": "PROC-P-FIN-02-01",
+        "name": "Finance Analytics & Reporting Release & Deployment Workflow",
+        "process_type": "CI/CD Deployment Gate",
+        "steps": "1. PR Review -> 2. SonarQube Quality Gate -> 3. Automated Integration Tests -> 4. Blue-Green Production Deployment"
+      }
+    ]
+  },
+  {
+    "space_key": "SPACE_P_FIN_03",
+    "project_id": "P-FIN-03",
+    "name": "Group Consolidation & Close Documentation Space",
+    "description": "Official Confluence engineering and architecture space for Group Consolidation & Close",
+    "pages": [
+      {
+        "id": "CF-PAGE-P-FIN-03-ARCH",
+        "title": "Group Consolidation & Close — Architecture Overview & Topology",
+        "page_type": "architecture-overview",
+        "author": "E1043",
+        "version": 4,
+        "labels": [
+          "architecture",
+          "topology",
+          "solution-design",
+          "fin"
+        ],
+        "body_md": "# Architecture Overview: Group Consolidation & Close (P-FIN-03)\n\n## 1. System Context\nMonthly and quarterly consolidation, eliminations and group reporting on SAP Group Reporting.\n\n## 2. Infrastructure Topology\n- Primary Cloud Platform: Microsoft Azure & AWS\n- Container Orchestration: Azure Kubernetes Service (AKS)\n- Data Persistence: PostgreSQL Flexible Server & Enterprise Lakehouse\n\n## 3. High Availability & Security\nMulti-zone redundancy active across West Europe and Central India regions. Ingestion TLS 1.3 enforced."
+      },
+      {
+        "id": "CF-PAGE-P-FIN-03-DES",
+        "title": "Group Consolidation & Close — Solution Design & API Specifications",
+        "page_type": "solution-design",
+        "author": "E1043",
+        "version": 3,
+        "labels": [
+          "api",
+          "spec",
+          "design"
+        ],
+        "body_md": "# Solution Design Document\n\n## API Protocols\nRESTful HTTPS JSON API compliant with OpenAPI 3.1 specifications. OAuth 2.0 Bearer tokens issued via Microsoft Entra ID."
+      },
+      {
+        "id": "CF-PAGE-P-FIN-03-RUN",
+        "title": "Group Consolidation & Close — Technical Runbook & Triage Procedures",
+        "page_type": "runbook",
+        "author": "E1043",
+        "version": 2,
+        "labels": [
+          "runbook",
+          "operations",
+          "incident-response"
+        ],
+        "body_md": "# Operational Runbook\n\n## Escalation Matrix\n1. Level 1: Central Service Desk\n2. Level 2: Platform Reliability Team\n3. Level 3: Tech Lead (E1043)"
+      },
+      {
+        "id": "CF-PAGE-P-FIN-03-BUDGET",
+        "title": "Group Consolidation & Close — Cost Center & Budget Planning FY2026",
+        "page_type": "budget",
+        "author": "E1040",
+        "version": 2,
+        "labels": [
+          "finance",
+          "budget",
+          "cost-center"
+        ],
+        "body_md": "# Budget & Cost Allocation FY2026\n\n- Cost Center: CC-FIN-01\n- Business Owner: E1040\n- Capex Allocation: €1,800,000\n- Approved by Executive Board."
+      }
+    ],
+    "adrs": [
+      {
+        "id": "ADR-P-FIN-03-001",
+        "title": "ADR-001: Adoption of PostgreSQL Flexible Server for Relational Storage",
+        "status": "Accepted",
+        "context": "The project requires ACID-compliant relational transactions with automatic point-in-time recovery.",
+        "decision": "Adopt PostgreSQL 16+ on Azure Flexible Server.",
+        "consequences": "Ensures standard SQL schema migrations and automated backups.",
+        "chosen_technology": "PostgreSQL Flexible Server",
+        "decided_by": "E1043"
+      },
+      {
+        "id": "ADR-P-FIN-03-002",
+        "title": "ADR-002: Service-to-Service Communication Protocol",
+        "status": "Accepted",
+        "context": "High-frequency inter-service data exchanges require standard contract definitions.",
+        "decision": "Use asynchronous event publishing via Kafka/Event Hubs for loose coupling.",
+        "consequences": "Consumers must implement idempotent message processing.",
+        "chosen_technology": "Apache Kafka / Event Hubs",
+        "decided_by": "E1043"
+      }
+    ],
+    "pocs": [],
+    "processes": [
+      {
+        "id": "PROC-P-FIN-03-01",
+        "name": "Group Consolidation & Close Release & Deployment Workflow",
+        "process_type": "CI/CD Deployment Gate",
+        "steps": "1. PR Review -> 2. SonarQube Quality Gate -> 3. Automated Integration Tests -> 4. Blue-Green Production Deployment"
+      }
+    ]
+  },
+  {
+    "space_key": "SPACE_P_FIN_04",
+    "project_id": "P-FIN-04",
+    "name": "Treasury & Cash Management Documentation Space",
+    "description": "Official Confluence engineering and architecture space for Treasury & Cash Management",
+    "pages": [
+      {
+        "id": "CF-PAGE-P-FIN-04-ARCH",
+        "title": "Treasury & Cash Management — Architecture Overview & Topology",
+        "page_type": "architecture-overview",
+        "author": "E1047",
+        "version": 4,
+        "labels": [
+          "architecture",
+          "topology",
+          "solution-design",
+          "fin"
+        ],
+        "body_md": "# Architecture Overview: Treasury & Cash Management (P-FIN-04)\n\n## 1. System Context\nCash positioning, bank connectivity, liquidity forecasting and FX hedging.\n\n## 2. Infrastructure Topology\n- Primary Cloud Platform: Microsoft Azure & AWS\n- Container Orchestration: Azure Kubernetes Service (AKS)\n- Data Persistence: PostgreSQL Flexible Server & Enterprise Lakehouse\n\n## 3. High Availability & Security\nMulti-zone redundancy active across West Europe and Central India regions. Ingestion TLS 1.3 enforced."
+      },
+      {
+        "id": "CF-PAGE-P-FIN-04-DES",
+        "title": "Treasury & Cash Management — Solution Design & API Specifications",
+        "page_type": "solution-design",
+        "author": "E1047",
+        "version": 3,
+        "labels": [
+          "api",
+          "spec",
+          "design"
+        ],
+        "body_md": "# Solution Design Document\n\n## API Protocols\nRESTful HTTPS JSON API compliant with OpenAPI 3.1 specifications. OAuth 2.0 Bearer tokens issued via Microsoft Entra ID."
+      },
+      {
+        "id": "CF-PAGE-P-FIN-04-RUN",
+        "title": "Treasury & Cash Management — Technical Runbook & Triage Procedures",
+        "page_type": "runbook",
+        "author": "E1047",
+        "version": 2,
+        "labels": [
+          "runbook",
+          "operations",
+          "incident-response"
+        ],
+        "body_md": "# Operational Runbook\n\n## Escalation Matrix\n1. Level 1: Central Service Desk\n2. Level 2: Platform Reliability Team\n3. Level 3: Tech Lead (E1047)"
+      },
+      {
+        "id": "CF-PAGE-P-FIN-04-BUDGET",
+        "title": "Treasury & Cash Management — Cost Center & Budget Planning FY2026",
+        "page_type": "budget",
+        "author": "E1045",
+        "version": 2,
+        "labels": [
+          "finance",
+          "budget",
+          "cost-center"
+        ],
+        "body_md": "# Budget & Cost Allocation FY2026\n\n- Cost Center: CC-FIN-01\n- Business Owner: E1045\n- Capex Allocation: €1,800,000\n- Approved by Executive Board."
+      }
+    ],
+    "adrs": [
+      {
+        "id": "ADR-P-FIN-04-001",
+        "title": "ADR-001: Adoption of PostgreSQL Flexible Server for Relational Storage",
+        "status": "Accepted",
+        "context": "The project requires ACID-compliant relational transactions with automatic point-in-time recovery.",
+        "decision": "Adopt PostgreSQL 16+ on Azure Flexible Server.",
+        "consequences": "Ensures standard SQL schema migrations and automated backups.",
+        "chosen_technology": "PostgreSQL Flexible Server",
+        "decided_by": "E1047"
+      },
+      {
+        "id": "ADR-P-FIN-04-002",
+        "title": "ADR-002: Service-to-Service Communication Protocol",
+        "status": "Accepted",
+        "context": "High-frequency inter-service data exchanges require standard contract definitions.",
+        "decision": "Use asynchronous event publishing via Kafka/Event Hubs for loose coupling.",
+        "consequences": "Consumers must implement idempotent message processing.",
+        "chosen_technology": "Apache Kafka / Event Hubs",
+        "decided_by": "E1047"
+      }
+    ],
+    "pocs": [],
+    "processes": [
+      {
+        "id": "PROC-P-FIN-04-01",
+        "name": "Treasury & Cash Management Release & Deployment Workflow",
+        "process_type": "CI/CD Deployment Gate",
+        "steps": "1. PR Review -> 2. SonarQube Quality Gate -> 3. Automated Integration Tests -> 4. Blue-Green Production Deployment"
+      }
+    ]
+  },
+  {
+    "space_key": "SPACE_P_FIN_05",
+    "project_id": "P-FIN-05",
+    "name": "Financial Data Mart Documentation Space",
+    "description": "Official Confluence engineering and architecture space for Financial Data Mart",
+    "pages": [
+      {
+        "id": "CF-PAGE-P-FIN-05-ARCH",
+        "title": "Financial Data Mart — Architecture Overview & Topology",
+        "page_type": "architecture-overview",
+        "author": "E1049",
+        "version": 4,
+        "labels": [
+          "architecture",
+          "topology",
+          "solution-design",
+          "fin"
+        ],
+        "body_md": "# Architecture Overview: Financial Data Mart (P-FIN-05)\n\n## 1. System Context\nSnowflake-based curated finance data for history, cross-domain analysis and external reporting.\n\n## 2. Infrastructure Topology\n- Primary Cloud Platform: Microsoft Azure & AWS\n- Container Orchestration: Azure Kubernetes Service (AKS)\n- Data Persistence: PostgreSQL Flexible Server & Enterprise Lakehouse\n\n## 3. High Availability & Security\nMulti-zone redundancy active across West Europe and Central India regions. Ingestion TLS 1.3 enforced."
+      },
+      {
+        "id": "CF-PAGE-P-FIN-05-DES",
+        "title": "Financial Data Mart — Solution Design & API Specifications",
+        "page_type": "solution-design",
+        "author": "E1049",
+        "version": 3,
+        "labels": [
+          "api",
+          "spec",
+          "design"
+        ],
+        "body_md": "# Solution Design Document\n\n## API Protocols\nRESTful HTTPS JSON API compliant with OpenAPI 3.1 specifications. OAuth 2.0 Bearer tokens issued via Microsoft Entra ID."
+      },
+      {
+        "id": "CF-PAGE-P-FIN-05-RUN",
+        "title": "Financial Data Mart — Technical Runbook & Triage Procedures",
+        "page_type": "runbook",
+        "author": "E1049",
+        "version": 2,
+        "labels": [
+          "runbook",
+          "operations",
+          "incident-response"
+        ],
+        "body_md": "# Operational Runbook\n\n## Escalation Matrix\n1. Level 1: Central Service Desk\n2. Level 2: Platform Reliability Team\n3. Level 3: Tech Lead (E1049)"
+      },
+      {
+        "id": "CF-PAGE-P-FIN-05-BUDGET",
+        "title": "Financial Data Mart — Cost Center & Budget Planning FY2026",
+        "page_type": "budget",
+        "author": "E1040",
+        "version": 2,
+        "labels": [
+          "finance",
+          "budget",
+          "cost-center"
+        ],
+        "body_md": "# Budget & Cost Allocation FY2026\n\n- Cost Center: CC-FIN-01\n- Business Owner: E1040\n- Capex Allocation: €1,800,000\n- Approved by Executive Board."
+      }
+    ],
+    "adrs": [
+      {
+        "id": "ADR-P-FIN-05-001",
+        "title": "ADR-001: Adoption of PostgreSQL Flexible Server for Relational Storage",
+        "status": "Accepted",
+        "context": "The project requires ACID-compliant relational transactions with automatic point-in-time recovery.",
+        "decision": "Adopt PostgreSQL 16+ on Azure Flexible Server.",
+        "consequences": "Ensures standard SQL schema migrations and automated backups.",
+        "chosen_technology": "PostgreSQL Flexible Server",
+        "decided_by": "E1049"
+      },
+      {
+        "id": "ADR-P-FIN-05-002",
+        "title": "ADR-002: Service-to-Service Communication Protocol",
+        "status": "Accepted",
+        "context": "High-frequency inter-service data exchanges require standard contract definitions.",
+        "decision": "Use asynchronous event publishing via Kafka/Event Hubs for loose coupling.",
+        "consequences": "Consumers must implement idempotent message processing.",
+        "chosen_technology": "Apache Kafka / Event Hubs",
+        "decided_by": "E1049"
+      }
+    ],
+    "pocs": [],
+    "processes": [
+      {
+        "id": "PROC-P-FIN-05-01",
+        "name": "Financial Data Mart Release & Deployment Workflow",
+        "process_type": "CI/CD Deployment Gate",
+        "steps": "1. PR Review -> 2. SonarQube Quality Gate -> 3. Automated Integration Tests -> 4. Blue-Green Production Deployment"
+      }
+    ]
+  },
+  {
+    "space_key": "SPACE_P_FIN_06",
+    "project_id": "P-FIN-06",
+    "name": "Intercompany & Tax Reporting Documentation Space",
+    "description": "Official Confluence engineering and architecture space for Intercompany & Tax Reporting",
+    "pages": [
+      {
+        "id": "CF-PAGE-P-FIN-06-ARCH",
+        "title": "Intercompany & Tax Reporting — Architecture Overview & Topology",
+        "page_type": "architecture-overview",
+        "author": "E1044",
+        "version": 4,
+        "labels": [
+          "architecture",
+          "topology",
+          "solution-design",
+          "fin"
+        ],
+        "body_md": "# Architecture Overview: Intercompany & Tax Reporting (P-FIN-06)\n\n## 1. System Context\nAutomated intercompany matching/netting and country tax reporting (VAT, e-invoicing).\n\n## 2. Infrastructure Topology\n- Primary Cloud Platform: Microsoft Azure & AWS\n- Container Orchestration: Azure Kubernetes Service (AKS)\n- Data Persistence: PostgreSQL Flexible Server & Enterprise Lakehouse\n\n## 3. High Availability & Security\nMulti-zone redundancy active across West Europe and Central India regions. Ingestion TLS 1.3 enforced."
+      },
+      {
+        "id": "CF-PAGE-P-FIN-06-DES",
+        "title": "Intercompany & Tax Reporting — Solution Design & API Specifications",
+        "page_type": "solution-design",
+        "author": "E1044",
+        "version": 3,
+        "labels": [
+          "api",
+          "spec",
+          "design"
+        ],
+        "body_md": "# Solution Design Document\n\n## API Protocols\nRESTful HTTPS JSON API compliant with OpenAPI 3.1 specifications. OAuth 2.0 Bearer tokens issued via Microsoft Entra ID."
+      },
+      {
+        "id": "CF-PAGE-P-FIN-06-RUN",
+        "title": "Intercompany & Tax Reporting — Technical Runbook & Triage Procedures",
+        "page_type": "runbook",
+        "author": "E1044",
+        "version": 2,
+        "labels": [
+          "runbook",
+          "operations",
+          "incident-response"
+        ],
+        "body_md": "# Operational Runbook\n\n## Escalation Matrix\n1. Level 1: Central Service Desk\n2. Level 2: Platform Reliability Team\n3. Level 3: Tech Lead (E1044)"
+      },
+      {
+        "id": "CF-PAGE-P-FIN-06-BUDGET",
+        "title": "Intercompany & Tax Reporting — Cost Center & Budget Planning FY2026",
+        "page_type": "budget",
+        "author": "E1041",
+        "version": 2,
+        "labels": [
+          "finance",
+          "budget",
+          "cost-center"
+        ],
+        "body_md": "# Budget & Cost Allocation FY2026\n\n- Cost Center: CC-FIN-01\n- Business Owner: E1041\n- Capex Allocation: €1,800,000\n- Approved by Executive Board."
+      }
+    ],
+    "adrs": [
+      {
+        "id": "ADR-P-FIN-06-001",
+        "title": "ADR-001: Adoption of PostgreSQL Flexible Server for Relational Storage",
+        "status": "Accepted",
+        "context": "The project requires ACID-compliant relational transactions with automatic point-in-time recovery.",
+        "decision": "Adopt PostgreSQL 16+ on Azure Flexible Server.",
+        "consequences": "Ensures standard SQL schema migrations and automated backups.",
+        "chosen_technology": "PostgreSQL Flexible Server",
+        "decided_by": "E1044"
+      },
+      {
+        "id": "ADR-P-FIN-06-002",
+        "title": "ADR-002: Service-to-Service Communication Protocol",
+        "status": "Accepted",
+        "context": "High-frequency inter-service data exchanges require standard contract definitions.",
+        "decision": "Use asynchronous event publishing via Kafka/Event Hubs for loose coupling.",
+        "consequences": "Consumers must implement idempotent message processing.",
+        "chosen_technology": "Apache Kafka / Event Hubs",
+        "decided_by": "E1044"
+      }
+    ],
+    "pocs": [],
+    "processes": [
+      {
+        "id": "PROC-P-FIN-06-01",
+        "name": "Intercompany & Tax Reporting Release & Deployment Workflow",
+        "process_type": "CI/CD Deployment Gate",
+        "steps": "1. PR Review -> 2. SonarQube Quality Gate -> 3. Automated Integration Tests -> 4. Blue-Green Production Deployment"
+      }
+    ]
+  },
+  {
+    "space_key": "SPACE_P_PRO_01",
+    "project_id": "P-PRO-01",
+    "name": "Supplier Portal Documentation Space",
+    "description": "Official Confluence engineering and architecture space for Supplier Portal",
+    "pages": [
+      {
+        "id": "CF-PAGE-P-PRO-01-ARCH",
+        "title": "Supplier Portal — Architecture Overview & Topology",
+        "page_type": "architecture-overview",
+        "author": "E1054",
+        "version": 4,
+        "labels": [
+          "architecture",
+          "topology",
+          "solution-design",
+          "pro"
+        ],
+        "body_md": "# Architecture Overview: Supplier Portal (P-PRO-01)\n\n## 1. System Context\nWeb portal where suppliers manage orders, delivery schedules, invoices and payment status; microservices on AKS.\n\n## 2. Infrastructure Topology\n- Primary Cloud Platform: Microsoft Azure & AWS\n- Container Orchestration: Azure Kubernetes Service (AKS)\n- Data Persistence: PostgreSQL Flexible Server & Enterprise Lakehouse\n\n## 3. High Availability & Security\nMulti-zone redundancy active across West Europe and Central India regions. Ingestion TLS 1.3 enforced."
+      },
+      {
+        "id": "CF-PAGE-P-PRO-01-DES",
+        "title": "Supplier Portal — Solution Design & API Specifications",
+        "page_type": "solution-design",
+        "author": "E1054",
+        "version": 3,
+        "labels": [
+          "api",
+          "spec",
+          "design"
+        ],
+        "body_md": "# Solution Design Document\n\n## API Protocols\nRESTful HTTPS JSON API compliant with OpenAPI 3.1 specifications. OAuth 2.0 Bearer tokens issued via Microsoft Entra ID."
+      },
+      {
+        "id": "CF-PAGE-P-PRO-01-RUN",
+        "title": "Supplier Portal — Technical Runbook & Triage Procedures",
+        "page_type": "runbook",
+        "author": "E1054",
+        "version": 2,
+        "labels": [
+          "runbook",
+          "operations",
+          "incident-response"
+        ],
+        "body_md": "# Operational Runbook\n\n## Escalation Matrix\n1. Level 1: Central Service Desk\n2. Level 2: Platform Reliability Team\n3. Level 3: Tech Lead (E1054)"
+      },
+      {
+        "id": "CF-PAGE-P-PRO-01-BUDGET",
+        "title": "Supplier Portal — Cost Center & Budget Planning FY2026",
+        "page_type": "budget",
+        "author": "E1050",
+        "version": 2,
+        "labels": [
+          "finance",
+          "budget",
+          "cost-center"
+        ],
+        "body_md": "# Budget & Cost Allocation FY2026\n\n- Cost Center: CC-PRO-01\n- Business Owner: E1050\n- Capex Allocation: €3,500,000\n- Approved by Executive Board."
+      },
+      {
+        "id": "CF-PAGE-P-PRO-01-PERF",
+        "title": "Supplier Portal — Performance Benchmarking & Load Testing",
+        "page_type": "solution-design",
+        "author": "E1054",
+        "version": 1,
+        "labels": [
+          "performance",
+          "benchmarks",
+          "load-testing"
+        ],
+        "body_md": "# Performance Benchmark Results\n\nTested at 15,000 requests/sec with p99 response time under 45ms."
+      }
+    ],
+    "adrs": [
+      {
+        "id": "ADR-P-PRO-01-001",
+        "title": "ADR-001: Adoption of PostgreSQL Flexible Server for Relational Storage",
+        "status": "Accepted",
+        "context": "The project requires ACID-compliant relational transactions with automatic point-in-time recovery.",
+        "decision": "Adopt PostgreSQL 16+ on Azure Flexible Server.",
+        "consequences": "Ensures standard SQL schema migrations and automated backups.",
+        "chosen_technology": "PostgreSQL Flexible Server",
+        "decided_by": "E1054"
+      },
+      {
+        "id": "ADR-P-PRO-01-002",
+        "title": "ADR-002: Service-to-Service Communication Protocol",
+        "status": "Accepted",
+        "context": "High-frequency inter-service data exchanges require standard contract definitions.",
+        "decision": "Use asynchronous event publishing via Kafka/Event Hubs for loose coupling.",
+        "consequences": "Consumers must implement idempotent message processing.",
+        "chosen_technology": "Apache Kafka / Event Hubs",
+        "decided_by": "E1054"
+      }
+    ],
+    "pocs": [
+      {
+        "id": "POC-P-PRO-01-01",
+        "title": "POC: Vector Search Retrieval on Enterprise Catalogs",
+        "hypothesis": "Hybrid semantic search combines keyword and vector embeddings with >90% precision.",
+        "tech_stack": "pgvector + pg_trgm + OpenAI text-embedding-3-small",
+        "results": "Retrieval accuracy improved by 34% over purely lexical search.",
+        "recommendation": "Adopt",
+        "conducted_by": "E1054"
+      }
+    ],
+    "processes": [
+      {
+        "id": "PROC-P-PRO-01-01",
+        "name": "Supplier Portal Release & Deployment Workflow",
+        "process_type": "CI/CD Deployment Gate",
+        "steps": "1. PR Review -> 2. SonarQube Quality Gate -> 3. Automated Integration Tests -> 4. Blue-Green Production Deployment"
+      }
+    ]
+  },
+  {
+    "space_key": "SPACE_P_PRO_02",
+    "project_id": "P-PRO-02",
+    "name": "Ariba Sourcing & Contracts Documentation Space",
+    "description": "Official Confluence engineering and architecture space for Ariba Sourcing & Contracts",
+    "pages": [
+      {
+        "id": "CF-PAGE-P-PRO-02-ARCH",
+        "title": "Ariba Sourcing & Contracts — Architecture Overview & Topology",
+        "page_type": "architecture-overview",
+        "author": "E1055",
+        "version": 4,
+        "labels": [
+          "architecture",
+          "topology",
+          "solution-design",
+          "pro"
+        ],
+        "body_md": "# Architecture Overview: Ariba Sourcing & Contracts (P-PRO-02)\n\n## 1. System Context\nSourcing events, RFQs and contract lifecycle management on SAP Ariba.\n\n## 2. Infrastructure Topology\n- Primary Cloud Platform: Microsoft Azure & AWS\n- Container Orchestration: Azure Kubernetes Service (AKS)\n- Data Persistence: PostgreSQL Flexible Server & Enterprise Lakehouse\n\n## 3. High Availability & Security\nMulti-zone redundancy active across West Europe and Central India regions. Ingestion TLS 1.3 enforced."
+      },
+      {
+        "id": "CF-PAGE-P-PRO-02-DES",
+        "title": "Ariba Sourcing & Contracts — Solution Design & API Specifications",
+        "page_type": "solution-design",
+        "author": "E1055",
+        "version": 3,
+        "labels": [
+          "api",
+          "spec",
+          "design"
+        ],
+        "body_md": "# Solution Design Document\n\n## API Protocols\nRESTful HTTPS JSON API compliant with OpenAPI 3.1 specifications. OAuth 2.0 Bearer tokens issued via Microsoft Entra ID."
+      },
+      {
+        "id": "CF-PAGE-P-PRO-02-RUN",
+        "title": "Ariba Sourcing & Contracts — Technical Runbook & Triage Procedures",
+        "page_type": "runbook",
+        "author": "E1055",
+        "version": 2,
+        "labels": [
+          "runbook",
+          "operations",
+          "incident-response"
+        ],
+        "body_md": "# Operational Runbook\n\n## Escalation Matrix\n1. Level 1: Central Service Desk\n2. Level 2: Platform Reliability Team\n3. Level 3: Tech Lead (E1055)"
+      },
+      {
+        "id": "CF-PAGE-P-PRO-02-BUDGET",
+        "title": "Ariba Sourcing & Contracts — Cost Center & Budget Planning FY2026",
+        "page_type": "budget",
+        "author": "E1051",
+        "version": 2,
+        "labels": [
+          "finance",
+          "budget",
+          "cost-center"
+        ],
+        "body_md": "# Budget & Cost Allocation FY2026\n\n- Cost Center: CC-PRO-01\n- Business Owner: E1051\n- Capex Allocation: €1,800,000\n- Approved by Executive Board."
+      }
+    ],
+    "adrs": [
+      {
+        "id": "ADR-P-PRO-02-001",
+        "title": "ADR-001: Adoption of PostgreSQL Flexible Server for Relational Storage",
+        "status": "Accepted",
+        "context": "The project requires ACID-compliant relational transactions with automatic point-in-time recovery.",
+        "decision": "Adopt PostgreSQL 16+ on Azure Flexible Server.",
+        "consequences": "Ensures standard SQL schema migrations and automated backups.",
+        "chosen_technology": "PostgreSQL Flexible Server",
+        "decided_by": "E1055"
+      },
+      {
+        "id": "ADR-P-PRO-02-002",
+        "title": "ADR-002: Service-to-Service Communication Protocol",
+        "status": "Accepted",
+        "context": "High-frequency inter-service data exchanges require standard contract definitions.",
+        "decision": "Use asynchronous event publishing via Kafka/Event Hubs for loose coupling.",
+        "consequences": "Consumers must implement idempotent message processing.",
+        "chosen_technology": "Apache Kafka / Event Hubs",
+        "decided_by": "E1055"
+      }
+    ],
+    "pocs": [],
+    "processes": [
+      {
+        "id": "PROC-P-PRO-02-01",
+        "name": "Ariba Sourcing & Contracts Release & Deployment Workflow",
+        "process_type": "CI/CD Deployment Gate",
+        "steps": "1. PR Review -> 2. SonarQube Quality Gate -> 3. Automated Integration Tests -> 4. Blue-Green Production Deployment"
+      }
+    ]
+  },
+  {
+    "space_key": "SPACE_P_PRO_03",
+    "project_id": "P-PRO-03",
+    "name": "Procure-to-Pay Invoice Automation Documentation Space",
+    "description": "Official Confluence engineering and architecture space for Procure-to-Pay Invoice Automation",
+    "pages": [
+      {
+        "id": "CF-PAGE-P-PRO-03-ARCH",
+        "title": "Procure-to-Pay Invoice Automation — Architecture Overview & Topology",
+        "page_type": "architecture-overview",
+        "author": "E1056",
+        "version": 4,
+        "labels": [
+          "architecture",
+          "topology",
+          "solution-design",
+          "pro"
+        ],
+        "body_md": "# Architecture Overview: Procure-to-Pay Invoice Automation (P-PRO-03)\n\n## 1. System Context\nAutomated invoice capture, three-way match and posting to S/4 to cut manual AP effort.\n\n## 2. Infrastructure Topology\n- Primary Cloud Platform: Microsoft Azure & AWS\n- Container Orchestration: Azure Kubernetes Service (AKS)\n- Data Persistence: PostgreSQL Flexible Server & Enterprise Lakehouse\n\n## 3. High Availability & Security\nMulti-zone redundancy active across West Europe and Central India regions. Ingestion TLS 1.3 enforced."
+      },
+      {
+        "id": "CF-PAGE-P-PRO-03-DES",
+        "title": "Procure-to-Pay Invoice Automation — Solution Design & API Specifications",
+        "page_type": "solution-design",
+        "author": "E1056",
+        "version": 3,
+        "labels": [
+          "api",
+          "spec",
+          "design"
+        ],
+        "body_md": "# Solution Design Document\n\n## API Protocols\nRESTful HTTPS JSON API compliant with OpenAPI 3.1 specifications. OAuth 2.0 Bearer tokens issued via Microsoft Entra ID."
+      },
+      {
+        "id": "CF-PAGE-P-PRO-03-RUN",
+        "title": "Procure-to-Pay Invoice Automation — Technical Runbook & Triage Procedures",
+        "page_type": "runbook",
+        "author": "E1056",
+        "version": 2,
+        "labels": [
+          "runbook",
+          "operations",
+          "incident-response"
+        ],
+        "body_md": "# Operational Runbook\n\n## Escalation Matrix\n1. Level 1: Central Service Desk\n2. Level 2: Platform Reliability Team\n3. Level 3: Tech Lead (E1056)"
+      },
+      {
+        "id": "CF-PAGE-P-PRO-03-BUDGET",
+        "title": "Procure-to-Pay Invoice Automation — Cost Center & Budget Planning FY2026",
+        "page_type": "budget",
+        "author": "E1050",
+        "version": 2,
+        "labels": [
+          "finance",
+          "budget",
+          "cost-center"
+        ],
+        "body_md": "# Budget & Cost Allocation FY2026\n\n- Cost Center: CC-PRO-01\n- Business Owner: E1050\n- Capex Allocation: €1,800,000\n- Approved by Executive Board."
+      }
+    ],
+    "adrs": [
+      {
+        "id": "ADR-P-PRO-03-001",
+        "title": "ADR-001: Adoption of PostgreSQL Flexible Server for Relational Storage",
+        "status": "Accepted",
+        "context": "The project requires ACID-compliant relational transactions with automatic point-in-time recovery.",
+        "decision": "Adopt PostgreSQL 16+ on Azure Flexible Server.",
+        "consequences": "Ensures standard SQL schema migrations and automated backups.",
+        "chosen_technology": "PostgreSQL Flexible Server",
+        "decided_by": "E1056"
+      },
+      {
+        "id": "ADR-P-PRO-03-002",
+        "title": "ADR-002: Service-to-Service Communication Protocol",
+        "status": "Accepted",
+        "context": "High-frequency inter-service data exchanges require standard contract definitions.",
+        "decision": "Use asynchronous event publishing via Kafka/Event Hubs for loose coupling.",
+        "consequences": "Consumers must implement idempotent message processing.",
+        "chosen_technology": "Apache Kafka / Event Hubs",
+        "decided_by": "E1056"
+      }
+    ],
+    "pocs": [],
+    "processes": [
+      {
+        "id": "PROC-P-PRO-03-01",
+        "name": "Procure-to-Pay Invoice Automation Release & Deployment Workflow",
+        "process_type": "CI/CD Deployment Gate",
+        "steps": "1. PR Review -> 2. SonarQube Quality Gate -> 3. Automated Integration Tests -> 4. Blue-Green Production Deployment"
+      }
+    ]
+  },
+  {
+    "space_key": "SPACE_P_PRO_04",
+    "project_id": "P-PRO-04",
+    "name": "Spend Analytics Documentation Space",
+    "description": "Official Confluence engineering and architecture space for Spend Analytics",
+    "pages": [
+      {
+        "id": "CF-PAGE-P-PRO-04-ARCH",
+        "title": "Spend Analytics — Architecture Overview & Topology",
+        "page_type": "architecture-overview",
+        "author": "E1057",
+        "version": 4,
+        "labels": [
+          "architecture",
+          "topology",
+          "solution-design",
+          "pro"
+        ],
+        "body_md": "# Architecture Overview: Spend Analytics (P-PRO-04)\n\n## 1. System Context\nSpend cube by category, supplier and plant; tracks savings and maverick buying.\n\n## 2. Infrastructure Topology\n- Primary Cloud Platform: Microsoft Azure & AWS\n- Container Orchestration: Azure Kubernetes Service (AKS)\n- Data Persistence: PostgreSQL Flexible Server & Enterprise Lakehouse\n\n## 3. High Availability & Security\nMulti-zone redundancy active across West Europe and Central India regions. Ingestion TLS 1.3 enforced."
+      },
+      {
+        "id": "CF-PAGE-P-PRO-04-DES",
+        "title": "Spend Analytics — Solution Design & API Specifications",
+        "page_type": "solution-design",
+        "author": "E1057",
+        "version": 3,
+        "labels": [
+          "api",
+          "spec",
+          "design"
+        ],
+        "body_md": "# Solution Design Document\n\n## API Protocols\nRESTful HTTPS JSON API compliant with OpenAPI 3.1 specifications. OAuth 2.0 Bearer tokens issued via Microsoft Entra ID."
+      },
+      {
+        "id": "CF-PAGE-P-PRO-04-RUN",
+        "title": "Spend Analytics — Technical Runbook & Triage Procedures",
+        "page_type": "runbook",
+        "author": "E1057",
+        "version": 2,
+        "labels": [
+          "runbook",
+          "operations",
+          "incident-response"
+        ],
+        "body_md": "# Operational Runbook\n\n## Escalation Matrix\n1. Level 1: Central Service Desk\n2. Level 2: Platform Reliability Team\n3. Level 3: Tech Lead (E1057)"
+      },
+      {
+        "id": "CF-PAGE-P-PRO-04-BUDGET",
+        "title": "Spend Analytics — Cost Center & Budget Planning FY2026",
+        "page_type": "budget",
+        "author": "E1052",
+        "version": 2,
+        "labels": [
+          "finance",
+          "budget",
+          "cost-center"
+        ],
+        "body_md": "# Budget & Cost Allocation FY2026\n\n- Cost Center: CC-PRO-01\n- Business Owner: E1052\n- Capex Allocation: €1,800,000\n- Approved by Executive Board."
+      }
+    ],
+    "adrs": [
+      {
+        "id": "ADR-P-PRO-04-001",
+        "title": "ADR-001: Adoption of PostgreSQL Flexible Server for Relational Storage",
+        "status": "Accepted",
+        "context": "The project requires ACID-compliant relational transactions with automatic point-in-time recovery.",
+        "decision": "Adopt PostgreSQL 16+ on Azure Flexible Server.",
+        "consequences": "Ensures standard SQL schema migrations and automated backups.",
+        "chosen_technology": "PostgreSQL Flexible Server",
+        "decided_by": "E1057"
+      },
+      {
+        "id": "ADR-P-PRO-04-002",
+        "title": "ADR-002: Service-to-Service Communication Protocol",
+        "status": "Accepted",
+        "context": "High-frequency inter-service data exchanges require standard contract definitions.",
+        "decision": "Use asynchronous event publishing via Kafka/Event Hubs for loose coupling.",
+        "consequences": "Consumers must implement idempotent message processing.",
+        "chosen_technology": "Apache Kafka / Event Hubs",
+        "decided_by": "E1057"
+      }
+    ],
+    "pocs": [],
+    "processes": [
+      {
+        "id": "PROC-P-PRO-04-01",
+        "name": "Spend Analytics Release & Deployment Workflow",
+        "process_type": "CI/CD Deployment Gate",
+        "steps": "1. PR Review -> 2. SonarQube Quality Gate -> 3. Automated Integration Tests -> 4. Blue-Green Production Deployment"
+      }
+    ]
+  },
+  {
+    "space_key": "SPACE_P_PRO_05",
+    "project_id": "P-PRO-05",
+    "name": "Supplier Risk Scoring Documentation Space",
+    "description": "Official Confluence engineering and architecture space for Supplier Risk Scoring",
+    "pages": [
+      {
+        "id": "CF-PAGE-P-PRO-05-ARCH",
+        "title": "Supplier Risk Scoring — Architecture Overview & Topology",
+        "page_type": "architecture-overview",
+        "author": "E1058",
+        "version": 4,
+        "labels": [
+          "architecture",
+          "topology",
+          "solution-design",
+          "pro"
+        ],
+        "body_md": "# Architecture Overview: Supplier Risk Scoring (P-PRO-05)\n\n## 1. System Context\nML models scoring suppliers on financial, delivery and cyber risk to flag supply disruptions early.\n\n## 2. Infrastructure Topology\n- Primary Cloud Platform: Microsoft Azure & AWS\n- Container Orchestration: Azure Kubernetes Service (AKS)\n- Data Persistence: PostgreSQL Flexible Server & Enterprise Lakehouse\n\n## 3. High Availability & Security\nMulti-zone redundancy active across West Europe and Central India regions. Ingestion TLS 1.3 enforced."
+      },
+      {
+        "id": "CF-PAGE-P-PRO-05-DES",
+        "title": "Supplier Risk Scoring — Solution Design & API Specifications",
+        "page_type": "solution-design",
+        "author": "E1058",
+        "version": 3,
+        "labels": [
+          "api",
+          "spec",
+          "design"
+        ],
+        "body_md": "# Solution Design Document\n\n## API Protocols\nRESTful HTTPS JSON API compliant with OpenAPI 3.1 specifications. OAuth 2.0 Bearer tokens issued via Microsoft Entra ID."
+      },
+      {
+        "id": "CF-PAGE-P-PRO-05-RUN",
+        "title": "Supplier Risk Scoring — Technical Runbook & Triage Procedures",
+        "page_type": "runbook",
+        "author": "E1058",
+        "version": 2,
+        "labels": [
+          "runbook",
+          "operations",
+          "incident-response"
+        ],
+        "body_md": "# Operational Runbook\n\n## Escalation Matrix\n1. Level 1: Central Service Desk\n2. Level 2: Platform Reliability Team\n3. Level 3: Tech Lead (E1058)"
+      },
+      {
+        "id": "CF-PAGE-P-PRO-05-BUDGET",
+        "title": "Supplier Risk Scoring — Cost Center & Budget Planning FY2026",
+        "page_type": "budget",
+        "author": "E1051",
+        "version": 2,
+        "labels": [
+          "finance",
+          "budget",
+          "cost-center"
+        ],
+        "body_md": "# Budget & Cost Allocation FY2026\n\n- Cost Center: CC-PRO-01\n- Business Owner: E1051\n- Capex Allocation: €1,800,000\n- Approved by Executive Board."
+      }
+    ],
+    "adrs": [
+      {
+        "id": "ADR-P-PRO-05-001",
+        "title": "ADR-001: Adoption of PostgreSQL Flexible Server for Relational Storage",
+        "status": "Accepted",
+        "context": "The project requires ACID-compliant relational transactions with automatic point-in-time recovery.",
+        "decision": "Adopt PostgreSQL 16+ on Azure Flexible Server.",
+        "consequences": "Ensures standard SQL schema migrations and automated backups.",
+        "chosen_technology": "PostgreSQL Flexible Server",
+        "decided_by": "E1058"
+      },
+      {
+        "id": "ADR-P-PRO-05-002",
+        "title": "ADR-002: Service-to-Service Communication Protocol",
+        "status": "Accepted",
+        "context": "High-frequency inter-service data exchanges require standard contract definitions.",
+        "decision": "Use asynchronous event publishing via Kafka/Event Hubs for loose coupling.",
+        "consequences": "Consumers must implement idempotent message processing.",
+        "chosen_technology": "Apache Kafka / Event Hubs",
+        "decided_by": "E1058"
+      }
+    ],
+    "pocs": [],
+    "processes": [
+      {
+        "id": "PROC-P-PRO-05-01",
+        "name": "Supplier Risk Scoring Release & Deployment Workflow",
+        "process_type": "CI/CD Deployment Gate",
+        "steps": "1. PR Review -> 2. SonarQube Quality Gate -> 3. Automated Integration Tests -> 4. Blue-Green Production Deployment"
+      }
+    ]
+  },
+  {
+    "space_key": "SPACE_P_DTFS_01",
+    "project_id": "P-DTFS-01",
+    "name": "Loan Origination Platform Documentation Space",
+    "description": "Official Confluence engineering and architecture space for Loan Origination Platform",
+    "pages": [
+      {
+        "id": "CF-PAGE-P-DTFS-01-ARCH",
+        "title": "Loan Origination Platform — Architecture Overview & Topology",
+        "page_type": "architecture-overview",
+        "author": "E1062",
+        "version": 4,
+        "labels": [
+          "architecture",
+          "topology",
+          "solution-design",
+          "dtfs"
+        ],
+        "body_md": "# Architecture Overview: Loan Origination Platform (P-DTFS-01)\n\n## 1. System Context\nDigital loan/lease application for dealers and customers; orchestrates KYC, credit decision and contract creation.\n\n## 2. Infrastructure Topology\n- Primary Cloud Platform: Microsoft Azure & AWS\n- Container Orchestration: Azure Kubernetes Service (AKS)\n- Data Persistence: PostgreSQL Flexible Server & Enterprise Lakehouse\n\n## 3. High Availability & Security\nMulti-zone redundancy active across West Europe and Central India regions. Ingestion TLS 1.3 enforced."
+      },
+      {
+        "id": "CF-PAGE-P-DTFS-01-DES",
+        "title": "Loan Origination Platform — Solution Design & API Specifications",
+        "page_type": "solution-design",
+        "author": "E1062",
+        "version": 3,
+        "labels": [
+          "api",
+          "spec",
+          "design"
+        ],
+        "body_md": "# Solution Design Document\n\n## API Protocols\nRESTful HTTPS JSON API compliant with OpenAPI 3.1 specifications. OAuth 2.0 Bearer tokens issued via Microsoft Entra ID."
+      },
+      {
+        "id": "CF-PAGE-P-DTFS-01-RUN",
+        "title": "Loan Origination Platform — Technical Runbook & Triage Procedures",
+        "page_type": "runbook",
+        "author": "E1062",
+        "version": 2,
+        "labels": [
+          "runbook",
+          "operations",
+          "incident-response"
+        ],
+        "body_md": "# Operational Runbook\n\n## Escalation Matrix\n1. Level 1: Central Service Desk\n2. Level 2: Platform Reliability Team\n3. Level 3: Tech Lead (E1062)"
+      },
+      {
+        "id": "CF-PAGE-P-DTFS-01-BUDGET",
+        "title": "Loan Origination Platform — Cost Center & Budget Planning FY2026",
+        "page_type": "budget",
+        "author": "E1061",
+        "version": 2,
+        "labels": [
+          "finance",
+          "budget",
+          "cost-center"
+        ],
+        "body_md": "# Budget & Cost Allocation FY2026\n\n- Cost Center: CC-DTFS-01\n- Business Owner: E1061\n- Capex Allocation: €3,500,000\n- Approved by Executive Board."
+      },
+      {
+        "id": "CF-PAGE-P-DTFS-01-PERF",
+        "title": "Loan Origination Platform — Performance Benchmarking & Load Testing",
+        "page_type": "solution-design",
+        "author": "E1062",
+        "version": 1,
+        "labels": [
+          "performance",
+          "benchmarks",
+          "load-testing"
+        ],
+        "body_md": "# Performance Benchmark Results\n\nTested at 15,000 requests/sec with p99 response time under 45ms."
+      }
+    ],
+    "adrs": [
+      {
+        "id": "ADR-P-DTFS-01-001",
+        "title": "ADR-001: Adoption of PostgreSQL Flexible Server for Relational Storage",
+        "status": "Accepted",
+        "context": "The project requires ACID-compliant relational transactions with automatic point-in-time recovery.",
+        "decision": "Adopt PostgreSQL 16+ on Azure Flexible Server.",
+        "consequences": "Ensures standard SQL schema migrations and automated backups.",
+        "chosen_technology": "PostgreSQL Flexible Server",
+        "decided_by": "E1062"
+      },
+      {
+        "id": "ADR-P-DTFS-01-002",
+        "title": "ADR-002: Service-to-Service Communication Protocol",
+        "status": "Accepted",
+        "context": "High-frequency inter-service data exchanges require standard contract definitions.",
+        "decision": "Use asynchronous event publishing via Kafka/Event Hubs for loose coupling.",
+        "consequences": "Consumers must implement idempotent message processing.",
+        "chosen_technology": "Apache Kafka / Event Hubs",
+        "decided_by": "E1062"
+      }
+    ],
+    "pocs": [
+      {
+        "id": "POC-P-DTFS-01-01",
+        "title": "POC: Vector Search Retrieval on Enterprise Catalogs",
+        "hypothesis": "Hybrid semantic search combines keyword and vector embeddings with >90% precision.",
+        "tech_stack": "pgvector + pg_trgm + OpenAI text-embedding-3-small",
+        "results": "Retrieval accuracy improved by 34% over purely lexical search.",
+        "recommendation": "Adopt",
+        "conducted_by": "E1062"
+      }
+    ],
+    "processes": [
+      {
+        "id": "PROC-P-DTFS-01-01",
+        "name": "Loan Origination Platform Release & Deployment Workflow",
+        "process_type": "CI/CD Deployment Gate",
+        "steps": "1. PR Review -> 2. SonarQube Quality Gate -> 3. Automated Integration Tests -> 4. Blue-Green Production Deployment"
+      }
+    ]
+  },
+  {
+    "space_key": "SPACE_P_DTFS_02",
+    "project_id": "P-DTFS-02",
+    "name": "Credit Scoring Engine Documentation Space",
+    "description": "Official Confluence engineering and architecture space for Credit Scoring Engine",
+    "pages": [
+      {
+        "id": "CF-PAGE-P-DTFS-02-ARCH",
+        "title": "Credit Scoring Engine — Architecture Overview & Topology",
+        "page_type": "architecture-overview",
+        "author": "E1067",
+        "version": 4,
+        "labels": [
+          "architecture",
+          "topology",
+          "solution-design",
+          "dtfs"
+        ],
+        "body_md": "# Architecture Overview: Credit Scoring Engine (P-DTFS-02)\n\n## 1. System Context\nML credit scoring and decision service called in real time by origination.\n\n## 2. Infrastructure Topology\n- Primary Cloud Platform: Microsoft Azure & AWS\n- Container Orchestration: Azure Kubernetes Service (AKS)\n- Data Persistence: PostgreSQL Flexible Server & Enterprise Lakehouse\n\n## 3. High Availability & Security\nMulti-zone redundancy active across West Europe and Central India regions. Ingestion TLS 1.3 enforced."
+      },
+      {
+        "id": "CF-PAGE-P-DTFS-02-DES",
+        "title": "Credit Scoring Engine — Solution Design & API Specifications",
+        "page_type": "solution-design",
+        "author": "E1067",
+        "version": 3,
+        "labels": [
+          "api",
+          "spec",
+          "design"
+        ],
+        "body_md": "# Solution Design Document\n\n## API Protocols\nRESTful HTTPS JSON API compliant with OpenAPI 3.1 specifications. OAuth 2.0 Bearer tokens issued via Microsoft Entra ID."
+      },
+      {
+        "id": "CF-PAGE-P-DTFS-02-RUN",
+        "title": "Credit Scoring Engine — Technical Runbook & Triage Procedures",
+        "page_type": "runbook",
+        "author": "E1067",
+        "version": 2,
+        "labels": [
+          "runbook",
+          "operations",
+          "incident-response"
+        ],
+        "body_md": "# Operational Runbook\n\n## Escalation Matrix\n1. Level 1: Central Service Desk\n2. Level 2: Platform Reliability Team\n3. Level 3: Tech Lead (E1067)"
+      },
+      {
+        "id": "CF-PAGE-P-DTFS-02-BUDGET",
+        "title": "Credit Scoring Engine — Cost Center & Budget Planning FY2026",
+        "page_type": "budget",
+        "author": "E1060",
+        "version": 2,
+        "labels": [
+          "finance",
+          "budget",
+          "cost-center"
+        ],
+        "body_md": "# Budget & Cost Allocation FY2026\n\n- Cost Center: CC-DTFS-01\n- Business Owner: E1060\n- Capex Allocation: €1,800,000\n- Approved by Executive Board."
+      }
+    ],
+    "adrs": [
+      {
+        "id": "ADR-P-DTFS-02-001",
+        "title": "ADR-001: Adoption of PostgreSQL Flexible Server for Relational Storage",
+        "status": "Accepted",
+        "context": "The project requires ACID-compliant relational transactions with automatic point-in-time recovery.",
+        "decision": "Adopt PostgreSQL 16+ on Azure Flexible Server.",
+        "consequences": "Ensures standard SQL schema migrations and automated backups.",
+        "chosen_technology": "PostgreSQL Flexible Server",
+        "decided_by": "E1067"
+      },
+      {
+        "id": "ADR-P-DTFS-02-002",
+        "title": "ADR-002: Service-to-Service Communication Protocol",
+        "status": "Accepted",
+        "context": "High-frequency inter-service data exchanges require standard contract definitions.",
+        "decision": "Use asynchronous event publishing via Kafka/Event Hubs for loose coupling.",
+        "consequences": "Consumers must implement idempotent message processing.",
+        "chosen_technology": "Apache Kafka / Event Hubs",
+        "decided_by": "E1067"
+      }
+    ],
+    "pocs": [],
+    "processes": [
+      {
+        "id": "PROC-P-DTFS-02-01",
+        "name": "Credit Scoring Engine Release & Deployment Workflow",
+        "process_type": "CI/CD Deployment Gate",
+        "steps": "1. PR Review -> 2. SonarQube Quality Gate -> 3. Automated Integration Tests -> 4. Blue-Green Production Deployment"
+      }
+    ]
+  },
+  {
+    "space_key": "SPACE_P_DTFS_03",
+    "project_id": "P-DTFS-03",
+    "name": "Lease & Contract Management Documentation Space",
+    "description": "Official Confluence engineering and architecture space for Lease & Contract Management",
+    "pages": [
+      {
+        "id": "CF-PAGE-P-DTFS-03-ARCH",
+        "title": "Lease & Contract Management — Architecture Overview & Topology",
+        "page_type": "architecture-overview",
+        "author": "E1063",
+        "version": 4,
+        "labels": [
+          "architecture",
+          "topology",
+          "solution-design",
+          "dtfs"
+        ],
+        "body_md": "# Architecture Overview: Lease & Contract Management (P-DTFS-03)\n\n## 1. System Context\nBook of record for lease and loan contracts, payment schedules and accounting postings.\n\n## 2. Infrastructure Topology\n- Primary Cloud Platform: Microsoft Azure & AWS\n- Container Orchestration: Azure Kubernetes Service (AKS)\n- Data Persistence: PostgreSQL Flexible Server & Enterprise Lakehouse\n\n## 3. High Availability & Security\nMulti-zone redundancy active across West Europe and Central India regions. Ingestion TLS 1.3 enforced."
+      },
+      {
+        "id": "CF-PAGE-P-DTFS-03-DES",
+        "title": "Lease & Contract Management — Solution Design & API Specifications",
+        "page_type": "solution-design",
+        "author": "E1063",
+        "version": 3,
+        "labels": [
+          "api",
+          "spec",
+          "design"
+        ],
+        "body_md": "# Solution Design Document\n\n## API Protocols\nRESTful HTTPS JSON API compliant with OpenAPI 3.1 specifications. OAuth 2.0 Bearer tokens issued via Microsoft Entra ID."
+      },
+      {
+        "id": "CF-PAGE-P-DTFS-03-RUN",
+        "title": "Lease & Contract Management — Technical Runbook & Triage Procedures",
+        "page_type": "runbook",
+        "author": "E1063",
+        "version": 2,
+        "labels": [
+          "runbook",
+          "operations",
+          "incident-response"
+        ],
+        "body_md": "# Operational Runbook\n\n## Escalation Matrix\n1. Level 1: Central Service Desk\n2. Level 2: Platform Reliability Team\n3. Level 3: Tech Lead (E1063)"
+      },
+      {
+        "id": "CF-PAGE-P-DTFS-03-BUDGET",
+        "title": "Lease & Contract Management — Cost Center & Budget Planning FY2026",
+        "page_type": "budget",
+        "author": "E1059",
+        "version": 2,
+        "labels": [
+          "finance",
+          "budget",
+          "cost-center"
+        ],
+        "body_md": "# Budget & Cost Allocation FY2026\n\n- Cost Center: CC-DTFS-01\n- Business Owner: E1059\n- Capex Allocation: €1,800,000\n- Approved by Executive Board."
+      }
+    ],
+    "adrs": [
+      {
+        "id": "ADR-P-DTFS-03-001",
+        "title": "ADR-001: Adoption of PostgreSQL Flexible Server for Relational Storage",
+        "status": "Accepted",
+        "context": "The project requires ACID-compliant relational transactions with automatic point-in-time recovery.",
+        "decision": "Adopt PostgreSQL 16+ on Azure Flexible Server.",
+        "consequences": "Ensures standard SQL schema migrations and automated backups.",
+        "chosen_technology": "PostgreSQL Flexible Server",
+        "decided_by": "E1063"
+      },
+      {
+        "id": "ADR-P-DTFS-03-002",
+        "title": "ADR-002: Service-to-Service Communication Protocol",
+        "status": "Accepted",
+        "context": "High-frequency inter-service data exchanges require standard contract definitions.",
+        "decision": "Use asynchronous event publishing via Kafka/Event Hubs for loose coupling.",
+        "consequences": "Consumers must implement idempotent message processing.",
+        "chosen_technology": "Apache Kafka / Event Hubs",
+        "decided_by": "E1063"
+      }
+    ],
+    "pocs": [],
+    "processes": [
+      {
+        "id": "PROC-P-DTFS-03-01",
+        "name": "Lease & Contract Management Release & Deployment Workflow",
+        "process_type": "CI/CD Deployment Gate",
+        "steps": "1. PR Review -> 2. SonarQube Quality Gate -> 3. Automated Integration Tests -> 4. Blue-Green Production Deployment"
+      }
+    ]
+  },
+  {
+    "space_key": "SPACE_P_DTFS_04",
+    "project_id": "P-DTFS-04",
+    "name": "Collections & Servicing Platform Documentation Space",
+    "description": "Official Confluence engineering and architecture space for Collections & Servicing Platform",
+    "pages": [
+      {
+        "id": "CF-PAGE-P-DTFS-04-ARCH",
+        "title": "Collections & Servicing Platform — Architecture Overview & Topology",
+        "page_type": "architecture-overview",
+        "author": "E1070",
+        "version": 4,
+        "labels": [
+          "architecture",
+          "topology",
+          "solution-design",
+          "dtfs"
+        ],
+        "body_md": "# Architecture Overview: Collections & Servicing Platform (P-DTFS-04)\n\n## 1. System Context\nCustomer servicing, dunning and collections workflows for delinquent contracts.\n\n## 2. Infrastructure Topology\n- Primary Cloud Platform: Microsoft Azure & AWS\n- Container Orchestration: Azure Kubernetes Service (AKS)\n- Data Persistence: PostgreSQL Flexible Server & Enterprise Lakehouse\n\n## 3. High Availability & Security\nMulti-zone redundancy active across West Europe and Central India regions. Ingestion TLS 1.3 enforced."
+      },
+      {
+        "id": "CF-PAGE-P-DTFS-04-DES",
+        "title": "Collections & Servicing Platform — Solution Design & API Specifications",
+        "page_type": "solution-design",
+        "author": "E1070",
+        "version": 3,
+        "labels": [
+          "api",
+          "spec",
+          "design"
+        ],
+        "body_md": "# Solution Design Document\n\n## API Protocols\nRESTful HTTPS JSON API compliant with OpenAPI 3.1 specifications. OAuth 2.0 Bearer tokens issued via Microsoft Entra ID."
+      },
+      {
+        "id": "CF-PAGE-P-DTFS-04-RUN",
+        "title": "Collections & Servicing Platform — Technical Runbook & Triage Procedures",
+        "page_type": "runbook",
+        "author": "E1070",
+        "version": 2,
+        "labels": [
+          "runbook",
+          "operations",
+          "incident-response"
+        ],
+        "body_md": "# Operational Runbook\n\n## Escalation Matrix\n1. Level 1: Central Service Desk\n2. Level 2: Platform Reliability Team\n3. Level 3: Tech Lead (E1070)"
+      },
+      {
+        "id": "CF-PAGE-P-DTFS-04-BUDGET",
+        "title": "Collections & Servicing Platform — Cost Center & Budget Planning FY2026",
+        "page_type": "budget",
+        "author": "E1069",
+        "version": 2,
+        "labels": [
+          "finance",
+          "budget",
+          "cost-center"
+        ],
+        "body_md": "# Budget & Cost Allocation FY2026\n\n- Cost Center: CC-DTFS-01\n- Business Owner: E1069\n- Capex Allocation: €1,800,000\n- Approved by Executive Board."
+      }
+    ],
+    "adrs": [
+      {
+        "id": "ADR-P-DTFS-04-001",
+        "title": "ADR-001: Adoption of PostgreSQL Flexible Server for Relational Storage",
+        "status": "Accepted",
+        "context": "The project requires ACID-compliant relational transactions with automatic point-in-time recovery.",
+        "decision": "Adopt PostgreSQL 16+ on Azure Flexible Server.",
+        "consequences": "Ensures standard SQL schema migrations and automated backups.",
+        "chosen_technology": "PostgreSQL Flexible Server",
+        "decided_by": "E1070"
+      },
+      {
+        "id": "ADR-P-DTFS-04-002",
+        "title": "ADR-002: Service-to-Service Communication Protocol",
+        "status": "Accepted",
+        "context": "High-frequency inter-service data exchanges require standard contract definitions.",
+        "decision": "Use asynchronous event publishing via Kafka/Event Hubs for loose coupling.",
+        "consequences": "Consumers must implement idempotent message processing.",
+        "chosen_technology": "Apache Kafka / Event Hubs",
+        "decided_by": "E1070"
+      }
+    ],
+    "pocs": [],
+    "processes": [
+      {
+        "id": "PROC-P-DTFS-04-01",
+        "name": "Collections & Servicing Platform Release & Deployment Workflow",
+        "process_type": "CI/CD Deployment Gate",
+        "steps": "1. PR Review -> 2. SonarQube Quality Gate -> 3. Automated Integration Tests -> 4. Blue-Green Production Deployment"
+      }
+    ]
+  },
+  {
+    "space_key": "SPACE_P_DTFS_05",
+    "project_id": "P-DTFS-05",
+    "name": "Regulatory Reporting (IFRS 9 / Basel) Documentation Space",
+    "description": "Official Confluence engineering and architecture space for Regulatory Reporting (IFRS 9 / Basel)",
+    "pages": [
+      {
+        "id": "CF-PAGE-P-DTFS-05-ARCH",
+        "title": "Regulatory Reporting (IFRS 9 / Basel) — Architecture Overview & Topology",
+        "page_type": "architecture-overview",
+        "author": "E1068",
+        "version": 4,
+        "labels": [
+          "architecture",
+          "topology",
+          "solution-design",
+          "dtfs"
+        ],
+        "body_md": "# Architecture Overview: Regulatory Reporting (IFRS 9 / Basel) (P-DTFS-05)\n\n## 1. System Context\nRegulatory and impairment reporting for financial services entities in multiple countries.\n\n## 2. Infrastructure Topology\n- Primary Cloud Platform: Microsoft Azure & AWS\n- Container Orchestration: Azure Kubernetes Service (AKS)\n- Data Persistence: PostgreSQL Flexible Server & Enterprise Lakehouse\n\n## 3. High Availability & Security\nMulti-zone redundancy active across West Europe and Central India regions. Ingestion TLS 1.3 enforced."
+      },
+      {
+        "id": "CF-PAGE-P-DTFS-05-DES",
+        "title": "Regulatory Reporting (IFRS 9 / Basel) — Solution Design & API Specifications",
+        "page_type": "solution-design",
+        "author": "E1068",
+        "version": 3,
+        "labels": [
+          "api",
+          "spec",
+          "design"
+        ],
+        "body_md": "# Solution Design Document\n\n## API Protocols\nRESTful HTTPS JSON API compliant with OpenAPI 3.1 specifications. OAuth 2.0 Bearer tokens issued via Microsoft Entra ID."
+      },
+      {
+        "id": "CF-PAGE-P-DTFS-05-RUN",
+        "title": "Regulatory Reporting (IFRS 9 / Basel) — Technical Runbook & Triage Procedures",
+        "page_type": "runbook",
+        "author": "E1068",
+        "version": 2,
+        "labels": [
+          "runbook",
+          "operations",
+          "incident-response"
+        ],
+        "body_md": "# Operational Runbook\n\n## Escalation Matrix\n1. Level 1: Central Service Desk\n2. Level 2: Platform Reliability Team\n3. Level 3: Tech Lead (E1068)"
+      },
+      {
+        "id": "CF-PAGE-P-DTFS-05-BUDGET",
+        "title": "Regulatory Reporting (IFRS 9 / Basel) — Cost Center & Budget Planning FY2026",
+        "page_type": "budget",
+        "author": "E1059",
+        "version": 2,
+        "labels": [
+          "finance",
+          "budget",
+          "cost-center"
+        ],
+        "body_md": "# Budget & Cost Allocation FY2026\n\n- Cost Center: CC-DTFS-01\n- Business Owner: E1059\n- Capex Allocation: €1,800,000\n- Approved by Executive Board."
+      }
+    ],
+    "adrs": [
+      {
+        "id": "ADR-P-DTFS-05-001",
+        "title": "ADR-001: Adoption of PostgreSQL Flexible Server for Relational Storage",
+        "status": "Accepted",
+        "context": "The project requires ACID-compliant relational transactions with automatic point-in-time recovery.",
+        "decision": "Adopt PostgreSQL 16+ on Azure Flexible Server.",
+        "consequences": "Ensures standard SQL schema migrations and automated backups.",
+        "chosen_technology": "PostgreSQL Flexible Server",
+        "decided_by": "E1068"
+      },
+      {
+        "id": "ADR-P-DTFS-05-002",
+        "title": "ADR-002: Service-to-Service Communication Protocol",
+        "status": "Accepted",
+        "context": "High-frequency inter-service data exchanges require standard contract definitions.",
+        "decision": "Use asynchronous event publishing via Kafka/Event Hubs for loose coupling.",
+        "consequences": "Consumers must implement idempotent message processing.",
+        "chosen_technology": "Apache Kafka / Event Hubs",
+        "decided_by": "E1068"
+      }
+    ],
+    "pocs": [],
+    "processes": [
+      {
+        "id": "PROC-P-DTFS-05-01",
+        "name": "Regulatory Reporting (IFRS 9 / Basel) Release & Deployment Workflow",
+        "process_type": "CI/CD Deployment Gate",
+        "steps": "1. PR Review -> 2. SonarQube Quality Gate -> 3. Automated Integration Tests -> 4. Blue-Green Production Deployment"
+      }
+    ]
+  },
+  {
+    "space_key": "SPACE_P_DTFS_06",
+    "project_id": "P-DTFS-06",
+    "name": "Dealer Floorplan Financing Documentation Space",
+    "description": "Official Confluence engineering and architecture space for Dealer Floorplan Financing",
+    "pages": [
+      {
+        "id": "CF-PAGE-P-DTFS-06-ARCH",
+        "title": "Dealer Floorplan Financing — Architecture Overview & Topology",
+        "page_type": "architecture-overview",
+        "author": "E1065",
+        "version": 4,
+        "labels": [
+          "architecture",
+          "topology",
+          "solution-design",
+          "dtfs"
+        ],
+        "body_md": "# Architecture Overview: Dealer Floorplan Financing (P-DTFS-06)\n\n## 1. System Context\nWholesale financing of dealer vehicle stock with limit management, audits and interest billing.\n\n## 2. Infrastructure Topology\n- Primary Cloud Platform: Microsoft Azure & AWS\n- Container Orchestration: Azure Kubernetes Service (AKS)\n- Data Persistence: PostgreSQL Flexible Server & Enterprise Lakehouse\n\n## 3. High Availability & Security\nMulti-zone redundancy active across West Europe and Central India regions. Ingestion TLS 1.3 enforced."
+      },
+      {
+        "id": "CF-PAGE-P-DTFS-06-DES",
+        "title": "Dealer Floorplan Financing — Solution Design & API Specifications",
+        "page_type": "solution-design",
+        "author": "E1065",
+        "version": 3,
+        "labels": [
+          "api",
+          "spec",
+          "design"
+        ],
+        "body_md": "# Solution Design Document\n\n## API Protocols\nRESTful HTTPS JSON API compliant with OpenAPI 3.1 specifications. OAuth 2.0 Bearer tokens issued via Microsoft Entra ID."
+      },
+      {
+        "id": "CF-PAGE-P-DTFS-06-RUN",
+        "title": "Dealer Floorplan Financing — Technical Runbook & Triage Procedures",
+        "page_type": "runbook",
+        "author": "E1065",
+        "version": 2,
+        "labels": [
+          "runbook",
+          "operations",
+          "incident-response"
+        ],
+        "body_md": "# Operational Runbook\n\n## Escalation Matrix\n1. Level 1: Central Service Desk\n2. Level 2: Platform Reliability Team\n3. Level 3: Tech Lead (E1065)"
+      },
+      {
+        "id": "CF-PAGE-P-DTFS-06-BUDGET",
+        "title": "Dealer Floorplan Financing — Cost Center & Budget Planning FY2026",
+        "page_type": "budget",
+        "author": "E1060",
+        "version": 2,
+        "labels": [
+          "finance",
+          "budget",
+          "cost-center"
+        ],
+        "body_md": "# Budget & Cost Allocation FY2026\n\n- Cost Center: CC-DTFS-01\n- Business Owner: E1060\n- Capex Allocation: €1,800,000\n- Approved by Executive Board."
+      }
+    ],
+    "adrs": [
+      {
+        "id": "ADR-P-DTFS-06-001",
+        "title": "ADR-001: Adoption of PostgreSQL Flexible Server for Relational Storage",
+        "status": "Accepted",
+        "context": "The project requires ACID-compliant relational transactions with automatic point-in-time recovery.",
+        "decision": "Adopt PostgreSQL 16+ on Azure Flexible Server.",
+        "consequences": "Ensures standard SQL schema migrations and automated backups.",
+        "chosen_technology": "PostgreSQL Flexible Server",
+        "decided_by": "E1065"
+      },
+      {
+        "id": "ADR-P-DTFS-06-002",
+        "title": "ADR-002: Service-to-Service Communication Protocol",
+        "status": "Accepted",
+        "context": "High-frequency inter-service data exchanges require standard contract definitions.",
+        "decision": "Use asynchronous event publishing via Kafka/Event Hubs for loose coupling.",
+        "consequences": "Consumers must implement idempotent message processing.",
+        "chosen_technology": "Apache Kafka / Event Hubs",
+        "decided_by": "E1065"
+      }
+    ],
+    "pocs": [],
+    "processes": [
+      {
+        "id": "PROC-P-DTFS-06-01",
+        "name": "Dealer Floorplan Financing Release & Deployment Workflow",
+        "process_type": "CI/CD Deployment Gate",
+        "steps": "1. PR Review -> 2. SonarQube Quality Gate -> 3. Automated Integration Tests -> 4. Blue-Green Production Deployment"
+      }
+    ]
+  },
+  {
+    "space_key": "SPACE_P_SAL_01",
+    "project_id": "P-SAL-01",
+    "name": "Dealer Management Platform Documentation Space",
+    "description": "Official Confluence engineering and architecture space for Dealer Management Platform",
+    "pages": [
+      {
+        "id": "CF-PAGE-P-SAL-01-ARCH",
+        "title": "Dealer Management Platform — Architecture Overview & Topology",
+        "page_type": "architecture-overview",
+        "author": "E1077",
+        "version": 4,
+        "labels": [
+          "architecture",
+          "topology",
+          "solution-design",
+          "sal"
+        ],
+        "body_md": "# Architecture Overview: Dealer Management Platform (P-SAL-01)\n\n## 1. System Context\nCentral dealer platform for vehicle stock, quotes, orders and dealer performance.\n\n## 2. Infrastructure Topology\n- Primary Cloud Platform: Microsoft Azure & AWS\n- Container Orchestration: Azure Kubernetes Service (AKS)\n- Data Persistence: PostgreSQL Flexible Server & Enterprise Lakehouse\n\n## 3. High Availability & Security\nMulti-zone redundancy active across West Europe and Central India regions. Ingestion TLS 1.3 enforced."
+      },
+      {
+        "id": "CF-PAGE-P-SAL-01-DES",
+        "title": "Dealer Management Platform — Solution Design & API Specifications",
+        "page_type": "solution-design",
+        "author": "E1077",
+        "version": 3,
+        "labels": [
+          "api",
+          "spec",
+          "design"
+        ],
+        "body_md": "# Solution Design Document\n\n## API Protocols\nRESTful HTTPS JSON API compliant with OpenAPI 3.1 specifications. OAuth 2.0 Bearer tokens issued via Microsoft Entra ID."
+      },
+      {
+        "id": "CF-PAGE-P-SAL-01-RUN",
+        "title": "Dealer Management Platform — Technical Runbook & Triage Procedures",
+        "page_type": "runbook",
+        "author": "E1077",
+        "version": 2,
+        "labels": [
+          "runbook",
+          "operations",
+          "incident-response"
+        ],
+        "body_md": "# Operational Runbook\n\n## Escalation Matrix\n1. Level 1: Central Service Desk\n2. Level 2: Platform Reliability Team\n3. Level 3: Tech Lead (E1077)"
+      },
+      {
+        "id": "CF-PAGE-P-SAL-01-BUDGET",
+        "title": "Dealer Management Platform — Cost Center & Budget Planning FY2026",
+        "page_type": "budget",
+        "author": "E1072",
+        "version": 2,
+        "labels": [
+          "finance",
+          "budget",
+          "cost-center"
+        ],
+        "body_md": "# Budget & Cost Allocation FY2026\n\n- Cost Center: CC-SAL-01\n- Business Owner: E1072\n- Capex Allocation: €3,500,000\n- Approved by Executive Board."
+      },
+      {
+        "id": "CF-PAGE-P-SAL-01-PERF",
+        "title": "Dealer Management Platform — Performance Benchmarking & Load Testing",
+        "page_type": "solution-design",
+        "author": "E1077",
+        "version": 1,
+        "labels": [
+          "performance",
+          "benchmarks",
+          "load-testing"
+        ],
+        "body_md": "# Performance Benchmark Results\n\nTested at 15,000 requests/sec with p99 response time under 45ms."
+      }
+    ],
+    "adrs": [
+      {
+        "id": "ADR-P-SAL-01-001",
+        "title": "ADR-001: Adoption of PostgreSQL Flexible Server for Relational Storage",
+        "status": "Accepted",
+        "context": "The project requires ACID-compliant relational transactions with automatic point-in-time recovery.",
+        "decision": "Adopt PostgreSQL 16+ on Azure Flexible Server.",
+        "consequences": "Ensures standard SQL schema migrations and automated backups.",
+        "chosen_technology": "PostgreSQL Flexible Server",
+        "decided_by": "E1077"
+      },
+      {
+        "id": "ADR-P-SAL-01-002",
+        "title": "ADR-002: Service-to-Service Communication Protocol",
+        "status": "Accepted",
+        "context": "High-frequency inter-service data exchanges require standard contract definitions.",
+        "decision": "Use asynchronous event publishing via Kafka/Event Hubs for loose coupling.",
+        "consequences": "Consumers must implement idempotent message processing.",
+        "chosen_technology": "Apache Kafka / Event Hubs",
+        "decided_by": "E1077"
+      }
+    ],
+    "pocs": [
+      {
+        "id": "POC-P-SAL-01-01",
+        "title": "POC: Vector Search Retrieval on Enterprise Catalogs",
+        "hypothesis": "Hybrid semantic search combines keyword and vector embeddings with >90% precision.",
+        "tech_stack": "pgvector + pg_trgm + OpenAI text-embedding-3-small",
+        "results": "Retrieval accuracy improved by 34% over purely lexical search.",
+        "recommendation": "Adopt",
+        "conducted_by": "E1077"
+      }
+    ],
+    "processes": [
+      {
+        "id": "PROC-P-SAL-01-01",
+        "name": "Dealer Management Platform Release & Deployment Workflow",
+        "process_type": "CI/CD Deployment Gate",
+        "steps": "1. PR Review -> 2. SonarQube Quality Gate -> 3. Automated Integration Tests -> 4. Blue-Green Production Deployment"
+      }
+    ]
+  },
+  {
+    "space_key": "SPACE_P_SAL_02",
+    "project_id": "P-SAL-02",
+    "name": "Customer 360 & CRM Data Platform Documentation Space",
+    "description": "Official Confluence engineering and architecture space for Customer 360 & CRM Data Platform",
+    "pages": [
+      {
+        "id": "CF-PAGE-P-SAL-02-ARCH",
+        "title": "Customer 360 & CRM Data Platform — Architecture Overview & Topology",
+        "page_type": "architecture-overview",
+        "author": "E1080",
+        "version": 4,
+        "labels": [
+          "architecture",
+          "topology",
+          "solution-design",
+          "sal"
+        ],
+        "body_md": "# Architecture Overview: Customer 360 & CRM Data Platform (P-SAL-02)\n\n## 1. System Context\nUnified customer profile across sales, service and finance touchpoints for CRM and analytics.\n\n## 2. Infrastructure Topology\n- Primary Cloud Platform: Microsoft Azure & AWS\n- Container Orchestration: Azure Kubernetes Service (AKS)\n- Data Persistence: PostgreSQL Flexible Server & Enterprise Lakehouse\n\n## 3. High Availability & Security\nMulti-zone redundancy active across West Europe and Central India regions. Ingestion TLS 1.3 enforced."
+      },
+      {
+        "id": "CF-PAGE-P-SAL-02-DES",
+        "title": "Customer 360 & CRM Data Platform — Solution Design & API Specifications",
+        "page_type": "solution-design",
+        "author": "E1080",
+        "version": 3,
+        "labels": [
+          "api",
+          "spec",
+          "design"
+        ],
+        "body_md": "# Solution Design Document\n\n## API Protocols\nRESTful HTTPS JSON API compliant with OpenAPI 3.1 specifications. OAuth 2.0 Bearer tokens issued via Microsoft Entra ID."
+      },
+      {
+        "id": "CF-PAGE-P-SAL-02-RUN",
+        "title": "Customer 360 & CRM Data Platform — Technical Runbook & Triage Procedures",
+        "page_type": "runbook",
+        "author": "E1080",
+        "version": 2,
+        "labels": [
+          "runbook",
+          "operations",
+          "incident-response"
+        ],
+        "body_md": "# Operational Runbook\n\n## Escalation Matrix\n1. Level 1: Central Service Desk\n2. Level 2: Platform Reliability Team\n3. Level 3: Tech Lead (E1080)"
+      },
+      {
+        "id": "CF-PAGE-P-SAL-02-BUDGET",
+        "title": "Customer 360 & CRM Data Platform — Cost Center & Budget Planning FY2026",
+        "page_type": "budget",
+        "author": "E1071",
+        "version": 2,
+        "labels": [
+          "finance",
+          "budget",
+          "cost-center"
+        ],
+        "body_md": "# Budget & Cost Allocation FY2026\n\n- Cost Center: CC-SAL-01\n- Business Owner: E1071\n- Capex Allocation: €1,800,000\n- Approved by Executive Board."
+      }
+    ],
+    "adrs": [
+      {
+        "id": "ADR-P-SAL-02-001",
+        "title": "ADR-001: Adoption of PostgreSQL Flexible Server for Relational Storage",
+        "status": "Accepted",
+        "context": "The project requires ACID-compliant relational transactions with automatic point-in-time recovery.",
+        "decision": "Adopt PostgreSQL 16+ on Azure Flexible Server.",
+        "consequences": "Ensures standard SQL schema migrations and automated backups.",
+        "chosen_technology": "PostgreSQL Flexible Server",
+        "decided_by": "E1080"
+      },
+      {
+        "id": "ADR-P-SAL-02-002",
+        "title": "ADR-002: Service-to-Service Communication Protocol",
+        "status": "Accepted",
+        "context": "High-frequency inter-service data exchanges require standard contract definitions.",
+        "decision": "Use asynchronous event publishing via Kafka/Event Hubs for loose coupling.",
+        "consequences": "Consumers must implement idempotent message processing.",
+        "chosen_technology": "Apache Kafka / Event Hubs",
+        "decided_by": "E1080"
+      }
+    ],
+    "pocs": [],
+    "processes": [
+      {
+        "id": "PROC-P-SAL-02-01",
+        "name": "Customer 360 & CRM Data Platform Release & Deployment Workflow",
+        "process_type": "CI/CD Deployment Gate",
+        "steps": "1. PR Review -> 2. SonarQube Quality Gate -> 3. Automated Integration Tests -> 4. Blue-Green Production Deployment"
+      }
+    ]
+  },
+  {
+    "space_key": "SPACE_P_SAL_03",
+    "project_id": "P-SAL-03",
+    "name": "Aftersales Service Portal Documentation Space",
+    "description": "Official Confluence engineering and architecture space for Aftersales Service Portal",
+    "pages": [
+      {
+        "id": "CF-PAGE-P-SAL-03-ARCH",
+        "title": "Aftersales Service Portal — Architecture Overview & Topology",
+        "page_type": "architecture-overview",
+        "author": "E1076",
+        "version": 4,
+        "labels": [
+          "architecture",
+          "topology",
+          "solution-design",
+          "sal"
+        ],
+        "body_md": "# Architecture Overview: Aftersales Service Portal (P-SAL-03)\n\n## 1. System Context\nPortal for fleet customers and workshops to book service, track repairs and order parts.\n\n## 2. Infrastructure Topology\n- Primary Cloud Platform: Microsoft Azure & AWS\n- Container Orchestration: Azure Kubernetes Service (AKS)\n- Data Persistence: PostgreSQL Flexible Server & Enterprise Lakehouse\n\n## 3. High Availability & Security\nMulti-zone redundancy active across West Europe and Central India regions. Ingestion TLS 1.3 enforced."
+      },
+      {
+        "id": "CF-PAGE-P-SAL-03-DES",
+        "title": "Aftersales Service Portal — Solution Design & API Specifications",
+        "page_type": "solution-design",
+        "author": "E1076",
+        "version": 3,
+        "labels": [
+          "api",
+          "spec",
+          "design"
+        ],
+        "body_md": "# Solution Design Document\n\n## API Protocols\nRESTful HTTPS JSON API compliant with OpenAPI 3.1 specifications. OAuth 2.0 Bearer tokens issued via Microsoft Entra ID."
+      },
+      {
+        "id": "CF-PAGE-P-SAL-03-RUN",
+        "title": "Aftersales Service Portal — Technical Runbook & Triage Procedures",
+        "page_type": "runbook",
+        "author": "E1076",
+        "version": 2,
+        "labels": [
+          "runbook",
+          "operations",
+          "incident-response"
+        ],
+        "body_md": "# Operational Runbook\n\n## Escalation Matrix\n1. Level 1: Central Service Desk\n2. Level 2: Platform Reliability Team\n3. Level 3: Tech Lead (E1076)"
+      },
+      {
+        "id": "CF-PAGE-P-SAL-03-BUDGET",
+        "title": "Aftersales Service Portal — Cost Center & Budget Planning FY2026",
+        "page_type": "budget",
+        "author": "E1074",
+        "version": 2,
+        "labels": [
+          "finance",
+          "budget",
+          "cost-center"
+        ],
+        "body_md": "# Budget & Cost Allocation FY2026\n\n- Cost Center: CC-SAL-01\n- Business Owner: E1074\n- Capex Allocation: €1,800,000\n- Approved by Executive Board."
+      }
+    ],
+    "adrs": [
+      {
+        "id": "ADR-P-SAL-03-001",
+        "title": "ADR-001: Adoption of PostgreSQL Flexible Server for Relational Storage",
+        "status": "Accepted",
+        "context": "The project requires ACID-compliant relational transactions with automatic point-in-time recovery.",
+        "decision": "Adopt PostgreSQL 16+ on Azure Flexible Server.",
+        "consequences": "Ensures standard SQL schema migrations and automated backups.",
+        "chosen_technology": "PostgreSQL Flexible Server",
+        "decided_by": "E1076"
+      },
+      {
+        "id": "ADR-P-SAL-03-002",
+        "title": "ADR-002: Service-to-Service Communication Protocol",
+        "status": "Accepted",
+        "context": "High-frequency inter-service data exchanges require standard contract definitions.",
+        "decision": "Use asynchronous event publishing via Kafka/Event Hubs for loose coupling.",
+        "consequences": "Consumers must implement idempotent message processing.",
+        "chosen_technology": "Apache Kafka / Event Hubs",
+        "decided_by": "E1076"
+      }
+    ],
+    "pocs": [],
+    "processes": [
+      {
+        "id": "PROC-P-SAL-03-01",
+        "name": "Aftersales Service Portal Release & Deployment Workflow",
+        "process_type": "CI/CD Deployment Gate",
+        "steps": "1. PR Review -> 2. SonarQube Quality Gate -> 3. Automated Integration Tests -> 4. Blue-Green Production Deployment"
+      }
+    ]
+  },
+  {
+    "space_key": "SPACE_P_SAL_04",
+    "project_id": "P-SAL-04",
+    "name": "Telematics Data Ingestion Documentation Space",
+    "description": "Official Confluence engineering and architecture space for Telematics Data Ingestion",
+    "pages": [
+      {
+        "id": "CF-PAGE-P-SAL-04-ARCH",
+        "title": "Telematics Data Ingestion — Architecture Overview & Topology",
+        "page_type": "architecture-overview",
+        "author": "E1079",
+        "version": 4,
+        "labels": [
+          "architecture",
+          "topology",
+          "solution-design",
+          "sal"
+        ],
+        "body_md": "# Architecture Overview: Telematics Data Ingestion (P-SAL-04)\n\n## 1. System Context\nIngests telemetry from connected trucks (location, fault codes, fuel) at scale.\n\n## 2. Infrastructure Topology\n- Primary Cloud Platform: Microsoft Azure & AWS\n- Container Orchestration: Azure Kubernetes Service (AKS)\n- Data Persistence: PostgreSQL Flexible Server & Enterprise Lakehouse\n\n## 3. High Availability & Security\nMulti-zone redundancy active across West Europe and Central India regions. Ingestion TLS 1.3 enforced."
+      },
+      {
+        "id": "CF-PAGE-P-SAL-04-DES",
+        "title": "Telematics Data Ingestion — Solution Design & API Specifications",
+        "page_type": "solution-design",
+        "author": "E1079",
+        "version": 3,
+        "labels": [
+          "api",
+          "spec",
+          "design"
+        ],
+        "body_md": "# Solution Design Document\n\n## API Protocols\nRESTful HTTPS JSON API compliant with OpenAPI 3.1 specifications. OAuth 2.0 Bearer tokens issued via Microsoft Entra ID."
+      },
+      {
+        "id": "CF-PAGE-P-SAL-04-RUN",
+        "title": "Telematics Data Ingestion — Technical Runbook & Triage Procedures",
+        "page_type": "runbook",
+        "author": "E1079",
+        "version": 2,
+        "labels": [
+          "runbook",
+          "operations",
+          "incident-response"
+        ],
+        "body_md": "# Operational Runbook\n\n## Escalation Matrix\n1. Level 1: Central Service Desk\n2. Level 2: Platform Reliability Team\n3. Level 3: Tech Lead (E1079)"
+      },
+      {
+        "id": "CF-PAGE-P-SAL-04-BUDGET",
+        "title": "Telematics Data Ingestion — Cost Center & Budget Planning FY2026",
+        "page_type": "budget",
+        "author": "E1074",
+        "version": 2,
+        "labels": [
+          "finance",
+          "budget",
+          "cost-center"
+        ],
+        "body_md": "# Budget & Cost Allocation FY2026\n\n- Cost Center: CC-SAL-01\n- Business Owner: E1074\n- Capex Allocation: €1,800,000\n- Approved by Executive Board."
+      }
+    ],
+    "adrs": [
+      {
+        "id": "ADR-P-SAL-04-001",
+        "title": "ADR-001: Adoption of PostgreSQL Flexible Server for Relational Storage",
+        "status": "Accepted",
+        "context": "The project requires ACID-compliant relational transactions with automatic point-in-time recovery.",
+        "decision": "Adopt PostgreSQL 16+ on Azure Flexible Server.",
+        "consequences": "Ensures standard SQL schema migrations and automated backups.",
+        "chosen_technology": "PostgreSQL Flexible Server",
+        "decided_by": "E1079"
+      },
+      {
+        "id": "ADR-P-SAL-04-002",
+        "title": "ADR-002: Service-to-Service Communication Protocol",
+        "status": "Accepted",
+        "context": "High-frequency inter-service data exchanges require standard contract definitions.",
+        "decision": "Use asynchronous event publishing via Kafka/Event Hubs for loose coupling.",
+        "consequences": "Consumers must implement idempotent message processing.",
+        "chosen_technology": "Apache Kafka / Event Hubs",
+        "decided_by": "E1079"
+      }
+    ],
+    "pocs": [],
+    "processes": [
+      {
+        "id": "PROC-P-SAL-04-01",
+        "name": "Telematics Data Ingestion Release & Deployment Workflow",
+        "process_type": "CI/CD Deployment Gate",
+        "steps": "1. PR Review -> 2. SonarQube Quality Gate -> 3. Automated Integration Tests -> 4. Blue-Green Production Deployment"
+      }
+    ]
+  },
+  {
+    "space_key": "SPACE_P_SAL_05",
+    "project_id": "P-SAL-05",
+    "name": "Sales Forecasting & Pricing Documentation Space",
+    "description": "Official Confluence engineering and architecture space for Sales Forecasting & Pricing",
+    "pages": [
+      {
+        "id": "CF-PAGE-P-SAL-05-ARCH",
+        "title": "Sales Forecasting & Pricing — Architecture Overview & Topology",
+        "page_type": "architecture-overview",
+        "author": "E1082",
+        "version": 4,
+        "labels": [
+          "architecture",
+          "topology",
+          "solution-design",
+          "sal"
+        ],
+        "body_md": "# Architecture Overview: Sales Forecasting & Pricing (P-SAL-05)\n\n## 1. System Context\nDemand forecasts and price-optimisation recommendations per market and model.\n\n## 2. Infrastructure Topology\n- Primary Cloud Platform: Microsoft Azure & AWS\n- Container Orchestration: Azure Kubernetes Service (AKS)\n- Data Persistence: PostgreSQL Flexible Server & Enterprise Lakehouse\n\n## 3. High Availability & Security\nMulti-zone redundancy active across West Europe and Central India regions. Ingestion TLS 1.3 enforced."
+      },
+      {
+        "id": "CF-PAGE-P-SAL-05-DES",
+        "title": "Sales Forecasting & Pricing — Solution Design & API Specifications",
+        "page_type": "solution-design",
+        "author": "E1082",
+        "version": 3,
+        "labels": [
+          "api",
+          "spec",
+          "design"
+        ],
+        "body_md": "# Solution Design Document\n\n## API Protocols\nRESTful HTTPS JSON API compliant with OpenAPI 3.1 specifications. OAuth 2.0 Bearer tokens issued via Microsoft Entra ID."
+      },
+      {
+        "id": "CF-PAGE-P-SAL-05-RUN",
+        "title": "Sales Forecasting & Pricing — Technical Runbook & Triage Procedures",
+        "page_type": "runbook",
+        "author": "E1082",
+        "version": 2,
+        "labels": [
+          "runbook",
+          "operations",
+          "incident-response"
+        ],
+        "body_md": "# Operational Runbook\n\n## Escalation Matrix\n1. Level 1: Central Service Desk\n2. Level 2: Platform Reliability Team\n3. Level 3: Tech Lead (E1082)"
+      },
+      {
+        "id": "CF-PAGE-P-SAL-05-BUDGET",
+        "title": "Sales Forecasting & Pricing — Cost Center & Budget Planning FY2026",
+        "page_type": "budget",
+        "author": "E1071",
+        "version": 2,
+        "labels": [
+          "finance",
+          "budget",
+          "cost-center"
+        ],
+        "body_md": "# Budget & Cost Allocation FY2026\n\n- Cost Center: CC-SAL-01\n- Business Owner: E1071\n- Capex Allocation: €1,800,000\n- Approved by Executive Board."
+      }
+    ],
+    "adrs": [
+      {
+        "id": "ADR-P-SAL-05-001",
+        "title": "ADR-001: Adoption of PostgreSQL Flexible Server for Relational Storage",
+        "status": "Accepted",
+        "context": "The project requires ACID-compliant relational transactions with automatic point-in-time recovery.",
+        "decision": "Adopt PostgreSQL 16+ on Azure Flexible Server.",
+        "consequences": "Ensures standard SQL schema migrations and automated backups.",
+        "chosen_technology": "PostgreSQL Flexible Server",
+        "decided_by": "E1082"
+      },
+      {
+        "id": "ADR-P-SAL-05-002",
+        "title": "ADR-002: Service-to-Service Communication Protocol",
+        "status": "Accepted",
+        "context": "High-frequency inter-service data exchanges require standard contract definitions.",
+        "decision": "Use asynchronous event publishing via Kafka/Event Hubs for loose coupling.",
+        "consequences": "Consumers must implement idempotent message processing.",
+        "chosen_technology": "Apache Kafka / Event Hubs",
+        "decided_by": "E1082"
+      }
+    ],
+    "pocs": [],
+    "processes": [
+      {
+        "id": "PROC-P-SAL-05-01",
+        "name": "Sales Forecasting & Pricing Release & Deployment Workflow",
+        "process_type": "CI/CD Deployment Gate",
+        "steps": "1. PR Review -> 2. SonarQube Quality Gate -> 3. Automated Integration Tests -> 4. Blue-Green Production Deployment"
+      }
+    ]
+  },
+  {
+    "space_key": "SPACE_P_SAL_06",
+    "project_id": "P-SAL-06",
+    "name": "Order-to-Delivery Documentation Space",
+    "description": "Official Confluence engineering and architecture space for Order-to-Delivery",
+    "pages": [
+      {
+        "id": "CF-PAGE-P-SAL-06-ARCH",
+        "title": "Order-to-Delivery — Architecture Overview & Topology",
+        "page_type": "architecture-overview",
+        "author": "E1017",
+        "version": 4,
+        "labels": [
+          "architecture",
+          "topology",
+          "solution-design",
+          "sal"
+        ],
+        "body_md": "# Architecture Overview: Order-to-Delivery (P-SAL-06)\n\n## 1. System Context\nEnd-to-end vehicle order management from configuration to delivery, integrated with SAP S/4.\n\n## 2. Infrastructure Topology\n- Primary Cloud Platform: Microsoft Azure & AWS\n- Container Orchestration: Azure Kubernetes Service (AKS)\n- Data Persistence: PostgreSQL Flexible Server & Enterprise Lakehouse\n\n## 3. High Availability & Security\nMulti-zone redundancy active across West Europe and Central India regions. Ingestion TLS 1.3 enforced."
+      },
+      {
+        "id": "CF-PAGE-P-SAL-06-DES",
+        "title": "Order-to-Delivery — Solution Design & API Specifications",
+        "page_type": "solution-design",
+        "author": "E1017",
+        "version": 3,
+        "labels": [
+          "api",
+          "spec",
+          "design"
+        ],
+        "body_md": "# Solution Design Document\n\n## API Protocols\nRESTful HTTPS JSON API compliant with OpenAPI 3.1 specifications. OAuth 2.0 Bearer tokens issued via Microsoft Entra ID."
+      },
+      {
+        "id": "CF-PAGE-P-SAL-06-RUN",
+        "title": "Order-to-Delivery — Technical Runbook & Triage Procedures",
+        "page_type": "runbook",
+        "author": "E1017",
+        "version": 2,
+        "labels": [
+          "runbook",
+          "operations",
+          "incident-response"
+        ],
+        "body_md": "# Operational Runbook\n\n## Escalation Matrix\n1. Level 1: Central Service Desk\n2. Level 2: Platform Reliability Team\n3. Level 3: Tech Lead (E1017)"
+      },
+      {
+        "id": "CF-PAGE-P-SAL-06-BUDGET",
+        "title": "Order-to-Delivery — Cost Center & Budget Planning FY2026",
+        "page_type": "budget",
+        "author": "E1071",
+        "version": 2,
+        "labels": [
+          "finance",
+          "budget",
+          "cost-center"
+        ],
+        "body_md": "# Budget & Cost Allocation FY2026\n\n- Cost Center: CC-SAL-01\n- Business Owner: E1071\n- Capex Allocation: €1,800,000\n- Approved by Executive Board."
+      }
+    ],
+    "adrs": [
+      {
+        "id": "ADR-P-SAL-06-001",
+        "title": "ADR-001: Adoption of PostgreSQL Flexible Server for Relational Storage",
+        "status": "Accepted",
+        "context": "The project requires ACID-compliant relational transactions with automatic point-in-time recovery.",
+        "decision": "Adopt PostgreSQL 16+ on Azure Flexible Server.",
+        "consequences": "Ensures standard SQL schema migrations and automated backups.",
+        "chosen_technology": "PostgreSQL Flexible Server",
+        "decided_by": "E1017"
+      },
+      {
+        "id": "ADR-P-SAL-06-002",
+        "title": "ADR-002: Service-to-Service Communication Protocol",
+        "status": "Accepted",
+        "context": "High-frequency inter-service data exchanges require standard contract definitions.",
+        "decision": "Use asynchronous event publishing via Kafka/Event Hubs for loose coupling.",
+        "consequences": "Consumers must implement idempotent message processing.",
+        "chosen_technology": "Apache Kafka / Event Hubs",
+        "decided_by": "E1017"
+      }
+    ],
+    "pocs": [],
+    "processes": [
+      {
+        "id": "PROC-P-SAL-06-01",
+        "name": "Order-to-Delivery Release & Deployment Workflow",
+        "process_type": "CI/CD Deployment Gate",
+        "steps": "1. PR Review -> 2. SonarQube Quality Gate -> 3. Automated Integration Tests -> 4. Blue-Green Production Deployment"
+      }
+    ]
+  },
+  {
+    "space_key": "SPACE_P_HR_01",
+    "project_id": "P-HR-01",
+    "name": "SuccessFactors HR Core Documentation Space",
+    "description": "Official Confluence engineering and architecture space for SuccessFactors HR Core",
+    "pages": [
+      {
+        "id": "CF-PAGE-P-HR-01-ARCH",
+        "title": "SuccessFactors HR Core — Architecture Overview & Topology",
+        "page_type": "architecture-overview",
+        "author": "E1085",
+        "version": 4,
+        "labels": [
+          "architecture",
+          "topology",
+          "solution-design",
+          "hr"
+        ],
+        "body_md": "# Architecture Overview: SuccessFactors HR Core (P-HR-01)\n\n## 1. System Context\nCloud HR core for employee master data, org structure and lifecycle events; feeds identity and finance.\n\n## 2. Infrastructure Topology\n- Primary Cloud Platform: Microsoft Azure & AWS\n- Container Orchestration: Azure Kubernetes Service (AKS)\n- Data Persistence: PostgreSQL Flexible Server & Enterprise Lakehouse\n\n## 3. High Availability & Security\nMulti-zone redundancy active across West Europe and Central India regions. Ingestion TLS 1.3 enforced."
+      },
+      {
+        "id": "CF-PAGE-P-HR-01-DES",
+        "title": "SuccessFactors HR Core — Solution Design & API Specifications",
+        "page_type": "solution-design",
+        "author": "E1085",
+        "version": 3,
+        "labels": [
+          "api",
+          "spec",
+          "design"
+        ],
+        "body_md": "# Solution Design Document\n\n## API Protocols\nRESTful HTTPS JSON API compliant with OpenAPI 3.1 specifications. OAuth 2.0 Bearer tokens issued via Microsoft Entra ID."
+      },
+      {
+        "id": "CF-PAGE-P-HR-01-RUN",
+        "title": "SuccessFactors HR Core — Technical Runbook & Triage Procedures",
+        "page_type": "runbook",
+        "author": "E1085",
+        "version": 2,
+        "labels": [
+          "runbook",
+          "operations",
+          "incident-response"
+        ],
+        "body_md": "# Operational Runbook\n\n## Escalation Matrix\n1. Level 1: Central Service Desk\n2. Level 2: Platform Reliability Team\n3. Level 3: Tech Lead (E1085)"
+      },
+      {
+        "id": "CF-PAGE-P-HR-01-BUDGET",
+        "title": "SuccessFactors HR Core — Cost Center & Budget Planning FY2026",
+        "page_type": "budget",
+        "author": "E1083",
+        "version": 2,
+        "labels": [
+          "finance",
+          "budget",
+          "cost-center"
+        ],
+        "body_md": "# Budget & Cost Allocation FY2026\n\n- Cost Center: CC-HR-01\n- Business Owner: E1083\n- Capex Allocation: €1,800,000\n- Approved by Executive Board."
+      }
+    ],
+    "adrs": [
+      {
+        "id": "ADR-P-HR-01-001",
+        "title": "ADR-001: Adoption of PostgreSQL Flexible Server for Relational Storage",
+        "status": "Accepted",
+        "context": "The project requires ACID-compliant relational transactions with automatic point-in-time recovery.",
+        "decision": "Adopt PostgreSQL 16+ on Azure Flexible Server.",
+        "consequences": "Ensures standard SQL schema migrations and automated backups.",
+        "chosen_technology": "PostgreSQL Flexible Server",
+        "decided_by": "E1085"
+      },
+      {
+        "id": "ADR-P-HR-01-002",
+        "title": "ADR-002: Service-to-Service Communication Protocol",
+        "status": "Accepted",
+        "context": "High-frequency inter-service data exchanges require standard contract definitions.",
+        "decision": "Use asynchronous event publishing via Kafka/Event Hubs for loose coupling.",
+        "consequences": "Consumers must implement idempotent message processing.",
+        "chosen_technology": "Apache Kafka / Event Hubs",
+        "decided_by": "E1085"
+      }
+    ],
+    "pocs": [],
+    "processes": [
+      {
+        "id": "PROC-P-HR-01-01",
+        "name": "SuccessFactors HR Core Release & Deployment Workflow",
+        "process_type": "CI/CD Deployment Gate",
+        "steps": "1. PR Review -> 2. SonarQube Quality Gate -> 3. Automated Integration Tests -> 4. Blue-Green Production Deployment"
+      }
+    ]
+  }
+]

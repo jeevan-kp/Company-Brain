@@ -17,6 +17,7 @@ const graphRouter = require('./routes/graph');
 const chatRouter = require('./routes/chat');
 const adminRouter = require('./routes/admin');
 const goldenQaRouter = require('./routes/goldenQa');
+const { router: documentsRouter } = require('./routes/documents');
 
 const app = express();
 const PORT = process.env.PORT || 3001;
@@ -38,13 +39,42 @@ app.use((req, res, next) => {
   next();
 });
 
-// Health check endpoint
-app.get('/health', (req, res) => {
+// Health & Liveness probes
+app.get(['/health', '/livez', '/api/health'], (req, res) => {
   res.status(200).json({
     status: 'ok',
     service: 'Company Brain API',
     team: 'Team 20',
     timestamp: new Date().toISOString()
+  });
+});
+
+app.get('/healthz', async (req, res) => {
+  const { pool } = require('../../scripts/loaders/db_pool');
+  try {
+    const client = await pool.connect();
+    await client.query('SELECT 1');
+    client.release();
+    res.status(200).json({
+      status: 'healthy',
+      database: 'connected',
+      azure_openai_endpoint: process.env.AZURE_OPENAI_ENDPOINT ? 'configured' : 'offline_fallback',
+      timestamp: new Date().toISOString()
+    });
+  } catch (err) {
+    res.status(503).json({
+      status: 'unhealthy',
+      database_error: err.message,
+      timestamp: new Date().toISOString()
+    });
+  }
+});
+
+app.get('/api/hello', (req, res) => {
+  res.json({
+    message: 'Welcome to Company Brain (AutoNova Group)',
+    team: 'Team 20',
+    model_provider: 'Azure OpenAI (Azure AI Foundry)'
   });
 });
 
@@ -65,8 +95,10 @@ app.use('/api/projects', projectsRouter);
 app.use('/api/enterprise', enterpriseRouter);
 app.use('/api/graph', graphRouter);
 app.use('/api/chat', chatRouter);
+app.use('/api/documents', documentsRouter);
 app.use('/api/admin', adminRouter);
 app.use('/api/golden-qa', goldenQaRouter);
+app.use('/api/qa', goldenQaRouter);
 
 // Serve static frontend assets from React build
 const frontendDistPath = path.join(__dirname, '../../frontend/dist');

@@ -1,11 +1,17 @@
 import React, { useState } from 'react';
-import { NavLink, Outlet } from 'react-router-dom';
-import { Network, MessageSquare, BarChart2, Settings, BrainCircuit, RefreshCw, CheckCircle, Sparkles, HelpCircle } from 'lucide-react';
+import { NavLink, Outlet, useLocation } from 'react-router-dom';
+import { 
+  Network, MessageSquare, BarChart2, Settings, BrainCircuit, RefreshCw, 
+  CheckCircle, Sparkles, HelpCircle, Building, Users, Database, Cpu, Briefcase, GraduationCap 
+} from 'lucide-react';
 import PersonaSwitcher from './PersonaSwitcher';
+import ErrorBoundary from './ErrorBoundary';
 import { DEPARTMENTS } from '../utils/constants';
 import api from '../utils/api';
 
 const Layout = () => {
+  const location = useLocation();
+  const isGraphPage = location.pathname === '/graph';
   const [isRefreshing, setIsRefreshing] = useState(false);
   const [refreshSuccess, setRefreshSuccess] = useState(false);
 
@@ -35,37 +41,72 @@ const Layout = () => {
   };
 
   return (
-    <div className="flex h-screen bg-company-light overflow-hidden">
+    <div className={`flex h-screen overflow-hidden font-sans ${isGraphPage ? 'bg-slate-950' : 'bg-slate-50'}`}>
       {/* Sidebar */}
-      <aside className="w-64 bg-company-navy text-slate-300 flex flex-col shrink-0">
-        <div className="p-4 border-b border-slate-700/60 flex items-center justify-between">
+      <aside className="w-64 bg-slate-900 text-slate-300 flex flex-col shrink-0 border-r border-slate-800">
+        <div className="p-4 border-b border-slate-800 flex items-center justify-between">
           <div className="flex items-center gap-2.5">
-            <div className="p-1.5 bg-company-teal/20 rounded-lg">
-              <BrainCircuit className="text-company-teal" size={22} />
+            <div className="p-2 bg-sky-500/20 text-sky-400 rounded-lg">
+              <BrainCircuit size={22} />
             </div>
             <div>
               <span className="text-white font-bold text-base block tracking-tight">Company Brain</span>
-              <span className="text-[10px] uppercase font-semibold text-company-teal block tracking-wider">AutoNova Group</span>
+              <span className="text-[10px] uppercase font-bold text-sky-400 block tracking-wider">AutoNova Group</span>
             </div>
           </div>
         </div>
         
         <nav className="flex-1 overflow-y-auto py-3 px-2.5 space-y-1">
-          <NavLink to="/" end className={({isActive}) => `flex items-center gap-2.5 px-3 py-2 rounded-lg text-xs font-semibold transition-colors ${isActive ? 'bg-company-teal text-white shadow-sm' : 'hover:bg-slate-800/80 hover:text-white'}`}>
-            <BarChart2 size={17} />
-            Enterprise Overview (31 Projects)
+          <div className="px-3 pb-1 text-[9px] font-bold uppercase tracking-wider text-slate-400">
+            Core Intelligence
+          </div>
+          <NavLink to="/" end className={({isActive}) => `flex items-center gap-2.5 px-3 py-1.5 rounded-lg text-xs font-semibold transition-colors ${isActive ? 'bg-sky-600 text-white shadow-sm' : 'hover:bg-slate-800 hover:text-white'}`}>
+            <BarChart2 size={15} />
+            Company Brain Dashboard
           </NavLink>
-          <NavLink to="/chat" className={({isActive}) => `flex items-center gap-2.5 px-3 py-2 rounded-lg text-xs font-semibold transition-colors ${isActive ? 'bg-company-teal text-white shadow-sm' : 'hover:bg-slate-800/80 hover:text-white'}`}>
-            <MessageSquare size={17} />
+          <NavLink to="/chat" className={({isActive}) => `flex items-center gap-2.5 px-3 py-1.5 rounded-lg text-xs font-semibold transition-colors ${isActive ? 'bg-sky-600 text-white shadow-sm' : 'hover:bg-slate-800 hover:text-white'}`}>
+            <MessageSquare size={15} />
             AI Query Assistant
           </NavLink>
-          <NavLink to="/graph" className={({isActive}) => `flex items-center gap-2.5 px-3 py-2 rounded-lg text-xs font-semibold transition-colors ${isActive ? 'bg-company-teal text-white shadow-sm' : 'hover:bg-slate-800/80 hover:text-white'}`}>
-            <Network size={17} />
-            Knowledge Graph (658 Edges)
+          <NavLink to="/graph" className={({isActive}) => `flex items-center gap-2.5 px-3 py-1.5 rounded-lg text-xs font-semibold transition-colors ${isActive ? 'bg-sky-600 text-white shadow-sm' : 'hover:bg-slate-800 hover:text-white'}`}>
+            <Network size={15} />
+            Knowledge Graph Explorer
           </NavLink>
-          <NavLink to="/qa" className={({isActive}) => `flex items-center gap-2.5 px-3 py-2 rounded-lg text-xs font-semibold transition-colors ${isActive ? 'bg-company-teal text-white shadow-sm' : 'hover:bg-slate-800/80 hover:text-white'}`}>
-            <Sparkles size={17} className="text-amber-400" />
-            145 Golden Q&A Benchmarks
+
+          <div className="pt-3 px-3 pb-1 text-[9px] font-bold uppercase tracking-wider text-slate-400">
+            Executive Management
+          </div>
+          <NavLink to="/pm-overview" className={({isActive}) => `flex items-center gap-2.5 px-3 py-1.5 rounded-lg text-xs font-semibold transition-colors ${isActive ? 'bg-indigo-600 text-white shadow-sm' : 'hover:bg-slate-800 hover:text-white'}`}>
+            <Building size={15} className="text-indigo-400" />
+            Project Mgmt & Org Map
+          </NavLink>
+          <NavLink to="/workforce" className={({isActive}) => `flex items-center gap-2.5 px-3 py-1.5 rounded-lg text-xs font-semibold transition-colors ${isActive ? 'bg-indigo-600 text-white shadow-sm' : 'hover:bg-slate-800 hover:text-white'}`}>
+            <Users size={15} className="text-sky-400" />
+            Workforce & Capacity
+          </NavLink>
+          <NavLink to="/data-lineage" className={({isActive}) => `flex items-center gap-2.5 px-3 py-1.5 rounded-lg text-xs font-semibold transition-colors ${isActive ? 'bg-indigo-600 text-white shadow-sm' : 'hover:bg-slate-800 hover:text-white'}`}>
+            <Database size={15} className="text-teal-400" />
+            Data Flow & Lineage
+          </NavLink>
+          <NavLink to="/architecture" className={({isActive}) => `flex items-center gap-2.5 px-3 py-1.5 rounded-lg text-xs font-semibold transition-colors ${isActive ? 'bg-indigo-600 text-white shadow-sm' : 'hover:bg-slate-800 hover:text-white'}`}>
+            <Cpu size={15} className="text-purple-400" />
+            Tech Stack & AI Architecture
+          </NavLink>
+          <NavLink to="/talent-marketplace" className={({isActive}) => `flex items-center gap-2.5 px-3 py-1.5 rounded-lg text-xs font-semibold transition-colors ${isActive ? 'bg-indigo-600 text-white shadow-sm' : 'hover:bg-slate-800 hover:text-white'}`}>
+            <Briefcase size={15} className="text-emerald-400" />
+            Talent & Position Filling
+          </NavLink>
+          <NavLink to="/onboarding" className={({isActive}) => `flex items-center gap-2.5 px-3 py-1.5 rounded-lg text-xs font-semibold transition-colors ${isActive ? 'bg-indigo-600 text-white shadow-sm' : 'hover:bg-slate-800 hover:text-white'}`}>
+            <GraduationCap size={15} className="text-pink-400" />
+            Employee Onboarding & Wiki
+          </NavLink>
+
+          <div className="pt-3 px-3 pb-1 text-[9px] font-bold uppercase tracking-wider text-slate-400">
+            Prompt Intelligence & Standards
+          </div>
+          <NavLink to="/qa" className={({isActive}) => `flex items-center gap-2.5 px-3 py-1.5 rounded-lg text-xs font-semibold transition-colors ${isActive ? 'bg-slate-800 text-amber-400 font-bold' : 'hover:bg-slate-800 hover:text-white'}`}>
+            <Sparkles size={15} className="text-amber-400" />
+            Standard Prompts & Insights (230)
           </NavLink>
           
           <div className="pt-4 pb-1 px-3 text-[10px] font-bold uppercase tracking-wider text-slate-400">
@@ -76,7 +117,7 @@ const Layout = () => {
               <NavLink 
                 key={dept}
                 to={`/department/${encodeURIComponent(dept)}`} 
-                className={({isActive}) => `flex items-center justify-between px-3 py-1.5 rounded-md text-xs transition-colors ${isActive ? 'bg-slate-800 text-company-teal font-bold' : 'text-slate-400 hover:bg-slate-800/50 hover:text-slate-200'}`}
+                className={({isActive}) => `flex items-center justify-between px-3 py-1.5 rounded-md text-xs transition-colors ${isActive ? 'bg-slate-800 text-sky-400 font-bold' : 'text-slate-400 hover:bg-slate-800/60 hover:text-slate-200'}`}
               >
                 <span className="truncate">{dept}</span>
                 <span className="text-[10px] bg-slate-800 text-slate-400 px-1.5 py-0.5 rounded font-mono shrink-0 ml-1">
@@ -87,10 +128,10 @@ const Layout = () => {
           </div>
         </nav>
         
-        <div className="p-3 border-t border-slate-700/60 bg-slate-900/40">
-          <NavLink to="/admin" className={({isActive}) => `flex items-center gap-2.5 px-3 py-2 rounded-lg text-xs font-semibold transition-colors ${isActive ? 'bg-slate-800 text-company-teal' : 'text-slate-400 hover:bg-slate-800 hover:text-white'}`}>
-            <Settings size={16} />
-            Admin & Data Sources
+        <div className="p-3 border-t border-slate-800 bg-slate-950/50">
+          <NavLink to="/admin" className={({isActive}) => `flex items-center gap-2.5 px-3 py-2 rounded-lg text-xs font-semibold transition-colors ${isActive ? 'bg-slate-800 text-sky-400' : 'text-slate-400 hover:bg-slate-800 hover:text-white'}`}>
+            <Settings size={15} />
+            Data Sources & Live Telemetry
           </NavLink>
         </div>
       </aside>
@@ -98,10 +139,18 @@ const Layout = () => {
       {/* Main Content Area */}
       <div className="flex-1 flex flex-col min-w-0 overflow-hidden">
         {/* Header */}
-        <header className="h-16 bg-white border-b border-slate-200 flex items-center justify-between px-6 shrink-0 shadow-sm z-10">
+        <header className={`h-14 flex items-center justify-between px-6 shrink-0 z-10 transition-colors ${
+          isGraphPage 
+            ? 'bg-slate-950 border-b border-slate-800/80 text-white shadow-md' 
+            : 'bg-white border-b border-slate-200 shadow-xs'
+        }`}>
           <div className="flex items-center gap-3">
-            <span className="text-xs font-semibold text-slate-500 bg-slate-100 px-2.5 py-1 rounded-md">
-              AutoNova Group • Hackathon Edition
+            <span className={`text-xs font-semibold px-3 py-1 rounded-full border ${
+              isGraphPage 
+                ? 'bg-cyan-950/70 text-cyan-300 border-cyan-700/50 shadow-[0_0_10px_rgba(6,182,212,0.2)]' 
+                : 'text-slate-600 bg-slate-100 border-slate-200'
+            }`}>
+              AutoNova Group • Connected Intelligence Layer
             </span>
           </div>
           
@@ -109,19 +158,23 @@ const Layout = () => {
             <button 
               onClick={handleManualRefresh}
               disabled={isRefreshing}
-              className="flex items-center gap-1.5 text-xs font-bold px-3 py-1.5 rounded-lg border border-slate-200 bg-slate-50 hover:bg-slate-100 text-slate-700 transition-colors disabled:opacity-60"
+              className={`flex items-center gap-1.5 text-xs font-bold px-3 py-1.5 rounded-lg border transition-all disabled:opacity-60 cursor-pointer ${
+                isGraphPage
+                  ? 'bg-slate-900 border-slate-700 text-cyan-300 hover:bg-slate-800 shadow-sm'
+                  : 'border-slate-200 bg-slate-50 hover:bg-slate-100 text-slate-700'
+              }`}
             >
-              <RefreshCw size={13} className={isRefreshing ? 'animate-spin' : ''} />
+              <RefreshCw size={13} className={isRefreshing ? 'animate-spin text-cyan-400' : 'text-cyan-400'} />
               {isRefreshing ? 'Syncing...' : 'Sync Graph'}
             </button>
             
             {refreshSuccess && (
-              <span className="flex items-center gap-1 text-xs text-emerald-600 font-bold bg-emerald-50 px-2 py-1 rounded border border-emerald-200">
+              <span className="flex items-center gap-1 text-xs text-emerald-400 font-bold bg-emerald-950/80 px-2 py-1 rounded border border-emerald-500/50">
                 <CheckCircle size={13} /> Graph Synchronized
               </span>
             )}
 
-            <div className="h-4 w-px bg-slate-200"></div>
+            <div className={`h-4 w-px ${isGraphPage ? 'bg-slate-800' : 'bg-slate-200'}`}></div>
 
             {/* Persona Switcher Component */}
             <PersonaSwitcher />
@@ -129,8 +182,16 @@ const Layout = () => {
         </header>
 
         {/* Dynamic Route Content */}
-        <main className="flex-1 overflow-y-auto p-6">
-          <Outlet />
+        <main className={`flex-1 min-w-0 ${
+          isGraphPage 
+            ? 'overflow-hidden p-0 bg-slate-950' 
+            : location.pathname === '/chat'
+              ? 'overflow-hidden p-0 bg-white' 
+              : 'overflow-y-auto p-6 bg-slate-50'
+        }`}>
+          <ErrorBoundary>
+            <Outlet />
+          </ErrorBoundary>
         </main>
       </div>
     </div>

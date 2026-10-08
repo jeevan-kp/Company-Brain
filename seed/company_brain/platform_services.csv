@@ -1,0 +1,31 @@
+service_id,platform_id,name,purpose,owner_team_id
+AZ-AKS,AZURE,Azure Kubernetes Service,Managed Kubernetes for microservice workloads,T-AZ-AKS
+AZ-SEN,AZURE,Microsoft Sentinel,Cloud-native SIEM and SOAR,T-AZ-PLAT
+AZ-LAW,AZURE,Log Analytics Workspace,Central log storage and KQL query engine,T-AZ-PLAT
+AZ-AAD,AZURE,Microsoft Entra ID,"Enterprise identity, SSO and conditional access",T-AZ-PLAT
+AZ-KV,AZURE,Azure Key Vault,"Secrets, keys and certificate storage",T-AZ-PLAT
+AZ-ADF,AZURE,Azure Data Factory,Batch data movement and orchestration,T-AZ-DATA
+AZ-APIM,AZURE,Azure API Management,API gateway for internal and partner APIs,T-AZ-PLAT
+AZ-DEF,AZURE,Microsoft Defender for Cloud,Posture management and vulnerability assessment,T-AZ-PLAT
+AZ-SQL,AZURE,Azure SQL Database,Managed relational database,T-AZ-DATA
+AZ-NET,AZURE,Azure Networking (vWAN/ExpressRoute),"Private connectivity between plants, data centers and clouds",T-AZ-PLAT
+AWS-S3,AWS,Amazon S3,Object storage / data lake storage,T-AWS-PLAT
+AWS-EKS,AWS,Amazon EKS,Managed Kubernetes on AWS,T-AWS-PLAT
+AWS-LAM,AWS,AWS Lambda,Serverless compute,T-AWS-PLAT
+AWS-RDS,AWS,Amazon RDS,Managed relational databases,T-AWS-PLAT
+AWS-KIN,AWS,Amazon Kinesis,Real-time streaming ingestion,T-AWS-PLAT
+AWS-GD,AWS,Amazon GuardDuty,Threat detection for AWS accounts,T-AWS-PLAT
+SAP-RISE,SAP,SAP S/4HANA Cloud (RISE),"Hosted S/4HANA ERP: finance, logistics, order management",T-SAP-RISE
+SAP-ARI,SAP,SAP Ariba,"Sourcing, contracts and supplier network",T-SAP-INT
+SAP-SAC,SAP,SAP Analytics Cloud,Planning and BI dashboards,T-SAP-ANA
+SAP-BTP,SAP,SAP BTP Integration Suite,Integration between SAP and non-SAP systems,T-SAP-INT
+SAP-DSP,SAP,SAP Datasphere,Business data fabric / semantic layer on SAP data,T-SAP-ANA
+SAP-GRC,SAP,SAP GRC Access Control,"SAP role design, SoD checks, firefighter access",T-SAP-RISE
+SAP-SFSF,SAP,SAP SuccessFactors,Cloud HR core and talent,T-HR-IT
+SNF-DW,SNOWFLAKE,Snowflake Data Warehouse,Curated analytical storage and SQL compute,T-SNF-PLAT
+SNF-SH,SNOWFLAKE,Snowflake Secure Data Sharing,Governed sharing of data products between domains,T-SNF-PLAT
+SNF-CORT,SNOWFLAKE,Snowflake Cortex,LLM and AI functions inside Snowflake,T-SNF-PLAT
+DBX-LH,DATABRICKS,Databricks Lakehouse,Spark/Delta data engineering and notebooks,T-DBX-PLAT
+DBX-ML,DATABRICKS,Databricks ML and Model Serving,"Model training, registry and real-time serving",T-DBX-PLAT
+DBX-UC,DATABRICKS,Databricks Unity Catalog,"Data governance, lineage and access control",T-DBX-PLAT
+DBX-DLT,DATABRICKS,Delta Live Tables,Declarative streaming and batch pipelines,T-DBX-PLAT

@@ -127,9 +127,12 @@ class GraphService {
     // Find any relevant evidence items across all projects
     const evidence = [];
     PROJECTS.forEach(p => {
-      if (p.evidence) {
+      if (p.evidence && Array.isArray(p.evidence)) {
         p.evidence.forEach(ev => {
-          if (ev.text.toLowerCase().includes(entityId.toLowerCase()) || (node.name && ev.text.toLowerCase().includes(node.name.toLowerCase()))) {
+          const evText = (ev.excerpt || ev.title || ev.text || '').toLowerCase();
+          const targetId = entityId.toLowerCase();
+          const targetName = (node.name || '').toLowerCase();
+          if (evText.includes(targetId) || (targetName && evText.includes(targetName))) {
             evidence.push({ ...ev, project_id: p.project_id });
           }
         });

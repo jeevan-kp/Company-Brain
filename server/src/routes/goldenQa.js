@@ -6,7 +6,7 @@ const { GOLDEN_QA } = require('../services/projectsData');
  * GET /api/golden-qa
  * List golden Q&A benchmarks with optional filters
  */
-router.get('/', async (req, res, next) => {
+router.get(['/', '/prompts'], async (req, res, next) => {
   try {
     const { category, difficulty, search } = req.query;
     let results = [...GOLDEN_QA];

@@ -1,0 +1,1986 @@
+[
+  {
+    "site_id": "SP-SITE-P-CYB-01",
+    "project_id": "P-CYB-01",
+    "title": "Security Log Monitoring (SIEM) SharePoint Team Site",
+    "documents": [
+      {
+        "id": "SP-DOC-P-CYB-01-CHARTER",
+        "name": "Security Log Monitoring (SIEM) — Project Charter & Executive Business Case.docx",
+        "doc_type": "Charter",
+        "version": "2.1",
+        "charter_sponsor_person_id": "E1024",
+        "charter_budget_capex": 1800000,
+        "charter_budget_opex": 630000,
+        "author": "E1024",
+        "updated_at": "2026-09-15T10:00:00Z",
+        "content_text": "# PROJECT CHARTER: SECURITY LOG MONITORING (SIEM)\n\n## 1. Executive Summary & Vision\nThe AutoNova Group executive leadership authorizes the Security Log Monitoring (SIEM) program under Domain CYB.\n\n## 2. Business Objectives & Strategic Alignment\n- Objective 1: Modernize automotive operations with real-time digital integration.\n- Objective 2: Establish direct compliance with European data privacy and TISAX cybersecurity standards.\n- Objective 3: Reduce annual maintenance expenditures through cloud platform consolidation.\n\n## 3. Financial Authorization & Budget Envelope\n- Capital Expenditure (Capex) Approved: €1,800,000\n- Operating Expenditure (Opex) Annual Baseline: €630,000\n- Executive Sponsor: E1024\n- Cost Center: CC-CYB-01\n\n## 4. Key Milestones & Go-Live Schedule\n- Phase 1 Architecture Sign-off: Complete\n- Phase 2 MVP Deployment: Target Go-Live 2021-10-15\n- Phase 3 Full Rollout across European and North American production plants."
+      },
+      {
+        "id": "SP-DOC-P-CYB-01-SPEC",
+        "name": "Security Log Monitoring (SIEM) — Comprehensive Technical Specification.docx",
+        "doc_type": "Specification",
+        "version": "3.0",
+        "author": "E1026",
+        "updated_at": "2026-09-15T10:00:00Z",
+        "content_text": "# TECHNICAL SPECIFICATION: Security Log Monitoring (SIEM)\n\n## 1. System Architecture & Component Interactions\nCentral SIEM collecting security logs from Azure, AWS, SAP and plants; correlates events and raises alerts for the SOC.\n\nThe system is engineered around high-availability containerized microservices hosted on Azure Kubernetes Service (AKS). Inter-system messaging utilizes Azure Event Hubs with standard Kafka protocol compliance.\n\n## 2. Security & Identity Integration\nAll endpoints require OAuth 2.0 JSON Web Tokens (JWT) validated against Microsoft Entra ID. RBAC permissions are mapped to corporate SAP authorization objects.\n\n## 3. Data Integrity & Retention\nData persistence layer uses PostgreSQL Flexible Server with automated 35-day point-in-time recovery. Cold storage archives to Azure Blob Storage with immutability policies."
+      },
+      {
+        "id": "SP-DOC-P-CYB-01-RUNBOOK-P1",
+        "name": "Security Log Monitoring (SIEM) — P1 Critical Incident Troubleshooting & Triage Runbook.docx",
+        "doc_type": "Runbook",
+        "version": "4.2",
+        "author": "E1026",
+        "updated_at": "2026-09-15T10:00:00Z",
+        "content_text": "# PRODUCTION INCIDENT RUNBOOK: SECURITY LOG MONITORING (SIEM)\n\n## Symptom 1: High API Latency (> 2000ms) or Ingestion Queue Buildup\n### Root Cause Analysis:\n1. Connection pool saturation on backend PostgreSQL database.\n2. Upstream Kafka partition rebalance delay.\n3. Azure AKS node memory pressure causing pod eviction.\n\n### Step-by-Step Remediation Procedure:\n1. Check AKS pod status: `kubectl get pods -n p-cyb-01`\n2. Inspect database active connections: verify active connections do not exceed pool threshold.\n3. Scale deployment replicas: `kubectl scale deployment/p-cyb-01-service --replicas=8`\n4. If latency persists, initiate failover to secondary availability zone.\n\n## Escalation Hierarchy & SLA Matrix:\n- Target Response Time: 15 minutes\n- Target Resolution Time (P1): 4 hours\n- Primary Escalation Contact: Platform Operations Support Team\n- Technical Escalation Lead: E1026"
+      },
+      {
+        "id": "SP-DOC-P-CYB-01-DR-PLAN",
+        "name": "Security Log Monitoring (SIEM) — Disaster Recovery and Business Continuity Guide.docx",
+        "doc_type": "Runbook",
+        "version": "2.0",
+        "author": "E1026",
+        "updated_at": "2026-09-15T10:00:00Z",
+        "content_text": "# DISASTER RECOVERY PLAN: Security Log Monitoring (SIEM)\n\n## Recovery Targets\n- Recovery Time Objective (RTO): 4 hours\n- Recovery Point Objective (RPO): 1 hour\n\n## Failover Execution Checklist\n1. Declare Disaster event in ServiceNow Incident bridge.\n2. Update DNS routing records in Azure Traffic Manager to DR Region.\n3. Promote read-replica database to primary status.\n4. Validate end-to-end synthetic health checks."
+      },
+      {
+        "id": "SP-DOC-P-CYB-01-RISK-REG",
+        "name": "Security Log Monitoring (SIEM) — Project Risk Register and TISAX Assessment.xlsx",
+        "doc_type": "RiskRegister",
+        "version": "1.5",
+        "author": "E1024",
+        "updated_at": "2026-09-15T10:00:00Z",
+        "content_text": "# PROJECT RISK & COMPLIANCE ASSESSMENT\n\n- Risk 01: Third-party API rate limiting on upstream provider.\n  - Severity: Medium | Mitigation: Implement Redis distributed cache.\n- Risk 02: Key personnel allocation constraint during sprint delivery.\n  - Severity: High | Mitigation: Cross-train platform engineers across domains."
+      },
+      {
+        "id": "SP-DOC-P-CYB-01-USERGUIDE",
+        "name": "Security Log Monitoring (SIEM) — End-User Operations Manual.pdf",
+        "doc_type": "UserGuide",
+        "version": "1.2",
+        "author": "E1024",
+        "updated_at": "2026-09-15T10:00:00Z",
+        "content_text": "# END-USER MANUAL: Security Log Monitoring (SIEM)\n\nWelcome to Security Log Monitoring (SIEM). This document outlines core navigation, role permissions, standard report generation, and exception handling."
+      }
+    ]
+  },
+  {
+    "site_id": "SP-SITE-P-CYB-02",
+    "project_id": "P-CYB-02",
+    "title": "Identity & Access Governance SharePoint Team Site",
+    "documents": [
+      {
+        "id": "SP-DOC-P-CYB-02-CHARTER",
+        "name": "Identity & Access Governance — Project Charter & Executive Business Case.docx",
+        "doc_type": "Charter",
+        "version": "2.1",
+        "charter_sponsor_person_id": "E1024",
+        "charter_budget_capex": 1800000,
+        "charter_budget_opex": 630000,
+        "author": "E1024",
+        "updated_at": "2026-09-15T10:00:00Z",
+        "content_text": "# PROJECT CHARTER: IDENTITY & ACCESS GOVERNANCE\n\n## 1. Executive Summary & Vision\nThe AutoNova Group executive leadership authorizes the Identity & Access Governance program under Domain CYB.\n\n## 2. Business Objectives & Strategic Alignment\n- Objective 1: Modernize automotive operations with real-time digital integration.\n- Objective 2: Establish direct compliance with European data privacy and TISAX cybersecurity standards.\n- Objective 3: Reduce annual maintenance expenditures through cloud platform consolidation.\n\n## 3. Financial Authorization & Budget Envelope\n- Capital Expenditure (Capex) Approved: €1,800,000\n- Operating Expenditure (Opex) Annual Baseline: €630,000\n- Executive Sponsor: E1024\n- Cost Center: CC-CYB-01\n\n## 4. Key Milestones & Go-Live Schedule\n- Phase 1 Architecture Sign-off: Complete\n- Phase 2 MVP Deployment: Target Go-Live 2020-10-15\n- Phase 3 Full Rollout across European and North American production plants."
+      },
+      {
+        "id": "SP-DOC-P-CYB-02-SPEC",
+        "name": "Identity & Access Governance — Comprehensive Technical Specification.docx",
+        "doc_type": "Specification",
+        "version": "3.0",
+        "author": "E1030",
+        "updated_at": "2026-09-15T10:00:00Z",
+        "content_text": "# TECHNICAL SPECIFICATION: Identity & Access Governance\n\n## 1. System Architecture & Component Interactions\nGroup-wide identity lifecycle: joiner/mover/leaver automation, access reviews, SAP role governance and SSO.\n\nThe system is engineered around high-availability containerized microservices hosted on Azure Kubernetes Service (AKS). Inter-system messaging utilizes Azure Event Hubs with standard Kafka protocol compliance.\n\n## 2. Security & Identity Integration\nAll endpoints require OAuth 2.0 JSON Web Tokens (JWT) validated against Microsoft Entra ID. RBAC permissions are mapped to corporate SAP authorization objects.\n\n## 3. Data Integrity & Retention\nData persistence layer uses PostgreSQL Flexible Server with automated 35-day point-in-time recovery. Cold storage archives to Azure Blob Storage with immutability policies."
+      },
+      {
+        "id": "SP-DOC-P-CYB-02-RUNBOOK-P1",
+        "name": "Identity & Access Governance — P1 Critical Incident Troubleshooting & Triage Runbook.docx",
+        "doc_type": "Runbook",
+        "version": "4.2",
+        "author": "E1030",
+        "updated_at": "2026-09-15T10:00:00Z",
+        "content_text": "# PRODUCTION INCIDENT RUNBOOK: IDENTITY & ACCESS GOVERNANCE\n\n## Symptom 1: High API Latency (> 2000ms) or Ingestion Queue Buildup\n### Root Cause Analysis:\n1. Connection pool saturation on backend PostgreSQL database.\n2. Upstream Kafka partition rebalance delay.\n3. Azure AKS node memory pressure causing pod eviction.\n\n### Step-by-Step Remediation Procedure:\n1. Check AKS pod status: `kubectl get pods -n p-cyb-02`\n2. Inspect database active connections: verify active connections do not exceed pool threshold.\n3. Scale deployment replicas: `kubectl scale deployment/p-cyb-02-service --replicas=8`\n4. If latency persists, initiate failover to secondary availability zone.\n\n## Escalation Hierarchy & SLA Matrix:\n- Target Response Time: 15 minutes\n- Target Resolution Time (P1): 4 hours\n- Primary Escalation Contact: Platform Operations Support Team\n- Technical Escalation Lead: E1030"
+      },
+      {
+        "id": "SP-DOC-P-CYB-02-DR-PLAN",
+        "name": "Identity & Access Governance — Disaster Recovery and Business Continuity Guide.docx",
+        "doc_type": "Runbook",
+        "version": "2.0",
+        "author": "E1030",
+        "updated_at": "2026-09-15T10:00:00Z",
+        "content_text": "# DISASTER RECOVERY PLAN: Identity & Access Governance\n\n## Recovery Targets\n- Recovery Time Objective (RTO): 4 hours\n- Recovery Point Objective (RPO): 1 hour\n\n## Failover Execution Checklist\n1. Declare Disaster event in ServiceNow Incident bridge.\n2. Update DNS routing records in Azure Traffic Manager to DR Region.\n3. Promote read-replica database to primary status.\n4. Validate end-to-end synthetic health checks."
+      },
+      {
+        "id": "SP-DOC-P-CYB-02-RISK-REG",
+        "name": "Identity & Access Governance — Project Risk Register and TISAX Assessment.xlsx",
+        "doc_type": "RiskRegister",
+        "version": "1.5",
+        "author": "E1024",
+        "updated_at": "2026-09-15T10:00:00Z",
+        "content_text": "# PROJECT RISK & COMPLIANCE ASSESSMENT\n\n- Risk 01: Third-party API rate limiting on upstream provider.\n  - Severity: Medium | Mitigation: Implement Redis distributed cache.\n- Risk 02: Key personnel allocation constraint during sprint delivery.\n  - Severity: High | Mitigation: Cross-train platform engineers across domains."
+      },
+      {
+        "id": "SP-DOC-P-CYB-02-USERGUIDE",
+        "name": "Identity & Access Governance — End-User Operations Manual.pdf",
+        "doc_type": "UserGuide",
+        "version": "1.2",
+        "author": "E1024",
+        "updated_at": "2026-09-15T10:00:00Z",
+        "content_text": "# END-USER MANUAL: Identity & Access Governance\n\nWelcome to Identity & Access Governance. This document outlines core navigation, role permissions, standard report generation, and exception handling."
+      }
+    ]
+  },
+  {
+    "site_id": "SP-SITE-P-CYB-03",
+    "project_id": "P-CYB-03",
+    "title": "Cloud Security Posture Management SharePoint Team Site",
+    "documents": [
+      {
+        "id": "SP-DOC-P-CYB-03-CHARTER",
+        "name": "Cloud Security Posture Management — Project Charter & Executive Business Case.docx",
+        "doc_type": "Charter",
+        "version": "2.1",
+        "charter_sponsor_person_id": "E1024",
+        "charter_budget_capex": 1800000,
+        "charter_budget_opex": 630000,
+        "author": "E1024",
+        "updated_at": "2026-09-15T10:00:00Z",
+        "content_text": "# PROJECT CHARTER: CLOUD SECURITY POSTURE MANAGEMENT\n\n## 1. Executive Summary & Vision\nThe AutoNova Group executive leadership authorizes the Cloud Security Posture Management program under Domain CYB.\n\n## 2. Business Objectives & Strategic Alignment\n- Objective 1: Modernize automotive operations with real-time digital integration.\n- Objective 2: Establish direct compliance with European data privacy and TISAX cybersecurity standards.\n- Objective 3: Reduce annual maintenance expenditures through cloud platform consolidation.\n\n## 3. Financial Authorization & Budget Envelope\n- Capital Expenditure (Capex) Approved: €1,800,000\n- Operating Expenditure (Opex) Annual Baseline: €630,000\n- Executive Sponsor: E1024\n- Cost Center: CC-CYB-01\n\n## 4. Key Milestones & Go-Live Schedule\n- Phase 1 Architecture Sign-off: Complete\n- Phase 2 MVP Deployment: Target Go-Live 2022-10-15\n- Phase 3 Full Rollout across European and North American production plants."
+      },
+      {
+        "id": "SP-DOC-P-CYB-03-SPEC",
+        "name": "Cloud Security Posture Management — Comprehensive Technical Specification.docx",
+        "doc_type": "Specification",
+        "version": "3.0",
+        "author": "E1035",
+        "updated_at": "2026-09-15T10:00:00Z",
+        "content_text": "# TECHNICAL SPECIFICATION: Cloud Security Posture Management\n\n## 1. System Architecture & Component Interactions\nContinuous posture checks across Azure and AWS accounts; flags misconfigurations and compliance drift.\n\nThe system is engineered around high-availability containerized microservices hosted on Azure Kubernetes Service (AKS). Inter-system messaging utilizes Azure Event Hubs with standard Kafka protocol compliance.\n\n## 2. Security & Identity Integration\nAll endpoints require OAuth 2.0 JSON Web Tokens (JWT) validated against Microsoft Entra ID. RBAC permissions are mapped to corporate SAP authorization objects.\n\n## 3. Data Integrity & Retention\nData persistence layer uses PostgreSQL Flexible Server with automated 35-day point-in-time recovery. Cold storage archives to Azure Blob Storage with immutability policies."
+      },
+      {
+        "id": "SP-DOC-P-CYB-03-RUNBOOK-P1",
+        "name": "Cloud Security Posture Management — P1 Critical Incident Troubleshooting & Triage Runbook.docx",
+        "doc_type": "Runbook",
+        "version": "4.2",
+        "author": "E1035",
+        "updated_at": "2026-09-15T10:00:00Z",
+        "content_text": "# PRODUCTION INCIDENT RUNBOOK: CLOUD SECURITY POSTURE MANAGEMENT\n\n## Symptom 1: High API Latency (> 2000ms) or Ingestion Queue Buildup\n### Root Cause Analysis:\n1. Connection pool saturation on backend PostgreSQL database.\n2. Upstream Kafka partition rebalance delay.\n3. Azure AKS node memory pressure causing pod eviction.\n\n### Step-by-Step Remediation Procedure:\n1. Check AKS pod status: `kubectl get pods -n p-cyb-03`\n2. Inspect database active connections: verify active connections do not exceed pool threshold.\n3. Scale deployment replicas: `kubectl scale deployment/p-cyb-03-service --replicas=8`\n4. If latency persists, initiate failover to secondary availability zone.\n\n## Escalation Hierarchy & SLA Matrix:\n- Target Response Time: 15 minutes\n- Target Resolution Time (P1): 4 hours\n- Primary Escalation Contact: Platform Operations Support Team\n- Technical Escalation Lead: E1035"
+      },
+      {
+        "id": "SP-DOC-P-CYB-03-DR-PLAN",
+        "name": "Cloud Security Posture Management — Disaster Recovery and Business Continuity Guide.docx",
+        "doc_type": "Runbook",
+        "version": "2.0",
+        "author": "E1035",
+        "updated_at": "2026-09-15T10:00:00Z",
+        "content_text": "# DISASTER RECOVERY PLAN: Cloud Security Posture Management\n\n## Recovery Targets\n- Recovery Time Objective (RTO): 4 hours\n- Recovery Point Objective (RPO): 1 hour\n\n## Failover Execution Checklist\n1. Declare Disaster event in ServiceNow Incident bridge.\n2. Update DNS routing records in Azure Traffic Manager to DR Region.\n3. Promote read-replica database to primary status.\n4. Validate end-to-end synthetic health checks."
+      },
+      {
+        "id": "SP-DOC-P-CYB-03-RISK-REG",
+        "name": "Cloud Security Posture Management — Project Risk Register and TISAX Assessment.xlsx",
+        "doc_type": "RiskRegister",
+        "version": "1.5",
+        "author": "E1024",
+        "updated_at": "2026-09-15T10:00:00Z",
+        "content_text": "# PROJECT RISK & COMPLIANCE ASSESSMENT\n\n- Risk 01: Third-party API rate limiting on upstream provider.\n  - Severity: Medium | Mitigation: Implement Redis distributed cache.\n- Risk 02: Key personnel allocation constraint during sprint delivery.\n  - Severity: High | Mitigation: Cross-train platform engineers across domains."
+      },
+      {
+        "id": "SP-DOC-P-CYB-03-USERGUIDE",
+        "name": "Cloud Security Posture Management — End-User Operations Manual.pdf",
+        "doc_type": "UserGuide",
+        "version": "1.2",
+        "author": "E1024",
+        "updated_at": "2026-09-15T10:00:00Z",
+        "content_text": "# END-USER MANUAL: Cloud Security Posture Management\n\nWelcome to Cloud Security Posture Management. This document outlines core navigation, role permissions, standard report generation, and exception handling."
+      }
+    ]
+  },
+  {
+    "site_id": "SP-SITE-P-CYB-04",
+    "project_id": "P-CYB-04",
+    "title": "Vulnerability & Patch Management SharePoint Team Site",
+    "documents": [
+      {
+        "id": "SP-DOC-P-CYB-04-CHARTER",
+        "name": "Vulnerability & Patch Management — Project Charter & Executive Business Case.docx",
+        "doc_type": "Charter",
+        "version": "2.1",
+        "charter_sponsor_person_id": "E1025",
+        "charter_budget_capex": 1800000,
+        "charter_budget_opex": 630000,
+        "author": "E1025",
+        "updated_at": "2026-09-15T10:00:00Z",
+        "content_text": "# PROJECT CHARTER: VULNERABILITY & PATCH MANAGEMENT\n\n## 1. Executive Summary & Vision\nThe AutoNova Group executive leadership authorizes the Vulnerability & Patch Management program under Domain CYB.\n\n## 2. Business Objectives & Strategic Alignment\n- Objective 1: Modernize automotive operations with real-time digital integration.\n- Objective 2: Establish direct compliance with European data privacy and TISAX cybersecurity standards.\n- Objective 3: Reduce annual maintenance expenditures through cloud platform consolidation.\n\n## 3. Financial Authorization & Budget Envelope\n- Capital Expenditure (Capex) Approved: €1,800,000\n- Operating Expenditure (Opex) Annual Baseline: €630,000\n- Executive Sponsor: E1025\n- Cost Center: CC-CYB-01\n\n## 4. Key Milestones & Go-Live Schedule\n- Phase 1 Architecture Sign-off: Complete\n- Phase 2 MVP Deployment: Target Go-Live 2019-10-15\n- Phase 3 Full Rollout across European and North American production plants."
+      },
+      {
+        "id": "SP-DOC-P-CYB-04-SPEC",
+        "name": "Vulnerability & Patch Management — Comprehensive Technical Specification.docx",
+        "doc_type": "Specification",
+        "version": "3.0",
+        "author": "E1033",
+        "updated_at": "2026-09-15T10:00:00Z",
+        "content_text": "# TECHNICAL SPECIFICATION: Vulnerability & Patch Management\n\n## 1. System Architecture & Component Interactions\nScans servers, containers and endpoints for vulnerabilities and drives patch SLAs with system owners.\n\nThe system is engineered around high-availability containerized microservices hosted on Azure Kubernetes Service (AKS). Inter-system messaging utilizes Azure Event Hubs with standard Kafka protocol compliance.\n\n## 2. Security & Identity Integration\nAll endpoints require OAuth 2.0 JSON Web Tokens (JWT) validated against Microsoft Entra ID. RBAC permissions are mapped to corporate SAP authorization objects.\n\n## 3. Data Integrity & Retention\nData persistence layer uses PostgreSQL Flexible Server with automated 35-day point-in-time recovery. Cold storage archives to Azure Blob Storage with immutability policies."
+      },
+      {
+        "id": "SP-DOC-P-CYB-04-RUNBOOK-P1",
+        "name": "Vulnerability & Patch Management — P1 Critical Incident Troubleshooting & Triage Runbook.docx",
+        "doc_type": "Runbook",
+        "version": "4.2",
+        "author": "E1033",
+        "updated_at": "2026-09-15T10:00:00Z",
+        "content_text": "# PRODUCTION INCIDENT RUNBOOK: VULNERABILITY & PATCH MANAGEMENT\n\n## Symptom 1: High API Latency (> 2000ms) or Ingestion Queue Buildup\n### Root Cause Analysis:\n1. Connection pool saturation on backend PostgreSQL database.\n2. Upstream Kafka partition rebalance delay.\n3. Azure AKS node memory pressure causing pod eviction.\n\n### Step-by-Step Remediation Procedure:\n1. Check AKS pod status: `kubectl get pods -n p-cyb-04`\n2. Inspect database active connections: verify active connections do not exceed pool threshold.\n3. Scale deployment replicas: `kubectl scale deployment/p-cyb-04-service --replicas=8`\n4. If latency persists, initiate failover to secondary availability zone.\n\n## Escalation Hierarchy & SLA Matrix:\n- Target Response Time: 15 minutes\n- Target Resolution Time (P1): 4 hours\n- Primary Escalation Contact: Platform Operations Support Team\n- Technical Escalation Lead: E1033"
+      },
+      {
+        "id": "SP-DOC-P-CYB-04-DR-PLAN",
+        "name": "Vulnerability & Patch Management — Disaster Recovery and Business Continuity Guide.docx",
+        "doc_type": "Runbook",
+        "version": "2.0",
+        "author": "E1033",
+        "updated_at": "2026-09-15T10:00:00Z",
+        "content_text": "# DISASTER RECOVERY PLAN: Vulnerability & Patch Management\n\n## Recovery Targets\n- Recovery Time Objective (RTO): 4 hours\n- Recovery Point Objective (RPO): 1 hour\n\n## Failover Execution Checklist\n1. Declare Disaster event in ServiceNow Incident bridge.\n2. Update DNS routing records in Azure Traffic Manager to DR Region.\n3. Promote read-replica database to primary status.\n4. Validate end-to-end synthetic health checks."
+      },
+      {
+        "id": "SP-DOC-P-CYB-04-RISK-REG",
+        "name": "Vulnerability & Patch Management — Project Risk Register and TISAX Assessment.xlsx",
+        "doc_type": "RiskRegister",
+        "version": "1.5",
+        "author": "E1025",
+        "updated_at": "2026-09-15T10:00:00Z",
+        "content_text": "# PROJECT RISK & COMPLIANCE ASSESSMENT\n\n- Risk 01: Third-party API rate limiting on upstream provider.\n  - Severity: Medium | Mitigation: Implement Redis distributed cache.\n- Risk 02: Key personnel allocation constraint during sprint delivery.\n  - Severity: High | Mitigation: Cross-train platform engineers across domains."
+      },
+      {
+        "id": "SP-DOC-P-CYB-04-USERGUIDE",
+        "name": "Vulnerability & Patch Management — End-User Operations Manual.pdf",
+        "doc_type": "UserGuide",
+        "version": "1.2",
+        "author": "E1025",
+        "updated_at": "2026-09-15T10:00:00Z",
+        "content_text": "# END-USER MANUAL: Vulnerability & Patch Management\n\nWelcome to Vulnerability & Patch Management. This document outlines core navigation, role permissions, standard report generation, and exception handling."
+      }
+    ]
+  },
+  {
+    "site_id": "SP-SITE-P-CYB-05",
+    "project_id": "P-CYB-05",
+    "title": "Security Data Lake SharePoint Team Site",
+    "documents": [
+      {
+        "id": "SP-DOC-P-CYB-05-CHARTER",
+        "name": "Security Data Lake — Project Charter & Executive Business Case.docx",
+        "doc_type": "Charter",
+        "version": "2.1",
+        "charter_sponsor_person_id": "E1024",
+        "charter_budget_capex": 1800000,
+        "charter_budget_opex": 630000,
+        "author": "E1024",
+        "updated_at": "2026-09-15T10:00:00Z",
+        "content_text": "# PROJECT CHARTER: SECURITY DATA LAKE\n\n## 1. Executive Summary & Vision\nThe AutoNova Group executive leadership authorizes the Security Data Lake program under Domain CYB.\n\n## 2. Business Objectives & Strategic Alignment\n- Objective 1: Modernize automotive operations with real-time digital integration.\n- Objective 2: Establish direct compliance with European data privacy and TISAX cybersecurity standards.\n- Objective 3: Reduce annual maintenance expenditures through cloud platform consolidation.\n\n## 3. Financial Authorization & Budget Envelope\n- Capital Expenditure (Capex) Approved: €1,800,000\n- Operating Expenditure (Opex) Annual Baseline: €630,000\n- Executive Sponsor: E1024\n- Cost Center: CC-CYB-01\n\n## 4. Key Milestones & Go-Live Schedule\n- Phase 1 Architecture Sign-off: Complete\n- Phase 2 MVP Deployment: Target Go-Live 2026-10-15\n- Phase 3 Full Rollout across European and North American production plants."
+      },
+      {
+        "id": "SP-DOC-P-CYB-05-SPEC",
+        "name": "Security Data Lake — Comprehensive Technical Specification.docx",
+        "doc_type": "Specification",
+        "version": "3.0",
+        "author": "E1028",
+        "updated_at": "2026-09-15T10:00:00Z",
+        "content_text": "# TECHNICAL SPECIFICATION: Security Data Lake\n\n## 1. System Architecture & Component Interactions\nLakehouse for long-term security telemetry used for threat hunting and ML anomaly detection.\n\nThe system is engineered around high-availability containerized microservices hosted on Azure Kubernetes Service (AKS). Inter-system messaging utilizes Azure Event Hubs with standard Kafka protocol compliance.\n\n## 2. Security & Identity Integration\nAll endpoints require OAuth 2.0 JSON Web Tokens (JWT) validated against Microsoft Entra ID. RBAC permissions are mapped to corporate SAP authorization objects.\n\n## 3. Data Integrity & Retention\nData persistence layer uses PostgreSQL Flexible Server with automated 35-day point-in-time recovery. Cold storage archives to Azure Blob Storage with immutability policies."
+      },
+      {
+        "id": "SP-DOC-P-CYB-05-RUNBOOK-P1",
+        "name": "Security Data Lake — P1 Critical Incident Troubleshooting & Triage Runbook.docx",
+        "doc_type": "Runbook",
+        "version": "4.2",
+        "author": "E1028",
+        "updated_at": "2026-09-15T10:00:00Z",
+        "content_text": "# PRODUCTION INCIDENT RUNBOOK: SECURITY DATA LAKE\n\n## Symptom 1: High API Latency (> 2000ms) or Ingestion Queue Buildup\n### Root Cause Analysis:\n1. Connection pool saturation on backend PostgreSQL database.\n2. Upstream Kafka partition rebalance delay.\n3. Azure AKS node memory pressure causing pod eviction.\n\n### Step-by-Step Remediation Procedure:\n1. Check AKS pod status: `kubectl get pods -n p-cyb-05`\n2. Inspect database active connections: verify active connections do not exceed pool threshold.\n3. Scale deployment replicas: `kubectl scale deployment/p-cyb-05-service --replicas=8`\n4. If latency persists, initiate failover to secondary availability zone.\n\n## Escalation Hierarchy & SLA Matrix:\n- Target Response Time: 15 minutes\n- Target Resolution Time (P1): 4 hours\n- Primary Escalation Contact: Platform Operations Support Team\n- Technical Escalation Lead: E1028"
+      },
+      {
+        "id": "SP-DOC-P-CYB-05-DR-PLAN",
+        "name": "Security Data Lake — Disaster Recovery and Business Continuity Guide.docx",
+        "doc_type": "Runbook",
+        "version": "2.0",
+        "author": "E1028",
+        "updated_at": "2026-09-15T10:00:00Z",
+        "content_text": "# DISASTER RECOVERY PLAN: Security Data Lake\n\n## Recovery Targets\n- Recovery Time Objective (RTO): 4 hours\n- Recovery Point Objective (RPO): 1 hour\n\n## Failover Execution Checklist\n1. Declare Disaster event in ServiceNow Incident bridge.\n2. Update DNS routing records in Azure Traffic Manager to DR Region.\n3. Promote read-replica database to primary status.\n4. Validate end-to-end synthetic health checks."
+      },
+      {
+        "id": "SP-DOC-P-CYB-05-RISK-REG",
+        "name": "Security Data Lake — Project Risk Register and TISAX Assessment.xlsx",
+        "doc_type": "RiskRegister",
+        "version": "1.5",
+        "author": "E1024",
+        "updated_at": "2026-09-15T10:00:00Z",
+        "content_text": "# PROJECT RISK & COMPLIANCE ASSESSMENT\n\n- Risk 01: Third-party API rate limiting on upstream provider.\n  - Severity: Medium | Mitigation: Implement Redis distributed cache.\n- Risk 02: Key personnel allocation constraint during sprint delivery.\n  - Severity: High | Mitigation: Cross-train platform engineers across domains."
+      },
+      {
+        "id": "SP-DOC-P-CYB-05-USERGUIDE",
+        "name": "Security Data Lake — End-User Operations Manual.pdf",
+        "doc_type": "UserGuide",
+        "version": "1.2",
+        "author": "E1024",
+        "updated_at": "2026-09-15T10:00:00Z",
+        "content_text": "# END-USER MANUAL: Security Data Lake\n\nWelcome to Security Data Lake. This document outlines core navigation, role permissions, standard report generation, and exception handling."
+      }
+    ]
+  },
+  {
+    "site_id": "SP-SITE-P-CYB-06",
+    "project_id": "P-CYB-06",
+    "title": "Privileged Access Management SharePoint Team Site",
+    "documents": [
+      {
+        "id": "SP-DOC-P-CYB-06-CHARTER",
+        "name": "Privileged Access Management — Project Charter & Executive Business Case.docx",
+        "doc_type": "Charter",
+        "version": "2.1",
+        "charter_sponsor_person_id": "E1025",
+        "charter_budget_capex": 1800000,
+        "charter_budget_opex": 630000,
+        "author": "E1025",
+        "updated_at": "2026-09-15T10:00:00Z",
+        "content_text": "# PROJECT CHARTER: PRIVILEGED ACCESS MANAGEMENT\n\n## 1. Executive Summary & Vision\nThe AutoNova Group executive leadership authorizes the Privileged Access Management program under Domain CYB.\n\n## 2. Business Objectives & Strategic Alignment\n- Objective 1: Modernize automotive operations with real-time digital integration.\n- Objective 2: Establish direct compliance with European data privacy and TISAX cybersecurity standards.\n- Objective 3: Reduce annual maintenance expenditures through cloud platform consolidation.\n\n## 3. Financial Authorization & Budget Envelope\n- Capital Expenditure (Capex) Approved: €1,800,000\n- Operating Expenditure (Opex) Annual Baseline: €630,000\n- Executive Sponsor: E1025\n- Cost Center: CC-CYB-01\n\n## 4. Key Milestones & Go-Live Schedule\n- Phase 1 Architecture Sign-off: Complete\n- Phase 2 MVP Deployment: Target Go-Live 2023-10-15\n- Phase 3 Full Rollout across European and North American production plants."
+      },
+      {
+        "id": "SP-DOC-P-CYB-06-SPEC",
+        "name": "Privileged Access Management — Comprehensive Technical Specification.docx",
+        "doc_type": "Specification",
+        "version": "3.0",
+        "author": "E1032",
+        "updated_at": "2026-09-15T10:00:00Z",
+        "content_text": "# TECHNICAL SPECIFICATION: Privileged Access Management\n\n## 1. System Architecture & Component Interactions\nJust-in-time admin access, credential vaulting and session recording for admins and service accounts.\n\nThe system is engineered around high-availability containerized microservices hosted on Azure Kubernetes Service (AKS). Inter-system messaging utilizes Azure Event Hubs with standard Kafka protocol compliance.\n\n## 2. Security & Identity Integration\nAll endpoints require OAuth 2.0 JSON Web Tokens (JWT) validated against Microsoft Entra ID. RBAC permissions are mapped to corporate SAP authorization objects.\n\n## 3. Data Integrity & Retention\nData persistence layer uses PostgreSQL Flexible Server with automated 35-day point-in-time recovery. Cold storage archives to Azure Blob Storage with immutability policies."
+      },
+      {
+        "id": "SP-DOC-P-CYB-06-RUNBOOK-P1",
+        "name": "Privileged Access Management — P1 Critical Incident Troubleshooting & Triage Runbook.docx",
+        "doc_type": "Runbook",
+        "version": "4.2",
+        "author": "E1032",
+        "updated_at": "2026-09-15T10:00:00Z",
+        "content_text": "# PRODUCTION INCIDENT RUNBOOK: PRIVILEGED ACCESS MANAGEMENT\n\n## Symptom 1: High API Latency (> 2000ms) or Ingestion Queue Buildup\n### Root Cause Analysis:\n1. Connection pool saturation on backend PostgreSQL database.\n2. Upstream Kafka partition rebalance delay.\n3. Azure AKS node memory pressure causing pod eviction.\n\n### Step-by-Step Remediation Procedure:\n1. Check AKS pod status: `kubectl get pods -n p-cyb-06`\n2. Inspect database active connections: verify active connections do not exceed pool threshold.\n3. Scale deployment replicas: `kubectl scale deployment/p-cyb-06-service --replicas=8`\n4. If latency persists, initiate failover to secondary availability zone.\n\n## Escalation Hierarchy & SLA Matrix:\n- Target Response Time: 15 minutes\n- Target Resolution Time (P1): 4 hours\n- Primary Escalation Contact: Platform Operations Support Team\n- Technical Escalation Lead: E1032"
+      },
+      {
+        "id": "SP-DOC-P-CYB-06-DR-PLAN",
+        "name": "Privileged Access Management — Disaster Recovery and Business Continuity Guide.docx",
+        "doc_type": "Runbook",
+        "version": "2.0",
+        "author": "E1032",
+        "updated_at": "2026-09-15T10:00:00Z",
+        "content_text": "# DISASTER RECOVERY PLAN: Privileged Access Management\n\n## Recovery Targets\n- Recovery Time Objective (RTO): 4 hours\n- Recovery Point Objective (RPO): 1 hour\n\n## Failover Execution Checklist\n1. Declare Disaster event in ServiceNow Incident bridge.\n2. Update DNS routing records in Azure Traffic Manager to DR Region.\n3. Promote read-replica database to primary status.\n4. Validate end-to-end synthetic health checks."
+      },
+      {
+        "id": "SP-DOC-P-CYB-06-RISK-REG",
+        "name": "Privileged Access Management — Project Risk Register and TISAX Assessment.xlsx",
+        "doc_type": "RiskRegister",
+        "version": "1.5",
+        "author": "E1025",
+        "updated_at": "2026-09-15T10:00:00Z",
+        "content_text": "# PROJECT RISK & COMPLIANCE ASSESSMENT\n\n- Risk 01: Third-party API rate limiting on upstream provider.\n  - Severity: Medium | Mitigation: Implement Redis distributed cache.\n- Risk 02: Key personnel allocation constraint during sprint delivery.\n  - Severity: High | Mitigation: Cross-train platform engineers across domains."
+      },
+      {
+        "id": "SP-DOC-P-CYB-06-USERGUIDE",
+        "name": "Privileged Access Management — End-User Operations Manual.pdf",
+        "doc_type": "UserGuide",
+        "version": "1.2",
+        "author": "E1025",
+        "updated_at": "2026-09-15T10:00:00Z",
+        "content_text": "# END-USER MANUAL: Privileged Access Management\n\nWelcome to Privileged Access Management. This document outlines core navigation, role permissions, standard report generation, and exception handling."
+      }
+    ]
+  },
+  {
+    "site_id": "SP-SITE-P-CYB-07",
+    "project_id": "P-CYB-07",
+    "title": "Incident Response Automation (SOAR) SharePoint Team Site",
+    "documents": [
+      {
+        "id": "SP-DOC-P-CYB-07-CHARTER",
+        "name": "Incident Response Automation (SOAR) — Project Charter & Executive Business Case.docx",
+        "doc_type": "Charter",
+        "version": "2.1",
+        "charter_sponsor_person_id": "E1024",
+        "charter_budget_capex": 1800000,
+        "charter_budget_opex": 630000,
+        "author": "E1024",
+        "updated_at": "2026-09-15T10:00:00Z",
+        "content_text": "# PROJECT CHARTER: INCIDENT RESPONSE AUTOMATION (SOAR)\n\n## 1. Executive Summary & Vision\nThe AutoNova Group executive leadership authorizes the Incident Response Automation (SOAR) program under Domain CYB.\n\n## 2. Business Objectives & Strategic Alignment\n- Objective 1: Modernize automotive operations with real-time digital integration.\n- Objective 2: Establish direct compliance with European data privacy and TISAX cybersecurity standards.\n- Objective 3: Reduce annual maintenance expenditures through cloud platform consolidation.\n\n## 3. Financial Authorization & Budget Envelope\n- Capital Expenditure (Capex) Approved: €1,800,000\n- Operating Expenditure (Opex) Annual Baseline: €630,000\n- Executive Sponsor: E1024\n- Cost Center: CC-CYB-01\n\n## 4. Key Milestones & Go-Live Schedule\n- Phase 1 Architecture Sign-off: Complete\n- Phase 2 MVP Deployment: Target Go-Live 2026-10-15\n- Phase 3 Full Rollout across European and North American production plants."
+      },
+      {
+        "id": "SP-DOC-P-CYB-07-SPEC",
+        "name": "Incident Response Automation (SOAR) — Comprehensive Technical Specification.docx",
+        "doc_type": "Specification",
+        "version": "3.0",
+        "author": "E1037",
+        "updated_at": "2026-09-15T10:00:00Z",
+        "content_text": "# TECHNICAL SPECIFICATION: Incident Response Automation (SOAR)\n\n## 1. System Architecture & Component Interactions\nSOAR playbooks that triage, enrich and contain high-volume alert types automatically.\n\nThe system is engineered around high-availability containerized microservices hosted on Azure Kubernetes Service (AKS). Inter-system messaging utilizes Azure Event Hubs with standard Kafka protocol compliance.\n\n## 2. Security & Identity Integration\nAll endpoints require OAuth 2.0 JSON Web Tokens (JWT) validated against Microsoft Entra ID. RBAC permissions are mapped to corporate SAP authorization objects.\n\n## 3. Data Integrity & Retention\nData persistence layer uses PostgreSQL Flexible Server with automated 35-day point-in-time recovery. Cold storage archives to Azure Blob Storage with immutability policies."
+      },
+      {
+        "id": "SP-DOC-P-CYB-07-RUNBOOK-P1",
+        "name": "Incident Response Automation (SOAR) — P1 Critical Incident Troubleshooting & Triage Runbook.docx",
+        "doc_type": "Runbook",
+        "version": "4.2",
+        "author": "E1037",
+        "updated_at": "2026-09-15T10:00:00Z",
+        "content_text": "# PRODUCTION INCIDENT RUNBOOK: INCIDENT RESPONSE AUTOMATION (SOAR)\n\n## Symptom 1: High API Latency (> 2000ms) or Ingestion Queue Buildup\n### Root Cause Analysis:\n1. Connection pool saturation on backend PostgreSQL database.\n2. Upstream Kafka partition rebalance delay.\n3. Azure AKS node memory pressure causing pod eviction.\n\n### Step-by-Step Remediation Procedure:\n1. Check AKS pod status: `kubectl get pods -n p-cyb-07`\n2. Inspect database active connections: verify active connections do not exceed pool threshold.\n3. Scale deployment replicas: `kubectl scale deployment/p-cyb-07-service --replicas=8`\n4. If latency persists, initiate failover to secondary availability zone.\n\n## Escalation Hierarchy & SLA Matrix:\n- Target Response Time: 15 minutes\n- Target Resolution Time (P1): 4 hours\n- Primary Escalation Contact: Platform Operations Support Team\n- Technical Escalation Lead: E1037"
+      },
+      {
+        "id": "SP-DOC-P-CYB-07-DR-PLAN",
+        "name": "Incident Response Automation (SOAR) — Disaster Recovery and Business Continuity Guide.docx",
+        "doc_type": "Runbook",
+        "version": "2.0",
+        "author": "E1037",
+        "updated_at": "2026-09-15T10:00:00Z",
+        "content_text": "# DISASTER RECOVERY PLAN: Incident Response Automation (SOAR)\n\n## Recovery Targets\n- Recovery Time Objective (RTO): 4 hours\n- Recovery Point Objective (RPO): 1 hour\n\n## Failover Execution Checklist\n1. Declare Disaster event in ServiceNow Incident bridge.\n2. Update DNS routing records in Azure Traffic Manager to DR Region.\n3. Promote read-replica database to primary status.\n4. Validate end-to-end synthetic health checks."
+      },
+      {
+        "id": "SP-DOC-P-CYB-07-RISK-REG",
+        "name": "Incident Response Automation (SOAR) — Project Risk Register and TISAX Assessment.xlsx",
+        "doc_type": "RiskRegister",
+        "version": "1.5",
+        "author": "E1024",
+        "updated_at": "2026-09-15T10:00:00Z",
+        "content_text": "# PROJECT RISK & COMPLIANCE ASSESSMENT\n\n- Risk 01: Third-party API rate limiting on upstream provider.\n  - Severity: Medium | Mitigation: Implement Redis distributed cache.\n- Risk 02: Key personnel allocation constraint during sprint delivery.\n  - Severity: High | Mitigation: Cross-train platform engineers across domains."
+      },
+      {
+        "id": "SP-DOC-P-CYB-07-USERGUIDE",
+        "name": "Incident Response Automation (SOAR) — End-User Operations Manual.pdf",
+        "doc_type": "UserGuide",
+        "version": "1.2",
+        "author": "E1024",
+        "updated_at": "2026-09-15T10:00:00Z",
+        "content_text": "# END-USER MANUAL: Incident Response Automation (SOAR)\n\nWelcome to Incident Response Automation (SOAR). This document outlines core navigation, role permissions, standard report generation, and exception handling."
+      }
+    ]
+  },
+  {
+    "site_id": "SP-SITE-P-FIN-01",
+    "project_id": "P-FIN-01",
+    "title": "SAP S/4HANA Finance Core SharePoint Team Site",
+    "documents": [
+      {
+        "id": "SP-DOC-P-FIN-01-CHARTER",
+        "name": "SAP S/4HANA Finance Core — Project Charter & Executive Business Case.docx",
+        "doc_type": "Charter",
+        "version": "2.1",
+        "charter_sponsor_person_id": "E1039",
+        "charter_budget_capex": 4200000,
+        "charter_budget_opex": 1470000,
+        "author": "E1039",
+        "updated_at": "2026-09-15T10:00:00Z",
+        "content_text": "# PROJECT CHARTER: SAP S/4HANA FINANCE CORE\n\n## 1. Executive Summary & Vision\nThe AutoNova Group executive leadership authorizes the SAP S/4HANA Finance Core program under Domain FIN.\n\n## 2. Business Objectives & Strategic Alignment\n- Objective 1: Modernize automotive operations with real-time digital integration.\n- Objective 2: Establish direct compliance with European data privacy and TISAX cybersecurity standards.\n- Objective 3: Reduce annual maintenance expenditures through cloud platform consolidation.\n\n## 3. Financial Authorization & Budget Envelope\n- Capital Expenditure (Capex) Approved: €4,200,000\n- Operating Expenditure (Opex) Annual Baseline: €1,470,000\n- Executive Sponsor: E1039\n- Cost Center: CC-FIN-01\n\n## 4. Key Milestones & Go-Live Schedule\n- Phase 1 Architecture Sign-off: Complete\n- Phase 2 MVP Deployment: Target Go-Live 2022-10-15\n- Phase 3 Full Rollout across European and North American production plants."
+      },
+      {
+        "id": "SP-DOC-P-FIN-01-SPEC",
+        "name": "SAP S/4HANA Finance Core — Comprehensive Technical Specification.docx",
+        "doc_type": "Specification",
+        "version": "3.0",
+        "author": "E1042",
+        "updated_at": "2026-09-15T10:00:00Z",
+        "content_text": "# TECHNICAL SPECIFICATION: SAP S/4HANA Finance Core\n\n## 1. System Architecture & Component Interactions\nCentral general ledger, AP/AR and asset accounting on SAP RISE; the finance system of record for all group entities.\n\nThe system is engineered around high-availability containerized microservices hosted on Azure Kubernetes Service (AKS). Inter-system messaging utilizes Azure Event Hubs with standard Kafka protocol compliance.\n\n## 2. Security & Identity Integration\nAll endpoints require OAuth 2.0 JSON Web Tokens (JWT) validated against Microsoft Entra ID. RBAC permissions are mapped to corporate SAP authorization objects.\n\n## 3. Data Integrity & Retention\nData persistence layer uses PostgreSQL Flexible Server with automated 35-day point-in-time recovery. Cold storage archives to Azure Blob Storage with immutability policies."
+      },
+      {
+        "id": "SP-DOC-P-FIN-01-RUNBOOK-P1",
+        "name": "SAP S/4HANA Finance Core — P1 Critical Incident Troubleshooting & Triage Runbook.docx",
+        "doc_type": "Runbook",
+        "version": "4.2",
+        "author": "E1042",
+        "updated_at": "2026-09-15T10:00:00Z",
+        "content_text": "# PRODUCTION INCIDENT RUNBOOK: SAP S/4HANA FINANCE CORE\n\n## Symptom 1: High API Latency (> 2000ms) or Ingestion Queue Buildup\n### Root Cause Analysis:\n1. Connection pool saturation on backend PostgreSQL database.\n2. Upstream Kafka partition rebalance delay.\n3. Azure AKS node memory pressure causing pod eviction.\n\n### Step-by-Step Remediation Procedure:\n1. Check AKS pod status: `kubectl get pods -n p-fin-01`\n2. Inspect database active connections: verify active connections do not exceed pool threshold.\n3. Scale deployment replicas: `kubectl scale deployment/p-fin-01-service --replicas=8`\n4. If latency persists, initiate failover to secondary availability zone.\n\n## Escalation Hierarchy & SLA Matrix:\n- Target Response Time: 15 minutes\n- Target Resolution Time (P1): 4 hours\n- Primary Escalation Contact: Platform Operations Support Team\n- Technical Escalation Lead: E1042"
+      },
+      {
+        "id": "SP-DOC-P-FIN-01-DR-PLAN",
+        "name": "SAP S/4HANA Finance Core — Disaster Recovery and Business Continuity Guide.docx",
+        "doc_type": "Runbook",
+        "version": "2.0",
+        "author": "E1042",
+        "updated_at": "2026-09-15T10:00:00Z",
+        "content_text": "# DISASTER RECOVERY PLAN: SAP S/4HANA Finance Core\n\n## Recovery Targets\n- Recovery Time Objective (RTO): 4 hours\n- Recovery Point Objective (RPO): 1 hour\n\n## Failover Execution Checklist\n1. Declare Disaster event in ServiceNow Incident bridge.\n2. Update DNS routing records in Azure Traffic Manager to DR Region.\n3. Promote read-replica database to primary status.\n4. Validate end-to-end synthetic health checks."
+      },
+      {
+        "id": "SP-DOC-P-FIN-01-RISK-REG",
+        "name": "SAP S/4HANA Finance Core — Project Risk Register and TISAX Assessment.xlsx",
+        "doc_type": "RiskRegister",
+        "version": "1.5",
+        "author": "E1039",
+        "updated_at": "2026-09-15T10:00:00Z",
+        "content_text": "# PROJECT RISK & COMPLIANCE ASSESSMENT\n\n- Risk 01: Third-party API rate limiting on upstream provider.\n  - Severity: Medium | Mitigation: Implement Redis distributed cache.\n- Risk 02: Key personnel allocation constraint during sprint delivery.\n  - Severity: High | Mitigation: Cross-train platform engineers across domains."
+      },
+      {
+        "id": "SP-DOC-P-FIN-01-USERGUIDE",
+        "name": "SAP S/4HANA Finance Core — End-User Operations Manual.pdf",
+        "doc_type": "UserGuide",
+        "version": "1.2",
+        "author": "E1039",
+        "updated_at": "2026-09-15T10:00:00Z",
+        "content_text": "# END-USER MANUAL: SAP S/4HANA Finance Core\n\nWelcome to SAP S/4HANA Finance Core. This document outlines core navigation, role permissions, standard report generation, and exception handling."
+      }
+    ]
+  },
+  {
+    "site_id": "SP-SITE-P-FIN-02",
+    "project_id": "P-FIN-02",
+    "title": "Finance Analytics & Reporting SharePoint Team Site",
+    "documents": [
+      {
+        "id": "SP-DOC-P-FIN-02-CHARTER",
+        "name": "Finance Analytics & Reporting — Project Charter & Executive Business Case.docx",
+        "doc_type": "Charter",
+        "version": "2.1",
+        "charter_sponsor_person_id": "E1039",
+        "charter_budget_capex": 3500000,
+        "charter_budget_opex": 1225000,
+        "author": "E1039",
+        "updated_at": "2026-09-15T10:00:00Z",
+        "content_text": "# PROJECT CHARTER: FINANCE ANALYTICS & REPORTING\n\n## 1. Executive Summary & Vision\nThe AutoNova Group executive leadership authorizes the Finance Analytics & Reporting program under Domain FIN.\n\n## 2. Business Objectives & Strategic Alignment\n- Objective 1: Modernize automotive operations with real-time digital integration.\n- Objective 2: Establish direct compliance with European data privacy and TISAX cybersecurity standards.\n- Objective 3: Reduce annual maintenance expenditures through cloud platform consolidation.\n\n## 3. Financial Authorization & Budget Envelope\n- Capital Expenditure (Capex) Approved: €3,500,000\n- Operating Expenditure (Opex) Annual Baseline: €1,225,000\n- Executive Sponsor: E1039\n- Cost Center: CC-FIN-01\n\n## 4. Key Milestones & Go-Live Schedule\n- Phase 1 Architecture Sign-off: Complete\n- Phase 2 MVP Deployment: Target Go-Live 2023-10-15\n- Phase 3 Full Rollout across European and North American production plants."
+      },
+      {
+        "id": "SP-DOC-P-FIN-02-SPEC",
+        "name": "Finance Analytics & Reporting — Comprehensive Technical Specification.docx",
+        "doc_type": "Specification",
+        "version": "3.0",
+        "author": "E1048",
+        "updated_at": "2026-09-15T10:00:00Z",
+        "content_text": "# TECHNICAL SPECIFICATION: Finance Analytics & Reporting\n\n## 1. System Architecture & Component Interactions\nManagement and board dashboards on SAP Analytics Cloud, fed from S/4 via Datasphere.\n\nThe system is engineered around high-availability containerized microservices hosted on Azure Kubernetes Service (AKS). Inter-system messaging utilizes Azure Event Hubs with standard Kafka protocol compliance.\n\n## 2. Security & Identity Integration\nAll endpoints require OAuth 2.0 JSON Web Tokens (JWT) validated against Microsoft Entra ID. RBAC permissions are mapped to corporate SAP authorization objects.\n\n## 3. Data Integrity & Retention\nData persistence layer uses PostgreSQL Flexible Server with automated 35-day point-in-time recovery. Cold storage archives to Azure Blob Storage with immutability policies."
+      },
+      {
+        "id": "SP-DOC-P-FIN-02-RUNBOOK-P1",
+        "name": "Finance Analytics & Reporting — P1 Critical Incident Troubleshooting & Triage Runbook.docx",
+        "doc_type": "Runbook",
+        "version": "4.2",
+        "author": "E1048",
+        "updated_at": "2026-09-15T10:00:00Z",
+        "content_text": "# PRODUCTION INCIDENT RUNBOOK: FINANCE ANALYTICS & REPORTING\n\n## Symptom 1: High API Latency (> 2000ms) or Ingestion Queue Buildup\n### Root Cause Analysis:\n1. Connection pool saturation on backend PostgreSQL database.\n2. Upstream Kafka partition rebalance delay.\n3. Azure AKS node memory pressure causing pod eviction.\n\n### Step-by-Step Remediation Procedure:\n1. Check AKS pod status: `kubectl get pods -n p-fin-02`\n2. Inspect database active connections: verify active connections do not exceed pool threshold.\n3. Scale deployment replicas: `kubectl scale deployment/p-fin-02-service --replicas=8`\n4. If latency persists, initiate failover to secondary availability zone.\n\n## Escalation Hierarchy & SLA Matrix:\n- Target Response Time: 15 minutes\n- Target Resolution Time (P1): 4 hours\n- Primary Escalation Contact: Platform Operations Support Team\n- Technical Escalation Lead: E1048"
+      },
+      {
+        "id": "SP-DOC-P-FIN-02-DR-PLAN",
+        "name": "Finance Analytics & Reporting — Disaster Recovery and Business Continuity Guide.docx",
+        "doc_type": "Runbook",
+        "version": "2.0",
+        "author": "E1048",
+        "updated_at": "2026-09-15T10:00:00Z",
+        "content_text": "# DISASTER RECOVERY PLAN: Finance Analytics & Reporting\n\n## Recovery Targets\n- Recovery Time Objective (RTO): 4 hours\n- Recovery Point Objective (RPO): 1 hour\n\n## Failover Execution Checklist\n1. Declare Disaster event in ServiceNow Incident bridge.\n2. Update DNS routing records in Azure Traffic Manager to DR Region.\n3. Promote read-replica database to primary status.\n4. Validate end-to-end synthetic health checks."
+      },
+      {
+        "id": "SP-DOC-P-FIN-02-RISK-REG",
+        "name": "Finance Analytics & Reporting — Project Risk Register and TISAX Assessment.xlsx",
+        "doc_type": "RiskRegister",
+        "version": "1.5",
+        "author": "E1039",
+        "updated_at": "2026-09-15T10:00:00Z",
+        "content_text": "# PROJECT RISK & COMPLIANCE ASSESSMENT\n\n- Risk 01: Third-party API rate limiting on upstream provider.\n  - Severity: Medium | Mitigation: Implement Redis distributed cache.\n- Risk 02: Key personnel allocation constraint during sprint delivery.\n  - Severity: High | Mitigation: Cross-train platform engineers across domains."
+      },
+      {
+        "id": "SP-DOC-P-FIN-02-USERGUIDE",
+        "name": "Finance Analytics & Reporting — End-User Operations Manual.pdf",
+        "doc_type": "UserGuide",
+        "version": "1.2",
+        "author": "E1039",
+        "updated_at": "2026-09-15T10:00:00Z",
+        "content_text": "# END-USER MANUAL: Finance Analytics & Reporting\n\nWelcome to Finance Analytics & Reporting. This document outlines core navigation, role permissions, standard report generation, and exception handling."
+      }
+    ]
+  },
+  {
+    "site_id": "SP-SITE-P-FIN-03",
+    "project_id": "P-FIN-03",
+    "title": "Group Consolidation & Close SharePoint Team Site",
+    "documents": [
+      {
+        "id": "SP-DOC-P-FIN-03-CHARTER",
+        "name": "Group Consolidation & Close — Project Charter & Executive Business Case.docx",
+        "doc_type": "Charter",
+        "version": "2.1",
+        "charter_sponsor_person_id": "E1040",
+        "charter_budget_capex": 3500000,
+        "charter_budget_opex": 1225000,
+        "author": "E1040",
+        "updated_at": "2026-09-15T10:00:00Z",
+        "content_text": "# PROJECT CHARTER: GROUP CONSOLIDATION & CLOSE\n\n## 1. Executive Summary & Vision\nThe AutoNova Group executive leadership authorizes the Group Consolidation & Close program under Domain FIN.\n\n## 2. Business Objectives & Strategic Alignment\n- Objective 1: Modernize automotive operations with real-time digital integration.\n- Objective 2: Establish direct compliance with European data privacy and TISAX cybersecurity standards.\n- Objective 3: Reduce annual maintenance expenditures through cloud platform consolidation.\n\n## 3. Financial Authorization & Budget Envelope\n- Capital Expenditure (Capex) Approved: €3,500,000\n- Operating Expenditure (Opex) Annual Baseline: €1,225,000\n- Executive Sponsor: E1040\n- Cost Center: CC-FIN-01\n\n## 4. Key Milestones & Go-Live Schedule\n- Phase 1 Architecture Sign-off: Complete\n- Phase 2 MVP Deployment: Target Go-Live 2023-10-15\n- Phase 3 Full Rollout across European and North American production plants."
+      },
+      {
+        "id": "SP-DOC-P-FIN-03-SPEC",
+        "name": "Group Consolidation & Close — Comprehensive Technical Specification.docx",
+        "doc_type": "Specification",
+        "version": "3.0",
+        "author": "E1043",
+        "updated_at": "2026-09-15T10:00:00Z",
+        "content_text": "# TECHNICAL SPECIFICATION: Group Consolidation & Close\n\n## 1. System Architecture & Component Interactions\nMonthly and quarterly consolidation, eliminations and group reporting on SAP Group Reporting.\n\nThe system is engineered around high-availability containerized microservices hosted on Azure Kubernetes Service (AKS). Inter-system messaging utilizes Azure Event Hubs with standard Kafka protocol compliance.\n\n## 2. Security & Identity Integration\nAll endpoints require OAuth 2.0 JSON Web Tokens (JWT) validated against Microsoft Entra ID. RBAC permissions are mapped to corporate SAP authorization objects.\n\n## 3. Data Integrity & Retention\nData persistence layer uses PostgreSQL Flexible Server with automated 35-day point-in-time recovery. Cold storage archives to Azure Blob Storage with immutability policies."
+      },
+      {
+        "id": "SP-DOC-P-FIN-03-RUNBOOK-P1",
+        "name": "Group Consolidation & Close — P1 Critical Incident Troubleshooting & Triage Runbook.docx",
+        "doc_type": "Runbook",
+        "version": "4.2",
+        "author": "E1043",
+        "updated_at": "2026-09-15T10:00:00Z",
+        "content_text": "# PRODUCTION INCIDENT RUNBOOK: GROUP CONSOLIDATION & CLOSE\n\n## Symptom 1: High API Latency (> 2000ms) or Ingestion Queue Buildup\n### Root Cause Analysis:\n1. Connection pool saturation on backend PostgreSQL database.\n2. Upstream Kafka partition rebalance delay.\n3. Azure AKS node memory pressure causing pod eviction.\n\n### Step-by-Step Remediation Procedure:\n1. Check AKS pod status: `kubectl get pods -n p-fin-03`\n2. Inspect database active connections: verify active connections do not exceed pool threshold.\n3. Scale deployment replicas: `kubectl scale deployment/p-fin-03-service --replicas=8`\n4. If latency persists, initiate failover to secondary availability zone.\n\n## Escalation Hierarchy & SLA Matrix:\n- Target Response Time: 15 minutes\n- Target Resolution Time (P1): 4 hours\n- Primary Escalation Contact: Platform Operations Support Team\n- Technical Escalation Lead: E1043"
+      },
+      {
+        "id": "SP-DOC-P-FIN-03-DR-PLAN",
+        "name": "Group Consolidation & Close — Disaster Recovery and Business Continuity Guide.docx",
+        "doc_type": "Runbook",
+        "version": "2.0",
+        "author": "E1043",
+        "updated_at": "2026-09-15T10:00:00Z",
+        "content_text": "# DISASTER RECOVERY PLAN: Group Consolidation & Close\n\n## Recovery Targets\n- Recovery Time Objective (RTO): 4 hours\n- Recovery Point Objective (RPO): 1 hour\n\n## Failover Execution Checklist\n1. Declare Disaster event in ServiceNow Incident bridge.\n2. Update DNS routing records in Azure Traffic Manager to DR Region.\n3. Promote read-replica database to primary status.\n4. Validate end-to-end synthetic health checks."
+      },
+      {
+        "id": "SP-DOC-P-FIN-03-RISK-REG",
+        "name": "Group Consolidation & Close — Project Risk Register and TISAX Assessment.xlsx",
+        "doc_type": "RiskRegister",
+        "version": "1.5",
+        "author": "E1040",
+        "updated_at": "2026-09-15T10:00:00Z",
+        "content_text": "# PROJECT RISK & COMPLIANCE ASSESSMENT\n\n- Risk 01: Third-party API rate limiting on upstream provider.\n  - Severity: Medium | Mitigation: Implement Redis distributed cache.\n- Risk 02: Key personnel allocation constraint during sprint delivery.\n  - Severity: High | Mitigation: Cross-train platform engineers across domains."
+      },
+      {
+        "id": "SP-DOC-P-FIN-03-USERGUIDE",
+        "name": "Group Consolidation & Close — End-User Operations Manual.pdf",
+        "doc_type": "UserGuide",
+        "version": "1.2",
+        "author": "E1040",
+        "updated_at": "2026-09-15T10:00:00Z",
+        "content_text": "# END-USER MANUAL: Group Consolidation & Close\n\nWelcome to Group Consolidation & Close. This document outlines core navigation, role permissions, standard report generation, and exception handling."
+      }
+    ]
+  },
+  {
+    "site_id": "SP-SITE-P-FIN-04",
+    "project_id": "P-FIN-04",
+    "title": "Treasury & Cash Management SharePoint Team Site",
+    "documents": [
+      {
+        "id": "SP-DOC-P-FIN-04-CHARTER",
+        "name": "Treasury & Cash Management — Project Charter & Executive Business Case.docx",
+        "doc_type": "Charter",
+        "version": "2.1",
+        "charter_sponsor_person_id": "E1045",
+        "charter_budget_capex": 3500000,
+        "charter_budget_opex": 1225000,
+        "author": "E1045",
+        "updated_at": "2026-09-15T10:00:00Z",
+        "content_text": "# PROJECT CHARTER: TREASURY & CASH MANAGEMENT\n\n## 1. Executive Summary & Vision\nThe AutoNova Group executive leadership authorizes the Treasury & Cash Management program under Domain FIN.\n\n## 2. Business Objectives & Strategic Alignment\n- Objective 1: Modernize automotive operations with real-time digital integration.\n- Objective 2: Establish direct compliance with European data privacy and TISAX cybersecurity standards.\n- Objective 3: Reduce annual maintenance expenditures through cloud platform consolidation.\n\n## 3. Financial Authorization & Budget Envelope\n- Capital Expenditure (Capex) Approved: €3,500,000\n- Operating Expenditure (Opex) Annual Baseline: €1,225,000\n- Executive Sponsor: E1045\n- Cost Center: CC-FIN-01\n\n## 4. Key Milestones & Go-Live Schedule\n- Phase 1 Architecture Sign-off: Complete\n- Phase 2 MVP Deployment: Target Go-Live 2026-10-15\n- Phase 3 Full Rollout across European and North American production plants."
+      },
+      {
+        "id": "SP-DOC-P-FIN-04-SPEC",
+        "name": "Treasury & Cash Management — Comprehensive Technical Specification.docx",
+        "doc_type": "Specification",
+        "version": "3.0",
+        "author": "E1047",
+        "updated_at": "2026-09-15T10:00:00Z",
+        "content_text": "# TECHNICAL SPECIFICATION: Treasury & Cash Management\n\n## 1. System Architecture & Component Interactions\nCash positioning, bank connectivity, liquidity forecasting and FX hedging.\n\nThe system is engineered around high-availability containerized microservices hosted on Azure Kubernetes Service (AKS). Inter-system messaging utilizes Azure Event Hubs with standard Kafka protocol compliance.\n\n## 2. Security & Identity Integration\nAll endpoints require OAuth 2.0 JSON Web Tokens (JWT) validated against Microsoft Entra ID. RBAC permissions are mapped to corporate SAP authorization objects.\n\n## 3. Data Integrity & Retention\nData persistence layer uses PostgreSQL Flexible Server with automated 35-day point-in-time recovery. Cold storage archives to Azure Blob Storage with immutability policies."
+      },
+      {
+        "id": "SP-DOC-P-FIN-04-RUNBOOK-P1",
+        "name": "Treasury & Cash Management — P1 Critical Incident Troubleshooting & Triage Runbook.docx",
+        "doc_type": "Runbook",
+        "version": "4.2",
+        "author": "E1047",
+        "updated_at": "2026-09-15T10:00:00Z",
+        "content_text": "# PRODUCTION INCIDENT RUNBOOK: TREASURY & CASH MANAGEMENT\n\n## Symptom 1: High API Latency (> 2000ms) or Ingestion Queue Buildup\n### Root Cause Analysis:\n1. Connection pool saturation on backend PostgreSQL database.\n2. Upstream Kafka partition rebalance delay.\n3. Azure AKS node memory pressure causing pod eviction.\n\n### Step-by-Step Remediation Procedure:\n1. Check AKS pod status: `kubectl get pods -n p-fin-04`\n2. Inspect database active connections: verify active connections do not exceed pool threshold.\n3. Scale deployment replicas: `kubectl scale deployment/p-fin-04-service --replicas=8`\n4. If latency persists, initiate failover to secondary availability zone.\n\n## Escalation Hierarchy & SLA Matrix:\n- Target Response Time: 15 minutes\n- Target Resolution Time (P1): 4 hours\n- Primary Escalation Contact: Platform Operations Support Team\n- Technical Escalation Lead: E1047"
+      },
+      {
+        "id": "SP-DOC-P-FIN-04-DR-PLAN",
+        "name": "Treasury & Cash Management — Disaster Recovery and Business Continuity Guide.docx",
+        "doc_type": "Runbook",
+        "version": "2.0",
+        "author": "E1047",
+        "updated_at": "2026-09-15T10:00:00Z",
+        "content_text": "# DISASTER RECOVERY PLAN: Treasury & Cash Management\n\n## Recovery Targets\n- Recovery Time Objective (RTO): 4 hours\n- Recovery Point Objective (RPO): 1 hour\n\n## Failover Execution Checklist\n1. Declare Disaster event in ServiceNow Incident bridge.\n2. Update DNS routing records in Azure Traffic Manager to DR Region.\n3. Promote read-replica database to primary status.\n4. Validate end-to-end synthetic health checks."
+      },
+      {
+        "id": "SP-DOC-P-FIN-04-RISK-REG",
+        "name": "Treasury & Cash Management — Project Risk Register and TISAX Assessment.xlsx",
+        "doc_type": "RiskRegister",
+        "version": "1.5",
+        "author": "E1045",
+        "updated_at": "2026-09-15T10:00:00Z",
+        "content_text": "# PROJECT RISK & COMPLIANCE ASSESSMENT\n\n- Risk 01: Third-party API rate limiting on upstream provider.\n  - Severity: Medium | Mitigation: Implement Redis distributed cache.\n- Risk 02: Key personnel allocation constraint during sprint delivery.\n  - Severity: High | Mitigation: Cross-train platform engineers across domains."
+      },
+      {
+        "id": "SP-DOC-P-FIN-04-USERGUIDE",
+        "name": "Treasury & Cash Management — End-User Operations Manual.pdf",
+        "doc_type": "UserGuide",
+        "version": "1.2",
+        "author": "E1045",
+        "updated_at": "2026-09-15T10:00:00Z",
+        "content_text": "# END-USER MANUAL: Treasury & Cash Management\n\nWelcome to Treasury & Cash Management. This document outlines core navigation, role permissions, standard report generation, and exception handling."
+      }
+    ]
+  },
+  {
+    "site_id": "SP-SITE-P-FIN-05",
+    "project_id": "P-FIN-05",
+    "title": "Financial Data Mart SharePoint Team Site",
+    "documents": [
+      {
+        "id": "SP-DOC-P-FIN-05-CHARTER",
+        "name": "Financial Data Mart — Project Charter & Executive Business Case.docx",
+        "doc_type": "Charter",
+        "version": "2.1",
+        "charter_sponsor_person_id": "E1040",
+        "charter_budget_capex": 3500000,
+        "charter_budget_opex": 1225000,
+        "author": "E1040",
+        "updated_at": "2026-09-15T10:00:00Z",
+        "content_text": "# PROJECT CHARTER: FINANCIAL DATA MART\n\n## 1. Executive Summary & Vision\nThe AutoNova Group executive leadership authorizes the Financial Data Mart program under Domain FIN.\n\n## 2. Business Objectives & Strategic Alignment\n- Objective 1: Modernize automotive operations with real-time digital integration.\n- Objective 2: Establish direct compliance with European data privacy and TISAX cybersecurity standards.\n- Objective 3: Reduce annual maintenance expenditures through cloud platform consolidation.\n\n## 3. Financial Authorization & Budget Envelope\n- Capital Expenditure (Capex) Approved: €3,500,000\n- Operating Expenditure (Opex) Annual Baseline: €1,225,000\n- Executive Sponsor: E1040\n- Cost Center: CC-FIN-01\n\n## 4. Key Milestones & Go-Live Schedule\n- Phase 1 Architecture Sign-off: Complete\n- Phase 2 MVP Deployment: Target Go-Live 2024-10-15\n- Phase 3 Full Rollout across European and North American production plants."
+      },
+      {
+        "id": "SP-DOC-P-FIN-05-SPEC",
+        "name": "Financial Data Mart — Comprehensive Technical Specification.docx",
+        "doc_type": "Specification",
+        "version": "3.0",
+        "author": "E1049",
+        "updated_at": "2026-09-15T10:00:00Z",
+        "content_text": "# TECHNICAL SPECIFICATION: Financial Data Mart\n\n## 1. System Architecture & Component Interactions\nSnowflake-based curated finance data for history, cross-domain analysis and external reporting.\n\nThe system is engineered around high-availability containerized microservices hosted on Azure Kubernetes Service (AKS). Inter-system messaging utilizes Azure Event Hubs with standard Kafka protocol compliance.\n\n## 2. Security & Identity Integration\nAll endpoints require OAuth 2.0 JSON Web Tokens (JWT) validated against Microsoft Entra ID. RBAC permissions are mapped to corporate SAP authorization objects.\n\n## 3. Data Integrity & Retention\nData persistence layer uses PostgreSQL Flexible Server with automated 35-day point-in-time recovery. Cold storage archives to Azure Blob Storage with immutability policies."
+      },
+      {
+        "id": "SP-DOC-P-FIN-05-RUNBOOK-P1",
+        "name": "Financial Data Mart — P1 Critical Incident Troubleshooting & Triage Runbook.docx",
+        "doc_type": "Runbook",
+        "version": "4.2",
+        "author": "E1049",
+        "updated_at": "2026-09-15T10:00:00Z",
+        "content_text": "# PRODUCTION INCIDENT RUNBOOK: FINANCIAL DATA MART\n\n## Symptom 1: High API Latency (> 2000ms) or Ingestion Queue Buildup\n### Root Cause Analysis:\n1. Connection pool saturation on backend PostgreSQL database.\n2. Upstream Kafka partition rebalance delay.\n3. Azure AKS node memory pressure causing pod eviction.\n\n### Step-by-Step Remediation Procedure:\n1. Check AKS pod status: `kubectl get pods -n p-fin-05`\n2. Inspect database active connections: verify active connections do not exceed pool threshold.\n3. Scale deployment replicas: `kubectl scale deployment/p-fin-05-service --replicas=8`\n4. If latency persists, initiate failover to secondary availability zone.\n\n## Escalation Hierarchy & SLA Matrix:\n- Target Response Time: 15 minutes\n- Target Resolution Time (P1): 4 hours\n- Primary Escalation Contact: Platform Operations Support Team\n- Technical Escalation Lead: E1049"
+      },
+      {
+        "id": "SP-DOC-P-FIN-05-DR-PLAN",
+        "name": "Financial Data Mart — Disaster Recovery and Business Continuity Guide.docx",
+        "doc_type": "Runbook",
+        "version": "2.0",
+        "author": "E1049",
+        "updated_at": "2026-09-15T10:00:00Z",
+        "content_text": "# DISASTER RECOVERY PLAN: Financial Data Mart\n\n## Recovery Targets\n- Recovery Time Objective (RTO): 4 hours\n- Recovery Point Objective (RPO): 1 hour\n\n## Failover Execution Checklist\n1. Declare Disaster event in ServiceNow Incident bridge.\n2. Update DNS routing records in Azure Traffic Manager to DR Region.\n3. Promote read-replica database to primary status.\n4. Validate end-to-end synthetic health checks."
+      },
+      {
+        "id": "SP-DOC-P-FIN-05-RISK-REG",
+        "name": "Financial Data Mart — Project Risk Register and TISAX Assessment.xlsx",
+        "doc_type": "RiskRegister",
+        "version": "1.5",
+        "author": "E1040",
+        "updated_at": "2026-09-15T10:00:00Z",
+        "content_text": "# PROJECT RISK & COMPLIANCE ASSESSMENT\n\n- Risk 01: Third-party API rate limiting on upstream provider.\n  - Severity: Medium | Mitigation: Implement Redis distributed cache.\n- Risk 02: Key personnel allocation constraint during sprint delivery.\n  - Severity: High | Mitigation: Cross-train platform engineers across domains."
+      },
+      {
+        "id": "SP-DOC-P-FIN-05-USERGUIDE",
+        "name": "Financial Data Mart — End-User Operations Manual.pdf",
+        "doc_type": "UserGuide",
+        "version": "1.2",
+        "author": "E1040",
+        "updated_at": "2026-09-15T10:00:00Z",
+        "content_text": "# END-USER MANUAL: Financial Data Mart\n\nWelcome to Financial Data Mart. This document outlines core navigation, role permissions, standard report generation, and exception handling."
+      }
+    ]
+  },
+  {
+    "site_id": "SP-SITE-P-FIN-06",
+    "project_id": "P-FIN-06",
+    "title": "Intercompany & Tax Reporting SharePoint Team Site",
+    "documents": [
+      {
+        "id": "SP-DOC-P-FIN-06-CHARTER",
+        "name": "Intercompany & Tax Reporting — Project Charter & Executive Business Case.docx",
+        "doc_type": "Charter",
+        "version": "2.1",
+        "charter_sponsor_person_id": "E1041",
+        "charter_budget_capex": 3500000,
+        "charter_budget_opex": 1225000,
+        "author": "E1041",
+        "updated_at": "2026-09-15T10:00:00Z",
+        "content_text": "# PROJECT CHARTER: INTERCOMPANY & TAX REPORTING\n\n## 1. Executive Summary & Vision\nThe AutoNova Group executive leadership authorizes the Intercompany & Tax Reporting program under Domain FIN.\n\n## 2. Business Objectives & Strategic Alignment\n- Objective 1: Modernize automotive operations with real-time digital integration.\n- Objective 2: Establish direct compliance with European data privacy and TISAX cybersecurity standards.\n- Objective 3: Reduce annual maintenance expenditures through cloud platform consolidation.\n\n## 3. Financial Authorization & Budget Envelope\n- Capital Expenditure (Capex) Approved: €3,500,000\n- Operating Expenditure (Opex) Annual Baseline: €1,225,000\n- Executive Sponsor: E1041\n- Cost Center: CC-FIN-01\n\n## 4. Key Milestones & Go-Live Schedule\n- Phase 1 Architecture Sign-off: Complete\n- Phase 2 MVP Deployment: Target Go-Live 2026-10-15\n- Phase 3 Full Rollout across European and North American production plants."
+      },
+      {
+        "id": "SP-DOC-P-FIN-06-SPEC",
+        "name": "Intercompany & Tax Reporting — Comprehensive Technical Specification.docx",
+        "doc_type": "Specification",
+        "version": "3.0",
+        "author": "E1044",
+        "updated_at": "2026-09-15T10:00:00Z",
+        "content_text": "# TECHNICAL SPECIFICATION: Intercompany & Tax Reporting\n\n## 1. System Architecture & Component Interactions\nAutomated intercompany matching/netting and country tax reporting (VAT, e-invoicing).\n\nThe system is engineered around high-availability containerized microservices hosted on Azure Kubernetes Service (AKS). Inter-system messaging utilizes Azure Event Hubs with standard Kafka protocol compliance.\n\n## 2. Security & Identity Integration\nAll endpoints require OAuth 2.0 JSON Web Tokens (JWT) validated against Microsoft Entra ID. RBAC permissions are mapped to corporate SAP authorization objects.\n\n## 3. Data Integrity & Retention\nData persistence layer uses PostgreSQL Flexible Server with automated 35-day point-in-time recovery. Cold storage archives to Azure Blob Storage with immutability policies."
+      },
+      {
+        "id": "SP-DOC-P-FIN-06-RUNBOOK-P1",
+        "name": "Intercompany & Tax Reporting — P1 Critical Incident Troubleshooting & Triage Runbook.docx",
+        "doc_type": "Runbook",
+        "version": "4.2",
+        "author": "E1044",
+        "updated_at": "2026-09-15T10:00:00Z",
+        "content_text": "# PRODUCTION INCIDENT RUNBOOK: INTERCOMPANY & TAX REPORTING\n\n## Symptom 1: High API Latency (> 2000ms) or Ingestion Queue Buildup\n### Root Cause Analysis:\n1. Connection pool saturation on backend PostgreSQL database.\n2. Upstream Kafka partition rebalance delay.\n3. Azure AKS node memory pressure causing pod eviction.\n\n### Step-by-Step Remediation Procedure:\n1. Check AKS pod status: `kubectl get pods -n p-fin-06`\n2. Inspect database active connections: verify active connections do not exceed pool threshold.\n3. Scale deployment replicas: `kubectl scale deployment/p-fin-06-service --replicas=8`\n4. If latency persists, initiate failover to secondary availability zone.\n\n## Escalation Hierarchy & SLA Matrix:\n- Target Response Time: 15 minutes\n- Target Resolution Time (P1): 4 hours\n- Primary Escalation Contact: Platform Operations Support Team\n- Technical Escalation Lead: E1044"
+      },
+      {
+        "id": "SP-DOC-P-FIN-06-DR-PLAN",
+        "name": "Intercompany & Tax Reporting — Disaster Recovery and Business Continuity Guide.docx",
+        "doc_type": "Runbook",
+        "version": "2.0",
+        "author": "E1044",
+        "updated_at": "2026-09-15T10:00:00Z",
+        "content_text": "# DISASTER RECOVERY PLAN: Intercompany & Tax Reporting\n\n## Recovery Targets\n- Recovery Time Objective (RTO): 4 hours\n- Recovery Point Objective (RPO): 1 hour\n\n## Failover Execution Checklist\n1. Declare Disaster event in ServiceNow Incident bridge.\n2. Update DNS routing records in Azure Traffic Manager to DR Region.\n3. Promote read-replica database to primary status.\n4. Validate end-to-end synthetic health checks."
+      },
+      {
+        "id": "SP-DOC-P-FIN-06-RISK-REG",
+        "name": "Intercompany & Tax Reporting — Project Risk Register and TISAX Assessment.xlsx",
+        "doc_type": "RiskRegister",
+        "version": "1.5",
+        "author": "E1041",
+        "updated_at": "2026-09-15T10:00:00Z",
+        "content_text": "# PROJECT RISK & COMPLIANCE ASSESSMENT\n\n- Risk 01: Third-party API rate limiting on upstream provider.\n  - Severity: Medium | Mitigation: Implement Redis distributed cache.\n- Risk 02: Key personnel allocation constraint during sprint delivery.\n  - Severity: High | Mitigation: Cross-train platform engineers across domains."
+      },
+      {
+        "id": "SP-DOC-P-FIN-06-USERGUIDE",
+        "name": "Intercompany & Tax Reporting — End-User Operations Manual.pdf",
+        "doc_type": "UserGuide",
+        "version": "1.2",
+        "author": "E1041",
+        "updated_at": "2026-09-15T10:00:00Z",
+        "content_text": "# END-USER MANUAL: Intercompany & Tax Reporting\n\nWelcome to Intercompany & Tax Reporting. This document outlines core navigation, role permissions, standard report generation, and exception handling."
+      }
+    ]
+  },
+  {
+    "site_id": "SP-SITE-P-PRO-01",
+    "project_id": "P-PRO-01",
+    "title": "Supplier Portal SharePoint Team Site",
+    "documents": [
+      {
+        "id": "SP-DOC-P-PRO-01-CHARTER",
+        "name": "Supplier Portal — Project Charter & Executive Business Case.docx",
+        "doc_type": "Charter",
+        "version": "2.1",
+        "charter_sponsor_person_id": "E1008",
+        "charter_budget_capex": 1800000,
+        "charter_budget_opex": 630000,
+        "author": "E1008",
+        "updated_at": "2026-09-15T10:00:00Z",
+        "content_text": "# PROJECT CHARTER: SUPPLIER PORTAL\n\n## 1. Executive Summary & Vision\nThe AutoNova Group executive leadership authorizes the Supplier Portal program under Domain PRO.\n\n## 2. Business Objectives & Strategic Alignment\n- Objective 1: Modernize automotive operations with real-time digital integration.\n- Objective 2: Establish direct compliance with European data privacy and TISAX cybersecurity standards.\n- Objective 3: Reduce annual maintenance expenditures through cloud platform consolidation.\n\n## 3. Financial Authorization & Budget Envelope\n- Capital Expenditure (Capex) Approved: €1,800,000\n- Operating Expenditure (Opex) Annual Baseline: €630,000\n- Executive Sponsor: E1008\n- Cost Center: CC-PRO-01\n\n## 4. Key Milestones & Go-Live Schedule\n- Phase 1 Architecture Sign-off: Complete\n- Phase 2 MVP Deployment: Target Go-Live 2022-10-15\n- Phase 3 Full Rollout across European and North American production plants."
+      },
+      {
+        "id": "SP-DOC-P-PRO-01-SPEC",
+        "name": "Supplier Portal — Comprehensive Technical Specification.docx",
+        "doc_type": "Specification",
+        "version": "3.0",
+        "author": "E1054",
+        "updated_at": "2026-09-15T10:00:00Z",
+        "content_text": "# TECHNICAL SPECIFICATION: Supplier Portal\n\n## 1. System Architecture & Component Interactions\nWeb portal where suppliers manage orders, delivery schedules, invoices and payment status; microservices on AKS.\n\nThe system is engineered around high-availability containerized microservices hosted on Azure Kubernetes Service (AKS). Inter-system messaging utilizes Azure Event Hubs with standard Kafka protocol compliance.\n\n## 2. Security & Identity Integration\nAll endpoints require OAuth 2.0 JSON Web Tokens (JWT) validated against Microsoft Entra ID. RBAC permissions are mapped to corporate SAP authorization objects.\n\n## 3. Data Integrity & Retention\nData persistence layer uses PostgreSQL Flexible Server with automated 35-day point-in-time recovery. Cold storage archives to Azure Blob Storage with immutability policies."
+      },
+      {
+        "id": "SP-DOC-P-PRO-01-RUNBOOK-P1",
+        "name": "Supplier Portal — P1 Critical Incident Troubleshooting & Triage Runbook.docx",
+        "doc_type": "Runbook",
+        "version": "4.2",
+        "author": "E1054",
+        "updated_at": "2026-09-15T10:00:00Z",
+        "content_text": "# PRODUCTION INCIDENT RUNBOOK: SUPPLIER PORTAL\n\n## Symptom 1: High API Latency (> 2000ms) or Ingestion Queue Buildup\n### Root Cause Analysis:\n1. Connection pool saturation on backend PostgreSQL database.\n2. Upstream Kafka partition rebalance delay.\n3. Azure AKS node memory pressure causing pod eviction.\n\n### Step-by-Step Remediation Procedure:\n1. Check AKS pod status: `kubectl get pods -n p-pro-01`\n2. Inspect database active connections: verify active connections do not exceed pool threshold.\n3. Scale deployment replicas: `kubectl scale deployment/p-pro-01-service --replicas=8`\n4. If latency persists, initiate failover to secondary availability zone.\n\n## Escalation Hierarchy & SLA Matrix:\n- Target Response Time: 15 minutes\n- Target Resolution Time (P1): 4 hours\n- Primary Escalation Contact: Platform Operations Support Team\n- Technical Escalation Lead: E1054"
+      },
+      {
+        "id": "SP-DOC-P-PRO-01-DR-PLAN",
+        "name": "Supplier Portal — Disaster Recovery and Business Continuity Guide.docx",
+        "doc_type": "Runbook",
+        "version": "2.0",
+        "author": "E1054",
+        "updated_at": "2026-09-15T10:00:00Z",
+        "content_text": "# DISASTER RECOVERY PLAN: Supplier Portal\n\n## Recovery Targets\n- Recovery Time Objective (RTO): 4 hours\n- Recovery Point Objective (RPO): 1 hour\n\n## Failover Execution Checklist\n1. Declare Disaster event in ServiceNow Incident bridge.\n2. Update DNS routing records in Azure Traffic Manager to DR Region.\n3. Promote read-replica database to primary status.\n4. Validate end-to-end synthetic health checks."
+      },
+      {
+        "id": "SP-DOC-P-PRO-01-RISK-REG",
+        "name": "Supplier Portal — Project Risk Register and TISAX Assessment.xlsx",
+        "doc_type": "RiskRegister",
+        "version": "1.5",
+        "author": "E1050",
+        "updated_at": "2026-09-15T10:00:00Z",
+        "content_text": "# PROJECT RISK & COMPLIANCE ASSESSMENT\n\n- Risk 01: Third-party API rate limiting on upstream provider.\n  - Severity: Medium | Mitigation: Implement Redis distributed cache.\n- Risk 02: Key personnel allocation constraint during sprint delivery.\n  - Severity: High | Mitigation: Cross-train platform engineers across domains."
+      },
+      {
+        "id": "SP-DOC-P-PRO-01-USERGUIDE",
+        "name": "Supplier Portal — End-User Operations Manual.pdf",
+        "doc_type": "UserGuide",
+        "version": "1.2",
+        "author": "E1050",
+        "updated_at": "2026-09-15T10:00:00Z",
+        "content_text": "# END-USER MANUAL: Supplier Portal\n\nWelcome to Supplier Portal. This document outlines core navigation, role permissions, standard report generation, and exception handling."
+      }
+    ]
+  },
+  {
+    "site_id": "SP-SITE-P-PRO-02",
+    "project_id": "P-PRO-02",
+    "title": "Ariba Sourcing & Contracts SharePoint Team Site",
+    "documents": [
+      {
+        "id": "SP-DOC-P-PRO-02-CHARTER",
+        "name": "Ariba Sourcing & Contracts — Project Charter & Executive Business Case.docx",
+        "doc_type": "Charter",
+        "version": "2.1",
+        "charter_sponsor_person_id": "E1051",
+        "charter_budget_capex": 1800000,
+        "charter_budget_opex": 630000,
+        "author": "E1051",
+        "updated_at": "2026-09-15T10:00:00Z",
+        "content_text": "# PROJECT CHARTER: ARIBA SOURCING & CONTRACTS\n\n## 1. Executive Summary & Vision\nThe AutoNova Group executive leadership authorizes the Ariba Sourcing & Contracts program under Domain PRO.\n\n## 2. Business Objectives & Strategic Alignment\n- Objective 1: Modernize automotive operations with real-time digital integration.\n- Objective 2: Establish direct compliance with European data privacy and TISAX cybersecurity standards.\n- Objective 3: Reduce annual maintenance expenditures through cloud platform consolidation.\n\n## 3. Financial Authorization & Budget Envelope\n- Capital Expenditure (Capex) Approved: €1,800,000\n- Operating Expenditure (Opex) Annual Baseline: €630,000\n- Executive Sponsor: E1051\n- Cost Center: CC-PRO-01\n\n## 4. Key Milestones & Go-Live Schedule\n- Phase 1 Architecture Sign-off: Complete\n- Phase 2 MVP Deployment: Target Go-Live 2021-10-15\n- Phase 3 Full Rollout across European and North American production plants."
+      },
+      {
+        "id": "SP-DOC-P-PRO-02-SPEC",
+        "name": "Ariba Sourcing & Contracts — Comprehensive Technical Specification.docx",
+        "doc_type": "Specification",
+        "version": "3.0",
+        "author": "E1055",
+        "updated_at": "2026-09-15T10:00:00Z",
+        "content_text": "# TECHNICAL SPECIFICATION: Ariba Sourcing & Contracts\n\n## 1. System Architecture & Component Interactions\nSourcing events, RFQs and contract lifecycle management on SAP Ariba.\n\nThe system is engineered around high-availability containerized microservices hosted on Azure Kubernetes Service (AKS). Inter-system messaging utilizes Azure Event Hubs with standard Kafka protocol compliance.\n\n## 2. Security & Identity Integration\nAll endpoints require OAuth 2.0 JSON Web Tokens (JWT) validated against Microsoft Entra ID. RBAC permissions are mapped to corporate SAP authorization objects.\n\n## 3. Data Integrity & Retention\nData persistence layer uses PostgreSQL Flexible Server with automated 35-day point-in-time recovery. Cold storage archives to Azure Blob Storage with immutability policies."
+      },
+      {
+        "id": "SP-DOC-P-PRO-02-RUNBOOK-P1",
+        "name": "Ariba Sourcing & Contracts — P1 Critical Incident Troubleshooting & Triage Runbook.docx",
+        "doc_type": "Runbook",
+        "version": "4.2",
+        "author": "E1055",
+        "updated_at": "2026-09-15T10:00:00Z",
+        "content_text": "# PRODUCTION INCIDENT RUNBOOK: ARIBA SOURCING & CONTRACTS\n\n## Symptom 1: High API Latency (> 2000ms) or Ingestion Queue Buildup\n### Root Cause Analysis:\n1. Connection pool saturation on backend PostgreSQL database.\n2. Upstream Kafka partition rebalance delay.\n3. Azure AKS node memory pressure causing pod eviction.\n\n### Step-by-Step Remediation Procedure:\n1. Check AKS pod status: `kubectl get pods -n p-pro-02`\n2. Inspect database active connections: verify active connections do not exceed pool threshold.\n3. Scale deployment replicas: `kubectl scale deployment/p-pro-02-service --replicas=8`\n4. If latency persists, initiate failover to secondary availability zone.\n\n## Escalation Hierarchy & SLA Matrix:\n- Target Response Time: 15 minutes\n- Target Resolution Time (P1): 4 hours\n- Primary Escalation Contact: Platform Operations Support Team\n- Technical Escalation Lead: E1055"
+      },
+      {
+        "id": "SP-DOC-P-PRO-02-DR-PLAN",
+        "name": "Ariba Sourcing & Contracts — Disaster Recovery and Business Continuity Guide.docx",
+        "doc_type": "Runbook",
+        "version": "2.0",
+        "author": "E1055",
+        "updated_at": "2026-09-15T10:00:00Z",
+        "content_text": "# DISASTER RECOVERY PLAN: Ariba Sourcing & Contracts\n\n## Recovery Targets\n- Recovery Time Objective (RTO): 4 hours\n- Recovery Point Objective (RPO): 1 hour\n\n## Failover Execution Checklist\n1. Declare Disaster event in ServiceNow Incident bridge.\n2. Update DNS routing records in Azure Traffic Manager to DR Region.\n3. Promote read-replica database to primary status.\n4. Validate end-to-end synthetic health checks."
+      },
+      {
+        "id": "SP-DOC-P-PRO-02-RISK-REG",
+        "name": "Ariba Sourcing & Contracts — Project Risk Register and TISAX Assessment.xlsx",
+        "doc_type": "RiskRegister",
+        "version": "1.5",
+        "author": "E1051",
+        "updated_at": "2026-09-15T10:00:00Z",
+        "content_text": "# PROJECT RISK & COMPLIANCE ASSESSMENT\n\n- Risk 01: Third-party API rate limiting on upstream provider.\n  - Severity: Medium | Mitigation: Implement Redis distributed cache.\n- Risk 02: Key personnel allocation constraint during sprint delivery.\n  - Severity: High | Mitigation: Cross-train platform engineers across domains."
+      },
+      {
+        "id": "SP-DOC-P-PRO-02-USERGUIDE",
+        "name": "Ariba Sourcing & Contracts — End-User Operations Manual.pdf",
+        "doc_type": "UserGuide",
+        "version": "1.2",
+        "author": "E1051",
+        "updated_at": "2026-09-15T10:00:00Z",
+        "content_text": "# END-USER MANUAL: Ariba Sourcing & Contracts\n\nWelcome to Ariba Sourcing & Contracts. This document outlines core navigation, role permissions, standard report generation, and exception handling."
+      }
+    ]
+  },
+  {
+    "site_id": "SP-SITE-P-PRO-03",
+    "project_id": "P-PRO-03",
+    "title": "Procure-to-Pay Invoice Automation SharePoint Team Site",
+    "documents": [
+      {
+        "id": "SP-DOC-P-PRO-03-CHARTER",
+        "name": "Procure-to-Pay Invoice Automation — Project Charter & Executive Business Case.docx",
+        "doc_type": "Charter",
+        "version": "2.1",
+        "charter_sponsor_person_id": "E1050",
+        "charter_budget_capex": 1800000,
+        "charter_budget_opex": 630000,
+        "author": "E1050",
+        "updated_at": "2026-09-15T10:00:00Z",
+        "content_text": "# PROJECT CHARTER: PROCURE-TO-PAY INVOICE AUTOMATION\n\n## 1. Executive Summary & Vision\nThe AutoNova Group executive leadership authorizes the Procure-to-Pay Invoice Automation program under Domain PRO.\n\n## 2. Business Objectives & Strategic Alignment\n- Objective 1: Modernize automotive operations with real-time digital integration.\n- Objective 2: Establish direct compliance with European data privacy and TISAX cybersecurity standards.\n- Objective 3: Reduce annual maintenance expenditures through cloud platform consolidation.\n\n## 3. Financial Authorization & Budget Envelope\n- Capital Expenditure (Capex) Approved: €1,800,000\n- Operating Expenditure (Opex) Annual Baseline: €630,000\n- Executive Sponsor: E1050\n- Cost Center: CC-PRO-01\n\n## 4. Key Milestones & Go-Live Schedule\n- Phase 1 Architecture Sign-off: Complete\n- Phase 2 MVP Deployment: Target Go-Live 2026-10-15\n- Phase 3 Full Rollout across European and North American production plants."
+      },
+      {
+        "id": "SP-DOC-P-PRO-03-SPEC",
+        "name": "Procure-to-Pay Invoice Automation — Comprehensive Technical Specification.docx",
+        "doc_type": "Specification",
+        "version": "3.0",
+        "author": "E1056",
+        "updated_at": "2026-09-15T10:00:00Z",
+        "content_text": "# TECHNICAL SPECIFICATION: Procure-to-Pay Invoice Automation\n\n## 1. System Architecture & Component Interactions\nAutomated invoice capture, three-way match and posting to S/4 to cut manual AP effort.\n\nThe system is engineered around high-availability containerized microservices hosted on Azure Kubernetes Service (AKS). Inter-system messaging utilizes Azure Event Hubs with standard Kafka protocol compliance.\n\n## 2. Security & Identity Integration\nAll endpoints require OAuth 2.0 JSON Web Tokens (JWT) validated against Microsoft Entra ID. RBAC permissions are mapped to corporate SAP authorization objects.\n\n## 3. Data Integrity & Retention\nData persistence layer uses PostgreSQL Flexible Server with automated 35-day point-in-time recovery. Cold storage archives to Azure Blob Storage with immutability policies."
+      },
+      {
+        "id": "SP-DOC-P-PRO-03-RUNBOOK-P1",
+        "name": "Procure-to-Pay Invoice Automation — P1 Critical Incident Troubleshooting & Triage Runbook.docx",
+        "doc_type": "Runbook",
+        "version": "4.2",
+        "author": "E1056",
+        "updated_at": "2026-09-15T10:00:00Z",
+        "content_text": "# PRODUCTION INCIDENT RUNBOOK: PROCURE-TO-PAY INVOICE AUTOMATION\n\n## Symptom 1: High API Latency (> 2000ms) or Ingestion Queue Buildup\n### Root Cause Analysis:\n1. Connection pool saturation on backend PostgreSQL database.\n2. Upstream Kafka partition rebalance delay.\n3. Azure AKS node memory pressure causing pod eviction.\n\n### Step-by-Step Remediation Procedure:\n1. Check AKS pod status: `kubectl get pods -n p-pro-03`\n2. Inspect database active connections: verify active connections do not exceed pool threshold.\n3. Scale deployment replicas: `kubectl scale deployment/p-pro-03-service --replicas=8`\n4. If latency persists, initiate failover to secondary availability zone.\n\n## Escalation Hierarchy & SLA Matrix:\n- Target Response Time: 15 minutes\n- Target Resolution Time (P1): 4 hours\n- Primary Escalation Contact: Platform Operations Support Team\n- Technical Escalation Lead: E1056"
+      },
+      {
+        "id": "SP-DOC-P-PRO-03-DR-PLAN",
+        "name": "Procure-to-Pay Invoice Automation — Disaster Recovery and Business Continuity Guide.docx",
+        "doc_type": "Runbook",
+        "version": "2.0",
+        "author": "E1056",
+        "updated_at": "2026-09-15T10:00:00Z",
+        "content_text": "# DISASTER RECOVERY PLAN: Procure-to-Pay Invoice Automation\n\n## Recovery Targets\n- Recovery Time Objective (RTO): 4 hours\n- Recovery Point Objective (RPO): 1 hour\n\n## Failover Execution Checklist\n1. Declare Disaster event in ServiceNow Incident bridge.\n2. Update DNS routing records in Azure Traffic Manager to DR Region.\n3. Promote read-replica database to primary status.\n4. Validate end-to-end synthetic health checks."
+      },
+      {
+        "id": "SP-DOC-P-PRO-03-RISK-REG",
+        "name": "Procure-to-Pay Invoice Automation — Project Risk Register and TISAX Assessment.xlsx",
+        "doc_type": "RiskRegister",
+        "version": "1.5",
+        "author": "E1050",
+        "updated_at": "2026-09-15T10:00:00Z",
+        "content_text": "# PROJECT RISK & COMPLIANCE ASSESSMENT\n\n- Risk 01: Third-party API rate limiting on upstream provider.\n  - Severity: Medium | Mitigation: Implement Redis distributed cache.\n- Risk 02: Key personnel allocation constraint during sprint delivery.\n  - Severity: High | Mitigation: Cross-train platform engineers across domains."
+      },
+      {
+        "id": "SP-DOC-P-PRO-03-USERGUIDE",
+        "name": "Procure-to-Pay Invoice Automation — End-User Operations Manual.pdf",
+        "doc_type": "UserGuide",
+        "version": "1.2",
+        "author": "E1050",
+        "updated_at": "2026-09-15T10:00:00Z",
+        "content_text": "# END-USER MANUAL: Procure-to-Pay Invoice Automation\n\nWelcome to Procure-to-Pay Invoice Automation. This document outlines core navigation, role permissions, standard report generation, and exception handling."
+      }
+    ]
+  },
+  {
+    "site_id": "SP-SITE-P-PRO-04",
+    "project_id": "P-PRO-04",
+    "title": "Spend Analytics SharePoint Team Site",
+    "documents": [
+      {
+        "id": "SP-DOC-P-PRO-04-CHARTER",
+        "name": "Spend Analytics — Project Charter & Executive Business Case.docx",
+        "doc_type": "Charter",
+        "version": "2.1",
+        "charter_sponsor_person_id": "E1052",
+        "charter_budget_capex": 1800000,
+        "charter_budget_opex": 630000,
+        "author": "E1052",
+        "updated_at": "2026-09-15T10:00:00Z",
+        "content_text": "# PROJECT CHARTER: SPEND ANALYTICS\n\n## 1. Executive Summary & Vision\nThe AutoNova Group executive leadership authorizes the Spend Analytics program under Domain PRO.\n\n## 2. Business Objectives & Strategic Alignment\n- Objective 1: Modernize automotive operations with real-time digital integration.\n- Objective 2: Establish direct compliance with European data privacy and TISAX cybersecurity standards.\n- Objective 3: Reduce annual maintenance expenditures through cloud platform consolidation.\n\n## 3. Financial Authorization & Budget Envelope\n- Capital Expenditure (Capex) Approved: €1,800,000\n- Operating Expenditure (Opex) Annual Baseline: €630,000\n- Executive Sponsor: E1052\n- Cost Center: CC-PRO-01\n\n## 4. Key Milestones & Go-Live Schedule\n- Phase 1 Architecture Sign-off: Complete\n- Phase 2 MVP Deployment: Target Go-Live 2024-10-15\n- Phase 3 Full Rollout across European and North American production plants."
+      },
+      {
+        "id": "SP-DOC-P-PRO-04-SPEC",
+        "name": "Spend Analytics — Comprehensive Technical Specification.docx",
+        "doc_type": "Specification",
+        "version": "3.0",
+        "author": "E1057",
+        "updated_at": "2026-09-15T10:00:00Z",
+        "content_text": "# TECHNICAL SPECIFICATION: Spend Analytics\n\n## 1. System Architecture & Component Interactions\nSpend cube by category, supplier and plant; tracks savings and maverick buying.\n\nThe system is engineered around high-availability containerized microservices hosted on Azure Kubernetes Service (AKS). Inter-system messaging utilizes Azure Event Hubs with standard Kafka protocol compliance.\n\n## 2. Security & Identity Integration\nAll endpoints require OAuth 2.0 JSON Web Tokens (JWT) validated against Microsoft Entra ID. RBAC permissions are mapped to corporate SAP authorization objects.\n\n## 3. Data Integrity & Retention\nData persistence layer uses PostgreSQL Flexible Server with automated 35-day point-in-time recovery. Cold storage archives to Azure Blob Storage with immutability policies."
+      },
+      {
+        "id": "SP-DOC-P-PRO-04-RUNBOOK-P1",
+        "name": "Spend Analytics — P1 Critical Incident Troubleshooting & Triage Runbook.docx",
+        "doc_type": "Runbook",
+        "version": "4.2",
+        "author": "E1057",
+        "updated_at": "2026-09-15T10:00:00Z",
+        "content_text": "# PRODUCTION INCIDENT RUNBOOK: SPEND ANALYTICS\n\n## Symptom 1: High API Latency (> 2000ms) or Ingestion Queue Buildup\n### Root Cause Analysis:\n1. Connection pool saturation on backend PostgreSQL database.\n2. Upstream Kafka partition rebalance delay.\n3. Azure AKS node memory pressure causing pod eviction.\n\n### Step-by-Step Remediation Procedure:\n1. Check AKS pod status: `kubectl get pods -n p-pro-04`\n2. Inspect database active connections: verify active connections do not exceed pool threshold.\n3. Scale deployment replicas: `kubectl scale deployment/p-pro-04-service --replicas=8`\n4. If latency persists, initiate failover to secondary availability zone.\n\n## Escalation Hierarchy & SLA Matrix:\n- Target Response Time: 15 minutes\n- Target Resolution Time (P1): 4 hours\n- Primary Escalation Contact: Platform Operations Support Team\n- Technical Escalation Lead: E1057"
+      },
+      {
+        "id": "SP-DOC-P-PRO-04-DR-PLAN",
+        "name": "Spend Analytics — Disaster Recovery and Business Continuity Guide.docx",
+        "doc_type": "Runbook",
+        "version": "2.0",
+        "author": "E1057",
+        "updated_at": "2026-09-15T10:00:00Z",
+        "content_text": "# DISASTER RECOVERY PLAN: Spend Analytics\n\n## Recovery Targets\n- Recovery Time Objective (RTO): 4 hours\n- Recovery Point Objective (RPO): 1 hour\n\n## Failover Execution Checklist\n1. Declare Disaster event in ServiceNow Incident bridge.\n2. Update DNS routing records in Azure Traffic Manager to DR Region.\n3. Promote read-replica database to primary status.\n4. Validate end-to-end synthetic health checks."
+      },
+      {
+        "id": "SP-DOC-P-PRO-04-RISK-REG",
+        "name": "Spend Analytics — Project Risk Register and TISAX Assessment.xlsx",
+        "doc_type": "RiskRegister",
+        "version": "1.5",
+        "author": "E1052",
+        "updated_at": "2026-09-15T10:00:00Z",
+        "content_text": "# PROJECT RISK & COMPLIANCE ASSESSMENT\n\n- Risk 01: Third-party API rate limiting on upstream provider.\n  - Severity: Medium | Mitigation: Implement Redis distributed cache.\n- Risk 02: Key personnel allocation constraint during sprint delivery.\n  - Severity: High | Mitigation: Cross-train platform engineers across domains."
+      },
+      {
+        "id": "SP-DOC-P-PRO-04-USERGUIDE",
+        "name": "Spend Analytics — End-User Operations Manual.pdf",
+        "doc_type": "UserGuide",
+        "version": "1.2",
+        "author": "E1052",
+        "updated_at": "2026-09-15T10:00:00Z",
+        "content_text": "# END-USER MANUAL: Spend Analytics\n\nWelcome to Spend Analytics. This document outlines core navigation, role permissions, standard report generation, and exception handling."
+      }
+    ]
+  },
+  {
+    "site_id": "SP-SITE-P-PRO-05",
+    "project_id": "P-PRO-05",
+    "title": "Supplier Risk Scoring SharePoint Team Site",
+    "documents": [
+      {
+        "id": "SP-DOC-P-PRO-05-CHARTER",
+        "name": "Supplier Risk Scoring — Project Charter & Executive Business Case.docx",
+        "doc_type": "Charter",
+        "version": "2.1",
+        "charter_sponsor_person_id": "E1051",
+        "charter_budget_capex": 1800000,
+        "charter_budget_opex": 630000,
+        "author": "E1051",
+        "updated_at": "2026-09-15T10:00:00Z",
+        "content_text": "# PROJECT CHARTER: SUPPLIER RISK SCORING\n\n## 1. Executive Summary & Vision\nThe AutoNova Group executive leadership authorizes the Supplier Risk Scoring program under Domain PRO.\n\n## 2. Business Objectives & Strategic Alignment\n- Objective 1: Modernize automotive operations with real-time digital integration.\n- Objective 2: Establish direct compliance with European data privacy and TISAX cybersecurity standards.\n- Objective 3: Reduce annual maintenance expenditures through cloud platform consolidation.\n\n## 3. Financial Authorization & Budget Envelope\n- Capital Expenditure (Capex) Approved: €1,800,000\n- Operating Expenditure (Opex) Annual Baseline: €630,000\n- Executive Sponsor: E1051\n- Cost Center: CC-PRO-01\n\n## 4. Key Milestones & Go-Live Schedule\n- Phase 1 Architecture Sign-off: Complete\n- Phase 2 MVP Deployment: Target Go-Live 2027-10-15\n- Phase 3 Full Rollout across European and North American production plants."
+      },
+      {
+        "id": "SP-DOC-P-PRO-05-SPEC",
+        "name": "Supplier Risk Scoring — Comprehensive Technical Specification.docx",
+        "doc_type": "Specification",
+        "version": "3.0",
+        "author": "E1058",
+        "updated_at": "2026-09-15T10:00:00Z",
+        "content_text": "# TECHNICAL SPECIFICATION: Supplier Risk Scoring\n\n## 1. System Architecture & Component Interactions\nML models scoring suppliers on financial, delivery and cyber risk to flag supply disruptions early.\n\nThe system is engineered around high-availability containerized microservices hosted on Azure Kubernetes Service (AKS). Inter-system messaging utilizes Azure Event Hubs with standard Kafka protocol compliance.\n\n## 2. Security & Identity Integration\nAll endpoints require OAuth 2.0 JSON Web Tokens (JWT) validated against Microsoft Entra ID. RBAC permissions are mapped to corporate SAP authorization objects.\n\n## 3. Data Integrity & Retention\nData persistence layer uses PostgreSQL Flexible Server with automated 35-day point-in-time recovery. Cold storage archives to Azure Blob Storage with immutability policies."
+      },
+      {
+        "id": "SP-DOC-P-PRO-05-RUNBOOK-P1",
+        "name": "Supplier Risk Scoring — P1 Critical Incident Troubleshooting & Triage Runbook.docx",
+        "doc_type": "Runbook",
+        "version": "4.2",
+        "author": "E1058",
+        "updated_at": "2026-09-15T10:00:00Z",
+        "content_text": "# PRODUCTION INCIDENT RUNBOOK: SUPPLIER RISK SCORING\n\n## Symptom 1: High API Latency (> 2000ms) or Ingestion Queue Buildup\n### Root Cause Analysis:\n1. Connection pool saturation on backend PostgreSQL database.\n2. Upstream Kafka partition rebalance delay.\n3. Azure AKS node memory pressure causing pod eviction.\n\n### Step-by-Step Remediation Procedure:\n1. Check AKS pod status: `kubectl get pods -n p-pro-05`\n2. Inspect database active connections: verify active connections do not exceed pool threshold.\n3. Scale deployment replicas: `kubectl scale deployment/p-pro-05-service --replicas=8`\n4. If latency persists, initiate failover to secondary availability zone.\n\n## Escalation Hierarchy & SLA Matrix:\n- Target Response Time: 15 minutes\n- Target Resolution Time (P1): 4 hours\n- Primary Escalation Contact: Platform Operations Support Team\n- Technical Escalation Lead: E1058"
+      },
+      {
+        "id": "SP-DOC-P-PRO-05-DR-PLAN",
+        "name": "Supplier Risk Scoring — Disaster Recovery and Business Continuity Guide.docx",
+        "doc_type": "Runbook",
+        "version": "2.0",
+        "author": "E1058",
+        "updated_at": "2026-09-15T10:00:00Z",
+        "content_text": "# DISASTER RECOVERY PLAN: Supplier Risk Scoring\n\n## Recovery Targets\n- Recovery Time Objective (RTO): 4 hours\n- Recovery Point Objective (RPO): 1 hour\n\n## Failover Execution Checklist\n1. Declare Disaster event in ServiceNow Incident bridge.\n2. Update DNS routing records in Azure Traffic Manager to DR Region.\n3. Promote read-replica database to primary status.\n4. Validate end-to-end synthetic health checks."
+      },
+      {
+        "id": "SP-DOC-P-PRO-05-RISK-REG",
+        "name": "Supplier Risk Scoring — Project Risk Register and TISAX Assessment.xlsx",
+        "doc_type": "RiskRegister",
+        "version": "1.5",
+        "author": "E1051",
+        "updated_at": "2026-09-15T10:00:00Z",
+        "content_text": "# PROJECT RISK & COMPLIANCE ASSESSMENT\n\n- Risk 01: Third-party API rate limiting on upstream provider.\n  - Severity: Medium | Mitigation: Implement Redis distributed cache.\n- Risk 02: Key personnel allocation constraint during sprint delivery.\n  - Severity: High | Mitigation: Cross-train platform engineers across domains."
+      },
+      {
+        "id": "SP-DOC-P-PRO-05-USERGUIDE",
+        "name": "Supplier Risk Scoring — End-User Operations Manual.pdf",
+        "doc_type": "UserGuide",
+        "version": "1.2",
+        "author": "E1051",
+        "updated_at": "2026-09-15T10:00:00Z",
+        "content_text": "# END-USER MANUAL: Supplier Risk Scoring\n\nWelcome to Supplier Risk Scoring. This document outlines core navigation, role permissions, standard report generation, and exception handling."
+      }
+    ]
+  },
+  {
+    "site_id": "SP-SITE-P-DTFS-01",
+    "project_id": "P-DTFS-01",
+    "title": "Loan Origination Platform SharePoint Team Site",
+    "documents": [
+      {
+        "id": "SP-DOC-P-DTFS-01-CHARTER",
+        "name": "Loan Origination Platform — Project Charter & Executive Business Case.docx",
+        "doc_type": "Charter",
+        "version": "2.1",
+        "charter_sponsor_person_id": "E1061",
+        "charter_budget_capex": 3500000,
+        "charter_budget_opex": 1225000,
+        "author": "E1061",
+        "updated_at": "2026-09-15T10:00:00Z",
+        "content_text": "# PROJECT CHARTER: LOAN ORIGINATION PLATFORM\n\n## 1. Executive Summary & Vision\nThe AutoNova Group executive leadership authorizes the Loan Origination Platform program under Domain DTFS.\n\n## 2. Business Objectives & Strategic Alignment\n- Objective 1: Modernize automotive operations with real-time digital integration.\n- Objective 2: Establish direct compliance with European data privacy and TISAX cybersecurity standards.\n- Objective 3: Reduce annual maintenance expenditures through cloud platform consolidation.\n\n## 3. Financial Authorization & Budget Envelope\n- Capital Expenditure (Capex) Approved: €3,500,000\n- Operating Expenditure (Opex) Annual Baseline: €1,225,000\n- Executive Sponsor: E1061\n- Cost Center: CC-DTFS-01\n\n## 4. Key Milestones & Go-Live Schedule\n- Phase 1 Architecture Sign-off: Complete\n- Phase 2 MVP Deployment: Target Go-Live 2022-10-15\n- Phase 3 Full Rollout across European and North American production plants."
+      },
+      {
+        "id": "SP-DOC-P-DTFS-01-SPEC",
+        "name": "Loan Origination Platform — Comprehensive Technical Specification.docx",
+        "doc_type": "Specification",
+        "version": "3.0",
+        "author": "E1062",
+        "updated_at": "2026-09-15T10:00:00Z",
+        "content_text": "# TECHNICAL SPECIFICATION: Loan Origination Platform\n\n## 1. System Architecture & Component Interactions\nDigital loan/lease application for dealers and customers; orchestrates KYC, credit decision and contract creation.\n\nThe system is engineered around high-availability containerized microservices hosted on Azure Kubernetes Service (AKS). Inter-system messaging utilizes Azure Event Hubs with standard Kafka protocol compliance.\n\n## 2. Security & Identity Integration\nAll endpoints require OAuth 2.0 JSON Web Tokens (JWT) validated against Microsoft Entra ID. RBAC permissions are mapped to corporate SAP authorization objects.\n\n## 3. Data Integrity & Retention\nData persistence layer uses PostgreSQL Flexible Server with automated 35-day point-in-time recovery. Cold storage archives to Azure Blob Storage with immutability policies."
+      },
+      {
+        "id": "SP-DOC-P-DTFS-01-RUNBOOK-P1",
+        "name": "Loan Origination Platform — P1 Critical Incident Troubleshooting & Triage Runbook.docx",
+        "doc_type": "Runbook",
+        "version": "4.2",
+        "author": "E1062",
+        "updated_at": "2026-09-15T10:00:00Z",
+        "content_text": "# PRODUCTION INCIDENT RUNBOOK: LOAN ORIGINATION PLATFORM\n\n## Symptom 1: High API Latency (> 2000ms) or Ingestion Queue Buildup\n### Root Cause Analysis:\n1. Connection pool saturation on backend PostgreSQL database.\n2. Upstream Kafka partition rebalance delay.\n3. Azure AKS node memory pressure causing pod eviction.\n\n### Step-by-Step Remediation Procedure:\n1. Check AKS pod status: `kubectl get pods -n p-dtfs-01`\n2. Inspect database active connections: verify active connections do not exceed pool threshold.\n3. Scale deployment replicas: `kubectl scale deployment/p-dtfs-01-service --replicas=8`\n4. If latency persists, initiate failover to secondary availability zone.\n\n## Escalation Hierarchy & SLA Matrix:\n- Target Response Time: 15 minutes\n- Target Resolution Time (P1): 4 hours\n- Primary Escalation Contact: Platform Operations Support Team\n- Technical Escalation Lead: E1062"
+      },
+      {
+        "id": "SP-DOC-P-DTFS-01-DR-PLAN",
+        "name": "Loan Origination Platform — Disaster Recovery and Business Continuity Guide.docx",
+        "doc_type": "Runbook",
+        "version": "2.0",
+        "author": "E1062",
+        "updated_at": "2026-09-15T10:00:00Z",
+        "content_text": "# DISASTER RECOVERY PLAN: Loan Origination Platform\n\n## Recovery Targets\n- Recovery Time Objective (RTO): 4 hours\n- Recovery Point Objective (RPO): 1 hour\n\n## Failover Execution Checklist\n1. Declare Disaster event in ServiceNow Incident bridge.\n2. Update DNS routing records in Azure Traffic Manager to DR Region.\n3. Promote read-replica database to primary status.\n4. Validate end-to-end synthetic health checks."
+      },
+      {
+        "id": "SP-DOC-P-DTFS-01-RISK-REG",
+        "name": "Loan Origination Platform — Project Risk Register and TISAX Assessment.xlsx",
+        "doc_type": "RiskRegister",
+        "version": "1.5",
+        "author": "E1061",
+        "updated_at": "2026-09-15T10:00:00Z",
+        "content_text": "# PROJECT RISK & COMPLIANCE ASSESSMENT\n\n- Risk 01: Third-party API rate limiting on upstream provider.\n  - Severity: Medium | Mitigation: Implement Redis distributed cache.\n- Risk 02: Key personnel allocation constraint during sprint delivery.\n  - Severity: High | Mitigation: Cross-train platform engineers across domains."
+      },
+      {
+        "id": "SP-DOC-P-DTFS-01-USERGUIDE",
+        "name": "Loan Origination Platform — End-User Operations Manual.pdf",
+        "doc_type": "UserGuide",
+        "version": "1.2",
+        "author": "E1061",
+        "updated_at": "2026-09-15T10:00:00Z",
+        "content_text": "# END-USER MANUAL: Loan Origination Platform\n\nWelcome to Loan Origination Platform. This document outlines core navigation, role permissions, standard report generation, and exception handling."
+      }
+    ]
+  },
+  {
+    "site_id": "SP-SITE-P-DTFS-02",
+    "project_id": "P-DTFS-02",
+    "title": "Credit Scoring Engine SharePoint Team Site",
+    "documents": [
+      {
+        "id": "SP-DOC-P-DTFS-02-CHARTER",
+        "name": "Credit Scoring Engine — Project Charter & Executive Business Case.docx",
+        "doc_type": "Charter",
+        "version": "2.1",
+        "charter_sponsor_person_id": "E1060",
+        "charter_budget_capex": 3500000,
+        "charter_budget_opex": 1225000,
+        "author": "E1060",
+        "updated_at": "2026-09-15T10:00:00Z",
+        "content_text": "# PROJECT CHARTER: CREDIT SCORING ENGINE\n\n## 1. Executive Summary & Vision\nThe AutoNova Group executive leadership authorizes the Credit Scoring Engine program under Domain DTFS.\n\n## 2. Business Objectives & Strategic Alignment\n- Objective 1: Modernize automotive operations with real-time digital integration.\n- Objective 2: Establish direct compliance with European data privacy and TISAX cybersecurity standards.\n- Objective 3: Reduce annual maintenance expenditures through cloud platform consolidation.\n\n## 3. Financial Authorization & Budget Envelope\n- Capital Expenditure (Capex) Approved: €3,500,000\n- Operating Expenditure (Opex) Annual Baseline: €1,225,000\n- Executive Sponsor: E1060\n- Cost Center: CC-DTFS-01\n\n## 4. Key Milestones & Go-Live Schedule\n- Phase 1 Architecture Sign-off: Complete\n- Phase 2 MVP Deployment: Target Go-Live 2023-10-15\n- Phase 3 Full Rollout across European and North American production plants."
+      },
+      {
+        "id": "SP-DOC-P-DTFS-02-SPEC",
+        "name": "Credit Scoring Engine — Comprehensive Technical Specification.docx",
+        "doc_type": "Specification",
+        "version": "3.0",
+        "author": "E1067",
+        "updated_at": "2026-09-15T10:00:00Z",
+        "content_text": "# TECHNICAL SPECIFICATION: Credit Scoring Engine\n\n## 1. System Architecture & Component Interactions\nML credit scoring and decision service called in real time by origination.\n\nThe system is engineered around high-availability containerized microservices hosted on Azure Kubernetes Service (AKS). Inter-system messaging utilizes Azure Event Hubs with standard Kafka protocol compliance.\n\n## 2. Security & Identity Integration\nAll endpoints require OAuth 2.0 JSON Web Tokens (JWT) validated against Microsoft Entra ID. RBAC permissions are mapped to corporate SAP authorization objects.\n\n## 3. Data Integrity & Retention\nData persistence layer uses PostgreSQL Flexible Server with automated 35-day point-in-time recovery. Cold storage archives to Azure Blob Storage with immutability policies."
+      },
+      {
+        "id": "SP-DOC-P-DTFS-02-RUNBOOK-P1",
+        "name": "Credit Scoring Engine — P1 Critical Incident Troubleshooting & Triage Runbook.docx",
+        "doc_type": "Runbook",
+        "version": "4.2",
+        "author": "E1067",
+        "updated_at": "2026-09-15T10:00:00Z",
+        "content_text": "# PRODUCTION INCIDENT RUNBOOK: CREDIT SCORING ENGINE\n\n## Symptom 1: High API Latency (> 2000ms) or Ingestion Queue Buildup\n### Root Cause Analysis:\n1. Connection pool saturation on backend PostgreSQL database.\n2. Upstream Kafka partition rebalance delay.\n3. Azure AKS node memory pressure causing pod eviction.\n\n### Step-by-Step Remediation Procedure:\n1. Check AKS pod status: `kubectl get pods -n p-dtfs-02`\n2. Inspect database active connections: verify active connections do not exceed pool threshold.\n3. Scale deployment replicas: `kubectl scale deployment/p-dtfs-02-service --replicas=8`\n4. If latency persists, initiate failover to secondary availability zone.\n\n## Escalation Hierarchy & SLA Matrix:\n- Target Response Time: 15 minutes\n- Target Resolution Time (P1): 4 hours\n- Primary Escalation Contact: Platform Operations Support Team\n- Technical Escalation Lead: E1067"
+      },
+      {
+        "id": "SP-DOC-P-DTFS-02-DR-PLAN",
+        "name": "Credit Scoring Engine — Disaster Recovery and Business Continuity Guide.docx",
+        "doc_type": "Runbook",
+        "version": "2.0",
+        "author": "E1067",
+        "updated_at": "2026-09-15T10:00:00Z",
+        "content_text": "# DISASTER RECOVERY PLAN: Credit Scoring Engine\n\n## Recovery Targets\n- Recovery Time Objective (RTO): 4 hours\n- Recovery Point Objective (RPO): 1 hour\n\n## Failover Execution Checklist\n1. Declare Disaster event in ServiceNow Incident bridge.\n2. Update DNS routing records in Azure Traffic Manager to DR Region.\n3. Promote read-replica database to primary status.\n4. Validate end-to-end synthetic health checks."
+      },
+      {
+        "id": "SP-DOC-P-DTFS-02-RISK-REG",
+        "name": "Credit Scoring Engine — Project Risk Register and TISAX Assessment.xlsx",
+        "doc_type": "RiskRegister",
+        "version": "1.5",
+        "author": "E1060",
+        "updated_at": "2026-09-15T10:00:00Z",
+        "content_text": "# PROJECT RISK & COMPLIANCE ASSESSMENT\n\n- Risk 01: Third-party API rate limiting on upstream provider.\n  - Severity: Medium | Mitigation: Implement Redis distributed cache.\n- Risk 02: Key personnel allocation constraint during sprint delivery.\n  - Severity: High | Mitigation: Cross-train platform engineers across domains."
+      },
+      {
+        "id": "SP-DOC-P-DTFS-02-USERGUIDE",
+        "name": "Credit Scoring Engine — End-User Operations Manual.pdf",
+        "doc_type": "UserGuide",
+        "version": "1.2",
+        "author": "E1060",
+        "updated_at": "2026-09-15T10:00:00Z",
+        "content_text": "# END-USER MANUAL: Credit Scoring Engine\n\nWelcome to Credit Scoring Engine. This document outlines core navigation, role permissions, standard report generation, and exception handling."
+      }
+    ]
+  },
+  {
+    "site_id": "SP-SITE-P-DTFS-03",
+    "project_id": "P-DTFS-03",
+    "title": "Lease & Contract Management SharePoint Team Site",
+    "documents": [
+      {
+        "id": "SP-DOC-P-DTFS-03-CHARTER",
+        "name": "Lease & Contract Management — Project Charter & Executive Business Case.docx",
+        "doc_type": "Charter",
+        "version": "2.1",
+        "charter_sponsor_person_id": "E1059",
+        "charter_budget_capex": 3500000,
+        "charter_budget_opex": 1225000,
+        "author": "E1059",
+        "updated_at": "2026-09-15T10:00:00Z",
+        "content_text": "# PROJECT CHARTER: LEASE & CONTRACT MANAGEMENT\n\n## 1. Executive Summary & Vision\nThe AutoNova Group executive leadership authorizes the Lease & Contract Management program under Domain DTFS.\n\n## 2. Business Objectives & Strategic Alignment\n- Objective 1: Modernize automotive operations with real-time digital integration.\n- Objective 2: Establish direct compliance with European data privacy and TISAX cybersecurity standards.\n- Objective 3: Reduce annual maintenance expenditures through cloud platform consolidation.\n\n## 3. Financial Authorization & Budget Envelope\n- Capital Expenditure (Capex) Approved: €3,500,000\n- Operating Expenditure (Opex) Annual Baseline: €1,225,000\n- Executive Sponsor: E1059\n- Cost Center: CC-DTFS-01\n\n## 4. Key Milestones & Go-Live Schedule\n- Phase 1 Architecture Sign-off: Complete\n- Phase 2 MVP Deployment: Target Go-Live 2021-10-15\n- Phase 3 Full Rollout across European and North American production plants."
+      },
+      {
+        "id": "SP-DOC-P-DTFS-03-SPEC",
+        "name": "Lease & Contract Management — Comprehensive Technical Specification.docx",
+        "doc_type": "Specification",
+        "version": "3.0",
+        "author": "E1063",
+        "updated_at": "2026-09-15T10:00:00Z",
+        "content_text": "# TECHNICAL SPECIFICATION: Lease & Contract Management\n\n## 1. System Architecture & Component Interactions\nBook of record for lease and loan contracts, payment schedules and accounting postings.\n\nThe system is engineered around high-availability containerized microservices hosted on Azure Kubernetes Service (AKS). Inter-system messaging utilizes Azure Event Hubs with standard Kafka protocol compliance.\n\n## 2. Security & Identity Integration\nAll endpoints require OAuth 2.0 JSON Web Tokens (JWT) validated against Microsoft Entra ID. RBAC permissions are mapped to corporate SAP authorization objects.\n\n## 3. Data Integrity & Retention\nData persistence layer uses PostgreSQL Flexible Server with automated 35-day point-in-time recovery. Cold storage archives to Azure Blob Storage with immutability policies."
+      },
+      {
+        "id": "SP-DOC-P-DTFS-03-RUNBOOK-P1",
+        "name": "Lease & Contract Management — P1 Critical Incident Troubleshooting & Triage Runbook.docx",
+        "doc_type": "Runbook",
+        "version": "4.2",
+        "author": "E1063",
+        "updated_at": "2026-09-15T10:00:00Z",
+        "content_text": "# PRODUCTION INCIDENT RUNBOOK: LEASE & CONTRACT MANAGEMENT\n\n## Symptom 1: High API Latency (> 2000ms) or Ingestion Queue Buildup\n### Root Cause Analysis:\n1. Connection pool saturation on backend PostgreSQL database.\n2. Upstream Kafka partition rebalance delay.\n3. Azure AKS node memory pressure causing pod eviction.\n\n### Step-by-Step Remediation Procedure:\n1. Check AKS pod status: `kubectl get pods -n p-dtfs-03`\n2. Inspect database active connections: verify active connections do not exceed pool threshold.\n3. Scale deployment replicas: `kubectl scale deployment/p-dtfs-03-service --replicas=8`\n4. If latency persists, initiate failover to secondary availability zone.\n\n## Escalation Hierarchy & SLA Matrix:\n- Target Response Time: 15 minutes\n- Target Resolution Time (P1): 4 hours\n- Primary Escalation Contact: Platform Operations Support Team\n- Technical Escalation Lead: E1063"
+      },
+      {
+        "id": "SP-DOC-P-DTFS-03-DR-PLAN",
+        "name": "Lease & Contract Management — Disaster Recovery and Business Continuity Guide.docx",
+        "doc_type": "Runbook",
+        "version": "2.0",
+        "author": "E1063",
+        "updated_at": "2026-09-15T10:00:00Z",
+        "content_text": "# DISASTER RECOVERY PLAN: Lease & Contract Management\n\n## Recovery Targets\n- Recovery Time Objective (RTO): 4 hours\n- Recovery Point Objective (RPO): 1 hour\n\n## Failover Execution Checklist\n1. Declare Disaster event in ServiceNow Incident bridge.\n2. Update DNS routing records in Azure Traffic Manager to DR Region.\n3. Promote read-replica database to primary status.\n4. Validate end-to-end synthetic health checks."
+      },
+      {
+        "id": "SP-DOC-P-DTFS-03-RISK-REG",
+        "name": "Lease & Contract Management — Project Risk Register and TISAX Assessment.xlsx",
+        "doc_type": "RiskRegister",
+        "version": "1.5",
+        "author": "E1059",
+        "updated_at": "2026-09-15T10:00:00Z",
+        "content_text": "# PROJECT RISK & COMPLIANCE ASSESSMENT\n\n- Risk 01: Third-party API rate limiting on upstream provider.\n  - Severity: Medium | Mitigation: Implement Redis distributed cache.\n- Risk 02: Key personnel allocation constraint during sprint delivery.\n  - Severity: High | Mitigation: Cross-train platform engineers across domains."
+      },
+      {
+        "id": "SP-DOC-P-DTFS-03-USERGUIDE",
+        "name": "Lease & Contract Management — End-User Operations Manual.pdf",
+        "doc_type": "UserGuide",
+        "version": "1.2",
+        "author": "E1059",
+        "updated_at": "2026-09-15T10:00:00Z",
+        "content_text": "# END-USER MANUAL: Lease & Contract Management\n\nWelcome to Lease & Contract Management. This document outlines core navigation, role permissions, standard report generation, and exception handling."
+      }
+    ]
+  },
+  {
+    "site_id": "SP-SITE-P-DTFS-04",
+    "project_id": "P-DTFS-04",
+    "title": "Collections & Servicing Platform SharePoint Team Site",
+    "documents": [
+      {
+        "id": "SP-DOC-P-DTFS-04-CHARTER",
+        "name": "Collections & Servicing Platform — Project Charter & Executive Business Case.docx",
+        "doc_type": "Charter",
+        "version": "2.1",
+        "charter_sponsor_person_id": "E1069",
+        "charter_budget_capex": 3500000,
+        "charter_budget_opex": 1225000,
+        "author": "E1069",
+        "updated_at": "2026-09-15T10:00:00Z",
+        "content_text": "# PROJECT CHARTER: COLLECTIONS & SERVICING PLATFORM\n\n## 1. Executive Summary & Vision\nThe AutoNova Group executive leadership authorizes the Collections & Servicing Platform program under Domain DTFS.\n\n## 2. Business Objectives & Strategic Alignment\n- Objective 1: Modernize automotive operations with real-time digital integration.\n- Objective 2: Establish direct compliance with European data privacy and TISAX cybersecurity standards.\n- Objective 3: Reduce annual maintenance expenditures through cloud platform consolidation.\n\n## 3. Financial Authorization & Budget Envelope\n- Capital Expenditure (Capex) Approved: €3,500,000\n- Operating Expenditure (Opex) Annual Baseline: €1,225,000\n- Executive Sponsor: E1069\n- Cost Center: CC-DTFS-01\n\n## 4. Key Milestones & Go-Live Schedule\n- Phase 1 Architecture Sign-off: Complete\n- Phase 2 MVP Deployment: Target Go-Live 2022-10-15\n- Phase 3 Full Rollout across European and North American production plants."
+      },
+      {
+        "id": "SP-DOC-P-DTFS-04-SPEC",
+        "name": "Collections & Servicing Platform — Comprehensive Technical Specification.docx",
+        "doc_type": "Specification",
+        "version": "3.0",
+        "author": "E1070",
+        "updated_at": "2026-09-15T10:00:00Z",
+        "content_text": "# TECHNICAL SPECIFICATION: Collections & Servicing Platform\n\n## 1. System Architecture & Component Interactions\nCustomer servicing, dunning and collections workflows for delinquent contracts.\n\nThe system is engineered around high-availability containerized microservices hosted on Azure Kubernetes Service (AKS). Inter-system messaging utilizes Azure Event Hubs with standard Kafka protocol compliance.\n\n## 2. Security & Identity Integration\nAll endpoints require OAuth 2.0 JSON Web Tokens (JWT) validated against Microsoft Entra ID. RBAC permissions are mapped to corporate SAP authorization objects.\n\n## 3. Data Integrity & Retention\nData persistence layer uses PostgreSQL Flexible Server with automated 35-day point-in-time recovery. Cold storage archives to Azure Blob Storage with immutability policies."
+      },
+      {
+        "id": "SP-DOC-P-DTFS-04-RUNBOOK-P1",
+        "name": "Collections & Servicing Platform — P1 Critical Incident Troubleshooting & Triage Runbook.docx",
+        "doc_type": "Runbook",
+        "version": "4.2",
+        "author": "E1070",
+        "updated_at": "2026-09-15T10:00:00Z",
+        "content_text": "# PRODUCTION INCIDENT RUNBOOK: COLLECTIONS & SERVICING PLATFORM\n\n## Symptom 1: High API Latency (> 2000ms) or Ingestion Queue Buildup\n### Root Cause Analysis:\n1. Connection pool saturation on backend PostgreSQL database.\n2. Upstream Kafka partition rebalance delay.\n3. Azure AKS node memory pressure causing pod eviction.\n\n### Step-by-Step Remediation Procedure:\n1. Check AKS pod status: `kubectl get pods -n p-dtfs-04`\n2. Inspect database active connections: verify active connections do not exceed pool threshold.\n3. Scale deployment replicas: `kubectl scale deployment/p-dtfs-04-service --replicas=8`\n4. If latency persists, initiate failover to secondary availability zone.\n\n## Escalation Hierarchy & SLA Matrix:\n- Target Response Time: 15 minutes\n- Target Resolution Time (P1): 4 hours\n- Primary Escalation Contact: Platform Operations Support Team\n- Technical Escalation Lead: E1070"
+      },
+      {
+        "id": "SP-DOC-P-DTFS-04-DR-PLAN",
+        "name": "Collections & Servicing Platform — Disaster Recovery and Business Continuity Guide.docx",
+        "doc_type": "Runbook",
+        "version": "2.0",
+        "author": "E1070",
+        "updated_at": "2026-09-15T10:00:00Z",
+        "content_text": "# DISASTER RECOVERY PLAN: Collections & Servicing Platform\n\n## Recovery Targets\n- Recovery Time Objective (RTO): 4 hours\n- Recovery Point Objective (RPO): 1 hour\n\n## Failover Execution Checklist\n1. Declare Disaster event in ServiceNow Incident bridge.\n2. Update DNS routing records in Azure Traffic Manager to DR Region.\n3. Promote read-replica database to primary status.\n4. Validate end-to-end synthetic health checks."
+      },
+      {
+        "id": "SP-DOC-P-DTFS-04-RISK-REG",
+        "name": "Collections & Servicing Platform — Project Risk Register and TISAX Assessment.xlsx",
+        "doc_type": "RiskRegister",
+        "version": "1.5",
+        "author": "E1069",
+        "updated_at": "2026-09-15T10:00:00Z",
+        "content_text": "# PROJECT RISK & COMPLIANCE ASSESSMENT\n\n- Risk 01: Third-party API rate limiting on upstream provider.\n  - Severity: Medium | Mitigation: Implement Redis distributed cache.\n- Risk 02: Key personnel allocation constraint during sprint delivery.\n  - Severity: High | Mitigation: Cross-train platform engineers across domains."
+      },
+      {
+        "id": "SP-DOC-P-DTFS-04-USERGUIDE",
+        "name": "Collections & Servicing Platform — End-User Operations Manual.pdf",
+        "doc_type": "UserGuide",
+        "version": "1.2",
+        "author": "E1069",
+        "updated_at": "2026-09-15T10:00:00Z",
+        "content_text": "# END-USER MANUAL: Collections & Servicing Platform\n\nWelcome to Collections & Servicing Platform. This document outlines core navigation, role permissions, standard report generation, and exception handling."
+      }
+    ]
+  },
+  {
+    "site_id": "SP-SITE-P-DTFS-05",
+    "project_id": "P-DTFS-05",
+    "title": "Regulatory Reporting (IFRS 9 / Basel) SharePoint Team Site",
+    "documents": [
+      {
+        "id": "SP-DOC-P-DTFS-05-CHARTER",
+        "name": "Regulatory Reporting (IFRS 9 / Basel) — Project Charter & Executive Business Case.docx",
+        "doc_type": "Charter",
+        "version": "2.1",
+        "charter_sponsor_person_id": "E1059",
+        "charter_budget_capex": 3500000,
+        "charter_budget_opex": 1225000,
+        "author": "E1059",
+        "updated_at": "2026-09-15T10:00:00Z",
+        "content_text": "# PROJECT CHARTER: REGULATORY REPORTING (IFRS 9 / BASEL)\n\n## 1. Executive Summary & Vision\nThe AutoNova Group executive leadership authorizes the Regulatory Reporting (IFRS 9 / Basel) program under Domain DTFS.\n\n## 2. Business Objectives & Strategic Alignment\n- Objective 1: Modernize automotive operations with real-time digital integration.\n- Objective 2: Establish direct compliance with European data privacy and TISAX cybersecurity standards.\n- Objective 3: Reduce annual maintenance expenditures through cloud platform consolidation.\n\n## 3. Financial Authorization & Budget Envelope\n- Capital Expenditure (Capex) Approved: €3,500,000\n- Operating Expenditure (Opex) Annual Baseline: €1,225,000\n- Executive Sponsor: E1059\n- Cost Center: CC-DTFS-01\n\n## 4. Key Milestones & Go-Live Schedule\n- Phase 1 Architecture Sign-off: Complete\n- Phase 2 MVP Deployment: Target Go-Live 2026-10-15\n- Phase 3 Full Rollout across European and North American production plants."
+      },
+      {
+        "id": "SP-DOC-P-DTFS-05-SPEC",
+        "name": "Regulatory Reporting (IFRS 9 / Basel) — Comprehensive Technical Specification.docx",
+        "doc_type": "Specification",
+        "version": "3.0",
+        "author": "E1068",
+        "updated_at": "2026-09-15T10:00:00Z",
+        "content_text": "# TECHNICAL SPECIFICATION: Regulatory Reporting (IFRS 9 / Basel)\n\n## 1. System Architecture & Component Interactions\nRegulatory and impairment reporting for financial services entities in multiple countries.\n\nThe system is engineered around high-availability containerized microservices hosted on Azure Kubernetes Service (AKS). Inter-system messaging utilizes Azure Event Hubs with standard Kafka protocol compliance.\n\n## 2. Security & Identity Integration\nAll endpoints require OAuth 2.0 JSON Web Tokens (JWT) validated against Microsoft Entra ID. RBAC permissions are mapped to corporate SAP authorization objects.\n\n## 3. Data Integrity & Retention\nData persistence layer uses PostgreSQL Flexible Server with automated 35-day point-in-time recovery. Cold storage archives to Azure Blob Storage with immutability policies."
+      },
+      {
+        "id": "SP-DOC-P-DTFS-05-RUNBOOK-P1",
+        "name": "Regulatory Reporting (IFRS 9 / Basel) — P1 Critical Incident Troubleshooting & Triage Runbook.docx",
+        "doc_type": "Runbook",
+        "version": "4.2",
+        "author": "E1068",
+        "updated_at": "2026-09-15T10:00:00Z",
+        "content_text": "# PRODUCTION INCIDENT RUNBOOK: REGULATORY REPORTING (IFRS 9 / BASEL)\n\n## Symptom 1: High API Latency (> 2000ms) or Ingestion Queue Buildup\n### Root Cause Analysis:\n1. Connection pool saturation on backend PostgreSQL database.\n2. Upstream Kafka partition rebalance delay.\n3. Azure AKS node memory pressure causing pod eviction.\n\n### Step-by-Step Remediation Procedure:\n1. Check AKS pod status: `kubectl get pods -n p-dtfs-05`\n2. Inspect database active connections: verify active connections do not exceed pool threshold.\n3. Scale deployment replicas: `kubectl scale deployment/p-dtfs-05-service --replicas=8`\n4. If latency persists, initiate failover to secondary availability zone.\n\n## Escalation Hierarchy & SLA Matrix:\n- Target Response Time: 15 minutes\n- Target Resolution Time (P1): 4 hours\n- Primary Escalation Contact: Platform Operations Support Team\n- Technical Escalation Lead: E1068"
+      },
+      {
+        "id": "SP-DOC-P-DTFS-05-DR-PLAN",
+        "name": "Regulatory Reporting (IFRS 9 / Basel) — Disaster Recovery and Business Continuity Guide.docx",
+        "doc_type": "Runbook",
+        "version": "2.0",
+        "author": "E1068",
+        "updated_at": "2026-09-15T10:00:00Z",
+        "content_text": "# DISASTER RECOVERY PLAN: Regulatory Reporting (IFRS 9 / Basel)\n\n## Recovery Targets\n- Recovery Time Objective (RTO): 4 hours\n- Recovery Point Objective (RPO): 1 hour\n\n## Failover Execution Checklist\n1. Declare Disaster event in ServiceNow Incident bridge.\n2. Update DNS routing records in Azure Traffic Manager to DR Region.\n3. Promote read-replica database to primary status.\n4. Validate end-to-end synthetic health checks."
+      },
+      {
+        "id": "SP-DOC-P-DTFS-05-RISK-REG",
+        "name": "Regulatory Reporting (IFRS 9 / Basel) — Project Risk Register and TISAX Assessment.xlsx",
+        "doc_type": "RiskRegister",
+        "version": "1.5",
+        "author": "E1059",
+        "updated_at": "2026-09-15T10:00:00Z",
+        "content_text": "# PROJECT RISK & COMPLIANCE ASSESSMENT\n\n- Risk 01: Third-party API rate limiting on upstream provider.\n  - Severity: Medium | Mitigation: Implement Redis distributed cache.\n- Risk 02: Key personnel allocation constraint during sprint delivery.\n  - Severity: High | Mitigation: Cross-train platform engineers across domains."
+      },
+      {
+        "id": "SP-DOC-P-DTFS-05-USERGUIDE",
+        "name": "Regulatory Reporting (IFRS 9 / Basel) — End-User Operations Manual.pdf",
+        "doc_type": "UserGuide",
+        "version": "1.2",
+        "author": "E1059",
+        "updated_at": "2026-09-15T10:00:00Z",
+        "content_text": "# END-USER MANUAL: Regulatory Reporting (IFRS 9 / Basel)\n\nWelcome to Regulatory Reporting (IFRS 9 / Basel). This document outlines core navigation, role permissions, standard report generation, and exception handling."
+      }
+    ]
+  },
+  {
+    "site_id": "SP-SITE-P-DTFS-06",
+    "project_id": "P-DTFS-06",
+    "title": "Dealer Floorplan Financing SharePoint Team Site",
+    "documents": [
+      {
+        "id": "SP-DOC-P-DTFS-06-CHARTER",
+        "name": "Dealer Floorplan Financing — Project Charter & Executive Business Case.docx",
+        "doc_type": "Charter",
+        "version": "2.1",
+        "charter_sponsor_person_id": "E1060",
+        "charter_budget_capex": 3500000,
+        "charter_budget_opex": 1225000,
+        "author": "E1060",
+        "updated_at": "2026-09-15T10:00:00Z",
+        "content_text": "# PROJECT CHARTER: DEALER FLOORPLAN FINANCING\n\n## 1. Executive Summary & Vision\nThe AutoNova Group executive leadership authorizes the Dealer Floorplan Financing program under Domain DTFS.\n\n## 2. Business Objectives & Strategic Alignment\n- Objective 1: Modernize automotive operations with real-time digital integration.\n- Objective 2: Establish direct compliance with European data privacy and TISAX cybersecurity standards.\n- Objective 3: Reduce annual maintenance expenditures through cloud platform consolidation.\n\n## 3. Financial Authorization & Budget Envelope\n- Capital Expenditure (Capex) Approved: €3,500,000\n- Operating Expenditure (Opex) Annual Baseline: €1,225,000\n- Executive Sponsor: E1060\n- Cost Center: CC-DTFS-01\n\n## 4. Key Milestones & Go-Live Schedule\n- Phase 1 Architecture Sign-off: Complete\n- Phase 2 MVP Deployment: Target Go-Live 2026-10-15\n- Phase 3 Full Rollout across European and North American production plants."
+      },
+      {
+        "id": "SP-DOC-P-DTFS-06-SPEC",
+        "name": "Dealer Floorplan Financing — Comprehensive Technical Specification.docx",
+        "doc_type": "Specification",
+        "version": "3.0",
+        "author": "E1065",
+        "updated_at": "2026-09-15T10:00:00Z",
+        "content_text": "# TECHNICAL SPECIFICATION: Dealer Floorplan Financing\n\n## 1. System Architecture & Component Interactions\nWholesale financing of dealer vehicle stock with limit management, audits and interest billing.\n\nThe system is engineered around high-availability containerized microservices hosted on Azure Kubernetes Service (AKS). Inter-system messaging utilizes Azure Event Hubs with standard Kafka protocol compliance.\n\n## 2. Security & Identity Integration\nAll endpoints require OAuth 2.0 JSON Web Tokens (JWT) validated against Microsoft Entra ID. RBAC permissions are mapped to corporate SAP authorization objects.\n\n## 3. Data Integrity & Retention\nData persistence layer uses PostgreSQL Flexible Server with automated 35-day point-in-time recovery. Cold storage archives to Azure Blob Storage with immutability policies."
+      },
+      {
+        "id": "SP-DOC-P-DTFS-06-RUNBOOK-P1",
+        "name": "Dealer Floorplan Financing — P1 Critical Incident Troubleshooting & Triage Runbook.docx",
+        "doc_type": "Runbook",
+        "version": "4.2",
+        "author": "E1065",
+        "updated_at": "2026-09-15T10:00:00Z",
+        "content_text": "# PRODUCTION INCIDENT RUNBOOK: DEALER FLOORPLAN FINANCING\n\n## Symptom 1: High API Latency (> 2000ms) or Ingestion Queue Buildup\n### Root Cause Analysis:\n1. Connection pool saturation on backend PostgreSQL database.\n2. Upstream Kafka partition rebalance delay.\n3. Azure AKS node memory pressure causing pod eviction.\n\n### Step-by-Step Remediation Procedure:\n1. Check AKS pod status: `kubectl get pods -n p-dtfs-06`\n2. Inspect database active connections: verify active connections do not exceed pool threshold.\n3. Scale deployment replicas: `kubectl scale deployment/p-dtfs-06-service --replicas=8`\n4. If latency persists, initiate failover to secondary availability zone.\n\n## Escalation Hierarchy & SLA Matrix:\n- Target Response Time: 15 minutes\n- Target Resolution Time (P1): 4 hours\n- Primary Escalation Contact: Platform Operations Support Team\n- Technical Escalation Lead: E1065"
+      },
+      {
+        "id": "SP-DOC-P-DTFS-06-DR-PLAN",
+        "name": "Dealer Floorplan Financing — Disaster Recovery and Business Continuity Guide.docx",
+        "doc_type": "Runbook",
+        "version": "2.0",
+        "author": "E1065",
+        "updated_at": "2026-09-15T10:00:00Z",
+        "content_text": "# DISASTER RECOVERY PLAN: Dealer Floorplan Financing\n\n## Recovery Targets\n- Recovery Time Objective (RTO): 4 hours\n- Recovery Point Objective (RPO): 1 hour\n\n## Failover Execution Checklist\n1. Declare Disaster event in ServiceNow Incident bridge.\n2. Update DNS routing records in Azure Traffic Manager to DR Region.\n3. Promote read-replica database to primary status.\n4. Validate end-to-end synthetic health checks."
+      },
+      {
+        "id": "SP-DOC-P-DTFS-06-RISK-REG",
+        "name": "Dealer Floorplan Financing — Project Risk Register and TISAX Assessment.xlsx",
+        "doc_type": "RiskRegister",
+        "version": "1.5",
+        "author": "E1060",
+        "updated_at": "2026-09-15T10:00:00Z",
+        "content_text": "# PROJECT RISK & COMPLIANCE ASSESSMENT\n\n- Risk 01: Third-party API rate limiting on upstream provider.\n  - Severity: Medium | Mitigation: Implement Redis distributed cache.\n- Risk 02: Key personnel allocation constraint during sprint delivery.\n  - Severity: High | Mitigation: Cross-train platform engineers across domains."
+      },
+      {
+        "id": "SP-DOC-P-DTFS-06-USERGUIDE",
+        "name": "Dealer Floorplan Financing — End-User Operations Manual.pdf",
+        "doc_type": "UserGuide",
+        "version": "1.2",
+        "author": "E1060",
+        "updated_at": "2026-09-15T10:00:00Z",
+        "content_text": "# END-USER MANUAL: Dealer Floorplan Financing\n\nWelcome to Dealer Floorplan Financing. This document outlines core navigation, role permissions, standard report generation, and exception handling."
+      }
+    ]
+  },
+  {
+    "site_id": "SP-SITE-P-SAL-01",
+    "project_id": "P-SAL-01",
+    "title": "Dealer Management Platform SharePoint Team Site",
+    "documents": [
+      {
+        "id": "SP-DOC-P-SAL-01-CHARTER",
+        "name": "Dealer Management Platform — Project Charter & Executive Business Case.docx",
+        "doc_type": "Charter",
+        "version": "2.1",
+        "charter_sponsor_person_id": "E1072",
+        "charter_budget_capex": 1800000,
+        "charter_budget_opex": 630000,
+        "author": "E1072",
+        "updated_at": "2026-09-15T10:00:00Z",
+        "content_text": "# PROJECT CHARTER: DEALER MANAGEMENT PLATFORM\n\n## 1. Executive Summary & Vision\nThe AutoNova Group executive leadership authorizes the Dealer Management Platform program under Domain SAL.\n\n## 2. Business Objectives & Strategic Alignment\n- Objective 1: Modernize automotive operations with real-time digital integration.\n- Objective 2: Establish direct compliance with European data privacy and TISAX cybersecurity standards.\n- Objective 3: Reduce annual maintenance expenditures through cloud platform consolidation.\n\n## 3. Financial Authorization & Budget Envelope\n- Capital Expenditure (Capex) Approved: €1,800,000\n- Operating Expenditure (Opex) Annual Baseline: €630,000\n- Executive Sponsor: E1072\n- Cost Center: CC-SAL-01\n\n## 4. Key Milestones & Go-Live Schedule\n- Phase 1 Architecture Sign-off: Complete\n- Phase 2 MVP Deployment: Target Go-Live 2021-10-15\n- Phase 3 Full Rollout across European and North American production plants."
+      },
+      {
+        "id": "SP-DOC-P-SAL-01-SPEC",
+        "name": "Dealer Management Platform — Comprehensive Technical Specification.docx",
+        "doc_type": "Specification",
+        "version": "3.0",
+        "author": "E1077",
+        "updated_at": "2026-09-15T10:00:00Z",
+        "content_text": "# TECHNICAL SPECIFICATION: Dealer Management Platform\n\n## 1. System Architecture & Component Interactions\nCentral dealer platform for vehicle stock, quotes, orders and dealer performance.\n\nThe system is engineered around high-availability containerized microservices hosted on Azure Kubernetes Service (AKS). Inter-system messaging utilizes Azure Event Hubs with standard Kafka protocol compliance.\n\n## 2. Security & Identity Integration\nAll endpoints require OAuth 2.0 JSON Web Tokens (JWT) validated against Microsoft Entra ID. RBAC permissions are mapped to corporate SAP authorization objects.\n\n## 3. Data Integrity & Retention\nData persistence layer uses PostgreSQL Flexible Server with automated 35-day point-in-time recovery. Cold storage archives to Azure Blob Storage with immutability policies."
+      },
+      {
+        "id": "SP-DOC-P-SAL-01-RUNBOOK-P1",
+        "name": "Dealer Management Platform — P1 Critical Incident Troubleshooting & Triage Runbook.docx",
+        "doc_type": "Runbook",
+        "version": "4.2",
+        "author": "E1077",
+        "updated_at": "2026-09-15T10:00:00Z",
+        "content_text": "# PRODUCTION INCIDENT RUNBOOK: DEALER MANAGEMENT PLATFORM\n\n## Symptom 1: High API Latency (> 2000ms) or Ingestion Queue Buildup\n### Root Cause Analysis:\n1. Connection pool saturation on backend PostgreSQL database.\n2. Upstream Kafka partition rebalance delay.\n3. Azure AKS node memory pressure causing pod eviction.\n\n### Step-by-Step Remediation Procedure:\n1. Check AKS pod status: `kubectl get pods -n p-sal-01`\n2. Inspect database active connections: verify active connections do not exceed pool threshold.\n3. Scale deployment replicas: `kubectl scale deployment/p-sal-01-service --replicas=8`\n4. If latency persists, initiate failover to secondary availability zone.\n\n## Escalation Hierarchy & SLA Matrix:\n- Target Response Time: 15 minutes\n- Target Resolution Time (P1): 4 hours\n- Primary Escalation Contact: Legacy Dealer Systems Unit (Team T-SAL-LEGACY)\n- Technical Escalation Lead: E1077"
+      },
+      {
+        "id": "SP-DOC-P-SAL-01-DR-PLAN",
+        "name": "Dealer Management Platform — Disaster Recovery and Business Continuity Guide.docx",
+        "doc_type": "Runbook",
+        "version": "2.0",
+        "author": "E1077",
+        "updated_at": "2026-09-15T10:00:00Z",
+        "content_text": "# DISASTER RECOVERY PLAN: Dealer Management Platform\n\n## Recovery Targets\n- Recovery Time Objective (RTO): 4 hours\n- Recovery Point Objective (RPO): 1 hour\n\n## Failover Execution Checklist\n1. Declare Disaster event in ServiceNow Incident bridge.\n2. Update DNS routing records in Azure Traffic Manager to DR Region.\n3. Promote read-replica database to primary status.\n4. Validate end-to-end synthetic health checks."
+      },
+      {
+        "id": "SP-DOC-P-SAL-01-RISK-REG",
+        "name": "Dealer Management Platform — Project Risk Register and TISAX Assessment.xlsx",
+        "doc_type": "RiskRegister",
+        "version": "1.5",
+        "author": "E1072",
+        "updated_at": "2026-09-15T10:00:00Z",
+        "content_text": "# PROJECT RISK & COMPLIANCE ASSESSMENT\n\n- Risk 01: Third-party API rate limiting on upstream provider.\n  - Severity: Medium | Mitigation: Implement Redis distributed cache.\n- Risk 02: Key personnel allocation constraint during sprint delivery.\n  - Severity: High | Mitigation: Cross-train platform engineers across domains."
+      },
+      {
+        "id": "SP-DOC-P-SAL-01-USERGUIDE",
+        "name": "Dealer Management Platform — End-User Operations Manual.pdf",
+        "doc_type": "UserGuide",
+        "version": "1.2",
+        "author": "E1072",
+        "updated_at": "2026-09-15T10:00:00Z",
+        "content_text": "# END-USER MANUAL: Dealer Management Platform\n\nWelcome to Dealer Management Platform. This document outlines core navigation, role permissions, standard report generation, and exception handling."
+      }
+    ]
+  },
+  {
+    "site_id": "SP-SITE-P-SAL-02",
+    "project_id": "P-SAL-02",
+    "title": "Customer 360 & CRM Data Platform SharePoint Team Site",
+    "documents": [
+      {
+        "id": "SP-DOC-P-SAL-02-CHARTER",
+        "name": "Customer 360 & CRM Data Platform — Project Charter & Executive Business Case.docx",
+        "doc_type": "Charter",
+        "version": "2.1",
+        "charter_sponsor_person_id": "E1071",
+        "charter_budget_capex": 1800000,
+        "charter_budget_opex": 630000,
+        "author": "E1071",
+        "updated_at": "2024-05-10T14:30:00Z",
+        "content_text": "# PROJECT CHARTER: CUSTOMER 360 & CRM DATA PLATFORM\n\n## 1. Executive Summary & Vision\nThe AutoNova Group executive leadership authorizes the Customer 360 & CRM Data Platform program under Domain SAL.\n\n## 2. Business Objectives & Strategic Alignment\n- Objective 1: Modernize automotive operations with real-time digital integration.\n- Objective 2: Establish direct compliance with European data privacy and TISAX cybersecurity standards.\n- Objective 3: Reduce annual maintenance expenditures through cloud platform consolidation.\n\n## 3. Financial Authorization & Budget Envelope\n- Capital Expenditure (Capex) Approved: €1,800,000\n- Operating Expenditure (Opex) Annual Baseline: €630,000\n- Executive Sponsor: E1071\n- Cost Center: CC-SAL-01\n\n## 4. Key Milestones & Go-Live Schedule\n- Phase 1 Architecture Sign-off: Complete\n- Phase 2 MVP Deployment: Target Go-Live 2023-10-15\n- Phase 3 Full Rollout across European and North American production plants."
+      },
+      {
+        "id": "SP-DOC-P-SAL-02-SPEC",
+        "name": "Customer 360 & CRM Data Platform — Comprehensive Technical Specification.docx",
+        "doc_type": "Specification",
+        "version": "3.0",
+        "author": "E1080",
+        "updated_at": "2024-05-10T14:30:00Z",
+        "content_text": "# TECHNICAL SPECIFICATION: Customer 360 & CRM Data Platform\n\n## 1. System Architecture & Component Interactions\nUnified customer profile across sales, service and finance touchpoints for CRM and analytics.\n\nThe system is engineered around high-availability containerized microservices hosted on Azure Kubernetes Service (AKS). Inter-system messaging utilizes Azure Event Hubs with standard Kafka protocol compliance.\n\n## 2. Security & Identity Integration\nAll endpoints require OAuth 2.0 JSON Web Tokens (JWT) validated against Microsoft Entra ID. RBAC permissions are mapped to corporate SAP authorization objects.\n\n## 3. Data Integrity & Retention\nData persistence layer uses PostgreSQL Flexible Server with automated 35-day point-in-time recovery. Cold storage archives to Azure Blob Storage with immutability policies."
+      },
+      {
+        "id": "SP-DOC-P-SAL-02-RUNBOOK-P1",
+        "name": "Customer 360 & CRM Data Platform — P1 Critical Incident Troubleshooting & Triage Runbook.docx",
+        "doc_type": "Runbook",
+        "version": "4.2",
+        "author": "E1080",
+        "updated_at": "2024-05-10T14:30:00Z",
+        "content_text": "# PRODUCTION INCIDENT RUNBOOK: CUSTOMER 360 & CRM DATA PLATFORM\n\n## Symptom 1: High API Latency (> 2000ms) or Ingestion Queue Buildup\n### Root Cause Analysis:\n1. Connection pool saturation on backend PostgreSQL database.\n2. Upstream Kafka partition rebalance delay.\n3. Azure AKS node memory pressure causing pod eviction.\n\n### Step-by-Step Remediation Procedure:\n1. Check AKS pod status: `kubectl get pods -n p-sal-02`\n2. Inspect database active connections: verify active connections do not exceed pool threshold.\n3. Scale deployment replicas: `kubectl scale deployment/p-sal-02-service --replicas=8`\n4. If latency persists, initiate failover to secondary availability zone.\n\n## Escalation Hierarchy & SLA Matrix:\n- Target Response Time: 15 minutes\n- Target Resolution Time (P1): 4 hours\n- Primary Escalation Contact: Platform Operations Support Team\n- Technical Escalation Lead: E1080"
+      },
+      {
+        "id": "SP-DOC-P-SAL-02-DR-PLAN",
+        "name": "Customer 360 & CRM Data Platform — Disaster Recovery and Business Continuity Guide.docx",
+        "doc_type": "Runbook",
+        "version": "2.0",
+        "author": "E1080",
+        "updated_at": "2024-05-10T14:30:00Z",
+        "content_text": "# DISASTER RECOVERY PLAN: Customer 360 & CRM Data Platform\n\n## Recovery Targets\n- Recovery Time Objective (RTO): 4 hours\n- Recovery Point Objective (RPO): 1 hour\n\n## Failover Execution Checklist\n1. Declare Disaster event in ServiceNow Incident bridge.\n2. Update DNS routing records in Azure Traffic Manager to DR Region.\n3. Promote read-replica database to primary status.\n4. Validate end-to-end synthetic health checks."
+      },
+      {
+        "id": "SP-DOC-P-SAL-02-RISK-REG",
+        "name": "Customer 360 & CRM Data Platform — Project Risk Register and TISAX Assessment.xlsx",
+        "doc_type": "RiskRegister",
+        "version": "1.5",
+        "author": "E1071",
+        "updated_at": "2024-05-10T14:30:00Z",
+        "content_text": "# PROJECT RISK & COMPLIANCE ASSESSMENT\n\n- Risk 01: Third-party API rate limiting on upstream provider.\n  - Severity: Medium | Mitigation: Implement Redis distributed cache.\n- Risk 02: Key personnel allocation constraint during sprint delivery.\n  - Severity: High | Mitigation: Cross-train platform engineers across domains."
+      },
+      {
+        "id": "SP-DOC-P-SAL-02-USERGUIDE",
+        "name": "Customer 360 & CRM Data Platform — End-User Operations Manual.pdf",
+        "doc_type": "UserGuide",
+        "version": "1.2",
+        "author": "E1071",
+        "updated_at": "2024-05-10T14:30:00Z",
+        "content_text": "# END-USER MANUAL: Customer 360 & CRM Data Platform\n\nWelcome to Customer 360 & CRM Data Platform. This document outlines core navigation, role permissions, standard report generation, and exception handling."
+      }
+    ]
+  },
+  {
+    "site_id": "SP-SITE-P-SAL-03",
+    "project_id": "P-SAL-03",
+    "title": "Aftersales Service Portal SharePoint Team Site",
+    "documents": [
+      {
+        "id": "SP-DOC-P-SAL-03-CHARTER",
+        "name": "Aftersales Service Portal — Project Charter & Executive Business Case.docx",
+        "doc_type": "Charter",
+        "version": "2.1",
+        "charter_sponsor_person_id": "E1074",
+        "charter_budget_capex": 1800000,
+        "charter_budget_opex": 630000,
+        "author": "E1074",
+        "updated_at": "2026-09-15T10:00:00Z",
+        "content_text": "# PROJECT CHARTER: AFTERSALES SERVICE PORTAL\n\n## 1. Executive Summary & Vision\nThe AutoNova Group executive leadership authorizes the Aftersales Service Portal program under Domain SAL.\n\n## 2. Business Objectives & Strategic Alignment\n- Objective 1: Modernize automotive operations with real-time digital integration.\n- Objective 2: Establish direct compliance with European data privacy and TISAX cybersecurity standards.\n- Objective 3: Reduce annual maintenance expenditures through cloud platform consolidation.\n\n## 3. Financial Authorization & Budget Envelope\n- Capital Expenditure (Capex) Approved: €1,800,000\n- Operating Expenditure (Opex) Annual Baseline: €630,000\n- Executive Sponsor: E1074\n- Cost Center: CC-SAL-01\n\n## 4. Key Milestones & Go-Live Schedule\n- Phase 1 Architecture Sign-off: Complete\n- Phase 2 MVP Deployment: Target Go-Live 2022-10-15\n- Phase 3 Full Rollout across European and North American production plants."
+      },
+      {
+        "id": "SP-DOC-P-SAL-03-SPEC",
+        "name": "Aftersales Service Portal — Comprehensive Technical Specification.docx",
+        "doc_type": "Specification",
+        "version": "3.0",
+        "author": "E1076",
+        "updated_at": "2026-09-15T10:00:00Z",
+        "content_text": "# TECHNICAL SPECIFICATION: Aftersales Service Portal\n\n## 1. System Architecture & Component Interactions\nPortal for fleet customers and workshops to book service, track repairs and order parts.\n\nThe system is engineered around high-availability containerized microservices hosted on Azure Kubernetes Service (AKS). Inter-system messaging utilizes Azure Event Hubs with standard Kafka protocol compliance.\n\n## 2. Security & Identity Integration\nAll endpoints require OAuth 2.0 JSON Web Tokens (JWT) validated against Microsoft Entra ID. RBAC permissions are mapped to corporate SAP authorization objects.\n\n## 3. Data Integrity & Retention\nData persistence layer uses PostgreSQL Flexible Server with automated 35-day point-in-time recovery. Cold storage archives to Azure Blob Storage with immutability policies."
+      },
+      {
+        "id": "SP-DOC-P-SAL-03-RUNBOOK-P1",
+        "name": "Aftersales Service Portal — P1 Critical Incident Troubleshooting & Triage Runbook.docx",
+        "doc_type": "Runbook",
+        "version": "4.2",
+        "author": "E1076",
+        "updated_at": "2026-09-15T10:00:00Z",
+        "content_text": "# PRODUCTION INCIDENT RUNBOOK: AFTERSALES SERVICE PORTAL\n\n## Symptom 1: High API Latency (> 2000ms) or Ingestion Queue Buildup\n### Root Cause Analysis:\n1. Connection pool saturation on backend PostgreSQL database.\n2. Upstream Kafka partition rebalance delay.\n3. Azure AKS node memory pressure causing pod eviction.\n\n### Step-by-Step Remediation Procedure:\n1. Check AKS pod status: `kubectl get pods -n p-sal-03`\n2. Inspect database active connections: verify active connections do not exceed pool threshold.\n3. Scale deployment replicas: `kubectl scale deployment/p-sal-03-service --replicas=8`\n4. If latency persists, initiate failover to secondary availability zone.\n\n## Escalation Hierarchy & SLA Matrix:\n- Target Response Time: 15 minutes\n- Target Resolution Time (P1): 4 hours\n- Primary Escalation Contact: Platform Operations Support Team\n- Technical Escalation Lead: E1076"
+      },
+      {
+        "id": "SP-DOC-P-SAL-03-DR-PLAN",
+        "name": "Aftersales Service Portal — Disaster Recovery and Business Continuity Guide.docx",
+        "doc_type": "Runbook",
+        "version": "2.0",
+        "author": "E1076",
+        "updated_at": "2026-09-15T10:00:00Z",
+        "content_text": "# DISASTER RECOVERY PLAN: Aftersales Service Portal\n\n## Recovery Targets\n- Recovery Time Objective (RTO): 4 hours\n- Recovery Point Objective (RPO): 1 hour\n\n## Failover Execution Checklist\n1. Declare Disaster event in ServiceNow Incident bridge.\n2. Update DNS routing records in Azure Traffic Manager to DR Region.\n3. Promote read-replica database to primary status.\n4. Validate end-to-end synthetic health checks."
+      },
+      {
+        "id": "SP-DOC-P-SAL-03-RISK-REG",
+        "name": "Aftersales Service Portal — Project Risk Register and TISAX Assessment.xlsx",
+        "doc_type": "RiskRegister",
+        "version": "1.5",
+        "author": "E1074",
+        "updated_at": "2026-09-15T10:00:00Z",
+        "content_text": "# PROJECT RISK & COMPLIANCE ASSESSMENT\n\n- Risk 01: Third-party API rate limiting on upstream provider.\n  - Severity: Medium | Mitigation: Implement Redis distributed cache.\n- Risk 02: Key personnel allocation constraint during sprint delivery.\n  - Severity: High | Mitigation: Cross-train platform engineers across domains."
+      },
+      {
+        "id": "SP-DOC-P-SAL-03-USERGUIDE",
+        "name": "Aftersales Service Portal — End-User Operations Manual.pdf",
+        "doc_type": "UserGuide",
+        "version": "1.2",
+        "author": "E1074",
+        "updated_at": "2026-09-15T10:00:00Z",
+        "content_text": "# END-USER MANUAL: Aftersales Service Portal\n\nWelcome to Aftersales Service Portal. This document outlines core navigation, role permissions, standard report generation, and exception handling."
+      }
+    ]
+  },
+  {
+    "site_id": "SP-SITE-P-SAL-04",
+    "project_id": "P-SAL-04",
+    "title": "Telematics Data Ingestion SharePoint Team Site",
+    "documents": [
+      {
+        "id": "SP-DOC-P-SAL-04-CHARTER",
+        "name": "Telematics Data Ingestion — Project Charter & Executive Business Case.docx",
+        "doc_type": "Charter",
+        "version": "2.1",
+        "charter_sponsor_person_id": "E1074",
+        "charter_budget_capex": 1800000,
+        "charter_budget_opex": 630000,
+        "author": "E1074",
+        "updated_at": "2026-09-15T10:00:00Z",
+        "content_text": "# PROJECT CHARTER: TELEMATICS DATA INGESTION\n\n## 1. Executive Summary & Vision\nThe AutoNova Group executive leadership authorizes the Telematics Data Ingestion program under Domain SAL.\n\n## 2. Business Objectives & Strategic Alignment\n- Objective 1: Modernize automotive operations with real-time digital integration.\n- Objective 2: Establish direct compliance with European data privacy and TISAX cybersecurity standards.\n- Objective 3: Reduce annual maintenance expenditures through cloud platform consolidation.\n\n## 3. Financial Authorization & Budget Envelope\n- Capital Expenditure (Capex) Approved: €1,800,000\n- Operating Expenditure (Opex) Annual Baseline: €630,000\n- Executive Sponsor: E1074\n- Cost Center: CC-SAL-01\n\n## 4. Key Milestones & Go-Live Schedule\n- Phase 1 Architecture Sign-off: Complete\n- Phase 2 MVP Deployment: Target Go-Live 2022-10-15\n- Phase 3 Full Rollout across European and North American production plants."
+      },
+      {
+        "id": "SP-DOC-P-SAL-04-SPEC",
+        "name": "Telematics Data Ingestion — Comprehensive Technical Specification.docx",
+        "doc_type": "Specification",
+        "version": "3.0",
+        "author": "E1079",
+        "updated_at": "2026-09-15T10:00:00Z",
+        "content_text": "# TECHNICAL SPECIFICATION: Telematics Data Ingestion\n\n## 1. System Architecture & Component Interactions\nIngests telemetry from connected trucks (location, fault codes, fuel) at scale.\n\nThe system is engineered around high-availability containerized microservices hosted on Azure Kubernetes Service (AKS). Inter-system messaging utilizes Azure Event Hubs with standard Kafka protocol compliance.\n\n## 2. Security & Identity Integration\nAll endpoints require OAuth 2.0 JSON Web Tokens (JWT) validated against Microsoft Entra ID. RBAC permissions are mapped to corporate SAP authorization objects.\n\n## 3. Data Integrity & Retention\nData persistence layer uses PostgreSQL Flexible Server with automated 35-day point-in-time recovery. Cold storage archives to Azure Blob Storage with immutability policies."
+      },
+      {
+        "id": "SP-DOC-P-SAL-04-RUNBOOK-P1",
+        "name": "Telematics Data Ingestion — P1 Critical Incident Troubleshooting & Triage Runbook.docx",
+        "doc_type": "Runbook",
+        "version": "4.2",
+        "author": "E1079",
+        "updated_at": "2026-09-15T10:00:00Z",
+        "content_text": "# PRODUCTION INCIDENT RUNBOOK: TELEMATICS DATA INGESTION\n\n## Symptom 1: High API Latency (> 2000ms) or Ingestion Queue Buildup\n### Root Cause Analysis:\n1. Connection pool saturation on backend PostgreSQL database.\n2. Upstream Kafka partition rebalance delay.\n3. Azure AKS node memory pressure causing pod eviction.\n\n### Step-by-Step Remediation Procedure:\n1. Check AKS pod status: `kubectl get pods -n p-sal-04`\n2. Inspect database active connections: verify active connections do not exceed pool threshold.\n3. Scale deployment replicas: `kubectl scale deployment/p-sal-04-service --replicas=8`\n4. If latency persists, initiate failover to secondary availability zone.\n\n## Escalation Hierarchy & SLA Matrix:\n- Target Response Time: 15 minutes\n- Target Resolution Time (P1): 4 hours\n- Primary Escalation Contact: Platform Operations Support Team\n- Technical Escalation Lead: E1079"
+      },
+      {
+        "id": "SP-DOC-P-SAL-04-DR-PLAN",
+        "name": "Telematics Data Ingestion — Disaster Recovery and Business Continuity Guide.docx",
+        "doc_type": "Runbook",
+        "version": "2.0",
+        "author": "E1079",
+        "updated_at": "2026-09-15T10:00:00Z",
+        "content_text": "# DISASTER RECOVERY PLAN: Telematics Data Ingestion\n\n## Recovery Targets\n- Recovery Time Objective (RTO): 4 hours\n- Recovery Point Objective (RPO): 1 hour\n\n## Failover Execution Checklist\n1. Declare Disaster event in ServiceNow Incident bridge.\n2. Update DNS routing records in Azure Traffic Manager to DR Region.\n3. Promote read-replica database to primary status.\n4. Validate end-to-end synthetic health checks."
+      },
+      {
+        "id": "SP-DOC-P-SAL-04-RISK-REG",
+        "name": "Telematics Data Ingestion — Project Risk Register and TISAX Assessment.xlsx",
+        "doc_type": "RiskRegister",
+        "version": "1.5",
+        "author": "E1074",
+        "updated_at": "2026-09-15T10:00:00Z",
+        "content_text": "# PROJECT RISK & COMPLIANCE ASSESSMENT\n\n- Risk 01: Third-party API rate limiting on upstream provider.\n  - Severity: Medium | Mitigation: Implement Redis distributed cache.\n- Risk 02: Key personnel allocation constraint during sprint delivery.\n  - Severity: High | Mitigation: Cross-train platform engineers across domains."
+      },
+      {
+        "id": "SP-DOC-P-SAL-04-USERGUIDE",
+        "name": "Telematics Data Ingestion — End-User Operations Manual.pdf",
+        "doc_type": "UserGuide",
+        "version": "1.2",
+        "author": "E1074",
+        "updated_at": "2026-09-15T10:00:00Z",
+        "content_text": "# END-USER MANUAL: Telematics Data Ingestion\n\nWelcome to Telematics Data Ingestion. This document outlines core navigation, role permissions, standard report generation, and exception handling."
+      }
+    ]
+  },
+  {
+    "site_id": "SP-SITE-P-SAL-05",
+    "project_id": "P-SAL-05",
+    "title": "Sales Forecasting & Pricing SharePoint Team Site",
+    "documents": [
+      {
+        "id": "SP-DOC-P-SAL-05-CHARTER",
+        "name": "Sales Forecasting & Pricing — Project Charter & Executive Business Case.docx",
+        "doc_type": "Charter",
+        "version": "2.1",
+        "charter_sponsor_person_id": "E1071",
+        "charter_budget_capex": 1800000,
+        "charter_budget_opex": 630000,
+        "author": "E1071",
+        "updated_at": "2026-09-15T10:00:00Z",
+        "content_text": "# PROJECT CHARTER: SALES FORECASTING & PRICING\n\n## 1. Executive Summary & Vision\nThe AutoNova Group executive leadership authorizes the Sales Forecasting & Pricing program under Domain SAL.\n\n## 2. Business Objectives & Strategic Alignment\n- Objective 1: Modernize automotive operations with real-time digital integration.\n- Objective 2: Establish direct compliance with European data privacy and TISAX cybersecurity standards.\n- Objective 3: Reduce annual maintenance expenditures through cloud platform consolidation.\n\n## 3. Financial Authorization & Budget Envelope\n- Capital Expenditure (Capex) Approved: €1,800,000\n- Operating Expenditure (Opex) Annual Baseline: €630,000\n- Executive Sponsor: E1071\n- Cost Center: CC-SAL-01\n\n## 4. Key Milestones & Go-Live Schedule\n- Phase 1 Architecture Sign-off: Complete\n- Phase 2 MVP Deployment: Target Go-Live 2026-10-15\n- Phase 3 Full Rollout across European and North American production plants."
+      },
+      {
+        "id": "SP-DOC-P-SAL-05-SPEC",
+        "name": "Sales Forecasting & Pricing — Comprehensive Technical Specification.docx",
+        "doc_type": "Specification",
+        "version": "3.0",
+        "author": "E1082",
+        "updated_at": "2026-09-15T10:00:00Z",
+        "content_text": "# TECHNICAL SPECIFICATION: Sales Forecasting & Pricing\n\n## 1. System Architecture & Component Interactions\nDemand forecasts and price-optimisation recommendations per market and model.\n\nThe system is engineered around high-availability containerized microservices hosted on Azure Kubernetes Service (AKS). Inter-system messaging utilizes Azure Event Hubs with standard Kafka protocol compliance.\n\n## 2. Security & Identity Integration\nAll endpoints require OAuth 2.0 JSON Web Tokens (JWT) validated against Microsoft Entra ID. RBAC permissions are mapped to corporate SAP authorization objects.\n\n## 3. Data Integrity & Retention\nData persistence layer uses PostgreSQL Flexible Server with automated 35-day point-in-time recovery. Cold storage archives to Azure Blob Storage with immutability policies."
+      },
+      {
+        "id": "SP-DOC-P-SAL-05-RUNBOOK-P1",
+        "name": "Sales Forecasting & Pricing — P1 Critical Incident Troubleshooting & Triage Runbook.docx",
+        "doc_type": "Runbook",
+        "version": "4.2",
+        "author": "E1082",
+        "updated_at": "2026-09-15T10:00:00Z",
+        "content_text": "# PRODUCTION INCIDENT RUNBOOK: SALES FORECASTING & PRICING\n\n## Symptom 1: High API Latency (> 2000ms) or Ingestion Queue Buildup\n### Root Cause Analysis:\n1. Connection pool saturation on backend PostgreSQL database.\n2. Upstream Kafka partition rebalance delay.\n3. Azure AKS node memory pressure causing pod eviction.\n\n### Step-by-Step Remediation Procedure:\n1. Check AKS pod status: `kubectl get pods -n p-sal-05`\n2. Inspect database active connections: verify active connections do not exceed pool threshold.\n3. Scale deployment replicas: `kubectl scale deployment/p-sal-05-service --replicas=8`\n4. If latency persists, initiate failover to secondary availability zone.\n\n## Escalation Hierarchy & SLA Matrix:\n- Target Response Time: 15 minutes\n- Target Resolution Time (P1): 4 hours\n- Primary Escalation Contact: Platform Operations Support Team\n- Technical Escalation Lead: E1082"
+      },
+      {
+        "id": "SP-DOC-P-SAL-05-DR-PLAN",
+        "name": "Sales Forecasting & Pricing — Disaster Recovery and Business Continuity Guide.docx",
+        "doc_type": "Runbook",
+        "version": "2.0",
+        "author": "E1082",
+        "updated_at": "2026-09-15T10:00:00Z",
+        "content_text": "# DISASTER RECOVERY PLAN: Sales Forecasting & Pricing\n\n## Recovery Targets\n- Recovery Time Objective (RTO): 4 hours\n- Recovery Point Objective (RPO): 1 hour\n\n## Failover Execution Checklist\n1. Declare Disaster event in ServiceNow Incident bridge.\n2. Update DNS routing records in Azure Traffic Manager to DR Region.\n3. Promote read-replica database to primary status.\n4. Validate end-to-end synthetic health checks."
+      },
+      {
+        "id": "SP-DOC-P-SAL-05-RISK-REG",
+        "name": "Sales Forecasting & Pricing — Project Risk Register and TISAX Assessment.xlsx",
+        "doc_type": "RiskRegister",
+        "version": "1.5",
+        "author": "E1071",
+        "updated_at": "2026-09-15T10:00:00Z",
+        "content_text": "# PROJECT RISK & COMPLIANCE ASSESSMENT\n\n- Risk 01: Third-party API rate limiting on upstream provider.\n  - Severity: Medium | Mitigation: Implement Redis distributed cache.\n- Risk 02: Key personnel allocation constraint during sprint delivery.\n  - Severity: High | Mitigation: Cross-train platform engineers across domains."
+      },
+      {
+        "id": "SP-DOC-P-SAL-05-USERGUIDE",
+        "name": "Sales Forecasting & Pricing — End-User Operations Manual.pdf",
+        "doc_type": "UserGuide",
+        "version": "1.2",
+        "author": "E1071",
+        "updated_at": "2026-09-15T10:00:00Z",
+        "content_text": "# END-USER MANUAL: Sales Forecasting & Pricing\n\nWelcome to Sales Forecasting & Pricing. This document outlines core navigation, role permissions, standard report generation, and exception handling."
+      }
+    ]
+  },
+  {
+    "site_id": "SP-SITE-P-SAL-06",
+    "project_id": "P-SAL-06",
+    "title": "Order-to-Delivery SharePoint Team Site",
+    "documents": [
+      {
+        "id": "SP-DOC-P-SAL-06-CHARTER",
+        "name": "Order-to-Delivery — Project Charter & Executive Business Case.docx",
+        "doc_type": "Charter",
+        "version": "2.1",
+        "charter_sponsor_person_id": "E1071",
+        "charter_budget_capex": 1800000,
+        "charter_budget_opex": 630000,
+        "author": "E1071",
+        "updated_at": "2026-09-15T10:00:00Z",
+        "content_text": "# PROJECT CHARTER: ORDER-TO-DELIVERY\n\n## 1. Executive Summary & Vision\nThe AutoNova Group executive leadership authorizes the Order-to-Delivery program under Domain SAL.\n\n## 2. Business Objectives & Strategic Alignment\n- Objective 1: Modernize automotive operations with real-time digital integration.\n- Objective 2: Establish direct compliance with European data privacy and TISAX cybersecurity standards.\n- Objective 3: Reduce annual maintenance expenditures through cloud platform consolidation.\n\n## 3. Financial Authorization & Budget Envelope\n- Capital Expenditure (Capex) Approved: €1,800,000\n- Operating Expenditure (Opex) Annual Baseline: €630,000\n- Executive Sponsor: E1071\n- Cost Center: CC-SAL-01\n\n## 4. Key Milestones & Go-Live Schedule\n- Phase 1 Architecture Sign-off: Complete\n- Phase 2 MVP Deployment: Target Go-Live 2021-10-15\n- Phase 3 Full Rollout across European and North American production plants."
+      },
+      {
+        "id": "SP-DOC-P-SAL-06-SPEC",
+        "name": "Order-to-Delivery — Comprehensive Technical Specification.docx",
+        "doc_type": "Specification",
+        "version": "3.0",
+        "author": "E1017",
+        "updated_at": "2026-09-15T10:00:00Z",
+        "content_text": "# TECHNICAL SPECIFICATION: Order-to-Delivery\n\n## 1. System Architecture & Component Interactions\nEnd-to-end vehicle order management from configuration to delivery, integrated with SAP S/4.\n\nThe system is engineered around high-availability containerized microservices hosted on Azure Kubernetes Service (AKS). Inter-system messaging utilizes Azure Event Hubs with standard Kafka protocol compliance.\n\n## 2. Security & Identity Integration\nAll endpoints require OAuth 2.0 JSON Web Tokens (JWT) validated against Microsoft Entra ID. RBAC permissions are mapped to corporate SAP authorization objects.\n\n## 3. Data Integrity & Retention\nData persistence layer uses PostgreSQL Flexible Server with automated 35-day point-in-time recovery. Cold storage archives to Azure Blob Storage with immutability policies."
+      },
+      {
+        "id": "SP-DOC-P-SAL-06-RUNBOOK-P1",
+        "name": "Order-to-Delivery — P1 Critical Incident Troubleshooting & Triage Runbook.docx",
+        "doc_type": "Runbook",
+        "version": "4.2",
+        "author": "E1017",
+        "updated_at": "2026-09-15T10:00:00Z",
+        "content_text": "# PRODUCTION INCIDENT RUNBOOK: ORDER-TO-DELIVERY\n\n## Symptom 1: High API Latency (> 2000ms) or Ingestion Queue Buildup\n### Root Cause Analysis:\n1. Connection pool saturation on backend PostgreSQL database.\n2. Upstream Kafka partition rebalance delay.\n3. Azure AKS node memory pressure causing pod eviction.\n\n### Step-by-Step Remediation Procedure:\n1. Check AKS pod status: `kubectl get pods -n p-sal-06`\n2. Inspect database active connections: verify active connections do not exceed pool threshold.\n3. Scale deployment replicas: `kubectl scale deployment/p-sal-06-service --replicas=8`\n4. If latency persists, initiate failover to secondary availability zone.\n\n## Escalation Hierarchy & SLA Matrix:\n- Target Response Time: 15 minutes\n- Target Resolution Time (P1): 4 hours\n- Primary Escalation Contact: Platform Operations Support Team\n- Technical Escalation Lead: E1017"
+      },
+      {
+        "id": "SP-DOC-P-SAL-06-DR-PLAN",
+        "name": "Order-to-Delivery — Disaster Recovery and Business Continuity Guide.docx",
+        "doc_type": "Runbook",
+        "version": "2.0",
+        "author": "E1017",
+        "updated_at": "2026-09-15T10:00:00Z",
+        "content_text": "# DISASTER RECOVERY PLAN: Order-to-Delivery\n\n## Recovery Targets\n- Recovery Time Objective (RTO): 4 hours\n- Recovery Point Objective (RPO): 1 hour\n\n## Failover Execution Checklist\n1. Declare Disaster event in ServiceNow Incident bridge.\n2. Update DNS routing records in Azure Traffic Manager to DR Region.\n3. Promote read-replica database to primary status.\n4. Validate end-to-end synthetic health checks."
+      },
+      {
+        "id": "SP-DOC-P-SAL-06-RISK-REG",
+        "name": "Order-to-Delivery — Project Risk Register and TISAX Assessment.xlsx",
+        "doc_type": "RiskRegister",
+        "version": "1.5",
+        "author": "E1071",
+        "updated_at": "2026-09-15T10:00:00Z",
+        "content_text": "# PROJECT RISK & COMPLIANCE ASSESSMENT\n\n- Risk 01: Third-party API rate limiting on upstream provider.\n  - Severity: Medium | Mitigation: Implement Redis distributed cache.\n- Risk 02: Key personnel allocation constraint during sprint delivery.\n  - Severity: High | Mitigation: Cross-train platform engineers across domains."
+      },
+      {
+        "id": "SP-DOC-P-SAL-06-USERGUIDE",
+        "name": "Order-to-Delivery — End-User Operations Manual.pdf",
+        "doc_type": "UserGuide",
+        "version": "1.2",
+        "author": "E1071",
+        "updated_at": "2026-09-15T10:00:00Z",
+        "content_text": "# END-USER MANUAL: Order-to-Delivery\n\nWelcome to Order-to-Delivery. This document outlines core navigation, role permissions, standard report generation, and exception handling."
+      }
+    ]
+  },
+  {
+    "site_id": "SP-SITE-P-HR-01",
+    "project_id": "P-HR-01",
+    "title": "SuccessFactors HR Core SharePoint Team Site",
+    "documents": [
+      {
+        "id": "SP-DOC-P-HR-01-CHARTER",
+        "name": "SuccessFactors HR Core — Project Charter & Executive Business Case.docx",
+        "doc_type": "Charter",
+        "version": "2.1",
+        "charter_sponsor_person_id": "E1083",
+        "charter_budget_capex": 1800000,
+        "charter_budget_opex": 630000,
+        "author": "E1083",
+        "updated_at": "2026-09-15T10:00:00Z",
+        "content_text": "# PROJECT CHARTER: SUCCESSFACTORS HR CORE\n\n## 1. Executive Summary & Vision\nThe AutoNova Group executive leadership authorizes the SuccessFactors HR Core program under Domain HR.\n\n## 2. Business Objectives & Strategic Alignment\n- Objective 1: Modernize automotive operations with real-time digital integration.\n- Objective 2: Establish direct compliance with European data privacy and TISAX cybersecurity standards.\n- Objective 3: Reduce annual maintenance expenditures through cloud platform consolidation.\n\n## 3. Financial Authorization & Budget Envelope\n- Capital Expenditure (Capex) Approved: €1,800,000\n- Operating Expenditure (Opex) Annual Baseline: €630,000\n- Executive Sponsor: E1083\n- Cost Center: CC-HR-01\n\n## 4. Key Milestones & Go-Live Schedule\n- Phase 1 Architecture Sign-off: Complete\n- Phase 2 MVP Deployment: Target Go-Live 2020-10-15\n- Phase 3 Full Rollout across European and North American production plants."
+      },
+      {
+        "id": "SP-DOC-P-HR-01-SPEC",
+        "name": "SuccessFactors HR Core — Comprehensive Technical Specification.docx",
+        "doc_type": "Specification",
+        "version": "3.0",
+        "author": "E1085",
+        "updated_at": "2026-09-15T10:00:00Z",
+        "content_text": "# TECHNICAL SPECIFICATION: SuccessFactors HR Core\n\n## 1. System Architecture & Component Interactions\nCloud HR core for employee master data, org structure and lifecycle events; feeds identity and finance.\n\nThe system is engineered around high-availability containerized microservices hosted on Azure Kubernetes Service (AKS). Inter-system messaging utilizes Azure Event Hubs with standard Kafka protocol compliance.\n\n## 2. Security & Identity Integration\nAll endpoints require OAuth 2.0 JSON Web Tokens (JWT) validated against Microsoft Entra ID. RBAC permissions are mapped to corporate SAP authorization objects.\n\n## 3. Data Integrity & Retention\nData persistence layer uses PostgreSQL Flexible Server with automated 35-day point-in-time recovery. Cold storage archives to Azure Blob Storage with immutability policies."
+      },
+      {
+        "id": "SP-DOC-P-HR-01-RUNBOOK-P1",
+        "name": "SuccessFactors HR Core — P1 Critical Incident Troubleshooting & Triage Runbook.docx",
+        "doc_type": "Runbook",
+        "version": "4.2",
+        "author": "E1085",
+        "updated_at": "2026-09-15T10:00:00Z",
+        "content_text": "# PRODUCTION INCIDENT RUNBOOK: SUCCESSFACTORS HR CORE\n\n## Symptom 1: High API Latency (> 2000ms) or Ingestion Queue Buildup\n### Root Cause Analysis:\n1. Connection pool saturation on backend PostgreSQL database.\n2. Upstream Kafka partition rebalance delay.\n3. Azure AKS node memory pressure causing pod eviction.\n\n### Step-by-Step Remediation Procedure:\n1. Check AKS pod status: `kubectl get pods -n p-hr-01`\n2. Inspect database active connections: verify active connections do not exceed pool threshold.\n3. Scale deployment replicas: `kubectl scale deployment/p-hr-01-service --replicas=8`\n4. If latency persists, initiate failover to secondary availability zone.\n\n## Escalation Hierarchy & SLA Matrix:\n- Target Response Time: 15 minutes\n- Target Resolution Time (P1): 4 hours\n- Primary Escalation Contact: Platform Operations Support Team\n- Technical Escalation Lead: E1085"
+      },
+      {
+        "id": "SP-DOC-P-HR-01-DR-PLAN",
+        "name": "SuccessFactors HR Core — Disaster Recovery and Business Continuity Guide.docx",
+        "doc_type": "Runbook",
+        "version": "2.0",
+        "author": "E1085",
+        "updated_at": "2026-09-15T10:00:00Z",
+        "content_text": "# DISASTER RECOVERY PLAN: SuccessFactors HR Core\n\n## Recovery Targets\n- Recovery Time Objective (RTO): 4 hours\n- Recovery Point Objective (RPO): 1 hour\n\n## Failover Execution Checklist\n1. Declare Disaster event in ServiceNow Incident bridge.\n2. Update DNS routing records in Azure Traffic Manager to DR Region.\n3. Promote read-replica database to primary status.\n4. Validate end-to-end synthetic health checks."
+      },
+      {
+        "id": "SP-DOC-P-HR-01-RISK-REG",
+        "name": "SuccessFactors HR Core — Project Risk Register and TISAX Assessment.xlsx",
+        "doc_type": "RiskRegister",
+        "version": "1.5",
+        "author": "E1083",
+        "updated_at": "2026-09-15T10:00:00Z",
+        "content_text": "# PROJECT RISK & COMPLIANCE ASSESSMENT\n\n- Risk 01: Third-party API rate limiting on upstream provider.\n  - Severity: Medium | Mitigation: Implement Redis distributed cache.\n- Risk 02: Key personnel allocation constraint during sprint delivery.\n  - Severity: High | Mitigation: Cross-train platform engineers across domains."
+      },
+      {
+        "id": "SP-DOC-P-HR-01-USERGUIDE",
+        "name": "SuccessFactors HR Core — End-User Operations Manual.pdf",
+        "doc_type": "UserGuide",
+        "version": "1.2",
+        "author": "E1083",
+        "updated_at": "2026-09-15T10:00:00Z",
+        "content_text": "# END-USER MANUAL: SuccessFactors HR Core\n\nWelcome to SuccessFactors HR Core. This document outlines core navigation, role permissions, standard report generation, and exception handling."
+      }
+    ]
+  }
+]

@@ -1,0 +1,33 @@
+team_id,name,team_type,parent_domain_or_platform,mission,team_lead_id,headcount
+T-AZ-PLAT,Azure Platform Team,platform,AZURE,"Landing zones, subscriptions, identity, networking, Sentinel, API gateway and core security services.",E1001,3
+T-AZ-AKS,Azure AKS Team,platform,AZURE,"Runs the shared Kubernetes platform, cluster upgrades and base images.",E1004,3
+T-AZ-DATA,Azure Data Services Team,platform,AZURE,"Data Factory, SQL and managed data services.",E1007,2
+T-AWS-PLAT,AWS Cloud Platform Team,platform,AWS,"AWS accounts, EKS, serverless, streaming and storage guardrails.",E1009,3
+T-SAP-RISE,SAP RISE Basis & Hosting Team,platform,SAP,"Operates S/4HANA RISE: Basis, HANA, transports, patches, GRC.",E1012,3
+T-SAP-ANA,SAP Analytics Team,platform,SAP,Analytics Cloud and Datasphere platform and standards.,E1015,2
+T-SAP-INT,SAP Integration (BTP) Team,platform,SAP,"Integration Suite, Ariba connectivity and SAP-to-non-SAP interfaces.",E1017,2
+T-SNF-PLAT,Snowflake Platform Team,platform,SNOWFLAKE,"Accounts, warehouses, cost control, data sharing and governance.",E1019,2
+T-DBX-PLAT,Databricks Platform Team,platform,DATABRICKS,"Workspaces, clusters, Unity Catalog and ML serving.",E1021,3
+T-CYB-GRC,"Cyber Governance, Risk & Compliance",business,CYB,"Security policy, risk acceptance, audits and business ownership of security programs.",E1024,2
+T-CYB-SOC,Security Operations Center,technical,CYB,"24x7 monitoring, detection engineering and threat hunting.",E1026,4
+T-CYB-IAM,Identity & Access Management Team,technical,CYB,"Identity lifecycle, access reviews and privileged access.",E1030,3
+T-CYB-VM,Vulnerability Management Team,technical,CYB,"Scanning, prioritisation and patch SLA enforcement.",E1033,2
+T-CYB-CLD,Cloud Security Engineering,technical,CYB,Cloud guardrails and posture management.,E1035,2
+T-CYB-IR,Incident Response Team,technical,CYB,"Incident handling, forensics and automation.",E1037,2
+T-FIN-BUS,Group Accounting & Controlling,business,FIN,"Group accounting policy, close, controlling and reporting ownership.",E1039,3
+T-FIN-ERP,Finance ERP Technical Team,technical,FIN,"S/4HANA finance configuration, development and release management.",E1042,3
+T-FIN-TRS,Treasury,business,FIN,"Cash, liquidity, funding and FX risk.",E1045,3
+T-FIN-BI,Finance Analytics Team,technical,FIN,"Dashboards, data mart and reporting engineering.",E1048,2
+T-PRO-BUS,Strategic Sourcing,business,PRO,"Category strategy, supplier negotiation and contracts.",E1050,3
+T-PRO-SRM,Supplier Portal & SRM Technical Team,technical,PRO,"Supplier portal, Ariba and P2P automation engineering.",E1053,4
+T-PRO-ANA,Procurement Analytics Team,technical,PRO,Spend analytics and supplier risk models.,E1057,2
+T-DTF-BUS,DTFS Credit & Lending Business,business,DTFS,"Lending products, credit policy and regulatory ownership.",E1059,3
+T-DTF-LOS,DTFS Loan Platform Engineering,technical,DTFS,"Origination, contract, servicing and dealer finance platforms.",E1062,4
+T-DTF-RSK,DTFS Credit Risk Modelling,technical,DTFS,Scoring models and regulatory data science.,E1066,3
+T-DTF-SRV,DTFS Collections & Servicing,business,DTFS,Customer service and collections operations.,E1069,2
+T-SAL-BUS,Sales Operations,business,SAL,"Sales process, dealer network and order management ownership.",E1071,3
+T-SAL-AFT,Aftersales & Service,business,SAL,"Workshop network, service processes and connected services.",E1074,3
+T-SAL-DLR,Dealer & Service Platform Engineering,technical,SAL,"Dealer platform, service portal and telematics engineering.",E1077,3
+T-SAL-ANA,Sales Analytics & CRM Team,technical,SAL,"Customer 360, forecasting and pricing analytics.",E1080,3
+T-HR-BP,HR Business Partners,business,HR,"HR processes, policies and workforce planning.",E1083,2
+T-HR-IT,HR Systems Team,technical,HR,SuccessFactors configuration and HR integrations.,E1085,2

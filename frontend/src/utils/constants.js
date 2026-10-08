@@ -5,7 +5,10 @@ export const ENTITY_COLORS = {
   PERSON: '#f59e0b',       // Amber
   APPLICATION: '#0d9488',  // Teal
   DECISION: '#a855f7',     // Violet
-  DOCUMENT: '#3b82f6',     // Blue
+  ADR: '#a855f7',          // Violet (Confluence ADR)
+  COMPONENT: '#10b981',    // Emerald (LeanIX IT Component)
+  DATA_OBJECT: '#f59e0b',  // Amber (LeanIX Data Object)
+  DOCUMENT: '#3b82f6',     // Blue (SharePoint Charter)
   ISSUE: '#ef4444',        // Red
   RELEASE: '#10b981',      // Emerald Green
   MEETING: '#ec4899',      // Pink
@@ -38,11 +41,11 @@ export const RELATIONSHIP_LABELS = {
 };
 
 export const PERSONAS = [
-  { id: 'management', label: 'Management', icon: 'Briefcase', desc: 'Portfolio view, business value, risks & blockers' },
-  { id: 'project_manager', label: 'Project Manager', icon: 'ClipboardList', desc: 'Milestones, blockers, approvals, actions' },
-  { id: 'developer', label: 'Developer', icon: 'Code', desc: 'Jira stories, ADRs, GitHub commits, API interfaces' },
-  { id: 'support', label: 'Support / Operations', icon: 'Headphones', desc: 'Applications, runbooks, incidents, changes' },
-  { id: 'architect', label: 'Architect (Full Access)', icon: 'Layers', desc: 'Full knowledge graph, decision log & conflicts' }
+  { id: 'Management', label: 'Executive / Management', icon: 'Briefcase', desc: 'Portfolio view, budget envelopes, business risks & approvals' },
+  { id: 'PM', label: 'Project Manager (PM)', icon: 'ClipboardList', desc: 'Milestones, sprint delivery, blockers, and cross-team actions' },
+  { id: 'Architect', label: 'Lead Architect', icon: 'Layers', desc: 'Full architecture decisions, technology stacks & system conflicts' },
+  { id: 'Developer', label: 'Software Engineer / Developer', icon: 'Code', desc: 'GitHub commits, PRs, technical interfaces, and dependencies' },
+  { id: 'Support', label: 'ITSM Operations & Support', icon: 'Headphones', desc: 'ServiceNow incidents, runbooks, changes, and operational readiness' }
 ];
 
 export const READINESS_COLORS = {

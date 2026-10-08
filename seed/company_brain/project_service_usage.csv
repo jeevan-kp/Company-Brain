@@ -1,0 +1,74 @@
+project_id,service_id,purpose
+P-CYB-01,AZ-SEN,SIEM correlation and alerting
+P-CYB-01,AZ-LAW,Log storage and KQL hunting
+P-CYB-01,AZ-AAD,Sign-in log source
+P-CYB-02,AZ-AAD,Identity directory and SSO
+P-CYB-02,SAP-GRC,SAP role governance and SoD
+P-CYB-03,AZ-DEF,Azure posture checks
+P-CYB-03,AWS-GD,AWS threat detection
+P-CYB-04,AZ-DEF,Vulnerability assessment
+P-CYB-04,AZ-LAW,Scan result storage
+P-CYB-05,DBX-LH,Security telemetry lakehouse
+P-CYB-05,DBX-UC,Data governance
+P-CYB-05,AZ-ADF,Log ingestion pipelines
+P-CYB-06,AZ-KV,Credential vaulting
+P-CYB-06,AZ-AAD,Just-in-time role activation
+P-CYB-07,AZ-SEN,SOAR playbooks
+P-CYB-07,AZ-LAW,Alert enrichment queries
+P-FIN-01,SAP-RISE,"S/4HANA ledger, AP/AR, assets"
+P-FIN-02,SAP-SAC,Dashboards and planning
+P-FIN-02,SAP-DSP,Semantic layer on S/4 data
+P-FIN-03,SAP-RISE,Group Reporting module
+P-FIN-03,SAP-SAC,Consolidation reports
+P-FIN-04,SAP-RISE,Treasury module
+P-FIN-04,SAP-BTP,Bank connectivity
+P-FIN-05,SNF-DW,Finance data mart
+P-FIN-05,AZ-ADF,Extraction from S/4
+P-FIN-06,SAP-RISE,Intercompany and tax postings
+P-FIN-06,SAP-BTP,E-invoicing and tax authority interfaces
+P-PRO-01,AZ-AKS,Portal microservices
+P-PRO-01,AZ-APIM,Supplier and S/4 API gateway
+P-PRO-01,SAP-ARI,Supplier master and catalog sync
+P-PRO-02,SAP-ARI,Sourcing and contracts
+P-PRO-02,SAP-BTP,Ariba to S/4 integration
+P-PRO-03,AZ-AKS,Invoice matching services
+P-PRO-03,AZ-APIM,S/4 posting API
+P-PRO-03,SAP-BTP,Document and posting integration
+P-PRO-04,SNF-DW,Spend cube
+P-PRO-04,SAP-SAC,Spend dashboards
+P-PRO-05,DBX-LH,Feature engineering
+P-PRO-05,DBX-ML,Risk model training and serving
+P-DTFS-01,AZ-AKS,Application microservices
+P-DTFS-01,AZ-APIM,Dealer and partner APIs
+P-DTFS-01,DBX-LH,Applicant data enrichment
+P-DTFS-02,DBX-LH,Feature store
+P-DTFS-02,DBX-ML,Real-time model serving
+P-DTFS-02,DBX-UC,Model and data governance
+P-DTFS-03,AZ-AKS,Contract services
+P-DTFS-03,AZ-SQL,Contract database
+P-DTFS-04,AZ-AKS,Servicing workflows
+P-DTFS-04,AZ-SQL,Case database
+P-DTFS-04,AZ-APIM,Customer-facing APIs
+P-DTFS-05,SNF-DW,Regulatory data mart
+P-DTFS-05,SNF-SH,Shared contract and finance data
+P-DTFS-05,SAP-SAC,Regulatory dashboards
+P-DTFS-06,AZ-AKS,Floorplan services
+P-DTFS-06,AZ-APIM,Dealer APIs
+P-SAL-01,AWS-EKS,Dealer platform services
+P-SAL-01,AWS-RDS,Dealer and stock database
+P-SAL-01,AWS-S3,Document storage
+P-SAL-02,SNF-DW,Customer 360 store
+P-SAL-02,DBX-LH,Identity resolution pipelines
+P-SAL-02,SNF-CORT,AI-generated customer summaries
+P-SAL-03,AWS-EKS,Portal services
+P-SAL-03,AWS-LAM,Event-driven notifications
+P-SAL-04,AWS-KIN,Truck telemetry streaming
+P-SAL-04,AWS-S3,Raw telemetry storage
+P-SAL-04,DBX-LH,Telemetry processing
+P-SAL-04,DBX-DLT,Streaming pipelines
+P-SAL-05,DBX-ML,Forecast models
+P-SAL-05,SNF-DW,Sales history
+P-SAL-06,SAP-RISE,Order and delivery processing
+P-SAL-06,SAP-BTP,Dealer to SAP integration
+P-HR-01,SAP-SFSF,HR core
+P-HR-01,SAP-BTP,Feeds to identity and finance

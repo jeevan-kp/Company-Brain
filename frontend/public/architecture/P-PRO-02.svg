@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 680" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradients -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b1120" />
+      <stop offset="50%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#070d19" />
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#0f172a" stop-opacity="0.95" />
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="100%" stop-color="#6366f1" />
+    </linearGradient>
+    <linearGradient id="computeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e1b4b" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#0f172a" stop-opacity="0.95" />
+    </linearGradient>
+    <linearGradient id="dataGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#064e3b" stop-opacity="0.6" />
+      <stop offset="100%" stop-color="#0f172a" stop-opacity="0.95" />
+    </linearGradient>
+
+    <!-- Filters for Glow -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <!-- Arrow Marker -->
+    <marker id="arrow" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 8 5 L 0 9 z" fill="#38bdf8" />
+    </marker>
+    <marker id="arrowGreen" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 8 5 L 0 9 z" fill="#34d399" />
+    </marker>
+    <marker id="arrowPurple" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 8 5 L 0 9 z" fill="#a78bfa" />
+    </marker>
+  </defs>
+
+  <!-- Canvas Background -->
+  <rect width="1100" height="680" fill="url(#bgGrad)" />
+  <!-- Grid overlay -->
+  <g opacity="0.08" stroke="#38bdf8" stroke-width="1">
+    <pattern id="grid" width="30" height="30" patternUnits="userSpaceOnUse">
+      <line x1="0" y1="0" x2="30" y2="0" />
+      <line x1="0" y1="0" x2="0" y2="30" />
+    </pattern>
+    <rect width="1100" height="680" fill="url(#grid)" />
+  </g>
+
+  <!-- TOP HEADER BANNER -->
+  <g transform="translate(30, 25)">
+    <!-- Header Backing -->
+    <rect width="1040" height="75" rx="10" fill="url(#cardGrad)" stroke="#334155" stroke-width="1.5" />
+    
+    <!-- Left: Project Badge & Titles -->
+    <rect x="20" y="16" width="95" height="24" rx="5" fill="#0284c7" />
+    <text x="67" y="32" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="bold" fill="#ffffff" text-anchor="middle">P-PRO-02</text>
+    
+    <text x="125" y="33" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="15" font-weight="bold" fill="#f8fafc">Ariba Sourcing &amp; Contracts</text>
+    <text x="20" y="58" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" fill="#94a3b8">Domain: <tspan fill="#38bdf8" font-weight="bold">Procurement</tspan> • Criticality: <tspan fill="#f59e0b" font-weight="bold">high</tspan> • Phase: <tspan fill="#34d399" font-weight="bold">Live</tspan></text>
+
+    <!-- Right: Architecture Blueprint Badge & Health -->
+    <rect x="830" y="15" width="190" height="46" rx="6" fill="#0f172a" stroke="#38bdf8" stroke-width="1" />
+    <text x="925" y="33" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="bold" fill="#38bdf8" text-anchor="middle">LEANIX ARCHITECTURE SPEC</text>
+    <text x="925" y="49" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" fill="#e2e8f0" text-anchor="middle">Data Quality: <tspan fill="#34d399" font-weight="bold">96.5%</tspan> | Vulns: <tspan fill="#34d399" font-weight="bold">0</tspan></text>
+  </g>
+
+  <!-- TIER 1: CLIENT & EDGE CONSUMERS (Left Box, x=30, y=120, w=220, h=360) -->
+  <g transform="translate(30, 120)">
+    <rect width="220" height="360" rx="10" fill="url(#cardGrad)" stroke="#0284c7" stroke-width="1.5" />
+    <!-- Tier Header -->
+    <rect width="220" height="36" rx="10" fill="#0369a1" />
+    <text x="110" y="23" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="bold" fill="#ffffff" text-anchor="middle">1. CLIENT &amp; INGRESS</text>
+
+    <!-- Client Component Cards -->
+    <g transform="translate(15, 52)">
+      <rect width="190" height="70" rx="6" fill="#0f172a" stroke="#1e293b" />
+      <text x="95" y="24" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="bold" fill="#38bdf8" text-anchor="middle">PRESENTATION LAYER</text>
+      <text x="95" y="44" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" fill="#f1f5f9" text-anchor="middle">React 18 Enterprise Portal ...</text>
+      <text x="95" y="58" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9" fill="#64748b" text-anchor="middle">React 18 / Vite / WebUI</text>
+    </g>
+
+    <g transform="translate(15, 138)">
+      <rect width="190" height="65" rx="6" fill="#0f172a" stroke="#1e293b" />
+      <text x="95" y="24" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="bold" fill="#a78bfa" text-anchor="middle">IDENTITY &amp; AUTH</text>
+      <text x="95" y="42" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" fill="#f1f5f9" text-anchor="middle">Azure Entra ID (SSO / OIDC)</text>
+      <text x="95" y="55" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9" fill="#64748b" text-anchor="middle">JWT Bearer Validation</text>
+    </g>
+
+    <g transform="translate(15, 220)">
+      <rect width="190" height="75" rx="6" fill="#0f172a" stroke="#1e293b" />
+      <text x="95" y="22" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="bold" fill="#f59e0b" text-anchor="middle">SECURITY PERIMETER</text>
+      <text x="95" y="40" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9" fill="#cbd5e1" text-anchor="middle">Azure Web App Firewall (WAF)</text>
+      <text x="95" y="55" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9" fill="#cbd5e1" text-anchor="middle">DDoS Protection Standard</text>
+      <text x="95" y="68" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="8" fill="#64748b" text-anchor="middle">TLS 1.3 Strict Cipher Suites</text>
+    </g>
+
+    <g transform="translate(15, 310)">
+      <text x="95" y="22" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9" fill="#38bdf8" text-anchor="middle">HTTPS :443 • REST / gRPC</text>
+    </g>
+  </g>
+
+  <!-- CONNECTOR 1 -> 2 -->
+  <line x1="250" y1="200" x2="295" y2="200" stroke="#38bdf8" stroke-width="2" marker-end="url(#arrow)" stroke-dasharray="4,2" />
+  <line x1="250" y1="360" x2="295" y2="360" stroke="#38bdf8" stroke-width="2" marker-end="url(#arrow)" stroke-dasharray="4,2" />
+
+  <!-- TIER 2: API GATEWAY & MICROSERVICES (Center Box, x=300, y=120, w=480, h=360) -->
+  <g transform="translate(300, 120)">
+    <rect width="480" height="360" rx="10" fill="url(#computeGrad)" stroke="#6366f1" stroke-width="1.5" />
+    <!-- Tier Header -->
+    <rect width="480" height="36" rx="10" fill="#4338ca" />
+    <text x="240" y="23" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="bold" fill="#ffffff" text-anchor="middle">2. API GATEWAY &amp; SERVICE COMPUTE MESH</text>
+
+    <!-- Sub-tier: API Gateway -->
+    <g transform="translate(15, 48)">
+      <rect width="450" height="58" rx="6" fill="#0f172a" stroke="#4f46e5" stroke-width="1" />
+      <text x="20" y="22" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="bold" fill="#818cf8">ENTERPRISE API GATEWAY</text>
+      <text x="20" y="38" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" fill="#f8fafc">Azure API Management (OAuth2 / MTLS / WAF)</text>
+      <text x="430" y="22" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9" fill="#94a3b8" text-anchor="end">Rate Limit: 5,000 req/min</text>
+    </g>
+
+    <!-- Sub-tier: Microservices Cluster -->
+    <g transform="translate(15, 120)">
+      <rect width="450" height="130" rx="8" fill="#0b1120" stroke="#334155" stroke-width="1" />
+      <text x="20" y="22" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="bold" fill="#38bdf8">KUBERNETES SERVICE RUNTIME (AKS v1.28)</text>
+      <text x="430" y="22" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9" fill="#34d399" text-anchor="end">Autoscale: HPA 3-15 Pods</text>
+
+      <!-- Pod 1 -->
+      <g transform="translate(15, 36)">
+        <rect width="130" height="76" rx="5" fill="#1e293b" stroke="#38bdf8" />
+        <text x="65" y="20" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9" font-weight="bold" fill="#38bdf8" text-anchor="middle">API WORKER POD</text>
+        <text x="65" y="38" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="8.5" fill="#e2e8f0" text-anchor="middle">Spring / FastAPI</text>
+        <text x="65" y="52" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="8" fill="#94a3b8" text-anchor="middle">Internal mTLS</text>
+        <circle cx="65" cy="65" r="4" fill="#34d399" />
+      </g>
+
+      <!-- Pod 2 -->
+      <g transform="translate(160, 36)">
+        <rect width="130" height="76" rx="5" fill="#1e293b" stroke="#818cf8" />
+        <text x="65" y="20" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9" font-weight="bold" fill="#818cf8" text-anchor="middle">BUSINESS ENGINE</text>
+        <text x="65" y="38" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="8.5" fill="#e2e8f0" text-anchor="middle">Domain Logic Pods</text>
+        <text x="65" y="52" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="8" fill="#94a3b8" text-anchor="middle">Istio Envoy Proxy</text>
+        <circle cx="65" cy="65" r="4" fill="#34d399" />
+      </g>
+
+      <!-- Pod 3 -->
+      <g transform="translate(305, 36)">
+        <rect width="130" height="76" rx="5" fill="#1e293b" stroke="#f59e0b" />
+        <text x="65" y="20" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9" font-weight="bold" fill="#f59e0b" text-anchor="middle">ASYNC CONSUMER</text>
+        <text x="65" y="38" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="8.5" fill="#e2e8f0" text-anchor="middle">Kafka Worker</text>
+        <text x="65" y="52" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="8" fill="#94a3b8" text-anchor="middle">Batch &amp; Events</text>
+        <circle cx="65" cy="65" r="4" fill="#34d399" />
+      </g>
+    </g>
+
+    <!-- Sub-tier: Event Streaming Bus -->
+    <g transform="translate(15, 265)">
+      <rect width="450" height="80" rx="6" fill="#0f172a" stroke="#a78bfa" stroke-width="1" />
+      <text x="20" y="22" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="bold" fill="#c084fc">EVENT STREAMING &amp; MESSAGE BUS</text>
+      <text x="20" y="40" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9.5" fill="#f8fafc">Apache Kafka Event Streaming (AVRO Schemas)</text>
+      <text x="20" y="58" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9" fill="#94a3b8">Schema Registry: Avro / JSON Schema • At-Least-Once Delivery Guarantees</text>
+    </g>
+  </g>
+
+  <!-- CONNECTOR 2 -> 3 -->
+  <line x1="780" y1="200" x2="825" y2="200" stroke="#34d399" stroke-width="2" marker-end="url(#arrowGreen)" />
+  <line x1="780" y1="320" x2="825" y2="320" stroke="#a78bfa" stroke-width="2" marker-end="url(#arrowPurple)" />
+
+  <!-- TIER 3: DATA PERSISTENCE & ANALYTICS (Right Box, x=830, y=120, w=240, h=360) -->
+  <g transform="translate(830, 120)">
+    <rect width="240" height="360" rx="10" fill="url(#dataGrad)" stroke="#10b981" stroke-width="1.5" />
+    <!-- Tier Header -->
+    <rect width="240" height="36" rx="10" fill="#059669" />
+    <text x="120" y="23" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="bold" fill="#ffffff" text-anchor="middle">3. DATA PERSISTENCE</text>
+
+    <!-- Primary Database Card -->
+    <g transform="translate(15, 52)">
+      <rect width="210" height="80" rx="6" fill="#0f172a" stroke="#34d399" />
+      <text x="105" y="22" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="bold" fill="#34d399" text-anchor="middle">RELATIONAL STORE</text>
+      <text x="105" y="42" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9.5" fill="#f8fafc" text-anchor="middle">Azure Database for Postgre...</text>
+      <text x="105" y="58" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="8.5" fill="#94a3b8" text-anchor="middle">Read-Replicas / Auto-failover</text>
+      <text x="105" y="72" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="8" fill="#64748b" text-anchor="middle">Automated Daily Backups (35d)</text>
+    </g>
+
+    <!-- Cache Card -->
+    <g transform="translate(15, 148)">
+      <rect width="210" height="68" rx="6" fill="#0f172a" stroke="#1e293b" />
+      <text x="105" y="22" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="bold" fill="#f87171" text-anchor="middle">IN-MEMORY CACHE</text>
+      <text x="105" y="40" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9.5" fill="#f8fafc" text-anchor="middle">Redis 7 Cluster (Multi-AZ)</text>
+      <text x="105" y="55" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="8.5" fill="#94a3b8" text-anchor="middle">&lt; 2ms P99 Read Latency</text>
+    </g>
+
+    <!-- Object & Analytics Card -->
+    <g transform="translate(15, 230)">
+      <rect width="210" height="85" rx="6" fill="#0f172a" stroke="#1e293b" />
+      <text x="105" y="22" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="bold" fill="#38bdf8" text-anchor="middle">DATA LAKE &amp; TELEMETRY</text>
+      <text x="105" y="42" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9" fill="#f8fafc" text-anchor="middle">Azure Blob / ADLS Gen2</text>
+      <text x="105" y="58" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="8.5" fill="#94a3b8" text-anchor="middle">Immutable Audit Logs</text>
+      <text x="105" y="73" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="8" fill="#64748b" text-anchor="middle">Encrypted at rest (CMEK)</text>
+    </g>
+
+    <text x="120" y="342" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9" fill="#34d399" text-anchor="middle">JDBC / pgvector / TLS</text>
+  </g>
+
+  <!-- BOTTOM STRIP: INFRASTRUCTURE, PLATFORM & ENTERPRISE INTEGRATION (x=30, y=500, w=1040, h=155) -->
+  <g transform="translate(30, 500)">
+    <rect width="1040" height="155" rx="10" fill="url(#cardGrad)" stroke="#334155" stroke-width="1.5" />
+
+    <!-- Left Box: Upstream & Downstream Data Flow -->
+    <g transform="translate(20, 16)">
+      <rect width="320" height="122" rx="6" fill="#0f172a" stroke="#1e293b" />
+      <text x="15" y="22" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="bold" fill="#38bdf8">UPSTREAM DEPENDENCIES</text>
+      <text x="15" y="42" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9.5" fill="#e2e8f0">[object Object]</text>
+      
+      <line x1="15" y1="58" x2="305" y2="58" stroke="#334155" />
+
+      <text x="15" y="76" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="bold" fill="#34d399">DOWNSTREAM CONSUMERS</text>
+      <text x="15" y="96" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9.5" fill="#e2e8f0">[object Object], [object Object]</text>
+    </g>
+
+    <!-- Center Box: Cloud Infrastructure & Hosting Region -->
+    <g transform="translate(360, 16)">
+      <rect width="330" height="122" rx="6" fill="#0f172a" stroke="#1e293b" />
+      <text x="15" y="22" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="bold" fill="#a78bfa">CLOUD INFRASTRUCTURE SPEC</text>
+      <text x="15" y="42" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9.5" fill="#e2e8f0">Microsoft Azure Central EU (Multi-AZ, TISAX Level 3 Certified)</text>
+      <text x="15" y="60" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9" fill="#94a3b8">Region: West Europe (Amsterdam) + Central (Frankfurt DR)</text>
+      <text x="15" y="76" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9" fill="#94a3b8">Terraform / Bicep IaC with Automated Azure DevOps Pipeline</text>
+      <text x="15" y="96" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9" font-weight="bold" fill="#38bdf8">Services: <tspan font-weight="normal" fill="#cbd5e1">[object Object] • [object Object]</tspan></text>
+      <text x="15" y="112" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="8.5" fill="#64748b">RTO: 15 min • RPO: 5 min • TISAX Level 3 Certified</text>
+    </g>
+
+    <!-- Right Box: Observability, CI/CD & Security Telemetry -->
+    <g transform="translate(710, 16)">
+      <rect width="310" height="122" rx="6" fill="#0f172a" stroke="#1e293b" />
+      <text x="15" y="22" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="bold" fill="#f59e0b">OBSERVABILITY &amp; CI/CD</text>
+      <text x="15" y="42" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9" fill="#cbd5e1">• Grafana Cloud &amp; Prometheus Exporter</text>
+      <text x="15" y="58" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9" fill="#cbd5e1">• OpenTelemetry Distributed Tracing (Jaeger)</text>
+      <text x="15" y="74" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9" fill="#cbd5e1">• GitHub Actions with SonarQube &amp; Snyk Gate</text>
+      <text x="15" y="92" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9" font-weight="bold" fill="#34d399">Stack: <tspan font-weight="normal" fill="#e2e8f0">Spring Boot, React, PostgreSQL</tspan></text>
+      <text x="15" y="110" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="8.5" fill="#64748b">Audit: ISO/IEC 27001 • SOC 2 Type II Compliant</text>
+    </g>
+  </g>
+</svg>
